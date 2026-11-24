@@ -7,12 +7,14 @@ import numpy as np
 from .contact import audit_contact, audit_robot_clearance
 from .human_qa import audit_human
 from .playback import Playback
+from .prop_clearance import layout_trials
+from .prop_clearance import trial as prop_trial
 from .study import PHASES, new_directory, scene_for, write_json
 from .visibility import audit_visibility
 
 
 def audit(out, seeds, families):
-    rows, physical, visual, human = [], [], [], []
+    rows, physical, visual, human, props = [], [], [], [], []
     with new_directory(out) as dest:
         for seed in seeds:
             for family in families:
@@ -62,7 +64,10 @@ def audit(out, seeds, families):
                 physical.extend(audit_robot_clearance(seed, p) for p in ("teach", "transfer"))
                 visual.append(audit_visibility(seed))
                 human.append(audit_human(seed))
-        passed = all(r["passed"] for r in rows + physical + visual + human)
+                props.extend(layout_trials(seed, 24, bundle=True))
+        if props:
+            props.append(prop_trial(seeds[0], "teach", "near", 24, misplaced=True))
+        passed = all(r["passed"] for r in rows + physical + visual + human + props)
         write_json(
             dest / "checks.json",
             {
@@ -70,6 +75,7 @@ def audit(out, seeds, families):
                 "passed": passed,
                 "playback": rows,
                 "paused_work_physics": physical,
+                "prop_clearance": props,
                 "visibility": visual,
                 "human": human,
             },

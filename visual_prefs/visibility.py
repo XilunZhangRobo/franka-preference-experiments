@@ -60,7 +60,8 @@ def _audit_phase(seed, phase, camera_pose):
     play = Playback(scene, fps=18)
     model = play.model
     masks = {
-        name: np.flatnonzero(model.geom_bodyid == model.body(name).id) for name in ("near", "far")
+        name: np.flatnonzero((model.geom_bodyid == model.body(name).id) & (model.geom_group != 3))
+        for name in ("near", "far")
     }
     masks["clip"] = np.array([model.geom(f"visibility_clip_{i}").id for i in range(clip_parts)])
     # Assign three private render groups on this audit-only copy of the model.

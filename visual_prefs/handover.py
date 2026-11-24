@@ -1,36 +1,116 @@
 """Handover choices in the seated recipient's frame of reference."""
 
-from math import cos, radians, sin
+from math import copysign, cos, pi, radians, sin
 from random import Random
 
 from .episode import Case, Motion
+from .prop_mesh import surface
+
+
+def _shell(scene, body, name, rings, color, *, shape=1, finish="matte", wave=0):
+    """Circular sections for a cup or light; superellipses for cloth or a remote."""
+    sections = []
+    for z, rx, ry in rings:
+        outline = []
+        for j in range(64):
+            angle = 2 * pi * j / 64
+            x, y = cos(angle), sin(angle)
+            outline.append(
+                (
+                    rx * copysign(abs(x) ** shape, x),
+                    ry * copysign(abs(y) ** shape, y),
+                    z + wave * (sin(3 * angle + 0.3) + 0.5 * cos(5 * angle)),
+                )
+            )
+        sections.append(outline)
+    return surface(scene, body, name, (0, 0, 0), sections, color, finish=finish)
 
 
 def _object(scene, item, position):
     body = scene.prop(item, position)
+    # Preserve the original pinch heights independently of decorative geometry.
+    scene.grasp(
+        item, (0, 0, {"flashlight": 0.035, "remote": 0.012, "tumbler": 0.046, "cloth": 0.009}[item])
+    )
     if item == "flashlight":
-        scene.cyl(body, (0, 0, 0.035), 0.019, 0.070, "#d78d29")
-        scene.cyl(body, (0, 0, 0.078), 0.028, 0.018, "#344456")
-        scene.cyl(body, (0, 0, 0.089), 0.023, 0.004, "#f7e9ac")
+        profile = [
+            (0, 0.016),
+            (0.003, 0.018),
+            (0.053, 0.018),
+            (0.060, 0.020),
+            (0.073, 0.028),
+            (0.086, 0.028),
+            (0.088, 0.026),
+            (0.088, 0.023),
+            (0.081, 0.020),
+            (0.077, 0.009),
+        ]
+        _shell(
+            scene, body, "torch_housing", [(z, r, r) for z, r in profile], "#57616a", finish="steel"
+        )
+        for z in (0.007, 0.012, 0.017, 0.022, 0.027, 0.032, 0.037, 0.042, 0.047):
+            scene.cyl(body, (0, 0, z), 0.0186, 0.0022, "#303738")
+        for z in (0.074, 0.079):
+            scene.cyl(body, (0, 0, z), 0.0284, 0.0017, "#32393c")
+        scene.cyl(body, (0, 0, 0.081), 0.020, 0.001, "#bfc4ba")
+        scene.ell(body, (0, 0, 0.082), (0.006, 0.006, 0.002), "#ebd9a7")
+        scene.ell(body, (0.009, -0.015, 0.054), (0.006, 0.004, 0.006), "#ca8d44")
     elif item == "remote":
-        scene.box(body, (0, 0, 0.012), (0.046, 0.100, 0.024), "#313c49")
-        for y in (-0.027, -0.009, 0.009):
-            for x in (-0.010, 0.010):
-                scene.box(body, (x, y, 0.025), (0.012, 0.009, 0.004), "#c9cdd1")
-        scene.cyl(body, (0, 0.034, 0.025), 0.007, 0.004, "#e57650")
+        _shell(
+            scene,
+            body,
+            "remote_case",
+            [
+                (0, 0.018, 0.044),
+                (0.004, 0.022, 0.049),
+                (0.009, 0.023, 0.050),
+                (0.017, 0.023, 0.050),
+                (0.023, 0.021, 0.048),
+            ],
+            "#353c40",
+            shape=0.30,
+        )
+        scene.ell(body, (-0.011, 0.036, 0.023), (0.005, 0.005, 0.002), "#ba584f")
+        scene.cyl(body, (0, 0.014, 0.024), 0.012, 0.003, "#737b7b")
+        scene.cyl(body, (0, 0.014, 0.026), 0.006, 0.002, "#44494b")
+        for y in (-0.010, -0.022, -0.034):
+            for x in (-0.011, 0, 0.011):
+                scene.ell(body, (x, y, 0.024), (0.0045, 0.003, 0.0018), "#b9b7ae")
     elif item == "tumbler":
-        scene.cyl(body, (0, 0, 0.046), 0.031, 0.092, "#26828c")
-        scene.cyl(body, (0, 0, 0.096), 0.033, 0.008, "#d5ede6")
+        profile = [
+            (0, 0.023),
+            (0.003, 0.025),
+            (0.008, 0.0255),
+            (0.092, 0.033),
+            (0.098, 0.0332),
+            (0.099, 0.032),
+            (0.0975, 0.0308),
+            (0.009, 0.023),
+        ]
+        _shell(
+            scene, body, "glazed_cup", [(z, r, r) for z, r in profile], "#447e83", finish="enamel"
+        )
+        scene.cyl(body, (0, 0, 0.071), 0.0283, 0.0012, "#493629")
     else:
-        for layer in range(3):
-            scene.box(
+        for i in range(3):
+            z = i * 0.017 + 0.0015
+            panel = _shell(
+                scene,
                 body,
-                (0, 0.002 * (layer % 2), 0.009 + layer * 0.018),
-                (0.112, 0.078, 0.017),
-                ("#61789d", "#a8c5d5", "#6989ab")[layer],
+                f"fold_{i}",
+                [
+                    (z, 0.051, 0.034),
+                    (z + 0.004, 0.055, 0.039),
+                    (z + 0.011, 0.056, 0.038),
+                    (z + 0.015, 0.052, 0.035),
+                ],
+                "#667f92",
+                shape=0.24,
+                wave=0.0009,
             )
-        for x in (-0.038, -0.030):
-            scene.box(body, (x, 0, 0.055), (0.003, 0.076, 0.003), "#e9e1c8")
+            panel.set("pos", f"{0.001 * (i % 2)} {0.0015 * (i % 2)} 0")
+        for x in (-0.039, -0.032):
+            scene.rod(body, (x, -0.030, 0.051), (x, 0.030, 0.051), 0.0012, "#d9cbb2")
 
 
 def _start(scene, seed):

@@ -1,6 +1,7 @@
 """Build a metric tabletop scene around the original articulated Panda mesh."""
 
 import xml.etree.ElementTree as ET
+from hashlib import sha256
 from io import BytesIO
 from math import pi
 from pathlib import Path
@@ -149,9 +150,16 @@ class Scene:
             fovy=str(fov),
         )
 
-    def _texture(self, name, image):
-        filename = name + ".png"
-        self.files[filename] = png(image)
+    def inspection_camera(self, item):
+        """A close-up at the initial prop position for off-line asset inspection."""
+        origin = np.fromstring(self.props[item].get("pos"), sep=" ")
+        self.camera("inspection", origin + (0.128, -0.245, 0.192), origin + (0, 0, 0.025), 33)
+
+    def _texture(self, name, image, *, fingerprint=False):
+        content = png(image)
+        suffix = "_" + sha256(content).hexdigest()[:16] if fingerprint else ""
+        filename = name + suffix + ".png"
+        self.files[filename] = content
         ET.SubElement(self.asset, "texture", name=name, type="2d", file=filename)
         ET.SubElement(
             self.asset, "material", name=name, texture=name, specular=".08", shininess=".1"

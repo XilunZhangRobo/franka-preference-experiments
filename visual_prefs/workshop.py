@@ -3,7 +3,9 @@
 from math import cos, pi, sin
 from random import Random
 
+from . import gift_props
 from .episode import Case, Motion
+from .prop_mesh import ring, surface
 
 
 def _body(s, name, x, y):
@@ -25,13 +27,6 @@ def _move(s, item, x, y, height=0, actor="robot"):
     return Motion(actor, item, (x, y, s.table_z + height))
 
 
-def _lid(s, body, w, d, color):
-    _block(s, body, (w, d, 0.006), color)
-    _block(s, body, (0.032, 0.019, 0.0015), "#f8f5dd", x=w * 0.2, y=-d * 0.18)
-    for y in (0, 0.005):
-        _block(s, body, (0.020, 0.0014, 0.0008), "#495057", x=w * 0.2, y=-d * 0.18 + y, z=0.0075)
-
-
 def _gift(s, phase, seed):
     s.person(x=0, y=0.44)
     rng = Random(seed)
@@ -39,14 +34,8 @@ def _gift(s, phase, seed):
     delta = rng.uniform(-0.012, 0.012)
     if phase == "teach":
         card = _body(s, "card", delta, 0.09)
-        _block(s, card, (0.145, 0.092, 0.004), "#e4bca1")
-        _block(s, card, (0.136, 0.084, 0.001), "#fff0d6", z=0.004)
-        s.rod(card, (-0.025, -0.03, 0.006), (0.018, 0.014, 0.006), 0.002, "#467754")
         f = _body(s, "flower", mirror * 0.16, -0.065)
-        for i in range(7):
-            a = 2 * pi * i / 7
-            s.ell(f, (0.013 * cos(a), 0.013 * sin(a), 0.004), (0.011, 0.011, 0.0035), "#cf5680")
-        s.cyl(f, (0, 0, 0.007), 0.008, 0.005, "#edb944")
+        gift_props.card_and_flower(s, card, f)
         above_card = (delta + 0.018, 0.104, s.table_z + 0.085)
         return Case(
             "Help prepare the handmade card.",
@@ -67,17 +56,14 @@ def _gift(s, phase, seed):
         )
     if phase == "transfer":
         box = _body(s, "box", delta, 0.075)
-        _tray(s, box, 0.12, 0.095, 0.035, "#9c6a49")
+        gift_props.container(s, box)
         lid = s.prop("lid", (delta, 0.075, s.table_z + 0.035))
         # Start the lidded box closed so staging visibly opens it.
-        s.box(lid, (0, 0, 0.003), (0.124, 0.099, 0.006), "#987250")
-        _block(s, lid, (0.039, 0.024, 0.001), "#fff4d8", x=0.023, z=0.006)
+        gift_props.gift_lid(s, lid)
         tissue = _body(s, "tissue", mirror * 0.156, -0.077)
-        for i, shade in enumerate(("#dbaec4", "#f4d5e5", "#e8c2d7")):
-            _block(s, tissue, (0.09 - i * 0.007, 0.066, 0.0015), shade, x=i * 0.003, z=i * 0.0015)
+        gift_props.tissue(s, tissue)
         gift = _body(s, "gift", -mirror * 0.146, -0.075)
-        _block(s, gift, (0.055, 0.043, 0.022), "#438c90")
-        _block(s, gift, (0.008, 0.043, 0.0015), "#ebc956", z=0.022)
+        gift_props.parcel(s, gift)
         open_box = _move(s, "lid", 0.045 * mirror, -0.128)
         stage = [
             open_box,
@@ -107,12 +93,11 @@ def _gift(s, phase, seed):
     for i, x in enumerate((-0.14, 0.14)):
         x += delta
         box = _body(s, f"lunchbox{i}", x, 0.075)
-        _tray(s, box, 0.094, 0.076, 0.029, "#6e9daa")
+        gift_props.container(s, box, lunch=True)
         food = _body(s, f"portion{i}", x, -0.09)
-        for k, c in enumerate(("#c58c56", "#78925e", "#e9b982")):
-            _block(s, food, (0.057, 0.043, 0.006), c, z=0.006 * k)
+        gift_props.sandwich(s, food)
         lid = _body(s, f"cover{i}", x * 0.45, -0.14)
-        _lid(s, lid, 0.097, 0.079, "#598895")
+        gift_props.lunch_lid(s, lid, i)
         pack.extend(
             [_move(s, f"portion{i}", x, 0.075, 0.004), _move(s, f"cover{i}", x, 0.075, 0.029)]
         )
@@ -175,12 +160,43 @@ def _order(s, phase, seed):
         )
     if phase == "transfer":
         pot = _body(s, "pot", mirror * 0.15, -0.095)
-        s.cyl(pot, (0, 0, 0.023), 0.027, 0.046, "#bc7653")
-        s.cyl(pot, (0, 0, 0.048), 0.031, 0.008, "#d38e65")
-        s.cyl(pot, (0, 0, 0.052), 0.024, 0.002, "#594338")
+
+        # Revolve the outer terracotta wall and return down to the drainage hole.
+        profile = [
+            (0.020, 0),
+            (0.030, 0.044),
+            (0.033, 0.044),
+            (0.033, 0.053),
+            (0.028, 0.053),
+            (0.017, 0.004),
+            (0.003, 0.004),
+            (0.003, 0),
+        ]
+        ring(
+            s,
+            pot,
+            "terracotta",
+            (0, 0, 0),
+            [(r, h, 0) for r, h in profile],
+            "#bd795a",
+            finish="matte",
+        )
+        s.grasp("pot", (0, 0, 0.030))
         scoop = _body(s, "scoop", 0, -0.095)
-        s.rod(scoop, (0, -0.036, 0.006), (0, 0.014, 0.006), 0.005, "#926b45")
-        s.ell(scoop, (0, 0.025, 0.006), (0.017, 0.023, 0.006), "#a7b9ba")
+        s.rod(scoop, (0, -0.039, 0.008), (0, -0.008, 0.009), 0.006, "#976d48")
+        s.rod(scoop, (0, -0.009, 0.009), (0, 0.012, 0.005), 0.003, "#929e9d")
+        sections = []
+        for y, width, floor, curl in [
+            (0.005, 0.004, 0.005, 0.003),
+            (0.012, 0.015, 0.002, 0.010),
+            (0.031, 0.018, 0.001, 0.010),
+            (0.042, 0.012, 0.001, 0.004),
+            (0.050, 0.001, 0.001, 0.0005),
+        ]:
+            face = [(width * t / 4, y, floor + curl * (t / 4) ** 2) for t in range(-4, 5)]
+            sections.append(face + [(x, y, z - 0.001) for x, y, z in reversed(face)])
+        surface(s, scoop, "potting_blade", (0, 0, 0), sections, "#acb9b8", finish="steel")
+        s.grasp("scoop", (0, -0.020, 0.008))
         tag = _body(s, "tag", -mirror * 0.15, -0.095)
         _block(s, tag, (0.007, 0.060, 0.005), "#dfc494")
         _block(s, tag, (0.034, 0.024, 0.005), "#f9e8bf", y=0.022, z=0.005)

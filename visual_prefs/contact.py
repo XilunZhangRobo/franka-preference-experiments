@@ -1,6 +1,6 @@
 """Dynamic contact QA for the kinematically rendered paused-work stimulus.
 
-Reuses the builder's primitives and Playback.move transport profile. A compliant
+Reuses the builder's collision envelopes and Playback.move transport profile. A compliant
 weld prescribes the mat pose, not the individual cargo poses. It is disabled
 for settling. This companion model does not measure video forces or validate
 grasp closure, human strength, or Panda link collision clearance.
@@ -97,7 +97,12 @@ def _assemble(seed, phase, item, reverse):
     for key, prop in scene.props.items():
         if key != item:
             fixed = ET.SubElement(world, "body", pos=prop.get("pos"))
-            for geom in prop.findall("geom"):
+            if key in scene.mat_parts:
+                other = scene.mat_parts[key]
+                geoms = [other.base, *other.attached, *(g for group in other.loose for g in group)]
+            else:
+                geoms = prop.findall("geom")
+            for geom in geoms:
                 fixed.append(_collider(geom))
     mat = ET.SubElement(world, "body", name="mat", pos=fmt(start))
     ET.SubElement(mat, "freejoint")
@@ -105,7 +110,7 @@ def _assemble(seed, phase, item, reverse):
     mat.append(_collider(parts.base, "base"))
     half_size = _arr(parts.base, "size")[:2]
     groups = parts.loose
-    for geom in parts.clip:
+    for geom in parts.attached:
         mat.append(_collider(geom))
     for i, group in enumerate(groups):
         center = _arr(group[0], "pos")

@@ -254,7 +254,9 @@ class Cycles:
             if m.geom_group[i] == 3:
                 continue
             matid = m.geom_matid[i]
-            color = m.mat_rgba[matid] if matid >= 0 else m.geom_rgba[i]
+            color = m.geom_rgba[i]
+            if matid >= 0 and np.array_equal(color, (0.5, 0.5, 0.5, 1.0)):
+                color = m.mat_rgba[matid]
             if color[3] <= 0:
                 continue
             name = m.mat(matid).name if matid >= 0 else "surface"
@@ -264,6 +266,11 @@ class Cycles:
                 tex = texture_paths.get(material.get("texture")) if material is not None else None
                 metal = 0.45 if name in ("metal", "silver") else 0.0
                 rough = 0.34 if matid >= 0 and name != "grain" else 0.58
+                if matid >= 0:
+                    if m.mat_metallic[matid] >= 0:
+                        metal = float(m.mat_metallic[matid])
+                    if m.mat_roughness[matid] >= 0:
+                        rough = float(m.mat_roughness[matid])
                 mats[k] = principled(name, color, rough, metal, tex, wood=name == "grain")
             obj = geometry(m, i)
             obj.name = f"{i:03d} {m.body(m.geom_bodyid[i]).name} {obj.name}"
@@ -371,8 +378,12 @@ class Cycles:
             if v[2] >= -0.01:
                 continue
             expected = np.array((width / 2 - focal * v[0] / v[2], height / 2 - focal * v[1] / v[2]))
+            if not (0 <= expected[0] < width and 0 <= expected[1] < height):
+                continue
             uv = world_to_camera_view(self.scene, self.camera, Vector(d.geom_xpos[i]))
             errors.append(np.linalg.norm(np.array((width * uv.x, height * uv.y)) - expected))
+        if not errors:
+            raise ValueError("No geom centers project onto the image for a camera check")
         error = float(max(errors))
         if error > 0.02:
             raise ValueError(f"Camera projection drift {error} pixels")
@@ -390,6 +401,11 @@ def main():
     p.add_argument("--end-frame", type=int, help="Inclusive end of contiguous MP4 sequence")
     p.add_argument("--fps", type=int, default=18)
     p.add_argument("--camera", choices=("agent", "wide"), default="agent")
+    p.add_argument(
+        "--detail-at-prop",
+        metavar="ID",
+        help="Place a separate inspection camera at this prop's starting position",
+    )
     p.add_argument("--samples", type=int, default=32)
     p.add_argument("--threads", type=int, default=min(12, os.cpu_count() or 1))
     p.add_argument("--size", nargs=2, type=int, default=(960, 720))
@@ -413,6 +429,13 @@ def main():
     source, case = scene_for(
         args.family, args.phase, args.seed + 103 * PHASES.index(args.phase), args.profile
     )
+    if args.detail_at_prop:
+        if args.verify_state:
+            p.error("Use the original camera for source verification")
+        if args.detail_at_prop not in source.props:
+            p.error(f"Unknown inspection prop {args.detail_at_prop!r}")
+        args.camera = "inspection"
+        source.inspection_camera(args.detail_at_prop)
     player = Playback(source, args.fps)
     if args.phase == "teach":
         case, visible, words = correction(case, source, args.feedback)

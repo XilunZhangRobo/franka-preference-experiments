@@ -4,6 +4,7 @@ import math
 import random
 
 from .episode import Case, Motion
+from .prop_mesh import rounded_outline, rounded_solid, surface
 
 
 def _tray(s, body, x, y, z, width, depth, wall, color):
@@ -49,11 +50,26 @@ def _flashlight(s, origin):
 
 def _case(s, origin):
     b = s.prop("pen_case", origin)
-    s.box(b, (0, 0, 0.012), (0.105, 0.044, 0.023), "#413c52")
-    s.box(b, (0, 0, 0.024), (0.101, 0.042, 0.003), "#846174")
-    for edge in (-1, 1):
-        s.box(b, (edge * 0.036, 0, 0.026), (0.005, 0.043, 0.002), "#b99461")
-    s.box(b, (0, -0.023, 0.012), (0.016, 0.004, 0.009), "#d3ae68")
+    sections = [
+        rounded_outline(w, d, r, h)
+        for w, d, r, h in (
+            (0.092, 0.034, 0.012, 0),
+            (0.108, 0.046, 0.015, 0.008),
+            (0.104, 0.044, 0.014, 0.019),
+            (0.096, 0.029, 0.012, 0.027),
+            (0.085, 0.008, 0.003, 0.030),
+        )
+    ]
+    surface(s, b, "pen_pouch", (0, 0, 0), sections, "#87566e")
+    rounded_solid(s, b, "zip_tape", (0, 0, 0.030), 0.087, 0.007, 0.0015, 0.003, "#443548")
+    for i in range(25):
+        x = (i - 12) * 0.0032
+        s.rod(b, (x, -0.0016, 0.0317), (x + 0.0008, 0.0016, 0.0317), 0.00065, "#beab90")
+    s.ell(b, (0.036, 0, 0.032), (0.005, 0.003, 0.002), "#c5ab7b")
+    for side in (-1, 1):
+        s.rod(b, (0.036, 0, 0.033), (0.028, side * 0.002, 0.033), 0.0011, "#c5ab7b")
+        s.rod(b, (0.028, side * 0.002, 0.033), (0.022, 0, 0.033), 0.0011, "#c5ab7b")
+    s.grasp("pen_case", (0, 0, 0.014))
 
 
 def _rulers(s, origin):
@@ -127,12 +143,27 @@ def storage(s, phase, seed):
 
 def _bottle(s, name, origin, text, tint):
     b = s.prop(name, origin)
-    s.box(b, (0, 0, 0.047), (0.074, 0.047, 0.088), tint)
-    s.ell(b, (0, 0, 0.088), (0.036, 0.023, 0.019), tint)
-    s.cyl(b, (0, 0, 0.106), 0.012, 0.021, "#e4e7df")
-    s.box(b, (0.005, 0, 0.121), (0.047, 0.021, 0.016), "#45545a")
-    s.rod(b, (0.016, 0, 0.117), (0.014, 0, 0.103), 0.003, "#667374")
-    s.label(b, (0, -0.0245, 0.049), text, 0.070, 0.048)
+    sections = [
+        rounded_outline(w, d, r, h)
+        for w, d, r, h in (
+            (0.064, 0.040, 0.009, 0),
+            (0.074, 0.048, 0.010, 0.005),
+            (0.074, 0.048, 0.010, 0.064),
+            (0.069, 0.045, 0.010, 0.074),
+            (0.050, 0.034, 0.010, 0.083),
+            (0.027, 0.025, 0.009, 0.097),
+        )
+    ]
+    surface(s, b, "spray_bottle", (0, 0, 0), sections, tint, finish="enamel")
+    s.cyl(b, (0, 0, 0.100), 0.014, 0.010, "#ebebe2")
+    s.cyl(b, (0, 0, 0.109), 0.009, 0.009, "#536064")
+    rounded_solid(s, b, "pump_head", (0.008, 0, 0.112), 0.048, 0.019, 0.017, 0.006, "#46565c")
+    s.box(b, (0.032, 0, 0.121), (0.007, 0.018, 0.013), "#e1e4de")
+    s.rod(b, (0.036, 0, 0.121), (0.0365, 0, 0.121), 0.002, "#425359")
+    s.rod(b, (0.022, 0, 0.115), (0.024, 0, 0.104), 0.003, "#586c71")
+    s.rod(b, (0.024, 0, 0.104), (0.020, 0, 0.095), 0.003, "#586c71")
+    s.label(b, (0, -0.0242, 0.042), text.replace(" ", "\n"), 0.054, 0.039)
+    s.grasp(name, (0, 0, 0.049))
 
 
 def _wipe(s, actor, x, z):

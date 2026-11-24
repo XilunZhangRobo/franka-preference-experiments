@@ -4,7 +4,9 @@ import math
 import random
 import xml.etree.ElementTree as ET
 
+from . import kitchen_props
 from .episode import Case, Motion
+from .prop_mesh import rounded_solid, surface
 
 
 def _press(item, pos, actor="robot"):
@@ -18,9 +20,14 @@ def _lamp(s, item, x, overhead):
     switch = s.prop(item, pos)
     # An angled key face presents its printed legend to a standing operator.
     panel = ET.SubElement(switch, "body", pos="0 0 .026", euler="-.63 0 .52")
-    s.box(panel, (0, 0.003, 0), (0.102, 0.011, 0.046), "#41505b")
-    s.label(panel, (0, -0.003, 0), "CEILING" if overhead else "DESK", 0.095, 0.040)
-    s.box(switch, (0, 0, 0.006), (0.104, 0.056, 0.012), "#35444e")
+    # Bezel, sloped rocker and retaining screws share a compact weighted base.
+    s.box(panel, (0, 0.003, 0), (0.104, 0.012, 0.047), "#444d50")
+    s.box(panel, (0, -0.0025, 0), (0.090, 0.007, 0.039), "#757b77")
+    for x in (-0.048, 0.048):
+        s.ell(panel, (x, -0.0034, 0), (0.0022, 0.001, 0.0022), "#adb1ac")
+        s.box(panel, (x, -0.00425, 0), (0.0026, 0.00025, 0.00042), "#464c49")
+    s.label(panel, (0, -0.0063, 0), "CEILING" if overhead else "DESK", 0.087, 0.037)
+    rounded_solid(s, switch, "switch_foot", (0, 0, 0), 0.106, 0.058, 0.012, 0.007, "#35444e")
     s.grasp(item, (0, -0.008, 0.034))
     if overhead:
         # A linear pendant hangs from the room ceiling above human head height.
@@ -113,23 +120,11 @@ def lighting(s, phase, seed):
 def _vegetable(s, item, pos, broccoli, tender):
     b = s.prop(item, pos)
     if broccoli:
-        h = 0.011 if tender else 0.027
-        spread = 0.017 if tender else 0.011
-        s.cyl(b, (0, 0, h / 2), 0.008, h, "#81a554")
-        for i in range(7):
-            a = i * math.tau / 7
-            s.ell(
-                b,
-                (spread * math.cos(a), spread * math.sin(a), h),
-                (0.012, 0.012, h * 0.44),
-                "#497947",
-            )
+        kitchen_props.broccoli(s, b, tender)
+        s.grasp(item, (0, 0, 0.006 if tender else 0.0135))
     else:
-        for i in range(3):
-            dx = (i - 1) * 0.012
-            mid = 0.009 if tender else 0.002
-            s.rod(b, (dx, -0.033, 0.004), (dx + mid, -0.006, 0.006), 0.004, "#63864a")
-            s.rod(b, (dx + mid, -0.006, 0.006), (dx - mid * 0.4, 0.031, 0.004), 0.004, "#63864a")
+        kitchen_props.beans(s, b, tender)
+        s.grasp(item, (0, 0, 0.012))
 
 
 def texture(s, phase, seed):
@@ -138,7 +133,22 @@ def texture(s, phase, seed):
     s.person(x=0.015, y=0.44)
     sign = rng.choice((-1, 1))
     plate = (0, 0.145, z + 0.009)
-    s.cyl(s.world, (0, 0.145, z + 0.004), 0.065, 0.008, "#e6dfc9")
+    # Glazed side plate with a foot, shallow well and raised rim.
+    profile = (
+        (0.033, 0),
+        (0.036, 0.002),
+        (0.057, 0.0045),
+        (0.065, 0.011),
+        (0.064, 0.0125),
+        (0.059, 0.012),
+        (0.047, 0.0085),
+        (0.035, 0.008),
+    )
+    rings = [
+        [(r * math.cos(k * math.tau / 48), r * math.sin(k * math.tau / 48), h) for k in range(48)]
+        for r, h in profile
+    ]
+    surface(s, s.world, "ceramic_side_plate", (0, 0.145, z), rings, "#e6dfce", finish="enamel")
     # The other ingredients convey which dish the person is preparing.
     if phase == "exception":
         for i in range(8):
@@ -207,8 +217,20 @@ def completion(s, phase, seed):
     sign = rng.choice((-1, 1))
     speaker_pos = (0.14 * sign, -0.072, z)
     speaker = s.prop("speaker", speaker_pos)
-    s.box(speaker, (0, 0, 0.027), (0.055, 0.045, 0.054), "#4a5763")
+    rounded_solid(s, speaker, "speaker_housing", (0, 0, 0), 0.058, 0.046, 0.055, 0.007, "#4a5763")
     s.ell(speaker, (0, -0.023, 0.026), (0.016, 0.003, 0.017), "#253540")
+    # Slotted grille cut line and raised tactile controls on the enclosure.
+    for i in range(-4, 5):
+        width = 0.030 * math.sqrt(1 - (i / 5) ** 2)
+        s.rod(
+            speaker,
+            (-width / 2, -0.0255, 0.026 + i * 0.0031),
+            (width / 2, -0.0255, 0.026 + i * 0.0031),
+            0.00072,
+            "#637078",
+        )
+    for x in (-0.009, 0.009):
+        s.cyl(speaker, (x, 0.001, 0.0557), 0.0033, 0.0015, "#92998f")
     s.sound("speaker", "Work is complete.")
     speak = Motion("robot", "speaker", speaker_pos, "say")
     pen_pos = (-0.015 * sign, 0.111, z + 0.004)
