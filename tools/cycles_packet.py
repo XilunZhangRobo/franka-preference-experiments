@@ -12,8 +12,9 @@ import bpy
 import mujoco
 import numpy as np
 from PIL import Image
-from render_cycles import ROOT, Cycles
+from render_cycles import ROOT
 
+from visual_prefs.cycles import Cycles
 from visual_prefs.playback import Playback
 from visual_prefs.replay_identity import (
     StateDigest,
@@ -202,6 +203,7 @@ def convert(args):
                 for p in (
                     Path(__file__),
                     ROOT / "tools/render_cycles.py",
+                    ROOT / "visual_prefs/cycles.py",
                     ROOT / "visual_prefs/playback.py",
                     ROOT / "visual_prefs/avatar.py",
                     ROOT / "visual_prefs/replay_identity.py",

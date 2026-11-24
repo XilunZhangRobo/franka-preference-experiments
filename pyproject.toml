@@ -15,10 +15,12 @@ franka-prefs-vlm = "visual_prefs.http_adapter:main"
 franka-prefs-codex = "visual_prefs.codex_adapter:main"
 
 [tool.setuptools]
-packages = ["visual_prefs"]
+packages = ["visual_prefs", "visual_prefs.blender_assets"]
+package-dir = {"visual_prefs.blender_assets" = "assets/human"}
 
 [tool.setuptools.package-data]
 visual_prefs = ["data/human/*", "data/materials/*"]
+"visual_prefs.blender_assets" = ["avatar.blend", "LICENSE.md"]
 
 [dependency-groups]
 dev = ["ruff==0.17.6"]

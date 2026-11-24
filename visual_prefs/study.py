@@ -11,13 +11,20 @@ from pathlib import Path
 from random import Random
 
 import imageio_ffmpeg
-import mujoco
-from PIL import Image
 
 from . import contextual, handover, household, paused, workshop
 from .assets import REVISION, asset_dir
 from .episode import Motion
 from .playback import Playback
+from .rendering import (
+    CLASSIC,
+    CYCLES,
+    DEFAULT_SAMPLES,
+    DEVICES,
+    RenderSettings,
+    cycles_provenance,
+    frame_reader,
+)
 from .replay_identity import VERSION, StateDigest, scene_digest
 from .scene import Scene
 
@@ -118,6 +125,9 @@ def render(
     visible=False,
     utterance="",
     teach=False,
+    renderer=CLASSIC,
+    samples=DEFAULT_SAMPLES,
+    device="CPU",
 ):
     folder.mkdir()
     width, height = size
@@ -125,8 +135,6 @@ def render(
     if profile:
         profile.configure(scene, width, height)
     playback = Playback(scene, fps)
-    options = mujoco.MjvOption()
-    options.geomgroup[3] = 0
     events, trace, frames = [], [], []
     state_hash = StateDigest()
     steps = (
@@ -134,7 +142,8 @@ def render(
         if choice is not None
         else playback.pause(0.01)
     )
-    with mujoco.Renderer(playback.model, height=height, width=width) as renderer:
+    settings = RenderSettings(camera, size, samples, device)
+    with frame_reader(renderer, scene, playback, settings) as read_rgb:
         writer = None
         if choice is not None:
             writer = imageio_ffmpeg.write_frames(
@@ -151,8 +160,7 @@ def render(
         try:
             for sample in steps:
                 state_hash.update(playback.data, playback.model)
-                renderer.update_scene(playback.data, camera=camera, scene_option=options)
-                img = Image.fromarray(renderer.render())
+                img = read_rgb()
                 if profile:
                     img = profile.warp(img)
                 if writer:
@@ -193,7 +201,7 @@ def revision():
         root = Path(__file__).resolve().parents[1]
         return {
             "commit": subprocess.check_output(
-                ["git", "rev-parse", "HEAD"], cwd=root, text=True
+                ["git", "rev-parse", "HEAD"], cwd=root, text=True, stderr=subprocess.DEVNULL
             ).strip(),
             "dirty": bool(subprocess.check_output(["git", "status", "--porcelain"], cwd=root)),
         }
@@ -231,7 +239,12 @@ def record(
     accepted=False,
     transfer_seed=None,
     order_seed=None,
+    renderer=CLASSIC,
+    samples=DEFAULT_SAMPLES,
+    device="CPU",
 ):
+    if renderer not in (CLASSIC, CYCLES) or samples < 1 or device not in DEVICES:
+        raise ValueError("Invalid RGB backend, sample count or render device.")
     if fps < 4 or any(v < 64 or v % 2 for v in size):
         raise ValueError("Use at least 4 fps and even image dimensions of 64 pixels or larger.")
     if calibration and camera != "agent":
@@ -246,6 +259,9 @@ def record(
         public.mkdir()
         private.mkdir()
         keys = {}
+        # A film can take minutes; identify the checkout used at startup.
+        run_revision = revision()
+        rendered_with = cycles_provenance(samples, device) if renderer == CYCLES else None
         for i, phase in enumerate(PHASES):
             # Independent scene layout per phase. Adjacent run seeds reverse clipped distance.
             phase_seed = seed + 103 * i
@@ -270,6 +286,9 @@ def record(
                 visible=visible,
                 utterance=utterance,
                 teach=teaching,
+                renderer=renderer,
+                samples=samples,
+                device=device,
             )
             packet["options"] = {letter: case.options[name] for letter, name in order.items()}
             write_json(public / phase / "packet.json", packet)
@@ -289,18 +308,20 @@ def record(
             "profile": profile,
             "feedback": feedback,
             "accepted_teaching_action": accepted,
-            "git": revision(),
+            "git": run_revision,
             "camera": camera,
             "calibration": read_json(Path(calibration)) if calibration else None,
             "size": size,
             "fps": fps,
             "menagerie_reference": REVISION,
             "asset_sha256": asset_hashes(),
-            "renderer": "mujoco-classic",
+            "renderer": renderer,
             "versions": {
                 p: metadata.version(p) for p in ("mujoco", "numpy", "Pillow", "imageio-ffmpeg")
             },
         }
+        if rendered_with is not None:
+            provenance["renderer_provenance"] = rendered_with
         write_json(private / "run.json", provenance | {"phases": keys})
         files = {
             p.relative_to(public).as_posix(): sha256(p.read_bytes()).hexdigest()
@@ -310,10 +331,14 @@ def record(
         write_json(private / "sensor-sha256.json", files)
 
 
-def execute(bundle, phase, letter, output):
+def execute(bundle, phase, letter, output, *, device=None):
     """Render an actual selected primitive in a reconstructed probe, with its measured endpoint."""
     config = read_json(Path(bundle) / "examiner/run.json")
     phase_info = config["phases"][phase]
+    backend = config.get("renderer", CLASSIC)
+    settings = config.get("renderer_provenance", {})
+    render_device = device or settings.get("device", "CPU")
+    samples = settings.get("samples", DEFAULT_SAMPLES)
     scene, case = scene_for(config["family"], phase, phase_info["layout_seed"], config["profile"])
     with new_directory(output) as dest:
         cal = None
@@ -331,7 +356,13 @@ def execute(bundle, phase, letter, output):
             camera=config["camera"],
             profile=cal,
             choice=phase_info["choices"][letter],
+            renderer=backend,
+            samples=samples,
+            device=render_device,
         )
+        measured["renderer"] = backend
+        if backend == CYCLES:
+            measured["renderer_provenance"] = cycles_provenance(samples, render_device)
         write_json(dest / "view/packet.json", packet)
         write_json(
             dest / "measurement.json",

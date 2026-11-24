@@ -9,6 +9,13 @@ REVISION = "eea4c7431b63da8278b0ff31638e0b0e941cec0e"
 REMOTE = "https://github.com/google-deepmind/mujoco_menagerie.git"
 
 
+def avatar_blend():
+    """Locate the packed Blender source in a wheel or the source checkout."""
+    package = Path(__file__).resolve().parent
+    installed = package / "blender_assets/avatar.blend"
+    return installed if installed.is_file() else package.parent / "assets/human/avatar.blend"
+
+
 def asset_dir() -> Path:
     override = os.getenv("FRANKA_PANDA_DIR")
     if override:

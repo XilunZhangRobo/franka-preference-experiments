@@ -2,14 +2,16 @@
 
 import argparse
 import os
+import sys
 from pathlib import Path
 
 
-def main():
+def main(argv=None):
     # Enable headless rendering on Linux when the caller has no display.
     if not os.getenv("DISPLAY") and os.name == "posix":
         os.environ.setdefault("MUJOCO_GL", "egl")
-    from .study import BUILDERS, execute, record
+    from .rendering import CLASSIC, CYCLES, DEFAULT_SAMPLES, DEVICES, use_blender_runtime
+    from .study import BUILDERS, execute, read_json, record
 
     parser = argparse.ArgumentParser(prog="franka-prefs")
     subs = parser.add_subparsers(dest="command", required=True)
@@ -40,6 +42,16 @@ def main():
     rec.add_argument("--calibration", type=Path)
     rec.add_argument("--size", nargs=2, type=int, default=(960, 720), metavar=("WIDTH", "HEIGHT"))
     rec.add_argument("--fps", type=int, default=12)
+    rec.add_argument(
+        "--renderer",
+        choices=("cycles", "mujoco"),
+        default="cycles",
+        help="RGB renderer for every video frame and learner image (default: cycles)",
+    )
+    rec.add_argument(
+        "--samples", type=int, help=f"Cycles samples per pixel (default: {DEFAULT_SAMPLES})"
+    )
+    rec.add_argument("--device", choices=DEVICES, help="Cycles device (default: CPU)")
     ev = subs.add_parser(
         "evaluate", help="Detect, audit, write a text memory, and measure two fresh choices"
     )
@@ -62,6 +74,9 @@ def main():
     act.add_argument("phase", choices=["transfer", "exception"])
     act.add_argument("letter", choices=["A", "B"])
     act.add_argument("--out", type=Path, required=True)
+    act.add_argument(
+        "--device", choices=DEVICES, help="Override the recorded Cycles device for this replay"
+    )
     qa = subs.add_parser("audit", help="Run kinematic playback and paused-work physics checks")
     qa.add_argument("--seeds", type=int, nargs="+", default=[0, 1])
     qa.add_argument("--family", choices=sorted(BUILDERS), action="append")
@@ -71,7 +86,8 @@ def main():
     )
     summary.add_argument("manifest", type=Path)
     summary.add_argument("--out", type=Path, required=True)
-    args = parser.parse_args()
+    arguments = sys.argv[1:] if argv is None else argv
+    args = parser.parse_args(arguments)
     if args.command == "assets":
         from .assets import fetch
 
@@ -79,6 +95,12 @@ def main():
     elif args.command == "list":
         print("\n".join(BUILDERS))
     elif args.command == "record":
+        if args.samples is not None and args.samples < 1:
+            parser.error("--samples must be positive")
+        if args.renderer == "cycles":
+            use_blender_runtime(arguments)
+        elif args.samples is not None or args.device is not None:
+            parser.error("--samples and --device apply to Cycles recordings")
         record(
             args.family,
             args.out,
@@ -92,6 +114,9 @@ def main():
             accepted=args.accepted,
             transfer_seed=args.transfer_seed,
             order_seed=args.order_seed,
+            renderer=CYCLES if args.renderer == "cycles" else CLASSIC,
+            samples=args.samples or DEFAULT_SAMPLES,
+            device=args.device or "CPU",
         )
     elif args.command == "evaluate":
         from .protocol import evaluate
@@ -105,7 +130,12 @@ def main():
             answer=args.answer,
         )
     elif args.command == "execute":
-        execute(args.bundle, args.phase, args.letter, args.out)
+        config = read_json(args.bundle / "examiner/run.json")
+        if config.get("renderer", CLASSIC) == CYCLES:
+            use_blender_runtime(arguments)
+        elif args.device:
+            parser.error("--device applies to Cycles recordings")
+        execute(args.bundle, args.phase, args.letter, args.out, device=args.device)
     elif args.command == "audit":
         from .quality import audit
 
