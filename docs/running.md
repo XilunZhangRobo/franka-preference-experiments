@@ -2,6 +2,8 @@
 
 Run these commands in the activated environment from the README. Each output path must be new so earlier evidence survives a rerun.
 
+The CLI records in Cycles by default. For fast native runs, pass `--renderer mujoco`. Keep the renderer, resolution and sampling settings matched across experimental conditions. [Recording settings](cycles.md)
+
 ## Record matched stimuli
 
 ```bash

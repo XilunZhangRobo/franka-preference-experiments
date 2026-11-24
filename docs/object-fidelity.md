@@ -39,7 +39,7 @@ From the repository root, use the locked simulation environment and installed Pa
 export MUJOCO_GL=egl OPENBLAS_NUM_THREADS=1
 python -m unittest discover -s tests -v
 franka-prefs audit --seeds 0 1 --out runs/props-qa
-franka-prefs record paused-work --seed 0 --feedback retry --fps 18 --out runs/props-record
+franka-prefs record paused-work --renderer mujoco --seed 0 --feedback retry --fps 18 --out runs/props-record
 python tools/inspect_props.py --seed 0 --out runs/props-gallery
 python -m visual_prefs.prop_clearance --seeds 0 1 2 5 --fps 24 --control
 ```

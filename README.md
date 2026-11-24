@@ -14,7 +14,7 @@ The `mujoco` branch adds ten executable teaching, transfer and scope scenarios. 
 
 ![Revised work mat with a spring-steel clip holding its project ticket, an open bearing, a washer and threaded nuts](docs/media/workshop-props.jpg)
 
-[Compare the original and revised agent views](docs/media/workshop-agent-comparison.jpg) · [Watch the current agent-camera correction](docs/media/workshop-agent-correction.mp4) · [View the manipulated objects across all ten scenarios](docs/media/prop-gallery.jpg)
+[Watch the Cycles recording from the agent camera](docs/media/workshop-cycles-agent.mp4) · [Inspect the same camera view at 1920 × 1440](docs/media/workshop-cycles-agent-2x.jpg) · [View the manipulated objects across all ten scenarios](docs/media/prop-gallery.jpg)
 
 On Linux with EGL or a Mesa EGL implementation, from the repository root:
 
@@ -26,7 +26,7 @@ franka-prefs assets
 franka-prefs record paused-work --out runs/demo --seed 0 --feedback retry --fps 18
 ```
 
-Open `runs/demo/sensor/teach/view.mp4` to see the interaction. Each probe starts with a fresh image. `sensor/` contains camera observations, the task and the speech transcript. `examiner/` contains the answer key, trace, asset fingerprints and final poses. The renderer uses an articulated Menagerie Panda, a Blender-prepared Rocketbox skin with an 80-bone rig, and a scanned wood texture.
+The recorder uses MuJoCo for motion and Blender Cycles for the agent view, including the teaching video and the images Astra receives. For a fast OpenGL recording, add `--renderer mujoco`. Open `runs/demo/sensor/teach/view.mp4` to see the interaction. Each probe starts with a fresh image. `sensor/` contains camera observations, the task and the speech transcript. `examiner/` contains the answer key, trace, asset fingerprints and final poses. The renderer uses an articulated Menagerie Panda, a Blender-prepared Rocketbox skin with an 80-bone rig, and a scanned wood texture.
 
 | Read or run | Purpose |
 | --- | --- |
@@ -34,6 +34,6 @@ Open `runs/demo/sensor/teach/view.mp4` to see the interaction. Each probe starts
 | [Run a visual experiment](docs/running.md) | Model adapter, cue-based review, written notes, counterfactuals, physical replay and scoring |
 | [Manipulated objects and their audit](docs/object-fidelity.md) | Which geometry changed, what a blinded reader could see, and where clearance was measured |
 | [Simulation audit and blinded pilot](docs/development-audit.md) | Failures the reviewers found, measured repairs and what a correct choice establishes |
-| [Blender Cycles replay](docs/cycles.md) | Render the same simulated trajectory with area lights and textured materials |
+| [Cycles recording and replay](docs/cycles.md) | Render the agent camera, inspect individual frames and verify a replay against MuJoCo |
 | [Experiment lifecycle](docs/experiment-lifecycle.md) | How to preregister, audit, report and compare with hardware |
 | [Editable Blender character](assets/human/README.md) | Source, licensing and rebuild instructions |

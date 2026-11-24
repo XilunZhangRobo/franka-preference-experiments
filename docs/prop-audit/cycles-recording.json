@@ -1,0 +1,75 @@
+{
+  "command": "franka-prefs record paused-work --seed 0 --feedback retry --fps 12 --out runs/workshop-cycles-film",
+  "reference": "same command with --renderer mujoco and --out runs/clean-cycles-native-reference",
+  "run_revision_as_reported": {
+    "commit": "7dc9f82368ef2e6d221ad07098e99548a4780277",
+    "dirty": true
+  },
+  "asset_sha256": {
+    "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+    "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+  },
+  "renderer": {
+    "name": "Blender Cycles",
+    "blender": "4.3.0",
+    "samples": 64,
+    "device": "CPU",
+    "denoising": true,
+    "color_transform": "AgX",
+    "sample_policy": "every simulation frame; packet and film share RGB",
+    "source_blend_sha256": "3d6a91a725a0abfad4fb1f556df510790450f21f8feae16223f6759653dae907",
+    "renderer_code_sha256": "d404383e9247e94323b2ee1721fcf0348ea7b7d3ad83e762ea2d690673205671"
+  },
+  "comparison": "All examiner phase records and public packet JSON matched the native recording exactly. Both manifests matched their sensor files.",
+  "phases": {
+    "teach": {
+      "frames": 94,
+      "packet_samples": 32,
+      "state_sha256": "33cfac1cd6e4a29dd56d3294e93726c295a5e9ff49c99481cd4a2fa8bc1716c5",
+      "scene_sha256": "6730a111f6c22136e4357cb70429758a3e3d3f12a703ee5b1f7be4ca1d4e51dd"
+    },
+    "transfer": {
+      "frames": 1,
+      "packet_samples": 1,
+      "state_sha256": "c6b152b19fd28e62f98b1e348e1a4b46f52880860d0804fa289fa7fd0c2f3b87",
+      "scene_sha256": "03b82188d5cd20dda8a634767f24b2a061e926ccc7340f2aa0b380dc91a85345"
+    },
+    "exception": {
+      "frames": 1,
+      "packet_samples": 1,
+      "state_sha256": "8ab50269067ad3297332c33835bd36784c9afc03875cf9e02fa19227e2e29ba2",
+      "scene_sha256": "45c12607d322eb7b30bf0035497ddcd380ab3e2abdd8ef92eeb5d39ecab4eeac"
+    }
+  },
+  "video": {
+    "size": [
+      960,
+      720
+    ],
+    "fps": 12.0,
+    "decoded_frames": 94,
+    "sha256": "5b846f2ab9b7a345858d88a2f5f7966174f08bce08b2c45fb1f7ecdd6333dfb9"
+  },
+  "video_vs_sampled_jpegs": {
+    "metric": "mean absolute difference per 8-bit RGB channel, across every sampled teaching frame",
+    "cycles_max": 1.838,
+    "cycles_mean": 1.81,
+    "native_min": 40.734
+  },
+  "independent_replay": {
+    "frame": 66,
+    "seconds": 5.5,
+    "rgb_mae_vs_packet_jpeg": 1.197,
+    "camera_projection_disagreement_px": 0.0003095906741960881
+  },
+  "still": {
+    "size": [
+      1920,
+      1440
+    ],
+    "frame": 0,
+    "camera": "agent",
+    "camera_projection_disagreement_px": 0.0005754377861045337,
+    "sha256": "3592033cf42eb19d9bc99a53d5b8555dd33213cd056253ca2baa7a410ba8e905"
+  }
+}
