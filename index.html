@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Robot-eye recordings and benchmarks for learning human preferences from silent interaction in Isaac Sim.">
+  <title>Learning from interaction · Franka preference experiments</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#recordings">Skip to recordings</a>
+  <header class="site-header page">
+    <a class="brand" href="#top" aria-label="Franka preference experiments, top">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19h14M9 18v-5l4-6m0 0 4 3v3m-4-6a2 2 0 1 0-4-1 2 2 0 0 0 4 1Z" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 14l2-1 2 1" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>Franka Preference Experiments</span>
+    </a>
+    <nav aria-label="Sections"><a href="#recordings">Recordings</a><a href="#benchmarks">Benchmarks</a></nav>
+  </header>
+  <main class="page" id="top">
+    <section class="intro" aria-labelledby="title">
+      <h1 id="title">Learning from <em>interaction.</em></h1>
+      <p>Can a robot pick up a personal preference from a silent gesture, finish the job, and apply what it saw to a different task?</p>
+    </section>
+
+    <section id="recordings" aria-labelledby="recordings-title">
+      <div class="section-head"><h2 id="recordings-title">Robot-eye recordings</h2><span>Franka Panda · Isaac Sim</span></div>
+      <div class="recording-grid">
+        <article class="featured" aria-labelledby="video-title">
+          <video id="player" controls playsinline preload="metadata" poster="astra-mug.jpg" src="astra-mug.mp4" aria-label="Astra Medium mug-handle benchmark"></video>
+          <div class="video-meta">
+            <div><p class="kicker" id="video-kind">Astra Medium · Matched comparison</p><h3 id="video-title">Mug-handle preference</h3></div>
+            <a class="download" id="video-download" href="astra-mug.mp4" download>Download MP4</a>
+          </div>
+          <p id="video-description">Matt silently turns a mug toward his right hand. Astra receives the camera footage and the prompt at 0:13, finishes breakfast service, and applies the saved note to a different cup.</p>
+          <p class="prompt" id="video-prompt">“Watch how I interact and see if you can infer my preference. Then let’s try again.”</p>
+        </article>
+        <aside class="playlist" aria-label="Choose a recording">
+          <h3>Agent runs</h3>
+          <div id="agent-list" class="choices"></div>
+          <h3 class="earlier">Early simulator previews</h3>
+          <div id="preview-list" class="choices"></div>
+          <noscript><p><a href="keepsake-agent.mp4">Keepsake agent run</a></p><p><a href="prompt-edit.mp4">Prompt edit</a> · <a href="simulator-preview.mp4">Simulator preview</a></p></noscript>
+        </aside>
+      </div>
+    </section>
+
+    <section id="results" class="results" aria-labelledby="results-title">
+      <div class="section-head"><h2 id="results-title">What Astra did</h2><span>One right-hand cue · One matched pair</span></div>
+      <p class="section-copy">Matt turned the first mug to +90° toward his right hand. After two unrelated placements, Astra matched that angle. A fresh agent received the saved note for a five-step transfer task with a different cup.</p>
+      <dl class="measurements">
+        <div><dt>Second mug</dt><dd>+90°</dd><p>After observing Matt</p></div>
+        <div><dt>Soup cup</dt><dd>+90°</dd><p>With the saved note</p></div>
+        <div><dt>Soup cup</dt><dd>0°</dd><p>In the matched no-note run</p></div>
+      </dl>
+      <p class="method">All three sequences finished. The agent chose the action order and handle angles. Isaac Sim executed the arm motion with inverse kinematics and a kinematic grasp proxy.</p>
+    </section>
+
+    <section id="benchmarks" aria-labelledby="benchmarks-title">
+      <div class="section-head"><h2 id="benchmarks-title">Benchmark library</h2><span>10 designs · 1 Astra pilot</span></div>
+      <p class="section-copy">Each design pairs a silent cue with a later decision, a similar-looking decoy, and a measurable pass condition.</p>
+      <div id="benchmark-list" class="benchmark-list"></div>
+    </section>
+  </main>
+  <footer class="site-footer page"><span>Franka Preference Experiments</span><span>Simulation research demos</span></footer>
+</body>
+</html>
