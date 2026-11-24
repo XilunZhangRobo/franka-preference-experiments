@@ -15,7 +15,7 @@
       <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19h14M9 18v-5l4-6m0 0 4 3v3m-4-6a2 2 0 1 0-4-1 2 2 0 0 0 4 1Z" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 14l2-1 2 1" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <span>Franka Preference Experiments</span>
     </a>
-    <nav aria-label="Sections"><a href="#recordings">Recordings</a><a href="#benchmarks">Benchmarks</a></nav>
+    <nav aria-label="Sections"><a href="#recordings">Recordings</a><a href="#suite-results">Results</a><a href="#benchmarks">Benchmarks</a></nav>
   </header>
   <main class="page" id="top">
     <section class="intro" aria-labelledby="title">
@@ -34,10 +34,13 @@
           </div>
           <p id="video-description">Matt silently turns a mug toward his right hand. Astra receives the camera footage and the prompt at 0:13, finishes breakfast service, and applies the saved note to a different cup.</p>
           <p class="prompt" id="video-prompt">“Watch how I interact and see if you can infer my preference. Then let’s try again.”</p>
+        <details id="video-note" hidden><summary>Agent’s saved preference</summary><div id="video-note-content"></div></details>
         </article>
         <aside class="playlist" aria-label="Choose a recording">
-          <h3>Agent runs</h3>
-          <div id="agent-list" class="choices"></div>
+          <h3>Astra Medium benchmarks</h3>
+          <div id="agent-list" class="choices benchmark-videos"></div>
+          <h3 class="earlier">Keepsake demonstration</h3>
+          <div id="demo-list" class="choices"></div>
           <h3 class="earlier">Early simulator previews</h3>
           <div id="preview-list" class="choices"></div>
           <noscript><p><a href="keepsake-agent.mp4">Keepsake agent run</a></p><p><a href="prompt-edit.mp4">Prompt edit</a> · <a href="simulator-preview.mp4">Simulator preview</a></p></noscript>
@@ -56,8 +59,17 @@
       <p class="method">All three sequences finished. The agent chose the action order and handle angles. Isaac Sim executed the arm motion with inverse kinematics and a kinematic grasp proxy.</p>
     </section>
 
+    
+    <section id="suite-results" class="results" aria-labelledby="suite-results-title">
+      <div class="section-head"><h2 id="suite-results-title">Astra Medium benchmark results</h2><span>One seeded episode per new case</span></div>
+      <p class="section-copy">Each run includes a multi-step task, a silent intervention, continued work, and a changed task with the saved note. The transfer controller starts in a fresh session. These nine runs use kinematic grasps and scripted avatar cues. The mug-handle pilot above supplies the matched no-note comparison.</p>
+      <dl id="suite-counts" class="measurements"></dl>
+      <div id="suite-outcomes" class="suite-outcomes"></div>
+      <p class="method"><a href="astra-suite-results.json" download>Download the nine run logs</a></p>
+    </section>
+
     <section id="benchmarks" aria-labelledby="benchmarks-title">
-      <div class="section-head"><h2 id="benchmarks-title">Benchmark library</h2><span>10 designs · 1 Astra pilot</span></div>
+      <div class="section-head"><h2 id="benchmarks-title">Benchmark library</h2><span>10 designs · 10 Astra recordings</span></div>
       <p class="section-copy">Each design pairs a silent cue with a later decision, a similar-looking decoy, and a measurable pass condition.</p>
       <div id="benchmark-list" class="benchmark-list"></div>
     </section>

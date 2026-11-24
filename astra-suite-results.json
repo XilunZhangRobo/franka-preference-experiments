@@ -1,0 +1,1927 @@
+[
+  {
+    "benchmark": 2,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Cold bottle: cork coaster. dry can: side spot",
+      "scope_tested": true
+    },
+    "executed_actions": [
+      {
+        "object": "target",
+        "destination": "cork coaster",
+        "center_xyz_m": [
+          0.61,
+          -0.005,
+          0.772
+        ],
+        "peak_speed_m_s": 0.23979216612194415,
+        "finish_s": 3.533333333333333
+      },
+      {
+        "object": "decoy",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.28,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23887072068516263,
+        "finish_s": 6.933333333333334
+      },
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 9.85
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 12.516666666666667
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 15.383333333333333
+      }
+    ],
+    "question": null,
+    "frames": 184,
+    "frame_rate": 12,
+    "id": "cold-drinks",
+    "title": "Cold drinks on coasters",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 42.166665,
+    "prompt_at_s": 11.67,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 14.083333333333334
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.966666666666665
+        },
+        {
+          "object": "target",
+          "destination": "cork coaster",
+          "center_xyz_m": [
+            0.61,
+            -0.005,
+            0.772
+          ],
+          "peak_speed_m_s": 0.23917658492920182,
+          "finish_s": 20.65
+        }
+      ],
+      "frames": 247,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set the plate and napkin, serve the iced glass, then finish the snack setting.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Reset the setting. Stage the chilled bottle and dry can for Matt, and finish clearing the used items."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "target",
+          "destination": "cork coaster"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "target",
+          "destination": "cork coaster"
+        },
+        {
+          "object": "decoy",
+          "destination": "side spot"
+        },
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        }
+      ]
+    },
+    "agent_note": "# Coasters for cold drinks\n\n## Observed\nYou reached toward the iced glass and slid a cork coaster underneath it.\n\n## Inferred preference\nYou seem to prefer a coaster under drinks that leave condensation.\n\n## Apply next time\nSet the chilled bottle on the cork coaster.\n"
+  },
+  {
+    "benchmark": 3,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Minimum tray–scrapbook footprint clearance: 8.8 cm",
+      "scope_tested": false
+    },
+    "executed_actions": [
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 2.6666666666666665
+      },
+      {
+        "object": "decoy",
+        "destination": "placemat station",
+        "center_xyz_m": [
+          0.61,
+          -0.23,
+          0.763
+        ],
+        "peak_speed_m_s": 0.2394013771693507,
+        "finish_s": 7.483333333333333
+      },
+      {
+        "object": "target",
+        "destination": "far side",
+        "center_xyz_m": [
+          0.53,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23999999999999996,
+        "finish_s": 16.016666666666666,
+        "keepout_gap_m": 0.088
+      },
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 18.933333333333334
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 21.8
+      }
+    ],
+    "question": null,
+    "frames": 261,
+    "frame_rate": 12,
+    "id": "keepsake-clearance",
+    "title": "Keepsakes out of the transport path",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 50.166665,
+    "prompt_at_s": 12.58,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "far side",
+          "center_xyz_m": [
+            0.61,
+            0.23,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23936170212765956,
+          "finish_s": 12.383333333333333
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 15.0
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 17.883333333333333
+        },
+        {
+          "object": "later",
+          "destination": "saucer station",
+          "center_xyz_m": [
+            0.59,
+            0.31,
+            0.763
+          ],
+          "peak_speed_m_s": 0.2392552954977614,
+          "finish_s": 22.2
+        }
+      ],
+      "frames": 266,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set aside the plate and napkin, move the coffee to the far side, then finish clearing the table.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Clear the small items and stage the heavy tray on the far side of the table."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "far side"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "later",
+          "destination": "saucer station"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "decoy",
+          "destination": "placemat station"
+        },
+        {
+          "object": "target",
+          "destination": "far side",
+          "waypoints_xy_m": [
+            [
+              0.28,
+              -0.31
+            ],
+            [
+              0.28,
+              0.29
+            ]
+          ]
+        },
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        }
+      ]
+    },
+    "agent_note": "# Keep drinks clear of photographs\n\n## Observed\nAfter the coffee crossed the table, you picked up the photograph, wiped it with a cloth and moved it closer to you.\n\n## Inferred preference\nYou may want the photograph protected from drips when a drink is carried across the table.\n\n## Apply next time\nRoute filled cups around the photograph wherever it is lying. The clean saucer can go to its station.\n"
+  },
+  {
+    "benchmark": 4,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Clean rim clearance: 34 mm. used cup grip: rim",
+      "scope_tested": true
+    },
+    "executed_actions": [
+      {
+        "object": "target",
+        "destination": "usual spot",
+        "center_xyz_m": [
+          0.59,
+          0.11,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23759879123338962,
+        "finish_s": 3.55,
+        "grasp": "side",
+        "rim_clearance_m": 0.034
+      },
+      {
+        "object": "decoy",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.28,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23887072068516263,
+        "finish_s": 6.95,
+        "grasp": "rim",
+        "rim_clearance_m": 0.0030000000000000027
+      },
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 9.866666666666667
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 12.733333333333333
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 15.4
+      }
+    ],
+    "question": null,
+    "frames": 184,
+    "frame_rate": 12,
+    "id": "clean-rims",
+    "title": "Clean drinking rims",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 41.583332,
+    "prompt_at_s": 11.17,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.583333333333334
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.466666666666665
+        },
+        {
+          "object": "target",
+          "destination": "usual spot",
+          "center_xyz_m": [
+            0.59,
+            0.11,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23842203035045817,
+          "finish_s": 20.066666666666666,
+          "grasp": "side",
+          "rim_clearance_m": 0.034
+        }
+      ],
+      "frames": 240,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set out the plate and napkin, and bring the clean glass. Finish the other place settings.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Bring Matt a clean handleless tumbler. Put the used cup in the wash area and finish clearing the other items."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "target",
+          "destination": "usual spot",
+          "grasp": "side"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "target",
+          "destination": "usual spot",
+          "grasp": "side"
+        },
+        {
+          "object": "decoy",
+          "destination": "side spot",
+          "grasp": "rim"
+        },
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        }
+      ]
+    },
+    "agent_note": "# Grasp clean glasses by the side\n\n## Observed\nAfter the gripper touched the rim, you reached around the side of the violet glass.\n\n## Inferred preference\nYou seem to prefer the drinking rim of a clean glass left untouched.\n\n## Apply next time\nGrip the clean tumbler by its side below the rim.\n"
+  },
+  {
+    "benchmark": 5,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Handoff followed the receiving palm at 0.30 s",
+      "scope_tested": false
+    },
+    "executed_actions": [
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 2.9166666666666665
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 5.783333333333333
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 8.45
+      },
+      {
+        "object": "decoy",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.28,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23887072068516263,
+        "finish_s": 11.85
+      },
+      {
+        "object": "target",
+        "destination": "Matt handoff",
+        "center_xyz_m": [
+          0.61,
+          0.02,
+          0.86
+        ],
+        "peak_speed_m_s": 0.23955311495483245,
+        "finish_s": 15.783333333333333,
+        "ready_at_release": true,
+        "response_to_palm_s": 0.29999999999999893
+      }
+    ],
+    "question": null,
+    "frames": 189,
+    "frame_rate": 12,
+    "id": "handoff-ready",
+    "title": "Handoff readiness",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 42.333332,
+    "prompt_at_s": 11.0,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.416666666666666
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.3
+        },
+        {
+          "object": "later",
+          "destination": "water station",
+          "center_xyz_m": [
+            0.53,
+            0.3,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23808221806727503,
+          "finish_s": 20.333333333333332
+        }
+      ],
+      "frames": 244,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set the plate and napkin, offer Matt the first utensil, and finish serving the other items.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Finish setting the table and hand Matt the clean serving utensil."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "later",
+          "destination": "water station"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "decoy",
+          "destination": "side spot"
+        },
+        {
+          "object": "target",
+          "destination": "Matt handoff",
+          "wait_for_palm": true
+        }
+      ]
+    },
+    "agent_note": "# Utensil handoffs\n\n## Observed\nMatt brought a hand toward the gripper after the utensil arrived. The gripper partly obscured his palm.\n\n## Inferred preference\nMatt may prefer to signal readiness for a handoff with an open palm.\n\n## Apply next time\nWhen offering Matt an item directly, wait for his open palm before releasing it. Set the remaining items at their stations.\n"
+  },
+  {
+    "benchmark": 6,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Carafe: side spot. low coaster: near the spoon",
+      "scope_tested": true
+    },
+    "executed_actions": [
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 2.9166666666666665
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 5.783333333333333
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 8.45
+      },
+      {
+        "object": "target",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.255,
+          0.763
+        ],
+        "peak_speed_m_s": 0.2380456150858409,
+        "finish_s": 12.45
+      },
+      {
+        "object": "decoy",
+        "destination": "near the spoon",
+        "center_xyz_m": [
+          0.61,
+          0.105,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23806564006895148,
+        "finish_s": 15.983333333333333
+      }
+    ],
+    "question": null,
+    "frames": 191,
+    "frame_rate": 12,
+    "id": "reach-lane",
+    "title": "Keep the reach lane open",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 42.666666,
+    "prompt_at_s": 11.25,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.666666666666666
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.55
+        },
+        {
+          "object": "target",
+          "destination": "side spot",
+          "center_xyz_m": [
+            0.57,
+            0.255,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23811521583677386,
+          "finish_s": 20.5
+        }
+      ],
+      "frames": 246,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set the plate and napkin, bring the tall bottle, and finish preparing the tea station.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Restock with the carafe and a coaster while you clear the other objects. Leave the shared spoon available."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "target",
+          "destination": "side spot"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "target",
+          "destination": "side spot"
+        },
+        {
+          "object": "decoy",
+          "destination": "near the spoon"
+        }
+      ]
+    },
+    "agent_note": "# Tall vessels at the tea station\n\n## Observed\nThe tall bottle shifted to the side and Matt reached for the spoon in the center.\n\n## Inferred preference\nMatt may prefer tall vessels to the side so he can reach the tea utensils.\n\n## Apply next time\nPlace the tall carafe on the side spot and leave the center clear.\n"
+  },
+  {
+    "benchmark": 7,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Packet from top to bottom: cover, page 1, page 2",
+      "scope_tested": false
+    },
+    "executed_actions": [
+      {
+        "object": "page_b",
+        "destination": "new packet",
+        "center_xyz_m": [
+          0.58,
+          -0.005,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23926095303434397,
+        "finish_s": 3.4833333333333334
+      },
+      {
+        "object": "page_a",
+        "destination": "new packet",
+        "center_xyz_m": [
+          0.58,
+          -0.005,
+          0.7675
+        ],
+        "peak_speed_m_s": 0.23769728648009422,
+        "finish_s": 6.95
+      },
+      {
+        "object": "cover",
+        "destination": "new packet",
+        "center_xyz_m": [
+          0.58,
+          -0.005,
+          0.772
+        ],
+        "peak_speed_m_s": 0.23954709870921004,
+        "finish_s": 10.116666666666667
+      },
+      {
+        "object": "scrap",
+        "destination": "recycling area",
+        "center_xyz_m": [
+          0.48,
+          0.18,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23834154646898822,
+        "finish_s": 12.966666666666667
+      },
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 15.883333333333333
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 18.75
+      }
+    ],
+    "question": null,
+    "frames": 225,
+    "frame_rate": 12,
+    "id": "active-papers",
+    "title": "Preserve the order of active papers",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 45.249998,
+    "prompt_at_s": 10.92,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "active packet",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.769
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.333333333333334
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.216666666666665
+        },
+        {
+          "object": "later",
+          "destination": "water station",
+          "center_xyz_m": [
+            0.53,
+            0.3,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23808221806727503,
+          "finish_s": 20.25
+        }
+      ],
+      "frames": 243,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Move the plate and napkin away, then put the loose sheet with the active packet. Finish resetting the work area.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Move the loose active pages and marked cover into the new work area. Clear the scrap into the recycling area."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "active packet"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "later",
+          "destination": "water station"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "page_b",
+          "destination": "new packet"
+        },
+        {
+          "object": "page_a",
+          "destination": "new packet"
+        },
+        {
+          "object": "cover",
+          "destination": "new packet"
+        },
+        {
+          "object": "scrap",
+          "destination": "recycling area"
+        },
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        }
+      ]
+    },
+    "agent_note": "# Active packet on top\n\n## Observed\nMatt reached for the blue sheet. The light-colored packet was then visible on top, with a blue edge underneath.\n\n## Inferred preference\nMatt seems to prefer the loose sheet underneath the active packet so its top page stays accessible.\n\n## Apply next time\nWhen adding a loose sheet to this packet, tuck it underneath. Place the remaining tableware at its stations.\n"
+  },
+  {
+    "benchmark": 8,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Loaded peak 0.08 m/s. empty peak 0.24 m/s",
+      "scope_tested": true
+    },
+    "executed_actions": [
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 2.9166666666666665
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 5.583333333333333
+      },
+      {
+        "object": "decoy",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.28,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23887072068516263,
+        "finish_s": 8.983333333333333
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 11.85
+      },
+      {
+        "object": "target",
+        "destination": "usual spot",
+        "center_xyz_m": [
+          0.59,
+          0.11,
+          0.763
+        ],
+        "peak_speed_m_s": 0.07975931154477743,
+        "finish_s": 18.533333333333335
+      }
+    ],
+    "question": null,
+    "frames": 222,
+    "frame_rate": 12,
+    "id": "gentle-carry",
+    "title": "Carry an open bowl gently",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 48.249998,
+    "prompt_at_s": 11.42,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.833333333333334
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.716666666666665
+        },
+        {
+          "object": "target",
+          "destination": "usual spot",
+          "center_xyz_m": [
+            0.59,
+            0.11,
+            0.763
+          ],
+          "peak_speed_m_s": 0.07974525247216689,
+          "finish_s": 23.566666666666666
+        }
+      ],
+      "frames": 282,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set the plate and napkin, serve the filled bowl, then finish setting out the other dishes.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Serve the open filled pitcher and clear the empty bowl while finishing the table setup."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "target",
+          "destination": "usual spot",
+          "speed_m_s": 0.08
+        }
+      ],
+      "transfer": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "decoy",
+          "destination": "side spot",
+          "speed_m_s": 0.24
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "target",
+          "destination": "usual spot",
+          "speed_m_s": 0.08
+        }
+      ]
+    },
+    "agent_note": "# Steady transport for open liquids\n\n## Observed\nYou reached around the filled bowl with both hands and steadied it as you moved it away.\n\n## Inferred preference\nYou may prefer open containers of liquid carried slowly to prevent sloshing.\n\n## Apply next time\nCarry the open pitcher steadily at 0.08 m/s.\n"
+  },
+  {
+    "benchmark": 9,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Deferred the notebook, cleared four other items, then moved it after Matt withdrew his hand",
+      "scope_tested": true
+    },
+    "executed_actions": [
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 2.9166666666666665,
+        "when_free": false,
+        "other_moves_before": 0
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 5.583333333333333,
+        "when_free": false,
+        "other_moves_before": 1
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 8.45,
+        "when_free": true,
+        "other_moves_before": 2
+      },
+      {
+        "object": "decoy",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.28,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23887072068516263,
+        "finish_s": 11.85,
+        "when_free": true,
+        "other_moves_before": 3
+      },
+      {
+        "object": "target",
+        "destination": "notebook station",
+        "center_xyz_m": [
+          0.47,
+          -0.01,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23490689645048735,
+        "finish_s": 14.466666666666667,
+        "when_free": true,
+        "other_moves_before": 4
+      }
+    ],
+    "question": "Matt, could you let me know when you’re finished writing so I can move the red notebook?",
+    "resume_question": null,
+    "frames": 173,
+    "frame_rate": 12,
+    "resumed_after_frame": 142,
+    "id": "pause-active-item",
+    "title": "Pause the item Matt is using",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 40.833332,
+    "prompt_at_s": 10.83,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.25
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.133333333333333
+        },
+        {
+          "object": "later",
+          "destination": "water station",
+          "center_xyz_m": [
+            0.53,
+            0.3,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23808221806727503,
+          "finish_s": 20.166666666666668
+        }
+      ],
+      "frames": 242,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Clear the plate and napkin, move the red notebook to the side and finish resetting the desk.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Clear the notebook, pen, mug, plate, and napkin to the cleared section of the desk.",
+      "resume": "Continue clearing the desk."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "later",
+          "destination": "water station"
+        }
+      ],
+      "transfer": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "decoy",
+          "destination": "side spot"
+        }
+      ],
+      "resume": [
+        {
+          "object": "target",
+          "destination": "notebook station"
+        }
+      ]
+    },
+    "setup_variant": "The desk-reset prompt named a mug, while the simulator provided a small bowl in that slot. Astra cleared the bowl.",
+    "agent_note": "# Notebook in use\n\n## Observed\nYou put your hands on the red notebook and kept them there. It stayed in the same spot.\n\n## Inferred preference\nYou may want this notebook left within reach while you use it. This gesture gives little indication about the other desk items.\n\n## Apply next time\nLeave the notebook where it is while your hands are on it. Reset the bowl, utensil and tumbler at their stations.\n"
+  },
+  {
+    "benchmark": 10,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Metal tongs: folded cloth. silicone: side spot",
+      "scope_tested": true
+    },
+    "executed_actions": [
+      {
+        "object": "target",
+        "destination": "folded cloth",
+        "center_xyz_m": [
+          0.63,
+          -0.035,
+          0.775
+        ],
+        "peak_speed_m_s": 0.23917658492920185,
+        "finish_s": 3.8,
+        "release_gap_mm": 0.5
+      },
+      {
+        "object": "decoy",
+        "destination": "side spot",
+        "center_xyz_m": [
+          0.57,
+          0.28,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23887072068516263,
+        "finish_s": 7.316666666666666,
+        "release_gap_mm": 8.0
+      },
+      {
+        "object": "plate",
+        "destination": "plate station",
+        "center_xyz_m": [
+          0.48,
+          -0.27,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23684210526315785,
+        "finish_s": 10.233333333333333
+      },
+      {
+        "object": "napkin",
+        "destination": "napkin station",
+        "center_xyz_m": [
+          0.47,
+          0.29,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23570226039551573,
+        "finish_s": 13.1
+      },
+      {
+        "object": "dish",
+        "destination": "dish station",
+        "center_xyz_m": [
+          0.47,
+          -0.16,
+          0.763
+        ],
+        "peak_speed_m_s": 0.23957871187497745,
+        "finish_s": 15.766666666666667
+      }
+    ],
+    "question": null,
+    "frames": 189,
+    "frame_rate": 12,
+    "id": "quiet-placement",
+    "title": "Quiet metal placement",
+    "model": "gpt-6.2-astra",
+    "reasoning_effort": "medium",
+    "duration": 42.083332,
+    "prompt_at_s": 10.83,
+    "teaching": {
+      "executed_actions": [
+        {
+          "object": "plate",
+          "destination": "plate station",
+          "center_xyz_m": [
+            0.48,
+            -0.27,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23684210526315785,
+          "finish_s": 2.9166666666666665
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station",
+          "center_xyz_m": [
+            0.47,
+            0.29,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23570226039551573,
+          "finish_s": 5.783333333333333
+        },
+        {
+          "object": "first",
+          "destination": "service spot",
+          "center_xyz_m": [
+            0.59,
+            0.025,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23843649458516086,
+          "finish_s": 9.2
+        },
+        {
+          "object": "dish",
+          "destination": "dish station",
+          "center_xyz_m": [
+            0.47,
+            -0.16,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23957871187497745,
+          "finish_s": 13.25
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station",
+          "center_xyz_m": [
+            0.48,
+            0.17,
+            0.763
+          ],
+          "peak_speed_m_s": 0.23825814183099875,
+          "finish_s": 16.133333333333333
+        },
+        {
+          "object": "target",
+          "destination": "folded cloth",
+          "center_xyz_m": [
+            0.63,
+            -0.035,
+            0.775
+          ],
+          "peak_speed_m_s": 0.23857272956947156,
+          "finish_s": 20.1,
+          "release_gap_mm": 0.5
+        }
+      ],
+      "frames": 241,
+      "question": null
+    },
+    "teaching_complete": true,
+    "prompts": {
+      "start": "Set the plate and napkin, put the metal teaspoon out, and finish the tea setting.",
+      "continue": "Watch how I interact and see if you can infer my preference. Then let’s try again.",
+      "transfer": "Set out the metal tongs and the silicone utensil. Finish clearing the other tableware."
+    },
+    "agent_actions": {
+      "start": [
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "first",
+          "destination": "service spot"
+        }
+      ],
+      "continue": [
+        {
+          "object": "dish",
+          "destination": "dish station"
+        },
+        {
+          "object": "spoon",
+          "destination": "utensil station"
+        },
+        {
+          "object": "target",
+          "destination": "folded cloth",
+          "gentle": true
+        }
+      ],
+      "transfer": [
+        {
+          "object": "target",
+          "destination": "folded cloth",
+          "gentle": true
+        },
+        {
+          "object": "decoy",
+          "destination": "side spot"
+        },
+        {
+          "object": "plate",
+          "destination": "plate station"
+        },
+        {
+          "object": "napkin",
+          "destination": "napkin station"
+        },
+        {
+          "object": "dish",
+          "destination": "dish station"
+        }
+      ]
+    },
+    "agent_note": "# Metal utensils on the folded cloth\n\n## Observed\nYou lifted the metal teaspoon from beside the folded cloth and set it down on the cloth.\n\n## Inferred preference\nYou may prefer metal utensils set down softly on the folded cloth.\n\n## Apply next time\nPlace the metal serving tongs gently on the folded cloth.\n"
+  }
+]

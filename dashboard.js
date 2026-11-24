@@ -1,3 +1,141 @@
+const suite = [
+  {
+    "id": "cold-drinks",
+    "title": "Cold drinks on coasters",
+    "duration": 42.166665,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Cold bottle: cork coaster. dry can: side spot",
+      "scope_tested": true
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 11.67,
+    "agent_note": "# Coasters for cold drinks\n\n## Observed\nYou reached toward the iced glass and slid a cork coaster underneath it.\n\n## Inferred preference\nYou seem to prefer a coaster under drinks that leave condensation.\n\n## Apply next time\nSet the chilled bottle on the cork coaster.\n"
+  },
+  {
+    "id": "keepsake-clearance",
+    "title": "Keepsakes out of the transport path",
+    "duration": 50.166665,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Minimum tray–scrapbook footprint clearance: 8.8 cm",
+      "scope_tested": false
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 12.58,
+    "agent_note": "# Keep drinks clear of photographs\n\n## Observed\nAfter the coffee crossed the table, you picked up the photograph, wiped it with a cloth and moved it closer to you.\n\n## Inferred preference\nYou may want the photograph protected from drips when a drink is carried across the table.\n\n## Apply next time\nRoute filled cups around the photograph wherever it is lying. The clean saucer can go to its station.\n"
+  },
+  {
+    "id": "clean-rims",
+    "title": "Clean drinking rims",
+    "duration": 41.583332,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Clean rim clearance: 34 mm. used cup grip: rim",
+      "scope_tested": true
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 11.17,
+    "agent_note": "# Grasp clean glasses by the side\n\n## Observed\nAfter the gripper touched the rim, you reached around the side of the violet glass.\n\n## Inferred preference\nYou seem to prefer the drinking rim of a clean glass left untouched.\n\n## Apply next time\nGrip the clean tumbler by its side below the rim.\n"
+  },
+  {
+    "id": "handoff-ready",
+    "title": "Handoff readiness",
+    "duration": 42.333332,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Handoff followed the receiving palm at 0.30 s",
+      "scope_tested": false
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 11.0,
+    "agent_note": "# Utensil handoffs\n\n## Observed\nMatt brought a hand toward the gripper after the utensil arrived. The gripper partly obscured his palm.\n\n## Inferred preference\nMatt may prefer to signal readiness for a handoff with an open palm.\n\n## Apply next time\nWhen offering Matt an item directly, wait for his open palm before releasing it. Set the remaining items at their stations.\n"
+  },
+  {
+    "id": "reach-lane",
+    "title": "Keep the reach lane open",
+    "duration": 42.666666,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Carafe: side spot. low coaster: near the spoon",
+      "scope_tested": true
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 11.25,
+    "agent_note": "# Tall vessels at the tea station\n\n## Observed\nThe tall bottle shifted to the side and Matt reached for the spoon in the center.\n\n## Inferred preference\nMatt may prefer tall vessels to the side so he can reach the tea utensils.\n\n## Apply next time\nPlace the tall carafe on the side spot and leave the center clear.\n"
+  },
+  {
+    "id": "active-papers",
+    "title": "Preserve the order of active papers",
+    "duration": 45.249998,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Packet from top to bottom: cover, page 1, page 2",
+      "scope_tested": false
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 10.92,
+    "agent_note": "# Active packet on top\n\n## Observed\nMatt reached for the blue sheet. The light-colored packet was then visible on top, with a blue edge underneath.\n\n## Inferred preference\nMatt seems to prefer the loose sheet underneath the active packet so its top page stays accessible.\n\n## Apply next time\nWhen adding a loose sheet to this packet, tuck it underneath. Place the remaining tableware at its stations.\n"
+  },
+  {
+    "id": "gentle-carry",
+    "title": "Carry an open bowl gently",
+    "duration": 48.249998,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Loaded peak 0.08 m/s. empty peak 0.24 m/s",
+      "scope_tested": true
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 11.42,
+    "agent_note": "# Steady transport for open liquids\n\n## Observed\nYou reached around the filled bowl with both hands and steadied it as you moved it away.\n\n## Inferred preference\nYou may prefer open containers of liquid carried slowly to prevent sloshing.\n\n## Apply next time\nCarry the open pitcher steadily at 0.08 m/s.\n"
+  },
+  {
+    "id": "pause-active-item",
+    "title": "Pause the item Matt is using",
+    "duration": 40.833332,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Deferred the notebook, cleared four other items, then moved it after Matt withdrew his hand",
+      "scope_tested": true
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 10.83,
+    "agent_note": "# Notebook in use\n\n## Observed\nYou put your hands on the red notebook and kept them there. It stayed in the same spot.\n\n## Inferred preference\nYou may want this notebook left within reach while you use it. This gesture gives little indication about the other desk items.\n\n## Apply next time\nLeave the notebook where it is while your hands are on it. Reset the bowl, utensil and tumbler at their stations.\n"
+  },
+  {
+    "id": "quiet-placement",
+    "title": "Quiet metal placement",
+    "duration": 42.083332,
+    "transfer": {
+      "complete": true,
+      "preference": true,
+      "scope": true,
+      "evidence": "Metal tongs: folded cloth. silicone: side spot",
+      "scope_tested": true
+    },
+    "teaching_complete": true,
+    "prompt_at_s": 10.83,
+    "agent_note": "# Metal utensils on the folded cloth\n\n## Observed\nYou lifted the metal teaspoon from beside the folded cloth and set it down on the cloth.\n\n## Inferred preference\nYou may prefer metal utensils set down softly on the folded cloth.\n\n## Apply next time\nPlace the metal serving tongs gently on the folded cloth.\n"
+  }
+];
+
 const benchmarks = [
   {
     "name": "Mug handle at breakfast",
@@ -94,6 +232,16 @@ const recordings = [
   }
 ];
 
+
+const suiteRecordings = suite.map(item => ({
+  id:item.id, title:item.title, kind:"Astra Medium · Benchmark run",
+  time: Math.floor(Math.round(item.duration)/60) + ":" + String(Math.round(item.duration)%60).padStart(2,"0"),
+  description: item.transfer.evidence + ". The agent received the observation prompt at " +
+    item.prompt_at_s.toFixed(1) + " s, then continued the job and attempted transfer.",
+  hasPrompt:true, note:item.agent_note
+}));
+recordings.splice(1,0,...suiteRecordings);
+
 const player = document.querySelector("#player");
 const choices = new Map();
 
@@ -113,7 +261,7 @@ for (const [index, item] of recordings.entries()) {
   time.textContent = item.time;
   labels.append(heading, time);
   link.append(image, labels);
-  document.querySelector(index < 2 ? "#agent-list" : "#preview-list").append(link);
+  document.querySelector(index <= suite.length ? "#agent-list" : index === suite.length + 1 ? "#demo-list" : "#preview-list").append(link);
   choices.set(item.id, link);
 }
 
@@ -135,7 +283,20 @@ function selectRecording() {
   document.querySelector("#video-kind").textContent = item.kind;
   document.querySelector("#video-description").textContent = item.description;
   document.querySelector("#video-prompt").hidden = !item.hasPrompt;
+  
   document.querySelector("#video-download").href = videoPath;
+  const disclosure = document.querySelector("#video-note");
+  const noteBody = document.querySelector("#video-note-content");
+  disclosure.hidden = !item.note;
+  disclosure.open = false;
+  noteBody.replaceChildren();
+  if (item.note) {
+    for (const line of item.note.split(/\n/).filter(s => s && !s.startsWith("#"))) {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = line;
+      noteBody.append(paragraph);
+    }
+  }
   for (const [id, link] of choices) {
     if (id === item.id) link.setAttribute("aria-current", "true");
     else link.removeAttribute("aria-current");
@@ -159,4 +320,45 @@ for (const benchmark of benchmarks) {
   }
   details.append(summary, description);
   document.querySelector("#benchmark-list").append(details);
+}
+
+const counts = [
+  ["Transfer tasks finished", suite.filter(row => row.teaching_complete && row.transfer.complete).length],
+  ["Preference applied", suite.filter(row => row.transfer.preference).length],
+  ["Scope checks met", suite.filter(row => row.transfer.scope_tested && row.transfer.scope).length,
+    suite.filter(row => row.transfer.scope_tested).length]
+];
+for (const [label, value, total = suite.length] of counts) {
+  const group = document.createElement("div");
+  const name = document.createElement("dt");
+  const reading = document.createElement("dd");
+  name.textContent = label;
+  reading.textContent = value + "/" + total;
+  group.append(name, reading);
+  document.querySelector("#suite-counts").append(group);
+}
+
+for (const row of suite) {
+  const block = document.createElement("article");
+  block.className = "outcome";
+  const link = document.createElement("a");
+  link.href = "#" + row.id;
+  link.textContent = row.title;
+  link.addEventListener("click", () => document.querySelector("#recordings").scrollIntoView());
+  const reading = document.createElement("p");
+  reading.textContent = row.transfer.evidence;
+  const gates = document.createElement("div");
+  gates.className = "result-gates";
+  for (const [name, passed] of [
+    ["Task", row.teaching_complete && row.transfer.complete],
+    ["Preference", row.transfer.preference],
+    ...(row.transfer.scope_tested ? [["Scope", row.transfer.scope]] : [])
+  ]) {
+    const mark = document.createElement("span");
+    mark.textContent = name + (passed ? " met" : " missed");
+    if (!passed) mark.className = "miss";
+    gates.append(mark);
+  }
+  block.append(link,reading,gates);
+  document.querySelector("#suite-outcomes").append(block);
 }
