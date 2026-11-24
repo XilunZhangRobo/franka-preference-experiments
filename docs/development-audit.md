@@ -35,7 +35,20 @@ The first apparent transfer disappears when the color and option letter change. 
 
 The final corrected recording also went through the evaluator using fresh Astra sessions. Its visual detector selected a review interval. The auditor recognized the person restoring the teal board and saying “Try again,” saved a note against repeating that move, and asked which spot to clear. It inferred no role for the clip. Both cold and memory-assisted decisions were correct on layout 103 and on the closed-kit scope probe. Across those two paired decisions there were zero gains and zero losses. This was a smoke test of the complete camera → audit → written memory → new decision path. The conflicting-color result in the table above was a separate Classic-renderer trial.
 
-## Physical validation
+## Feedback without a demonstration
+
+We also ran the packaged evaluator on four teaching conditions at commit `d5ef839`. Every condition used the same Classic-rendered sewing-room probe (layout 107, option-order seed 1) and the same closed-kit probe. The plan fixed the four conditions before these calls. This layout had already been used for development, so the comparison is exploratory. [Design, exact requests, raw replies and scorecard](review-record/feedback-controls.json)
+
+| Teaching feedback | Written memory | Clarification behavior |
+| --- | --- | --- |
+| No human feedback | Empty | No audit or question |
+| Human moves an unrelated pencil | Empty | Asked whether the pencil should also be moved |
+| “Try again,” with both mats left where the robot put them | Recorded that putting the teal mat on the platform had been rejected | Asked which spot to leave clear |
+| “No, the other mat,” with both mats left where the robot put them | Recorded that the person wanted the reddish mat moved in this task | No question |
+
+Across all four conditions, cold and memory-assisted Astra made the same choices. Both missed the ambiguous transfer and passed the closed-kit scope probe in each condition. These are repeated decisions on the same two images. The observations support two distinct conclusions: brief speech can produce a note without a demonstration, and the inferred note in this example did not recover the person's clip convention. The pencil case also exposes an unnecessary potential interruption.
+
+## Comparison with the physical setup
 
 The provided Franka video served as a visual reference. It does not supply measured camera intrinsics, an optical pose registered to this room, material friction, gripper forces or human trajectories for these tasks. This branch includes a rectified-camera importer and independent reprojection test. The geometry, lighting and contact parameters in the example are development settings. To claim real-world fidelity, pair actual and simulated recordings from the same setup, record camera residuals, contact timing, hand/object paths, occlusion and observer judgments, and compare matched cold and memory-assisted choices on the real robot. [SIMPLER paired sim-and-real evaluation](https://simpler-env.github.io/)
 

@@ -37,6 +37,20 @@ franka-prefs audit --out runs/qa --seeds 0 1
 
 Ask a reviewer to inject a relevant fault in a disposable checkout, such as reversing left/right scoring, leaking a key into a prompt, or leaving a corrective frame in a no-feedback clip. Record which test failed and why. A clean run after restoring the implementation verifies recovery. Reviewers should inspect design, functionality, complexity and tests as well as the diff. [Google engineering code review](https://google.github.io/eng-practices/review/reviewer/looking-for.html)
 
+### Diagnose one failure
+
+Keep one failing episode, its exact sensor bytes, code revision and grader key. Write down two candidate explanations and the different observations each predicts. Start at the first point where the trace diverges. A wrong final letter can originate in the camera, the interpretation or the scorer. This sequence applies the hypothesis-and-test approach in Google's SRE troubleshooting guide. [Effective Troubleshooting, Chris Jones](https://sre.google/sre-book/effective-troubleshooting/)
+
+| Observed failure | Smallest discriminating check |
+| --- | --- |
+| The robot appeared to move the wrong object | Replay the recorded letter through `execute`. Compare the start and final object poses and the recorded option permutation. |
+| The participant's cue is unclear | Freeze the original camera and compare the contact frame with object silhouettes and the full-body collision audit. A second independent observer writes down the visible action before seeing the intended meaning. |
+| The note misses a preference | Inspect the detector window, then the auditor's actual input samples, then its written inference. Give a fresh decision model an explicit user-confirmed note on the same image as a positive control. |
+| A transfer score surprises the reviewer | Check bundle and sensor digests. Cross color, distance, option letter and clip location so the suspected shortcut and the personal preference predict different choices. |
+| A previously passing reproducible case fails | Replay the same test at a known good revision. Once success and failure are consistent, `git bisect run` can locate the first revision changing its exit status. [Git bisect manual](https://git-scm.com/docs/git-bisect) |
+
+Keep the failing and repaired evidence together. Record the scope of the fix, the test that detects a reversal, and which broader claims still need another experiment.
+
 ## 4. Report enough evidence to advance
 
 For every family, phase and condition, record planned, attempted, rendered, delivered, parsed and scored episode counts. List exclusions, retry counts and reasons. Report correct over planned and correct over scored, paired gains and losses versus controls, and uncertainty at the independently sampled unit. Repeated frames or retries belong to the same episode. Preserve failures and videos alongside successful examples. A synthetic fault can validate the scorer; a blinded run on held-out stimuli can support a behavioral result.

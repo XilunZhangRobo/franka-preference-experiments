@@ -1,0 +1,1816 @@
+{
+  "design": {
+    "design": "Development smoke test. One paired ambiguous transfer and one concordant scope probe per arm. The no-feedback and incidental controls should produce no unsupported preference. Both spoken corrections should produce rejection notes. Clip-general transfer is recorded separately.",
+    "seed": 0,
+    "transfer_seed": 107,
+    "order_seed": 1,
+    "model": "gpt-6.2-astra",
+    "effort": "medium",
+    "renderer": "classic",
+    "replicates": 1,
+    "retry": "none for valid replies; retain failures",
+    "code": "d5ef83973177d3c88d4a2611c97fefc4fffe2db4"
+  },
+  "runs": [
+    {
+      "plan": {
+        "id": "feedback-none",
+        "family": "paused-work",
+        "bundle": "none",
+        "evaluation": "none-results",
+        "conditions": [
+          "cold",
+          "matched"
+        ]
+      },
+      "run": {
+        "format": 1,
+        "replay_identity_version": 2,
+        "family": "paused-work",
+        "seed": 0,
+        "order_seed": 1,
+        "profile": "standard",
+        "feedback": "none",
+        "accepted_teaching_action": false,
+        "git": {
+          "commit": "d5ef83973177d3c88d4a2611c97fefc4fffe2db4",
+          "dirty": false
+        },
+        "camera": "agent",
+        "calibration": null,
+        "size": [
+          640,
+          480
+        ],
+        "fps": 12,
+        "menagerie_reference": "eea4c7431b63da8278b0ff31638e0b0e941cec0e",
+        "asset_sha256": {
+          "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+          "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+        },
+        "renderer": "mujoco-classic",
+        "versions": {
+          "mujoco": "4.0.1",
+          "numpy": "2.5.5",
+          "Pillow": "13.0.0",
+          "imageio-ffmpeg": "0.8.1"
+        },
+        "phases": {
+          "teach": {
+            "choices": {
+              "A": "far",
+              "B": "near"
+            },
+            "answer": "A",
+            "scripted_choice": "near",
+            "layout_seed": 0
+          },
+          "transfer": {
+            "choices": {
+              "A": "near",
+              "B": "far"
+            },
+            "answer": "A",
+            "scripted_choice": null,
+            "layout_seed": 107
+          },
+          "exception": {
+            "choices": {
+              "A": "organizer",
+              "B": "case"
+            },
+            "answer": "B",
+            "scripted_choice": null,
+            "layout_seed": 206
+          }
+        }
+      },
+      "results": {
+        "adapter": "/home/mattf/Documents/Codex/2026-11-23/files-mentioned-by-the-user-personalization/franka-preference-experiments/.venv/bin/franka-prefs-codex",
+        "model": "gpt-6.2-astra",
+        "bundle": {
+          "run_sha256": "8e40b264f0fbd271c191f4080e5345924f955ecf4b875859404db23ffe286218",
+          "sensor_manifest_sha256": "d789669903b6fe0a301d5092e065a8421376644a54e4fd96101b79890f4122b4"
+        },
+        "status": "complete",
+        "audit": null,
+        "decisions": [
+          {
+            "phase": "transfer",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "transfer",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "exception",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": true
+          },
+          {
+            "phase": "exception",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": true
+          }
+        ]
+      },
+      "calls": [
+        {
+          "request": {
+            "instruction": "These are time-ordered samples from a robot's camera during one task. Locate a person's intervention or feedback if one is visible. Ordinary nearby activity may be incidental. Return JSON with window, either [start_seconds,end_seconds] or null.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": []
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "a8dc9c0ed6dde0cb925b1773beafeebd7e8f5c2b2be7d624dd4dd93be2a26ce3",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.25,
+                "sha256": "d8b7f59ab401ed064c7b46df51006ea27578b420a7c291c444903c4f50ba0d34",
+                "file": "frame-00003.jpg"
+              },
+              {
+                "t": 0.5,
+                "sha256": "8e06beda1ca26efd3fbd540a0c2963dea1b75f3fa5586aaf4b0c15c00dabea2b",
+                "file": "frame-00006.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "23205f3d18563d8196e19adac37820903be7c010845caaf952f142f39f374b03",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.0,
+                "sha256": "31924aa574a0915afcc52e11064abf6b0ec99068919308fcc902bd754aacdee3",
+                "file": "frame-00012.jpg"
+              },
+              {
+                "t": 1.25,
+                "sha256": "db864dacff0d25a7cdb31fc4a404d9c27c6c3f8152e39c99ca38ff4136fdd664",
+                "file": "frame-00015.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "8e39698dc4b28c2cd706b96b3be0e546aecb5be97c2adb1cbf2b28065de583e2",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 1.75,
+                "sha256": "374e7fb3dbc59b76c7ddbfd1eb9cb839084ef06b9ffcfea54dd9945b414013ba",
+                "file": "frame-00021.jpg"
+              },
+              {
+                "t": 2.0,
+                "sha256": "3299c8dbda75148e47b40220dc5cbcdf1fcb686bef4ee5cad76aa8f6f8890470",
+                "file": "frame-00024.jpg"
+              },
+              {
+                "t": 2.25,
+                "sha256": "6bb8df08d0504a6531840223162edc080b92a6325e4454666a545bbd1332cdde",
+                "file": "frame-00027.jpg"
+              },
+              {
+                "t": 2.5,
+                "sha256": "3db1052e833dfa475dcfcdb46ba2cc42c3b3b82e310cc162acfb5b4ad3f10720",
+                "file": "frame-00030.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "f9a37c4ff74c9b11663b9784c1ab6fb8aac8881af747ac773201a028a3eb6ac7",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.0,
+                "sha256": "0903e0323551c762d3e207f1084c59e6f81904ca866f5e2b70919c8dbef82d85",
+                "file": "frame-00036.jpg"
+              },
+              {
+                "t": 3.25,
+                "sha256": "28d4f5d1bfa46d2b7d62f4ffd2a75a47b2d4ecff0addb731a761a7bc779866a6",
+                "file": "frame-00039.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "1ba0c3bf93b03168decfb8726b0bd75667765009a78b0121b1396dd947982f3e",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 3.75,
+                "sha256": "62e25a4b17de2b4ce4d20b782967408ec338c88f38e4e6d28bc169e1039753e0",
+                "file": "frame-00045.jpg"
+              },
+              {
+                "t": 4.0,
+                "sha256": "8de24b1f3c707ef76ca2df4df1eca8f6fc74c7ff4a2e3470cc49a3a13c2c7cab",
+                "file": "frame-00048.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "16c3d46b74cda73a43137c846704bc2717c5a4437b85b0f2a7099c95b22efe6d",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "f9c37a88040cfca426ae30678510aaad181cae1bc5d7ed58bf2f6a01799a28f6",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "a9b4ebec720c019535ea035d1ebf53c273bfbcd902e69568f45a9aff770e31bb",
+                "file": "frame-00057.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"window\": null}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "282ed7a145f24cc5751dc7691b5ad31f788988c5b1b3b42c33ef450b700283a1",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the rust mat clears the front-center space for the cutting board.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "282ed7a145f24cc5751dc7691b5ad31f788988c5b1b3b42c33ef450b700283a1",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"The rust mat is closer to the front of the counter. Shelving it clears an accessible spot for the cutting board.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "9b15617d2497b47adae5f3150f4023132c1f8447b75941faef7b89a3194ddffc",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the closed stitching kit frees its spot on the bench while keeping its contents together.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "9b15617d2497b47adae5f3150f4023132c1f8447b75941faef7b89a3194ddffc",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"The closed stitching kit can be shelved as one piece, freeing its spot on the bench.\"}\n",
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "plan": {
+        "id": "feedback-incidental",
+        "family": "paused-work",
+        "bundle": "incidental",
+        "evaluation": "incidental-results",
+        "conditions": [
+          "cold",
+          "matched"
+        ]
+      },
+      "run": {
+        "format": 1,
+        "replay_identity_version": 2,
+        "family": "paused-work",
+        "seed": 0,
+        "order_seed": 1,
+        "profile": "standard",
+        "feedback": "incidental",
+        "accepted_teaching_action": false,
+        "git": {
+          "commit": "d5ef83973177d3c88d4a2611c97fefc4fffe2db4",
+          "dirty": false
+        },
+        "camera": "agent",
+        "calibration": null,
+        "size": [
+          640,
+          480
+        ],
+        "fps": 12,
+        "menagerie_reference": "eea4c7431b63da8278b0ff31638e0b0e941cec0e",
+        "asset_sha256": {
+          "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+          "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+        },
+        "renderer": "mujoco-classic",
+        "versions": {
+          "mujoco": "4.0.1",
+          "numpy": "2.5.5",
+          "Pillow": "13.0.0",
+          "imageio-ffmpeg": "0.8.1"
+        },
+        "phases": {
+          "teach": {
+            "choices": {
+              "A": "far",
+              "B": "near"
+            },
+            "answer": "A",
+            "scripted_choice": "near",
+            "layout_seed": 0
+          },
+          "transfer": {
+            "choices": {
+              "A": "near",
+              "B": "far"
+            },
+            "answer": "A",
+            "scripted_choice": null,
+            "layout_seed": 107
+          },
+          "exception": {
+            "choices": {
+              "A": "organizer",
+              "B": "case"
+            },
+            "answer": "B",
+            "scripted_choice": null,
+            "layout_seed": 206
+          }
+        }
+      },
+      "results": {
+        "adapter": "/home/mattf/Documents/Codex/2026-11-23/files-mentioned-by-the-user-personalization/franka-preference-experiments/.venv/bin/franka-prefs-codex",
+        "model": "gpt-6.2-astra",
+        "bundle": {
+          "run_sha256": "a823db4c2abe37e2e3a65a0725c98dcd7ecc26d224e5fb660763865ef697dfc7",
+          "sensor_manifest_sha256": "996ee96b4e12d0de7feea892404008b8f5219e80101b2bffb3b4033821c5e453"
+        },
+        "status": "complete",
+        "audit": {
+          "observation": "The robot moved the teal board onto the raised stand. The person left it there and shifted the yellow stick a short distance to the right.",
+          "interpretation": "The person may have wanted more room beside the pink board or may have wanted the stick closer at hand.",
+          "note": "",
+          "question": "Next time, should I also move the yellow stick to clear space beside the pink board?"
+        },
+        "decisions": [
+          {
+            "phase": "transfer",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "transfer",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "exception",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": true
+          },
+          {
+            "phase": "exception",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": true
+          }
+        ]
+      },
+      "calls": [
+        {
+          "request": {
+            "instruction": "These are time-ordered samples from a robot's camera during one task. Locate a person's intervention or feedback if one is visible. Ordinary nearby activity may be incidental. Return JSON with window, either [start_seconds,end_seconds] or null.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": []
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "a70c723b3edcce4c84c350ac815d86b73563c6d73e0ce6fc75bdb6f039b9cc88",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.25,
+                "sha256": "cc38adf8bb4672cb03e7a680c4c22f45472b8563fda91f9a973e4b09a0008c4a",
+                "file": "frame-00003.jpg"
+              },
+              {
+                "t": 0.5,
+                "sha256": "52b92e39123d6b3fb5464aa510d5edcdd10a1f36634225296b87e5642673af71",
+                "file": "frame-00006.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "5208d5300687b3906234b8b67565f291822574701d907b0c54930bc2ae06d1c6",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.0,
+                "sha256": "6bf04bc4cfcc615758aae57f1886ee88f44871bddf415308bbe4fefad1213a37",
+                "file": "frame-00012.jpg"
+              },
+              {
+                "t": 1.25,
+                "sha256": "a6db5b62758a37bb974c3d90c713d39e1d345411462c8c7d9974b461ae07348c",
+                "file": "frame-00015.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "4b747caa8718d932f23a1e904534b5fc4ab26c2e246bc9effd7b004ff6fffe78",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 1.75,
+                "sha256": "78ab80ddcbe9bd814e987fa47d83fe17d8be6f9411a5d777cf9a308dd4acae6f",
+                "file": "frame-00021.jpg"
+              },
+              {
+                "t": 2.25,
+                "sha256": "1166c05ff456c7b891aa9f8519c5aaedfb0d573a9365b01cc857f26278d776a0",
+                "file": "frame-00027.jpg"
+              },
+              {
+                "t": 2.5,
+                "sha256": "3db1052e833dfa475dcfcdb46ba2cc42c3b3b82e310cc162acfb5b4ad3f10720",
+                "file": "frame-00030.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "74d19d4a1d98f774f7de5f39ad00eff72e416f7e8525089e474a676d790fee90",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.0,
+                "sha256": "0903e0323551c762d3e207f1084c59e6f81904ca866f5e2b70919c8dbef82d85",
+                "file": "frame-00036.jpg"
+              },
+              {
+                "t": 3.25,
+                "sha256": "1e3760ac0ea4f478e35ce95ac167a07a29fcb1abf8f33fbb9f819d18971c4b86",
+                "file": "frame-00039.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "e8a8c442d87f3f6726b129247cd96859b81b39f0c6aa911edf5487e4d776fa42",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 3.75,
+                "sha256": "f3846f50c629be960097121f659ab139f6ba8fc1cb31db86f57c3271d8554b21",
+                "file": "frame-00045.jpg"
+              },
+              {
+                "t": 4.0,
+                "sha256": "c80d3720284c870fabfa912904a508877e1a05bb1f7f9a6730eea4b7d3e10943",
+                "file": "frame-00048.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "26526352d7cacadec5bc39d3c672d181fd9627a5f3370c799c9a0871266ecd97",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "42977b2087d8aae9925c63bfc5acb8e96ed261643af52ba8fcdeb615e8fae328",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "3801f223af2e9c7ade0f9ac70a5bad018aaf6913c0586a847f95bb882dd3b724",
+                "file": "frame-00057.jpg"
+              },
+              {
+                "t": 5.0,
+                "sha256": "9642045d4580b506e7d81d73ef0a7a493358b9230695c7b651261f799c97079b",
+                "file": "frame-00060.jpg"
+              },
+              {
+                "t": 5.25,
+                "sha256": "0b96bcda9d15bb839e13691def8598d3b8e4204a6bf36742d606b5391e03f337",
+                "file": "frame-00063.jpg"
+              },
+              {
+                "t": 5.5,
+                "sha256": "3c3817517551f7fbbb77684a9e554cbe93fdcbd82dda3bbf7b9943cc87f618c3",
+                "file": "frame-00066.jpg"
+              },
+              {
+                "t": 6.0,
+                "sha256": "a790cda827347a8dc69b268a8024c5e263c86a5ca42d047b53781f66c8321e3c",
+                "file": "frame-00072.jpg"
+              },
+              {
+                "t": 6.25,
+                "sha256": "53d3183f9c97593b5f62ae8f34cbe7b14c4274be6b8f279e3985c06d51b6a44f",
+                "file": "frame-00075.jpg"
+              },
+              {
+                "t": 6.5,
+                "sha256": "532756368b1dca1feb4ffb01d0fac7cf94eff1498521b4d6dd89deb35158f155",
+                "file": "frame-00078.jpg"
+              },
+              {
+                "t": 6.75,
+                "sha256": "41eda8a20da064f67e305fa10c14321f667a44ee6e5d6335dcea636d290fe750",
+                "file": "frame-00081.jpg"
+              },
+              {
+                "t": 7.0,
+                "sha256": "a747a7b6ae16f44f235cae03714a127574f99fd305822a78ac210a908a1fbb76",
+                "file": "frame-00084.jpg"
+              },
+              {
+                "t": 7.25,
+                "sha256": "40ec86c6fe90aef91ca0ba4583ba584593c941a99c7647bcd382b8813af1c76d",
+                "file": "frame-00087.jpg"
+              },
+              {
+                "t": 7.5,
+                "sha256": "d5c9b314dab0a9071e104207654c5c834902811855bb6957b5a7f353f61d1da2",
+                "file": "frame-00090.jpg"
+              },
+              {
+                "t": 7.75,
+                "sha256": "2792d491cd7f97d10136429fe48c84b49f885862da10bc0b289aa829f1b1664c",
+                "file": "frame-00093.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"window\": [4.5, 7.25]}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Review this interaction. What happened? Why might the person have acted that way? What could you use next time? Separate observations from hypotheses. Record a short reusable preference only to the degree the evidence warrants. A rejected action can be recorded even if its cause remains unknown. Return JSON with observation, interpretation, note and question as strings. Use an empty note for no preference evidence. Ask a focused question only if the uncertainty matters.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": [],
+              "existing_note": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "a70c723b3edcce4c84c350ac815d86b73563c6d73e0ce6fc75bdb6f039b9cc88",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "5208d5300687b3906234b8b67565f291822574701d907b0c54930bc2ae06d1c6",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "4b747caa8718d932f23a1e904534b5fc4ab26c2e246bc9effd7b004ff6fffe78",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 2.0,
+                "sha256": "95ef3f3af06682a10a1f5edae756633f6d127922b272383e83f269fda96cdabe",
+                "file": "frame-00024.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "74d19d4a1d98f774f7de5f39ad00eff72e416f7e8525089e474a676d790fee90",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "e8a8c442d87f3f6726b129247cd96859b81b39f0c6aa911edf5487e4d776fa42",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "26526352d7cacadec5bc39d3c672d181fd9627a5f3370c799c9a0871266ecd97",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "42977b2087d8aae9925c63bfc5acb8e96ed261643af52ba8fcdeb615e8fae328",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "3801f223af2e9c7ade0f9ac70a5bad018aaf6913c0586a847f95bb882dd3b724",
+                "file": "frame-00057.jpg"
+              },
+              {
+                "t": 5.0,
+                "sha256": "9642045d4580b506e7d81d73ef0a7a493358b9230695c7b651261f799c97079b",
+                "file": "frame-00060.jpg"
+              },
+              {
+                "t": 5.25,
+                "sha256": "0b96bcda9d15bb839e13691def8598d3b8e4204a6bf36742d606b5391e03f337",
+                "file": "frame-00063.jpg"
+              },
+              {
+                "t": 5.5,
+                "sha256": "3c3817517551f7fbbb77684a9e554cbe93fdcbd82dda3bbf7b9943cc87f618c3",
+                "file": "frame-00066.jpg"
+              },
+              {
+                "t": 5.75,
+                "sha256": "4ea56aac95e874ef7b048749a5911bc08a334ab8b4a2895e8b7ec84cf1625d3f",
+                "file": "frame-00069.jpg"
+              },
+              {
+                "t": 6.0,
+                "sha256": "a790cda827347a8dc69b268a8024c5e263c86a5ca42d047b53781f66c8321e3c",
+                "file": "frame-00072.jpg"
+              },
+              {
+                "t": 6.25,
+                "sha256": "53d3183f9c97593b5f62ae8f34cbe7b14c4274be6b8f279e3985c06d51b6a44f",
+                "file": "frame-00075.jpg"
+              },
+              {
+                "t": 6.5,
+                "sha256": "532756368b1dca1feb4ffb01d0fac7cf94eff1498521b4d6dd89deb35158f155",
+                "file": "frame-00078.jpg"
+              },
+              {
+                "t": 6.75,
+                "sha256": "41eda8a20da064f67e305fa10c14321f667a44ee6e5d6335dcea636d290fe750",
+                "file": "frame-00081.jpg"
+              },
+              {
+                "t": 7.0,
+                "sha256": "a747a7b6ae16f44f235cae03714a127574f99fd305822a78ac210a908a1fbb76",
+                "file": "frame-00084.jpg"
+              },
+              {
+                "t": 7.25,
+                "sha256": "40ec86c6fe90aef91ca0ba4583ba584593c941a99c7647bcd382b8813af1c76d",
+                "file": "frame-00087.jpg"
+              },
+              {
+                "t": 7.5,
+                "sha256": "d5c9b314dab0a9071e104207654c5c834902811855bb6957b5a7f353f61d1da2",
+                "file": "frame-00090.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"observation\": \"The robot moved the teal board onto the raised stand. The person left it there and shifted the yellow stick a short distance to the right.\", \"interpretation\": \"The person may have wanted more room beside the pink board or may have wanted the stick closer at hand.\", \"note\": \"\", \"question\": \"Next time, should I also move the yellow stick to clear space beside the pink board?\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "282ed7a145f24cc5751dc7691b5ad31f788988c5b1b3b42c33ef450b700283a1",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the rust mat clears space near the front of the counter, where the cutting board will be easy to reach.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "282ed7a145f24cc5751dc7691b5ad31f788988c5b1b3b42c33ef450b700283a1",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the rust mat clears space at the front of the counter for the cutting board.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "9b15617d2497b47adae5f3150f4023132c1f8447b75941faef7b89a3194ddffc",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the closed stitching kit frees its spot on the bench and keeps its contents together.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "9b15617d2497b47adae5f3150f4023132c1f8447b75941faef7b89a3194ddffc",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"The closed stitching kit can go on the shelf as one piece, freeing its spot on the bench.\"}\n",
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "plan": {
+        "id": "feedback-retry-only",
+        "family": "paused-work",
+        "bundle": "retry-only",
+        "evaluation": "retry-only-results",
+        "conditions": [
+          "cold",
+          "matched"
+        ]
+      },
+      "run": {
+        "format": 1,
+        "replay_identity_version": 2,
+        "family": "paused-work",
+        "seed": 0,
+        "order_seed": 1,
+        "profile": "standard",
+        "feedback": "retry-only",
+        "accepted_teaching_action": false,
+        "git": {
+          "commit": "d5ef83973177d3c88d4a2611c97fefc4fffe2db4",
+          "dirty": false
+        },
+        "camera": "agent",
+        "calibration": null,
+        "size": [
+          640,
+          480
+        ],
+        "fps": 12,
+        "menagerie_reference": "eea4c7431b63da8278b0ff31638e0b0e941cec0e",
+        "asset_sha256": {
+          "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+          "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+        },
+        "renderer": "mujoco-classic",
+        "versions": {
+          "mujoco": "4.0.1",
+          "numpy": "2.5.5",
+          "Pillow": "13.0.0",
+          "imageio-ffmpeg": "0.8.1"
+        },
+        "phases": {
+          "teach": {
+            "choices": {
+              "A": "far",
+              "B": "near"
+            },
+            "answer": "A",
+            "scripted_choice": "near",
+            "layout_seed": 0
+          },
+          "transfer": {
+            "choices": {
+              "A": "near",
+              "B": "far"
+            },
+            "answer": "A",
+            "scripted_choice": null,
+            "layout_seed": 107
+          },
+          "exception": {
+            "choices": {
+              "A": "organizer",
+              "B": "case"
+            },
+            "answer": "B",
+            "scripted_choice": null,
+            "layout_seed": 206
+          }
+        }
+      },
+      "results": {
+        "adapter": "/home/mattf/Documents/Codex/2026-11-23/files-mentioned-by-the-user-personalization/franka-preference-experiments/.venv/bin/franka-prefs-codex",
+        "model": "gpt-6.2-astra",
+        "bundle": {
+          "run_sha256": "728aa457562579a4a055774f0c227b0bf7e74a32ed001e970b4bc1d090fbbc62",
+          "sensor_manifest_sha256": "2f25750e3778fb2af3e35176a0c94e75ad57e258499f7bba18af024d51f207af"
+        },
+        "status": "complete",
+        "audit": {
+          "observation": "The robot moved the teal board from the tabletop to the raised platform in front of the person. After the arm withdrew, the person said, \u201cTry again.\u201d",
+          "interpretation": "The person may have wanted the platform left clear or a different spot cleared. They did not specify which.",
+          "note": "Moving the teal board onto the raised platform was rejected for this task.",
+          "question": "Which spot on the workbench would you like me to leave clear?"
+        },
+        "decisions": [
+          {
+            "phase": "transfer",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "transfer",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "exception",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": true
+          },
+          {
+            "phase": "exception",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": true
+          }
+        ]
+      },
+      "calls": [
+        {
+          "request": {
+            "instruction": "These are time-ordered samples from a robot's camera during one task. Locate a person's intervention or feedback if one is visible. Ordinary nearby activity may be incidental. Return JSON with window, either [start_seconds,end_seconds] or null.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": [
+                {
+                  "t": 4.3333,
+                  "speaker": "person",
+                  "text": "Try again."
+                }
+              ]
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "1807ee8fb81fa1819783d2b14753ebee4168da17d4543bb25fb2d491f91f6102",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.25,
+                "sha256": "40bb23e55c16bf512316909d4a13b613f65930e74d39e5aaab9685bb3ff4a3e5",
+                "file": "frame-00003.jpg"
+              },
+              {
+                "t": 0.5,
+                "sha256": "11e4410897a7cb78d27b3a223886b7e145c4e18d42fd0a4e1ef87ed3a061ed81",
+                "file": "frame-00006.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "536ea0b521218c2858adc57c4b1b729b6872b82e54e40dd05474249b5b0e5f89",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.0,
+                "sha256": "1d065b83fc4024dd955c27170740826fba4113473ae0eee120862c3e086531df",
+                "file": "frame-00012.jpg"
+              },
+              {
+                "t": 1.25,
+                "sha256": "4c72b3098f535f708e98279ab2675036660b52ab62663bededdd4a86671ee746",
+                "file": "frame-00015.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "4b747caa8718d932f23a1e904534b5fc4ab26c2e246bc9effd7b004ff6fffe78",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 1.75,
+                "sha256": "374e7fb3dbc59b76c7ddbfd1eb9cb839084ef06b9ffcfea54dd9945b414013ba",
+                "file": "frame-00021.jpg"
+              },
+              {
+                "t": 2.0,
+                "sha256": "3299c8dbda75148e47b40220dc5cbcdf1fcb686bef4ee5cad76aa8f6f8890470",
+                "file": "frame-00024.jpg"
+              },
+              {
+                "t": 2.25,
+                "sha256": "1166c05ff456c7b891aa9f8519c5aaedfb0d573a9365b01cc857f26278d776a0",
+                "file": "frame-00027.jpg"
+              },
+              {
+                "t": 2.5,
+                "sha256": "8133b7a5d948bffbb383deb718b77421c8baa15c49d7594c2588eae79b92eebc",
+                "file": "frame-00030.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "f9a37c4ff74c9b11663b9784c1ab6fb8aac8881af747ac773201a028a3eb6ac7",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.0,
+                "sha256": "c5210acd305d994fa3ca8df172b75c1a51f957af4d46202b5bd2ee5823638c3f",
+                "file": "frame-00036.jpg"
+              },
+              {
+                "t": 3.25,
+                "sha256": "4552e895a0769292226b7e2929ed0bf9a328960860a551cd3670178ca07e927c",
+                "file": "frame-00039.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "1ba0c3bf93b03168decfb8726b0bd75667765009a78b0121b1396dd947982f3e",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 3.75,
+                "sha256": "06183e6639be3b63c140ced6fd6fc835b94e39dfdaabd1733deb9aa9cf1d9ce4",
+                "file": "frame-00045.jpg"
+              },
+              {
+                "t": 4.0,
+                "sha256": "98cb8b934101029b754e598d0144cf3f1695ebdf30bdd2ae6bccf9316cba41f3",
+                "file": "frame-00048.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "663a785a24a22ae60c8afb66052464f10c86c6e5fb2ee13f2a9a176107a55e1a",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.3333,
+                "sha256": "0b33681880573c92236000004740dca579ef5390a6cf8e3c2adea1f70c808a29",
+                "file": "frame-00052.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "ad2780811d5970a295b22266a5544ceb5dfc0922f4ef8dabea43b935a889af3e",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "3de362c9e4b91124d857bc60a9a64f4e0e6bebeea34691311cd507eef13aec2a",
+                "file": "frame-00057.jpg"
+              },
+              {
+                "t": 5.0,
+                "sha256": "92eb7ce971df1953615fb6c1183cc24950813049b62a4475368d571e4aff0baa",
+                "file": "frame-00060.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"window\": [4.3333, 4.75]}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Review this interaction. What happened? Why might the person have acted that way? What could you use next time? Separate observations from hypotheses. Record a short reusable preference only to the degree the evidence warrants. A rejected action can be recorded even if its cause remains unknown. Return JSON with observation, interpretation, note and question as strings. Use an empty note for no preference evidence. Ask a focused question only if the uncertainty matters.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": [
+                {
+                  "t": 4.3333,
+                  "speaker": "person",
+                  "text": "Try again."
+                }
+              ],
+              "existing_note": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "1807ee8fb81fa1819783d2b14753ebee4168da17d4543bb25fb2d491f91f6102",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "536ea0b521218c2858adc57c4b1b729b6872b82e54e40dd05474249b5b0e5f89",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "4b747caa8718d932f23a1e904534b5fc4ab26c2e246bc9effd7b004ff6fffe78",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 2.0,
+                "sha256": "3299c8dbda75148e47b40220dc5cbcdf1fcb686bef4ee5cad76aa8f6f8890470",
+                "file": "frame-00024.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "f9a37c4ff74c9b11663b9784c1ab6fb8aac8881af747ac773201a028a3eb6ac7",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "1ba0c3bf93b03168decfb8726b0bd75667765009a78b0121b1396dd947982f3e",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "663a785a24a22ae60c8afb66052464f10c86c6e5fb2ee13f2a9a176107a55e1a",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.3333,
+                "sha256": "0b33681880573c92236000004740dca579ef5390a6cf8e3c2adea1f70c808a29",
+                "file": "frame-00052.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "ad2780811d5970a295b22266a5544ceb5dfc0922f4ef8dabea43b935a889af3e",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "3de362c9e4b91124d857bc60a9a64f4e0e6bebeea34691311cd507eef13aec2a",
+                "file": "frame-00057.jpg"
+              },
+              {
+                "t": 5.0,
+                "sha256": "92eb7ce971df1953615fb6c1183cc24950813049b62a4475368d571e4aff0baa",
+                "file": "frame-00060.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"observation\": \"The robot moved the teal board from the tabletop to the raised platform in front of the person. After the arm withdrew, the person said, \\u201cTry again.\\u201d\", \"interpretation\": \"The person may have wanted the platform left clear or a different spot cleared. They did not specify which.\", \"note\": \"Moving the teal board onto the raised platform was rejected for this task.\", \"question\": \"Which spot on the workbench would you like me to leave clear?\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "7cd42d002808bec1cfdf8e070825d0f8b40d4e9bf9445d32e35c1f0e3ffd90b1",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the rust mat clears the front-center area of the counter for the cutting board.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": "Moving the teal board onto the raised platform was rejected for this task."
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "7cd42d002808bec1cfdf8e070825d0f8b40d4e9bf9445d32e35c1f0e3ffd90b1",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the rust mat clears counter space and leaves the teal mat in place, consistent with the earlier rejection.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "9b15617d2497b47adae5f3150f4023132c1f8447b75941faef7b89a3194ddffc",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the closed stitching kit clears a bench spot while leaving the loose supplies together on the mat.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": "Moving the teal board onto the raised platform was rejected for this task."
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "9b15617d2497b47adae5f3150f4023132c1f8447b75941faef7b89a3194ddffc",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the closed stitching kit clears its spot on the bench and leaves the teal board in place.\"}\n",
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "plan": {
+        "id": "feedback-other-only",
+        "family": "paused-work",
+        "bundle": "other-only",
+        "evaluation": "other-only-results",
+        "conditions": [
+          "cold",
+          "matched"
+        ]
+      },
+      "run": {
+        "format": 1,
+        "replay_identity_version": 2,
+        "family": "paused-work",
+        "seed": 0,
+        "order_seed": 1,
+        "profile": "standard",
+        "feedback": "other-only",
+        "accepted_teaching_action": false,
+        "git": {
+          "commit": "d5ef83973177d3c88d4a2611c97fefc4fffe2db4",
+          "dirty": false
+        },
+        "camera": "agent",
+        "calibration": null,
+        "size": [
+          640,
+          480
+        ],
+        "fps": 12,
+        "menagerie_reference": "eea4c7431b63da8278b0ff31638e0b0e941cec0e",
+        "asset_sha256": {
+          "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+          "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+        },
+        "renderer": "mujoco-classic",
+        "versions": {
+          "mujoco": "4.0.1",
+          "numpy": "2.5.5",
+          "Pillow": "13.0.0",
+          "imageio-ffmpeg": "0.8.1"
+        },
+        "phases": {
+          "teach": {
+            "choices": {
+              "A": "far",
+              "B": "near"
+            },
+            "answer": "A",
+            "scripted_choice": "near",
+            "layout_seed": 0
+          },
+          "transfer": {
+            "choices": {
+              "A": "near",
+              "B": "far"
+            },
+            "answer": "A",
+            "scripted_choice": null,
+            "layout_seed": 107
+          },
+          "exception": {
+            "choices": {
+              "A": "organizer",
+              "B": "case"
+            },
+            "answer": "B",
+            "scripted_choice": null,
+            "layout_seed": 206
+          }
+        }
+      },
+      "results": {
+        "adapter": "/home/mattf/Documents/Codex/2026-11-23/files-mentioned-by-the-user-personalization/franka-preference-experiments/.venv/bin/franka-prefs-codex",
+        "model": "gpt-6.2-astra",
+        "bundle": {
+          "run_sha256": "6473ac65e9db19301829ee672513ecac5101ac3d3ee97f18889ad4c0c7dec29d",
+          "sensor_manifest_sha256": "88f051da4ad1aa2125c6e1d944bbed7764d4e29660024714d406cfd109305fed"
+        },
+        "status": "complete",
+        "audit": {
+          "observation": "The robot moved the teal mat onto the raised platform. The reddish mat stayed on the bench. The person then said, \u201cNo, the other mat.\u201d",
+          "interpretation": "The correction suggests the person wanted the spot under the reddish mat cleared. Their reason is unclear.",
+          "note": "For this clearing task, the person wanted the reddish mat moved and rejected moving the teal one.",
+          "question": ""
+        },
+        "decisions": [
+          {
+            "phase": "transfer",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "transfer",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": false
+          },
+          {
+            "phase": "exception",
+            "condition": "cold",
+            "choice": "B",
+            "matched_answer": true
+          },
+          {
+            "phase": "exception",
+            "condition": "matched",
+            "choice": "B",
+            "matched_answer": true
+          }
+        ]
+      },
+      "calls": [
+        {
+          "request": {
+            "instruction": "These are time-ordered samples from a robot's camera during one task. Locate a person's intervention or feedback if one is visible. Ordinary nearby activity may be incidental. Return JSON with window, either [start_seconds,end_seconds] or null.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": [
+                {
+                  "t": 4.3333,
+                  "speaker": "person",
+                  "text": "No, the other mat."
+                }
+              ]
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "68291d32063cf99abc3c515c9669aa2f005b181d89666128652b926b8fbfb533",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.25,
+                "sha256": "17c6466522eecbb4165ef982d51c1fff908c78d068914197803e50b219fe3561",
+                "file": "frame-00003.jpg"
+              },
+              {
+                "t": 0.5,
+                "sha256": "cc1c74e636c0e2738f26f084ccbf4aa6798324a25f5b915b738e2d56f6772879",
+                "file": "frame-00006.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "65508dcc368d58fc2091564d44e5ca6bcef053bbc1a07c4d73611ac2da4ff23f",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.0,
+                "sha256": "74a54249becb0e8a1bd2102a4d41db49cf8cf00c0a8e61d209dbacd4f221ca9b",
+                "file": "frame-00012.jpg"
+              },
+              {
+                "t": 1.25,
+                "sha256": "f5e4f2a94e37e382b7531fdddd5f61194f669354138d534a8f8355d22cf73dd5",
+                "file": "frame-00015.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "f0f471c23df78978123bcb093a60c6bf68834e002a33996d251a3441e253de67",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 1.75,
+                "sha256": "b5657c712a1bed2c1927a3ceac011e5855edf058f9b74ce1ca31198d4e2d7e97",
+                "file": "frame-00021.jpg"
+              },
+              {
+                "t": 2.0,
+                "sha256": "95ef3f3af06682a10a1f5edae756633f6d127922b272383e83f269fda96cdabe",
+                "file": "frame-00024.jpg"
+              },
+              {
+                "t": 2.25,
+                "sha256": "1166c05ff456c7b891aa9f8519c5aaedfb0d573a9365b01cc857f26278d776a0",
+                "file": "frame-00027.jpg"
+              },
+              {
+                "t": 2.5,
+                "sha256": "8133b7a5d948bffbb383deb718b77421c8baa15c49d7594c2588eae79b92eebc",
+                "file": "frame-00030.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "74d19d4a1d98f774f7de5f39ad00eff72e416f7e8525089e474a676d790fee90",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.0,
+                "sha256": "0903e0323551c762d3e207f1084c59e6f81904ca866f5e2b70919c8dbef82d85",
+                "file": "frame-00036.jpg"
+              },
+              {
+                "t": 3.25,
+                "sha256": "e022b66bf562c638b79c6f633ba15dd0d7cdef29efecd99d258e4c944ebab2c9",
+                "file": "frame-00039.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "1ba0c3bf93b03168decfb8726b0bd75667765009a78b0121b1396dd947982f3e",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 3.75,
+                "sha256": "ac3bad2de8a49d57b45a86afcd0ba9dc10384e44f85581f26ee53b72bd82a5be",
+                "file": "frame-00045.jpg"
+              },
+              {
+                "t": 4.0,
+                "sha256": "a12dd7279ce3916a93dd0af0e6f1dfccecbb52087df6411bf47ae6464cc17fe8",
+                "file": "frame-00048.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "26526352d7cacadec5bc39d3c672d181fd9627a5f3370c799c9a0871266ecd97",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.3333,
+                "sha256": "c1592400e9c1884161d7e6fea7f9bed47bd08c22c784ebea2c853eeb859ff55a",
+                "file": "frame-00052.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "359b58ded62316d814df112c19875bedd33b4f86b931608b4a14cd73557d99d5",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "a9b4ebec720c019535ea035d1ebf53c273bfbcd902e69568f45a9aff770e31bb",
+                "file": "frame-00057.jpg"
+              },
+              {
+                "t": 5.0,
+                "sha256": "86f2209640d99eb8d8f8a64370ecd589a56e391b6a4f645ab2284a0a321cf449",
+                "file": "frame-00060.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"window\": [4.3333, 5.0]}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Review this interaction. What happened? Why might the person have acted that way? What could you use next time? Separate observations from hypotheses. Record a short reusable preference only to the degree the evidence warrants. A rejected action can be recorded even if its cause remains unknown. Return JSON with observation, interpretation, note and question as strings. Use an empty note for no preference evidence. Ask a focused question only if the uncertainty matters.",
+            "context": {
+              "task": "Clear a spot on my workbench.",
+              "speech": [
+                {
+                  "t": 4.3333,
+                  "speaker": "person",
+                  "text": "No, the other mat."
+                }
+              ],
+              "existing_note": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "68291d32063cf99abc3c515c9669aa2f005b181d89666128652b926b8fbfb533",
+                "file": "frame-00000.jpg"
+              },
+              {
+                "t": 0.75,
+                "sha256": "65508dcc368d58fc2091564d44e5ca6bcef053bbc1a07c4d73611ac2da4ff23f",
+                "file": "frame-00009.jpg"
+              },
+              {
+                "t": 1.5,
+                "sha256": "f0f471c23df78978123bcb093a60c6bf68834e002a33996d251a3441e253de67",
+                "file": "frame-00018.jpg"
+              },
+              {
+                "t": 2.0,
+                "sha256": "95ef3f3af06682a10a1f5edae756633f6d127922b272383e83f269fda96cdabe",
+                "file": "frame-00024.jpg"
+              },
+              {
+                "t": 2.75,
+                "sha256": "74d19d4a1d98f774f7de5f39ad00eff72e416f7e8525089e474a676d790fee90",
+                "file": "frame-00033.jpg"
+              },
+              {
+                "t": 3.5,
+                "sha256": "1ba0c3bf93b03168decfb8726b0bd75667765009a78b0121b1396dd947982f3e",
+                "file": "frame-00042.jpg"
+              },
+              {
+                "t": 4.25,
+                "sha256": "26526352d7cacadec5bc39d3c672d181fd9627a5f3370c799c9a0871266ecd97",
+                "file": "frame-00051.jpg"
+              },
+              {
+                "t": 4.3333,
+                "sha256": "c1592400e9c1884161d7e6fea7f9bed47bd08c22c784ebea2c853eeb859ff55a",
+                "file": "frame-00052.jpg"
+              },
+              {
+                "t": 4.5,
+                "sha256": "359b58ded62316d814df112c19875bedd33b4f86b931608b4a14cd73557d99d5",
+                "file": "frame-00054.jpg"
+              },
+              {
+                "t": 4.75,
+                "sha256": "a9b4ebec720c019535ea035d1ebf53c273bfbcd902e69568f45a9aff770e31bb",
+                "file": "frame-00057.jpg"
+              },
+              {
+                "t": 5.0,
+                "sha256": "86f2209640d99eb8d8f8a64370ecd589a56e391b6a4f645ab2284a0a321cf449",
+                "file": "frame-00060.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"observation\": \"The robot moved the teal mat onto the raised platform. The reddish mat stayed on the bench. The person then said, \\u201cNo, the other mat.\\u201d\", \"interpretation\": \"The correction suggests the person wanted the spot under the reddish mat cleared. Their reason is unclear.\", \"note\": \"For this clearing task, the person wanted the reddish mat moved and rejected moving the teal one.\", \"question\": \"\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "990ba0013510b0f7877c22c50258d686690fff42a5c625b56d6a3954f7ac109d",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the rust mat clears the front-center of the counter for the cutting board.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Make room for the cutting board on my sewing counter.",
+              "options": {
+                "A": "Shelve the teal mat.",
+                "B": "Shelve the rust mat."
+              },
+              "memory": "For this clearing task, the person wanted the reddish mat moved and rejected moving the teal one."
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "990ba0013510b0f7877c22c50258d686690fff42a5c625b56d6a3954f7ac109d",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"The rust mat matches the reddish mat the person wanted shelved. They wanted the teal mat to stay.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": ""
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "07fbe1d46807deef5575ec05a540031be3e79f7bc64b2728ba2eb55c558d7112",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the closed stitching kit clears its spot on the bench while keeping its contents together.\"}\n",
+          "exit_code": 0
+        },
+        {
+          "request": {
+            "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+            "context": {
+              "task": "Free a bench spot for a new project.",
+              "options": {
+                "A": "Shelve the loose organizer.",
+                "B": "Shelve the closed stitching kit."
+              },
+              "memory": "For this clearing task, the person wanted the reddish mat moved and rejected moving the teal one."
+            },
+            "images": [
+              {
+                "t": 0.0,
+                "sha256": "07fbe1d46807deef5575ec05a540031be3e79f7bc64b2728ba2eb55c558d7112",
+                "file": "frame-00000.jpg"
+              }
+            ]
+          },
+          "raw_reply": "{\"choice\": \"B\", \"reason\": \"Shelving the closed stitching kit frees bench space while leaving the teal mat and its loose items where the person wanted them.\"}\n",
+          "exit_code": 0
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "manifest_sha256": "a0c638e77ab217f0050fb494619569492e1c0be61f9249f28dcb1b557abf653a",
+    "rows": [
+      {
+        "id": "feedback-none",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-none",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-none",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-none",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-incidental",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-incidental",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-incidental",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-incidental",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-retry-only",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-retry-only",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-retry-only",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-retry-only",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-other-only",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-other-only",
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": false
+      },
+      {
+        "id": "feedback-other-only",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "cold",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      },
+      {
+        "id": "feedback-other-only",
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "matched",
+        "evaluation_status": "complete",
+        "rendered": true,
+        "scored": true,
+        "correct": true
+      }
+    ],
+    "paired": [
+      {
+        "family": "paused-work",
+        "phase": "transfer",
+        "arm": "matched",
+        "both_correct": 0,
+        "both_wrong": 4,
+        "gain": 0,
+        "loss": 0,
+        "missing": 0
+      },
+      {
+        "family": "paused-work",
+        "phase": "exception",
+        "arm": "matched",
+        "both_correct": 4,
+        "both_wrong": 0,
+        "gain": 0,
+        "loss": 0,
+        "missing": 0
+      }
+    ]
+  }
+}

@@ -14,6 +14,8 @@ The `mujoco` branch adds ten executable teaching, transfer and scope scenarios. 
 
 ![The Franka arm, two work mats and the seated Rocketbox participant](docs/media/paused-work.jpg)
 
+[Watch the corrected hand motion](docs/media/paused-work-correction.mp4) · [View all ten held-out scenes](docs/media/held-out-scenes.jpg)
+
 On Linux with EGL or a Mesa EGL implementation, from the repository root:
 
 ```bash
