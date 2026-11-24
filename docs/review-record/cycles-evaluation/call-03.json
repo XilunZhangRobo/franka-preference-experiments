@@ -1,0 +1,22 @@
+{
+  "request": {
+    "instruction": "Choose an available action for this command using the current image and any user memory. Return JSON with choice (one supplied letter) and reason. Commit to one choice.",
+    "context": {
+      "task": "Make room for the cutting board on my sewing counter.",
+      "options": {
+        "A": "Shelve the teal mat.",
+        "B": "Shelve the rust mat."
+      },
+      "memory": ""
+    },
+    "images": [
+      {
+        "t": 0.0,
+        "sha256": "3177895d18154bcba35849c6af511a3afc7fb3f16c82a5eda134624086b2527e",
+        "file": "frame-00000.jpg"
+      }
+    ]
+  },
+  "raw_reply": "{\"choice\": \"B\", \"reason\": \"The rust mat sits directly in front of the cutting board, so shelving it clears space to pull the board forward.\"}\n",
+  "exit_code": 0
+}

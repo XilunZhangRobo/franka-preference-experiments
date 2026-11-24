@@ -1,0 +1,5 @@
+# Blinded development review
+
+The five decision calls and one observation call used fresh GPT-6.2-Astra agents. The observer could read one teaching packet and examine its images. Each decision reader saw only the designated probe packet(s), plus the literal memory in its instruction if assigned one. The operating environment was shared and access restrictions were given by instruction. The shipped model-adapter protocol separately passes only image bytes and approved text.
+
+`rgb.zip` contains sensor-only evidence exactly as staged under the neutral IDs p, q, r and z. p is the teaching interaction, q and r are the first transfer and scope probes, and z is the color/letter conflict probe. The first observer was given an overview made from uniformly sampled frames, plus access to the individual images. `transcripts.json` preserves the prompts and replies. `sha256.json` identifies each archived input. These files archive the development run before the later forearm clearance repair. [Interpretation and scoring](../development-audit.md)

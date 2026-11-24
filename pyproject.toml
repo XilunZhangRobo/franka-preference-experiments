@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "franka-visual-prefs"
+version = "0.1.0"
+description = "MuJoCo visual episodes for learning personal preferences from corrections"
+requires-python = ">=3.11"
+dependencies = ["mujoco==4.0.1", "numpy>=1.26", "pillow>=10", "imageio-ffmpeg>=0.5"]
+
+[project.scripts]
+franka-prefs = "visual_prefs.cli:main"
+franka-prefs-vlm = "visual_prefs.http_adapter:main"
+franka-prefs-codex = "visual_prefs.codex_adapter:main"
+
+[tool.setuptools]
+packages = ["visual_prefs"]
+
+[tool.setuptools.package-data]
+visual_prefs = ["data/human/*", "data/materials/*"]
+
+[dependency-groups]
+dev = ["ruff==0.17.6"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

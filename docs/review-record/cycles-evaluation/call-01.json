@@ -1,0 +1,169 @@
+{
+  "request": {
+    "instruction": "These are time-ordered samples from a robot's camera during one task. Locate a person's intervention or feedback if one is visible. Ordinary nearby activity may be incidental. Return JSON with window, either [start_seconds,end_seconds] or null.",
+    "context": {
+      "task": "Clear a spot on my workbench.",
+      "speech": [
+        {
+          "t": 6.9444,
+          "speaker": "person",
+          "text": "Try again."
+        }
+      ]
+    },
+    "images": [
+      {
+        "t": 0.0,
+        "sha256": "1404e79dd058d763060363312ab01f76daad3b7e4efed4cce153f3460633b849",
+        "file": "frame-00000.jpg"
+      },
+      {
+        "t": 0.2222,
+        "sha256": "fd4d8d7d3fddbe1ade1939e35f9e0834fa8da6bade7307bd0c64d3f3442dd6b1",
+        "file": "frame-00004.jpg"
+      },
+      {
+        "t": 0.4444,
+        "sha256": "a8254d3c028dbb01495eddfa442e068eeddc28cfdc5c65d07bf81dc666c11158",
+        "file": "frame-00008.jpg"
+      },
+      {
+        "t": 0.8889,
+        "sha256": "70f6dea629a1247160bf61d88b761be1ffd8e2a04a5807e67d5e8c89ff94154d",
+        "file": "frame-00016.jpg"
+      },
+      {
+        "t": 1.1111,
+        "sha256": "82dd9608382fd8ec88748b5295c065494181c243c6d73262e92b206a723ee5dd",
+        "file": "frame-00020.jpg"
+      },
+      {
+        "t": 1.3333,
+        "sha256": "2e64cf0e829ed478759c8d5753d35e60a7398b0875942f1f03f028d1fbe9d2a2",
+        "file": "frame-00024.jpg"
+      },
+      {
+        "t": 1.5556,
+        "sha256": "60438217f5e4caedfea6883265edc432bdc4bfe864500629cea24cc428d520a0",
+        "file": "frame-00028.jpg"
+      },
+      {
+        "t": 1.7778,
+        "sha256": "6159e81b8ed4b64b27aec1c9155986d388de6694778e246e287d74cf36970c5f",
+        "file": "frame-00032.jpg"
+      },
+      {
+        "t": 2.2222,
+        "sha256": "7bf7922f417c857e859edf1dda4593263c54eb2225d889ad87ed43f8f8898be2",
+        "file": "frame-00040.jpg"
+      },
+      {
+        "t": 2.4444,
+        "sha256": "274756fd48cb024c5c478883576c31a699aa0a364f3ab2b41d77aa9e21129f94",
+        "file": "frame-00044.jpg"
+      },
+      {
+        "t": 2.6667,
+        "sha256": "b7560a172e44de9d17b5aa66ea29b061a77e33cbde27a692245e81b0cc15bcf1",
+        "file": "frame-00048.jpg"
+      },
+      {
+        "t": 2.8889,
+        "sha256": "dc8a557823cf9c17a30043b8795cb9a694ad1a39de43b78ad0c3dc0dafac19cf",
+        "file": "frame-00052.jpg"
+      },
+      {
+        "t": 3.1111,
+        "sha256": "f3315fe261e49b36b3aeca1344faf07a1b2ec937a613d9493d6f3ff695ea65b5",
+        "file": "frame-00056.jpg"
+      },
+      {
+        "t": 3.5556,
+        "sha256": "8baecd4ef7cff6fb62d53fc596b146acc7e3378a4352cc21cc55074f947d38d7",
+        "file": "frame-00064.jpg"
+      },
+      {
+        "t": 3.7778,
+        "sha256": "5f78db2b07681af355e1b3b24c103d41c3a380ee1d57d57fd2d86a087be26fc2",
+        "file": "frame-00068.jpg"
+      },
+      {
+        "t": 4.0,
+        "sha256": "bbe024fae134f1135ea1ae4820b1a5d5d35ec3442b9d77bbd5e68a0b2b97beb3",
+        "file": "frame-00072.jpg"
+      },
+      {
+        "t": 4.2222,
+        "sha256": "e8c8af81b5789928bd58c656548e33bbf44bbf5f3cded1f9134c4ec8f300ee55",
+        "file": "frame-00076.jpg"
+      },
+      {
+        "t": 4.6667,
+        "sha256": "27c4a62745198e7625b6761c6184e29b6524c77eec34194985169316e958147c",
+        "file": "frame-00084.jpg"
+      },
+      {
+        "t": 4.8889,
+        "sha256": "3695ca07ec99a1a741843271fa8f92d834aabc8b71b676ece665fcff8b01cfcf",
+        "file": "frame-00088.jpg"
+      },
+      {
+        "t": 5.1111,
+        "sha256": "e854227e07245b6db86ffc33b70deaf5ffce3e0d907d3caa5143eaa5d1a64cdb",
+        "file": "frame-00092.jpg"
+      },
+      {
+        "t": 5.3333,
+        "sha256": "81c0c3cd775ad01d296c36fdaab6d296376ae360d62acded562e5b593bf76b45",
+        "file": "frame-00096.jpg"
+      },
+      {
+        "t": 5.5556,
+        "sha256": "2da21d2f635ec91448d2f8aa311a996228ef037ca44a5a11e3e38cbde61bacc6",
+        "file": "frame-00100.jpg"
+      },
+      {
+        "t": 6.0,
+        "sha256": "4beb935ae354643e1e6a9623001e873c89558438ca30c35f4f02ebbf08eb8e1c",
+        "file": "frame-00108.jpg"
+      },
+      {
+        "t": 6.2222,
+        "sha256": "5c6185af00d3036da64b1e929f57b7c221edbaab4365def88fb4784a86793ec4",
+        "file": "frame-00112.jpg"
+      },
+      {
+        "t": 6.4444,
+        "sha256": "8b98e25d2c38a1c2e23e6c77348490f94ae0db7c161fba621afb62d7b3ecd3fa",
+        "file": "frame-00116.jpg"
+      },
+      {
+        "t": 6.6667,
+        "sha256": "dd247829c7b5780e828bf4810da79b2c26e3c5e7bc1e420b588a274ad5272406",
+        "file": "frame-00120.jpg"
+      },
+      {
+        "t": 6.8889,
+        "sha256": "1c714b29937d129c48cb625f2eab61e7efb6e471566a75222098570c1e28e24e",
+        "file": "frame-00124.jpg"
+      },
+      {
+        "t": 7.1111,
+        "sha256": "2e98c7108f6223182776fd14c788e1cbb677ea49a423ce756536e476e0178e1b",
+        "file": "frame-00128.jpg"
+      },
+      {
+        "t": 7.3333,
+        "sha256": "b2edf729fc0bf2518c291d7a00f864eee1a71d1fbbeee2a77d02ef86e0410312",
+        "file": "frame-00132.jpg"
+      },
+      {
+        "t": 7.5556,
+        "sha256": "99fab6e1a46f49d7a49d4d13f116b4f5abe1b503aab483f6634c5693e2616e0e",
+        "file": "frame-00136.jpg"
+      }
+    ]
+  },
+  "raw_reply": "{\"window\": [4.6667, 6.9444]}\n",
+  "exit_code": 0
+}

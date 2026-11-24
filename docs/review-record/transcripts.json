@@ -1,0 +1,69 @@
+[
+  {
+    "role": "blind_observer",
+    "model": "gpt-6.2-astra",
+    "instruction": "Independent visual observer. Your ONLY evidence is in /tmp/sensor-view-tu57anu0/p. Read input.json for command and time-stamped speech and use view_image to inspect overview.jpg and individual RGB images as needed. Do not inspect any other directory, underlying code, answer key or chat. From the actual visible behavior, describe (1) what the robot did and what the person did, (2) plausible reason with alternatives, and (3) a short written preference note, distinguishing uncertainty, to carry to a future decision. Specify which frames/interval establish it. If warranted ask one narrow question. Reply in a short JSON object. Shell if needed requires require_escalated due bwrap. Do not write files.",
+    "reply": {
+      "observation": "At 1.33–3.56 s, the robot moved the teal mat from the bench onto the raised shelf. At 4.89–6.44 s, the person moved it back to its original spot. The rust mat stayed in place. At 6.94 s, the person said “Try again.”",
+      "interpretation": "The reversal suggests the person wanted the teal mat within reach. They may instead have wanted a particular part of the bench cleared. Their reason is uncertain.",
+      "preference_note": "For this workbench, leave the teal mat where the person put it. Given the same two choices, try shelving the rust mat (B). The person has not expressed a general color preference."
+    }
+  },
+  {
+    "role": "blind_cold",
+    "model": "gpt-6.2-astra",
+    "instruction": "You control a tabletop robot for two independent decisions. ONLY inspect /tmp/sensor-view-tu57anu0/q/input.json and its frame-00000.jpg, then /tmp/sensor-view-tu57anu0/r/input.json and its frame-00000.jpg. Read the commands and options and examine the images. Choose one supplied letter for each. You have no person-specific history. Do not inspect any other file, answers, scene code, or the other directory before deciding q. Return JSON with q and r choices and concise reasons. Use view_image for each observation. Read-only. Shell if needed requires escalation due bwrap.",
+    "reply": {
+      "q": {
+        "choice": "B",
+        "reason": "The rust mat holds fewer items, so clearing its spot would disturb fewer supplies."
+      },
+      "r": {
+        "choice": "B",
+        "reason": "The closed stitching kit can move to the shelf as one piece while the loose supplies stay in place."
+      }
+    }
+  },
+  {
+    "role": "blind_memory",
+    "model": "gpt-6.2-astra",
+    "instruction": "You control a tabletop robot. Your only written user memory is exactly: “For this workbench, leave the teal mat where the person put it. Given the same two choices, try shelving the rust mat (B). The person has not expressed a general color preference.” For two independent scenes inspect ONLY /tmp/sensor-view-tu57anu0/q/input.json plus its frame-00000.jpg, decide q, then inspect /tmp/sensor-view-tu57anu0/r/input.json plus its frame-00000.jpg and decide r. Use only the commands, current RGB images, options and the above note. Choose one supplied letter per scene and return JSON with both choices and reasons. Do not inspect any other file/code/chat. Use view_image for both. Shell requires require_escalated if needed. Read-only.",
+    "reply": {
+      "q": {
+        "choice": "B",
+        "reason": "Shelving the rust mat makes room for the cutting board and leaves the teal mat where the person put it, as requested for this workbench."
+      },
+      "r": {
+        "choice": "B",
+        "reason": "The closed stitching kit can move as one piece, freeing its spot while keeping the loose sewing supplies in place."
+      }
+    }
+  },
+  {
+    "role": "crossed_memory",
+    "model": "gpt-6.2-astra",
+    "instruction": "You control a tabletop robot for one decision. Your only person-specific memory is: “For this workbench, leave the teal mat where the person put it. Given the same two choices, try shelving the rust mat (B). The person has not expressed a general color preference.” Use ONLY /tmp/sensor-decision-5gj8xrbl/z/input.json and its frame-00000.jpg. Read the command and options, inspect the actual image with view_image, choose one supplied letter. Return JSON with choice and short reason. Do not inspect any other files. Shell may require require_escalated.",
+    "reply": {
+      "choice": "B",
+      "reason": "Shelving the rust mat makes room for the cutting board and leaves the teal mat where the person placed it."
+    }
+  },
+  {
+    "role": "crossed_cold",
+    "model": "gpt-6.2-astra",
+    "instruction": "You control a tabletop robot for one decision, with no person-specific history. Use ONLY /tmp/sensor-decision-5gj8xrbl/z/input.json and its frame-00000.jpg. Read the command and options, inspect the actual image with view_image, choose one supplied letter. Return JSON with choice and short reason. Do not inspect any other files. Shell may require require_escalated.",
+    "reply": {
+      "choice": "B",
+      "reason": "Shelving the rust mat would clear a larger patch of counter for the cutting board."
+    }
+  },
+  {
+    "role": "crossed_positive",
+    "model": "gpt-6.2-astra",
+    "instruction": "You control a tabletop robot for one decision. The user previously clarified: “A binder clip on a mat means I have paused work there. When clearing space, leave that mat where it is and put away the unmarked one if you can.” Use ONLY /tmp/sensor-decision-5gj8xrbl/z/input.json and its frame-00000.jpg. Read command and options, inspect the actual image with view_image, and return JSON with choice and short reason. Do not inspect other files. Shell may require require_escalated.",
+    "reply": {
+      "choice": "A",
+      "reason": "The binder clip marks the rust mat as paused work. Shelving the unmarked teal mat makes room for the cutting board."
+    }
+  }
+]

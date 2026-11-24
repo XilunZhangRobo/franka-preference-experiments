@@ -1,0 +1,120 @@
+{
+  "request": {
+    "instruction": "Review this interaction. What happened? Why might the person have acted that way? What could you use next time? Separate observations from hypotheses. Record a short reusable preference only to the degree the evidence warrants. A rejected action can be recorded even if its cause remains unknown. Return JSON with observation, interpretation, note and question as strings. Use an empty note for no preference evidence. Ask a focused question only if the uncertainty matters.",
+    "context": {
+      "task": "Clear a spot on my workbench.",
+      "speech": [
+        {
+          "t": 6.9444,
+          "speaker": "person",
+          "text": "Try again."
+        }
+      ],
+      "existing_note": ""
+    },
+    "images": [
+      {
+        "t": 0.0,
+        "sha256": "1404e79dd058d763060363312ab01f76daad3b7e4efed4cce153f3460633b849",
+        "file": "frame-00000.jpg"
+      },
+      {
+        "t": 0.6667,
+        "sha256": "58c929472f4ddee3f893e31a5aea16e0687f7f7af20c7222f48ad21be077e1ad",
+        "file": "frame-00012.jpg"
+      },
+      {
+        "t": 1.5556,
+        "sha256": "60438217f5e4caedfea6883265edc432bdc4bfe864500629cea24cc428d520a0",
+        "file": "frame-00028.jpg"
+      },
+      {
+        "t": 2.2222,
+        "sha256": "7bf7922f417c857e859edf1dda4593263c54eb2225d889ad87ed43f8f8898be2",
+        "file": "frame-00040.jpg"
+      },
+      {
+        "t": 2.8889,
+        "sha256": "dc8a557823cf9c17a30043b8795cb9a694ad1a39de43b78ad0c3dc0dafac19cf",
+        "file": "frame-00052.jpg"
+      },
+      {
+        "t": 3.7778,
+        "sha256": "5f78db2b07681af355e1b3b24c103d41c3a380ee1d57d57fd2d86a087be26fc2",
+        "file": "frame-00068.jpg"
+      },
+      {
+        "t": 4.4444,
+        "sha256": "8fe63f7f6324b61080fec003183f9fca1ff9fe931f646c88c7618e1d2a402687",
+        "file": "frame-00080.jpg"
+      },
+      {
+        "t": 4.6667,
+        "sha256": "27c4a62745198e7625b6761c6184e29b6524c77eec34194985169316e958147c",
+        "file": "frame-00084.jpg"
+      },
+      {
+        "t": 4.8889,
+        "sha256": "3695ca07ec99a1a741843271fa8f92d834aabc8b71b676ece665fcff8b01cfcf",
+        "file": "frame-00088.jpg"
+      },
+      {
+        "t": 5.1111,
+        "sha256": "e854227e07245b6db86ffc33b70deaf5ffce3e0d907d3caa5143eaa5d1a64cdb",
+        "file": "frame-00092.jpg"
+      },
+      {
+        "t": 5.3333,
+        "sha256": "81c0c3cd775ad01d296c36fdaab6d296376ae360d62acded562e5b593bf76b45",
+        "file": "frame-00096.jpg"
+      },
+      {
+        "t": 5.5556,
+        "sha256": "2da21d2f635ec91448d2f8aa311a996228ef037ca44a5a11e3e38cbde61bacc6",
+        "file": "frame-00100.jpg"
+      },
+      {
+        "t": 5.7778,
+        "sha256": "a3f7118bb04bb4df31cb4044625796d579569827eb929dfdbf34bc2f780944bc",
+        "file": "frame-00104.jpg"
+      },
+      {
+        "t": 6.0,
+        "sha256": "4beb935ae354643e1e6a9623001e873c89558438ca30c35f4f02ebbf08eb8e1c",
+        "file": "frame-00108.jpg"
+      },
+      {
+        "t": 6.2222,
+        "sha256": "5c6185af00d3036da64b1e929f57b7c221edbaab4365def88fb4784a86793ec4",
+        "file": "frame-00112.jpg"
+      },
+      {
+        "t": 6.4444,
+        "sha256": "8b98e25d2c38a1c2e23e6c77348490f94ae0db7c161fba621afb62d7b3ecd3fa",
+        "file": "frame-00116.jpg"
+      },
+      {
+        "t": 6.6667,
+        "sha256": "dd247829c7b5780e828bf4810da79b2c26e3c5e7bc1e420b588a274ad5272406",
+        "file": "frame-00120.jpg"
+      },
+      {
+        "t": 6.8889,
+        "sha256": "1c714b29937d129c48cb625f2eab61e7efb6e471566a75222098570c1e28e24e",
+        "file": "frame-00124.jpg"
+      },
+      {
+        "t": 6.9444,
+        "sha256": "1a3b573ecfc6c57d4ac927b28e2c93e43019dc7259c7bff55ad4226e34d87515",
+        "file": "frame-00125.jpg"
+      },
+      {
+        "t": 7.1111,
+        "sha256": "2e98c7108f6223182776fd14c788e1cbb677ea49a423ce756536e476e0178e1b",
+        "file": "frame-00128.jpg"
+      }
+    ]
+  },
+  "raw_reply": "{\"observation\": \"The robot moved the teal board onto the raised platform. The person returned it to its original spot and said, \\u201cTry again.\\u201d\", \"interpretation\": \"The person rejected that move. They may have wanted a different spot cleared or a different destination for the board.\", \"note\": \"When clearing this workbench, avoid repeating the move from the teal board\\u2019s original spot to the raised platform.\", \"question\": \"Which spot on the workbench would you like me to clear?\"}\n",
+  "exit_code": 0
+}

@@ -1,0 +1,41 @@
+{
+  "adapter": "python3 /tmp/franka-prefs-local-vlm.py",
+  "model": "gpt-6.2-astra",
+  "bundle": {
+    "run_sha256": "40e76dbb30758cbdf3bd6d413051a5bf693cdb5f7ad6e917a09c7cf56308d1d3",
+    "sensor_manifest_sha256": "175703c34f30d800979f41be9a107fa04597fb07ff58ea92fadfade9d2744f1f"
+  },
+  "status": "complete",
+  "audit": {
+    "observation": "The robot moved the teal board onto the raised platform. The person returned it to its original spot and said, “Try again.”",
+    "interpretation": "The person rejected that move. They may have wanted a different spot cleared or a different destination for the board.",
+    "note": "When clearing this workbench, avoid repeating the move from the teal board’s original spot to the raised platform.",
+    "question": "Which spot on the workbench would you like me to clear?"
+  },
+  "decisions": [
+    {
+      "phase": "transfer",
+      "condition": "cold",
+      "choice": "B",
+      "matched_answer": true
+    },
+    {
+      "phase": "transfer",
+      "condition": "matched",
+      "choice": "B",
+      "matched_answer": true
+    },
+    {
+      "phase": "exception",
+      "condition": "cold",
+      "choice": "B",
+      "matched_answer": true
+    },
+    {
+      "phase": "exception",
+      "condition": "matched",
+      "choice": "B",
+      "matched_answer": true
+    }
+  ]
+}
