@@ -1,0 +1,140 @@
+{
+  "teaching": {
+    "scene_sha256": "6730a111f6c22136e4357cb70429758a3e3d3f12a703ee5b1f7be4ca1d4e51dd",
+    "state_sha256": "2fa9a1fadfc81af2ed8fa152b70bba3fdba5cceca3b3c9abe454836d78340718",
+    "replay_identity_version": 2
+  },
+  "transfer": {
+    "scene_sha256": "03b82188d5cd20dda8a634767f24b2a061e926ccc7340f2aa0b380dc91a85345",
+    "state_sha256": "c6b152b19fd28e62f98b1e348e1a4b46f52880860d0804fa289fa7fd0c2f3b87",
+    "replay_identity_version": 2
+  },
+  "crossed_transfer": {
+    "scene_sha256": "1933131914d8653628aa73c684b5c758fe28e748b5edb5bcb3deae388f8184bb",
+    "state_sha256": "8ab50269067ad3297332c33835bd36784c9afc03875cf9e02fa19227e2e29ba2",
+    "replay_identity_version": 2
+  },
+  "exception": {
+    "scene_sha256": "45c12607d322eb7b30bf0035497ddcd380ab3e2abdd8ef92eeb5d39ecab4eeac",
+    "state_sha256": "8ab50269067ad3297332c33835bd36784c9afc03875cf9e02fa19227e2e29ba2",
+    "replay_identity_version": 2
+  },
+  "baseline_revision": "29f7b4543105d395c897216e6d81e16084ddc904",
+  "code_revision": "fa7daec25dc6d55e9e67a69810c3d8dbe990f4ee",
+  "physical_assets": {
+    "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+    "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+  },
+  "media_sha256": {
+    "workshop-agent-comparison.jpg": "8d96686005c55ab52513bd74b0642479642de6d66fc379a29bfef443fe3e07cd",
+    "workshop-agent-correction.mp4": "27090d655d79b0f99e41170ec1639ac6603ae46f7b327c2e3aa99c39da674bce",
+    "workshop-correction-frame.jpg": "6b4b268785b41d70a4b92852fbd32f4d2b7d0987a32fdf8c781e8208432c0608",
+    "workshop-props.jpg": "5988a3761505b40b03c6ab92b4f276fd158458b147965671952fc4f2f904b245",
+    "prop-gallery.jpg": "1c90803427b24a089e3203b97f8e809ae092ed097d70749d0819cfd705b90805",
+    "sewing-props.jpg": "8738f55a2affea228f36098935d49cbcb7ba7e2aab10776744a2dce0591206ff",
+    "teach-0.jpg": "d2e8ec89ab1db606ff5092474f0b0aeffc6b7f1451f2522cd039983429703a1d",
+    "transfer-104.jpg": "536507968ca9670a3cb303b0d11eb212743213847726571d5cc82b403af418c5"
+  },
+  "verified_cycles": {
+    "family": "paused-work",
+    "phase": "teach",
+    "seed": 0,
+    "frame": 96,
+    "end_frame": null,
+    "fps": 18,
+    "camera": "agent",
+    "detail_at_prop": null,
+    "samples": 48,
+    "threads": 12,
+    "size": [
+      960,
+      720
+    ],
+    "device": "CPU",
+    "feedback": "retry",
+    "profile": "standard",
+    "choice": null,
+    "replay_identity_version": 2,
+    "dynamic_lights_verified": true,
+    "verified_source_state_sha256": "2fa9a1fadfc81af2ed8fa152b70bba3fdba5cceca3b3c9abe454836d78340718",
+    "blender": "4.3.0",
+    "mujoco": "4.0.1",
+    "scene_sha256": "6730a111f6c22136e4357cb70429758a3e3d3f12a703ee5b1f7be4ca1d4e51dd",
+    "frames": [
+      {
+        "frame": 96,
+        "seconds": 5.333333333333333,
+        "peak_projection_disagreement_px": 0.00032848882579809076,
+        "file": "frame-00096.png"
+      }
+    ]
+  },
+  "workshop_cycles": {
+    "family": "paused-work",
+    "phase": "teach",
+    "seed": 0,
+    "frame": 0,
+    "end_frame": null,
+    "fps": 18,
+    "camera": "inspection",
+    "detail_at_prop": "near",
+    "samples": 64,
+    "threads": 12,
+    "size": [
+      1040,
+      780
+    ],
+    "device": "CPU",
+    "feedback": "retry",
+    "profile": "standard",
+    "choice": null,
+    "replay_identity_version": 2,
+    "dynamic_lights_verified": false,
+    "verified_source_state_sha256": null,
+    "blender": "4.3.0",
+    "mujoco": "4.0.1",
+    "scene_sha256": "42b8a724b0622c111aeaba8fec6265a79516b4ab1594bbd943ebeabf4fe7ce4a",
+    "frames": [
+      {
+        "frame": 0,
+        "seconds": 0.0,
+        "peak_projection_disagreement_px": 0.0002884014954432416,
+        "file": "frame-00000.png"
+      }
+    ]
+  },
+  "sewing_cycles": {
+    "family": "paused-work",
+    "phase": "transfer",
+    "seed": 0,
+    "frame": 0,
+    "end_frame": null,
+    "fps": 18,
+    "camera": "inspection",
+    "detail_at_prop": "far",
+    "samples": 48,
+    "threads": 12,
+    "size": [
+      1120,
+      840
+    ],
+    "device": "CPU",
+    "feedback": "retry",
+    "profile": "standard",
+    "choice": null,
+    "replay_identity_version": 2,
+    "dynamic_lights_verified": false,
+    "verified_source_state_sha256": null,
+    "blender": "4.3.0",
+    "mujoco": "4.0.1",
+    "scene_sha256": "08d2697ce87ebeae24c1b6dfee5168afb483acf3c26660420a84965f57820c1d",
+    "frames": [
+      {
+        "frame": 0,
+        "seconds": 0.0,
+        "peak_projection_disagreement_px": 0.00035473346138757103,
+        "file": "frame-00000.png"
+      }
+    ]
+  }
+}

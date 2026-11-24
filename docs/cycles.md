@@ -22,9 +22,11 @@ Use the original run’s fps, seed, profile, feedback, dimensions, source revisi
 - Rocketbox body and face vertices come directly from MuJoCo’s evaluated skin buffer at each frame. For hair and eyelashes, Cycles uses the original alpha-textured cards from the packed Blender file with the same MuJoCo joint transforms and source skin weights. This preserves finer strands and lets light pass through the source alpha map.
 - Furniture and props use their simulator dimensions and poses. Small edge bevels allow highlights on manufactured edges. The desk uses the same scanned diffuse texture with a Cycles box projection and a subtle bump derived from its brightness.
 - Wide area emitters and a world fill give the skin, props and cabinet indirect illumination and contact shadows. These are rendering choices without measured room-light or material calibration.
-- The camera uses the MuJoCo camera rotation directly, a vertical sensor fit, square pixels, and the original vertical field of view. The renderer projects visible geometry centers with Blender and independently with the MuJoCo pinhole model, rejecting disagreement above 0.02 pixel.
+- The camera uses the MuJoCo camera rotation directly, a vertical sensor fit, square pixels, and the original vertical field of view. The renderer projects geometry centers inside the camera frame with Blender and independently with the MuJoCo pinhole model, rejecting disagreement above 0.02 pixel.
 
 Licenses and source details accompany the [Rocketbox human](../assets/human/README.md), [Panda acquisition code](../visual_prefs/assets.py) and [table material](../visual_prefs/data/materials/).
+
+For an asset close-up, add `--detail-at-prop near` to a seed-0 teaching render at frame 0. This places an inspection camera at the starting mat. The diagnostic view is recorded in render.json and is available separately from the experiment's agent camera. Authored steel, plated wire and enamel carry their MuJoCo metallic and roughness values into the Cycles shader. [MuJoCo material attributes](https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-material)
 
 ## Use Cycles frames as the learner's input
 

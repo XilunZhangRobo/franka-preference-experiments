@@ -1,6 +1,6 @@
 # Development audit of the visual simulator
 
-These were development trials. We used the results to change the scenes. Keep these seeds out of the confirmatory split.
+The measurements, learner runs and RGB archive below refer to the original prop set at `29f7b45`. The revised props have a [separate audit](object-fidelity.md). These were development trials. We used the results to change the scenes. Keep these seeds out of the confirmatory split.
 
 ## What the reviewers found
 

@@ -4,7 +4,7 @@ The upstream dashboard publishes ten recorded benchmarks. The baseline for this 
 
 | MuJoCo family | Teaching cue → new decision | Scope probe | Overlap with the published tasks |
 | --- | --- | --- | --- |
-| Paused work | Person restores the clipped assembly mat → choose a fabric mat to move in a sewing room | Shelve a completed, closed kit | Active papers and the covered notebook both concern ongoing work. Here the person can leave, the clip persists, and a brief rejection can replace showing the correct action. |
+| Paused work | Person restores the work mat with a clip on its project ticket → choose a fabric mat to move in a sewing room | Shelve a completed, closed kit | Active papers and the covered notebook both concern ongoing work. Here the person can leave, the clip persists, and a brief rejection can replace showing the correct action. |
 | Gift finishing | Person signals stop and takes the paper flower to finish the card → stage or finish a gift box | Pack routine lunches | Adds personal authorship of the creative step. An open palm can mean something else in the upstream readiness task. |
 | Receiving hand | Person receives an offered flashlight with the right, transfers it to the left → offer a remote to a free hand | Preferred hand holds folded paper | Related to mug-handle orientation and readiness. The measured choice is which hand receives a handleless object. |
 | Material order | Person swaps parts and uses the first from their right → lay out pot, scoop and tag at a rotated seat | Center markers around a shared tray | Active papers tests stack order. This tests lateral order relative to the person. |

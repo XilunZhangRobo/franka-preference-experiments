@@ -10,11 +10,11 @@ The dashboard publishes from the root of `main` using GitHub Pages.
 
 ## MuJoCo visual experiments
 
-The `mujoco` branch adds ten executable teaching, transfer and scope scenarios. Start with **paused work**. A Panda shelves a clipped assembly mat. The seated person puts that mat back and can say “Try again.” The opposite mat stays on the bench. A separate sewing-room trial tests whether a fresh decision maker can use the written memory.
+The `mujoco` branch adds ten executable teaching, transfer and scope scenarios. Start with **paused work**. A Panda shelves a work mat whose project ticket carries a black foldback clip. The seated person puts that mat back and can say “Try again.” The opposite mat stays on the bench. A separate sewing-room trial tests whether a fresh decision maker can use the written memory.
 
-![The Franka arm, two work mats and the seated Rocketbox participant](docs/media/paused-work.jpg)
+![Revised work mat with a spring-steel clip holding its project ticket, an open bearing, a washer and threaded nuts](docs/media/workshop-props.jpg)
 
-[Watch the corrected hand motion](docs/media/paused-work-correction.mp4) · [View all ten held-out scenes](docs/media/held-out-scenes.jpg)
+[Compare the original and revised agent views](docs/media/workshop-agent-comparison.jpg) · [Watch the current agent-camera correction](docs/media/workshop-agent-correction.mp4) · [View the manipulated objects across all ten scenarios](docs/media/prop-gallery.jpg)
 
 On Linux with EGL or a Mesa EGL implementation, from the repository root:
 
@@ -32,6 +32,7 @@ Open `runs/demo/sensor/teach/view.mp4` to see the interaction. Each probe starts
 | --- | --- |
 | [Scenario and overlap map](docs/scenarios.md) | Which Isaac experiments were already published and what these visual probes add |
 | [Run a visual experiment](docs/running.md) | Model adapter, cue-based review, written notes, counterfactuals, physical replay and scoring |
+| [Manipulated objects and their audit](docs/object-fidelity.md) | Which geometry changed, what a blinded reader could see, and where clearance was measured |
 | [Simulation audit and blinded pilot](docs/development-audit.md) | Failures the reviewers found, measured repairs and what a correct choice establishes |
 | [Blender Cycles replay](docs/cycles.md) | Render the same simulated trajectory with area lights and textured materials |
 | [Experiment lifecycle](docs/experiment-lifecycle.md) | How to preregister, audit, report and compare with hardware |

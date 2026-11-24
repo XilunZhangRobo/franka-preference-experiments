@@ -1,0 +1,28 @@
+test_missing_runs_remain_in_the_paired_denominator (test_analysis.AnalysisTest.test_missing_runs_remain_in_the_paired_denominator) ... ok
+test_initial_whole_body_and_active_hand_mesh (test_avatar.AvatarAuditTest.test_initial_whole_body_and_active_hand_mesh) ... ok
+test_lowered_neutral_hand_fails_table_clearance (test_avatar.AvatarAuditTest.test_lowered_neutral_hand_fails_table_clearance) ... ok
+test_reviewed_cycles_frame_104 (test_avatar.AvatarAuditTest.test_reviewed_cycles_frame_104) ... ok
+test_two_hand_custody_and_stationary_pointing_target (test_avatar.AvatarAuditTest.test_two_hand_custody_and_stationary_pointing_target) ... ok
+test_whole_body_triangles_clear_shelf_and_mats (test_avatar.AvatarAuditTest.test_whole_body_triangles_clear_shelf_and_mats) ... ok
+test_face_span_with_all_vertices_outside (test_avatar.TriangleBoxTest.test_face_span_with_all_vertices_outside) ... ok
+test_invalid_transform_and_negative_depth (test_calibration.TestCamera.test_invalid_transform_and_negative_depth) ... ok
+test_reject_aspect_change (test_calibration.TestCamera.test_reject_aspect_change) ... ok
+test_rendered_marker_centers (test_calibration.TestCamera.test_rendered_marker_centers) ... ok
+test_residuals (test_calibration.TestCamera.test_residuals) ... ok
+test_mirrored_shelves_and_clip_assignments (test_contact.ContactAuditTest.test_mirrored_shelves_and_clip_assignments) ... ok
+test_moving_panda_links_clear_bench_and_shelf (test_contact.ContactAuditTest.test_moving_panda_links_clear_bench_and_shelf) ... ok
+test_paused_work_obstruction (test_prop_clearance.PropClearanceTest.test_paused_work_obstruction) ... ok
+test_blinded_calls_and_failed_response_retention (test_protocol.ProtocolTest.test_blinded_calls_and_failed_response_retention) ... ok
+test_speech_can_trigger_review_without_visual_correction (test_protocol.ProtocolTest.test_speech_can_trigger_review_without_visual_correction) ... ok
+test_legacy_mutable_lights_fail_closed (test_replay_identity.IdentityTests.test_legacy_mutable_lights_fail_closed) ... ok
+test_mesh_directory_relocation (test_replay_identity.IdentityTests.test_mesh_directory_relocation) ... ok
+test_moving_joint_or_toggling_lamp_changes_identity (test_replay_identity.IdentityTests.test_moving_joint_or_toggling_lamp_changes_identity) ... ok
+test_both_clip_assignments (test_visibility.TestVisibility.test_both_clip_assignments) ... ok
+test_camera_looking_away_fails (test_visibility.TestVisibility.test_camera_looking_away_fails) ... ok
+test_ticket_and_cargo_do_not_reveal_status (test_work_props.WorkPropsTest.test_ticket_and_cargo_do_not_reveal_status) ... ok
+test_washer_has_a_real_through_hole (test_work_props.WorkPropsTest.test_washer_has_a_real_through_hole) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 40.162s
+
+OK

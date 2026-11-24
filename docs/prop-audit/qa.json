@@ -1,0 +1,3994 @@
+{
+  "seeds": [
+    0,
+    1
+  ],
+  "passed": true,
+  "playback": [
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "paused-work",
+      "phase": "teach",
+      "action": "near",
+      "passed": true,
+      "max_endpoint_error_m": 6.938893903907228e-18,
+      "max_robot_pinch_error_m": 0.0009525748703550742,
+      "frames": 60
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "paused-work",
+      "phase": "teach",
+      "action": "far",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0008927628537844855,
+      "frames": 37
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "paused-work",
+      "phase": "transfer",
+      "action": "near",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009525748703550742,
+      "frames": 39
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "paused-work",
+      "phase": "transfer",
+      "action": "far",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0008927628537844855,
+      "frames": 37
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "paused-work",
+      "phase": "exception",
+      "action": "case",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009394254787097954,
+      "frames": 35
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "paused-work",
+      "phase": "exception",
+      "action": "organizer",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0009472474132593461,
+      "frames": 41
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "gift-finishing",
+      "phase": "teach",
+      "action": "place",
+      "passed": true,
+      "max_endpoint_error_m": 3.469446951953614e-18,
+      "max_robot_pinch_error_m": 0.0009853756322089737,
+      "frames": 66
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "gift-finishing",
+      "phase": "teach",
+      "action": "set_out",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009853756322089737,
+      "frames": 38
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "gift-finishing",
+      "phase": "transfer",
+      "action": "stage",
+      "passed": true,
+      "max_endpoint_error_m": 3.1031676915590914e-17,
+      "max_robot_pinch_error_m": 0.0009956454670690166,
+      "frames": 97
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "gift-finishing",
+      "phase": "transfer",
+      "action": "pack",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009905554360012962,
+      "frames": 124
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "gift-finishing",
+      "phase": "exception",
+      "action": "stage",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009903439399442868,
+      "frames": 120
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "gift-finishing",
+      "phase": "exception",
+      "action": "pack",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009796278144888978,
+      "frames": 120
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "material-order",
+      "phase": "teach",
+      "action": "red_left",
+      "passed": true,
+      "max_endpoint_error_m": 3.469446951953614e-18,
+      "max_robot_pinch_error_m": 0.0009037700571521278,
+      "frames": 177
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "material-order",
+      "phase": "teach",
+      "action": "red_right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009054201329820353,
+      "frames": 65
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "material-order",
+      "phase": "transfer",
+      "action": "pot_left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009590638261129529,
+      "frames": 96
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "material-order",
+      "phase": "transfer",
+      "action": "pot_right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009766265561518765,
+      "frames": 95
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "material-order",
+      "phase": "exception",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 9.341771812940338e-18,
+      "max_robot_pinch_error_m": 0.0007773318865153248,
+      "frames": 118
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "material-order",
+      "phase": "exception",
+      "action": "row",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0009905807750271835,
+      "frames": 126
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "receiving-hand",
+      "phase": "teach",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 3.1031676915590914e-17,
+      "max_robot_pinch_error_m": 0.0004758087795901877,
+      "frames": 26
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "receiving-hand",
+      "phase": "teach",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.000531044033333878,
+      "frames": 62
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "receiving-hand",
+      "phase": "transfer",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0007329129913446665,
+      "frames": 26
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "receiving-hand",
+      "phase": "transfer",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007329129913446665,
+      "frames": 25
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "receiving-hand",
+      "phase": "exception",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009926936814243599,
+      "frames": 27
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "receiving-hand",
+      "phase": "exception",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009926936814243599,
+      "frames": 25
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "approach-side",
+      "phase": "teach",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0006101060841057834,
+      "frames": 25
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "approach-side",
+      "phase": "teach",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.00041179147308917764,
+      "frames": 47
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "approach-side",
+      "phase": "transfer",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008205127150526476,
+      "frames": 26
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "approach-side",
+      "phase": "transfer",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.000762087838133503,
+      "frames": 25
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "approach-side",
+      "phase": "exception",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.000996666169289268,
+      "frames": 25
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "approach-side",
+      "phase": "exception",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.000996666169289268,
+      "frames": 25
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "private-storage",
+      "phase": "teach",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0008153251126930544,
+      "frames": 153
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "private-storage",
+      "phase": "teach",
+      "action": "compartment",
+      "passed": true,
+      "max_endpoint_error_m": 1.4304896245381992e-17,
+      "max_robot_pinch_error_m": 0.0009340619915101606,
+      "frames": 123
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "private-storage",
+      "phase": "transfer",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.0004996011678580167,
+      "frames": 37
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "private-storage",
+      "phase": "transfer",
+      "action": "compartment",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.0009340619915101606,
+      "frames": 96
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "private-storage",
+      "phase": "exception",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.000865203648788935,
+      "frames": 36
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "private-storage",
+      "phase": "exception",
+      "action": "compartment",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.0009248490021989212,
+      "frames": 86
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "cleaning-scent",
+      "phase": "teach",
+      "action": "citrus",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009023427170765255,
+      "frames": 38
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "cleaning-scent",
+      "phase": "teach",
+      "action": "free",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009486700930175893,
+      "frames": 152
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "cleaning-scent",
+      "phase": "transfer",
+      "action": "citrus",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009023427170765255,
+      "frames": 118
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "cleaning-scent",
+      "phase": "transfer",
+      "action": "free",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009486700930175893,
+      "frames": 116
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "cleaning-scent",
+      "phase": "exception",
+      "action": "citrus",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009486700930175893,
+      "frames": 116
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "cleaning-scent",
+      "phase": "exception",
+      "action": "free",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009023427170765255,
+      "frames": 118
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "lighting",
+      "phase": "teach",
+      "action": "desk",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007055181102139799,
+      "frames": 60
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "lighting",
+      "phase": "teach",
+      "action": "ceiling",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007289624295404516,
+      "frames": 23
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "lighting",
+      "phase": "transfer",
+      "action": "desk",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007055181102139799,
+      "frames": 30
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "lighting",
+      "phase": "transfer",
+      "action": "ceiling",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007289624295404516,
+      "frames": 23
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "lighting",
+      "phase": "exception",
+      "action": "desk",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007289624295404516,
+      "frames": 23
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "lighting",
+      "phase": "exception",
+      "action": "ceiling",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007055181102139799,
+      "frames": 30
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "vegetable-texture",
+      "phase": "teach",
+      "action": "firm",
+      "passed": true,
+      "max_endpoint_error_m": 6.938893903907228e-18,
+      "max_robot_pinch_error_m": 0.0009822255274637788,
+      "frames": 155
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "vegetable-texture",
+      "phase": "teach",
+      "action": "tender",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008086772654313446,
+      "frames": 35
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "vegetable-texture",
+      "phase": "transfer",
+      "action": "firm",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008886163333437551,
+      "frames": 39
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "vegetable-texture",
+      "phase": "transfer",
+      "action": "tender",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007984325222742088,
+      "frames": 35
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "vegetable-texture",
+      "phase": "exception",
+      "action": "firm",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007984325222742088,
+      "frames": 35
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "vegetable-texture",
+      "phase": "exception",
+      "action": "tender",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008886163333437551,
+      "frames": 39
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "completion-update",
+      "phase": "teach",
+      "action": "now",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 60
+    },
+    {
+      "seed": 0,
+      "layout_seed": 0,
+      "family": "completion-update",
+      "phase": "teach",
+      "action": "later",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 82
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "completion-update",
+      "phase": "transfer",
+      "action": "now",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 47
+    },
+    {
+      "seed": 0,
+      "layout_seed": 103,
+      "family": "completion-update",
+      "phase": "transfer",
+      "action": "later",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 47
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "completion-update",
+      "phase": "exception",
+      "action": "now",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 29
+    },
+    {
+      "seed": 0,
+      "layout_seed": 206,
+      "family": "completion-update",
+      "phase": "exception",
+      "action": "later",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 29
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "paused-work",
+      "phase": "teach",
+      "action": "near",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008860899190281044,
+      "frames": 35
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "paused-work",
+      "phase": "teach",
+      "action": "far",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009472474132593461,
+      "frames": 64
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "paused-work",
+      "phase": "transfer",
+      "action": "near",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008860899190281044,
+      "frames": 35
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "paused-work",
+      "phase": "transfer",
+      "action": "far",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0009472474132593461,
+      "frames": 41
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "paused-work",
+      "phase": "exception",
+      "action": "case",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009394254787097954,
+      "frames": 35
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "paused-work",
+      "phase": "exception",
+      "action": "organizer",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0009472474132593461,
+      "frames": 41
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "gift-finishing",
+      "phase": "teach",
+      "action": "place",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0006958930088051378,
+      "frames": 64
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "gift-finishing",
+      "phase": "teach",
+      "action": "set_out",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0006958930088051378,
+      "frames": 35
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "gift-finishing",
+      "phase": "transfer",
+      "action": "stage",
+      "passed": true,
+      "max_endpoint_error_m": 3.1031676915590914e-17,
+      "max_robot_pinch_error_m": 0.0009379058789430601,
+      "frames": 96
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "gift-finishing",
+      "phase": "transfer",
+      "action": "pack",
+      "passed": true,
+      "max_endpoint_error_m": 1.4304896245381992e-17,
+      "max_robot_pinch_error_m": 0.0009379058789430601,
+      "frames": 121
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "gift-finishing",
+      "phase": "exception",
+      "action": "stage",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009924651421203837,
+      "frames": 120
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "gift-finishing",
+      "phase": "exception",
+      "action": "pack",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009938828164537438,
+      "frames": 120
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "material-order",
+      "phase": "teach",
+      "action": "red_left",
+      "passed": true,
+      "max_endpoint_error_m": 3.469446951953614e-18,
+      "max_robot_pinch_error_m": 0.0009821519623266323,
+      "frames": 175
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "material-order",
+      "phase": "teach",
+      "action": "red_right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009005209991950178,
+      "frames": 67
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "material-order",
+      "phase": "transfer",
+      "action": "pot_left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009572990895226082,
+      "frames": 93
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "material-order",
+      "phase": "transfer",
+      "action": "pot_right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009977807470175435,
+      "frames": 94
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "material-order",
+      "phase": "exception",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 1.1107649934270853e-17,
+      "max_robot_pinch_error_m": 0.0009947416338044353,
+      "frames": 120
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "material-order",
+      "phase": "exception",
+      "action": "row",
+      "passed": true,
+      "max_endpoint_error_m": 2.8609792490763984e-17,
+      "max_robot_pinch_error_m": 0.0009673025204982854,
+      "frames": 128
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "receiving-hand",
+      "phase": "teach",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009956191689868582,
+      "frames": 26
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "receiving-hand",
+      "phase": "teach",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009956191689868582,
+      "frames": 62
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "receiving-hand",
+      "phase": "transfer",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0006523789457291965,
+      "frames": 26
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "receiving-hand",
+      "phase": "transfer",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0006523789457291965,
+      "frames": 25
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "receiving-hand",
+      "phase": "exception",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 3.1031676915590914e-17,
+      "max_robot_pinch_error_m": 0.0006088110139453345,
+      "frames": 26
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "receiving-hand",
+      "phase": "exception",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0006088110139453345,
+      "frames": 25
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "approach-side",
+      "phase": "teach",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.000987420416030031,
+      "frames": 26
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "approach-side",
+      "phase": "teach",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.000987420416030031,
+      "frames": 47
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "approach-side",
+      "phase": "transfer",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0006792591154090016,
+      "frames": 25
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "approach-side",
+      "phase": "transfer",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0006792591154090016,
+      "frames": 25
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "approach-side",
+      "phase": "exception",
+      "action": "left",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0007830447029381558,
+      "frames": 25
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "approach-side",
+      "phase": "exception",
+      "action": "right",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009294589807890375,
+      "frames": 25
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "private-storage",
+      "phase": "teach",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 2.7755575615628914e-17,
+      "max_robot_pinch_error_m": 0.0007514587533394069,
+      "frames": 152
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "private-storage",
+      "phase": "teach",
+      "action": "compartment",
+      "passed": true,
+      "max_endpoint_error_m": 1.5515838457795457e-17,
+      "max_robot_pinch_error_m": 0.0009154844439589262,
+      "frames": 114
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "private-storage",
+      "phase": "transfer",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.0004981211337217833,
+      "frames": 36
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "private-storage",
+      "phase": "transfer",
+      "action": "compartment",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.0009157326185950404,
+      "frames": 88
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "private-storage",
+      "phase": "exception",
+      "action": "tray",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.000520769895846271,
+      "frames": 36
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "private-storage",
+      "phase": "exception",
+      "action": "compartment",
+      "passed": true,
+      "max_endpoint_error_m": 2.6020852139652106e-18,
+      "max_robot_pinch_error_m": 0.0009157784439326154,
+      "frames": 88
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "cleaning-scent",
+      "phase": "teach",
+      "action": "citrus",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009486700930175893,
+      "frames": 36
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "cleaning-scent",
+      "phase": "teach",
+      "action": "free",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009023427170765255,
+      "frames": 151
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "cleaning-scent",
+      "phase": "transfer",
+      "action": "citrus",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009486700930175893,
+      "frames": 116
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "cleaning-scent",
+      "phase": "transfer",
+      "action": "free",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009023427170765255,
+      "frames": 118
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "cleaning-scent",
+      "phase": "exception",
+      "action": "citrus",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0009486700930175893,
+      "frames": 116
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "cleaning-scent",
+      "phase": "exception",
+      "action": "free",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0009023427170765255,
+      "frames": 118
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "lighting",
+      "phase": "teach",
+      "action": "desk",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007289624295404516,
+      "frames": 53
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "lighting",
+      "phase": "teach",
+      "action": "ceiling",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007055181102139799,
+      "frames": 30
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "lighting",
+      "phase": "transfer",
+      "action": "desk",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007289624295404516,
+      "frames": 23
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "lighting",
+      "phase": "transfer",
+      "action": "ceiling",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007055181102139799,
+      "frames": 30
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "lighting",
+      "phase": "exception",
+      "action": "desk",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007289624295404516,
+      "frames": 23
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "lighting",
+      "phase": "exception",
+      "action": "ceiling",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007055181102139799,
+      "frames": 30
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "vegetable-texture",
+      "phase": "teach",
+      "action": "firm",
+      "passed": true,
+      "max_endpoint_error_m": 6.938893903907228e-18,
+      "max_robot_pinch_error_m": 0.0007959895624673598,
+      "frames": 153
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "vegetable-texture",
+      "phase": "teach",
+      "action": "tender",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008900461261132533,
+      "frames": 39
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "vegetable-texture",
+      "phase": "transfer",
+      "action": "firm",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007984325222742088,
+      "frames": 35
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "vegetable-texture",
+      "phase": "transfer",
+      "action": "tender",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008886163333437551,
+      "frames": 39
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "vegetable-texture",
+      "phase": "exception",
+      "action": "firm",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0007984325222742088,
+      "frames": 35
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "vegetable-texture",
+      "phase": "exception",
+      "action": "tender",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0008886163333437551,
+      "frames": 39
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "completion-update",
+      "phase": "teach",
+      "action": "now",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 67
+    },
+    {
+      "seed": 1,
+      "layout_seed": 1,
+      "family": "completion-update",
+      "phase": "teach",
+      "action": "later",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 86
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "completion-update",
+      "phase": "transfer",
+      "action": "now",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 50
+    },
+    {
+      "seed": 1,
+      "layout_seed": 104,
+      "family": "completion-update",
+      "phase": "transfer",
+      "action": "later",
+      "passed": true,
+      "max_endpoint_error_m": 1.3877787807814457e-17,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 50
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "completion-update",
+      "phase": "exception",
+      "action": "now",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 29
+    },
+    {
+      "seed": 1,
+      "layout_seed": 207,
+      "family": "completion-update",
+      "phase": "exception",
+      "action": "later",
+      "passed": true,
+      "max_endpoint_error_m": 0.0,
+      "max_robot_pinch_error_m": 0.0,
+      "frames": 29
+    }
+  ],
+  "paused_work_physics": [
+    {
+      "seed": 0,
+      "engine": "MuJoCo 4.0.1",
+      "thresholds": {
+        "max_cargo_slip_m": 0.008,
+        "max_table_penetration_m": 0.0015,
+        "max_shelf_penetration_m": 0.002,
+        "max_landing_xy_error_m": 0.008,
+        "max_settled_linear_speed_m_s": 0.01,
+        "max_settled_angular_speed_rad_s": 0.1,
+        "min_footprint_support_fraction": 0.98
+      },
+      "scope": "Dynamic gravity, collision, friction and settling for transported mats and loose cargo. The carrier follows the continuous playback arc; its weld substitutes for the grasp. This companion simulation does not measure video contact forces or robot-link clearance.",
+      "parameters": {
+        "timestep_s": 0.001,
+        "uniform_density_kg_m3": 650,
+        "sliding_friction": 0.6,
+        "release_hold_s": 0.18,
+        "free_settling_s": 0.67
+      },
+      "trials": [
+        {
+          "phase": "teach",
+          "item": "near",
+          "target_surface": "shelf",
+          "duration_s": 0.8415314460393197,
+          "cargo_count": 4,
+          "peak_horizontal_cargo_slip_m": 3.3655968239427886e-05,
+          "peak_penetration_m": {
+            "shelf": 3.963922132589303e-05,
+            "table": 4.014966665087708e-06
+          },
+          "landing_xy_error_m": 4.653385430601333e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 1.6188199279986208e-06,
+          "final_peak_angular_speed_rad_s": 0.00021984461743271885,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "teach",
+          "item": "far",
+          "target_surface": "shelf",
+          "duration_s": 1.09451449947351,
+          "cargo_count": 4,
+          "peak_horizontal_cargo_slip_m": 4.349691838544151e-05,
+          "peak_penetration_m": {
+            "shelf": 9.912729810682213e-06,
+            "table": 2.705305101687337e-06
+          },
+          "landing_xy_error_m": 2.1385354829532633e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 1.6351388119288823e-06,
+          "final_peak_angular_speed_rad_s": 0.0003268905766196251,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "transfer",
+          "item": "near",
+          "target_surface": "shelf",
+          "duration_s": 0.8415314460393197,
+          "cargo_count": 3,
+          "peak_horizontal_cargo_slip_m": 3.2580628839674184e-05,
+          "peak_penetration_m": {
+            "shelf": 5.568799745016287e-05,
+            "table": 7.997684344960618e-06
+          },
+          "landing_xy_error_m": 1.3412316558915304e-10,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 4.032790422921613e-06,
+          "final_peak_angular_speed_rad_s": 0.0002623563901333821,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "transfer",
+          "item": "far",
+          "target_surface": "shelf",
+          "duration_s": 1.09451449947351,
+          "cargo_count": 3,
+          "peak_horizontal_cargo_slip_m": 4.163088135128269e-05,
+          "peak_penetration_m": {
+            "shelf": 3.372197301323385e-05,
+            "table": 7.174361159335849e-06
+          },
+          "landing_xy_error_m": 7.992394061599687e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 4.847545948729652e-06,
+          "final_peak_angular_speed_rad_s": 0.00032035671081739203,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "teach",
+          "item": "near",
+          "target_surface": "table",
+          "duration_s": 0.8415314460393197,
+          "cargo_count": 4,
+          "peak_horizontal_cargo_slip_m": 3.3947759813986684e-05,
+          "peak_penetration_m": {
+            "shelf": 4.747708986399075e-06,
+            "table": 3.657275655853338e-05
+          },
+          "landing_xy_error_m": 3.706667168290078e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 1.5509223692687885e-06,
+          "final_peak_angular_speed_rad_s": 0.0002475693786808401,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        }
+      ],
+      "negative_control": {
+        "intervention": "22% of normal carry duration",
+        "trial": {
+          "phase": "transfer",
+          "item": "far",
+          "target_surface": "shelf",
+          "duration_s": 0.24079318988417223,
+          "cargo_count": 3,
+          "peak_horizontal_cargo_slip_m": 0.6285474529211402,
+          "peak_penetration_m": {
+            "shelf": 0.0024386446257953862,
+            "table": 0.0019156091562588743
+          },
+          "landing_xy_error_m": 1.9331077780670632e-05,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 0.8072187780734904,
+          "final_peak_angular_speed_rad_s": 48.05097491404289,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": false,
+            "all_cargo_in_contact_with_mat_at_rest": false,
+            "slip_within_limit": false,
+            "table_penetration_within_limit": false,
+            "shelf_penetration_within_limit": false,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": false
+          },
+          "passed": false
+        },
+        "detected": true
+      },
+      "additional_controls": {
+        "low_arc": {
+          "intervention": "45 mm arc",
+          "trial": {
+            "phase": "teach",
+            "item": "near",
+            "target_surface": "shelf",
+            "duration_s": 0.8415314460393197,
+            "cargo_count": 4,
+            "peak_horizontal_cargo_slip_m": 4.103231904542178,
+            "peak_penetration_m": {
+              "shelf": 0.012704250190921584,
+              "table": 4.514193723594918e-06
+            },
+            "landing_xy_error_m": 0.025014041063190943,
+            "footprint_support_fraction": 0.7145718607820368,
+            "final_peak_linear_speed_m_s": 2.1677937543077213,
+            "final_peak_angular_speed_rad_s": 75.22737783472655,
+            "checks": {
+              "correct_surface_in_contact": true,
+              "cargo_centers_remain_on_mat": false,
+              "all_cargo_in_contact_with_mat_at_rest": false,
+              "slip_within_limit": false,
+              "table_penetration_within_limit": true,
+              "shelf_penetration_within_limit": false,
+              "adequate_support": false,
+              "landing_on_target": false,
+              "settled": false
+            },
+            "passed": false
+          },
+          "detected": true
+        },
+        "overhang": {
+          "intervention": "place 73 mm off shelf center",
+          "trial": {
+            "phase": "transfer",
+            "item": "far",
+            "target_surface": "shelf",
+            "duration_s": 1.1860457297054792,
+            "cargo_count": 3,
+            "peak_horizontal_cargo_slip_m": 4.3941976600977935e-05,
+            "peak_penetration_m": {
+              "shelf": 1.9866270143154512e-05,
+              "table": 7.516237991514391e-06
+            },
+            "landing_xy_error_m": 3.702333512637044e-08,
+            "footprint_support_fraction": 0.678197476340103,
+            "final_peak_linear_speed_m_s": 7.819680239584925e-06,
+            "final_peak_angular_speed_rad_s": 0.0005079347280301196,
+            "checks": {
+              "correct_surface_in_contact": true,
+              "cargo_centers_remain_on_mat": true,
+              "all_cargo_in_contact_with_mat_at_rest": true,
+              "slip_within_limit": true,
+              "table_penetration_within_limit": true,
+              "shelf_penetration_within_limit": true,
+              "adequate_support": false,
+              "landing_on_target": true,
+              "settled": true
+            },
+            "passed": false
+          },
+          "detected": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "phase": "teach",
+      "fps": 24,
+      "sampled_trajectories": [
+        {
+          "item": "near",
+          "frames": 172,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.003926787013101007,
+              "moving_link": "right_finger",
+              "frame": 39,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.004015005035481023,
+              "moving_link": "right_finger",
+              "frame": 71,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.0356234315515122,
+              "moving_link": "right_finger",
+              "frame": 75,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.04068759420599477,
+              "moving_link": "left_finger",
+              "frame": 71,
+              "action": "release"
+            }
+          }
+        },
+        {
+          "item": "far",
+          "frames": 105,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.004161787810173401,
+              "moving_link": "right_finger",
+              "frame": 32,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.0038736218989127162,
+              "moving_link": "right_finger",
+              "frame": 70,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.03587385713044111,
+              "moving_link": "right_finger",
+              "frame": 73,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.04071414791445739,
+              "moving_link": "left_finger",
+              "frame": 70,
+              "action": "release"
+            }
+          }
+        }
+      ],
+      "minimum_signed_distance_m": 0.0038736218989127162,
+      "passed": true,
+      "threshold_m": 0.001
+    },
+    {
+      "seed": 0,
+      "phase": "transfer",
+      "fps": 24,
+      "sampled_trajectories": [
+        {
+          "item": "near",
+          "frames": 112,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.003926787013101007,
+              "moving_link": "right_finger",
+              "frame": 39,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.004015005035481023,
+              "moving_link": "right_finger",
+              "frame": 71,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.0356234315515122,
+              "moving_link": "right_finger",
+              "frame": 75,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.04068759420599477,
+              "moving_link": "left_finger",
+              "frame": 71,
+              "action": "release"
+            }
+          }
+        },
+        {
+          "item": "far",
+          "frames": 105,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.004161787810173401,
+              "moving_link": "right_finger",
+              "frame": 32,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.0038736218989127162,
+              "moving_link": "right_finger",
+              "frame": 70,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.03587385713044111,
+              "moving_link": "right_finger",
+              "frame": 73,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.04071414791445739,
+              "moving_link": "left_finger",
+              "frame": 70,
+              "action": "release"
+            }
+          }
+        }
+      ],
+      "minimum_signed_distance_m": 0.0038736218989127162,
+      "passed": true,
+      "threshold_m": 0.001
+    },
+    {
+      "seed": 1,
+      "engine": "MuJoCo 4.0.1",
+      "thresholds": {
+        "max_cargo_slip_m": 0.008,
+        "max_table_penetration_m": 0.0015,
+        "max_shelf_penetration_m": 0.002,
+        "max_landing_xy_error_m": 0.008,
+        "max_settled_linear_speed_m_s": 0.01,
+        "max_settled_angular_speed_rad_s": 0.1,
+        "min_footprint_support_fraction": 0.98
+      },
+      "scope": "Dynamic gravity, collision, friction and settling for transported mats and loose cargo. The carrier follows the continuous playback arc; its weld substitutes for the grasp. This companion simulation does not measure video contact forces or robot-link clearance.",
+      "parameters": {
+        "timestep_s": 0.001,
+        "uniform_density_kg_m3": 650,
+        "sliding_friction": 0.6,
+        "release_hold_s": 0.18,
+        "free_settling_s": 0.67
+      },
+      "trials": [
+        {
+          "phase": "teach",
+          "item": "near",
+          "target_surface": "shelf",
+          "duration_s": 0.8415314460393197,
+          "cargo_count": 4,
+          "peak_horizontal_cargo_slip_m": 3.4092979953753e-05,
+          "peak_penetration_m": {
+            "shelf": 1.85675485314088e-05,
+            "table": 1.3789606909892072e-06
+          },
+          "landing_xy_error_m": 3.155280061726745e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 1.7164130226352783e-06,
+          "final_peak_angular_speed_rad_s": 0.0003354441267943844,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "teach",
+          "item": "far",
+          "target_surface": "shelf",
+          "duration_s": 1.09451449947351,
+          "cargo_count": 4,
+          "peak_horizontal_cargo_slip_m": 4.315142225240473e-05,
+          "peak_penetration_m": {
+            "shelf": 1.3654296310386602e-05,
+            "table": 5.199295509817011e-06
+          },
+          "landing_xy_error_m": 4.852330591501939e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 1.5986431003889595e-06,
+          "final_peak_angular_speed_rad_s": 0.00043991302369447715,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "transfer",
+          "item": "near",
+          "target_surface": "shelf",
+          "duration_s": 0.8415314460393197,
+          "cargo_count": 3,
+          "peak_horizontal_cargo_slip_m": 3.299811414526018e-05,
+          "peak_penetration_m": {
+            "shelf": 3.236439870640527e-05,
+            "table": 6.389790365148646e-06
+          },
+          "landing_xy_error_m": 1.0430453400889181e-10,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 4.787207228444474e-06,
+          "final_peak_angular_speed_rad_s": 0.00031117065427135914,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "transfer",
+          "item": "far",
+          "target_surface": "shelf",
+          "duration_s": 1.09451449947351,
+          "cargo_count": 3,
+          "peak_horizontal_cargo_slip_m": 4.1412485288191945e-05,
+          "peak_penetration_m": {
+            "shelf": 3.502212296614896e-05,
+            "table": 8.984145961235065e-06
+          },
+          "landing_xy_error_m": 1.7010275956811861e-10,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 5.759130517780382e-06,
+          "final_peak_angular_speed_rad_s": 0.0003790441658923744,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        },
+        {
+          "phase": "teach",
+          "item": "far",
+          "target_surface": "table",
+          "duration_s": 1.09451449947351,
+          "cargo_count": 4,
+          "peak_horizontal_cargo_slip_m": 4.311426858995476e-05,
+          "peak_penetration_m": {
+            "shelf": 5.833753791958704e-06,
+            "table": 2.6350788159049042e-05
+          },
+          "landing_xy_error_m": 3.240271762446873e-11,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 1.309023841504234e-06,
+          "final_peak_angular_speed_rad_s": 0.00020022078074941613,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": true,
+            "all_cargo_in_contact_with_mat_at_rest": true,
+            "slip_within_limit": true,
+            "table_penetration_within_limit": true,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": true
+          },
+          "passed": true
+        }
+      ],
+      "negative_control": {
+        "intervention": "22% of normal carry duration",
+        "trial": {
+          "phase": "transfer",
+          "item": "far",
+          "target_surface": "shelf",
+          "duration_s": 0.24079318988417223,
+          "cargo_count": 3,
+          "peak_horizontal_cargo_slip_m": 0.3570551932556826,
+          "peak_penetration_m": {
+            "shelf": 0.0005617906316247141,
+            "table": 0.0022627191943316847
+          },
+          "landing_xy_error_m": 0.00030619385180933884,
+          "footprint_support_fraction": 1.0,
+          "final_peak_linear_speed_m_s": 0.34932055309696664,
+          "final_peak_angular_speed_rad_s": 20.793858451979002,
+          "checks": {
+            "correct_surface_in_contact": true,
+            "cargo_centers_remain_on_mat": false,
+            "all_cargo_in_contact_with_mat_at_rest": false,
+            "slip_within_limit": false,
+            "table_penetration_within_limit": false,
+            "shelf_penetration_within_limit": true,
+            "adequate_support": true,
+            "landing_on_target": true,
+            "settled": false
+          },
+          "passed": false
+        },
+        "detected": true
+      },
+      "additional_controls": {
+        "low_arc": {
+          "intervention": "45 mm arc",
+          "trial": {
+            "phase": "teach",
+            "item": "near",
+            "target_surface": "shelf",
+            "duration_s": 0.8415314460393197,
+            "cargo_count": 4,
+            "peak_horizontal_cargo_slip_m": 7.539707484120377,
+            "peak_penetration_m": {
+              "shelf": 0.016829364219051006,
+              "table": 0.0022167874048647108
+            },
+            "landing_xy_error_m": 0.0026764879341173876,
+            "footprint_support_fraction": 0.7238713148309395,
+            "final_peak_linear_speed_m_s": 6.329142807181064,
+            "final_peak_angular_speed_rad_s": 219.80880367532257,
+            "checks": {
+              "correct_surface_in_contact": true,
+              "cargo_centers_remain_on_mat": false,
+              "all_cargo_in_contact_with_mat_at_rest": false,
+              "slip_within_limit": false,
+              "table_penetration_within_limit": false,
+              "shelf_penetration_within_limit": false,
+              "adequate_support": false,
+              "landing_on_target": true,
+              "settled": false
+            },
+            "passed": false
+          },
+          "detected": true
+        },
+        "overhang": {
+          "intervention": "place 73 mm off shelf center",
+          "trial": {
+            "phase": "transfer",
+            "item": "far",
+            "target_surface": "shelf",
+            "duration_s": 1.0149077071277528,
+            "cargo_count": 3,
+            "peak_horizontal_cargo_slip_m": 3.909439404891411e-05,
+            "peak_penetration_m": {
+              "shelf": 2.6174715634119818e-05,
+              "table": 7.414198620782951e-06
+            },
+            "landing_xy_error_m": 1.821107725692778e-08,
+            "footprint_support_fraction": 0.6783004641365579,
+            "final_peak_linear_speed_m_s": 3.953399872081313e-06,
+            "final_peak_angular_speed_rad_s": 0.0002566750875548567,
+            "checks": {
+              "correct_surface_in_contact": true,
+              "cargo_centers_remain_on_mat": true,
+              "all_cargo_in_contact_with_mat_at_rest": true,
+              "slip_within_limit": true,
+              "table_penetration_within_limit": true,
+              "shelf_penetration_within_limit": true,
+              "adequate_support": false,
+              "landing_on_target": true,
+              "settled": true
+            },
+            "passed": false
+          },
+          "detected": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "phase": "teach",
+      "fps": 24,
+      "sampled_trajectories": [
+        {
+          "item": "near",
+          "frames": 99,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.004159331122311816,
+              "moving_link": "right_finger",
+              "frame": 32,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.0040162117771561645,
+              "moving_link": "right_finger",
+              "frame": 64,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.03961609096684661,
+              "moving_link": "right_finger",
+              "frame": 66,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.04010517480292947,
+              "moving_link": "left_finger",
+              "frame": 64,
+              "action": "release"
+            }
+          }
+        },
+        {
+          "item": "far",
+          "frames": 184,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.003928503747910539,
+              "moving_link": "right_finger",
+              "frame": 39,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.0038741245296050057,
+              "moving_link": "right_finger",
+              "frame": 77,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.0394509667288751,
+              "moving_link": "right_finger",
+              "frame": 80,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.039856467573118934,
+              "moving_link": "left_finger",
+              "frame": 77,
+              "action": "release"
+            }
+          }
+        }
+      ],
+      "minimum_signed_distance_m": 0.0038741245296050057,
+      "passed": true,
+      "threshold_m": 0.001
+    },
+    {
+      "seed": 1,
+      "phase": "transfer",
+      "fps": 24,
+      "sampled_trajectories": [
+        {
+          "item": "near",
+          "frames": 99,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.004159331122311816,
+              "moving_link": "right_finger",
+              "frame": 32,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.0040162117771561645,
+              "moving_link": "right_finger",
+              "frame": 64,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.03961609096684661,
+              "moving_link": "right_finger",
+              "frame": 66,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.04010517480292947,
+              "moving_link": "left_finger",
+              "frame": 64,
+              "action": "release"
+            }
+          }
+        },
+        {
+          "item": "far",
+          "frames": 118,
+          "collision_geoms": 22,
+          "minimum_distances": {
+            "audit_table": {
+              "signed_distance_m": 0.003928503747910539,
+              "moving_link": "right_finger",
+              "frame": 39,
+              "action": "reach"
+            },
+            "audit_shelf_top": {
+              "signed_distance_m": 0.0038741245296050057,
+              "moving_link": "right_finger",
+              "frame": 77,
+              "action": "release"
+            },
+            "audit_shelf_leg0": {
+              "signed_distance_m": 0.0394509667288751,
+              "moving_link": "right_finger",
+              "frame": 80,
+              "action": "withdraw"
+            },
+            "audit_shelf_leg1": {
+              "signed_distance_m": 0.039856467573118934,
+              "moving_link": "left_finger",
+              "frame": 77,
+              "action": "release"
+            }
+          }
+        }
+      ],
+      "minimum_signed_distance_m": 0.0038741245296050057,
+      "passed": true,
+      "threshold_m": 0.001
+    }
+  ],
+  "prop_clearance": [
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 0,
+      "phase": "teach",
+      "choice": "near",
+      "fps": 24,
+      "frames": 172,
+      "panda": {
+        "clip": {
+          "gap_m": 0.01553332286273509,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/clip_wire_-1/41",
+          "effector": "hand/geom85"
+        },
+        "cargo": {
+          "gap_m": 0.00596590658167428,
+          "frame": 43,
+          "actor": "robot",
+          "action": "grasp",
+          "obstacle": "near/cargo_bearing_outer/2",
+          "effector": "right_finger/geom96"
+        },
+        "ticket": {
+          "gap_m": 0.030817096023819712,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/box/21",
+          "effector": "hand/geom85"
+        }
+      },
+      "hands": {
+        "cargo": {
+          "gap_m": 0.0052754318106776055,
+          "frame": 113,
+          "actor": "human-left",
+          "action": "reach",
+          "obstacle": "near/cargo_brass_nut/19",
+          "effector": "hand triangles"
+        }
+      },
+      "bundle_seed": 0
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 0,
+      "phase": "teach",
+      "choice": "far",
+      "fps": 24,
+      "frames": 105,
+      "panda": {
+        "ticket": {
+          "gap_m": 0.059288633986921066,
+          "frame": 64,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/box/21",
+          "effector": "hand/geom85"
+        },
+        "cargo": {
+          "gap_m": 0.011868192055902074,
+          "frame": 73,
+          "actor": "robot",
+          "action": "withdraw",
+          "obstacle": "far/cargo_locknut/16",
+          "effector": "right_finger/geom96"
+        },
+        "clip": {
+          "gap_m": 0.07,
+          "frame": 48,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "near/clip_wire_-1/41",
+          "effector": "hand/geom85"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 0
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 103,
+      "phase": "transfer",
+      "choice": "near",
+      "fps": 24,
+      "frames": 112,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.012780251747676495,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "near/cargo_spool_end/8",
+          "effector": "hand/geom102"
+        },
+        "ticket": {
+          "gap_m": 0.030817096023819712,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/box/28",
+          "effector": "hand/geom102"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 0
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 103,
+      "phase": "transfer",
+      "choice": "far",
+      "fps": 24,
+      "frames": 105,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.019426216687876672,
+          "frame": 64,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/cargo_spool_end/8",
+          "effector": "hand/geom102"
+        },
+        "ticket": {
+          "gap_m": 0.059288633986921066,
+          "frame": 64,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/box/28",
+          "effector": "hand/geom102"
+        },
+        "clip": {
+          "gap_m": 0.04878910792295996,
+          "frame": 64,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/clip_wire_-1/48",
+          "effector": "hand/geom102"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 0
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 206,
+      "phase": "exception",
+      "choice": "organizer",
+      "fps": 24,
+      "frames": 118,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.014828009621387656,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "organizer/cargo_cotton_organizer_6/16",
+          "effector": "right_finger/geom113"
+        },
+        "ticket": {
+          "gap_m": 0.06669707898042228,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "organizer/box/28",
+          "effector": "hand/geom102"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 0
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 206,
+      "phase": "exception",
+      "choice": "case",
+      "fps": 24,
+      "frames": 99,
+      "panda": {},
+      "hands": {},
+      "bundle_seed": 0
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 1,
+      "phase": "teach",
+      "choice": "near",
+      "fps": 24,
+      "frames": 99,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.014178595082623388,
+          "frame": 32,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/cargo_locknut/16",
+          "effector": "left_finger/geom88"
+        },
+        "ticket": {
+          "gap_m": 0.054153303179960414,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "near/box/21",
+          "effector": "hand/geom85"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 1
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 1,
+      "phase": "teach",
+      "choice": "far",
+      "fps": 24,
+      "frames": 184,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.00482436313065046,
+          "frame": 42,
+          "actor": "robot",
+          "action": "grasp",
+          "obstacle": "far/cargo_bearing_outer/2",
+          "effector": "right_finger/geom96"
+        },
+        "ticket": {
+          "gap_m": 0.06669707898042228,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/box/21",
+          "effector": "hand/geom85"
+        },
+        "clip": {
+          "gap_m": 0.05428341580312387,
+          "frame": 71,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/clip_wire_-1/41",
+          "effector": "hand/geom85"
+        }
+      },
+      "hands": {
+        "cargo": {
+          "gap_m": 0.005126928540591706,
+          "frame": 119,
+          "actor": "human",
+          "action": "reach",
+          "obstacle": "far/cargo_brass_nut/19",
+          "effector": "hand triangles"
+        },
+        "ticket": {
+          "gap_m": 0.005231194945754023,
+          "frame": 162,
+          "actor": "human",
+          "action": "withdraw",
+          "obstacle": "near/box/21",
+          "effector": "hand triangles"
+        }
+      },
+      "bundle_seed": 1
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 104,
+      "phase": "transfer",
+      "choice": "near",
+      "fps": 24,
+      "frames": 99,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.0176470220747063,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "near/cargo_spool_end/8",
+          "effector": "hand/geom102"
+        },
+        "clip": {
+          "gap_m": 0.04095753073723121,
+          "frame": 28,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/clip_wire_-1/48",
+          "effector": "hand/geom102"
+        },
+        "ticket": {
+          "gap_m": 0.054153303179960414,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "near/box/28",
+          "effector": "hand/geom102"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 1
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 104,
+      "phase": "transfer",
+      "choice": "far",
+      "fps": 24,
+      "frames": 118,
+      "panda": {
+        "clip": {
+          "gap_m": 0.07,
+          "frame": 28,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/clip_wire_-1/48",
+          "effector": "hand/geom102"
+        },
+        "cargo": {
+          "gap_m": 0.014214141071698591,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "far/cargo_cotton_far_6/16",
+          "effector": "right_finger/geom113"
+        },
+        "ticket": {
+          "gap_m": 0.06669707898042228,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "far/box/28",
+          "effector": "hand/geom102"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 1
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 207,
+      "phase": "exception",
+      "choice": "organizer",
+      "fps": 24,
+      "frames": 118,
+      "panda": {
+        "cargo": {
+          "gap_m": 0.014828009621387656,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "organizer/cargo_cotton_organizer_6/16",
+          "effector": "right_finger/geom113"
+        },
+        "ticket": {
+          "gap_m": 0.06669707898042228,
+          "frame": 46,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "organizer/box/28",
+          "effector": "hand/geom102"
+        }
+      },
+      "hands": {},
+      "bundle_seed": 1
+    },
+    {
+      "passed": true,
+      "misplaced": false,
+      "seed": 207,
+      "phase": "exception",
+      "choice": "case",
+      "fps": 24,
+      "frames": 99,
+      "panda": {},
+      "hands": {},
+      "bundle_seed": 1
+    },
+    {
+      "passed": true,
+      "misplaced": true,
+      "seed": 0,
+      "phase": "teach",
+      "choice": "near",
+      "fps": 24,
+      "frames": 172,
+      "panda": {
+        "clip": {
+          "gap_m": 0.01553332286273509,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/clip_wire_-1/41",
+          "effector": "hand/geom85"
+        },
+        "control": {
+          "gap_m": -0.04212865520199869,
+          "frame": 59,
+          "actor": "robot",
+          "action": "transport",
+          "obstacle": "near/misplaced-block",
+          "effector": "hand/geom85"
+        },
+        "cargo": {
+          "gap_m": 0.00596590658167428,
+          "frame": 43,
+          "actor": "robot",
+          "action": "grasp",
+          "obstacle": "near/cargo_bearing_outer/2",
+          "effector": "right_finger/geom96"
+        },
+        "ticket": {
+          "gap_m": 0.030817096023819712,
+          "frame": 39,
+          "actor": "robot",
+          "action": "reach",
+          "obstacle": "near/box/21",
+          "effector": "hand/geom85"
+        }
+      },
+      "hands": {
+        "cargo": {
+          "gap_m": 0.0052754318106776055,
+          "frame": 113,
+          "actor": "human-left",
+          "action": "reach",
+          "obstacle": "near/cargo_brass_nut/19",
+          "effector": "hand triangles"
+        }
+      }
+    }
+  ],
+  "visibility": [
+    {
+      "seed": 0,
+      "size": [
+        480,
+        360
+      ],
+      "passed": true,
+      "phases": {
+        "teach": {
+          "layout_seed": 0,
+          "active_mat": "near",
+          "frames": {
+            "start": {
+              "frame": 0,
+              "objects": {
+                "near": {
+                  "visible_px": 2297,
+                  "isolated_px": 2311,
+                  "visible_fraction": 0.9939,
+                  "occluded_px": {
+                    "robot": 14,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1644,
+                  "isolated_px": 1660,
+                  "visible_fraction": 0.9904,
+                  "occluded_px": {
+                    "robot": 2,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 14
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 112,
+                  "isolated_px": 123,
+                  "visible_fraction": 0.9106,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 11,
+                    "other": 0
+                  },
+                  "minimum_px": 50,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                }
+              }
+            },
+            "robot_approach": {
+              "frame": 20,
+              "objects": {
+                "near": {
+                  "visible_px": 2297,
+                  "isolated_px": 2311,
+                  "visible_fraction": 0.9939,
+                  "occluded_px": {
+                    "robot": 14,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "far": {
+                  "visible_px": 1644,
+                  "isolated_px": 1660,
+                  "visible_fraction": 0.9904,
+                  "occluded_px": {
+                    "robot": 2,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 14
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "clip": {
+                  "visible_px": 112,
+                  "isolated_px": 123,
+                  "visible_fraction": 0.9106,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 11,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                }
+              }
+            },
+            "robot_grasp": {
+              "frame": 34,
+              "objects": {
+                "near": {
+                  "visible_px": 1391,
+                  "isolated_px": 2311,
+                  "visible_fraction": 0.6019,
+                  "occluded_px": {
+                    "robot": 920,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "far": {
+                  "visible_px": 1461,
+                  "isolated_px": 1660,
+                  "visible_fraction": 0.8801,
+                  "occluded_px": {
+                    "robot": 186,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 13
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "clip": {
+                  "visible_px": 12,
+                  "isolated_px": 123,
+                  "visible_fraction": 0.0976,
+                  "occluded_px": {
+                    "robot": 105,
+                    "human_skin": 0,
+                    "same_mat": 6,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                }
+              }
+            },
+            "human_contact": {
+              "frame": 90,
+              "objects": {
+                "near": {
+                  "visible_px": 1623,
+                  "isolated_px": 1668,
+                  "visible_fraction": 0.973,
+                  "occluded_px": {
+                    "robot": 16,
+                    "human_skin": 29,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 250,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1644,
+                  "isolated_px": 1660,
+                  "visible_fraction": 0.9904,
+                  "occluded_px": {
+                    "robot": 2,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 14
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 94,
+                  "isolated_px": 102,
+                  "visible_fraction": 0.9216,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 8,
+                    "other": 0
+                  },
+                  "minimum_px": 25,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                }
+              }
+            },
+            "human_undo": {
+              "frame": 99,
+              "objects": {
+                "near": {
+                  "visible_px": 1990,
+                  "isolated_px": 2035,
+                  "visible_fraction": 0.9779,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 45,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 250,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1644,
+                  "isolated_px": 1660,
+                  "visible_fraction": 0.9904,
+                  "occluded_px": {
+                    "robot": 2,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 14
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 109,
+                  "isolated_px": 120,
+                  "visible_fraction": 0.9083,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 11,
+                    "other": 0
+                  },
+                  "minimum_px": 25,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                }
+              }
+            },
+            "end": {
+              "frame": 130,
+              "objects": {
+                "near": {
+                  "visible_px": 2297,
+                  "isolated_px": 2311,
+                  "visible_fraction": 0.9939,
+                  "occluded_px": {
+                    "robot": 14,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1644,
+                  "isolated_px": 1660,
+                  "visible_fraction": 0.9904,
+                  "occluded_px": {
+                    "robot": 2,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 14
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 112,
+                  "isolated_px": 123,
+                  "visible_fraction": 0.9106,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 11,
+                    "other": 0
+                  },
+                  "minimum_px": 50,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                }
+              }
+            }
+          }
+        },
+        "transfer": {
+          "layout_seed": 103,
+          "active_mat": "far",
+          "frames": {
+            "start": {
+              "frame": 0,
+              "objects": {
+                "near": {
+                  "visible_px": 2290,
+                  "isolated_px": 2304,
+                  "visible_fraction": 0.9939,
+                  "occluded_px": {
+                    "robot": 14,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1730,
+                  "isolated_px": 1746,
+                  "visible_fraction": 0.9908,
+                  "occluded_px": {
+                    "robot": 2,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 14
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 82,
+                  "isolated_px": 94,
+                  "visible_fraction": 0.8723,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 12,
+                    "other": 0
+                  },
+                  "minimum_px": 50,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "size": [
+        480,
+        360
+      ],
+      "passed": true,
+      "phases": {
+        "teach": {
+          "layout_seed": 1,
+          "active_mat": "far",
+          "frames": {
+            "start": {
+              "frame": 0,
+              "objects": {
+                "near": {
+                  "visible_px": 1544,
+                  "isolated_px": 1557,
+                  "visible_fraction": 0.9917,
+                  "occluded_px": {
+                    "robot": 13,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 2432,
+                  "isolated_px": 2446,
+                  "visible_fraction": 0.9943,
+                  "occluded_px": {
+                    "robot": 3,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 11
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 136,
+                  "isolated_px": 145,
+                  "visible_fraction": 0.9379,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 9,
+                    "other": 0
+                  },
+                  "minimum_px": 50,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                }
+              }
+            },
+            "robot_approach": {
+              "frame": 20,
+              "objects": {
+                "near": {
+                  "visible_px": 1544,
+                  "isolated_px": 1557,
+                  "visible_fraction": 0.9917,
+                  "occluded_px": {
+                    "robot": 13,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "far": {
+                  "visible_px": 2432,
+                  "isolated_px": 2446,
+                  "visible_fraction": 0.9943,
+                  "occluded_px": {
+                    "robot": 3,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 11
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "clip": {
+                  "visible_px": 136,
+                  "isolated_px": 145,
+                  "visible_fraction": 0.9379,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 9,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                }
+              }
+            },
+            "robot_grasp": {
+              "frame": 34,
+              "objects": {
+                "near": {
+                  "visible_px": 507,
+                  "isolated_px": 1557,
+                  "visible_fraction": 0.3256,
+                  "occluded_px": {
+                    "robot": 1050,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "far": {
+                  "visible_px": 1632,
+                  "isolated_px": 2446,
+                  "visible_fraction": 0.6672,
+                  "occluded_px": {
+                    "robot": 803,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 11
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                },
+                "clip": {
+                  "visible_px": 136,
+                  "isolated_px": 145,
+                  "visible_fraction": 0.9379,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 9,
+                    "other": 0
+                  },
+                  "minimum_px": null,
+                  "minimum_fraction": null,
+                  "passed": null
+                }
+              }
+            },
+            "human_contact": {
+              "frame": 94,
+              "objects": {
+                "near": {
+                  "visible_px": 1544,
+                  "isolated_px": 1557,
+                  "visible_fraction": 0.9917,
+                  "occluded_px": {
+                    "robot": 13,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1186,
+                  "isolated_px": 1206,
+                  "visible_fraction": 0.9834,
+                  "occluded_px": {
+                    "robot": 3,
+                    "human_skin": 9,
+                    "same_mat": 0,
+                    "other": 8
+                  },
+                  "minimum_px": 250,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 80,
+                  "isolated_px": 88,
+                  "visible_fraction": 0.9091,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 8,
+                    "other": 0
+                  },
+                  "minimum_px": 25,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                }
+              }
+            },
+            "human_undo": {
+              "frame": 105,
+              "objects": {
+                "near": {
+                  "visible_px": 1544,
+                  "isolated_px": 1557,
+                  "visible_fraction": 0.9917,
+                  "occluded_px": {
+                    "robot": 13,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 1776,
+                  "isolated_px": 1789,
+                  "visible_fraction": 0.9927,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 13,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 250,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 111,
+                  "isolated_px": 121,
+                  "visible_fraction": 0.9174,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 10,
+                    "other": 0
+                  },
+                  "minimum_px": 25,
+                  "minimum_fraction": 0.35,
+                  "passed": true
+                }
+              }
+            },
+            "end": {
+              "frame": 138,
+              "objects": {
+                "near": {
+                  "visible_px": 1544,
+                  "isolated_px": 1557,
+                  "visible_fraction": 0.9917,
+                  "occluded_px": {
+                    "robot": 13,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 2432,
+                  "isolated_px": 2446,
+                  "visible_fraction": 0.9943,
+                  "occluded_px": {
+                    "robot": 3,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 11
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 136,
+                  "isolated_px": 145,
+                  "visible_fraction": 0.9379,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 9,
+                    "other": 0
+                  },
+                  "minimum_px": 50,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                }
+              }
+            }
+          }
+        },
+        "transfer": {
+          "layout_seed": 104,
+          "active_mat": "near",
+          "frames": {
+            "start": {
+              "frame": 0,
+              "objects": {
+                "near": {
+                  "visible_px": 1581,
+                  "isolated_px": 1594,
+                  "visible_fraction": 0.9918,
+                  "occluded_px": {
+                    "robot": 13,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 0
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "far": {
+                  "visible_px": 2372,
+                  "isolated_px": 2387,
+                  "visible_fraction": 0.9937,
+                  "occluded_px": {
+                    "robot": 3,
+                    "human_skin": 0,
+                    "same_mat": 0,
+                    "other": 12
+                  },
+                  "minimum_px": 500,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                },
+                "clip": {
+                  "visible_px": 88,
+                  "isolated_px": 98,
+                  "visible_fraction": 0.898,
+                  "occluded_px": {
+                    "robot": 0,
+                    "human_skin": 0,
+                    "same_mat": 10,
+                    "other": 0
+                  },
+                  "minimum_px": 50,
+                  "minimum_fraction": 0.65,
+                  "passed": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "human": [
+    {
+      "flagship": {
+        "seed": 0,
+        "fps": 24,
+        "hand_vertices": 933,
+        "body_vertices": 6030,
+        "grasp_and_transport_closest_hand_to_mat_m": {
+          "frames": 26,
+          "median_m": 0.0008000249836102062,
+          "max_allowed_median_m": 0.002,
+          "max_allowed_m": 0.012,
+          "p95_m": 0.000800056625890058,
+          "max_m": 0.0008000589540359008
+        },
+        "initial_idle_human_triangle_to_robot_clearance_lower_bound_m": 0.23566197232264202,
+        "triangle_box_all_frames_whole_body": {
+          "tabletop": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.06307947635650638,
+            "forearm_closest_frame": 77
+          },
+          "shelf": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.0018983223849373398,
+            "forearm_closest_frame": 147
+          },
+          "shelf_foot_1": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.14368803298473357,
+            "forearm_closest_frame": 119
+          },
+          "shelf_foot_2": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.015857439238495835,
+            "forearm_closest_frame": 147
+          },
+          "near_mat": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.039768035888671865,
+            "forearm_closest_frame": 102
+          },
+          "far_mat": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.20121973323822018,
+            "forearm_closest_frame": 154
+          }
+        },
+        "reviewed_cycles_frame": null,
+        "forearm_triangles": 391,
+        "body_triangles": 12252,
+        "measurements": {
+          "all_frames_hands": {
+            "tabletop": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "all_frames_forearms": {
+            "tabletop": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "all_frames_arms_including_hands": {
+            "tabletop": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "all_frames_whole_body": {
+            "tabletop": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 172,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "initial_idle_whole_body": {
+            "tabletop": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          }
+        },
+        "max_allowed_penetration_m": 0.0015,
+        "negative_control": {
+          "intervention": "lower neutral hand skin 25 mm",
+          "max_table_penetration_m": 0.02399190664291382,
+          "detected": true
+        },
+        "passed": true
+      },
+      "handover_teaching": {
+        "receiving-hand": {
+          "item": "flashlight",
+          "holders_after_actions": [
+            "robot",
+            "human",
+            "human-left"
+          ],
+          "point_frames": 0,
+          "point_item_displacement_m": null,
+          "peak_robot_ik_error_m": 0.0009426713865978764,
+          "passed": true
+        },
+        "approach-side": {
+          "item": "tumbler",
+          "holders_after_actions": [
+            "robot",
+            "robot",
+            "robot"
+          ],
+          "point_frames": 24,
+          "point_item_displacement_m": 0.0,
+          "peak_robot_ik_error_m": 0.0009488334531137653,
+          "passed": true
+        }
+      },
+      "method": "MuJoCo mjv_updateScene, vertex depth inside oriented solid boxes. Quantiles summarize each frame's deepest vertex. Initial idle samples use the whole body; all frames measure hands, forearms, full arms and the whole body. Separate triangle/box SAT tests cover every skinned triangle including faces crossing a box without an interior vertex; forearm triangles touch at least one dominant forearm vertex.",
+      "exclusions": [
+        "between-frame configurations and intersections shallower than one micrometer in SAT",
+        "self-intersection, robot/human intersection during movement, chair, room cabinetry and loose cargo",
+        "grip forces and friction, and non-flagship mesh clearance",
+        "handover custody checks track controller state and the prop trajectory, not force closure"
+      ],
+      "passed": true
+    },
+    {
+      "flagship": {
+        "seed": 1,
+        "fps": 24,
+        "hand_vertices": 933,
+        "body_vertices": 6030,
+        "grasp_and_transport_closest_hand_to_mat_m": {
+          "frames": 32,
+          "median_m": 0.000799981706575084,
+          "max_allowed_median_m": 0.002,
+          "max_allowed_m": 0.012,
+          "p95_m": 0.0008000130653381702,
+          "max_m": 0.0008000130653381702
+        },
+        "initial_idle_human_triangle_to_robot_clearance_lower_bound_m": 0.23566197232264202,
+        "triangle_box_all_frames_whole_body": {
+          "tabletop": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.06307947635650638,
+            "forearm_closest_frame": 77
+          },
+          "shelf": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.0006575363417495421,
+            "forearm_closest_frame": 157
+          },
+          "shelf_foot_1": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.02161856365203854,
+            "forearm_closest_frame": 164
+          },
+          "shelf_foot_2": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.016191279335525083,
+            "forearm_closest_frame": 157
+          },
+          "near_mat": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.057899159431457514,
+            "forearm_closest_frame": 160
+          },
+          "far_mat": {
+            "intersection_frames": 0,
+            "peak_intersecting_triangles": 0,
+            "forearm_minimum_clearance_lower_bound_m": 0.03981571960449218,
+            "forearm_closest_frame": 108
+          }
+        },
+        "reviewed_cycles_frame": null,
+        "forearm_triangles": 391,
+        "body_triangles": 12252,
+        "measurements": {
+          "all_frames_hands": {
+            "tabletop": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "all_frames_forearms": {
+            "tabletop": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "all_frames_arms_including_hands": {
+            "tabletop": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "all_frames_whole_body": {
+            "tabletop": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 184,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          },
+          "initial_idle_whole_body": {
+            "tabletop": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_1": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "shelf_foot_2": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "near_mat": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            },
+            "far_mat": {
+              "frames": 12,
+              "median_m": 0.0,
+              "p95_m": 0.0,
+              "p99_m": 0.0,
+              "max_m": 0.0,
+              "frames_over_limit": 0
+            }
+          }
+        },
+        "max_allowed_penetration_m": 0.0015,
+        "negative_control": {
+          "intervention": "lower neutral hand skin 25 mm",
+          "max_table_penetration_m": 0.02399190664291382,
+          "detected": true
+        },
+        "passed": true
+      },
+      "handover_teaching": {
+        "receiving-hand": {
+          "item": "flashlight",
+          "holders_after_actions": [
+            "robot",
+            "human",
+            "human-left"
+          ],
+          "point_frames": 0,
+          "point_item_displacement_m": null,
+          "peak_robot_ik_error_m": 0.0009621965157684052,
+          "passed": true
+        },
+        "approach-side": {
+          "item": "tumbler",
+          "holders_after_actions": [
+            "robot",
+            "robot",
+            "robot"
+          ],
+          "point_frames": 24,
+          "point_item_displacement_m": 0.0,
+          "peak_robot_ik_error_m": 0.0009686660526641044,
+          "passed": true
+        }
+      },
+      "method": "MuJoCo mjv_updateScene, vertex depth inside oriented solid boxes. Quantiles summarize each frame's deepest vertex. Initial idle samples use the whole body; all frames measure hands, forearms, full arms and the whole body. Separate triangle/box SAT tests cover every skinned triangle including faces crossing a box without an interior vertex; forearm triangles touch at least one dominant forearm vertex.",
+      "exclusions": [
+        "between-frame configurations and intersections shallower than one micrometer in SAT",
+        "self-intersection, robot/human intersection during movement, chair, room cabinetry and loose cargo",
+        "grip forces and friction, and non-flagship mesh clearance",
+        "handover custody checks track controller state and the prop trajectory, not force closure"
+      ],
+      "passed": true
+    }
+  ]
+}
