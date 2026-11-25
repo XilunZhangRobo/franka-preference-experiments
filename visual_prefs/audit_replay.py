@@ -116,7 +116,8 @@ class _Replay:
                 session_dir, signature, pending=(session_dir / "pending.json").exists()
             )
             if not done:
-                cli = AstraSession(session_dir, persistent=persistent, model=self.model)
+                # Each reader has at most the observation and one answer in context.
+                cli = AstraSession(session_dir, persistent=persistent, model=self.model, timeout=180)
                 cli.ask(instruction, context, images)
                 done = _journaled_response(session_dir, signature)
             if not done:

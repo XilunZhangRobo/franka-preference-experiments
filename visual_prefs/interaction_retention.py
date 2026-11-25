@@ -60,7 +60,7 @@ def ask(stage, instruction, context, frame):
     checkpoint = stage / "receipt.json"
     if checkpoint.is_file():
         return json.loads(checkpoint.read_text())
-    session = AstraSession(stage, persistent=False)
+    session = AstraSession(stage, persistent=False, timeout=180)
     reply = session.ask(instruction, context, [frame])
     save(checkpoint, reply)
     return reply
