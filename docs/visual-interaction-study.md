@@ -35,3 +35,7 @@ python tools/verify_interactions.py runs/interaction-study --videos
 ```
 
 The run's `index.html` contains annotated videos, exact transcripts, camera observations and results. `library/` contains the continuing robot's actual Markdown notes. `retention/index.html` lists retrievals and paired decisions. `analysis.md` compares task families and identifies cases where a clarification changed the draft. The grader works from separate examiner records. A matched choice on an easy scope control can come from ordinary robot behavior. Results apply to this simulation, camera, person brief, and discrete action menu.
+
+## Follow-up hypotheses
+
+The note-writing backlog includes a proposed test of how a person’s opportunity to intervene affects the interpretation of an uneventful task. [Research note](personalization-research-notes.md)
