@@ -442,6 +442,104 @@ def episode_html(root, ep, film, index):
     return "".join(body) + "</details></article>"
 
 
+def render_corrections(directory):
+    root = directory.resolve()
+    families = json.loads((root / "plan.json").read_text())["families"]
+    originals = []
+    contrasts = {}
+    for family in families:
+        for mode in ("isolated", "contrast"):
+            path = root / "episodes" / mode / family / "episode.json"
+            if mode == "contrast" and not path.exists():
+                continue
+            episode = json.loads(source(root, path).read_text())
+            if (episode["mode"], episode["scenario"]) != (mode, family):
+                raise ValueError(f"Episode identity mismatch in {path}")
+            if mode == "contrast":
+                contrasts[family] = episode
+            else:
+                originals.append(episode)
+    ordered = originals + list(contrasts.values())
+    outdir = root / "report-media"
+    outdir.mkdir(exist_ok=True)
+    rows = []
+    original_misses = sum(ep["scores"]["teaching_miss"] for ep in originals)
+    with tempfile.TemporaryDirectory(dir=outdir) as temp:
+        work, cache = Path(temp), {}
+        for original in originals:
+            family = original["scenario"]
+            scores = original["scores"]
+            use_original = scores["teaching_miss"] and scores["feedback_matches_persona"]
+            selected = original if use_original else contrasts[family]
+            scores = selected["scores"]
+            if not scores["teaching_miss"] or not scores["feedback_matches_persona"]:
+                raise ValueError(f"No verified correction in {family}")
+            if not use_original and selected["profile"] != "reverse":
+                raise ValueError(f"Unexpected contrast profile in {family}")
+
+            def turn(episode, channel):
+                return next(t["text"] for t in episode["turns"] if t["channel"] == channel)
+
+            idx = ordered.index(selected) + 1
+            film = movie(root, selected, outdir, work, cache, idx)
+            note = selected["artifacts"]["Note at first probe"]
+            written = source(root, note).read_text().strip()
+            profile = "Original person" if use_original else "Opposite-person contrast"
+            first = "Missed" if original["scores"]["teaching_miss"] else "Matched"
+            cells = [
+                f"<strong>{esc(selected['title'])}</strong><br>"
+                + link(root, "Correction film", film)
+                + " · "
+                + link(root, "Exact dialogue", selected["transcript"]),
+                f"<strong>{first}</strong><br>{esc(turn(original, 'selected action'))}",
+                f"<strong>{profile}</strong><br>{esc(turn(selected, 'private motion command to simulator'))}",
+                "<details><summary>Read note</summary><pre>"
+                + esc(written or "(No written note.)")
+                + "</pre></details>"
+                + link(root, "Source note", note),
+            ]
+            for prefix in ("transfer", "control"):
+                cells.append(
+                    "<br>".join(
+                        label + " · " + outcome(scores[f"{prefix}_{arm}"])
+                        for label, arm in (
+                            ("Cold", "cold"),
+                            ("Written note", "note"),
+                            ("Learner", "learner"),
+                        )
+                    )
+                )
+            rows.append("<tr>" + "".join(f"<td>{cell}</td>" for cell in cells) + "</tr>")
+        page = (
+            '<!doctype html><html lang="en"><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            "<title>Ten teaching corrections</title><style>"
+            "body{margin:2rem auto;padding:0 1rem;max-width:95rem;background:#f7f7f3;"
+            "color:#142532;font:16px/1.5 system-ui}table{border-collapse:collapse}td,th{"
+            "padding:.65rem;text-align:left;vertical-align:top;border-bottom:1px solid #ccd}"
+            "a{color:#075968}pre{white-space:pre-wrap;font:inherit}summary{cursor:pointer}"
+            ".scroll{overflow-x:auto}</style><main><h1>One teaching correction per family</h1>"
+            f"<p>The first robot action missed the original person’s preference in {original_misses} "
+            f"of {len(originals)} episodes. Where it matched, the film shows a separate person with "
+            "the opposite preference. Each selected film shows a teaching miss and the person’s "
+            "recorded physical response.</p><p>The transfer and exception columns score the "
+            "selected episode. Cold and written-note decisions use fresh sessions. The learner "
+            "retains the teaching conversation and can ask a question.</p>"
+        )
+        if (root / "isolated.html").is_file():
+            page += "<nav>" + link(root, "All original episodes", "isolated.html") + "</nav>"
+        page += (
+            '<div class="scroll"><table><thead><tr><th>Scenario and evidence</th>'
+            "<th>Original person’s first result</th><th>Person and correction in this film</th>"
+            "<th>Note supplied to fresh robot</th><th>Held-out transfer</th><th>Exception control</th>"
+            "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div></main></html>"
+        )
+        pending = work / "corrections.html"
+        pending.write_text(page, encoding="utf-8")
+        os.replace(pending, root / pending.name)
+    return root / "corrections.html"
+
+
 def render(directory):
     root = directory.resolve()
     data = json.loads((root / "report_manifest.json").read_text())
@@ -463,6 +561,14 @@ def render(directory):
     body.append(
         f"<nav>{links(root, {'Run manifest': 'report_manifest.json', **data.get('artifacts', {})})}</nav>"
     )
+    galleries = {
+        "Original isolated episodes": "isolated.html",
+        "One correction per family": "corrections.html",
+        "Mug handoff": "mug-handoff/index.html",
+    }
+    published = {label: path for label, path in galleries.items() if (root / path).is_file()}
+    if published:
+        body.append(f"<nav>{links(root, published)}</nav>")
     modes = ["isolated", "contrast", "continuous"]
     modes = [mode for mode in modes if any(ep["mode"] == mode for ep in episodes)]
     if any(ep["mode"] not in modes for ep in episodes):
@@ -521,4 +627,6 @@ def render(directory):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("directory", type=Path)
-    print(render(parser.parse_args().directory))
+    parser.add_argument("--corrections-only", action="store_true")
+    args = parser.parse_args()
+    print((render_corrections if args.corrections_only else render)(args.directory))
