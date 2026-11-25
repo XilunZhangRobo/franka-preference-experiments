@@ -130,10 +130,28 @@ class Episode:
             if data["input_sha256"] != digest:
                 raise ValueError(f"Cannot resume changed turn {p}")
         else:
-            reply = session.ask(prompt, context, images)
-            directories = sorted(d for d in session.log_dir.iterdir() if d.is_dir())
-            actual = directories[-1]
-            data = dict(input_sha256=digest,thread=session.session_id,request=self.s.rel(actual/"request.json"),
+            # A terminated orchestrator can leave a successful adapter call just
+            # before its episode receipt. Bind that exact reply instead of asking twice.
+            matching = []
+            used = {load(self.s.root / link)["request"] for link in self.calls.values()}
+            for request in session.log_dir.glob("*/request.json"):
+                archived = load(request)
+                if (self.s.rel(request) in used or archived["instruction"] != prompt
+                        or archived["context"] != context
+                        or [i["sha256"] for i in archived["images"]] != [sha(i) for i in images]):
+                    continue
+                for result in sorted(request.parent.glob("attempt-*/result.json")):
+                    matching.append((request,load(result)))
+            if len(matching) > 1:
+                raise ValueError(f"Ambiguous previous response for {p}")
+            if matching:
+                request, result = matching[0]
+                reply, thread = result["reply"], result["thread_id"]
+            else:
+                reply = session.ask(prompt, context, images)
+                actual = sorted(d for d in session.log_dir.iterdir() if d.is_dir())[-1]
+                request, thread = actual/"request.json", session.session_id
+            data = dict(input_sha256=digest,thread=thread,request=self.s.rel(request),
                         reply=reply,images=[self.s.rel(i) for i in images])
             save(p, data)
         self.calls[key] = self.s.rel(p)

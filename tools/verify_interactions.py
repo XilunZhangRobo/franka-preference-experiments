@@ -1,6 +1,7 @@
 """Independently replay the scoring and audit the recorded experiment (read only)."""
 
 import argparse
+import base64
 import hashlib
 import json
 import random
@@ -48,6 +49,7 @@ class Validator:
         self.retained = []
         self.requests = set()
         self.retries = []
+        self.recoveries = []
         self.films = {}
         self.trials = {}
 
@@ -58,6 +60,137 @@ class Validator:
 
     def rel(self, p):
         return str(p.relative_to(self.root))
+
+    def recovery(self, attempt, request):
+        evidence = read(attempt / "recovery.json")
+        call = attempt.parent
+        original = call / evidence["original_attempt"]
+        thread = evidence["thread_id"]
+        require(
+            original.parent == call
+            and re.fullmatch(r"attempt-\d+", original.name)
+            and original != attempt,
+            "recovery original attempt",
+        )
+        original_events = [
+            json.loads(line) for line in (original / "events.jsonl").read_text().splitlines()
+        ]
+        require(
+            [e["thread_id"] for e in original_events if e["type"] == "thread.started"] == [thread]
+            and all(e["type"] != "turn.completed" for e in original_events),
+            "original interruption",
+        )
+        hashes = [r["sha256"] for r in request["images"]]
+        raw_prompt = (call / "prompt.txt").read_text()
+        require(
+            evidence["original_prompt_sha256"] == sha(raw_prompt.encode())
+            and evidence["original_image_hashes"] == hashes,
+            "original recovery request",
+        )
+        journal = attempt / "journal-evidence.jsonl"
+        require(digest(journal) == evidence["journal_evidence_sha256"], "recovery journal digest")
+        turns = []
+        for line in journal.read_text().splitlines():
+            record = json.loads(line)
+            payload = record["payload"]
+            typ = payload["type"]
+            if record["type"] == "event_msg" and typ == "task_started":
+                turns.append(dict(id=payload["turn_id"], users=[], answers=[]))
+            elif (
+                record["type"] == "response_item" and typ == "message" and payload["role"] == "user"
+            ):
+                turns[-1]["users"].append(payload["content"])
+            elif (
+                record["type"] == "response_item"
+                and typ == "message"
+                and payload["role"] == "assistant"
+                and payload["phase"] == "final_answer"
+            ):
+                turns[-1]["answers"].append(
+                    "".join(c["text"] for c in payload["content"] if c["type"] == "output_text")
+                )
+            elif record["type"] == "event_msg" and typ == "task_complete":
+                if payload.get("last_agent_message"):
+                    turns[-1]["answers"].append(payload["last_agent_message"])
+            else:
+                raise ValueError("unexpected event in recovery journal")
+        require(
+            turns
+            and [t["id"] for t in turns] == evidence["journal_turn_ids"]
+            and turns[0]["id"] == evidence["original_turn_id"],
+            "recovery turn identity",
+        )
+        continuation = "Please finish the preceding unanswered request using the information already supplied. Return its requested JSON object."
+        for index, turn in enumerate(turns):
+            require(len(turn["users"]) == 1, "recovery user messages")
+            content = turn["users"][0]
+            expected = request["images"] if index == 0 else []
+            require(len(content) == len(expected) * 3 + 1, "unexpected journal content count")
+            require(
+                content[-1]
+                == dict(type="input_text", text=raw_prompt if index == 0 else continuation),
+                "journal prompt",
+            )
+            for j, image in enumerate(expected):
+                opening, upload, closing = content[j * 3 : j * 3 + 3]
+                require(
+                    opening
+                    == dict(
+                        type="input_text",
+                        text=f'<image name=[Image #{j + 1}] path="{image["file"]}">',
+                    )
+                    and closing == dict(type="input_text", text="</image>")
+                    and upload["type"] == "input_image",
+                    "journal image framing",
+                )
+                require(
+                    sha(base64.b64decode(upload["image_url"].split(",", 1)[1], validate=True))
+                    == image["sha256"],
+                    "journal image bytes",
+                )
+        original_argv = read(original / "argv.json")
+        require(
+            request["previous_thread_id"] == thread and evidence["continuation_images"] == [],
+            "recovery thread/image policy",
+        )
+        prior_args = [
+            arg
+            for i, arg in enumerate(original_argv)
+            if arg != "-i" and (i == 0 or original_argv[i - 1] != "-i")
+        ]
+        mode = evidence["mode"]
+        if mode == "same-thread-continuation":
+            require(
+                not any(t["answers"] for t in turns)
+                and evidence["continuation_prompt"] == continuation
+                and read(attempt / "argv.json") == prior_args
+                and prior_args[-3:] == ["resume", thread, "-"],
+                "text-only recovery invocation",
+            )
+        elif mode == "journal-final":
+            require(
+                evidence["continuation_prompt"] is None
+                and not (attempt / "argv.json").exists()
+                and turns[-1]["answers"]
+                and all(a == (attempt / "reply.txt").read_text() for a in turns[-1]["answers"]),
+                "recovered journal final",
+            )
+        else:
+            raise ValueError(f"unrecognized transport recovery {mode}")
+        self.recoveries.append(
+            dict(
+                request=self.rel(call / "request.json"),
+                mode=mode,
+                original_attempt=self.rel(original),
+                successful_attempt=self.rel(attempt),
+                thread=thread,
+                original_image_count=len(hashes),
+                original_turn=turns[0]["id"],
+                continuation_images=0,
+                journal_sha256=digest(journal),
+            )
+        )
+        return original_argv
 
     def raw(
         self, request_path, instruction, context, images, group, receipt=None, persistent=False
@@ -92,7 +225,11 @@ class Validator:
         require(len(successes) == 1, "expected one successful attempt")
         result = read(successes[0])
         attempt = successes[0].parent
-        argv = read(attempt / "argv.json")
+        argv = (
+            self.recovery(attempt, req)
+            if (attempt / "recovery.json").exists()
+            else read(attempt / "argv.json")
+        )
         require(
             [argv[i + 1] for i, arg in enumerate(argv) if arg == "-i"] == names,
             "CLI attachment order",
@@ -510,6 +647,64 @@ class Validator:
             "retention aggregates",
         )
 
+    def lighting_recovery(self):
+        directory = self.root / "episodes/isolated/lighting/receipts"
+        cold = read(directory / "first-choice.json")
+        group = "sessions/isolated/lighting/robot"
+        trial, v = self.view("lighting", "teach")
+        reply = self.raw(
+            self.path(cold["request"]),
+            study.DECIDE,
+            dict(task=trial.case.command, options=trial.options, written_library={}),
+            [v / "frame-00000.jpg"],
+            group,
+            cold,
+            True,
+        )
+        letter = reply["choice"]
+        r = read(directory / "person-response.json")
+        _, v = self.view("lighting", "teach", letter)
+        obs, frames = study.sample(v, 6)
+        menu = list(trial.person_menu(letter).items())
+        random.Random("person-choice/lighting").shuffle(menu)
+        public = {chr(65 + i): v for i, (k, v) in enumerate(menu)}
+        reply = self.raw(
+            self.path(r["request"]),
+            study.PERSON,
+            dict(
+                private_brief=trial.persona("standard"),
+                task=trial.case.command,
+                observed_robot_action=trial.options[letter],
+                motion_options=public,
+                **obs,
+            ),
+            frames,
+            "sessions/isolated/lighting/person",
+            r,
+            True,
+        )
+        move = dict(zip(public, [k for k, v in menu]))[reply["response"]]
+        _, v = self.view("lighting", "teach", letter, move)
+        obs, frames = study.sample(v, 16)
+        audit = read(directory / "audit.json")
+        path = self.path(audit["request"])
+        require(path.parent.parent == self.path(group), "recovered audit directory")
+        self.raw(
+            path,
+            study.AUDIT,
+            dict(task=trial.case.command, your_action=trial.options[letter], **obs),
+            frames,
+            group,
+            audit,
+            True,
+        )
+        require(len(self.recoveries) == 1, "expected exactly one recovered audit")
+        return dict(
+            verified_calls=self.calls,
+            transport_recoveries=self.recoveries,
+            action_videos=self.media,
+        )
+
     def run(self, partial):
         plan = read(self.root / "plan.json")
         require(tuple(plan["families"]) == study.FAMILIES, "plan families")
@@ -583,6 +778,7 @@ class Validator:
             session_count=len(self.threads),
             verified_calls=self.calls,
             recorded_failed_attempts=self.retries,
+            transport_recoveries=self.recoveries,
             action_videos=self.media,
             report_films=self.films,
             retention_scenes=len(self.retained),
@@ -600,10 +796,17 @@ def main():
     parser.add_argument(
         "--partial", action="store_true", help="Check finalized episodes in a still-running study."
     )
+    parser.add_argument(
+        "--lighting-recovery",
+        action="store_true",
+        help="Audit the isolated lighting upload and recovery plus its prerequisite turns.",
+    )
     args = parser.parse_args()
     validator = Validator(args.run, args.videos)
     try:
-        result = validator.run(args.partial)
+        result = (
+            validator.lighting_recovery() if args.lighting_recovery else validator.run(args.partial)
+        )
     except (
         OSError,
         ValueError,
@@ -618,7 +821,17 @@ def main():
             )
         )
         return 1
-    print(json.dumps(dict(status="partial" if args.partial else "passed", **result), indent=2))
+    print(
+        json.dumps(
+            dict(
+                status="lighting-recovery-passed"
+                if args.lighting_recovery
+                else ("partial" if args.partial else "passed"),
+                **result,
+            ),
+            indent=2,
+        )
+    )
     return 0
 
 

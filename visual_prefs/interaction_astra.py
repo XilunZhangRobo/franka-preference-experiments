@@ -1,8 +1,10 @@
 """Audited image turns through an isolated Codex CLI, optionally sharing a thread."""
 
+import base64
 import fcntl
 import hashlib
 import json
+import os
 import shutil
 import subprocess
 import time
@@ -15,6 +17,73 @@ def _write_json(path, value):
     temporary = path.with_suffix(".tmp")
     temporary.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
     temporary.replace(path)
+
+
+CONTINUE = "Please finish the preceding unanswered request using the information already supplied. Return its requested JSON object."
+
+
+def _audit_journal(thread, prompt, hashes, allowed_continuations):
+    home = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex"))
+    paths = list((home / "sessions").rglob(f"*{thread}.jsonl"))
+    if len(paths) != 1:
+        raise RuntimeError("Persistent turn recovery requires an unambiguous local session journal")
+    # Keep exact journal records for the matching turn. Do not export system or account metadata.
+    turns = []
+    current = None
+    with paths[0].open() as journal:
+        for line in journal:
+            event = json.loads(line)
+            body = event["payload"]
+            typ = body.get("type")
+            if event["type"] == "event_msg" and typ == "task_started":
+                current = {"id": body["turn_id"], "records": [line], "users": [], "final": None,
+                           "completed": None, "tools": False}
+                turns.append(current)
+            elif current is not None and event["type"] == "response_item":
+                if typ == "message" and body.get("role") == "user":
+                    content = body["content"]
+                    texts = [v["text"] for v in content if v["type"] == "input_text"]
+                    if len(texts) == 1 and texts[0].startswith("<environment_context>"):
+                        continue
+                    current["users"].append(content)
+                    current["records"].append(line)
+                elif typ == "message" and body.get("role") == "assistant" and body.get("phase") == "final_answer":
+                    current["final"] = "".join(v["text"] for v in body["content"] if v["type"]=="output_text")
+                    current["records"].append(line)
+                elif typ.endswith(("_call", "_call_output")):
+                    current["tools"] = True
+            elif current is not None and event["type"] == "event_msg" and typ == "task_complete":
+                current["completed"] = body.get("last_agent_message")
+                current["records"].append(line)
+    def matches(turn, text, expected_images):
+        if len(turn["users"]) != 1:
+            return False
+        content = turn["users"][0]
+        if not content or content[-1] != {"type":"input_text", "text":text}:
+            return False
+        if len(content) != 3*len(expected_images) + 1:
+            return False
+        for index, expected_hash in enumerate(expected_images):
+            opening, image, closing = content[3*index:3*index+3]
+            if image["type"] != "input_image" or closing != {"type":"input_text", "text":"</image>"}:
+                return False
+            data = base64.b64decode(image["image_url"].split(",",1)[1], validate=True)
+            suffix = ".png" if data.startswith(b"\x89PNG\r\n\x1a\n") else ".jpg"
+            tag = f'<image name=[Image #{index+1}] path="image-{index:03d}{suffix}">'
+            if opening != {"type":"input_text","text":tag} or hashlib.sha256(data).hexdigest() != expected_hash:
+                return False
+        return True
+    candidates = [i for i,t in enumerate(turns) if matches(t, prompt, hashes)]
+    if not candidates:
+        raise RuntimeError("Cannot verify the original prompt and ordered images for pending turn recovery")
+    tail = turns[candidates[-1]:]
+    if (len(tail) > 1 + allowed_continuations or any(t["tools"] for t in tail)
+            or any(not matches(t, CONTINUE, []) for t in tail[1:])):
+        raise RuntimeError("Unexpected later activity in pending recovery thread")
+    for t in tail:
+        if t["completed"] and t["final"] and t["completed"] != t["final"]:
+            raise RuntimeError("Journal completion and assistant message disagree")
+    return tail
 
 
 class AstraSession:
@@ -39,12 +108,13 @@ class AstraSession:
         """Submit attached images in order. Return the model's JSON object."""
         with (self.log_dir / ".lock").open("a") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
+            self._lock_fd = lock.fileno()
             return self._ask_locked(instruction, context, images)
 
     def _ask_locked(self, instruction, context, images):
         pending = self.log_dir / "pending.json"
         if self.persistent and pending.exists():
-            raise RuntimeError(f"Persistent turn outcome requires recovery: {pending}")
+            return self._recover(pending, instruction, context, images)
         previous = self.session_id if self.persistent else None
         call = self.log_dir / f"{time.time_ns()}-{uuid.uuid4().hex[:8]}"
         call.mkdir()
@@ -78,9 +148,13 @@ class AstraSession:
                             "message": str(error), "elapsed_s": time.monotonic() - started})
                 # An established thread may have accepted a timed-out or malformed turn.
                 # Never send the same observation twice on that thread.
-                if previous or attempt >= self.retries:
-                    if self.persistent and not previous:
+                if self.persistent:
+                    # Even a first turn may have reached the service before the connection failed.
+                    # An absent CLI executable is the one case known to precede model submission.
+                    if isinstance(error, FileNotFoundError):
                         pending.unlink(missing_ok=True)
+                    raise
+                if attempt >= self.retries:
                     raise
                 continue
             _write_json(run / "result.json", {"thread_id": thread_id, "reply": reply,
@@ -90,6 +164,87 @@ class AstraSession:
                 pending.unlink()
             self._last_id = thread_id
             return reply
+
+    def _recover(self, pending, instruction, context, images):
+        state = json.loads(pending.read_text())
+        original = self.log_dir / state["attempt"]
+        call = original.parent
+        req = json.loads((call / "request.json").read_text())
+        hashes = [hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in images]
+        expected = [i["sha256"] for i in req["images"]]
+        if ((instruction, context, self.model, hashes) !=
+                (req["instruction"], req["context"], req["model"], expected)):
+            raise RuntimeError("Persistent turn recovery requires the identical original request")
+        if any(hashlib.sha256((call / i["file"]).read_bytes()).hexdigest() != i["sha256"]
+               for i in req["images"]):
+            raise RuntimeError("Archived recovery images do not match the pending request")
+        events = original / "events.jsonl"
+        thread = state["previous_thread_id"]
+        if events.exists():
+            for line in events.read_text().splitlines():
+                if '"thread.started"' in line:
+                    started = str(uuid.UUID(json.loads(line)["thread_id"]))
+                    if thread and started != thread:
+                        raise RuntimeError("Unexpected pending thread identifier")
+                    thread = started
+                    break
+        if not thread:
+            raise RuntimeError("Persistent turn recovery requires the original thread identifier")
+        prompt = (call / "prompt.txt").read_text()
+        expected_prompt = ("Use only the supplied images, conversation, and text. Do not use tools. "
+                           "Reply only with the requested JSON object.\n" + instruction + "\n"
+                           + json.dumps(context, ensure_ascii=False))
+        if prompt != expected_prompt:
+            raise RuntimeError("Archived prompt differs from pending recovery request")
+        # A process may die between writing its durable result and clearing its pending marker.
+        for result_path in call.glob("attempt-*/result.json"):
+            prior_result = json.loads(result_path.read_text())
+            if prior_result["thread_id"] != thread:
+                raise RuntimeError("Pending result belongs to a different thread")
+            reply, _ = self._parse(result_path.parent, thread)
+            if reply != prior_result["reply"]:
+                raise RuntimeError("Saved result differs from its raw model output")
+            _write_json(self.log_dir / "session.json", {"thread_id":thread})
+            pending.unlink()
+            self._last_id = thread
+            return reply
+        earlier = list(call.glob("attempt-*/recovery.json"))
+        tail = _audit_journal(thread, prompt, hashes, len(earlier))
+        start = time.monotonic()
+        n = max(int(p.name.split("-")[-1]) for p in call.glob("attempt-*")) + 1
+        run = call / f"attempt-{n}"
+        run.mkdir()
+        journal = run / "journal-evidence.jsonl"
+        journal.write_text("".join(line for turn in tail for line in turn["records"]))
+        final = tail[-1]["completed"] or tail[-1]["final"]
+        _write_json(run / "recovery.json", {"original_attempt": original.name,
+                    "thread_id": thread, "original_turn_id": tail[0]["id"],
+                    "journal_turn_ids": [t["id"] for t in tail], "journal_evidence_sha256":
+                    hashlib.sha256(journal.read_bytes()).hexdigest(),
+                    "original_image_hashes": hashes, "original_prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
+                    "mode": "journal-final" if final else "same-thread-continuation",
+                    "continuation_prompt": None if final else CONTINUE, "continuation_images": []})
+        try:
+            if final:
+                # Preserve the raw journal above. Explicitly normalize its already-existing final
+                # message into the adapter event format consumed by all study readers.
+                normalized = [{"type":"thread.started","thread_id":thread},
+                              {"type":"item.completed","item":{"type":"agent_message","text":final}},
+                              {"type":"turn.completed"}]
+                (run / "events.jsonl").write_text("".join(json.dumps(e)+"\n" for e in normalized))
+                reply, _ = self._parse(run, thread)
+            else:
+                reply, _ = self._invoke(CONTINUE, [], thread, run)
+        except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as error:
+            _write_json(run / "error.json", {"type": type(error).__name__, "message": str(error),
+                        "elapsed_s": time.monotonic()-start})
+            raise
+        _write_json(run / "result.json", {"thread_id":thread, "reply":reply,
+                    "elapsed_s":time.monotonic()-start})
+        _write_json(self.log_dir / "session.json", {"thread_id":thread})
+        pending.unlink()
+        self._last_id = thread
+        return reply
 
     def _invoke(self, prompt, manifest, previous, run):
         with TemporaryDirectory() as temporary:
@@ -116,7 +271,12 @@ class AstraSession:
             events = run / "events.jsonl"
             with events.open("wb") as stdout, (run / "stderr.txt").open("wb") as stderr:
                 subprocess.run(args, cwd=work, input=prompt.encode(), stdout=stdout,
-                               stderr=stderr, timeout=self.timeout, check=True)
+                               stderr=stderr, timeout=self.timeout, check=True, pass_fds=(self._lock_fd,))
+        return self._parse(run, previous)
+
+    @staticmethod
+    def _parse(run, previous):
+        events = run / "events.jsonl"
         messages = []
         thread_id = None
         completed = False

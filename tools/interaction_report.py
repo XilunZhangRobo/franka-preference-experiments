@@ -6,8 +6,10 @@ import html
 import json
 import math
 import os
+import struct
 import subprocess
 import tempfile
+from fractions import Fraction
 from pathlib import Path
 from urllib.parse import quote
 
@@ -142,6 +144,77 @@ def movie(root, ep, outdir, work, cache, index):
             "-movflags", "+faststart", pending])
     os.replace(pending, out)
     return out
+
+
+def movie_duration(path):
+    """Read the exact MP4 container duration from the movie header without decoding."""
+    with path.open("rb") as stream:
+        limit = path.stat().st_size
+        while stream.tell() + 8 <= limit:
+            start = stream.tell()
+            size, kind = struct.unpack(">I4s", stream.read(8))
+            if size == 1:
+                size, = struct.unpack(">Q", stream.read(8))
+            end = start + size if size else limit
+            if end <= start or end > limit:
+                break
+            if kind == b"moov":
+                limit = end
+                continue
+            if kind == b"mvhd":
+                version = stream.read(4)[0]
+                if version not in (0, 1):
+                    break
+                stream.seek(16 if version else 8, os.SEEK_CUR)
+                scale, = struct.unpack(">I", stream.read(4))
+                duration, = struct.unpack(">Q" if version else ">I", stream.read(8 if version else 4))
+                return Fraction(duration, scale)
+            stream.seek(end)
+    raise ValueError(f"Missing MP4 movie header in {path}")
+
+
+def continuous_movie(root, episodes, work, cache, outdir):
+    parts, chapters = [], []
+    elapsed = Fraction(0)
+    metadata = [";FFMETADATA1"]
+    for index, (ep, film) in enumerate(episodes):
+        title = str(ep.get("title") or ep["scenario"])
+        start = elapsed
+        part = work / f"continuous-{index}.mp4"
+        os.link(film, part)
+        parts.append(part)
+        elapsed += movie_duration(part)
+        if ep.get("transcript"):
+            after = source(root, ep["transcript"]).with_name("library-after.json")
+            if after.exists():
+                count = len(json.loads(after.read_text()))
+                text = f'{count} written {"note" if count == 1 else "notes"} after this episode.'
+                for img, seconds in cards({"role": "Continuous library", "channel": title, "text": text}):
+                    card = work / f"continuous-count-{index}.png"
+                    img.save(card)
+                    part = segment(work, cache, card, seconds)
+                    parts.append(part)
+                    elapsed += movie_duration(part)
+        clean = "".join(("\\" + ch if ch in "\\;#=" else ch) for ch in " ".join(title.splitlines()))
+        metadata.extend(["[CHAPTER]", "TIMEBASE=1/1000", f"START={round(start * 1000)}",
+                         f"END={round(elapsed * 1000)}", "title=" + clean])
+        chapters.append((title, start))
+    listing = work / "continuous.txt"
+    listing.write_text("".join(f"file '{part.name}'\n" for part in parts))
+    tags = work / "chapters.ffmeta"
+    tags.write_text("\n".join(metadata) + "\n", encoding="utf-8")
+    pending = work / "continuous-library.mp4"
+    encode(["-f", "concat", "-safe", 1, "-i", listing, "-f", "ffmetadata", "-i", tags,
+            "-map", "0:v:0", "-map_metadata", "1", "-map_chapters", "1", "-c:v", "copy",
+            "-movflags", "+faststart", pending])
+    result = outdir / pending.name
+    os.replace(pending, result)
+    href = url(root, result)
+    jumps = " · ".join(f'<a href="{href}#t={float(start):.3f}">{esc(title)}</a>'
+                       for title, start in chapters)
+    return (f'<section id="continuous-film"><h2>One robot across {len(episodes)} episodes</h2>'
+            f'<video controls preload="none" src="{href}"></video><p>'
+            f'<a href="{href}">Open chaptered MP4</a></p><nav>{jumps}</nav></section>')
 
 
 def outcome(value):
@@ -283,6 +356,7 @@ def render(directory):
                 'A second fresh robot also gets the written note. The episode learner keeps its '
                 'conversation and can ask a question before acting.</p>'
                 '<nav><a href="#scores">Episode scores</a> · <a href="#library">Library timeline</a></nav>')
+    feature_position = len(body)
     for mode in modes:
         body.append(f'<h2><a href="#{mode}">{mode.title()}</a></h2><ul>')
         for i, ep in enumerate(episodes, 1):
@@ -298,12 +372,17 @@ def render(directory):
         body.append("</table>")
     with tempfile.TemporaryDirectory(dir=outdir) as temp:
         work, cache = Path(temp), {}
+        continuous = []
         for mode in modes:
             body.append(f'<h2 id="{mode}">{mode.title()} episodes</h2>')
             for i, ep in enumerate(episodes, 1):
                 if ep["mode"] == mode:
                     film = movie(root, ep, outdir, work, cache, i)
                     body.append(episode_html(root, ep, film, i))
+                    if mode == "continuous" and film:
+                        continuous.append((ep, film))
+        if continuous:
+            body.insert(feature_position, continuous_movie(root, continuous, work, cache, outdir))
         body.append("</main></html>")
         pending = work / "index.html"
         pending.write_text("\n".join(body), encoding="utf-8")

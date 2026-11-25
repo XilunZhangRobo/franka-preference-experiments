@@ -64,3 +64,35 @@ class TestAstraSession(unittest.TestCase):
             self.assertEqual(run.call_count, 2)
             self.assertIn("--ephemeral", run.call_args.args[0])
             self.assertTrue(list(self.log.glob("*/attempt-1/error.json")))
+
+    def test_exact_journal_recovery_uses_final_without_model_call(self):
+        import base64
+        import os
+        session = AstraSession(self.log, persistent=True)
+        with patch("subprocess.run", side_effect=self.emit):
+            session.ask("Choose", {}, [self.image])
+        with patch("subprocess.run", side_effect=subprocess.TimeoutExpired("codex", 1)):
+            with self.assertRaises(subprocess.TimeoutExpired):
+                session.ask("Next", {}, [self.image])
+        state = json.loads((self.log / "pending.json").read_text())
+        call = (self.log / state["attempt"]).parent
+        prompt = (call / "prompt.txt").read_text()
+        journal_dir = self.root / "codex" / "sessions"
+        journal_dir.mkdir(parents=True)
+        content = [{"type":"input_text","text":'<image name=[Image #1] path="image-000.jpg">'},
+                   {"type":"input_image","image_url":"data:image/jpeg;base64,"+
+                    base64.b64encode(self.image.read_bytes()).decode()}, {"type":"input_text","text":"</image>"}, {"type":"input_text","text":prompt}]
+        events = [
+            {"type":"event_msg","payload":{"type":"task_started","turn_id":"turn"}},
+            {"type":"response_item","payload":{"type":"message","role":"user","content":content}},
+            {"type":"event_msg","payload":{"type":"task_complete","last_agent_message":'{"action":"done"}'}}]
+        (journal_dir / f"rollout-{self.thread}.jsonl").write_text(
+            "".join(json.dumps(e)+"\n" for e in events))
+        with patch.dict(os.environ, {"CODEX_HOME":str(journal_dir.parent)}), patch("subprocess.run") as run:
+            with self.assertRaisesRegex(RuntimeError,"identical"):
+                session.ask("Other", {}, [self.image])
+            self.assertEqual(session.ask("Next", {}, [self.image]), {"action":"done"})
+            run.assert_not_called()
+        recovery = json.loads((call / "attempt-2/recovery.json").read_text())
+        self.assertEqual(recovery["mode"], "journal-final")
+        self.assertFalse((self.log / "pending.json").exists())
