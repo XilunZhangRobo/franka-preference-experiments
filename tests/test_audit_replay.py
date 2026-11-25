@@ -73,7 +73,7 @@ class AuditReplayTest(unittest.TestCase):
         stdout.write("".join(json.dumps(e) + "\n" for e in events).encode())
 
     def test_matched_arms_and_resume(self):
-        with patch("subprocess.run", side_effect=self.respond) as cli:
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.respond) as cli:
             res = evaluate_episode(self.root, "one", self.case, self.policy)
             self.assertEqual(res["changes"]["audit"]["gains"], 1)
             self.assertEqual(res["changes"]["selective"]["gains"], 1)
@@ -90,7 +90,7 @@ class AuditReplayTest(unittest.TestCase):
 
     def test_identical_note_and_donor(self):
         self.audit_question = False
-        with patch("subprocess.run", side_effect=self.respond):
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.respond):
             original = evaluate_episode(self.root, "one", self.case, self.policy)
             self.assertTrue(original["probes"]["transfer"]["post_answer"]["reused"])
             n = len(self.records)
@@ -115,7 +115,7 @@ class AuditReplayTest(unittest.TestCase):
     def test_quiet_without_probes(self):
         self.audit_question = False
         self.audit_empty = True
-        with patch("subprocess.run", side_effect=self.respond) as cli:
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.respond) as cli:
             result = evaluate_episode(
                 self.root, "quiet", self.case | {"quiet": True, "probes": {}}, self.policy
             )
@@ -125,7 +125,7 @@ class AuditReplayTest(unittest.TestCase):
 
     def test_shared_tentative_has_separate_answers_and_fresh_final_contexts(self):
         self.audit_question = False
-        with patch("subprocess.run", side_effect=self.respond):
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.respond):
             one = evaluate_episode(self.root, "one", self.case, self.policy, branch_selective=True)
             prior = one["probes"]["transfer"]["selective"]["tentative_receipt"]
             n = len(self.records)
