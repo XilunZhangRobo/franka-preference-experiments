@@ -35,7 +35,7 @@ class TestAstraSession(unittest.TestCase):
             stdout.write(json.dumps(event).encode() + b"\n")
 
     def test_resume_and_audit(self):
-        with patch("subprocess.run", side_effect=self.emit) as run:
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.emit) as run:
             for i in range(2):
                 session = AstraSession(self.log, persistent=True)
                 self.assertEqual(session.ask("Choose", {"t": i}, [self.image]), {"action": "wait"})
@@ -48,10 +48,13 @@ class TestAstraSession(unittest.TestCase):
 
     def test_no_replay_after_uncertain_resumed_turn(self):
         session = AstraSession(self.log, persistent=True)
-        with patch("subprocess.run", side_effect=self.emit):
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.emit):
             session.ask("Choose", {}, [self.image])
-        with patch("subprocess.run", side_effect=subprocess.TimeoutExpired("codex", 1)) as run:
-            with self.assertRaises(subprocess.TimeoutExpired):
+        with patch(
+            "visual_prefs.interaction_astra._run_cli",
+            side_effect=subprocess.TimeoutExpired("codex", 1),
+        ) as run:
+            with self.assertRaisesRegex(RuntimeError, "recovery"):
                 session.ask("Choose", {}, [self.image])
             with self.assertRaisesRegex(RuntimeError, "recovery"):
                 session.ask("Choose", {}, [self.image])
@@ -63,7 +66,7 @@ class TestAstraSession(unittest.TestCase):
                 raise subprocess.TimeoutExpired("codex", 1)
             self.emit(args, **kwargs)
 
-        with patch("subprocess.run", side_effect=eventually) as run:
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=eventually) as run:
             session = AstraSession(self.log)
             session.ask("Choose", {}, [self.image])
             self.assertEqual(run.call_count, 2)
@@ -75,10 +78,13 @@ class TestAstraSession(unittest.TestCase):
         import os
 
         session = AstraSession(self.log, persistent=True)
-        with patch("subprocess.run", side_effect=self.emit):
+        with patch("visual_prefs.interaction_astra._run_cli", side_effect=self.emit):
             session.ask("Choose", {}, [self.image])
-        with patch("subprocess.run", side_effect=subprocess.TimeoutExpired("codex", 1)):
-            with self.assertRaises(subprocess.TimeoutExpired):
+        with patch(
+            "visual_prefs.interaction_astra._run_cli",
+            side_effect=subprocess.TimeoutExpired("codex", 1),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "recovery"):
                 session.ask("Next", {}, [self.image])
         state = json.loads((self.log / "pending.json").read_text())
         call = (self.log / state["attempt"]).parent
@@ -96,7 +102,11 @@ class TestAstraSession(unittest.TestCase):
             {"type": "input_text", "text": prompt},
         ]
         events = [
-            {"type": "event_msg", "payload": {"type": "task_started", "turn_id": "turn"}},
+            {
+                "timestamp": "2099-01-01T00:00:00Z",
+                "type": "event_msg",
+                "payload": {"type": "task_started", "turn_id": "turn"},
+            },
             {
                 "type": "response_item",
                 "payload": {"type": "message", "role": "user", "content": content},
@@ -111,7 +121,7 @@ class TestAstraSession(unittest.TestCase):
         )
         with (
             patch.dict(os.environ, {"CODEX_HOME": str(journal_dir.parent)}),
-            patch("subprocess.run") as run,
+            patch("visual_prefs.interaction_astra._run_cli") as run,
         ):
             with self.assertRaisesRegex(RuntimeError, "identical"):
                 session.ask("Other", {}, [self.image])
@@ -120,3 +130,133 @@ class TestAstraSession(unittest.TestCase):
         recovery = json.loads((call / "attempt-2/recovery.json").read_text())
         self.assertEqual(recovery["mode"], "journal-final")
         self.assertFalse((self.log / "pending.json").exists())
+
+    def test_timeout_kills_only_isolated_process_group(self):
+        import signal
+
+        from visual_prefs.interaction_astra import _run_cli
+
+        with patch("subprocess.Popen") as popen, patch("os.killpg") as kill:
+            child = popen.return_value.__enter__.return_value
+            child.pid = 12345
+            child.communicate.side_effect = subprocess.TimeoutExpired("codex", 480)
+            with self.assertRaises(subprocess.TimeoutExpired):
+                _run_cli(
+                    ["codex"],
+                    cwd=self.root,
+                    input=b"hello",
+                    stdout=None,
+                    stderr=None,
+                    timeout=480,
+                    pass_fds=(),
+                )
+            self.assertTrue(popen.call_args.kwargs["start_new_session"])
+            kill.assert_called_once_with(12345, signal.SIGKILL)
+            child.wait.assert_called_once()
+
+    def test_timeout_verifies_original_and_sends_single_empty_image_continuation(self):
+        import os
+
+        from visual_prefs.interaction_astra import CONTINUE
+
+        for succeed in (True, False):
+            work = self.root / str(succeed)
+            session = AstraSession(work / "logs", persistent=True)
+            home = work / "codex"
+            sessions = home / "sessions"
+            sessions.mkdir(parents=True)
+            journal = sessions / f"rollout-{self.thread}.jsonl"
+            calls = []
+
+            def cli(args, *, input, stdout, **kwargs):
+                calls.append(input.decode())
+                self.assertNotIn("-i", args)
+                if len(calls) == 1:
+                    stdout.write(
+                        json.dumps({"type": "thread.started", "thread_id": self.thread}).encode()
+                        + b"\n"
+                    )
+                    journal.write_text(
+                        "\n".join(
+                            json.dumps(e)
+                            for e in [
+                                {
+                                    "timestamp": "2099-01-01T00:00:00Z",
+                                    "type": "event_msg",
+                                    "payload": {"type": "task_started", "turn_id": "current"},
+                                },
+                                {
+                                    "type": "response_item",
+                                    "payload": {
+                                        "type": "message",
+                                        "role": "user",
+                                        "content": [{"type": "input_text", "text": input.decode()}],
+                                    },
+                                },
+                            ]
+                        )
+                        + "\n"
+                    )
+                    raise subprocess.TimeoutExpired(args, 480)
+                self.assertEqual(calls[-1], CONTINUE)
+                self.assertEqual(args[args.index("resume") + 1], self.thread)
+                if not succeed:
+                    raise subprocess.TimeoutExpired(args, 480)
+                for e in (
+                    {"type": "thread.started", "thread_id": self.thread},
+                    {
+                        "type": "item.completed",
+                        "item": {"type": "agent_message", "text": '{"ok":true}'},
+                    },
+                    {"type": "turn.completed"},
+                ):
+                    stdout.write(json.dumps(e).encode() + b"\n")
+
+            with (
+                patch.dict(os.environ, {"CODEX_HOME": str(home)}),
+                patch("visual_prefs.interaction_astra._run_cli", side_effect=cli),
+            ):
+                if succeed:
+                    self.assertEqual(session.ask("Choose", {}, []), {"ok": True})
+                else:
+                    with self.assertRaises(subprocess.TimeoutExpired):
+                        session.ask("Choose", {}, [])
+                    with self.assertRaisesRegex(RuntimeError, "one continuation"):
+                        session.ask("Choose", {}, [])
+                self.assertEqual(len(calls), 2)
+                self.assertEqual(len(list(session.log_dir.glob("*/attempt-2/recovery.json"))), 1)
+                self.assertTrue(next(session.log_dir.glob("*/attempt-1/events.jsonl")).read_bytes())
+
+    def test_identical_older_turn_cannot_be_recovered(self):
+        import os
+
+        from visual_prefs.interaction_astra import _audit_journal
+
+        sessions = self.root / "sessions"
+        sessions.mkdir()
+        (sessions / f"rollout-{self.thread}.jsonl").write_text(
+            "\n".join(
+                json.dumps(e)
+                for e in [
+                    {
+                        "timestamp": "2000-01-01T00:00:00Z",
+                        "type": "event_msg",
+                        "payload": {"type": "task_started", "turn_id": "old"},
+                    },
+                    {
+                        "type": "response_item",
+                        "payload": {
+                            "type": "message",
+                            "role": "user",
+                            "content": [{"type": "input_text", "text": "identical"}],
+                        },
+                    },
+                ]
+            )
+            + "\n"
+        )
+        with (
+            patch.dict(os.environ, {"CODEX_HOME": str(self.root)}),
+            self.assertRaisesRegex(RuntimeError, "Cannot verify"),
+        ):
+            _audit_journal(self.thread, "identical", [], 0, 1_700_000_000_000_000_000)

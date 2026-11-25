@@ -6,9 +6,11 @@ import hashlib
 import json
 import os
 import shutil
+import signal
 import subprocess
 import time
 import uuid
+from datetime import datetime
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -22,7 +24,31 @@ def _write_json(path, value):
 CONTINUE = "Please finish the preceding unanswered request using the information already supplied. Return its requested JSON object."
 
 
-def _audit_journal(thread, prompt, hashes, allowed_continuations):
+def _run_cli(args, *, cwd, input, stdout, stderr, timeout, pass_fds):
+    # Isolate the wrapper and its descendants from the orchestrator and other CLI calls.
+    with subprocess.Popen(
+        args,
+        cwd=cwd,
+        stdin=subprocess.PIPE,
+        stdout=stdout,
+        stderr=stderr,
+        pass_fds=pass_fds,
+        start_new_session=True,
+    ) as child:
+        try:
+            child.communicate(input=input, timeout=timeout)
+        except subprocess.TimeoutExpired:
+            try:
+                os.killpg(child.pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            child.wait()
+            raise
+        if child.returncode:
+            raise subprocess.CalledProcessError(child.returncode, args)
+
+
+def _audit_journal(thread, prompt, hashes, allowed_continuations, not_before_ns=0):
     home = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex"))
     paths = list((home / "sessions").rglob(f"*{thread}.jsonl"))
     if len(paths) != 1:
@@ -36,6 +62,19 @@ def _audit_journal(thread, prompt, hashes, allowed_continuations):
             body = event["payload"]
             typ = body.get("type")
             if event["type"] == "event_msg" and typ == "task_started":
+                if not_before_ns:
+                    # Rollout timestamps have millisecond precision. Never adopt an older,
+                    # identical request from a previous turn on this persistent thread.
+                    stamp = event.get("timestamp")
+                    if (
+                        not stamp
+                        or round(
+                            datetime.fromisoformat(stamp.replace("Z", "+00:00")).timestamp() * 1000
+                        )
+                        < not_before_ns // 1_000_000
+                    ):
+                        current = None
+                        continue
                 current = {
                     "id": body["turn_id"],
                     "records": [line],
@@ -94,7 +133,7 @@ def _audit_journal(thread, prompt, hashes, allowed_continuations):
         return True
 
     candidates = [i for i, t in enumerate(turns) if matches(t, prompt, hashes)]
-    if not candidates:
+    if len(candidates) != 1 or (not_before_ns and candidates[0] != 0):
         raise RuntimeError(
             "Cannot verify the original prompt and ordered images for pending turn recovery"
         )
@@ -191,6 +230,8 @@ class AstraSession:
                 # An established thread may have accepted a timed-out or malformed turn.
                 # Never send the same observation twice on that thread.
                 if self.persistent:
+                    if isinstance(error, subprocess.TimeoutExpired):
+                        return self._recover(pending, instruction, context, images)
                     # Even a first turn may have reached the service before the connection failed.
                     # An absent CLI executable is the one case known to precede model submission.
                     if isinstance(error, FileNotFoundError):
@@ -263,14 +304,18 @@ class AstraSession:
             self._last_id = thread
             return reply
         earlier = list(call.glob("attempt-*/recovery.json"))
-        tail = _audit_journal(thread, prompt, hashes, len(earlier))
+        tail = _audit_journal(thread, prompt, hashes, len(earlier), int(call.name.split("-")[0]))
+        final = tail[-1]["completed"] or tail[-1]["final"]
+        if not final and earlier:
+            raise RuntimeError(
+                "The pending turn already used its one continuation recovery attempt"
+            )
         start = time.monotonic()
         n = max(int(p.name.split("-")[-1]) for p in call.glob("attempt-*")) + 1
         run = call / f"attempt-{n}"
         run.mkdir()
         journal = run / "journal-evidence.jsonl"
         journal.write_text("".join(line for turn in tail for line in turn["records"]))
-        final = tail[-1]["completed"] or tail[-1]["final"]
         _write_json(
             run / "recovery.json",
             {
@@ -367,14 +412,13 @@ class AstraSession:
             _write_json(run / "argv.json", args)
             events = run / "events.jsonl"
             with events.open("wb") as stdout, (run / "stderr.txt").open("wb") as stderr:
-                subprocess.run(
+                _run_cli(
                     args,
                     cwd=work,
                     input=prompt.encode(),
                     stdout=stdout,
                     stderr=stderr,
                     timeout=self.timeout,
-                    check=True,
                     pass_fds=(self._lock_fd,),
                 )
         return self._parse(run, previous)
