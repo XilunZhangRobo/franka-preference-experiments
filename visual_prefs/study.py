@@ -174,6 +174,8 @@ def render(
                     speaker = (
                         "person" if sample.actor in ("idle", "human", "human-left") else "robot"
                     )
+                    if sample.action == "touch" and sample.utterance in scene.sounds.values():
+                        speaker = "device"
                     events.append(
                         {"t": round(sample.time, 4), "speaker": speaker, "text": sample.utterance}
                     )

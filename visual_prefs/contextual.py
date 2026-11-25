@@ -23,9 +23,9 @@ def _lamp(s, item, x, overhead):
     # Bezel, sloped rocker and retaining screws share a compact weighted base.
     s.box(panel, (0, 0.003, 0), (0.104, 0.012, 0.047), "#444d50")
     s.box(panel, (0, -0.0025, 0), (0.090, 0.007, 0.039), "#757b77")
-    for x in (-0.048, 0.048):
-        s.ell(panel, (x, -0.0034, 0), (0.0022, 0.001, 0.0022), "#adb1ac")
-        s.box(panel, (x, -0.00425, 0), (0.0026, 0.00025, 0.00042), "#464c49")
+    for screw_x in (-0.048, 0.048):
+        s.ell(panel, (screw_x, -0.0034, 0), (0.0022, 0.001, 0.0022), "#adb1ac")
+        s.box(panel, (screw_x, -0.00425, 0), (0.0026, 0.00025, 0.00042), "#464c49")
     s.label(panel, (0, -0.0063, 0), "CEILING" if overhead else "DESK", 0.087, 0.037)
     rounded_solid(s, switch, "switch_foot", (0, 0, 0), 0.106, 0.058, 0.012, 0.007, "#35444e")
     s.grasp(item, (0, -0.008, 0.034))

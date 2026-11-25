@@ -32,6 +32,7 @@ The recorder uses MuJoCo for motion and Blender Cycles for the agent view, inclu
 | --- | --- |
 | [Scenario and overlap map](docs/scenarios.md) | Which Isaac experiments were already published and what these visual probes add |
 | [Run a visual experiment](docs/running.md) | Model adapter, cue-based review, written notes, counterfactuals, physical replay and scoring |
+| [Two-agent visual study](docs/visual-interaction-study.md) | Run ten isolated Astra pairs, a continuing robot and person, and paired tests of the final note library |
 | [Manipulated objects and their audit](docs/object-fidelity.md) | Which geometry changed, what a blinded reader could see, and where clearance was measured |
 | [Simulation audit and blinded pilot](docs/development-audit.md) | Failures the reviewers found, measured repairs and what a correct choice establishes |
 | [Cycles recording and replay](docs/cycles.md) | Render the agent camera, inspect individual frames and verify a replay against MuJoCo |
