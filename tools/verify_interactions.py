@@ -39,6 +39,16 @@ def require(ok, message):
 class Validator:
     def __init__(self, root, videos):
         self.root = root.resolve()
+        policy = read(self.root / "plan.json").get("note_policy")
+        self.prompts = study.LEGACY_PROMPTS
+        if policy is not None:
+            require(bool(re.fullmatch(r"[0-9a-f]{64}", policy["sha256"])), "note policy digest")
+            require(
+                set(policy["prompts"]) == set(self.prompts)
+                and all(isinstance(p, str) and p.strip() for p in policy["prompts"].values()),
+                "note policy prompts",
+            )
+            self.prompts = policy["prompts"]
         self.videos = videos
         self.threads = {}
         self.last = {}
@@ -428,7 +438,7 @@ class Validator:
         cold = ask(
             key,
             "robot",
-            study.DECIDE,
+            self.prompts["decide"],
             dict(task=trial.case.command, options=trial.options, written_library=before),
             [first],
         )["choice"]
@@ -465,7 +475,7 @@ class Validator:
         audit = ask(
             "audit",
             "robot",
-            study.AUDIT,
+            self.prompts["audit"],
             dict(task=trial.case.command, your_action=trial.options[cold], **obs),
             frames,
         )
@@ -476,7 +486,7 @@ class Validator:
             return ask(
                 prefix + "-answer",
                 "person",
-                study.ANSWER,
+                self.prompts["answer"],
                 dict(question=q, task=t.case.command, private_brief=t.persona(profile)),
                 images,
             )["answer"]
@@ -488,7 +498,7 @@ class Validator:
                 ask(
                     "updated-note",
                     "robot",
-                    study.REFINE,
+                    self.prompts["refine"],
                     dict(draft=latest, question=q, person_answer=a),
                 )
             )
@@ -503,7 +513,7 @@ class Validator:
                 r = ask(
                     f"{phase}-{condition}",
                     "independent",
-                    study.DECIDE,
+                    self.prompts["decide"],
                     held | {"memory": note},
                     obs,
                 )
@@ -512,7 +522,7 @@ class Validator:
             r = ask(
                 phase + "-learner",
                 "robot",
-                study.DECIDE_ASK,
+                self.prompts["selective"],
                 held | dict(current_note=latest, previous_notes=before),
                 obs,
             )
@@ -522,13 +532,16 @@ class Validator:
                 q = r["question"]
                 a = answer(phase, q, t, obs)
                 r = ask(
-                    phase + "-act", "robot", study.DECIDE, held | dict(question=q, person_answer=a)
+                    phase + "-act",
+                    "robot",
+                    self.prompts["decide"],
+                    held | dict(question=q, person_answer=a),
                 )
                 latest = study.note_text(
                     ask(
                         phase + "-refine",
                         "robot",
-                        study.REFINE,
+                        self.prompts["refine"],
                         dict(current_note=latest, person_answer=a),
                     )
                 )
@@ -654,7 +667,7 @@ class Validator:
         trial, v = self.view("lighting", "teach")
         reply = self.raw(
             self.path(cold["request"]),
-            study.DECIDE,
+            self.prompts["decide"],
             dict(task=trial.case.command, options=trial.options, written_library={}),
             [v / "frame-00000.jpg"],
             group,
@@ -691,7 +704,7 @@ class Validator:
         require(path.parent.parent == self.path(group), "recovered audit directory")
         self.raw(
             path,
-            study.AUDIT,
+            self.prompts["audit"],
             dict(task=trial.case.command, your_action=trial.options[letter], **obs),
             frames,
             group,

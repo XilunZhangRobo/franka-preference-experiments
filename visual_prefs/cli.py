@@ -68,6 +68,9 @@ def main(argv=None):
     ev.add_argument(
         "--shuffled", type=Path, help="A note actually learned from a different interaction"
     )
+    ev.add_argument(
+        "--note-policy", type=Path, help="JSON file with opt-in note and decision prompts"
+    )
     ev.add_argument("--answer", help="Answer used only if the auditor asks a clarification")
     act = subs.add_parser("execute", help="Replay a selected probe action and measure its endpoint")
     act.add_argument("bundle", type=Path)
@@ -128,6 +131,7 @@ def main(argv=None):
             prior=args.prior,
             shuffled=args.shuffled,
             answer=args.answer,
+            note_policy=args.note_policy,
         )
     elif args.command == "execute":
         config = read_json(args.bundle / "examiner/run.json")

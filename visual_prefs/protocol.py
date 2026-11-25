@@ -12,6 +12,7 @@ from pathlib import Path
 import numpy as np
 
 from .evidence import fingerprint
+from .note_policy import load_note_policy
 from .study import PHASES, new_directory, write_json
 
 DETECT = (
@@ -83,7 +84,7 @@ class Calls:
         return response
 
 
-def audited_note(call, sensor, packet, prior="", answer=None):
+def audited_note(call, sensor, packet, prior="", answer=None, prompts=None):
     frames = packet["frames"]
     context = {"task": packet["command"], "speech": packet["speech_transcript"]}
     result = call(DETECT, context, sensor, samples(frames, 30))
@@ -104,14 +105,18 @@ def audited_note(call, sensor, packet, prior="", answer=None):
         within = [f for f in frames if window[0] <= f["t"] <= window[1]]
         after = [f for f in frames if f["t"] > window[1]]
         selected = samples(before, 7) + samples(within, 18) + after[:1]
-    reply = call(AUDIT, context | {"existing_note": prior}, sensor, selected)
+    reply = call(
+        prompts["audit"] if prompts else AUDIT, context | {"existing_note": prior}, sensor, selected
+    )
     for key in ("observation", "interpretation", "note", "question"):
         if not isinstance(reply.get(key), str):
             raise ValueError(f"Missing audit text field {key}")
     if answer and reply["question"].strip():
         reply = call(
-            AUDIT,
-            context | {"existing_note": prior, "review": reply, "person_answer": answer},
+            prompts["refine"] if prompts else AUDIT,
+            context
+            | {"existing_note": prior, "review": reply, "person_answer": answer}
+            | ({"draft": reply["note"], "question": reply["question"]} if prompts else {}),
             sensor,
             selected,
         )
@@ -120,7 +125,9 @@ def audited_note(call, sensor, packet, prior="", answer=None):
     return reply["note"].strip() or prior, reply
 
 
-def evaluate(bundle, out, adapter, *, prior=None, shuffled=None, answer=None):
+def evaluate(bundle, out, adapter, *, prior=None, shuffled=None, answer=None, note_policy=None):
+    policy = load_note_policy(note_policy)
+    prompts = policy["prompts"] if policy else None
     root = Path(bundle)
     initial = Path(prior).read_text().strip() if prior else ""
     with new_directory(out, preserve_failures=True) as dest:
@@ -133,6 +140,7 @@ def evaluate(bundle, out, adapter, *, prior=None, shuffled=None, answer=None):
             write_json(
                 dest / "results.json",
                 {
+                    **({"note_policy": policy} if policy else {}),
                     "adapter": adapter,
                     "model": os.getenv("VLM_MODEL"),
                     "bundle": identity,
@@ -150,7 +158,7 @@ def evaluate(bundle, out, adapter, *, prior=None, shuffled=None, answer=None):
 
         try:
             teacher = root / "sensor/teach"
-            note, audit = audited_note(call, teacher, packet_for(teacher), initial, answer)
+            note, audit = audited_note(call, teacher, packet_for(teacher), initial, answer, prompts)
             (dest / "memory.md").write_text(note + ("\n" if note else ""))
             conditions = {"cold": "", "matched": note}
             if shuffled:
@@ -161,7 +169,7 @@ def evaluate(bundle, out, adapter, *, prior=None, shuffled=None, answer=None):
                 packet = packet_for(source)
                 for condition, memory in conditions.items():
                     reply = call(
-                        DECIDE,
+                        prompts["decide"] if prompts else DECIDE,
                         {"task": packet["command"], "options": packet["options"], "memory": memory},
                         source,
                         packet["frames"],

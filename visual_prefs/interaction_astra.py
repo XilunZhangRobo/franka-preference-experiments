@@ -112,7 +112,7 @@ def _audit_journal(thread, prompt, hashes, allowed_continuations):
 
 
 class AstraSession:
-    def __init__(self, log_dir, *, persistent=False, timeout=180, retries=1, model="gpt-6.2-astra"):
+    def __init__(self, log_dir, *, persistent=False, timeout=480, retries=1, model="gpt-6.2-astra"):
         self.log_dir = Path(log_dir).resolve()
         self.log_dir.mkdir(parents=True, exist_ok=True)
         self.persistent = persistent

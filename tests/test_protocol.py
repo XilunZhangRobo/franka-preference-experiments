@@ -95,6 +95,42 @@ class ProtocolTest(unittest.TestCase):
             )
             self.assertEqual((root / "result/memory.md").read_text(), "Remember\n")
             self.assertEqual(len(list((root / "result").glob("call-*.json"))), 8)
+            policy = root / "policy.json"
+            prompts = {
+                k: f"exact {k}" for k in ("audit", "refine", "selective", "decide", "answer")
+            }
+            write_json(policy, prompts)
+            from visual_prefs.cli import main
+
+            main(
+                [
+                    "evaluate",
+                    str(root / "bundle"),
+                    "--out",
+                    str(root / "opt"),
+                    "--adapter",
+                    command,
+                    "--shuffled",
+                    str(other),
+                    "--note-policy",
+                    str(policy),
+                    "--answer",
+                    "unused",
+                ]
+            )
+            opt = read_json(root / "opt/results.json")
+            self.assertEqual(opt["decisions"], results)
+            self.assertEqual(
+                opt["note_policy"],
+                {"sha256": sha256(policy.read_bytes()).hexdigest(), "prompts": prompts},
+            )
+            self.assertNotIn("note_policy", read_json(root / "result/results.json"))
+            for old in sorted((root / "result").glob("call-*.json")):
+                a = read_json(old)["request"]
+                b = read_json(root / "opt" / old.name)["request"]
+                self.assertEqual((a["context"], a["images"]), (b["context"], b["images"]))
+                if "options" in a["context"]:
+                    self.assertEqual(b["instruction"], prompts["decide"])
             # Fail only once the two transfer decisions have completed.
             code = adapter.read_text()
             (sensor / "exception/frame-0.jpg").write_bytes(b"changed")

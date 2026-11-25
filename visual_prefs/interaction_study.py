@@ -12,6 +12,7 @@ from pathlib import Path
 
 from .interaction_astra import AstraSession
 from .interaction_sim import prepare
+from .note_policy import load_note_policy
 from .study import PHASES, asset_hashes, revision
 
 FAMILIES = (
@@ -104,8 +105,15 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+LEGACY_PROMPTS = dict(
+    audit=AUDIT, refine=REFINE, selective=DECIDE_ASK, decide=DECIDE, answer=ANSWER
+)
+
+
 class Study:
-    def __init__(self, root, workers):
+    def __init__(self, root, workers, note_policy=None):
+        self.note_policy = load_note_policy(note_policy)
+        self.prompts = self.note_policy["prompts"] if self.note_policy else LEGACY_PROMPTS
         self.root = root.resolve()
         self.root.mkdir(parents=True, exist_ok=True)
         self.workers = workers
@@ -239,9 +247,9 @@ class Episode:
             "task": trial.case.command,
             "private_brief": trial.persona(self.profile),
         }
-        reply = self.ask(key + "-answer", self.person, ANSWER, ctx, [image] if image else [])[
-            "answer"
-        ]
+        reply = self.ask(
+            key + "-answer", self.person, self.s.prompts["answer"], ctx, [image] if image else []
+        )["answer"]
         self.say("Person Astra", "spoken answer to robot", reply)
         return reply
 
@@ -262,7 +270,7 @@ class Episode:
             )
         prior = load(before)
         ctx = {"task": trial.case.command, "options": trial.options, "written_library": prior}
-        cold = self.ask("first-choice", self.robot, DECIDE, ctx, [image])
+        cold = self.ask("first-choice", self.robot, self.s.prompts["decide"], ctx, [image])
         letter = cold["choice"]
         if letter not in trial.options:
             raise ValueError(cold)
@@ -321,7 +329,7 @@ class Episode:
         audit = self.ask(
             "audit",
             self.robot,
-            AUDIT,
+            self.s.prompts["audit"],
             {"task": trial.case.command, "your_action": trial.options[letter], **observed},
             frames,
         )
@@ -338,7 +346,7 @@ class Episode:
             update = self.ask(
                 "updated-note",
                 self.robot,
-                REFINE,
+                self.s.prompts["refine"],
                 {"draft": raw_note, "question": audit["question"], "person_answer": answer},
             )
             final_note = note_text(update)
@@ -361,7 +369,11 @@ class Episode:
             for condition, note in (("cold", ""), ("note", final_note)):
                 session = AstraSession(self.path / "independent" / f"{phase}-{condition}")
                 result = self.ask(
-                    f"{phase}-{condition}", session, DECIDE, held | {"memory": note}, [first]
+                    f"{phase}-{condition}",
+                    session,
+                    self.s.prompts["decide"],
+                    held | {"memory": note},
+                    [first],
                 )
                 if result["choice"] not in next_trial.options:
                     raise ValueError(result)
@@ -374,7 +386,7 @@ class Episode:
             reply = self.ask(
                 phase + "-learner",
                 self.robot,
-                DECIDE_ASK,
+                self.s.prompts["selective"],
                 held | {"current_note": latest, "previous_notes": prior},
                 [first],
             )
@@ -387,14 +399,14 @@ class Episode:
                 reply = self.ask(
                     phase + "-act",
                     self.robot,
-                    DECIDE,
+                    self.s.prompts["decide"],
                     held | {"question": reply["question"], "person_answer": answer},
                 )
                 selected = reply["choice"]
                 refined = self.ask(
                     phase + "-refine",
                     self.robot,
-                    REFINE,
+                    self.s.prompts["refine"],
                     {"current_note": latest, "person_answer": answer},
                 )
                 latest = note_text(refined)
@@ -447,8 +459,11 @@ def main():
     p = argparse.ArgumentParser(__doc__)
     p.add_argument("root", type=Path)
     p.add_argument("--workers", type=int, default=3)
+    p.add_argument(
+        "--note-policy", type=Path, help="JSON file with opt-in note and decision prompts"
+    )
     args = p.parse_args()
-    s = Study(args.root, args.workers)
+    s = Study(args.root, args.workers, args.note_policy)
     plan = dict(
         families=FAMILIES,
         model="gpt-6.2-astra",
@@ -462,6 +477,8 @@ def main():
         clarification="At most one question during audit and one per probe. Fresh cold and written-note comparisons cannot ask. The same persistent learner and person continue across the ten continuous episodes.",
         outcome="All errors and null notes count. A successful scope choice can also reflect ordinary priors. A single development run per family estimates no population frequency.",
     )
+    if s.note_policy:
+        plan["note_policy"] = s.note_policy
     snapshot(s.root / "plan.json", json.loads(json.dumps(plan)))
     if not (s.root / "provenance.json").exists():
         save(
