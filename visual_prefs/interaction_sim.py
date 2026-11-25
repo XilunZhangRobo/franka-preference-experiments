@@ -6,7 +6,6 @@ from pathlib import Path
 from .episode import Motion
 from .study import public_choices, render, scene_for
 
-
 # First-person briefs are delivered only to the person, never to the robot.
 PREFERENCES = {
     "paused-work": (

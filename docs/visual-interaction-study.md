@@ -21,6 +21,8 @@ Every teaching task offers two physically implemented robot actions. The person 
 
 At each transfer and control, two additional fresh robot calls compare the same initial frame with empty memory or just the written note. The continuing learner can independently ask the person and execute its own decision. These measurements distinguish written transfer from a choice backed by conversation history and further clarification.
 
+The supplementary mug handoff uses the isolated receiving-hand note on a lidded tumbler. It pairs two free hands with the same scene when the left hand holds folded paper. Each condition has a fresh cold reader and a fresh note-assisted reader. Both decisions are enacted on camera.
+
 ## Reproduce a run
 
 Use the activated environment, installed Panda assets, and an authenticated Codex CLI with access to GPT-6.2 Astra. Rendering uses the project's Blender runtime. From the repository root on a machine with EGL, run the following commands with a new destination.

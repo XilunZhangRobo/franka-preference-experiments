@@ -36,8 +36,14 @@ def _audit_journal(thread, prompt, hashes, allowed_continuations):
             body = event["payload"]
             typ = body.get("type")
             if event["type"] == "event_msg" and typ == "task_started":
-                current = {"id": body["turn_id"], "records": [line], "users": [], "final": None,
-                           "completed": None, "tools": False}
+                current = {
+                    "id": body["turn_id"],
+                    "records": [line],
+                    "users": [],
+                    "final": None,
+                    "completed": None,
+                    "tools": False,
+                }
                 turns.append(current)
             elif current is not None and event["type"] == "response_item":
                 if typ == "message" and body.get("role") == "user":
@@ -47,38 +53,57 @@ def _audit_journal(thread, prompt, hashes, allowed_continuations):
                         continue
                     current["users"].append(content)
                     current["records"].append(line)
-                elif typ == "message" and body.get("role") == "assistant" and body.get("phase") == "final_answer":
-                    current["final"] = "".join(v["text"] for v in body["content"] if v["type"]=="output_text")
+                elif (
+                    typ == "message"
+                    and body.get("role") == "assistant"
+                    and body.get("phase") == "final_answer"
+                ):
+                    current["final"] = "".join(
+                        v["text"] for v in body["content"] if v["type"] == "output_text"
+                    )
                     current["records"].append(line)
                 elif typ.endswith(("_call", "_call_output")):
                     current["tools"] = True
             elif current is not None and event["type"] == "event_msg" and typ == "task_complete":
                 current["completed"] = body.get("last_agent_message")
                 current["records"].append(line)
+
     def matches(turn, text, expected_images):
         if len(turn["users"]) != 1:
             return False
         content = turn["users"][0]
-        if not content or content[-1] != {"type":"input_text", "text":text}:
+        if not content or content[-1] != {"type": "input_text", "text": text}:
             return False
-        if len(content) != 3*len(expected_images) + 1:
+        if len(content) != 3 * len(expected_images) + 1:
             return False
         for index, expected_hash in enumerate(expected_images):
-            opening, image, closing = content[3*index:3*index+3]
-            if image["type"] != "input_image" or closing != {"type":"input_text", "text":"</image>"}:
+            opening, image, closing = content[3 * index : 3 * index + 3]
+            if image["type"] != "input_image" or closing != {
+                "type": "input_text",
+                "text": "</image>",
+            }:
                 return False
-            data = base64.b64decode(image["image_url"].split(",",1)[1], validate=True)
+            data = base64.b64decode(image["image_url"].split(",", 1)[1], validate=True)
             suffix = ".png" if data.startswith(b"\x89PNG\r\n\x1a\n") else ".jpg"
-            tag = f'<image name=[Image #{index+1}] path="image-{index:03d}{suffix}">'
-            if opening != {"type":"input_text","text":tag} or hashlib.sha256(data).hexdigest() != expected_hash:
+            tag = f'<image name=[Image #{index + 1}] path="image-{index:03d}{suffix}">'
+            if (
+                opening != {"type": "input_text", "text": tag}
+                or hashlib.sha256(data).hexdigest() != expected_hash
+            ):
                 return False
         return True
-    candidates = [i for i,t in enumerate(turns) if matches(t, prompt, hashes)]
+
+    candidates = [i for i, t in enumerate(turns) if matches(t, prompt, hashes)]
     if not candidates:
-        raise RuntimeError("Cannot verify the original prompt and ordered images for pending turn recovery")
-    tail = turns[candidates[-1]:]
-    if (len(tail) > 1 + allowed_continuations or any(t["tools"] for t in tail)
-            or any(not matches(t, CONTINUE, []) for t in tail[1:])):
+        raise RuntimeError(
+            "Cannot verify the original prompt and ordered images for pending turn recovery"
+        )
+    tail = turns[candidates[-1] :]
+    if (
+        len(tail) > 1 + allowed_continuations
+        or any(t["tools"] for t in tail)
+        or any(not matches(t, CONTINUE, []) for t in tail[1:])
+    ):
         raise RuntimeError("Unexpected later activity in pending recovery thread")
     for t in tail:
         if t["completed"] and t["final"] and t["completed"] != t["final"]:
@@ -87,8 +112,7 @@ def _audit_journal(thread, prompt, hashes, allowed_continuations):
 
 
 class AstraSession:
-    def __init__(self, log_dir, *, persistent=False, timeout=180, retries=1,
-                 model="gpt-6.2-astra"):
+    def __init__(self, log_dir, *, persistent=False, timeout=180, retries=1, model="gpt-6.2-astra"):
         self.log_dir = Path(log_dir).resolve()
         self.log_dir.mkdir(parents=True, exist_ok=True)
         self.persistent = persistent
@@ -120,8 +144,10 @@ class AstraSession:
         call.mkdir()
         prompt = (
             "Use only the supplied images, conversation, and text. Do not use tools. "
-            "Reply only with the requested JSON object.\n" + instruction
-            + "\n" + json.dumps(context, ensure_ascii=False)
+            "Reply only with the requested JSON object.\n"
+            + instruction
+            + "\n"
+            + json.dumps(context, ensure_ascii=False)
         )
         (call / "prompt.txt").write_text(prompt)
         manifest = []
@@ -131,21 +157,37 @@ class AstraSession:
             name = f"image-{index:03d}{suffix}"
             (call / name).write_bytes(data)
             manifest.append({"file": name, "sha256": hashlib.sha256(data).hexdigest()})
-        _write_json(call / "request.json", {"model": self.model, "instruction": instruction,
-                    "context": context, "images": manifest, "persistent": self.persistent,
-                    "previous_thread_id": previous})
+        _write_json(
+            call / "request.json",
+            {
+                "model": self.model,
+                "instruction": instruction,
+                "context": context,
+                "images": manifest,
+                "persistent": self.persistent,
+                "previous_thread_id": previous,
+            },
+        )
         for attempt in range(self.retries + 1):
             run = call / f"attempt-{attempt + 1}"
             run.mkdir()
             if self.persistent:
-                _write_json(pending, {"attempt": str(run.relative_to(self.log_dir)),
-                                      "previous_thread_id": previous})
+                _write_json(
+                    pending,
+                    {"attempt": str(run.relative_to(self.log_dir)), "previous_thread_id": previous},
+                )
             started = time.monotonic()
             try:
                 reply, thread_id = self._invoke(prompt, manifest, previous, run)
             except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as error:
-                _write_json(run / "error.json", {"type": type(error).__name__,
-                            "message": str(error), "elapsed_s": time.monotonic() - started})
+                _write_json(
+                    run / "error.json",
+                    {
+                        "type": type(error).__name__,
+                        "message": str(error),
+                        "elapsed_s": time.monotonic() - started,
+                    },
+                )
                 # An established thread may have accepted a timed-out or malformed turn.
                 # Never send the same observation twice on that thread.
                 if self.persistent:
@@ -157,8 +199,10 @@ class AstraSession:
                 if attempt >= self.retries:
                     raise
                 continue
-            _write_json(run / "result.json", {"thread_id": thread_id, "reply": reply,
-                        "elapsed_s": time.monotonic() - started})
+            _write_json(
+                run / "result.json",
+                {"thread_id": thread_id, "reply": reply, "elapsed_s": time.monotonic() - started},
+            )
             if self.persistent:
                 _write_json(self.log_dir / "session.json", {"thread_id": thread_id})
                 pending.unlink()
@@ -172,11 +216,17 @@ class AstraSession:
         req = json.loads((call / "request.json").read_text())
         hashes = [hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in images]
         expected = [i["sha256"] for i in req["images"]]
-        if ((instruction, context, self.model, hashes) !=
-                (req["instruction"], req["context"], req["model"], expected)):
+        if (instruction, context, self.model, hashes) != (
+            req["instruction"],
+            req["context"],
+            req["model"],
+            expected,
+        ):
             raise RuntimeError("Persistent turn recovery requires the identical original request")
-        if any(hashlib.sha256((call / i["file"]).read_bytes()).hexdigest() != i["sha256"]
-               for i in req["images"]):
+        if any(
+            hashlib.sha256((call / i["file"]).read_bytes()).hexdigest() != i["sha256"]
+            for i in req["images"]
+        ):
             raise RuntimeError("Archived recovery images do not match the pending request")
         events = original / "events.jsonl"
         thread = state["previous_thread_id"]
@@ -191,9 +241,13 @@ class AstraSession:
         if not thread:
             raise RuntimeError("Persistent turn recovery requires the original thread identifier")
         prompt = (call / "prompt.txt").read_text()
-        expected_prompt = ("Use only the supplied images, conversation, and text. Do not use tools. "
-                           "Reply only with the requested JSON object.\n" + instruction + "\n"
-                           + json.dumps(context, ensure_ascii=False))
+        expected_prompt = (
+            "Use only the supplied images, conversation, and text. Do not use tools. "
+            "Reply only with the requested JSON object.\n"
+            + instruction
+            + "\n"
+            + json.dumps(context, ensure_ascii=False)
+        )
         if prompt != expected_prompt:
             raise RuntimeError("Archived prompt differs from pending recovery request")
         # A process may die between writing its durable result and clearing its pending marker.
@@ -204,7 +258,7 @@ class AstraSession:
             reply, _ = self._parse(result_path.parent, thread)
             if reply != prior_result["reply"]:
                 raise RuntimeError("Saved result differs from its raw model output")
-            _write_json(self.log_dir / "session.json", {"thread_id":thread})
+            _write_json(self.log_dir / "session.json", {"thread_id": thread})
             pending.unlink()
             self._last_id = thread
             return reply
@@ -217,31 +271,49 @@ class AstraSession:
         journal = run / "journal-evidence.jsonl"
         journal.write_text("".join(line for turn in tail for line in turn["records"]))
         final = tail[-1]["completed"] or tail[-1]["final"]
-        _write_json(run / "recovery.json", {"original_attempt": original.name,
-                    "thread_id": thread, "original_turn_id": tail[0]["id"],
-                    "journal_turn_ids": [t["id"] for t in tail], "journal_evidence_sha256":
-                    hashlib.sha256(journal.read_bytes()).hexdigest(),
-                    "original_image_hashes": hashes, "original_prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
-                    "mode": "journal-final" if final else "same-thread-continuation",
-                    "continuation_prompt": None if final else CONTINUE, "continuation_images": []})
+        _write_json(
+            run / "recovery.json",
+            {
+                "original_attempt": original.name,
+                "thread_id": thread,
+                "original_turn_id": tail[0]["id"],
+                "journal_turn_ids": [t["id"] for t in tail],
+                "journal_evidence_sha256": hashlib.sha256(journal.read_bytes()).hexdigest(),
+                "original_image_hashes": hashes,
+                "original_prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
+                "mode": "journal-final" if final else "same-thread-continuation",
+                "continuation_prompt": None if final else CONTINUE,
+                "continuation_images": [],
+            },
+        )
         try:
             if final:
                 # Preserve the raw journal above. Explicitly normalize its already-existing final
                 # message into the adapter event format consumed by all study readers.
-                normalized = [{"type":"thread.started","thread_id":thread},
-                              {"type":"item.completed","item":{"type":"agent_message","text":final}},
-                              {"type":"turn.completed"}]
-                (run / "events.jsonl").write_text("".join(json.dumps(e)+"\n" for e in normalized))
+                normalized = [
+                    {"type": "thread.started", "thread_id": thread},
+                    {"type": "item.completed", "item": {"type": "agent_message", "text": final}},
+                    {"type": "turn.completed"},
+                ]
+                (run / "events.jsonl").write_text("".join(json.dumps(e) + "\n" for e in normalized))
                 reply, _ = self._parse(run, thread)
             else:
                 reply, _ = self._invoke(CONTINUE, [], thread, run)
         except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as error:
-            _write_json(run / "error.json", {"type": type(error).__name__, "message": str(error),
-                        "elapsed_s": time.monotonic()-start})
+            _write_json(
+                run / "error.json",
+                {
+                    "type": type(error).__name__,
+                    "message": str(error),
+                    "elapsed_s": time.monotonic() - start,
+                },
+            )
             raise
-        _write_json(run / "result.json", {"thread_id":thread, "reply":reply,
-                    "elapsed_s":time.monotonic()-start})
-        _write_json(self.log_dir / "session.json", {"thread_id":thread})
+        _write_json(
+            run / "result.json",
+            {"thread_id": thread, "reply": reply, "elapsed_s": time.monotonic() - start},
+        )
+        _write_json(self.log_dir / "session.json", {"thread_id": thread})
         pending.unlink()
         self._last_id = thread
         return reply
@@ -249,15 +321,40 @@ class AstraSession:
     def _invoke(self, prompt, manifest, previous, run):
         with TemporaryDirectory() as temporary:
             work = Path(temporary)
-            args = ["codex", "exec", "-s", "read-only", "--ignore-user-config",
-                    "--skip-git-repo-check", "--json", "-m", self.model,
-                    "-c", 'model_reasoning_effort="low"', "-c", 'web_search="disabled"',
-                    "-c", "project_doc_max_bytes=0", "-c", "suppress_unstable_features_warning=true"]
-            for feature in ("shell_tool", "unified_exec", "view_image", "plugins",
-                            "multi_agent", "multi_agent_v2", "skill_search", "memories",
-                            "workspace_dependencies"):
+            args = [
+                "codex",
+                "exec",
+                "-s",
+                "read-only",
+                "--ignore-user-config",
+                "--skip-git-repo-check",
+                "--json",
+                "-m",
+                self.model,
+                "-c",
+                'model_reasoning_effort="low"',
+                "-c",
+                'web_search="disabled"',
+                "-c",
+                "project_doc_max_bytes=0",
+                "-c",
+                "suppress_unstable_features_warning=true",
+            ]
+            for feature in (
+                "shell_tool",
+                "unified_exec",
+                "view_image",
+                "plugins",
+                "multi_agent",
+                "multi_agent_v2",
+                "skill_search",
+                "memories",
+                "workspace_dependencies",
+            ):
                 args.extend(["--disable", feature])
-            args.extend(["--enable", "skip_host_skill_discovery", "--enable", "omit_skill_descriptions"])
+            args.extend(
+                ["--enable", "skip_host_skill_discovery", "--enable", "omit_skill_descriptions"]
+            )
             if previous:
                 args.extend(["resume", previous])
             elif not self.persistent:
@@ -270,8 +367,16 @@ class AstraSession:
             _write_json(run / "argv.json", args)
             events = run / "events.jsonl"
             with events.open("wb") as stdout, (run / "stderr.txt").open("wb") as stderr:
-                subprocess.run(args, cwd=work, input=prompt.encode(), stdout=stdout,
-                               stderr=stderr, timeout=self.timeout, check=True, pass_fds=(self._lock_fd,))
+                subprocess.run(
+                    args,
+                    cwd=work,
+                    input=prompt.encode(),
+                    stdout=stdout,
+                    stderr=stderr,
+                    timeout=self.timeout,
+                    check=True,
+                    pass_fds=(self._lock_fd,),
+                )
         return self._parse(run, previous)
 
     @staticmethod

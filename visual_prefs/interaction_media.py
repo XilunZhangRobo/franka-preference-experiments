@@ -29,19 +29,38 @@ def main():
         if args.out.exists():
             return
         trial = prepare(args.family, args.phase, args.seed)
-        config = dict(size=(args.width, args.height), fps=args.fps, samples=args.samples,
-                      renderer="blender-cycles", device="CPU", camera="agent")
+        config = dict(
+            size=(args.width, args.height),
+            fps=args.fps,
+            samples=args.samples,
+            renderer="blender-cycles",
+            device="CPU",
+            camera="agent",
+        )
         with new_directory(args.out) as stage:
             if args.choice == "initial":
-                packet, measured = trial.initial(stage/"view", **config)
+                packet, measured = trial.initial(stage / "view", **config)
             else:
-                packet, measured = trial.execute(stage/"view", args.choice,
-                    None if args.response == "none" else args.response, **config)
+                packet, measured = trial.execute(
+                    stage / "view",
+                    args.choice,
+                    None if args.response == "none" else args.response,
+                    **config,
+                )
             packet["options"] = trial.options
-            write_json(stage/"view"/"packet.json", packet)
-            write_json(stage/"measurement.json", measured)
-            write_json(stage/"render.json", dict(family=args.family, phase=args.phase,seed=args.seed,
-                choice=args.choice,response=args.response,**config))
+            write_json(stage / "view" / "packet.json", packet)
+            write_json(stage / "measurement.json", measured)
+            write_json(
+                stage / "render.json",
+                dict(
+                    family=args.family,
+                    phase=args.phase,
+                    seed=args.seed,
+                    choice=args.choice,
+                    response=args.response,
+                    **config,
+                ),
+            )
 
 
 if __name__ == "__main__":
