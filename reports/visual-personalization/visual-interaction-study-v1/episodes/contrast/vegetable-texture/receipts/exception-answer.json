@@ -1,0 +1,11 @@
+{
+  "input_sha256": "29e66ec67c3455823218d0a48b91a7a62805558ace941f3592a3c8d622853a5d",
+  "thread": "run-0241",
+  "request": "sessions/contrast/vegetable-texture/person/1795591714986322424-920d2830/request.json",
+  "reply": {
+    "answer": "I’d like the green beans firmer, please."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

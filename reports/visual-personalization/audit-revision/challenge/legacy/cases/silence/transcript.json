@@ -1,0 +1,37 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0019",
+    "reply": {
+      "observation": "I placed the finished piece in the amber tray. The person kept their hands near the trays and left the piece there.",
+      "interpretation": "The placement may have been acceptable for this task. I saw no clear signal of a tray preference.",
+      "title": "",
+      "note": "",
+      "question": "Should I use the amber tray for future finished pieces?"
+    }
+  },
+  {
+    "stage": "audit-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/audit-answer.json",
+    "thread": "run-0018",
+    "reply": {
+      "answer": "No, use the teal tray unless I ask for a different tray for a specific piece."
+    }
+  },
+  {
+    "stage": "refine",
+    "actor": "robot",
+    "channel": "written note",
+    "receipt": "receipts/refine.json",
+    "thread": "run-0020",
+    "reply": {
+      "title": "Teal tray for finished pieces",
+      "note": "Use the teal tray for future finished pieces unless I ask for a different tray for a specific piece."
+    }
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Select zero to three notes relevant to this task and observation. Return {\"ids\":[\"note ID\", ...]}.",
+  "context": {
+    "task": "Pass me the remote.",
+    "options": {
+      "A": "Offer it to the person's left hand.",
+      "B": "Offer it to the person's right hand."
+    },
+    "catalog": [
+      {
+        "id": "N-39307f1617",
+        "title": "Clipped rust mat placement"
+      },
+      {
+        "id": "N-83c30a4ea7",
+        "title": "Personal gift cards and gift box arrangement"
+      },
+      {
+        "id": "N-14f935e0ab",
+        "title": "Left-hand handoff preference"
+      },
+      {
+        "id": "N-3150d3ad58",
+        "title": "Assembly parts by order of use"
+      },
+      {
+        "id": "N-a717044ab0",
+        "title": "Drink placement and folded cloth handoffs"
+      },
+      {
+        "id": "N-66a3c417d0",
+        "title": "Low-priority updates during solo work and video calls"
+      },
+      {
+        "id": "N-a4e874cc23",
+        "title": "Broccoli and green bean texture"
+      },
+      {
+        "id": "N-ba35af96c8",
+        "title": "Entryway storage for personal belongings and pen case"
+      },
+      {
+        "id": "N-01819a7d1d",
+        "title": "Overhead lighting for solo work"
+      },
+      {
+        "id": "N-52881ea58e",
+        "title": "Cleaner preferences for kitchen counters and sewing surfaces"
+      }
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "6283338b5990a8a43e5b991c48d456aea9946869103b400f4033465000b3af70"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

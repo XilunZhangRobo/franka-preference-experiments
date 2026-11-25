@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "task": "The bin is full. Give the person a low-priority completion update.",
+    "private_brief": "I want brief routine updates immediately while I work alone. A routine update can wait until my video call ends.",
+    "question": "For future low-priority updates, should I speak while you’re working or wait until you pause?"
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Kitchen counter cleaner\n\nUse fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a preference based solely on someone else being home.\n",
+    "person_answer": "I prefer mild citrus for my sewing surface."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0252"
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "Help get the gift box ready.",
+    "options": {
+      "A": "Arrange the tissue and gift inside and close the box.",
+      "B": "Open the box and set the tissue and gift alongside it."
+    },
+    "memory": "# Offer the flower for final placement\n\nOn a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "2aa5967230264063a88563dd85d3b2e19ad67934fd7cedd68dfa808866b2f664"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

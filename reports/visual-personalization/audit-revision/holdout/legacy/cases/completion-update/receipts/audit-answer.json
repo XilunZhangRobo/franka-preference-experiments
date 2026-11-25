@@ -1,0 +1,10 @@
+{
+  "input_sha256": "92c5f4127bd53736903bfa596dbdf120d6134a4d62d50e5d670bf3b9390b8f95",
+  "session": "audit-person",
+  "thread": "run-0097",
+  "request": "sessions/audit-person/1795631173068855253-2227d8e7/request.json",
+  "result": "sessions/audit-person/1795631173068855253-2227d8e7/attempt-1/result.json",
+  "reply": {
+    "answer": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."
+  }
+}

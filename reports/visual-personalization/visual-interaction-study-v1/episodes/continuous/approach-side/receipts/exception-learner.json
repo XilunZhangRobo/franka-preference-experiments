@@ -1,0 +1,13 @@
+{
+  "input_sha256": "1e5ad73b55d41b31cb4b38e13783beba00ee9b5419dd75b3f34ba929b0bd5c57",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592519953820063-c2c03244/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The shelf blocks the approach on your left, and your right hand is free to take the cloth.",
+    "question": "When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?"
+  },
+  "images": [
+    "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  ]
+}

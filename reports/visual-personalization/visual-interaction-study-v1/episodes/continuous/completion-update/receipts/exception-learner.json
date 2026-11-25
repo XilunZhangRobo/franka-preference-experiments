@@ -1,0 +1,13 @@
+{
+  "input_sha256": "37ff6c31f209357e9bac7c44650c98c3837ab447d033d35c200e3aa286ee7799",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592695300943891-d2e46d02/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You asked me to wait until your video call ends before giving a low-priority update.",
+    "question": ""
+  },
+  "images": [
+    "media/completion-update/exception-298/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "family": "private-storage",
+  "phase": "teach",
+  "seed": 114,
+  "choice": "A",
+  "response": "none",
+  "size": [
+    640,
+    480
+  ],
+  "fps": 6,
+  "samples": 12,
+  "renderer": "blender-cycles",
+  "device": "CPU",
+  "camera": "agent"
+}

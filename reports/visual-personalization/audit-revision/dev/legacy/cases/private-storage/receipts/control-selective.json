@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9ebc4e29825145efedbc350055c2f7692284ebd6e89b8bd76ceee86bc6db29de",
+  "session": "control-selective",
+  "thread": "run-0062",
+  "request": "sessions/control-selective/1795631084911553873-364cee57/request.json",
+  "result": "sessions/control-selective/1795631084911553873-364cee57/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The tray keeps all four rulers within reach for the first craft step.",
+    "question": ""
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "input_sha256": "6102f8dfd74f5b04eb4a6feab5498f2cd83e6c492fabc244492d2c333cd5ef88",
+  "session": "refiner",
+  "thread": "run-0006",
+  "request": "sessions/refiner/1795631285396418668-e223e20b/request.json",
+  "result": "sessions/refiner/1795631285396418668-e223e20b/attempt-1/result.json",
+  "reply": {
+    "title": "Teal tray for finished pieces",
+    "note": "The person chose the teal tray for this piece and confirmed it as the default for future finished pieces. Use a different tray when they request one for a particular piece."
+  }
+}

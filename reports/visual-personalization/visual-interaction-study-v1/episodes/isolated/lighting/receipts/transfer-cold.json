@@ -1,0 +1,12 @@
+{
+  "input_sha256": "7f8c216bdfee80e8211948a3052e3eef46789f54ddd6d607b351b04600893784",
+  "thread": "run-0274",
+  "request": "episodes/isolated/lighting/independent/transfer-cold/1795590893660595839-b0eb8b86/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The desk lamp can shine directly on the tile samples so the person can compare their patterns."
+  },
+  "images": [
+    "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  ]
+}

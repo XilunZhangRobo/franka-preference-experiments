@@ -1,0 +1,7 @@
+{
+  "observation": "When I offered the cup on the person’s right, they pointed at the table with their left hand, and I moved the cup toward that spot.",
+  "interpretation": "They seemed to want the drink closer to their left hand.",
+  "title": "Drink placement",
+  "note": "On this occasion, the person indicated a spot toward their left for the drink.",
+  "question": "Would you prefer that I offer other items on your left, too?"
+}

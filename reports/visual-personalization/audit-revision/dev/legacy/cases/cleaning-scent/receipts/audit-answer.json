@@ -1,0 +1,10 @@
+{
+  "input_sha256": "53445fc63d7e24eb1b50c76e7d23bd0d899daaaf6bd89240ba28b6c80e72b768",
+  "session": "audit-person",
+  "thread": "run-0029",
+  "request": "sessions/audit-person/1795631008691481774-8e13e2b7/request.json",
+  "result": "sessions/audit-person/1795631008691481774-8e13e2b7/attempt-1/result.json",
+  "reply": {
+    "answer": "Set out the orange cleaner when I’m using the kitchen privately and no guests are coming."
+  }
+}

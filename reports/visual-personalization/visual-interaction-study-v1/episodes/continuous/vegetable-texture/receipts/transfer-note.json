@@ -1,0 +1,12 @@
+{
+  "input_sha256": "884c504281b62b92619f14584e3f8261751a73f26bf81f16ec02e083f55d127c",
+  "thread": "run-0221",
+  "request": "episodes/continuous/vegetable-texture/independent/transfer-note/1795592774976942343-8c0dd822/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Their preference for tender broccoli at warm dinners suggests they may enjoy tender green beans too."
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

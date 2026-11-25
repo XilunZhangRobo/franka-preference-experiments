@@ -1,0 +1,16 @@
+{
+  "first-choice": "episodes/contrast/material-order/receipts/first-choice.json",
+  "person-response": "episodes/contrast/material-order/receipts/person-response.json",
+  "audit": "episodes/contrast/material-order/receipts/audit.json",
+  "audit-answer": "episodes/contrast/material-order/receipts/audit-answer.json",
+  "updated-note": "episodes/contrast/material-order/receipts/updated-note.json",
+  "transfer-cold": "episodes/contrast/material-order/receipts/transfer-cold.json",
+  "transfer-note": "episodes/contrast/material-order/receipts/transfer-note.json",
+  "transfer-learner": "episodes/contrast/material-order/receipts/transfer-learner.json",
+  "transfer-answer": "episodes/contrast/material-order/receipts/transfer-answer.json",
+  "transfer-act": "episodes/contrast/material-order/receipts/transfer-act.json",
+  "transfer-refine": "episodes/contrast/material-order/receipts/transfer-refine.json",
+  "exception-cold": "episodes/contrast/material-order/receipts/exception-cold.json",
+  "exception-note": "episodes/contrast/material-order/receipts/exception-note.json",
+  "exception-learner": "episodes/contrast/material-order/receipts/exception-learner.json"
+}

@@ -1,0 +1,1 @@
+{"observation":"The person switched off the desk lamp, then pressed the other light control.","interpretation":"They appeared to prefer overhead lighting for this puzzle.","title":"Overhead lighting for puzzles","note":"Favor the overhead light for puzzles as a tentative preference based on this one switch.","question":"When do you prefer the overhead light to the desk lamp?"}

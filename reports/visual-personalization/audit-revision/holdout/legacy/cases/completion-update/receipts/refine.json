@@ -1,0 +1,11 @@
+{
+  "input_sha256": "3d8284463d4a4dcfea296bbc561c6290ba1a182c13651cb70c8b9ce02975508f",
+  "session": "refiner",
+  "thread": "run-0102",
+  "request": "sessions/refiner/1795631176945104740-f59e4491/request.json",
+  "result": "sessions/refiner/1795631176945104740-f59e4491/attempt-1/result.json",
+  "reply": {
+    "title": "Timing of low-priority spoken updates",
+    "note": "The person asked for brief spoken updates right away when working alone. During a video call, wait until the call ends. This preference applies to low-priority updates. Timing in other situations is unclear."
+  }
+}

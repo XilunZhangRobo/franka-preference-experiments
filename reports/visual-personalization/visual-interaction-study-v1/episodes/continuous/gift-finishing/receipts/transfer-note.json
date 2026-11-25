@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9d63515e1c584c69094683ae13971a41afce2dcdf16f246b85439974b9062e16",
+  "thread": "run-0197",
+  "request": "episodes/continuous/gift-finishing/independent/transfer-note/1795592061696946200-25862501/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Placing the tissue and gift inside and closing the box makes it ready to give."
+  },
+  "images": [
+    "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+  ]
+}

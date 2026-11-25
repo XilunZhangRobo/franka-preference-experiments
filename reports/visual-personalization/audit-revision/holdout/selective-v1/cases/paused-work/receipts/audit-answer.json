@@ -1,0 +1,10 @@
+{
+  "input_sha256": "4c5f507a0bf076fe5334ce5a3985b881b061b65c0e79aac68e9745346610ac07",
+  "session": "audit-person",
+  "thread": "run-0157",
+  "request": "sessions/audit-person/1795631171679175487-0401f35c/request.json",
+  "result": "sessions/audit-person/1795631171679175487-0401f35c/attempt-1/result.json",
+  "reply": {
+    "answer": "I’d keep whichever mat is clipped on the bench and shelve the kit if it’s already closed."
+  }
+}

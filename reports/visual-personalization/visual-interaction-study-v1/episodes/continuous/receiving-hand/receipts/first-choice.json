@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b435bedec6ebf79b0f77134ca6513d35f514479ecfdcf8068cb915fdb1fb1203",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592152987634786-9f4f68e3/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your right hand is closer to the flashlight."
+  },
+  "images": [
+    "media/receiving-hand/teach-59/initial-none/view/frame-00000.jpg"
+  ]
+}

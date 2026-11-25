@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"You asked me to wait until your video call ends before giving a low-priority update.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":1443139,"cached_input_tokens":1368960,"cache_write_input_tokens":0,"output_tokens":1693,"reasoning_output_tokens":0}}

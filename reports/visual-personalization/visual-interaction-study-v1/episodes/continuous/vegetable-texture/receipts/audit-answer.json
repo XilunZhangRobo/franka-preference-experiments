@@ -1,0 +1,9 @@
+{
+  "input_sha256": "bbbe00987d81d68c97f37eebd1b9fc9807636df2b30e63488cb7fa5ec9a40f7d",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592750447936155-36b8801a/request.json",
+  "reply": {
+    "answer": "I usually prefer tender broccoli with a warm dinner."
+  },
+  "images": []
+}

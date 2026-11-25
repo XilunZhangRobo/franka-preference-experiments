@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0222"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"They preferred the first item on their left for assembly, but their preference for planting is unknown.\",\"question\":\"Would you like the pot, scoop, and tag arranged from your left to your right in the order you’ll use them?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":70719,"cached_input_tokens":38016,"cache_write_input_tokens":0,"output_tokens":285,"reasoning_output_tokens":0}}

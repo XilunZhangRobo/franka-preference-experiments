@@ -1,0 +1,12 @@
+{
+  "input_sha256": "113a18cf3f1011e82e468ec6535df0aad4d1546a2a99d490162a76bf0cb0a9b5",
+  "session": "transfer-selective",
+  "thread": "run-0111",
+  "request": "sessions/transfer-selective/1795631143062322563-0e5b9cef/request.json",
+  "result": "sessions/transfer-selective/1795631143062322563-0e5b9cef/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Starting at your left would put the pot, scoop, and tag in left-to-right order.",
+    "question": "Would you prefer to start with the pot on your left or your right?"
+  }
+}

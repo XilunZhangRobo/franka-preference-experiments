@@ -1,0 +1,3 @@
+# Left-hand preference for handoffs
+
+Offer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.

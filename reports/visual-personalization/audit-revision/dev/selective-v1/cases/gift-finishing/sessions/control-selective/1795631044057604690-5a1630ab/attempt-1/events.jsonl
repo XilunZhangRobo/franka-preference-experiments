@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0074"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\n  \"choice\": \"A\",\n  \"reason\": \"Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.\",\n  \"question\": \"\"\n}"}}
+{"type":"turn.completed","usage":{"input_tokens":12450,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":42,"reasoning_output_tokens":0}}

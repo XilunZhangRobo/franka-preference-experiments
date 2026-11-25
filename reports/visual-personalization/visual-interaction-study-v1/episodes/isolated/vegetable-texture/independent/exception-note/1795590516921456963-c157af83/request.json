@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Prepare cooked green beans for the chilled salad.",
+    "options": {
+      "A": "Serve the firmer batch.",
+      "B": "Serve the more tender batch."
+    },
+    "memory": "# Broccoli tenderness\n\nCheck tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "db8f24f1528a3a83e03035d07d70da440d1bda7e2bce11452f1d9d34db800070"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

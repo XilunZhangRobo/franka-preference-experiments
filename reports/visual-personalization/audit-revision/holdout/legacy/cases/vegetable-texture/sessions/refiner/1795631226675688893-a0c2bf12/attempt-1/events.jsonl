@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0137"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Tender broccoli with a warm dinner\",\"note\":\"When serving broccoli with a warm dinner, make it tender. The person said this was what they wanted the plate gesture to convey. Their preference for broccoli at other meals is unknown.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":11971,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":53,"reasoning_output_tokens":0}}

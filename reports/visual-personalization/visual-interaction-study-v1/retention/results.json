@@ -1,0 +1,622 @@
+{
+  "library": {
+    "N-39307f1617": {
+      "title": "Clipped rust mat placement",
+      "file": "library/01.md",
+      "sha256": "1df7d0bbf25168992d723b6ca13f786ca092910d656b53d7d334b34a5785e086"
+    },
+    "N-83c30a4ea7": {
+      "title": "Personal gift cards and gift box arrangement",
+      "file": "library/02.md",
+      "sha256": "2fd396340e14b1d4860d5dd6269f23b522b7aa9b29fc396173b7da11022c3bbf"
+    },
+    "N-14f935e0ab": {
+      "title": "Left-hand handoff preference",
+      "file": "library/03.md",
+      "sha256": "b59d569b099353cb33bd1a83d063ad09a46d8f13a32f712f4674df0da77165c9"
+    },
+    "N-3150d3ad58": {
+      "title": "Assembly parts by order of use",
+      "file": "library/04.md",
+      "sha256": "90d2349fab202ae851fde26207e5fe73b32be5604f4e8c96e86ef56d5b9a0630"
+    },
+    "N-a717044ab0": {
+      "title": "Drink placement and folded cloth handoffs",
+      "file": "library/05.md",
+      "sha256": "06b380442761edd487b5d512a7d3afd4360663356d032562c379df4b56bb1ab6"
+    },
+    "N-66a3c417d0": {
+      "title": "Low-priority updates during solo work and video calls",
+      "file": "library/06.md",
+      "sha256": "2bee9da37263d3efdaa54919620151c02ff118512db14559e2b65315835e9d33"
+    },
+    "N-a4e874cc23": {
+      "title": "Broccoli and green bean texture",
+      "file": "library/07.md",
+      "sha256": "21f3cc8ebc5841d838681177ac8a471ee591f86854795ad06b6a6ec577857a5d"
+    },
+    "N-ba35af96c8": {
+      "title": "Entryway storage for personal belongings and pen case",
+      "file": "library/08.md",
+      "sha256": "0717af5d55e2c97fe1ede1ead7c39a314834b1670a41eee723c0a7f471c78d8a"
+    },
+    "N-01819a7d1d": {
+      "title": "Overhead lighting for solo work",
+      "file": "library/09.md",
+      "sha256": "01215945389334e9e7a5635a8efaf60d4f7b9de76551cd6d5f4c9528ad4a5d02"
+    },
+    "N-52881ea58e": {
+      "title": "Cleaner preferences for kitchen counters and sewing surfaces",
+      "file": "library/10.md",
+      "sha256": "5b77cd1ae2a32dcc1aca9a7995ed2e69000d6db5baa081e0efb123f32c91e0c6"
+    }
+  },
+  "planned_notes": 10,
+  "available_notes": 10,
+  "library_slots": [
+    {
+      "family": "paused-work",
+      "filename": "01.md",
+      "note_id": "N-39307f1617",
+      "status": "present"
+    },
+    {
+      "family": "gift-finishing",
+      "filename": "02.md",
+      "note_id": "N-83c30a4ea7",
+      "status": "present"
+    },
+    {
+      "family": "receiving-hand",
+      "filename": "03.md",
+      "note_id": "N-14f935e0ab",
+      "status": "present"
+    },
+    {
+      "family": "material-order",
+      "filename": "04.md",
+      "note_id": "N-3150d3ad58",
+      "status": "present"
+    },
+    {
+      "family": "approach-side",
+      "filename": "05.md",
+      "note_id": "N-a717044ab0",
+      "status": "present"
+    },
+    {
+      "family": "completion-update",
+      "filename": "06.md",
+      "note_id": "N-66a3c417d0",
+      "status": "present"
+    },
+    {
+      "family": "vegetable-texture",
+      "filename": "07.md",
+      "note_id": "N-a4e874cc23",
+      "status": "present"
+    },
+    {
+      "family": "private-storage",
+      "filename": "08.md",
+      "note_id": "N-ba35af96c8",
+      "status": "present"
+    },
+    {
+      "family": "lighting",
+      "filename": "09.md",
+      "note_id": "N-01819a7d1d",
+      "status": "present"
+    },
+    {
+      "family": "cleaning-scent",
+      "filename": "10.md",
+      "note_id": "N-52881ea58e",
+      "status": "present"
+    }
+  ],
+  "summary": {
+    "transfer": {
+      "planned": 10,
+      "paired_scored": 10,
+      "cold_scored": 10,
+      "cold_correct": 2,
+      "library_scored": 10,
+      "library_correct": 9,
+      "gains": 8,
+      "losses": 1
+    },
+    "exception": {
+      "planned": 10,
+      "paired_scored": 10,
+      "cold_scored": 10,
+      "cold_correct": 10,
+      "library_scored": 10,
+      "library_correct": 9,
+      "gains": 0,
+      "losses": 1
+    }
+  },
+  "scenes": [
+    {
+      "family": "paused-work",
+      "phase": "transfer",
+      "task": "Make room for the cutting board on my sewing counter.",
+      "expected": "A",
+      "folder": "paused-work-transfer",
+      "options": {
+        "A": "Shelve the rust mat.",
+        "B": "Shelve the teal mat."
+      },
+      "selected": [
+        "N-39307f1617"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "paused-work",
+      "phase": "exception",
+      "task": "Free a bench spot for a new project.",
+      "expected": "B",
+      "folder": "paused-work-exception",
+      "options": {
+        "A": "Shelve the loose organizer.",
+        "B": "Shelve the closed stitching kit."
+      },
+      "selected": [
+        "N-39307f1617"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": false,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "gift-finishing",
+      "phase": "transfer",
+      "task": "Help get the gift box ready.",
+      "expected": "A",
+      "folder": "gift-finishing-transfer",
+      "options": {
+        "A": "Open the box and set the tissue and gift alongside it.",
+        "B": "Arrange the tissue and gift inside and close the box."
+      },
+      "selected": [
+        "N-83c30a4ea7"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "gift-finishing",
+      "phase": "exception",
+      "task": "Prepare the labeled lunches for tomorrow morning.",
+      "expected": "B",
+      "folder": "gift-finishing-exception",
+      "options": {
+        "A": "Set out the boxes, portions, and lids for packing.",
+        "B": "Put a portion in each box and close each lid."
+      },
+      "selected": [
+        "N-3150d3ad58"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "receiving-hand",
+      "phase": "transfer",
+      "task": "Pass me the remote.",
+      "expected": "A",
+      "folder": "receiving-hand-transfer",
+      "options": {
+        "A": "Offer it to the person's left hand.",
+        "B": "Offer it to the person's right hand."
+      },
+      "selected": [
+        "N-14f935e0ab"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "receiving-hand",
+      "phase": "exception",
+      "task": "Pass me the remote.",
+      "expected": "B",
+      "folder": "receiving-hand-exception",
+      "options": {
+        "A": "Offer it to the person's left hand.",
+        "B": "Offer it to the person's right hand."
+      },
+      "selected": [
+        "N-14f935e0ab"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "material-order",
+      "phase": "transfer",
+      "task": "Set out a row for the seated person to use the pot, scoop, then tag.",
+      "expected": "A",
+      "folder": "material-order-transfer",
+      "options": {
+        "A": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+        "B": "Place the pot at the person's left, scoop in the middle, and tag at their right."
+      },
+      "selected": [
+        "N-3150d3ad58"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "material-order",
+      "phase": "exception",
+      "task": "Put out the markers for four people sharing the table.",
+      "expected": "B",
+      "folder": "material-order-exception",
+      "options": {
+        "A": "Lay the markers in a row in front of the seated person.",
+        "B": "Put the markers together in the central tray."
+      },
+      "selected": [],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "approach-side",
+      "phase": "transfer",
+      "task": "Bring me the folded cloth.",
+      "expected": "A",
+      "folder": "approach-side-transfer",
+      "options": {
+        "A": "Present it in the person's left-front quarter.",
+        "B": "Present it in the person's right-front quarter."
+      },
+      "selected": [
+        "N-a717044ab0",
+        "N-14f935e0ab"
+      ],
+      "cold": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "approach-side",
+      "phase": "exception",
+      "task": "Bring me the folded cloth.",
+      "expected": "A",
+      "folder": "approach-side-exception",
+      "options": {
+        "A": "Present it in the person's right-front quarter.",
+        "B": "Wait by the shelf for access to the person's left-front quarter."
+      },
+      "selected": [
+        "N-a717044ab0",
+        "N-14f935e0ab"
+      ],
+      "cold": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "completion-update",
+      "phase": "transfer",
+      "task": "The delivery is complete while the person draws alone. Give a low-priority update.",
+      "expected": "A",
+      "folder": "completion-update-transfer",
+      "options": {
+        "A": "Give a brief spoken update now.",
+        "B": "Give the spoken update at the person's next pause."
+      },
+      "selected": [
+        "N-66a3c417d0"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "completion-update",
+      "phase": "exception",
+      "task": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+      "expected": "A",
+      "folder": "completion-update-exception",
+      "options": {
+        "A": "Give the spoken update at the person's next pause.",
+        "B": "Give a brief spoken update now."
+      },
+      "selected": [
+        "N-66a3c417d0"
+      ],
+      "cold": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "vegetable-texture",
+      "phase": "transfer",
+      "task": "Prepare cooked green beans for the warm side dish.",
+      "expected": "B",
+      "folder": "vegetable-texture-transfer",
+      "options": {
+        "A": "Serve the firmer batch.",
+        "B": "Serve the more tender batch."
+      },
+      "selected": [
+        "N-a4e874cc23"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "vegetable-texture",
+      "phase": "exception",
+      "task": "Prepare cooked green beans for the chilled salad.",
+      "expected": "B",
+      "folder": "vegetable-texture-exception",
+      "options": {
+        "A": "Serve the more tender batch.",
+        "B": "Serve the firmer batch."
+      },
+      "selected": [
+        "N-a4e874cc23"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "private-storage",
+      "phase": "transfer",
+      "task": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+      "expected": "A",
+      "folder": "private-storage-transfer",
+      "options": {
+        "A": "Place the items in the shallow compartment and close it.",
+        "B": "Leave the pen case on the open tray."
+      },
+      "selected": [
+        "N-ba35af96c8"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "private-storage",
+      "phase": "exception",
+      "task": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+      "expected": "A",
+      "folder": "private-storage-exception",
+      "options": {
+        "A": "Set the rulers on the tray beside the shared craft materials.",
+        "B": "Place the items in the shallow compartment and close it."
+      },
+      "selected": [
+        "N-3150d3ad58"
+      ],
+      "cold": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "lighting",
+      "phase": "transfer",
+      "task": "Turn on a light for the person comparing ceramic tile patterns.",
+      "expected": "B",
+      "folder": "lighting-transfer",
+      "options": {
+        "A": "Turn on the desk lamp.",
+        "B": "Turn on the overhead fixture."
+      },
+      "selected": [
+        "N-01819a7d1d"
+      ],
+      "cold": {
+        "choice": "A",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "lighting",
+      "phase": "exception",
+      "task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+      "expected": "B",
+      "folder": "lighting-exception",
+      "options": {
+        "A": "Turn on the overhead fixture.",
+        "B": "Turn on the desk lamp."
+      },
+      "selected": [
+        "N-01819a7d1d"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "B",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "cleaning-scent",
+      "phase": "transfer",
+      "task": "Wipe the work surface in my private sewing room. Only I use it.",
+      "expected": "A",
+      "folder": "cleaning-scent-transfer",
+      "options": {
+        "A": "Use the mild-citrus cleaner.",
+        "B": "Use the fragrance-free cleaner."
+      },
+      "selected": [
+        "N-52881ea58e"
+      ],
+      "cold": {
+        "choice": "B",
+        "correct": false,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    },
+    {
+      "family": "cleaning-scent",
+      "phase": "exception",
+      "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+      "expected": "A",
+      "folder": "cleaning-scent-exception",
+      "options": {
+        "A": "Use the fragrance-free cleaner.",
+        "B": "Use the mild-citrus cleaner."
+      },
+      "selected": [
+        "N-52881ea58e"
+      ],
+      "cold": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      },
+      "library": {
+        "choice": "A",
+        "correct": true,
+        "status": "scored"
+      }
+    }
+  ]
+}

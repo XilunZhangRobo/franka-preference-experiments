@@ -1,0 +1,11 @@
+{
+  "input_sha256": "65fac9adb7ff8c667404eb615af3382df43585626bf89137b1d478a7d6729d22",
+  "session": "forced-65fac9adb7ff8c667404eb615af3382df43585626bf89137b1d478a7d6729d22",
+  "thread": "run-0068",
+  "request": "sessions/forced-65fac9adb7ff8c667404eb615af3382df43585626bf89137b1d478a7d6729d22/1795631016536181519-4cb5e21d/request.json",
+  "result": "sessions/forced-65fac9adb7ff8c667404eb615af3382df43585626bf89137b1d478a7d6729d22/1795631016536181519-4cb5e21d/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The fragrance-free cleaner suits a shared worktop because the orange-bottle preference applies only when home alone."
+  }
+}

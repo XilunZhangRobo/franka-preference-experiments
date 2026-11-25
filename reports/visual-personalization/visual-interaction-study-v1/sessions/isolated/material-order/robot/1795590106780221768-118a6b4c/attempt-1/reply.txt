@@ -1,0 +1,1 @@
+{"choice":"B","reason":"The red base is already on the person’s right and the yellow cap is on their left."}

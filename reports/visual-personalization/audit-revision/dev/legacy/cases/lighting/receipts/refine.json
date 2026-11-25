@@ -1,0 +1,11 @@
+{
+  "input_sha256": "05d98853c7a23d41444f648e7fd8fe7919ca1e80518e12ee3b8ce1a197f85f6d",
+  "session": "refiner",
+  "thread": "run-0054",
+  "request": "sessions/refiner/1795631070746917413-c3bf0b9f/request.json",
+  "result": "sessions/refiner/1795631070746917413-c3bf0b9f/attempt-1/result.json",
+  "reply": {
+    "title": "Tabletop lighting for solo work and presentations",
+    "note": "For puzzles and other tabletop tasks, I prefer the ceiling light when I work alone. During a projected presentation, I prefer only the craft table lit. My preference for other group settings is unspecified."
+  }
+}

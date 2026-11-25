@@ -1,0 +1,11 @@
+{
+  "input_sha256": "d1f4e072c573aed1c2bb2f8ff1cc1b6392578cd43042836c318de9b9c4263e6f",
+  "session": "forced-d1f4e072c573aed1c2bb2f8ff1cc1b6392578cd43042836c318de9b9c4263e6f",
+  "thread": "run-0032",
+  "request": "sessions/forced-d1f4e072c573aed1c2bb2f8ff1cc1b6392578cd43042836c318de9b9c4263e6f/1795631050722545538-c206751b/request.json",
+  "result": "sessions/forced-d1f4e072c573aed1c2bb2f8ff1cc1b6392578cd43042836c318de9b9c4263e6f/1795631050722545538-c206751b/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop before guests arrive."
+  }
+}

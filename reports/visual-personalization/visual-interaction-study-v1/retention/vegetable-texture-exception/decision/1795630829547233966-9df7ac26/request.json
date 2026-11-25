@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Prepare cooked green beans for the chilled salad.",
+    "options": {
+      "A": "Serve the more tender batch.",
+      "B": "Serve the firmer batch."
+    },
+    "notes": [
+      "# Broccoli and green bean texture\n\nServe tender broccoli with warm dinners by default. For green beans, the person requested tender beans for one warm side dish and firm beans for one chilled salad. Treat those choices as tentative guides for similar dishes.\n"
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "482c9fc119b5877b639f1bc7ef943fecf6812d557095c88b94100e2d31059412"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

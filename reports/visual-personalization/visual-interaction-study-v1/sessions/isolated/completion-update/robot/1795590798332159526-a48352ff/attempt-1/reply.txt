@@ -1,0 +1,1 @@
+{"choice":"B","reason":"The person appears focused, and the update can wait until their next pause."}

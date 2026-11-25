@@ -1,0 +1,30 @@
+{
+  "input_sha256": "248b1410f1a4a214629b414a9d7598799a24d5d385d1f50b8d83052d831a0824",
+  "thread": "run-0228",
+  "request": "sessions/contrast/paused-work/robot/1795591558658747926-a0257b02/request.json",
+  "reply": {
+    "observation": "After I shelved the rust mat, you returned it to its original spot on the workbench.",
+    "interpretation": "You seemed to want the rust mat within reach for this task.",
+    "title": "Rust mat placement",
+    "note": "During this cleanup, you put the rust mat back on the bench.",
+    "question": "Should I usually leave the rust mat on the bench, or did you need it there just this time?"
+  },
+  "images": [
+    "media/paused-work/teach-37/A-change/view/frame-00000.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00002.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00006.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00008.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00012.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00014.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00018.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00020.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00024.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00026.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00030.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00032.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00036.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00038.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00042.jpg",
+    "media/paused-work/teach-37/A-change/view/frame-00044.jpg"
+  ]
+}

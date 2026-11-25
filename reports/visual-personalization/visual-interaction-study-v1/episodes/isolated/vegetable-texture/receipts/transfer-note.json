@@ -1,0 +1,12 @@
+{
+  "input_sha256": "aaa269de4c2ab292a806ec3e91d73235a8bd86ec3be6a8cf8ef1e528c9fa233b",
+  "thread": "run-0305",
+  "request": "episodes/isolated/vegetable-texture/independent/transfer-note/1795590418840302601-9c752663/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer cooked green beans will keep some bite when served warm."
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

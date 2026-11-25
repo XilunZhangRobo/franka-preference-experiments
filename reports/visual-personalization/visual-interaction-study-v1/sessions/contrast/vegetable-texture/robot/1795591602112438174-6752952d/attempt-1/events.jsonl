@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0240"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Broccoli texture preference\",\"note\":\"Choose firmer broccoli for warm meals and chilled salads. You swapped the tender broccoli for the firmer batch at dinner and confirmed this preference for both settings.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":50441,"cached_input_tokens":20480,"cache_write_input_tokens":0,"output_tokens":167,"reasoning_output_tokens":0}}

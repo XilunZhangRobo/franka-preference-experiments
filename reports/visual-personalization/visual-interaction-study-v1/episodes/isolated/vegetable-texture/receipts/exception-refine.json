@@ -1,0 +1,10 @@
+{
+  "input_sha256": "7ff64e448b4f1083036135719e2be8662592f77a110263123a7b245b521b3d1c",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590541531743548-3cde7f5e/request.json",
+  "reply": {
+    "title": "Green bean and broccoli tenderness",
+    "note": "Serve more tender green beans for a warm side dish and firmer green beans for a chilled salad, as requested. The person checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear."
+  },
+  "images": []
+}

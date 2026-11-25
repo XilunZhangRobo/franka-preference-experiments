@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Help get the gift box ready.",
+    "options": {
+      "A": "Arrange the tissue and gift inside and close the box.",
+      "B": "Open the box and set the tissue and gift alongside it."
+    },
+    "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?",
+    "person_answer": "I'd like to arrange the tissue and gift and close the box myself."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0047"
+}

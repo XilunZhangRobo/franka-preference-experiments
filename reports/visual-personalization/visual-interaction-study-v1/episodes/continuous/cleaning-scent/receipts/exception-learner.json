@@ -1,0 +1,13 @@
+{
+  "input_sha256": "dc141349b8189d09b85948b6213d737bf37fc2d7cacf38c05d95f775d9e3fde0",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795596578337064344-7e02e307/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Fragrance-free cleaner fits your preference when guests are coming to share the worktop.",
+    "question": ""
+  },
+  "images": [
+    "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+  ]
+}

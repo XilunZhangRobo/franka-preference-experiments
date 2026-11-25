@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b099f8adf32dadc5b1a1be3daf6e2c768d1de53adfdef6a5711109f7f5f63cf6",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592924524533681-09c2ed09/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The entryway tray keeps the keys and flashlight together and easy to find next time."
+  },
+  "images": [
+    "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+  ]
+}

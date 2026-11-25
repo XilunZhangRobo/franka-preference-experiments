@@ -1,0 +1,12 @@
+{
+  "input_sha256": "59842654add32753865667846ebb5ca7b953d7f4e3b80dde8a60f077b71ce454",
+  "thread": "run-0193",
+  "request": "episodes/continuous/completion-update/independent/transfer-note/1795592639380513477-c720e124/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "They’re drawing alone and asked for brief updates right away during solo work."
+  },
+  "images": [
+    "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+  ]
+}

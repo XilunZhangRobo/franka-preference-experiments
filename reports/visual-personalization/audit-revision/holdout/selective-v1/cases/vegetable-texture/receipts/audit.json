@@ -1,0 +1,14 @@
+{
+  "input_sha256": "0c4b181cdda5210eb03446851230dbe38c0ea68a1b87fca29b84fbc661a6ac22",
+  "session": "writer",
+  "thread": "run-0172",
+  "request": "sessions/writer/1795631106988274284-d59abf22/request.json",
+  "result": "sessions/writer/1795631106988274284-d59abf22/attempt-1/result.json",
+  "reply": {
+    "observation": "The robot moved broccoli from the left tray onto the dinner plate. The person then pointed at the food on the plate. No speech was heard.",
+    "interpretation": "The gesture drew attention to the plated food. It did not clearly indicate a preference for either batch.",
+    "title": "Broccoli tenderness",
+    "note": "When ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.",
+    "question": ""
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input_sha256": "1a461e1954e6f0dff6ada2223e9db8d35d6e958cb7bb310dec948b8278005091",
+  "session": "audit-person",
+  "thread": "run-0010",
+  "request": "sessions/audit-person/1795631315651400646-32b5b206/request.json",
+  "result": "sessions/audit-person/1795631315651400646-32b5b206/attempt-1/result.json",
+  "reply": {
+    "answer": "Use whichever tray is on my left unless I ask for a different tray for that piece."
+  }
+}

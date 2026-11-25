@@ -1,0 +1,13 @@
+{
+  "input_sha256": "acdcfcd519574209b9726bf62bbd69245855def17dcf4e1331678430005b37cc",
+  "thread": "run-0234",
+  "request": "sessions/contrast/private-storage/robot/1795591782451937788-a6cf993f/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The tray keeps all four rulers within reach when the group starts the first step.",
+    "question": ""
+  },
+  "images": [
+    "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+  ]
+}

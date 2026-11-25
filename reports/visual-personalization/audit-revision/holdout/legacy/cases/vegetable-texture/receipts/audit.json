@@ -1,0 +1,14 @@
+{
+  "input_sha256": "1f390724f10bcbf5a2aa4115f4feaa6cd87b396b7defea2a51bd64e945ad9464",
+  "session": "writer",
+  "thread": "run-0132",
+  "request": "sessions/writer/1795631215870060615-fddc7dc4/request.json",
+  "result": "sessions/writer/1795631215870060615-fddc7dc4/attempt-1/result.json",
+  "reply": {
+    "observation": "I placed broccoli from the left tray beside the dinner. The person then pointed at the plate.",
+    "interpretation": "The gesture drew my attention to the plate. I chose the tender batch because I expected it to be easier to chew. The gesture alone leaves their texture preference unclear.",
+    "title": "",
+    "note": "",
+    "question": "What did you want me to notice when you pointed at the plate?"
+  }
+}

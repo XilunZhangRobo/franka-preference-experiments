@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Overhead lighting for puzzles\n\nFavor the overhead light for puzzles as a tentative preference based on this one switch.\n", "question": "When do you prefer the overhead light to the desk lamp?", "person_answer": "I prefer the overhead light when I’m working alone."}

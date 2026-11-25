@@ -1,0 +1,11 @@
+{
+  "input_sha256": "51f86456a5af43253beb289ac09b21cf936ed904400c5a2e42f7b15f4536675a",
+  "session": "forced-51f86456a5af43253beb289ac09b21cf936ed904400c5a2e42f7b15f4536675a",
+  "thread": "run-0070",
+  "request": "sessions/forced-51f86456a5af43253beb289ac09b21cf936ed904400c5a2e42f7b15f4536675a/1795631007334451978-1b81ee9d/request.json",
+  "result": "sessions/forced-51f86456a5af43253beb289ac09b21cf936ed904400c5a2e42f7b15f4536675a/1795631007334451978-1b81ee9d/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The orange mild-citrus cleaner matches your guidance for this one cleaning choice."
+  }
+}

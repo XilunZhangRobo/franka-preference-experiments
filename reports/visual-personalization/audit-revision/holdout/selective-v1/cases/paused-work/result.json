@@ -1,0 +1,140 @@
+{
+  "case_id": "paused-work",
+  "identity_sha256": "35a8eafff12b8ecdff25ed87aa7a19d2202d0eb0b35ca8a3a333139cec01b782",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot moved the rust mat onto the raised shelf. The person then pointed at the mat and toward the tabletop. The teal mat stayed in place.",
+    "interpretation": "The gesture may have been a request to put the rust mat back. It did not clearly identify the teal mat as the one to shelve.",
+    "title": "Check which mat should stay",
+    "note": "For this workbench, the number of parts on a mat may be a poor guide to which mat the person wants within reach.",
+    "question": "Should I put the rust mat back and shelve the teal one instead?"
+  },
+  "draft_note": "# Check which mat should stay\n\nFor this workbench, the number of parts on a mat may be a poor guide to which mat the person wants within reach.\n",
+  "audit_question": "Should I put the rust mat back and shelve the teal one instead?",
+  "audit_answer": "I’d keep whichever mat is clipped on the bench and shelve the kit if it’s already closed.",
+  "refined_reply": {
+    "title": "Keep the clipped mat on the workbench",
+    "note": "On this workbench, keep whichever mat is clipped in place and shelve the kit if it’s already closed. Use the clip to identify the mat regardless of color or part count. The person didn’t specify what to do with an open kit."
+  },
+  "post_answer_note": "# Keep the clipped mat on the workbench\n\nOn this workbench, keep whichever mat is clipped in place and shelve the kit if it’s already closed. Use the clip to identify the mat regardless of color or part count. The person didn’t specify what to do with an open kit.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 1,
+      "net": -1
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Shelving the teal mat clears space at the front while keeping the scissors within reach."
+        },
+        "correct": true,
+        "input_sha256": "f6090ea3370e76d66b6360ccdd5a30848bd17c98331963571d0fed05197c61d3",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The rust mat has the clip, so shelving the teal mat makes room for the cutting board."
+        },
+        "correct": true,
+        "input_sha256": "7f68f9dc590432d655cdde7da3ac27cf20c9e33ac4a8353350eb436071d97e08",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The rust mat is clipped in place, but the teal kit appears open.",
+          "question": "Should I shelve the teal mat with the kit still open?"
+        },
+        "question": "Should I shelve the teal mat with the kit still open?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "No, only shelve the teal mat if the kit is already closed.",
+        "final": {
+          "choice": "B",
+          "reason": "The teal kit appears open, so the rust mat is the only remaining option."
+        },
+        "before_correct": true,
+        "after_correct": false
+      },
+      "audit_note_change": 0,
+      "selective_change": -1
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "Shelving the closed stitching kit clears bench space while keeping the loose supplies within reach."
+        },
+        "correct": true,
+        "input_sha256": "502b4e8c0a6abceda617421801a596045b6782522fc1d40d5b5e5ef0ab2158e0",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "Shelving the closed stitching kit frees space and keeps the clipped mat on the bench."
+        },
+        "correct": true,
+        "input_sha256": "c0954830447ed2162bf9efdd798e7934a7aafe189f58b1cf3b837345706c24bb",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The stitching kit is closed, so shelving it frees space and leaves the clipped mat in place.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The stitching kit is closed, so shelving it frees space and leaves the clipped mat in place.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

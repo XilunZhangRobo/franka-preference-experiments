@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Your left hand is free, and you prefer to receive items in that hand.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":434891,"cached_input_tokens":397952,"cache_write_input_tokens":0,"output_tokens":802,"reasoning_output_tokens":0}}

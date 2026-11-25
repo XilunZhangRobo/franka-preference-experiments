@@ -1,0 +1,11 @@
+{
+  "input_sha256": "efb4cf5b4980f0aab5b65609fb2bf3a1d8e7947e22bad5f863f84bff8d5bda6a",
+  "session": "forced-efb4cf5b4980f0aab5b65609fb2bf3a1d8e7947e22bad5f863f84bff8d5bda6a",
+  "thread": "run-0115",
+  "request": "sessions/forced-efb4cf5b4980f0aab5b65609fb2bf3a1d8e7947e22bad5f863f84bff8d5bda6a/1795631250665998475-c5851793/request.json",
+  "result": "sessions/forced-efb4cf5b4980f0aab5b65609fb2bf3a1d8e7947e22bad5f863f84bff8d5bda6a/1795631250665998475-c5851793/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed stitching kit clears a spot while keeping its contents together."
+  }
+}

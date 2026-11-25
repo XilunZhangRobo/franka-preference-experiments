@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "Put out the markers for four people sharing the table.",
+    "options": {
+      "A": "Put the markers together in the central tray.",
+      "B": "Lay the markers in a row in front of the seated person."
+    },
+    "memory": "# Assembly layout\n\nFor a similar assembly, use base on the right and cap on the left as a default. One reach gives limited evidence of a lasting preference.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "b7502ecc2393f874c334c193ec133c40074acd9988f6b7e7cda0462a0216f32c"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

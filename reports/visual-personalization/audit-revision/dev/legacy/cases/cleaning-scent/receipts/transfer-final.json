@@ -1,0 +1,11 @@
+{
+  "input_sha256": "0821700f823bff0e9c94ff466bd958554db983eca97ef0ca8c9167ef784531d0",
+  "session": "transfer-selective",
+  "thread": "run-0037",
+  "request": "sessions/transfer-selective/1795631039308384770-06280f07/request.json",
+  "result": "sessions/transfer-selective/1795631039308384770-06280f07/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You prefer the mild-citrus cleaner for your sewing table."
+  }
+}

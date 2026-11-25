@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "Bring me the folded cloth.",
+    "options": {
+      "A": "Present it in the person's left-front quarter.",
+      "B": "Present it in the person's right-front quarter."
+    },
+    "memory": "# Follow the pointed-to spot\n\nWhen bringing a drink, use a clear point to the tabletop as the placement cue, even if one hand is closer.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "fbf79a92ed185e5932a4dedecbe5c70609f6c33f38b081770e3d83802d5eda52"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

@@ -1,0 +1,17 @@
+{
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Pass me my lidded drinking mug.",
+    "options": {
+      "A": "Offer it to the person's left hand.",
+      "B": "Offer it to the person's right hand."
+    },
+    "memory": "# Left-hand preference for handoffs\n\nOffer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.\n"
+  },
+  "reply": {
+    "choice": "A",
+    "reason": "Their left hand is free, and they prefer to receive items with it."
+  },
+  "thread_id": "run-0351",
+  "image_sha256": "302a15f4c7099c7e297652ed864be7f632d8453f5fb63b91939f7cdbe2a80541"
+}

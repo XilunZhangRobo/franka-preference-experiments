@@ -1,0 +1,9 @@
+{
+  "input_sha256": "51a583b5161b45c3981645e83e4f8db1eb5a929896d2994e0134797a725e3f24",
+  "thread": "run-0241",
+  "request": "sessions/contrast/vegetable-texture/person/1795591593280726249-e5535fce/request.json",
+  "reply": {
+    "answer": "Yes, I prefer firmer broccoli with warm meals and in chilled salads."
+  },
+  "images": []
+}

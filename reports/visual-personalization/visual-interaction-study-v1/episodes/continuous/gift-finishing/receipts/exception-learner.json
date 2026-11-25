@@ -1,0 +1,13 @@
+{
+  "input_sha256": "7b67dc6db5db910e5c173028324a7a613964c3e8f49e971f1ba208edae233856",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592138469309672-a41bb968/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.",
+    "question": ""
+  },
+  "images": [
+    "media/gift-finishing/exception-254/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Firmer beans will hold their shape when the chilled salad is tossed.\",\"question\":\"Would you like the green beans firm or tender in this salad?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":1988131,"cached_input_tokens":1898496,"cache_write_input_tokens":0,"output_tokens":1992,"reasoning_output_tokens":0}}

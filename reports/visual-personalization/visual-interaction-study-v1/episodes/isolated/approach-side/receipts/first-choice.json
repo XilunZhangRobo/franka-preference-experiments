@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9c6cc1d9996fda07d65ec307098b90a19612ad69c6b7eb44aab46df025e9dd9d",
+  "thread": "run-0246",
+  "request": "sessions/isolated/approach-side/robot/1795590526691633928-94b7253e/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The cup is closer to the person’s right hand, so they can reach it easily."
+  },
+  "images": [
+    "media/approach-side/teach-81/initial-none/view/frame-00000.jpg"
+  ]
+}

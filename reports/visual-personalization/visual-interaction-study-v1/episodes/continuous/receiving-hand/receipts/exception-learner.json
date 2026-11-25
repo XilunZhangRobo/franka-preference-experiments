@@ -1,0 +1,13 @@
+{
+  "input_sha256": "20573a9e8755cdb7d11e22482fe914a16b9f554e6a3102e5af2b08e3b3158d11",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592243939838459-df8056ec/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your left hand is busy, so I’ll offer the remote to your right hand as requested.",
+    "question": ""
+  },
+  "images": [
+    "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+  ]
+}

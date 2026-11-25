@@ -1,0 +1,11 @@
+{
+  "input_sha256": "08a834990145f8d6b06f2ec598cd1327e2057e339b3ddf02727981520be73819",
+  "session": "forced-08a834990145f8d6b06f2ec598cd1327e2057e339b3ddf02727981520be73819",
+  "thread": "run-0024",
+  "request": "sessions/forced-08a834990145f8d6b06f2ec598cd1327e2057e339b3ddf02727981520be73819/1795631293957690180-e4e2d776/request.json",
+  "result": "sessions/forced-08a834990145f8d6b06f2ec598cd1327e2057e339b3ddf02727981520be73819/1795631293957690180-e4e2d776/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The teal tray was used for a similar finished piece in this setup."
+  }
+}

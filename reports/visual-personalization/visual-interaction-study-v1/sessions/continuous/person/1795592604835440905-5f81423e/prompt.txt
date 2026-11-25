@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {"answer":"your spoken reply"}.
+{"question": "For low-priority updates, would you prefer to hear them at your next pause or only when you ask for them?", "task": "The bin is full. Give the person a low-priority completion update.", "private_brief": "I want brief routine updates immediately while I work alone. A routine update can wait until my video call ends."}

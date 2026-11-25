@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Would you like the row to start with the pot on your right or your left?",
+    "task": "Set out a row for the seated person to use the pot, scoop, then tag.",
+    "private_brief": "For my own assembly work I use the first component on my right, then work left. When a group shares supplies, put them in the common tray."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "277e4f9ea6e913ab7407bd8f8ed3f929f9370ece30a9a6689864a1409392ea02"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0277"
+}

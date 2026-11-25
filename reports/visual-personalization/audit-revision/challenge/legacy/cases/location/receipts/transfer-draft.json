@@ -1,0 +1,11 @@
+{
+  "input_sha256": "318520c3209de493258d8a33b082928243bd8bfcadcc32ec5919985a370d7d6c",
+  "session": "forced-318520c3209de493258d8a33b082928243bd8bfcadcc32ec5919985a370d7d6c",
+  "thread": "run-0015",
+  "request": "sessions/forced-318520c3209de493258d8a33b082928243bd8bfcadcc32ec5919985a370d7d6c/1795631323909025784-5f49f386/request.json",
+  "result": "sessions/forced-318520c3209de493258d8a33b082928243bd8bfcadcc32ec5919985a370d7d6c/1795631323909025784-5f49f386/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person chose the teal tray for this finished piece."
+  }
+}

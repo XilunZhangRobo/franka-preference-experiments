@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "task": "Put the finished piece away.",
+    "private_brief": "My finished pieces go in the teal tray, wherever that tray sits. The tray's color matters to me. If I explicitly request a different tray for one piece, use the tray I request.",
+    "question": "Should I use the amber tray for future finished pieces?"
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

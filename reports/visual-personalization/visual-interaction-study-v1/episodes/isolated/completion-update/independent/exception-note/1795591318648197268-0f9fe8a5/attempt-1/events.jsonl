@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0261"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"Waiting is closer to their preference to hear routine updates after the call ends.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12450,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":27,"reasoning_output_tokens":0}}

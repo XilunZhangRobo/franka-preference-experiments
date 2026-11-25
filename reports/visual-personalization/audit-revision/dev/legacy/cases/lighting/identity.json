@@ -1,0 +1,88 @@
+{
+  "protocol_version": 1,
+  "branch_selective": false,
+  "shared_selective_receipt_hashes": {},
+  "case_id": "lighting",
+  "model": "gpt-6.2-astra",
+  "prompts": {
+    "audit": "You are the household robot viewing the interaction from your camera. Consider what happened, why the person might have acted, and what could be useful in a different task. Distinguish what you saw from an inference. Decide whether the observed behavior merits a personal note. Ask at most one focused question if the evidence leaves an important scope ambiguity. Return JSON with short string fields observation, interpretation, title, note and question. Use empty strings for an unwarranted note or question.",
+    "refine": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+    "decide": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+    "selective": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+    "answer": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}."
+  },
+  "seed_metadata": "dev",
+  "quiet": false,
+  "private_brief": "When I work alone I like the even light from the ceiling fixture. During a projected presentation keep the room dim and light just the craft table.",
+  "audit_context": {
+    "task": "Turn on a light for the person working on a puzzle.",
+    "your_action": "Turn on the desk lamp.",
+    "seconds": [
+      0.0,
+      0.3333,
+      1.0,
+      1.3333,
+      1.6667,
+      2.0,
+      2.6667,
+      3.0,
+      3.3333,
+      3.6667,
+      4.3333,
+      4.6667,
+      5.0,
+      5.3333,
+      6.0,
+      6.3333
+    ],
+    "heard": [],
+    "choice_reason": "The desk lamp will shine directly on the puzzle pieces."
+  },
+  "audit_image_hashes": [
+    "0537e318432ccd402cfe8089729d43cedb059119a0163a0bbf10af732100dc68",
+    "99e569bccc7188433a612229452dfd8ac90f4606705644888ec2720bc3a2f00c",
+    "6431808539a1fae34c4254edeecae6bc52444481e9bd9fc134a32e169bc56d88",
+    "a5bbb9da4c291c8207ce63c90573427dd2bd136ce4cd8d4851ccf4ac70baf7cc",
+    "bbfec98b92b2ed2170d7d84a890466061f2e4c98c6a798cc844029b283554c2b",
+    "1fb7b76d16236a1710498af4e50cd1231b1099ee02f63a6357c0fb2906455484",
+    "45d684b3f5a41dc7970c188b083da442cc6ef7ef029993d7d329776befee27a8",
+    "db12d36785f3038b7d204f054e091b82453226de70b5cf758288a60555f9af07",
+    "226979dc638e7348780609f74c8a5d55e7988239f4415dba06294bcfb37066f7",
+    "17061c859b68315ac856be0cc908b4b2097063f1f5155aef7881ab54dfea54a2",
+    "cf2af3b388c5bd7941e70dfb86be30db7a153613249a81df4fdd4882dccf18e4",
+    "3670013e2ee5a91c9bea6e98c856ff47f5a0716d253cd475954cc107abeeb5e8",
+    "9f57e9cdd49e140bf38826778690e32b306a2f0eec8124b71054fdcc200f8892",
+    "db1e6ea61e51a176481e4e0c1af8f96b0ad771652692e965d70fcfe7a0c66a0c",
+    "cf7fb17f30a4026a96b2258e944161fda3fe9b21b6550d94de2c03a58d138d6f",
+    "1d6dd3d0cbfb65aa680ebed4cbd8de49a16365af67c0fc68e94d6b50c9d3a839"
+  ],
+  "probes": {
+    "transfer": {
+      "public": {
+        "task": "Turn on a light for the person comparing ceramic tile patterns.",
+        "options": {
+          "A": "Turn on the overhead fixture.",
+          "B": "Turn on the desk lamp."
+        }
+      },
+      "image_hashes": [
+        "b364d8fbf238d822f07533ab4fbfc45e6a4bd4cf3e1423c7978642f650feceed"
+      ],
+      "expected": "A"
+    },
+    "control": {
+      "public": {
+        "task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+        "options": {
+          "A": "Turn on the desk lamp.",
+          "B": "Turn on the overhead fixture."
+        }
+      },
+      "image_hashes": [
+        "55a30608f4ddb7563abde7e6dce88653098cfeb075bb2f3c0e1bedb76502b2de"
+      ],
+      "expected": "A"
+    }
+  },
+  "shared_draft_receipt_sha256": null
+}

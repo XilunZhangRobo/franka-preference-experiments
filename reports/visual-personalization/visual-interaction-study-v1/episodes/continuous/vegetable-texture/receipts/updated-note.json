@@ -1,0 +1,10 @@
+{
+  "input_sha256": "40f2ebdef38d2bd03eda448d9f91ee25288fb0121f0be87b52754031991b6e0a",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592756227119853-364f8032/request.json",
+  "reply": {
+    "title": "Broccoli texture for warm dinners",
+    "note": "Serve tender broccoli with warm dinners by default. The person said they usually prefer it that way."
+  },
+  "images": []
+}

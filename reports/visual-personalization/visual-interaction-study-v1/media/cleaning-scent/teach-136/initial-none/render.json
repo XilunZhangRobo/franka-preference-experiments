@@ -1,0 +1,16 @@
+{
+  "family": "cleaning-scent",
+  "phase": "teach",
+  "seed": 136,
+  "choice": "initial",
+  "response": "none",
+  "size": [
+    640,
+    480
+  ],
+  "fps": 6,
+  "samples": 12,
+  "renderer": "blender-cycles",
+  "device": "CPU",
+  "camera": "agent"
+}

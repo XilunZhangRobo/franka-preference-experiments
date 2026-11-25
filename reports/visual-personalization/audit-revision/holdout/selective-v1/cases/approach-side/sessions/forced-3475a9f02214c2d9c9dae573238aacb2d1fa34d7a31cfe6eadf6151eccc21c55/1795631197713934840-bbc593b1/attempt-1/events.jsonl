@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0145"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The person’s left hand is clear of the robot and can reach the cloth.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12410,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":41,"reasoning_output_tokens":11}}

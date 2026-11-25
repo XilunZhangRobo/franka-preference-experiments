@@ -1,0 +1,11 @@
+{
+  "input_sha256": "aa5a992a8337dc3dbc09ff5d5f4007343e44626659b675536690431e3f46e87d",
+  "session": "transfer-selective",
+  "thread": "run-0095",
+  "request": "sessions/transfer-selective/1795631146875465849-fc7a672b/request.json",
+  "result": "sessions/transfer-selective/1795631146875465849-fc7a672b/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "There is room to offer the cloth in front of your left shoulder as requested."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "3316f993b6f5927bade9e842192af325dd0ce23fed1bf155ed6fe962c2507cb5",
+  "session": "transfer-selective",
+  "thread": "run-0037",
+  "request": "sessions/transfer-selective/1795631029395304977-9518f444/request.json",
+  "result": "sessions/transfer-selective/1795631029395304977-9518f444/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Your citrus preference is specific to the kitchen.",
+    "question": "Which cleaner do you prefer for the sewing table?"
+  }
+}

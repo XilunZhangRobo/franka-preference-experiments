@@ -1,0 +1,12 @@
+{
+  "input_sha256": "d94750a36feff592f9d1adbaa56af56142600b362900ed2a8334be427687cba1",
+  "thread": "run-0227",
+  "request": "episodes/contrast/material-order/independent/transfer-note/1795591668112808676-7882d635/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "A left-to-right row follows the requested order and is consistent with the person’s base-first setup."
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,13 @@
+id	kind	expected	cold_first	cold_repeat	notes_first	notes_repeat
+P1	main	B	A	A	A	B
+P2	main	A	B	A	A	A
+P3	exception	A	A	A	A	A
+D1	main	B	A	A	B	B
+D2	main	A	B	B	A	B
+D3	exception	B	B	B	B	B
+L1	main	A	B	B	A	A
+L2	main	B	A	A	B	B
+L3	exception	B	B	B	B	B
+S1	main	B	A	A	B	B
+S2	main	A	B	B	A	A
+S3	exception	A	A	A	A	A

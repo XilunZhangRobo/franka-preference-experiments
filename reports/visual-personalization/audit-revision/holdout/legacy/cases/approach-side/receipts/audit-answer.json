@@ -1,0 +1,10 @@
+{
+  "input_sha256": "1f54725c44c385256dc90d37925847a8c2e982417cf8a1f4946660abde2a352f",
+  "session": "audit-person",
+  "thread": "run-0087",
+  "request": "sessions/audit-person/1795631114655363053-7bb84f8e/request.json",
+  "result": "sessions/audit-person/1795631114655363053-7bb84f8e/attempt-1/result.json",
+  "reply": {
+    "answer": "When there’s room, I like my drink in front of my left shoulder, but I don’t have a stated preference about setting it on the table."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "3c932ccabe3f6d5ff976574c481092c071099e433bf75160ff70b2c54e9d4acd",
+  "max_robot_pinch_error_m": 0.0,
+  "final_positions_m": {
+    "card": [
+      -0.008834605,
+      0.09,
+      0.75
+    ],
+    "flower": [
+      0.16,
+      -0.065,
+      0.75
+    ]
+  },
+  "scene_sha256": "ca40bcda4b2626cdc5ac21e71f1ffeb08feed59529f312985ca8d76298218515"
+}

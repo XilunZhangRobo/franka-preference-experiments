@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Broccoli and green bean texture\",\"note\":\"Serve tender broccoli with warm dinners by default. The person also requested tender green beans for one warm side dish. Their usual preference for green beans is still unclear.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":1907507,"cached_input_tokens":1819136,"cache_write_input_tokens":0,"output_tokens":1951,"reasoning_output_tokens":0}}

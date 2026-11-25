@@ -1,0 +1,30 @@
+{
+  "input_sha256": "82dc9961febdfbe9e0f625ef170aaa65c82a6d74a5aab8a3c93f163a03690e21",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592029481457780-43cd6d86/request.json",
+  "reply": {
+    "observation": "After I set the flower beside the card, the person picked it up and pressed it onto the end of the drawn stem.",
+    "interpretation": "They may have wanted to choose the flower’s exact placement themselves.",
+    "title": "Handmade card decoration placement",
+    "note": "When helping with handmade cards, the person may prefer decorations within reach so they can place them themselves.",
+    "question": "For future handmade cards, would you like me to leave decorations beside the card for you to place?"
+  },
+  "images": [
+    "media/gift-finishing/teach-48/A-accept/view/frame-00000.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00004.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00006.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00010.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00012.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00016.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00018.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00022.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00024.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00028.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00030.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00034.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00036.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00040.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00042.jpg",
+    "media/gift-finishing/teach-48/A-accept/view/frame-00046.jpg"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "input_sha256": "d3851a46dcea133ee68532b6742f2e4dcca17cce7c392216e8b9be2bb757ddee",
+  "thread": "run-0258",
+  "request": "sessions/isolated/completion-update/robot/1795591227917636517-3b0fff55/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person is drawing alone and asked to hear routine updates right away during solo work.",
+    "question": ""
+  },
+  "images": [
+    "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+  ]
+}

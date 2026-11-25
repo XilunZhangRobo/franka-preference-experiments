@@ -1,0 +1,61 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "I want brief routine updates immediately while I work alone. A routine update can wait until my video call ends.",
+    "task": "The bin is full. Give the person a low-priority completion update.",
+    "observed_robot_action": "Give the spoken update at the person's next pause.",
+    "motion_options": {
+      "A": "Demonstrate the timing: resume writing and tap the announcement button before putting the pencil down.",
+      "B": "Demonstrate the timing: resume writing and tap the announcement button after putting the pencil down."
+    },
+    "seconds": [
+      0.0,
+      2.0,
+      4.3333,
+      6.3333,
+      8.6667,
+      8.8333,
+      10.3333
+    ],
+    "heard": [
+      {
+        "t": 8.8333,
+        "speaker": "device",
+        "text": "Work is complete."
+      }
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "62d8abfa91bbac22058fd5e2243d49b38c711926470fd29865d0922a90c4ff55"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "50f88585e3f24b8aa595d9f8366c91832fb6bbcb00d4b60d709c72b94dda4a98"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "7209deb372bd3a5a9bbb4ad7ef6a7128a9a44ca0283b1d5fed7d9d62bf1a1545"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "a6c8707a16c026e86197cba2d4f418dd61d985203a6e49006aa9323192956ba6"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "d923dcf9ee58cddf6606f6b258b459ee9c6111fd14621e4420bc38bb774e3241"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "a67d22e665ca4085d7523fbe21f99d905e35e89a0eaa2bc445e2f37308a84af7"
+    },
+    {
+      "file": "image-006.jpg",
+      "sha256": "5504d12af7b7c6bae0a9b6dc1739216a4aa9832e63b3fd53147b7ea50c734820"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

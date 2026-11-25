@@ -1,0 +1,11 @@
+{
+  "input_sha256": "2a23a9bbae6ecf8e13e6bf2677b46a6e7952b09573257942d7903abafdc50821",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795593295441073452-18f46426/request.json",
+  "reply": {
+    "answer": "Please put my pen case in the usual closed compartment."
+  },
+  "images": [
+    "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+  ]
+}

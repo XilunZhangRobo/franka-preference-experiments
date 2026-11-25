@@ -1,0 +1,12 @@
+{
+  "input_sha256": "fb2ef94a7b51946f05a4e770715157e7035247a4635c024cc78b7c95b308ca58",
+  "thread": "run-0202",
+  "request": "episodes/continuous/material-order/independent/exception-cold/1795592334155063998-118bad8c/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The central tray makes the markers easy for all four people to reach."
+  },
+  "images": [
+    "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+  ]
+}

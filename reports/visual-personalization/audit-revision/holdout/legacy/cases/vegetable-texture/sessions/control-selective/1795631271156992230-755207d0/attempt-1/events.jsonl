@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0135"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"You asked for firm green beans in the salad.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":25236,"cached_input_tokens":22528,"cache_write_input_tokens":0,"output_tokens":62,"reasoning_output_tokens":0}}

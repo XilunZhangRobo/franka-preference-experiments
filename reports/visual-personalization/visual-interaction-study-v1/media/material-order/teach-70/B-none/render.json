@@ -1,0 +1,16 @@
+{
+  "family": "material-order",
+  "phase": "teach",
+  "seed": 70,
+  "choice": "B",
+  "response": "none",
+  "size": [
+    640,
+    480
+  ],
+  "fps": 6,
+  "samples": 12,
+  "renderer": "blender-cycles",
+  "device": "CPU",
+  "camera": "agent"
+}

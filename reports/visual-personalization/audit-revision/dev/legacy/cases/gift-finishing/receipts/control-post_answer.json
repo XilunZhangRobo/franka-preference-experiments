@@ -1,0 +1,11 @@
+{
+  "input_sha256": "3d9a6ca8bb3c4a2a2fb155b44b93ac67314e5b35824891a172c9b68994713f76",
+  "session": "forced-3d9a6ca8bb3c4a2a2fb155b44b93ac67314e5b35824891a172c9b68994713f76",
+  "thread": "run-0042",
+  "request": "sessions/forced-3d9a6ca8bb3c4a2a2fb155b44b93ac67314e5b35824891a172c9b68994713f76/1795631066186029506-6e0fb68a/request.json",
+  "result": "sessions/forced-3d9a6ca8bb3c4a2a2fb155b44b93ac67314e5b35824891a172c9b68994713f76/1795631066186029506-6e0fb68a/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Packing a portion in each labeled box and closing the lids will get both lunches ready for tomorrow."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "chapters": [
+    {
+      "TIMEBASE": "1/12288",
+      "START": "0",
+      "END": "1542144",
+      "title": "Paused Work"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "1542144",
+      "END": "3639300",
+      "title": "Gift Finishing"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "3639300",
+      "END": "5091324",
+      "title": "Receiving Hand"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "5091324",
+      "END": "7030788",
+      "title": "Material Order"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "7030788",
+      "END": "8775684",
+      "title": "Approach Side"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "8775684",
+      "END": "10780668",
+      "title": "Completion Update"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "10780668",
+      "END": "12539904",
+      "title": "Vegetable Texture"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "12539904",
+      "END": "14673924",
+      "title": "Private Storage"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "14673924",
+      "END": "16136196",
+      "title": "Lighting"
+    },
+    {
+      "TIMEBASE": "1/12288",
+      "START": "16136196",
+      "END": "18085884",
+      "title": "Cleaning Scent"
+    }
+  ],
+  "sha256": "6bb2e363c4528e3f0dca253e112bdb6e7f8cec8321115d68ccd3ea6b5243e06b",
+  "bytes": 18331726,
+  "video_fully_decoded": true
+}

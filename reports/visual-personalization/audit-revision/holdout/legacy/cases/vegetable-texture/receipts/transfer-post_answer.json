@@ -1,0 +1,11 @@
+{
+  "input_sha256": "91a20408759e1e4a8edbb6b6a831bb3da87b1fe31466b6ae877918f4567566e2",
+  "session": "forced-91a20408759e1e4a8edbb6b6a831bb3da87b1fe31466b6ae877918f4567566e2",
+  "thread": "run-0141",
+  "request": "sessions/forced-91a20408759e1e4a8edbb6b6a831bb3da87b1fe31466b6ae877918f4567566e2/1795631236426910973-154c2504/request.json",
+  "result": "sessions/forced-91a20408759e1e4a8edbb6b6a831bb3da87b1fe31466b6ae877918f4567566e2/1795631236426910973-154c2504/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Tender green beans are the closest match to the person’s preference for tender broccoli with a warm dinner."
+  }
+}

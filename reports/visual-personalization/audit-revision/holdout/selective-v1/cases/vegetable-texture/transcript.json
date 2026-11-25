@@ -1,0 +1,83 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0172",
+    "reply": {
+      "observation": "The robot moved broccoli from the left tray onto the dinner plate. The person then pointed at the food on the plate. No speech was heard.",
+      "interpretation": "The gesture drew attention to the plated food. It did not clearly indicate a preference for either batch.",
+      "title": "Broccoli tenderness",
+      "note": "When ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0176",
+    "reply": {
+      "choice": "B",
+      "reason": "The more tender green beans are easier to chew."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0177",
+    "reply": {
+      "choice": "B",
+      "reason": "The more tender beans are easier to chew, but the person’s texture preference is unknown.",
+      "question": "Would you prefer the green beans firmer or more tender?"
+    }
+  },
+  {
+    "stage": "transfer-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/transfer-answer.json",
+    "thread": "run-0175",
+    "reply": {
+      "answer": "I’d prefer them more tender."
+    }
+  },
+  {
+    "stage": "transfer-final",
+    "actor": "robot",
+    "channel": "final decision",
+    "receipt": "receipts/transfer-final.json",
+    "thread": "run-0177",
+    "reply": {
+      "choice": "B",
+      "reason": "You asked for the more tender green beans."
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0173",
+    "reply": {
+      "choice": "A",
+      "reason": "Firmer cooked green beans keep a crisp bite in a chilled salad."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0174",
+    "reply": {
+      "choice": "A",
+      "reason": "Firmer cooked green beans hold their crunch in a chilled salad.",
+      "question": ""
+    }
+  }
+]

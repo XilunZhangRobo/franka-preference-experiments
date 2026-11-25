@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Drink placement\n\nOn this occasion, the person indicated a spot toward their left for the drink.\n", "question": "Would you prefer that I offer other items on your left, too?", "person_answer": "Yes, please offer other items in front of my left shoulder when there’s room, or on my right if a shelf blocks my left."}

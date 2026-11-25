@@ -1,0 +1,10 @@
+{
+  "input_sha256": "ac9d63bd2df2e010537e267c90b5484b450467dc50ed62fe46df316d6f625c5d",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592819148886752-b481966a/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You asked for tender green beans for this warm side dish."
+  },
+  "images": []
+}

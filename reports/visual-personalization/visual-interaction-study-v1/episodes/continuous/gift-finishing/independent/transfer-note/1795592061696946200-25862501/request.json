@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Help get the gift box ready.",
+    "options": {
+      "A": "Arrange the tissue and gift inside and close the box.",
+      "B": "Open the box and set the tissue and gift alongside it."
+    },
+    "memory": "# Decorations for personal gift cards\n\nWhen a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "2aa5967230264063a88563dd85d3b2e19ad67934fd7cedd68dfa808866b2f664"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

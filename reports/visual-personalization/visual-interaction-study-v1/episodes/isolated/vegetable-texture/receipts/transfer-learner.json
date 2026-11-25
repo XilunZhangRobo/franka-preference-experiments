@@ -1,0 +1,13 @@
+{
+  "input_sha256": "2cde867ff9f6150224b618281edf20123d31fde6dc11e589f6fce8108e11eeb5",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590425071369507-9d77df92/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The broccoli check makes tenderness worth considering, but your green bean preference is unclear.",
+    "question": "Would you prefer the firmer or more tender green beans?"
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

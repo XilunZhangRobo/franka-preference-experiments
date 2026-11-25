@@ -1,0 +1,11 @@
+{
+  "input_sha256": "3ef3a4cd5dd334dfe9df0b37457b025c313f701359ee8604cbab683ba87cfba6",
+  "session": "forced-3ef3a4cd5dd334dfe9df0b37457b025c313f701359ee8604cbab683ba87cfba6",
+  "thread": "run-0148",
+  "request": "sessions/forced-3ef3a4cd5dd334dfe9df0b37457b025c313f701359ee8604cbab683ba87cfba6/1795631157639960432-632920ad/request.json",
+  "result": "sessions/forced-3ef3a4cd5dd334dfe9df0b37457b025c313f701359ee8604cbab683ba87cfba6/1795631157639960432-632920ad/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The update can wait for a pause so the robot avoids talking over the person on the call."
+  }
+}

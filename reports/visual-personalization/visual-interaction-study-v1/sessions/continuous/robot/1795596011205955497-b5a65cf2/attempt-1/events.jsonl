@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Cleaner preferences for kitchen counters and sewing surfaces\",\"note\":\"Use mild-citrus cleaner on the kitchen counter when the person is home alone and fragrance-free cleaner when guests are expected. They also confirmed mild citrus for their private sewing surface.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":3934139,"cached_input_tokens":3805312,"cache_write_input_tokens":0,"output_tokens":2938,"reasoning_output_tokens":0}}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cfc6525f7c45a11000acbe171f4528079b75e603d5bfb1ed2875580a0eaf1103",
+  "session": "control-selective",
+  "thread": "run-0169",
+  "request": "sessions/control-selective/1795631126532724478-e4cb31ee/request.json",
+  "result": "sessions/control-selective/1795631126532724478-e4cb31ee/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their right hand is free and closer to the remote, while their left hand is on a cloth.",
+    "question": ""
+  }
+}

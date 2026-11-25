@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0152",
+    "reply": {
+      "observation": "The robot placed the red base on the person’s right and the yellow cap on their left. The person touched the base with their right hand and left both pieces in place.",
+      "interpretation": "The person may prefer starting with the base within reach of their right hand.",
+      "title": "Assembly layout",
+      "note": "For a similar assembly, use base on the right and cap on the left as a default. One reach gives limited evidence of a lasting preference.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0155",
+    "reply": {
+      "choice": "A",
+      "reason": "Placing the pot, scoop, and tag from right to left follows the remembered assembly default."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0156",
+    "reply": {
+      "choice": "A",
+      "reason": "The similar assembly’s default supports placing the pot on the person’s right, the scoop in the middle, and the tag on their left.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0153",
+    "reply": {
+      "choice": "A",
+      "reason": "The central tray keeps the markers within reach of all four people."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0154",
+    "reply": {
+      "choice": "A",
+      "reason": "The central tray keeps the markers within reach of all four people.",
+      "question": ""
+    }
+  }
+]

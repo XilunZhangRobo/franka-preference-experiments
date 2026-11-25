@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0262"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The delivery update can wait until the person pauses drawing.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12388,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":23,"reasoning_output_tokens":0}}

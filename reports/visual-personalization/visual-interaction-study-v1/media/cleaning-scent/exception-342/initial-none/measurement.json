@@ -1,0 +1,36 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "5542d26169f7c831983cb6c3da433045d005567df63cbdccded6a61a1d481364",
+  "max_robot_pinch_error_m": 0.0,
+  "final_positions_m": {
+    "citrus": [
+      -0.119,
+      0.089,
+      0.756
+    ],
+    "free": [
+      0.119,
+      0.089,
+      0.756
+    ],
+    "cloth": [
+      0.01,
+      -0.141,
+      0.75
+    ]
+  },
+  "scene_sha256": "60b3c7344e461e0fa03241f7b68894ab7f6275deb90f749aaa7d1d9918bc6f97"
+}

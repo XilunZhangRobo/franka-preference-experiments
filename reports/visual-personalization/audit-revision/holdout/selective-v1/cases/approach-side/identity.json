@@ -1,0 +1,88 @@
+{
+  "protocol_version": 1,
+  "branch_selective": false,
+  "shared_selective_receipt_hashes": {},
+  "case_id": "approach-side",
+  "model": "gpt-6.2-astra",
+  "prompts": {
+    "audit": "Review the camera interaction. What happened? What preference might explain it? Separate the visible evidence from your inference. Use context and ordinary judgment to write a short rule for a future choice, if the evidence supports one. Keep meaningful uncertainty in the note. Leave the person uninterrupted when you can proceed. Ask one brief question only when plausible readings still call for different actions and choosing poorly would matter. Return JSON with short string fields observation, interpretation, title, note and question. Leave unwarranted fields empty.",
+    "refine": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+    "decide": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+    "selective": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+    "answer": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}."
+  },
+  "seed_metadata": "holdout",
+  "quiet": false,
+  "private_brief": "When there is room, I like things presented in front of my left shoulder. Use the accessible side when a shelf blocks the other side.",
+  "audit_context": {
+    "task": "Bring me my drink.",
+    "your_action": "Present it in the person's right-front quarter.",
+    "seconds": [
+      0.0,
+      0.3333,
+      0.6667,
+      1.0,
+      1.6667,
+      2.0,
+      2.3333,
+      2.6667,
+      3.0,
+      3.3333,
+      3.6667,
+      4.0,
+      4.6667,
+      5.0,
+      5.3333,
+      5.6667
+    ],
+    "heard": [],
+    "choice_reason": "The cup is closer to the person’s right hand, so they can reach it easily."
+  },
+  "audit_image_hashes": [
+    "ad53e36b33f6474db680e1a7cf946047058b3f9acddde75cd07b10e29c3e64b0",
+    "d1f9076dfc97fbb8a359416d983f254f4d4b3c586d80065e5b0445f9e96eb636",
+    "661dba3c55b9d7215a07353f0411f1178fa50fbcfe553bbd405df6f2e0ea749d",
+    "3e43eed46d3ac04db3d9a75dc95ffad3c06f98e06f377b55595412c6a4bb3535",
+    "057e1c728ad8d5078d5c102f406d85110c2ebd342fd8daad3f7909600d551f8f",
+    "76f37d88c78cb5740c91be8e6eade119c32fe8884e19ff61d9f021457941958f",
+    "75069f2807e5fd0925e9327be0e2dbf121ba39ed19950981a7f94ea776eda513",
+    "e60262feec561ac273659288991116b2ca02adfbfa294b05e1cdd65ce0ad6187",
+    "34199c1df2e82c7419791b9229ef772a1d059e2adde188740c2cb7c29e3a896c",
+    "84260c3c1a592eae394d9749fd8c7f95c976d62ea36c4795abc93ac0713bdbef",
+    "67580475b33fcf2b8dbe1ed4fb6427bcd586f6ab026ed428038a6fd883eb656b",
+    "2318fa10fcccaed6d9503c79661a84902df28553cf4a417b014aa0832466cfd9",
+    "db7c9500551aa514b768ab7a817f19515cbb6920353ed819bea5a566d2222db9",
+    "6f27974d23fa7f035bc7ea9962697d195d8ad557d1cd9922ad5a6a88a1de1eac",
+    "5548eccdc820d3065771f541346d20fc8648236b7cb6633d89357102677faeea",
+    "e8c78e906195f40afde32088d0a0d6186a1d4f539aed701f5cbc7d70a0be8b01"
+  ],
+  "probes": {
+    "transfer": {
+      "public": {
+        "task": "Bring me the folded cloth.",
+        "options": {
+          "A": "Present it in the person's left-front quarter.",
+          "B": "Present it in the person's right-front quarter."
+        }
+      },
+      "image_hashes": [
+        "fbf79a92ed185e5932a4dedecbe5c70609f6c33f38b081770e3d83802d5eda52"
+      ],
+      "expected": "A"
+    },
+    "control": {
+      "public": {
+        "task": "Bring me the folded cloth.",
+        "options": {
+          "A": "Present it in the person's right-front quarter.",
+          "B": "Wait by the shelf for access to the person's left-front quarter."
+        }
+      },
+      "image_hashes": [
+        "b51a1d7e184cef0a4bab824555ceea0b7a724640f3ddd983832a4f91a42bb86e"
+      ],
+      "expected": "A"
+    }
+  },
+  "shared_draft_receipt_sha256": null
+}

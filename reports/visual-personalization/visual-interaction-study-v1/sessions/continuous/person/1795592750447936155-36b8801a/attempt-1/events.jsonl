@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0179"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"I usually prefer tender broccoli with a warm dinner.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":384708,"cached_input_tokens":336896,"cache_write_input_tokens":0,"output_tokens":307,"reasoning_output_tokens":0}}

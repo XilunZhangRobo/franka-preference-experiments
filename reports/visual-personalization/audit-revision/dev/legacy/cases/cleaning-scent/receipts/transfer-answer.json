@@ -1,0 +1,10 @@
+{
+  "input_sha256": "5b047c3e6eb9c10560e8b7e9331c4ea70c35d5f8e1f324c7cdcd06b6f84603bd",
+  "session": "transfer-person",
+  "thread": "run-0035",
+  "request": "sessions/transfer-person/1795631034980458675-7cfdb130/request.json",
+  "result": "sessions/transfer-person/1795631034980458675-7cfdb130/attempt-1/result.json",
+  "reply": {
+    "answer": "I prefer the mild citrus cleaner for my sewing table."
+  }
+}

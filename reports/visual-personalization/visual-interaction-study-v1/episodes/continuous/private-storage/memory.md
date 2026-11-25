@@ -1,0 +1,3 @@
+# Entryway storage for personal belongings
+
+After use, put the house keys, flashlight, and the person’s other personal belongings in the shallow entryway compartment and close it. They moved the keys and flashlight there and asked for the same storage for their other belongings.

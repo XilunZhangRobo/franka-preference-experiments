@@ -1,0 +1,10 @@
+{
+  "input_sha256": "3c058cae8df13b99431e6e40bfd6428638a53d1260c36443f06be6fd4f9bbcc9",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590444160374918-5da5b065/request.json",
+  "reply": {
+    "title": "Green bean and broccoli tenderness",
+    "note": "Choose the more tender green beans for a warm side dish, as the person requested. They also checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear."
+  },
+  "images": []
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "8a50839ff7c8fee0aa94065f8c360574e5d4b1f010787327eb25e9fe2eee6d20",
+  "thread": "run-0208",
+  "request": "episodes/continuous/paused-work/independent/transfer-cold/1795591859031602218-8633b76f/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Shelving the teal mat clears space for the cutting board at the front of the counter."
+  },
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ]
+}

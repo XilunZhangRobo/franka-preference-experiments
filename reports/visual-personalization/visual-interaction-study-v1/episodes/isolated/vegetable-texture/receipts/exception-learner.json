@@ -1,0 +1,13 @@
+{
+  "input_sha256": "adf50cebd3bf6395535c4d82664b6c1ab8e88f7cb3cdf395ed65b7fc6d681e59",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590523307609233-82848a21/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You preferred tender green beans for the warm side dish, but your salad preference is unclear.",
+    "question": "Would you like the more tender green beans or the firmer ones for the chilled salad?"
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

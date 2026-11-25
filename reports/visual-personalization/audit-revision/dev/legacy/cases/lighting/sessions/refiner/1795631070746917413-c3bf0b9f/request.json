@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Puzzle lighting\n\nFor puzzle work, try the room light first.\n",
+    "question": "Do you also prefer the room light for other tabletop tasks?",
+    "person_answer": "Yes, when I work alone I prefer the ceiling light, but during a projected presentation I prefer just the craft table lit."
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "",
+    "person_answer": "Start with the pot on my right, please."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0276"
+}

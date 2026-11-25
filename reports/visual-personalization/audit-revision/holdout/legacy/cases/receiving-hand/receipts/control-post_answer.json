@@ -1,0 +1,11 @@
+{
+  "input_sha256": "89d60087cacc381a6d3a97981aa67f1dc548c7a83e8a0c83fc368600f8052974",
+  "session": "forced-89d60087cacc381a6d3a97981aa67f1dc548c7a83e8a0c83fc368600f8052974",
+  "thread": "run-0125",
+  "request": "sessions/forced-89d60087cacc381a6d3a97981aa67f1dc548c7a83e8a0c83fc368600f8052974/1795631235183252986-3a8c979d/request.json",
+  "result": "sessions/forced-89d60087cacc381a6d3a97981aa67f1dc548c7a83e8a0c83fc368600f8052974/1795631235183252986-3a8c979d/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your left hand is on the sponge, so I’ll offer the remote to your free right hand."
+  }
+}

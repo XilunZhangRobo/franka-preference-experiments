@@ -1,0 +1,13 @@
+{
+  "input_sha256": "554699299d4e1f304b44909d34e263ed6afaa55b1b0444f84edfdbe6c6eaa1dd",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592473643881430-7ee047d3/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Offering the cloth in front of you on your left puts it within reach of your free left hand, as you prefer.",
+    "question": ""
+  },
+  "images": [
+    "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  ]
+}

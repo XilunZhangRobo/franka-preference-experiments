@@ -1,0 +1,31 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "d5eaeac6b9f1e16cc011124021d4100e69ae04a5dafd916c554c31073d980a10",
+  "max_robot_pinch_error_m": 0.0,
+  "final_positions_m": {
+    "desk_switch": [
+      -0.19,
+      -0.065,
+      0.75
+    ],
+    "ceiling_switch": [
+      0.19,
+      -0.065,
+      0.75
+    ]
+  },
+  "scene_sha256": "59861335a5b952e5fc6eec956418af80c3d9a0e7ed8c3d69f7e1f0a50775f87e"
+}

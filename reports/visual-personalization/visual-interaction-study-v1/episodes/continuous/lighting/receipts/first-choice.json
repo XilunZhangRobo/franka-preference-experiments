@@ -1,0 +1,12 @@
+{
+  "input_sha256": "675ea05026b5dbe16408961302bea1d9cf1fb35dcb1574adecbe0d981897416e",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593600849617571-05bc0d0d/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The desk lamp can light the puzzle pieces directly."
+  },
+  "images": [
+    "media/lighting/teach-125/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Turn on a light for the person comparing ceramic tile patterns.",
+    "options": {
+      "A": "Turn on the desk lamp.",
+      "B": "Turn on the overhead fixture."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "0aa4b3251e5e26f5aadcf01a6bd5ff232440a2b7c9fed7719aaaadc13a8ec9ac"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

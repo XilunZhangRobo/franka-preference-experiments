@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "B",
+    "reason": "The open tray keeps your pen case easy to see and reach tomorrow."
+  },
+  "request": "visual-only-comparisons/private-storage/session/1795591491932780794-c93e6b7f/request.json",
+  "thread": "run-0436",
+  "images": [
+    "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "ff1e7c97cf856e424201ea6539d32856c10b0c24f083f7fb5426ada76c588ba4"
+}

@@ -1,0 +1,10 @@
+{
+  "input_sha256": "3524fb651f062bfbcde10ed1f31298a051c1b65c3e166707136cfd550d6cffab",
+  "session": "transfer-person",
+  "thread": "run-0093",
+  "request": "sessions/transfer-person/1795631139945372890-23fa9b6f/request.json",
+  "result": "sessions/transfer-person/1795631139945372890-23fa9b6f/attempt-1/result.json",
+  "reply": {
+    "answer": "In front of my left shoulder, please, if there’s room."
+  }
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0305"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Firmer cooked green beans will keep some bite when served warm.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12387,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":25,"reasoning_output_tokens":0}}

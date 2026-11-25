@@ -1,0 +1,16 @@
+{
+  "input_sha256": "9b6b77dcc823b29748fbf8ef92bef13ee815af5a2f4af48e61efa69549597407",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592711270099472-7c232db9/request.json",
+  "reply": {
+    "response": "A"
+  },
+  "images": [
+    "media/vegetable-texture/teach-103/B-none/view/frame-00000.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00006.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00010.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00016.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00020.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00026.jpg"
+  ]
+}

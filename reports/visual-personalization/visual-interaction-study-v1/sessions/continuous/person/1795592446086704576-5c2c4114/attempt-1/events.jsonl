@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0179"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"I usually want drinks in front of my left shoulder, with the right side as a backup if a shelf blocks the left.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":226622,"cached_input_tokens":186880,"cache_write_input_tokens":0,"output_tokens":215,"reasoning_output_tokens":0}}

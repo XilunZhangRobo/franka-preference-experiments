@@ -10,6 +10,8 @@ The dashboard publishes from the root of `main` using GitHub Pages.
 
 ## MuJoCo visual experiments
 
+**Completed study:** [Results, per-trial videos, and offline viewing instructions](reports/visual-personalization/README.md). The report covers ten tasks, 24 trials and the frozen-library evaluation. [Download the MuJoCo branch ZIP](https://github.com/XilunZhangRobo/franka-preference-experiments/archive/refs/heads/mujoco.zip) and open `reports/visual-personalization/index.html` after extraction.
+
 The `mujoco` branch adds ten executable teaching, transfer and scope scenarios. Start with **paused work**. A Panda shelves a work mat whose project ticket carries a black foldback clip. The seated person puts that mat back and can say “Try again.” The opposite mat stays on the bench. A separate sewing-room trial tests whether a fresh decision maker can use the written memory.
 
 ![Revised work mat with a spring-steel clip holding its project ticket, an open bearing, a washer and threaded nuts](docs/media/workshop-props.jpg)

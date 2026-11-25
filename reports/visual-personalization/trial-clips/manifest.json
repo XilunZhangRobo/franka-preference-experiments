@@ -1,0 +1,1202 @@
+{
+  "isolated/paused-work": {
+    "action": {
+      "file": "trial-clips/paused-work-teach-37-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/paused-work-teach-37-A-accept-feedback.webm",
+      "mp4": "trial-clips/paused-work-teach-37-A-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/paused-work/teach-37/A-accept/view/frame-00024.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/teach-37/A-accept/view/view.mp4",
+      "start": 4.0,
+      "end": 6.333333333333333,
+      "start_frame": 24,
+      "end_frame_exclusive": 38,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/paused-work-transfer-140-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/transfer-140/A-none/view/view.mp4",
+      "duration": 5.333333333333333,
+      "poster": "visual-interaction-study-v1/media/paused-work/transfer-140/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/transfer-140/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.333333333333333,
+      "start_frame": 0,
+      "end_frame_exclusive": 32,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/paused-work-exception-243-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/view.mp4",
+      "duration": 5.166666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.166666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 31,
+      "fps": 6
+    }
+  },
+  "isolated/gift-finishing": {
+    "action": {
+      "file": "trial-clips/gift-finishing-teach-48-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/teach-48/B-none/view/view.mp4",
+      "duration": 3.5,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/teach-48/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/teach-48/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 21,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/gift-finishing-teach-48-B-change.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/teach-48/B-change/view/view.mp4",
+      "duration": 7.0,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/teach-48/B-change/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/teach-48/B-change/view/view.mp4",
+      "start": 0.0,
+      "end": 7.0,
+      "start_frame": 0,
+      "end_frame_exclusive": 42,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/gift-finishing-transfer-151-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/transfer-151/B-none/view/view.mp4",
+      "duration": 12.833333333333334,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/transfer-151/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/transfer-151/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 12.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 77,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/gift-finishing-exception-254-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/exception-254/A-none/view/view.mp4",
+      "duration": 15.833333333333334,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/exception-254/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/exception-254/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 95,
+      "fps": 6
+    }
+  },
+  "isolated/receiving-hand": {
+    "action": {
+      "file": "trial-clips/receiving-hand-teach-59-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-none/view/view.mp4",
+      "duration": 3.1666666666666665,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.1666666666666665,
+      "start_frame": 0,
+      "end_frame_exclusive": 19,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/receiving-hand-teach-59-A-change.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-change/view/view.mp4",
+      "duration": 8.333333333333334,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-change/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-change/view/view.mp4",
+      "start": 0.0,
+      "end": 8.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 50,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/receiving-hand-transfer-162-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/transfer-162/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/transfer-162/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/transfer-162/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/receiving-hand-exception-265-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/exception-265/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/exception-265/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/exception-265/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    }
+  },
+  "isolated/material-order": {
+    "action": {
+      "file": "trial-clips/material-order-teach-70-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/view.mp4",
+      "duration": 8.333333333333334,
+      "poster": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 8.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 50,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/material-order-teach-70-B-accept-feedback.webm",
+      "mp4": "trial-clips/material-order-teach-70-B-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/material-order/teach-70/B-accept/view/frame-00046.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/teach-70/B-accept/view/view.mp4",
+      "start": 7.666666666666667,
+      "end": 10.0,
+      "start_frame": 46,
+      "end_frame_exclusive": 60,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/material-order-transfer-173-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/transfer-173/A-none/view/view.mp4",
+      "duration": 12.666666666666666,
+      "poster": "visual-interaction-study-v1/media/material-order/transfer-173/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/transfer-173/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 12.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 76,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/material-order-exception-276-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/view.mp4",
+      "duration": 15.833333333333334,
+      "poster": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 95,
+      "fps": 6
+    }
+  },
+  "isolated/approach-side": {
+    "action": {
+      "file": "trial-clips/approach-side-teach-81-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/teach-81/B-none/view/view.mp4",
+      "duration": 3.1666666666666665,
+      "poster": "visual-interaction-study-v1/media/approach-side/teach-81/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/teach-81/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.1666666666666665,
+      "start_frame": 0,
+      "end_frame_exclusive": 19,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/approach-side-teach-81-B-change.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/teach-81/B-change/view/view.mp4",
+      "duration": 5.833333333333333,
+      "poster": "visual-interaction-study-v1/media/approach-side/teach-81/B-change/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/teach-81/B-change/view/view.mp4",
+      "start": 0.0,
+      "end": 5.833333333333333,
+      "start_frame": 0,
+      "end_frame_exclusive": 35,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/approach-side-transfer-184-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/transfer-184/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/approach-side/transfer-184/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/transfer-184/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/approach-side-exception-287-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/exception-287/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/approach-side/exception-287/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/exception-287/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    }
+  },
+  "isolated/completion-update": {
+    "action": {
+      "file": "trial-clips/completion-update-teach-92-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/completion-update/teach-92/B-none/view/view.mp4",
+      "duration": 10.666666666666666,
+      "poster": "visual-interaction-study-v1/media/completion-update/teach-92/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/teach-92/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 10.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 64,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/completion-update-teach-92-B-change-feedback.webm",
+      "mp4": "trial-clips/completion-update-teach-92-B-change-feedback.mp4",
+      "duration": 10.666666666666666,
+      "poster": "visual-interaction-study-v1/media/completion-update/teach-92/B-change/view/frame-00060.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/teach-92/B-change/view/view.mp4",
+      "start": 10.0,
+      "end": 20.666666666666668,
+      "start_frame": 60,
+      "end_frame_exclusive": 124,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/completion-update-transfer-195-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/completion-update/transfer-195/A-none/view/view.mp4",
+      "duration": 8.833333333333334,
+      "poster": "visual-interaction-study-v1/media/completion-update/transfer-195/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/transfer-195/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 8.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 53,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/completion-update-exception-298-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/completion-update/exception-298/B-none/view/view.mp4",
+      "duration": 6.0,
+      "poster": "visual-interaction-study-v1/media/completion-update/exception-298/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/exception-298/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 6.0,
+      "start_frame": 0,
+      "end_frame_exclusive": 36,
+      "fps": 6
+    }
+  },
+  "isolated/vegetable-texture": {
+    "action": {
+      "file": "trial-clips/vegetable-texture-teach-103-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/vegetable-texture-teach-103-B-accept-feedback.webm",
+      "mp4": "trial-clips/vegetable-texture-teach-103-B-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "trial-clips/vegetable-texture-teach-103-B-accept-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-accept/view/view.mp4",
+      "start": 3.8333333333333335,
+      "end": 6.166666666666667,
+      "start_frame": 23,
+      "end_frame_exclusive": 37,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/vegetable-texture-transfer-206-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/B-none/view/view.mp4",
+      "duration": 5.0,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "start_frame": 0,
+      "end_frame_exclusive": 30,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/vegetable-texture-exception-309-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    }
+  },
+  "isolated/private-storage": {
+    "action": {
+      "file": "trial-clips/private-storage-teach-114-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/teach-114/A-none/view/view.mp4",
+      "duration": 15.166666666666666,
+      "poster": "visual-interaction-study-v1/media/private-storage/teach-114/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/teach-114/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.166666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 91,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/private-storage-teach-114-A-accept-feedback.webm",
+      "mp4": "trial-clips/private-storage-teach-114-A-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "trial-clips/private-storage-teach-114-A-accept-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/teach-114/A-accept/view/view.mp4",
+      "start": 14.5,
+      "end": 16.833333333333332,
+      "start_frame": 87,
+      "end_frame_exclusive": 101,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/private-storage-transfer-217-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/transfer-217/B-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/private-storage/transfer-217/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/transfer-217/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/private-storage-exception-320-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/view.mp4",
+      "duration": 4.833333333333333,
+      "poster": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.833333333333333,
+      "start_frame": 0,
+      "end_frame_exclusive": 29,
+      "fps": 6
+    }
+  },
+  "isolated/lighting": {
+    "action": {
+      "file": "trial-clips/lighting-teach-125-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/lighting/teach-125/B-none/view/view.mp4",
+      "duration": 2.8333333333333335,
+      "poster": "visual-interaction-study-v1/media/lighting/teach-125/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/teach-125/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 2.8333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 17,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/lighting-teach-125-B-change-feedback.webm",
+      "mp4": "trial-clips/lighting-teach-125-B-change-feedback.mp4",
+      "duration": 4.333333333333333,
+      "poster": "trial-clips/lighting-teach-125-B-change-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/teach-125/B-change/view/view.mp4",
+      "start": 2.1666666666666665,
+      "end": 6.5,
+      "start_frame": 13,
+      "end_frame_exclusive": 39,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/lighting-transfer-228-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/lighting/transfer-228/A-none/view/view.mp4",
+      "duration": 3.8333333333333335,
+      "poster": "visual-interaction-study-v1/media/lighting/transfer-228/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/transfer-228/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.8333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 23,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/lighting-exception-331-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/lighting/exception-331/A-none/view/view.mp4",
+      "duration": 3.8333333333333335,
+      "poster": "visual-interaction-study-v1/media/lighting/exception-331/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/exception-331/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.8333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 23,
+      "fps": 6
+    }
+  },
+  "isolated/cleaning-scent": {
+    "action": {
+      "file": "trial-clips/cleaning-scent-teach-136-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/cleaning-scent-teach-136-B-change-feedback.webm",
+      "mp4": "trial-clips/cleaning-scent-teach-136-B-change-feedback.mp4",
+      "duration": 7.0,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-change/view/frame-00024.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-change/view/view.mp4",
+      "start": 4.0,
+      "end": 11.0,
+      "start_frame": 24,
+      "end_frame_exclusive": 66,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/cleaning-scent-transfer-239-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/cleaning-scent/transfer-239/A-none/view/view.mp4",
+      "duration": 15.333333333333334,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/transfer-239/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/transfer-239/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 92,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/cleaning-scent-exception-342-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/cleaning-scent/exception-342/A-none/view/view.mp4",
+      "duration": 15.666666666666666,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/exception-342/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/exception-342/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 94,
+      "fps": 6
+    }
+  },
+  "contrast/paused-work": {
+    "action": {
+      "file": "trial-clips/paused-work-teach-37-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/paused-work-teach-37-A-change-feedback.webm",
+      "mp4": "trial-clips/paused-work-teach-37-A-change-feedback.mp4",
+      "duration": 3.6666666666666665,
+      "poster": "visual-interaction-study-v1/media/paused-work/teach-37/A-change/view/frame-00024.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/teach-37/A-change/view/view.mp4",
+      "start": 4.0,
+      "end": 7.666666666666667,
+      "start_frame": 24,
+      "end_frame_exclusive": 46,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/paused-work-transfer-140-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/transfer-140/B-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/transfer-140/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/transfer-140/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/paused-work-exception-243-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/view.mp4",
+      "duration": 5.166666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.166666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 31,
+      "fps": 6
+    }
+  },
+  "contrast/material-order": {
+    "action": {
+      "file": "trial-clips/material-order-teach-70-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/view.mp4",
+      "duration": 8.333333333333334,
+      "poster": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 8.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 50,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/material-order-teach-70-B-change-feedback.webm",
+      "mp4": "trial-clips/material-order-teach-70-B-change-feedback.mp4",
+      "duration": 10.0,
+      "poster": "visual-interaction-study-v1/media/material-order/teach-70/B-change/view/frame-00046.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/teach-70/B-change/view/view.mp4",
+      "start": 7.666666666666667,
+      "end": 17.666666666666668,
+      "start_frame": 46,
+      "end_frame_exclusive": 106,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/material-order-transfer-173-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/transfer-173/B-none/view/view.mp4",
+      "duration": 12.666666666666666,
+      "poster": "visual-interaction-study-v1/media/material-order/transfer-173/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/transfer-173/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 12.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 76,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/material-order-exception-276-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/view.mp4",
+      "duration": 15.833333333333334,
+      "poster": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 95,
+      "fps": 6
+    }
+  },
+  "contrast/vegetable-texture": {
+    "action": {
+      "file": "trial-clips/vegetable-texture-teach-103-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/vegetable-texture-teach-103-B-change-feedback.webm",
+      "mp4": "trial-clips/vegetable-texture-teach-103-B-change-feedback.mp4",
+      "duration": 6.833333333333333,
+      "poster": "trial-clips/vegetable-texture-teach-103-B-change-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-change/view/view.mp4",
+      "start": 3.8333333333333335,
+      "end": 10.666666666666666,
+      "start_frame": 23,
+      "end_frame_exclusive": 64,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/vegetable-texture-transfer-206-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/A-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/vegetable-texture-exception-309-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    }
+  },
+  "contrast/private-storage": {
+    "action": {
+      "file": "trial-clips/private-storage-teach-114-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/teach-114/A-none/view/view.mp4",
+      "duration": 15.166666666666666,
+      "poster": "visual-interaction-study-v1/media/private-storage/teach-114/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/teach-114/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.166666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 91,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/private-storage-teach-114-A-change-feedback.webm",
+      "mp4": "trial-clips/private-storage-teach-114-A-change-feedback.mp4",
+      "duration": 13.0,
+      "poster": "trial-clips/private-storage-teach-114-A-change-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/teach-114/A-change/view/view.mp4",
+      "start": 14.5,
+      "end": 27.5,
+      "start_frame": 87,
+      "end_frame_exclusive": 165,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/private-storage-transfer-217-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/transfer-217/B-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/private-storage/transfer-217/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/transfer-217/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/private-storage-exception-320-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/view.mp4",
+      "duration": 4.833333333333333,
+      "poster": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.833333333333333,
+      "start_frame": 0,
+      "end_frame_exclusive": 29,
+      "fps": 6
+    }
+  },
+  "continuous/paused-work": {
+    "action": {
+      "file": "trial-clips/paused-work-teach-37-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/teach-37/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/paused-work-teach-37-A-accept-feedback.webm",
+      "mp4": "trial-clips/paused-work-teach-37-A-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/paused-work/teach-37/A-accept/view/frame-00024.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/teach-37/A-accept/view/view.mp4",
+      "start": 4.0,
+      "end": 6.333333333333333,
+      "start_frame": 24,
+      "end_frame_exclusive": 38,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/paused-work-transfer-140-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/transfer-140/A-none/view/view.mp4",
+      "duration": 5.333333333333333,
+      "poster": "visual-interaction-study-v1/media/paused-work/transfer-140/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/transfer-140/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.333333333333333,
+      "start_frame": 0,
+      "end_frame_exclusive": 32,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/paused-work-exception-243-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/view.mp4",
+      "duration": 5.166666666666667,
+      "poster": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/paused-work/exception-243/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.166666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 31,
+      "fps": 6
+    }
+  },
+  "continuous/gift-finishing": {
+    "action": {
+      "file": "trial-clips/gift-finishing-teach-48-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/teach-48/A-none/view/view.mp4",
+      "duration": 5.166666666666667,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/teach-48/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/teach-48/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.166666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 31,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/gift-finishing-teach-48-A-accept-feedback.webm",
+      "mp4": "trial-clips/gift-finishing-teach-48-A-accept-feedback.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "trial-clips/gift-finishing-teach-48-A-accept-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/teach-48/A-accept/view/view.mp4",
+      "start": 4.5,
+      "end": 7.833333333333333,
+      "start_frame": 27,
+      "end_frame_exclusive": 47,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/gift-finishing-transfer-151-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/transfer-151/B-none/view/view.mp4",
+      "duration": 12.833333333333334,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/transfer-151/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/transfer-151/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 12.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 77,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/gift-finishing-exception-254-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/gift-finishing/exception-254/A-none/view/view.mp4",
+      "duration": 15.833333333333334,
+      "poster": "visual-interaction-study-v1/media/gift-finishing/exception-254/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/gift-finishing/exception-254/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 95,
+      "fps": 6
+    }
+  },
+  "continuous/receiving-hand": {
+    "action": {
+      "file": "trial-clips/receiving-hand-teach-59-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-none/view/view.mp4",
+      "duration": 3.1666666666666665,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.1666666666666665,
+      "start_frame": 0,
+      "end_frame_exclusive": 19,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/receiving-hand-teach-59-A-change.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-change/view/view.mp4",
+      "duration": 8.333333333333334,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-change/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/teach-59/A-change/view/view.mp4",
+      "start": 0.0,
+      "end": 8.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 50,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/receiving-hand-transfer-162-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/transfer-162/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/transfer-162/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/transfer-162/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/receiving-hand-exception-265-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/receiving-hand/exception-265/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/receiving-hand/exception-265/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/receiving-hand/exception-265/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    }
+  },
+  "continuous/material-order": {
+    "action": {
+      "file": "trial-clips/material-order-teach-70-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/view.mp4",
+      "duration": 8.333333333333334,
+      "poster": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/teach-70/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 8.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 50,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/material-order-teach-70-B-accept-feedback.webm",
+      "mp4": "trial-clips/material-order-teach-70-B-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/material-order/teach-70/B-accept/view/frame-00046.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/teach-70/B-accept/view/view.mp4",
+      "start": 7.666666666666667,
+      "end": 10.0,
+      "start_frame": 46,
+      "end_frame_exclusive": 60,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/material-order-transfer-173-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/transfer-173/A-none/view/view.mp4",
+      "duration": 12.666666666666666,
+      "poster": "visual-interaction-study-v1/media/material-order/transfer-173/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/transfer-173/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 12.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 76,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/material-order-exception-276-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/view.mp4",
+      "duration": 15.833333333333334,
+      "poster": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/material-order/exception-276/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 95,
+      "fps": 6
+    }
+  },
+  "continuous/approach-side": {
+    "action": {
+      "file": "trial-clips/approach-side-teach-81-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/teach-81/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/approach-side/teach-81/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/teach-81/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/approach-side-teach-81-A-accept-feedback.webm",
+      "mp4": "trial-clips/approach-side-teach-81-A-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/approach-side/teach-81/A-accept/view/frame-00016.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/teach-81/A-accept/view/view.mp4",
+      "start": 2.6666666666666665,
+      "end": 5.0,
+      "start_frame": 16,
+      "end_frame_exclusive": 30,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/approach-side-transfer-184-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/transfer-184/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/approach-side/transfer-184/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/transfer-184/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/approach-side-exception-287-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/approach-side/exception-287/A-none/view/view.mp4",
+      "duration": 3.3333333333333335,
+      "poster": "visual-interaction-study-v1/media/approach-side/exception-287/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/approach-side/exception-287/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 20,
+      "fps": 6
+    }
+  },
+  "continuous/completion-update": {
+    "action": {
+      "file": "trial-clips/completion-update-teach-92-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/completion-update/teach-92/B-none/view/view.mp4",
+      "duration": 10.666666666666666,
+      "poster": "visual-interaction-study-v1/media/completion-update/teach-92/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/teach-92/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 10.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 64,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/completion-update-teach-92-B-change-feedback.webm",
+      "mp4": "trial-clips/completion-update-teach-92-B-change-feedback.mp4",
+      "duration": 10.666666666666666,
+      "poster": "visual-interaction-study-v1/media/completion-update/teach-92/B-change/view/frame-00060.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/teach-92/B-change/view/view.mp4",
+      "start": 10.0,
+      "end": 20.666666666666668,
+      "start_frame": 60,
+      "end_frame_exclusive": 124,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/completion-update-transfer-195-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/completion-update/transfer-195/A-none/view/view.mp4",
+      "duration": 8.833333333333334,
+      "poster": "visual-interaction-study-v1/media/completion-update/transfer-195/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/transfer-195/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 8.833333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 53,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/completion-update-exception-298-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/completion-update/exception-298/B-none/view/view.mp4",
+      "duration": 6.0,
+      "poster": "visual-interaction-study-v1/media/completion-update/exception-298/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/completion-update/exception-298/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 6.0,
+      "start_frame": 0,
+      "end_frame_exclusive": 36,
+      "fps": 6
+    }
+  },
+  "continuous/vegetable-texture": {
+    "action": {
+      "file": "trial-clips/vegetable-texture-teach-103-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/vegetable-texture-teach-103-B-accept-feedback.webm",
+      "mp4": "trial-clips/vegetable-texture-teach-103-B-accept-feedback.mp4",
+      "duration": 2.3333333333333335,
+      "poster": "trial-clips/vegetable-texture-teach-103-B-accept-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/teach-103/B-accept/view/view.mp4",
+      "start": 3.8333333333333335,
+      "end": 6.166666666666667,
+      "start_frame": 23,
+      "end_frame_exclusive": 37,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/vegetable-texture-transfer-206-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/B-none/view/view.mp4",
+      "duration": 5.0,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/transfer-206/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "start_frame": 0,
+      "end_frame_exclusive": 30,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/vegetable-texture-exception-309-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/view.mp4",
+      "duration": 4.5,
+      "poster": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/vegetable-texture/exception-309/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 27,
+      "fps": 6
+    }
+  },
+  "continuous/private-storage": {
+    "action": {
+      "file": "trial-clips/private-storage-teach-114-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/teach-114/B-none/view/view.mp4",
+      "duration": 8.333333333333334,
+      "poster": "visual-interaction-study-v1/media/private-storage/teach-114/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/teach-114/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 8.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 50,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/private-storage-teach-114-B-change-feedback.webm",
+      "mp4": "trial-clips/private-storage-teach-114-B-change-feedback.mp4",
+      "duration": 12.333333333333334,
+      "poster": "visual-interaction-study-v1/media/private-storage/teach-114/B-change/view/frame-00046.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/teach-114/B-change/view/view.mp4",
+      "start": 7.666666666666667,
+      "end": 20.0,
+      "start_frame": 46,
+      "end_frame_exclusive": 120,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/private-storage-transfer-217-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/transfer-217/A-none/view/view.mp4",
+      "duration": 12.5,
+      "poster": "visual-interaction-study-v1/media/private-storage/transfer-217/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/transfer-217/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 12.5,
+      "start_frame": 0,
+      "end_frame_exclusive": 75,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/private-storage-exception-320-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/view.mp4",
+      "duration": 4.833333333333333,
+      "poster": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/private-storage/exception-320/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.833333333333333,
+      "start_frame": 0,
+      "end_frame_exclusive": 29,
+      "fps": 6
+    }
+  },
+  "continuous/lighting": {
+    "action": {
+      "file": "trial-clips/lighting-teach-125-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/lighting/teach-125/B-none/view/view.mp4",
+      "duration": 2.8333333333333335,
+      "poster": "visual-interaction-study-v1/media/lighting/teach-125/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/teach-125/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 2.8333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 17,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/lighting-teach-125-B-change-feedback.webm",
+      "mp4": "trial-clips/lighting-teach-125-B-change-feedback.mp4",
+      "duration": 4.333333333333333,
+      "poster": "trial-clips/lighting-teach-125-B-change-feedback.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/teach-125/B-change/view/view.mp4",
+      "start": 2.1666666666666665,
+      "end": 6.5,
+      "start_frame": 13,
+      "end_frame_exclusive": 39,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/lighting-transfer-228-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/lighting/transfer-228/A-none/view/view.mp4",
+      "duration": 3.8333333333333335,
+      "poster": "visual-interaction-study-v1/media/lighting/transfer-228/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/transfer-228/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.8333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 23,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/lighting-exception-331-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/lighting/exception-331/A-none/view/view.mp4",
+      "duration": 3.8333333333333335,
+      "poster": "visual-interaction-study-v1/media/lighting/exception-331/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/lighting/exception-331/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 3.8333333333333335,
+      "start_frame": 0,
+      "end_frame_exclusive": 23,
+      "fps": 6
+    }
+  },
+  "continuous/cleaning-scent": {
+    "action": {
+      "file": "trial-clips/cleaning-scent-teach-136-B-none.webm",
+      "mp4": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-none/view/view.mp4",
+      "duration": 4.666666666666667,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-none/view/view.mp4",
+      "start": 0.0,
+      "end": 4.666666666666667,
+      "start_frame": 0,
+      "end_frame_exclusive": 28,
+      "fps": 6
+    },
+    "feedback": {
+      "file": "trial-clips/cleaning-scent-teach-136-B-change-feedback.webm",
+      "mp4": "trial-clips/cleaning-scent-teach-136-B-change-feedback.mp4",
+      "duration": 7.0,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-change/view/frame-00024.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/teach-136/B-change/view/view.mp4",
+      "start": 4.0,
+      "end": 11.0,
+      "start_frame": 24,
+      "end_frame_exclusive": 66,
+      "fps": 6
+    },
+    "transfer": {
+      "file": "trial-clips/cleaning-scent-transfer-239-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/cleaning-scent/transfer-239/A-none/view/view.mp4",
+      "duration": 15.333333333333334,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/transfer-239/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/transfer-239/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.333333333333334,
+      "start_frame": 0,
+      "end_frame_exclusive": 92,
+      "fps": 6
+    },
+    "control": {
+      "file": "trial-clips/cleaning-scent-exception-342-A-none.webm",
+      "mp4": "visual-interaction-study-v1/media/cleaning-scent/exception-342/A-none/view/view.mp4",
+      "duration": 15.666666666666666,
+      "poster": "visual-interaction-study-v1/media/cleaning-scent/exception-342/A-none/view/frame-00000.jpg",
+      "source": "visual-interaction-study-v1/media/cleaning-scent/exception-342/A-none/view/view.mp4",
+      "start": 0.0,
+      "end": 15.666666666666666,
+      "start_frame": 0,
+      "end_frame_exclusive": 94,
+      "fps": 6
+    }
+  }
+}

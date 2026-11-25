@@ -1,0 +1,11 @@
+{
+  "input_sha256": "85c6f19945045706b3b784e9fc65cc8a81baf6b8e03c814bdab14d5d167b47b1",
+  "session": "forced-85c6f19945045706b3b784e9fc65cc8a81baf6b8e03c814bdab14d5d167b47b1",
+  "thread": "run-0176",
+  "request": "sessions/forced-85c6f19945045706b3b784e9fc65cc8a81baf6b8e03c814bdab14d5d167b47b1/1795631112872557695-0457dfe3/request.json",
+  "result": "sessions/forced-85c6f19945045706b3b784e9fc65cc8a81baf6b8e03c814bdab14d5d167b47b1/1795631112872557695-0457dfe3/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The more tender green beans are easier to chew."
+  }
+}

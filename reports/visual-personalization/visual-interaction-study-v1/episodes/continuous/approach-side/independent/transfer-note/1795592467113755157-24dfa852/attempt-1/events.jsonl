@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0183"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The person's left hand is free and close enough to take the cloth.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12412,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":42,"reasoning_output_tokens":14}}

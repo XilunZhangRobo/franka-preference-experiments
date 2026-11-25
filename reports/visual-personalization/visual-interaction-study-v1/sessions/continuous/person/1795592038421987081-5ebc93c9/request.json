@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "For future handmade cards, would you like me to leave decorations beside the card for you to place?",
+    "task": "Help prepare the handmade card.",
+    "private_brief": "I like to do the finishing touches on personal gifts myself. Routine lunches for tomorrow should be packed completely."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}

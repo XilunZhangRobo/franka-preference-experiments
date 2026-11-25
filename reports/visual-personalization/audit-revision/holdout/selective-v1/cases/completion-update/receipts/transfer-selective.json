@@ -1,0 +1,12 @@
+{
+  "input_sha256": "87b4dfc874f0ef958b1d01031c839f131cb1f3ed8a895fa2c54905cdeb4afef0",
+  "session": "transfer-selective",
+  "thread": "run-0151",
+  "request": "sessions/transfer-selective/1795631152410074175-29baf2e3/request.json",
+  "result": "sessions/transfer-selective/1795631152410074175-29baf2e3/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Waiting for a clearer pause fits this low-priority update because setting the pencil down alone is a weak cue.",
+    "question": ""
+  }
+}

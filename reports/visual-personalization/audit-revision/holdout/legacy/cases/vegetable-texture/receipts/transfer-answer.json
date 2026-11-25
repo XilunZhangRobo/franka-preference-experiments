@@ -1,0 +1,10 @@
+{
+  "input_sha256": "d97e582f68736c941b2695240ef2b8618d7fdf654edbadc86fef53c5e93c98dc",
+  "session": "transfer-person",
+  "thread": "run-0138",
+  "request": "sessions/transfer-person/1795631245582440530-cd0da3a4/request.json",
+  "result": "sessions/transfer-person/1795631245582440530-cd0da3a4/attempt-1/result.json",
+  "reply": {
+    "answer": "I’d like them more tender, please."
+  }
+}

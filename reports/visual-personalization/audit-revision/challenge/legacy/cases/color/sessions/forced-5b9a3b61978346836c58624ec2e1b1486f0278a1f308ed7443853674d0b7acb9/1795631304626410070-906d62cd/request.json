@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "For this piece, please use the amber tray.",
+    "options": {
+      "A": "Put the piece in the teal tray.",
+      "B": "Put the piece in the amber tray."
+    },
+    "memory": "# Teal tray for finished pieces\n\nThe person chose the teal tray for this piece and confirmed it as the default for future finished pieces. Use a different tray when they request one for a particular piece.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "d224d4661b3bf5fece040bc647b3237902c7f03599ad1d5f20be252c28f9ab8c"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

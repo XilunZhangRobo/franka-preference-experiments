@@ -1,0 +1,12 @@
+{
+  "input_sha256": "8ba0d7481c68fc030307d93476d97099094393d3aa580909f87349fe7242b3ff",
+  "thread": "run-0192",
+  "request": "episodes/continuous/completion-update/independent/transfer-cold/1795592634698053147-71e22f45/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The delivery update can wait until the person pauses drawing."
+  },
+  "images": [
+    "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+  ]
+}

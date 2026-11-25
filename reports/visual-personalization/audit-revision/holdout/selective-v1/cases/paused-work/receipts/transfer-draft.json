@@ -1,0 +1,11 @@
+{
+  "input_sha256": "f6090ea3370e76d66b6360ccdd5a30848bd17c98331963571d0fed05197c61d3",
+  "session": "forced-f6090ea3370e76d66b6360ccdd5a30848bd17c98331963571d0fed05197c61d3",
+  "thread": "run-0164",
+  "request": "sessions/forced-f6090ea3370e76d66b6360ccdd5a30848bd17c98331963571d0fed05197c61d3/1795631180485025137-1a70bf6a/request.json",
+  "result": "sessions/forced-f6090ea3370e76d66b6360ccdd5a30848bd17c98331963571d0fed05197c61d3/1795631180485025137-1a70bf6a/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Shelving the teal mat clears space at the front while keeping the scissors within reach."
+  }
+}

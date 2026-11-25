@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Set out the red base and yellow cap for assembly.",
+    "options": {
+      "A": "Set the red base on the person's left and the cap on their right.",
+      "B": "Set the red base on the person's right and the cap on their left."
+    },
+    "written_library": {}
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "3f7ca9bdeb9f408761fabf181b37f92ae1869e6cc123a9f391aac12af2c00a09"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "6275382edbb3eac5e1275ef11ef4c25ac3893bd92741eba76503023e80537256",
+  "thread": "run-0239",
+  "request": "episodes/contrast/private-storage/independent/transfer-note/1795591756072756555-1d3af791/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The open tray keeps your pen case easy to find and grab tomorrow."
+  },
+  "images": [
+    "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+  ]
+}

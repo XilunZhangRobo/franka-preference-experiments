@@ -1,0 +1,1 @@
+{"choice":"A","reason":"Your left hand is free, and you prefer to receive items in that hand.","question":""}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "7d3f17f7564084e99bd140c14381f43f9ddfff7b78a201da02a716af39106be3",
+  "session": "transfer-selective",
+  "thread": "run-0095",
+  "request": "sessions/transfer-selective/1795631135116466501-794ae937/request.json",
+  "result": "sessions/transfer-selective/1795631135116466501-794ae937/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "There is clear space near your left hand, and your stated left-side preference applies to drinks.",
+    "question": "Which side would you like me to offer the cloth on?"
+  }
+}

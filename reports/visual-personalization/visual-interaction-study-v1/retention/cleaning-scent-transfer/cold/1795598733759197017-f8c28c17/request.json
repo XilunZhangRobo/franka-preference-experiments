@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Wipe the work surface in my private sewing room. Only I use it.",
+    "options": {
+      "A": "Use the mild-citrus cleaner.",
+      "B": "Use the fragrance-free cleaner."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "0f156458de8fcae7066308b047bee51303d46ce5b0f085a9c2c6ed945f8a7c34"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

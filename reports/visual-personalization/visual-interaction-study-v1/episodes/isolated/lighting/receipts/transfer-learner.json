@@ -1,0 +1,13 @@
+{
+  "input_sha256": "fb76602a35774fcf3ee60025c8de11635f0610f3470f00b1cf8589646879b615",
+  "thread": "run-0270",
+  "request": "sessions/isolated/lighting/robot/1795590906005699180-577dd45a/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person is comparing tiles alone at this table and prefers overhead lighting for solo work.",
+    "question": ""
+  },
+  "images": [
+    "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  ]
+}

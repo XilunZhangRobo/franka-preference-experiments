@@ -1,0 +1,11 @@
+{
+  "input_sha256": "d64c552bf93b2eacc057764b736c3f7c8081799f425327e11a9087f81f256e4f",
+  "session": "forced-d64c552bf93b2eacc057764b736c3f7c8081799f425327e11a9087f81f256e4f",
+  "thread": "run-0150",
+  "request": "sessions/forced-d64c552bf93b2eacc057764b736c3f7c8081799f425327e11a9087f81f256e4f/1795631148379073014-2b3cb8d0/request.json",
+  "result": "sessions/forced-d64c552bf93b2eacc057764b736c3f7c8081799f425327e11a9087f81f256e4f/1795631148379073014-2b3cb8d0/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The delivery update can wait for a clearer pause because setting the pencil down is only a weak cue."
+  }
+}

@@ -1,0 +1,1 @@
+{"choice":"B","reason":"A left-to-right row follows the requested order and is consistent with the person’s base-first setup."}

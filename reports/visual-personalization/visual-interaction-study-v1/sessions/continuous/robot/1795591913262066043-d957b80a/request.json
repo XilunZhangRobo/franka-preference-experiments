@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Help prepare the handmade card.",
+    "options": {
+      "A": "Set the flower beside the card.",
+      "B": "Bring the flower over the card to attach it."
+    },
+    "written_library": {
+      "01": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n"
+    }
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "abb3a986d4088549caad73a2a78b1cf5129c2ad7b273919e25d423d4b740e837"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0147"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\n  \"observation\": \"The person set the pencil down. The robot reached toward the blue device, which said “Work is complete.” Later, the person reached for the device and the same message played again.\",\n  \"interpretation\": \"Reaching for the device may mean the person prefers to hear routine updates when they choose. They may also have just wanted a replay.\",\n  \"title\": \"Keep routine updates available on demand\",\n  \"note\": \"For a similar low-priority update, leave it available for the person to play. Setting the pencil down alone is a weak cue that they want a spoken update.\",\n  \"question\": \"\"\n}"}}
+{"type":"turn.completed","usage":{"input_tokens":19027,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":137,"reasoning_output_tokens":0}}

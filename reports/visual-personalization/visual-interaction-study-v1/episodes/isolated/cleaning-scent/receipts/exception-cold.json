@@ -1,0 +1,12 @@
+{
+  "input_sha256": "324a9ecaebb2a60c50ada51855b36f36d7129a05f061a043bc17cd7f6af6eb1c",
+  "thread": "run-0254",
+  "request": "episodes/isolated/cleaning-scent/independent/exception-cold/1795591253556183129-820a72c6/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The fragrance-free cleaner avoids adding a scent that might bother guests."
+  },
+  "images": [
+    "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+  ]
+}

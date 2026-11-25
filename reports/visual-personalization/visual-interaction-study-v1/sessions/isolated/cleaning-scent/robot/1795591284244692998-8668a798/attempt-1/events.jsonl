@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0252"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Cleaners for sewing, crafts, and kitchen counters\",\"note\":\"Use mild citrus on your private sewing surface. When guests are expected, use fragrance-free cleaner on the kitchen counter and shared craft worktop. You chose mild citrus once for the kitchen counter while home alone. Your kitchen counter preference when someone else is home and no guests are expected is unspecified.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":176857,"cached_input_tokens":160384,"cache_write_input_tokens":0,"output_tokens":448,"reasoning_output_tokens":0}}

@@ -1,0 +1,7 @@
+{
+  "observation": "You returned the broccoli I served to its tray and put a floret from the other tray on your plate.",
+  "interpretation": "Your swap suggests you preferred firmer broccoli with this dinner.",
+  "title": "Broccoli texture",
+  "note": "You chose the firmer broccoli when offered both batches at dinner.",
+  "question": "Should I choose firmer broccoli for you at future meals?"
+}

@@ -1,0 +1,9 @@
+{
+  "input_sha256": "838cee881a51360e1f032759276e3713339b725ffd7e7d0e48cfb7541485dbb8",
+  "thread": "run-0265",
+  "request": "sessions/isolated/gift-finishing/person/1795590254820424150-a5dcfb0e/request.json",
+  "reply": {
+    "answer": "For personal gifts, yes, please hand me the decorations so I can add the finishing touches myself."
+  },
+  "images": []
+}

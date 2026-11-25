@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0265"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"I’d like to arrange the tissue and gift myself.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":44208,"cached_input_tokens":36992,"cache_write_input_tokens":0,"output_tokens":56,"reasoning_output_tokens":0}}

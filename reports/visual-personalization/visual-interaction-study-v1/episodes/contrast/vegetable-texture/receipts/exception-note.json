@@ -1,0 +1,12 @@
+{
+  "input_sha256": "bf1eb289208047c2c4299730d4cd422529796b715a3ef674f4e0ccb3dd4400fb",
+  "thread": "run-0243",
+  "request": "episodes/contrast/vegetable-texture/independent/exception-note/1795591702827395571-63c826de/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer green beans will keep a little crunch in the chilled salad."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

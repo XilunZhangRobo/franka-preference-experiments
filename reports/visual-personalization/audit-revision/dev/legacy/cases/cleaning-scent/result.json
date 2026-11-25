@@ -1,0 +1,140 @@
+{
+  "case_id": "cleaning-scent",
+  "identity_sha256": "0f86da519c4d31efa43b35c1281eba902b99c1641f01b1962fa11483e734a65a",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I set out the blue fragrance-free cleaner. You put it back on the tray and placed the orange bottle beside the cloth.",
+    "interpretation": "You appeared to prefer the orange cleaner for this task. I couldn't tell whether being home alone mattered.",
+    "title": "Kitchen counter cleaner",
+    "note": "You chose the orange cleaner for the kitchen counter on an occasion when you were home alone.",
+    "question": "For future kitchen counter cleanups, when would you like me to set out the orange cleaner?"
+  },
+  "draft_note": "# Kitchen counter cleaner\n\nYou chose the orange cleaner for the kitchen counter on an occasion when you were home alone.\n",
+  "audit_question": "For future kitchen counter cleanups, when would you like me to set out the orange cleaner?",
+  "audit_answer": "Set out the orange cleaner when I’m using the kitchen privately and no guests are coming.",
+  "refined_reply": {
+    "title": "Orange cleaner for kitchen counters",
+    "note": "Set out the orange cleaner for kitchen counter cleanup when I’m using the kitchen privately and no guests are coming. I chose it once while home alone. My preference for other situations is unspecified."
+  },
+  "post_answer_note": "# Orange cleaner for kitchen counters\n\nSet out the orange cleaner for kitchen counter cleanup when I’m using the kitchen privately and no guests are coming. I chose it once while home alone. My preference for other situations is unspecified.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 1,
+      "losses": 0,
+      "net": 1
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "Fragrance-free is a neutral choice because your earlier orange-cleaner choice was for the kitchen."
+        },
+        "correct": false,
+        "input_sha256": "546951bb29bbc2682546b066202bf522e5c01d3beeec84b14615f80d1f40a7d4",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "Your citrus preference is specific to kitchen counters, so I’ll use the fragrance-free cleaner in your sewing room."
+        },
+        "correct": false,
+        "input_sha256": "c5f74fc65ca4d47e774d1f73f76876499f459e2aff9a27cdf9d685ca47a0dff6",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Your citrus preference is specific to the kitchen.",
+          "question": "Which cleaner do you prefer for the sewing table?"
+        },
+        "question": "Which cleaner do you prefer for the sewing table?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "I prefer the mild citrus cleaner for my sewing table.",
+        "final": {
+          "choice": "A",
+          "reason": "You prefer the mild-citrus cleaner for your sewing table."
+        },
+        "before_correct": false,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 1
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The fragrance-free cleaner avoids adding a scent when the guests’ preferences are unknown."
+        },
+        "correct": true,
+        "input_sha256": "93c54c7999585b5d0743c70f2b5fa672e107de56e4acef72e84fee02f3034b32",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop before guests arrive."
+        },
+        "correct": true,
+        "input_sha256": "d1f4e072c573aed1c2bb2f8ff1cc1b6392578cd43042836c318de9b9c4263e6f",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop before guests arrive.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop before guests arrive.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

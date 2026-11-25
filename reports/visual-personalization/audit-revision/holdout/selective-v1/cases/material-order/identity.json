@@ -1,0 +1,88 @@
+{
+  "protocol_version": 1,
+  "branch_selective": false,
+  "shared_selective_receipt_hashes": {},
+  "case_id": "material-order",
+  "model": "gpt-6.2-astra",
+  "prompts": {
+    "audit": "Review the camera interaction. What happened? What preference might explain it? Separate the visible evidence from your inference. Use context and ordinary judgment to write a short rule for a future choice, if the evidence supports one. Keep meaningful uncertainty in the note. Leave the person uninterrupted when you can proceed. Ask one brief question only when plausible readings still call for different actions and choosing poorly would matter. Return JSON with short string fields observation, interpretation, title, note and question. Leave unwarranted fields empty.",
+    "refine": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+    "decide": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+    "selective": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+    "answer": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}."
+  },
+  "seed_metadata": "holdout",
+  "quiet": false,
+  "private_brief": "For my own assembly work I use the first component on my right, then work left. When a group shares supplies, put them in the common tray.",
+  "audit_context": {
+    "task": "Set out the red base and yellow cap for assembly.",
+    "your_action": "Set the red base on the person's right and the cap on their left.",
+    "seconds": [
+      0.0,
+      0.6667,
+      1.3333,
+      2.0,
+      2.6667,
+      3.3333,
+      4.0,
+      4.6667,
+      5.0,
+      5.6667,
+      6.3333,
+      7.0,
+      7.6667,
+      8.3333,
+      9.0,
+      9.6667
+    ],
+    "heard": [],
+    "choice_reason": "The red base is already on the person’s right and the yellow cap is on their left."
+  },
+  "audit_image_hashes": [
+    "3f7ca9bdeb9f408761fabf181b37f92ae1869e6cc123a9f391aac12af2c00a09",
+    "f636850797b5d89036cab2ba65374332a2ca00aea7784d5efc4400e4ad8938c6",
+    "26a6507effc71a5be7cf5b4d7e29c0717fea094059a0dbb91f6ba1871ea1892e",
+    "ea01c2801ef83adbea41cea992f784dd35da5115d0cbb7bab4173b40bd1fb929",
+    "28e7458f49c905c95df8a72486bebf040047c40dd73fa091ff6e1565e5480f32",
+    "3b01b3954230ffa66f47fa98b7fb8a86503aa25a3f4178833f54d11b978d25b9",
+    "24c07f91ab78ff214d0a029843c74b534c26eef5f93b7de17b9afb9b736a0d91",
+    "d2e64e60a637cf12f6e79983b94372243e9c3b5a0289218b5f0760733c38c849",
+    "4b81e9efd19a1b64626c37c4ece18e17102c4c3d0801dff238c2846fe53fca93",
+    "16430c85f6e9d91709cc5747f92a1c7f18a51ee49a49beed1768368ad81ef88c",
+    "33414d3a0b7b2093a14460f6242af60d3be3aaf1b39d7913230e5020b7334c60",
+    "1b7931f3f79a287cf98d29f849071191e037285829f2d16640f46e390139b4d6",
+    "af5b57d5677d2b9a811cdb6867ed062748e59b3830e4610b70b321fa98e1b6b4",
+    "33d388b17761e01f16c618657b0f122b8a32e3a0b14dee4963b7e387d6ad6874",
+    "4d1c660a61bab461b7ae5595b98769e89611f5c46173e4ae661bdffbd8a9231b",
+    "22c324eefb85c4c596015afea423f658c84b6667df1c0b5d39dbfa9f94d8c778"
+  ],
+  "probes": {
+    "transfer": {
+      "public": {
+        "task": "Set out a row for the seated person to use the pot, scoop, then tag.",
+        "options": {
+          "A": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+          "B": "Place the pot at the person's left, scoop in the middle, and tag at their right."
+        }
+      },
+      "image_hashes": [
+        "277e4f9ea6e913ab7407bd8f8ed3f929f9370ece30a9a6689864a1409392ea02"
+      ],
+      "expected": "A"
+    },
+    "control": {
+      "public": {
+        "task": "Put out the markers for four people sharing the table.",
+        "options": {
+          "A": "Put the markers together in the central tray.",
+          "B": "Lay the markers in a row in front of the seated person."
+        }
+      },
+      "image_hashes": [
+        "b7502ecc2393f874c334c193ec133c40074acd9988f6b7e7cda0462a0216f32c"
+      ],
+      "expected": "A"
+    }
+  },
+  "shared_draft_receipt_sha256": null
+}

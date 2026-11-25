@@ -1,0 +1,12 @@
+{
+  "input_sha256": "28e223bf7a5f3170b96db1f5da17c84e625f5ce69642fc8055773e8b62ea326a",
+  "thread": "run-0270",
+  "request": "sessions/isolated/lighting/robot/1795590459851939976-684c810b/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The desk lamp will shine directly on the puzzle pieces."
+  },
+  "images": [
+    "media/lighting/teach-125/initial-none/view/frame-00000.jpg"
+  ]
+}

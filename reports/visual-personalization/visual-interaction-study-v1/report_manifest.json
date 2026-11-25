@@ -1,0 +1,3192 @@
+{
+  "episodes": [
+    {
+      "mode": "isolated",
+      "scenario": "paused-work",
+      "title": "Paused Work",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Clear a spot on my workbench.",
+          "image": "media/paused-work/teach-37/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Shelve the rust mat. Shelving the rust mat clears a spot while leaving the busier teal mat in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/paused-work/teach-37/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.3333, 3.6667, 4.0, 4.3333, 4.6667, 5.3333, 5.6667, 6.0",
+          "clip": "media/paused-work/teach-37/A-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I shelved the rust mat, you pointed at it and then toward the cleared spot on the bench. You may have wanted me to put the rust mat back so you could keep using it."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "When I clear space in the future, should I usually leave the rust mat on the bench, or did you need it there just this time?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Leave the rust mat on the bench when I’ve clipped it."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Keep the clipped rust mat on the workbench\n\nWhen clearing space, leave the rust mat on the bench if you’ve clipped it. You confirmed this rule after pointing from the shelved mat toward the bench. Your preference for an unclipped rust mat is unknown.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Make room for the cutting board on my sewing counter.",
+          "image": "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Shelve the teal mat. Shelving the teal mat clears space at the front of the counter for the cutting board."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Shelve the teal mat. Shelving the teal mat makes room for the cutting board while keeping the clipped rust mat on the bench."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Shelve the teal mat. Shelving the teal mat makes room for the cutting board and leaves the clipped rust mat in place.",
+          "clip": "media/paused-work/transfer-140/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Free a bench spot for a new project.",
+          "image": "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit clears a spot while keeping its contents together."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit frees a spot and leaves the rust mat in place."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Which would you like to keep on the bench for the new project?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Please keep the rust mat on the bench."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Keeping the rust mat on the bench\n\nWhen clearing space, keep the clipped rust mat on the bench. You also asked to keep the unclipped rust mat for this project. Whether that preference applies to future projects is unclear.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit frees a spot and keeps the rust mat on the bench as requested.",
+          "clip": "media/paused-work/exception-243/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/paused-work/transcript.json",
+      "robot_thread": "run-0282",
+      "person_thread": "run-0283",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/paused-work/calls.json",
+        "Visual-only draft": "episodes/isolated/paused-work/visual-only.md",
+        "Note at first probe": "episodes/isolated/paused-work/memory.md",
+        "Final note": "episodes/isolated/paused-work/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "gift-finishing",
+      "title": "Gift Finishing",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Help prepare the handmade card.",
+          "image": "media/gift-finishing/teach-48/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Bring the flower over the card to attach it. The drawn stem on the card gives the flower a place to go."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/gift-finishing/teach-48/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Take the flower and put the finishing touch on the card yourself."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 1.6667, 2.3333, 2.6667, 3.0, 3.6667, 4.0, 4.3333, 5.0, 5.3333, 5.6667, 6.3333, 6.6667",
+          "clip": "media/gift-finishing/teach-48/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "You took the flower from my gripper and pressed it onto the drawn stem. You may have wanted to choose its exact position yourself."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "For future craft projects, would you like me to hand you decorations so you can place them yourself?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "For personal gifts, yes, please hand me the decorations so I can add the finishing touches myself."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Decoration handoffs for personal gifts\n\nFor personal gifts, hand me the decorations so I can add the finishing touches myself, as I did with the flower on the handmade card. My preference for other craft projects is unknown.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Help get the gift box ready.",
+          "image": "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Arrange the tissue and gift inside and close the box. Placing the tissue and gift inside and closing the box makes it ready to give."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Open the box and set the tissue and gift alongside it. Opening the box and setting the tissue and gift beside it lets you add the finishing touches yourself."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I’d like to arrange the tissue and gift myself."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Personal gift decorations and box packing\n\nFor personal gifts, hand me the decorations so I can place them myself, as I did with the card’s flower. For this gift box, set the tissue and gift beside the open box so I can arrange them. My preference for other boxes or craft projects is unknown.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Open the box and set the tissue and gift alongside it. Opening the box and setting the tissue and gift beside it lets you arrange them yourself.",
+          "clip": "media/gift-finishing/transfer-151/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Prepare the labeled lunches for tomorrow morning.",
+          "image": "media/gift-finishing/exception-254/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Put a portion in each box and close each lid. The boxes, portions, and labeled lids are already set out, so packing and closing each box will finish the lunches."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Put a portion in each box and close each lid. Packing each portion and closing its labeled box gets both lunches ready for tomorrow morning."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Put a portion in each box and close each lid. Putting a portion in each labeled box and closing its lid gets both lunches ready for tomorrow.",
+          "clip": "media/gift-finishing/exception-254/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/gift-finishing/transcript.json",
+      "robot_thread": "run-0264",
+      "person_thread": "run-0265",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/gift-finishing/calls.json",
+        "Visual-only draft": "episodes/isolated/gift-finishing/visual-only.md",
+        "Note at first probe": "episodes/isolated/gift-finishing/memory.md",
+        "Final note": "episodes/isolated/gift-finishing/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "receiving-hand",
+      "title": "Receiving Hand",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Hand me the flashlight.",
+          "image": "media/receiving-hand/teach-59/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Offer it to the person's right hand. The person's right hand is closer to the flashlight."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/receiving-hand/teach-59/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Take the flashlight in the offered hand, then pass it to your left hand."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.0, 1.6667, 2.0, 2.6667, 3.3333, 3.6667, 4.3333, 4.6667, 5.3333, 6.0, 6.3333, 7.0, 7.3333, 8.0",
+          "clip": "media/receiving-hand/teach-59/A-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "You took the flashlight with your right hand, then moved it to your left. Offering it to your left hand may have saved you a hand switch."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you prefer left-hand handoffs for flashlights, for other items too, or does it depend?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I prefer my left hand for flashlights and other items, but use my right if my left is busy."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Left-hand preference for handoffs\n\nOffer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Pass me the remote.",
+          "image": "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Offer it to the person's right hand. The person's right hand is closer to the remote."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Offer it to the person's left hand. Their left hand is free, and they prefer to receive items with it."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Offer it to the person's left hand. Your left hand is free, and you prefer to receive items with it.",
+          "clip": "media/receiving-hand/transfer-162/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Pass me the remote.",
+          "image": "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Offer it to the person's right hand. The person's right hand is free while their left hand rests on a cloth."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Offer it to the person's right hand. Their left hand is on the sponge, so their right hand is free to take the remote."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Offer it to the person's right hand. Your left hand is occupied, so I’ll offer the remote to your right hand as you prefer.",
+          "clip": "media/receiving-hand/exception-265/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/receiving-hand/transcript.json",
+      "robot_thread": "run-0294",
+      "person_thread": "run-0295",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/receiving-hand/calls.json",
+        "Visual-only draft": "episodes/isolated/receiving-hand/visual-only.md",
+        "Note at first probe": "episodes/isolated/receiving-hand/memory.md",
+        "Final note": "episodes/isolated/receiving-hand/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "material-order",
+      "title": "Material Order",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Set out the red base and yellow cap for assembly.",
+          "image": "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set the red base on the person's right and the cap on their left. The red base is already on the person’s right and the yellow cap is on their left."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/material-order/teach-70/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 2.6667, 3.3333, 4.0, 4.6667, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.3333, 9.0, 9.6667",
+          "clip": "media/material-order/teach-70/B-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person touched the red base with their right index finger and withdrew their hand. Both parts stayed in place. They may have been indicating or checking the base. The gesture alone leaves their preferred layout unclear."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "(No preference note written.)"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Set out a row for the seated person to use the pot, scoop, then tag.",
+          "image": "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. From the seated person’s left to right, the row will read pot, scoop, then tag."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. The seated person can use the pot, scoop, and tag in order from left to right."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the row to start with the pot on your right or your left?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Start with the pot on my right, please."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Pot, scoop, and tag row\n\nFor this setup, place the pot on the person’s right, the scoop in the middle, and the tag on their left. They explicitly asked to start with the pot on their right. Their preference for other tasks is unknown.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Place the pot at the person's right, scoop in the middle, and tag at their left. You asked to start with the pot on your right, followed by the scoop in the middle and the tag on your left.",
+          "clip": "media/material-order/transfer-173/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Put out the markers for four people sharing the table.",
+          "image": "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Put the markers together in the central tray. The central tray gives all four people easy access to the markers."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people.",
+          "clip": "media/material-order/exception-276/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/material-order/transcript.json",
+      "robot_thread": "run-0276",
+      "person_thread": "run-0277",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/material-order/calls.json",
+        "Visual-only draft": "episodes/isolated/material-order/visual-only.md",
+        "Note at first probe": "episodes/isolated/material-order/memory.md",
+        "Final note": "episodes/isolated/material-order/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "approach-side",
+      "title": "Approach Side",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Bring me my drink.",
+          "image": "media/approach-side/teach-81/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Present it in the person's right-front quarter. The cup is closer to the person’s right hand, so they can reach it easily."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/approach-side/teach-81/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point to your left-front quarter for the drink."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.0, 1.6667, 2.0, 2.3333, 2.6667, 3.0, 3.3333, 3.6667, 4.0, 4.6667, 5.0, 5.3333, 5.6667",
+          "clip": "media/approach-side/teach-81/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "When I offered the cup on the person’s right, they pointed at the table with their left hand, and I moved the cup toward that spot. They seemed to want the drink closer to their left hand."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you prefer that I offer other items on your left, too?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, please offer other items in front of my left shoulder when there’s room, or on my right if a shelf blocks my left."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Drink and item handoff placement\n\nOffer drinks and other items in front of the person’s left shoulder when there’s room. If a shelf blocks that spot, offer the item on their right. They pointed left during the drink handoff and confirmed this preference afterward.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Bring me the folded cloth.",
+          "image": "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Present it in the person's left-front quarter. The person’s left hand is near the table edge with room to receive the cloth."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Present it in the person's left-front quarter. There’s room to offer the folded cloth in front of their left shoulder, where they prefer it."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Present it in the person's left-front quarter. There’s room in front of the person’s left shoulder, where they prefer to receive items.",
+          "clip": "media/approach-side/transfer-184/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Bring me the folded cloth.",
+          "image": "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Present it in the person's right-front quarter. The person’s right hand is near the folded cloth and has a clear path to receive it."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Present it in the person's right-front quarter. The shelf blocks the preferred left-front spot, so I’ll offer the cloth on the person’s right."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Present it in the person's right-front quarter. The shelf blocks the left-front spot, so I’ll offer the cloth on the person’s right as requested.",
+          "clip": "media/approach-side/exception-287/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/approach-side/transcript.json",
+      "robot_thread": "run-0246",
+      "person_thread": "run-0247",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/approach-side/calls.json",
+        "Visual-only draft": "episodes/isolated/approach-side/visual-only.md",
+        "Note at first probe": "episodes/isolated/approach-side/memory.md",
+        "Final note": "episodes/isolated/approach-side/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "completion-update",
+      "title": "Completion Update",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "The bin is full. Give the person a low-priority completion update.",
+          "image": "media/completion-update/teach-92/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Give the spoken update at the person's next pause. The person appears focused, and the update can wait until their next pause."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/completion-update/teach-92/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Demonstrate the timing: resume writing and tap the announcement button before putting the pencil down."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 1.3333, 2.6667, 4.3333, 5.6667, 7.0, 8.3333, 8.8333, 9.3333, 11.0, 12.3333, 13.6667, 15.0, 16.3333, 16.5, 17.6667, 19.0, 20.3333",
+          "clip": "media/completion-update/teach-92/B-change/view/view.mp4"
+        },
+        {
+          "role": "device",
+          "channel": "simulated utterance",
+          "text": "Work is complete.",
+          "time": 8.8333
+        },
+        {
+          "role": "device",
+          "channel": "simulated utterance",
+          "text": "Work is complete.",
+          "time": 16.5
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person set the pencil aside before the first update, then touched the blue device and heard the same update again. They may have wanted to replay the update when they were ready to listen."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "For future routine updates, would you prefer to hear them at a pause or only when you tap the device?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Tell me right away when I’m working alone, but wait until my video call ends if I’m on one."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Routine update timing during solo work and video calls\n\nThe person asked to hear routine updates right away when working alone. If they’re on a video call, wait until the call ends. They tapped the device once to hear an update again, but their replay preference is unclear.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "The delivery is complete while the person draws alone. Give a low-priority update.",
+          "image": "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Give the spoken update at the person's next pause. The delivery update can wait until the person pauses drawing."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Give a brief spoken update now. The person asked for routine updates right away when working alone."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Give a brief spoken update now. The person is drawing alone and asked to hear routine updates right away during solo work.",
+          "clip": "media/completion-update/transfer-195/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+          "image": "media/completion-update/exception-298/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Give the spoken update at the person's next pause. The update can wait until the person pauses so it won’t interrupt the call."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Give the spoken update at the person's next pause. Waiting is closer to their preference to hear routine updates after the call ends."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Give the spoken update at the person's next pause. The person asked to hear routine updates after the video call ends.",
+          "clip": "media/completion-update/exception-298/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/completion-update/transcript.json",
+      "robot_thread": "run-0258",
+      "person_thread": "run-0259",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/completion-update/calls.json",
+        "Visual-only draft": "episodes/isolated/completion-update/visual-only.md",
+        "Note at first probe": "episodes/isolated/completion-update/memory.md",
+        "Final note": "episodes/isolated/completion-update/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "vegetable-texture",
+      "title": "Vegetable Texture",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Serve cooked broccoli alongside the warm dinner.",
+          "image": "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Serve the more tender batch. The more tender broccoli should be easier to chew alongside the warm dinner."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/vegetable-texture/teach-103/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.3333, 3.6667, 4.0, 4.3333, 4.6667, 5.3333, 5.6667, 6.0",
+          "clip": "media/vegetable-texture/teach-103/B-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I served the tender broccoli, the person briefly touched the food on the plate with a fingertip. They may have been checking temperature or texture. The gesture alone gives no clear preference."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "What were you checking when you touched the food?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I was checking whether the broccoli was tender."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Broccoli tenderness\n\nCheck tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Prepare cooked green beans for the warm side dish.",
+          "image": "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Serve the more tender batch. The more tender beans are a good fit for a warm, cooked side dish."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Serve the firmer batch. Firmer cooked green beans will keep some bite when served warm."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you prefer the firmer or more tender green beans?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I'd prefer the more tender green beans."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Green bean and broccoli tenderness\n\nChoose the more tender green beans for a warm side dish, as the person requested. They also checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Serve the more tender batch. You asked for the more tender green beans.",
+          "clip": "media/vegetable-texture/transfer-206/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Prepare cooked green beans for the chilled salad.",
+          "image": "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Serve the firmer batch. Firmer cooked green beans hold their shape and add a crisp bite to the chilled salad."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Serve the firmer batch. The firmer cooked beans will hold their shape when tossed in the chilled salad."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the more tender green beans or the firmer ones for the chilled salad?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I'd like the firmer green beans for the chilled salad."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Green bean and broccoli tenderness\n\nServe more tender green beans for a warm side dish and firmer green beans for a chilled salad, as requested. The person checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Serve the firmer batch. You asked for the firmer green beans for the chilled salad.",
+          "clip": "media/vegetable-texture/exception-309/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": false,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/vegetable-texture/transcript.json",
+      "robot_thread": "run-0300",
+      "person_thread": "run-0301",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/vegetable-texture/calls.json",
+        "Visual-only draft": "episodes/isolated/vegetable-texture/visual-only.md",
+        "Note at first probe": "episodes/isolated/vegetable-texture/memory.md",
+        "Final note": "episodes/isolated/vegetable-texture/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "private-storage",
+      "title": "Private Storage",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Put the house keys and flashlight away after use in the entryway.",
+          "image": "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Place the items in the shallow compartment and close it. Closing the compartment keeps the keys and flashlight together and off the tabletop."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/private-storage/teach-114/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 1.0, 2.3333, 3.3333, 4.3333, 5.6667, 6.6667, 7.6667, 9.0, 10.0, 11.0, 12.3333, 13.3333, 14.3333, 15.6667, 16.6667",
+          "clip": "media/private-storage/teach-114/A-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person steadied the lid while I put the keys and flashlight inside, then pointed at the compartment after I closed it. The gesture may have confirmed the storage spot, though the person said nothing."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I use this compartment as the usual spot for the keys and flashlight?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, keep my keys and flashlight in the closed compartment between uses."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Entryway keys and flashlight\n\nThe person confirmed that their house keys and flashlight belong in the shallow entryway compartment between uses. Close it after putting them away.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+          "image": "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case visible and easy to grab tomorrow."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to see and grab tomorrow."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case visible and easy to grab tomorrow.",
+          "clip": "media/private-storage/transfer-217/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+          "image": "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the first craft step."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the first craft step."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the group’s first craft step.",
+          "clip": "media/private-storage/exception-320/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": false,
+        "transfer_learner": false,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/private-storage/transcript.json",
+      "robot_thread": "run-0288",
+      "person_thread": "run-0289",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/private-storage/calls.json",
+        "Visual-only draft": "episodes/isolated/private-storage/visual-only.md",
+        "Note at first probe": "episodes/isolated/private-storage/memory.md",
+        "Final note": "episodes/isolated/private-storage/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "lighting",
+      "title": "Lighting",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Turn on a light for the person working on a puzzle.",
+          "image": "media/lighting/teach-125/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Turn on the desk lamp. The desk lamp will shine directly on the puzzle pieces."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/lighting/teach-125/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Switch the selected light off and switch on the other light."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 1.6667, 2.0, 2.6667, 3.0, 3.3333, 3.6667, 4.3333, 4.6667, 5.0, 5.3333, 6.0, 6.3333",
+          "clip": "media/lighting/teach-125/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I turned on the desk lamp, the person switched it off and used the other switch, brightening the room. They seemed to prefer overhead lighting for this puzzle."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Do you also prefer the overhead light for other tasks at this table?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, when I work alone, but during a projected presentation I prefer just the desk lamp."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Table lighting for solo work and presentations\n\nUse the overhead light for solo work at this table, including puzzles. During projected presentations, use only the desk lamp. The person confirmed both preferences. Lighting for other group activities is unspecified.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Turn on a light for the person comparing ceramic tile patterns.",
+          "image": "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Turn on the desk lamp. The desk lamp can shine directly on the tile samples so the person can compare their patterns."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Turn on the overhead fixture. The person is comparing tiles alone and prefers the overhead light for solo work at this table."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Turn on the overhead fixture. The person is comparing tiles alone at this table and prefers overhead lighting for solo work.",
+          "clip": "media/lighting/transfer-228/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+          "image": "media/lighting/exception-331/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim, as the person prefers during slide shows.",
+          "clip": "media/lighting/exception-331/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/lighting/transcript.json",
+      "robot_thread": "run-0270",
+      "person_thread": "run-0271",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/lighting/calls.json",
+        "Visual-only draft": "episodes/isolated/lighting/visual-only.md",
+        "Note at first probe": "episodes/isolated/lighting/memory.md",
+        "Final note": "episodes/isolated/lighting/final-note.md"
+      }
+    },
+    {
+      "mode": "isolated",
+      "scenario": "cleaning-scent",
+      "title": "Cleaning Scent",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Set out a cleaner so I can wipe my kitchen counter. I am home alone.",
+          "image": "media/cleaning-scent/teach-136/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set out the fragrance-free cleaner. The fragrance-free cleaner suits the task without adding a scent."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/cleaning-scent/teach-136/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Return the selected item to its starting spot and move the other item into its place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 3.0, 3.6667, 4.3333, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.6667, 9.3333, 10.0, 10.6667",
+          "clip": "media/cleaning-scent/teach-136/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "You put the fragrance-free cleaner back on the tray and set the mild-citrus cleaner beside the cloth. You seemed to prefer mild citrus for this cleanup."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I also set out mild citrus for the kitchen counter when someone else is home?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Use fragrance-free if guests are coming, but I haven’t specified a preference just because someone else is home."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Kitchen counter cleaner\n\nUse fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a preference based solely on someone else being home.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Wipe the work surface in my private sewing room. Only I use it.",
+          "image": "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Use the fragrance-free cleaner. The fragrance-free cleaner avoids adding a scent you haven’t requested."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Use the mild-citrus cleaner. Your past choice of mild citrus while home alone is the closest match for a surface only you use."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Do you prefer mild citrus or fragrance-free for the sewing surface?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I prefer mild citrus for my sewing surface."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Cleaners for the sewing surface and kitchen counter\n\nUse mild citrus on your sewing surface. For the kitchen counter, use fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a kitchen counter preference based solely on someone else being home.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Use the mild-citrus cleaner. You prefer mild citrus for your sewing surface.",
+          "clip": "media/cleaning-scent/transfer-239/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Wipe the shared worktop before the guests arrive for our craft session.",
+          "image": "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Use the fragrance-free cleaner. The fragrance-free cleaner avoids adding a scent that might bother guests."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Use the fragrance-free cleaner. You prefer fragrance-free cleaner when guests are expected."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I use fragrance-free cleaner on the shared craft worktop too?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, please use fragrance-free cleaner on the shared craft worktop."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Cleaners for sewing, crafts, and kitchen counters\n\nUse mild citrus on your private sewing surface. When guests are expected, use fragrance-free cleaner on the kitchen counter and shared craft worktop. You chose mild citrus once for the kitchen counter while home alone. Your kitchen counter preference when someone else is home and no guests are expected is unspecified.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Use the fragrance-free cleaner. You asked for fragrance-free cleaner on the shared craft worktop.",
+          "clip": "media/cleaning-scent/exception-342/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/isolated/cleaning-scent/transcript.json",
+      "robot_thread": "run-0252",
+      "person_thread": "run-0253",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/isolated/cleaning-scent/calls.json",
+        "Visual-only draft": "episodes/isolated/cleaning-scent/visual-only.md",
+        "Note at first probe": "episodes/isolated/cleaning-scent/memory.md",
+        "Final note": "episodes/isolated/cleaning-scent/final-note.md"
+      }
+    },
+    {
+      "mode": "contrast",
+      "scenario": "paused-work",
+      "title": "Paused Work",
+      "profile": "reverse",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Clear a spot on my workbench.",
+          "image": "media/paused-work/teach-37/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Shelve the rust mat. Shelving the rust mat clears a spot while moving fewer loose parts."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/paused-work/teach-37/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Bring the shelved mat back to its original spot and leave the other mat alone."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 2.0, 2.3333, 3.0, 3.3333, 4.0, 4.3333, 5.0, 5.3333, 6.0, 6.3333, 7.0, 7.3333",
+          "clip": "media/paused-work/teach-37/A-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I shelved the rust mat, you returned it to its original spot on the workbench. You seemed to want the rust mat within reach for this task."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I usually leave the rust mat on the bench, or did you need it there just this time?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Just this time, because I clip the mat I want shelved."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Workbench mat shelving cue\n\nWhen clearing the workbench, shelve the mat you mark with a clip. This time the teal mat had the clip, and you returned the rust mat to the bench. The cue is the clip, regardless of mat color.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Make room for the cutting board on my sewing counter.",
+          "image": "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Shelve the teal mat. Shelving the teal mat clears space at the front of the counter for the cutting board."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Shelve the rust mat. The clip is on the rust mat, marking it for shelving."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Do you use the same clip cue on your sewing counter?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, I clip the mat for the project I want shelved there too."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Clipped project mats on the workbench and sewing counter\n\nWhen making room on your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Shelve the rust mat. The clip on the rust mat marks it as the one you want shelved.",
+          "clip": "media/paused-work/transfer-140/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Free a bench spot for a new project.",
+          "image": "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit clears a bench spot while keeping its contents together."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit frees a spot and leaves the rust mat’s loose supplies in place."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Which would you like shelved this time, the closed stitching kit or the loose organizer?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Please shelve the closed stitching kit."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Shelving cue for project mats\n\nWhen clearing your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces. Your request to shelve the closed stitching kit applied to this cleanup only.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Shelve the closed stitching kit. You asked me to shelve the closed stitching kit to free a bench spot.",
+          "clip": "media/paused-work/exception-243/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/contrast/paused-work/transcript.json",
+      "robot_thread": "run-0228",
+      "person_thread": "run-0229",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/contrast/paused-work/calls.json",
+        "Visual-only draft": "episodes/contrast/paused-work/visual-only.md",
+        "Note at first probe": "episodes/contrast/paused-work/memory.md",
+        "Final note": "episodes/contrast/paused-work/final-note.md"
+      }
+    },
+    {
+      "mode": "contrast",
+      "scenario": "material-order",
+      "title": "Material Order",
+      "profile": "reverse",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Set out the red base and yellow cap for assembly.",
+          "image": "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set the red base on the person's right and the cap on their left. The red base is already on the person’s right and the yellow cap is on their left."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/material-order/teach-70/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Swap the two components so their order is reversed."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 1.0, 2.3333, 3.3333, 4.6667, 5.6667, 7.0, 8.0, 9.3333, 10.3333, 11.6667, 12.6667, 14.0, 15.0, 16.3333, 17.3333",
+          "clip": "media/material-order/teach-70/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I set the pieces down, the person moved the red base to their left and the yellow cap to their right. They seem to prefer that arrangement for this assembly."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "For other assemblies, do you also prefer the base on your left and the cap on your right?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "For my own assemblies, yes, if I use the base first and the cap second."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Base-first assembly setup: base left, cap right\n\nFor the person’s own assemblies, place the base on their left and the cap on their right when they use the base first and the cap second. They moved the red base and yellow cap into this layout and confirmed it for that sequence. Their preference for other sequences is unknown.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Set out a row for the seated person to use the pot, scoop, then tag.",
+          "image": "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. From the seated person’s left to right, the row follows the order they’ll use the pot, scoop, then tag."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. A left-to-right row follows the requested order and is consistent with the person’s base-first setup."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the pot, scoop, and tag arranged from your left to your right in the order you’ll use them?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, please arrange the pot, scoop, and tag in that order from my left to my right."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Left-to-right setup for assembly and planting\n\nFor their own assemblies where the base is used first and the cap second, place the base on their left and the cap on their right. They demonstrated and confirmed this layout. For planting, they explicitly requested the pot on their left, the scoop in the middle, and the tag on their right. Their preference for other tasks or sequences is unknown.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. The person asked for the pot, scoop, and tag in that order from their left to their right.",
+          "clip": "media/material-order/transfer-173/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Put out the markers for four people sharing the table.",
+          "image": "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Put the markers together in the central tray. All four people can reach the markers in the central tray."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people.",
+          "clip": "media/material-order/exception-276/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/contrast/material-order/transcript.json",
+      "robot_thread": "run-0222",
+      "person_thread": "run-0223",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/contrast/material-order/calls.json",
+        "Visual-only draft": "episodes/contrast/material-order/visual-only.md",
+        "Note at first probe": "episodes/contrast/material-order/memory.md",
+        "Final note": "episodes/contrast/material-order/final-note.md"
+      }
+    },
+    {
+      "mode": "contrast",
+      "scenario": "vegetable-texture",
+      "title": "Vegetable Texture",
+      "profile": "reverse",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Serve cooked broccoli alongside the warm dinner.",
+          "image": "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Serve the more tender batch. The more tender batch is likely cooked through and ready to serve."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/vegetable-texture/teach-103/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Return the selected item to its starting spot and move the other item into its place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 2.6667, 3.3333, 4.0, 4.6667, 5.6667, 6.3333, 7.0, 7.6667, 8.3333, 9.0, 9.6667, 10.3333",
+          "clip": "media/vegetable-texture/teach-103/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "You returned the broccoli I served to its tray and put a floret from the other tray on your plate. Your swap suggests you preferred firmer broccoli with this dinner."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I choose firmer broccoli for you at future meals?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, I prefer firmer broccoli with warm meals and in chilled salads."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Broccoli texture preference\n\nChoose firmer broccoli for warm meals and chilled salads. You swapped the tender broccoli for the firmer batch at dinner and confirmed this preference for both settings.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Prepare cooked green beans for the warm side dish.",
+          "image": "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Serve the more tender batch. The more tender beans are a good fit for a warm, cooked side dish."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Serve the more tender batch. Tender green beans suit a warm side dish, and the firmness preference is specific to broccoli."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the green beans firmer or more tender with this meal?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I’d like the green beans firmer, please."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Broccoli and green bean texture\n\nChoose firmer broccoli for warm meals and chilled salads, as you confirmed after swapping batches at dinner. You also requested firmer green beans for this warm side dish. Your preference for green beans at future meals is still open.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Serve the firmer batch. You asked for firmer green beans with this meal.",
+          "clip": "media/vegetable-texture/transfer-206/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Prepare cooked green beans for the chilled salad.",
+          "image": "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Serve the firmer batch. The firmer cooked beans will keep a pleasant crunch in the chilled salad."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Serve the firmer batch. Firmer green beans will keep a little crunch in the chilled salad."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the green beans firmer or more tender in this chilled salad?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I’d like the green beans firmer, please."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Broccoli and green bean texture\n\nChoose firmer broccoli for warm meals and chilled salads, as you confirmed. Favor firmer green beans in similar dishes because you requested them for both a warm side and a chilled salad.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Serve the firmer batch. You asked for firmer green beans in this chilled salad.",
+          "clip": "media/vegetable-texture/exception-309/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/contrast/vegetable-texture/transcript.json",
+      "robot_thread": "run-0240",
+      "person_thread": "run-0241",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/contrast/vegetable-texture/calls.json",
+        "Visual-only draft": "episodes/contrast/vegetable-texture/visual-only.md",
+        "Note at first probe": "episodes/contrast/vegetable-texture/memory.md",
+        "Final note": "episodes/contrast/vegetable-texture/final-note.md"
+      }
+    },
+    {
+      "mode": "contrast",
+      "scenario": "private-storage",
+      "title": "Private Storage",
+      "profile": "reverse",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Put the house keys and flashlight away after use in the entryway.",
+          "image": "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Place the items in the shallow compartment and close it. The closed compartment keeps the keys and flashlight together and off the tabletop."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/private-storage/teach-114/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Move the belongings to the other storage location, opening and closing the compartment."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 1.6667, 3.6667, 5.3333, 7.3333, 9.0, 11.0, 12.6667, 14.6667, 16.3333, 18.3333, 20.0, 22.0, 23.6667, 25.6667, 27.3333",
+          "clip": "media/private-storage/teach-114/A-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I closed the compartment, the person reopened it, moved both items onto the tray, and closed the empty compartment. The person seems to prefer keeping the keys and flashlight visible and easy to reach."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Entryway tray for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, place them together on the open entryway tray.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+          "image": "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to find and grab tomorrow."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to find and grab tomorrow."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Leave the pen case on the open tray. The open tray keeps the pen case easy to spot and pick up for tomorrow’s practice.",
+          "clip": "media/private-storage/transfer-217/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+          "image": "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the first craft step."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the first craft step."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach when the group starts the first step.",
+          "clip": "media/private-storage/exception-320/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/contrast/private-storage/transcript.json",
+      "robot_thread": "run-0234",
+      "person_thread": "run-0235",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/contrast/private-storage/calls.json",
+        "Visual-only draft": "episodes/contrast/private-storage/visual-only.md",
+        "Note at first probe": "episodes/contrast/private-storage/memory.md",
+        "Final note": "episodes/contrast/private-storage/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "paused-work",
+      "title": "Paused Work",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Clear a spot on my workbench.",
+          "image": "media/paused-work/teach-37/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Shelve the rust mat. Shelving the rust mat clears a spot while leaving the teal mat’s larger collection of parts in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/paused-work/teach-37/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.3333, 3.6667, 4.0, 4.3333, 4.6667, 5.3333, 5.6667, 6.0",
+          "clip": "media/paused-work/teach-37/A-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I shelved the rust mat, the person pointed at it and then at the open bench. They may have wanted me to put the rust mat back within reach."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I usually leave the rust mat on the bench, or did you need it there just this time?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I didn’t need the rust mat there this time, but leave it on the bench whenever I clip it."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Make room for the cutting board on my sewing counter.",
+          "image": "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Shelve the teal mat. Shelving the teal mat clears space for the cutting board at the front of the counter."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Shelve the rust mat. They said the rust mat could be moved this time, so shelving it makes room for the cutting board."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Shelve the teal mat. Shelving the teal mat makes room for the cutting board and keeps the clipped rust mat on the counter as requested.",
+          "clip": "media/paused-work/transfer-140/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Free a bench spot for a new project.",
+          "image": "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit clears bench space while keeping its contents together."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Shelve the closed stitching kit. Shelving the closed stitching kit clears a spot while keeping its contents together."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Shelve the closed stitching kit. The closed stitching kit can be shelved as one piece without disturbing the loose sewing supplies.",
+          "clip": "media/paused-work/exception-243/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/paused-work/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/paused-work/calls.json",
+        "Visual-only draft": "episodes/continuous/paused-work/visual-only.md",
+        "Note at first probe": "episodes/continuous/paused-work/memory.md",
+        "Final note": "episodes/continuous/paused-work/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "gift-finishing",
+      "title": "Gift Finishing",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Help prepare the handmade card.",
+          "image": "media/gift-finishing/teach-48/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set the flower beside the card. Setting the flower beside the card keeps it ready while you choose where to attach it."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/gift-finishing/teach-48/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Take the flower and put the finishing touch on the card yourself."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.0, 1.6667, 2.0, 2.6667, 3.0, 3.6667, 4.0, 4.6667, 5.0, 5.6667, 6.0, 6.6667, 7.0, 7.6667",
+          "clip": "media/gift-finishing/teach-48/A-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I set the flower beside the card, the person picked it up and pressed it onto the end of the drawn stem. They may have wanted to choose the flower’s exact placement themselves."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "For future handmade cards, would you like me to leave decorations beside the card for you to place?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, when the card is a personal gift, please leave the decorations beside it for me to place."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Decorations for personal gift cards\n\nWhen a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Help get the gift box ready.",
+          "image": "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Arrange the tissue and gift inside and close the box. Placing the tissue and gift inside and closing the box makes it ready to give."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Arrange the tissue and gift inside and close the box. Placing the tissue and gift inside and closing the box makes it ready to give."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I’d like to arrange the tissue and gift myself."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Personal gift cards and gift box arrangement\n\nFor handmade cards given as personal gifts, leave decorations beside the card for the person to place. For this gift box, they asked to arrange the tissue and gift themselves. Their preference for future boxes is unknown.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Open the box and set the tissue and gift alongside it. Opening the box and setting the tissue and gift beside it lets you arrange them yourself.",
+          "clip": "media/gift-finishing/transfer-151/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Prepare the labeled lunches for tomorrow morning.",
+          "image": "media/gift-finishing/exception-254/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Put a portion in each box and close each lid. The boxes, portions, and labeled lids are already set out, so packing and closing each box will finish the task."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Put a portion in each box and close each lid. Packing each portion and closing its labeled lid makes both lunches ready for tomorrow morning."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Put a portion in each box and close each lid. Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.",
+          "clip": "media/gift-finishing/exception-254/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/gift-finishing/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/gift-finishing/calls.json",
+        "Visual-only draft": "episodes/continuous/gift-finishing/visual-only.md",
+        "Note at first probe": "episodes/continuous/gift-finishing/memory.md",
+        "Final note": "episodes/continuous/gift-finishing/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "receiving-hand",
+      "title": "Receiving Hand",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Hand me the flashlight.",
+          "image": "media/receiving-hand/teach-59/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Offer it to the person's right hand. Your right hand is closer to the flashlight."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/receiving-hand/teach-59/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Take the flashlight in the offered hand, then pass it to your left hand."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.0, 1.6667, 2.0, 2.6667, 3.3333, 3.6667, 4.3333, 4.6667, 5.3333, 6.0, 6.3333, 7.0, 7.3333, 8.0",
+          "clip": "media/receiving-hand/teach-59/A-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person took the flashlight with their right hand, then moved it to their left hand. They may have wanted the flashlight in their left hand for this task."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Should I usually offer items to your left hand, or did switching hands suit this particular task?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Please offer things to my left hand unless it’s busy, in which case use my right."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Pass me the remote.",
+          "image": "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Offer it to the person's right hand. The person's right hand is closer to the remote."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Offer it to the person's left hand. Their left hand is free, and they prefer to receive items with it."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Offer it to the person's left hand. Your left hand is free, and you prefer to receive items in that hand.",
+          "clip": "media/receiving-hand/transfer-162/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Pass me the remote.",
+          "image": "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Offer it to the person's right hand. The person's right hand is free while their left hand rests on a cloth."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Offer it to the person's right hand. Their left hand is on the cloth, so I’ll offer the remote to their free right hand."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Offer it to the person's right hand. Your left hand is busy, so I’ll offer the remote to your right hand as requested.",
+          "clip": "media/receiving-hand/exception-265/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/receiving-hand/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/receiving-hand/calls.json",
+        "Visual-only draft": "episodes/continuous/receiving-hand/visual-only.md",
+        "Note at first probe": "episodes/continuous/receiving-hand/memory.md",
+        "Final note": "episodes/continuous/receiving-hand/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "material-order",
+      "title": "Material Order",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Set out the red base and yellow cap for assembly.",
+          "image": "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set the red base on the person's right and the cap on their left. Placing the red base on your right and the yellow cap on your left keeps them in their current order for assembly."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/material-order/teach-70/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 2.6667, 3.3333, 4.0, 4.6667, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.3333, 9.0, 9.6667",
+          "clip": "media/material-order/teach-70/B-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person touched the red base on their right with their right index finger and left both pieces in place. They may have been checking the base before assembly. The gesture alone gives little evidence of a preferred layout."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Do you prefer the base on your right and the cap on your left for future assemblies?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, for my own assemblies, put the part I use first on my right and the next one on my left."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Set out a row for the seated person to use the pot, scoop, then tag.",
+          "image": "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. From the seated person’s perspective, the row reads left to right as pot, scoop, then tag."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Place the pot at the person's right, scoop in the middle, and tag at their left. Arranging the pot, scoop, and tag from the person’s right to left matches their preferred order of use."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Place the pot at the person's right, scoop in the middle, and tag at their left. Placing the pot on the seated person’s right starts the row with the first item, consistent with their assembly preference.",
+          "clip": "media/material-order/transfer-173/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Put out the markers for four people sharing the table.",
+          "image": "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Put the markers together in the central tray. The central tray makes the markers easy for all four people to reach."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people.",
+          "clip": "media/material-order/exception-276/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/material-order/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/material-order/calls.json",
+        "Visual-only draft": "episodes/continuous/material-order/visual-only.md",
+        "Note at first probe": "episodes/continuous/material-order/memory.md",
+        "Final note": "episodes/continuous/material-order/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "approach-side",
+      "title": "Approach Side",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Bring me my drink.",
+          "image": "media/approach-side/teach-81/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Present it in the person's left-front quarter. Presenting the drink in front of you on your left puts it within reach of your free, preferred hand."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/approach-side/teach-81/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point to your left-front quarter for the drink."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.0, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.0, 3.3333, 3.6667, 4.0, 4.3333, 4.6667",
+          "clip": "media/approach-side/teach-81/A-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "I held the cup in front of the person on their left. They pointed across it toward the tabletop on their right, then withdrew their hand without taking it. They may have been showing me where to set the drink down."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Was the spot in front of you on your right where you usually want drinks, or was it specific to this cup?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I usually want drinks in front of my left shoulder, with the right side as a backup if a shelf blocks the left."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Drink placement in front of left shoulder\n\nThe person usually wants drinks in front of their left shoulder. Use the right side if a shelf blocks the spot on the left.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Bring me the folded cloth.",
+          "image": "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Present it in the person's left-front quarter. The person's left hand is visible at the table edge and can easily reach the cloth there."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Present it in the person's left-front quarter. The person's left hand is free and close enough to take the cloth."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Present it in the person's left-front quarter. Offering the cloth in front of you on your left puts it within reach of your free left hand, as you prefer.",
+          "clip": "media/approach-side/transfer-184/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Bring me the folded cloth.",
+          "image": "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Present it in the person's right-front quarter. The cloth is near the person's right hand, and there is room to offer it there."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Present it in the person's right-front quarter. The person can reach the cloth on their right, and their left-side preference applies to drinks."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Please offer the cloth on my right when the shelf blocks my left side."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Drink placement and folded cloth handoffs\n\nUsually place drinks in front of the person’s left shoulder. If a shelf blocks that spot, use their right side. They also asked to receive the folded cloth on their right when a shelf blocks their left side.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Present it in the person's right-front quarter. The shelf blocks your left side, so I’ll offer the cloth on your right as requested.",
+          "clip": "media/approach-side/exception-287/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/approach-side/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/approach-side/calls.json",
+        "Visual-only draft": "episodes/continuous/approach-side/visual-only.md",
+        "Note at first probe": "episodes/continuous/approach-side/memory.md",
+        "Final note": "episodes/continuous/approach-side/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "completion-update",
+      "title": "Completion Update",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "The bin is full. Give the person a low-priority completion update.",
+          "image": "media/completion-update/teach-92/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Give the spoken update at the person's next pause. The bin update can wait until the person pauses."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/completion-update/teach-92/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Demonstrate the timing: resume writing and tap the announcement button before putting the pencil down."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 1.3333, 2.6667, 4.3333, 5.6667, 7.0, 8.3333, 8.8333, 9.3333, 11.0, 12.3333, 13.6667, 15.0, 16.3333, 16.5, 17.6667, 19.0, 20.3333",
+          "clip": "media/completion-update/teach-92/B-change/view/view.mp4"
+        },
+        {
+          "role": "device",
+          "channel": "simulated utterance",
+          "text": "Work is complete.",
+          "time": 8.8333
+        },
+        {
+          "role": "device",
+          "channel": "simulated utterance",
+          "text": "Work is complete.",
+          "time": 16.5
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The device said “Work is complete” during a pause. The person resumed work, then touched the device and heard the same message again. They may have wanted to hear the update again at a time they chose."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "For low-priority updates, would you prefer to hear them at your next pause or only when you ask for them?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Low-priority updates during solo work and video calls\n\nThe person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "The delivery is complete while the person draws alone. Give a low-priority update.",
+          "image": "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Give the spoken update at the person's next pause. The delivery update can wait until the person pauses drawing."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Give a brief spoken update now. They’re drawing alone and asked for brief updates right away during solo work."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Give a brief spoken update now. You’re drawing alone and asked for brief updates right away during solo work.",
+          "clip": "media/completion-update/transfer-195/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+          "image": "media/completion-update/exception-298/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Give the spoken update at the person's next pause. The update can wait for the person’s next pause so it won’t interrupt the call."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Give the spoken update at the person's next pause. Waiting is the closer match to their preference for updates after the call ends."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Give the spoken update at the person's next pause. You asked me to wait until your video call ends before giving a low-priority update.",
+          "clip": "media/completion-update/exception-298/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/completion-update/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/completion-update/calls.json",
+        "Visual-only draft": "episodes/continuous/completion-update/visual-only.md",
+        "Note at first probe": "episodes/continuous/completion-update/memory.md",
+        "Final note": "episodes/continuous/completion-update/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "vegetable-texture",
+      "title": "Vegetable Texture",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Serve cooked broccoli alongside the warm dinner.",
+          "image": "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Serve the more tender batch. The tender broccoli is easy to cut and eat alongside the warm dinner."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/vegetable-texture/teach-103/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Point at the selected arrangement and leave it in place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.3333, 3.6667, 4.0, 4.3333, 4.6667, 5.3333, 5.6667, 6.0",
+          "clip": "media/vegetable-texture/teach-103/B-accept/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "After I served the tender broccoli, the person pointed at the food on their plate and left both batches where they were. They may have been checking the texture. The gesture alone leaves their preference unclear."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "When I serve broccoli with a warm dinner, do you usually prefer it tender or firm?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I usually prefer tender broccoli with a warm dinner."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Broccoli texture for warm dinners\n\nServe tender broccoli with warm dinners by default. The person said they usually prefer it that way.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Prepare cooked green beans for the warm side dish.",
+          "image": "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Serve the more tender batch. The more tender beans are a good fit for a warm cooked side dish."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Serve the more tender batch. Their preference for tender broccoli at warm dinners suggests they may enjoy tender green beans too."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the green beans tender or firm for this warm side dish?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I’d like the green beans tender, please."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Broccoli and green bean texture\n\nServe tender broccoli with warm dinners by default. The person also requested tender green beans for one warm side dish. Their usual preference for green beans is still unclear.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Serve the more tender batch. You asked for tender green beans for this warm side dish.",
+          "clip": "media/vegetable-texture/transfer-206/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Prepare cooked green beans for the chilled salad.",
+          "image": "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Serve the firmer batch. Firmer cooked beans will stay crisp in the chilled salad."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Serve the firmer batch. Firmer green beans will keep a crisp bite in the chilled salad."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the green beans firm or tender in this salad?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I’d like the green beans firm, please."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Broccoli and green bean texture\n\nServe tender broccoli with warm dinners by default. For green beans, the person requested tender beans for one warm side dish and firm beans for one chilled salad. Treat those choices as tentative guides for similar dishes.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Serve the firmer batch. You asked for firm green beans in this chilled salad.",
+          "clip": "media/vegetable-texture/exception-309/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/vegetable-texture/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/vegetable-texture/calls.json",
+        "Visual-only draft": "episodes/continuous/vegetable-texture/visual-only.md",
+        "Note at first probe": "episodes/continuous/vegetable-texture/memory.md",
+        "Final note": "episodes/continuous/vegetable-texture/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "private-storage",
+      "title": "Private Storage",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Put the house keys and flashlight away after use in the entryway.",
+          "image": "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set them together on the open tray. The entryway tray keeps the keys and flashlight together and easy to find next time."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/private-storage/teach-114/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Move the belongings to the other storage location, opening and closing the compartment."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 1.3333, 2.6667, 4.0, 5.3333, 6.6667, 8.0, 9.3333, 10.3333, 11.6667, 13.0, 14.3333, 15.6667, 17.0, 18.3333, 19.6667",
+          "clip": "media/private-storage/teach-114/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person moved the house keys and flashlight from the open tray into the shallow compartment and closed it. The compartment appears to be their usual storage spot for these two items."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Which other entryway items, if any, should I put in that compartment after use?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Please put my other personal belongings in the closed compartment after use."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Entryway storage for personal belongings\n\nAfter use, put the house keys, flashlight, and the person’s other personal belongings in the shallow entryway compartment and close it. They moved the keys and flashlight there and asked for the same storage for their other belongings.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+          "image": "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to find and grab tomorrow."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Leave the pen case on the open tray. The open tray keeps your pen case visible and easy to grab for tomorrow’s practice."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like the case on the tray for tomorrow or in your usual closed compartment?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Please put my pen case in the usual closed compartment."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Entryway storage for personal belongings and pen case\n\nAfter use, put the house keys, flashlight, and other personal belongings in the shallow entryway compartment and close it. The person confirmed that the pen case goes there even when they want it handy for the next day.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Place the items in the shallow compartment and close it. You asked me to put your pen case in the usual closed compartment.",
+          "clip": "media/private-storage/transfer-217/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+          "image": "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Set the rulers on the tray beside the shared craft materials. Placing all four rulers on the tray keeps them within reach for the first craft step."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Set the rulers on the tray beside the shared craft materials. Placing all four rulers on the tray keeps them within reach for the first craft step."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Set the rulers on the tray beside the shared craft materials. The shared tray keeps all four rulers within reach for the first craft step.",
+          "clip": "media/private-storage/exception-320/B-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": false,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/private-storage/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/private-storage/calls.json",
+        "Visual-only draft": "episodes/continuous/private-storage/visual-only.md",
+        "Note at first probe": "episodes/continuous/private-storage/memory.md",
+        "Final note": "episodes/continuous/private-storage/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "lighting",
+      "title": "Lighting",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Turn on a light for the person working on a puzzle.",
+          "image": "media/lighting/teach-125/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Turn on the desk lamp. The desk lamp can light the puzzle pieces directly."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/lighting/teach-125/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Switch the selected light off and switch on the other light."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 1.6667, 2.0, 2.6667, 3.0, 3.3333, 3.6667, 4.3333, 4.6667, 5.0, 5.3333, 6.0, 6.3333",
+          "clip": "media/lighting/teach-125/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person switched off the desk lamp, then pressed the other light control. They appeared to prefer overhead lighting for this puzzle."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "When do you prefer the overhead light to the desk lamp?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I prefer the overhead light when I’m working alone."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Overhead lighting for solo work\n\nUse the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Turn on a light for the person comparing ceramic tile patterns.",
+          "image": "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Turn on the desk lamp. The desk lamp can light the tile samples directly so their patterns are easier to compare."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Turn on the overhead fixture. The person is comparing tiles alone and prefers the overhead light for solo work."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Turn on the overhead fixture. You’re comparing tiles alone, and you prefer overhead lighting for solo work.",
+          "clip": "media/lighting/transfer-228/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+          "image": "media/lighting/exception-331/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Turn on the desk lamp. The desk lamp will light the craft table while keeping the room dim for the slide show."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show.",
+          "clip": "media/lighting/exception-331/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/lighting/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/lighting/calls.json",
+        "Visual-only draft": "episodes/continuous/lighting/visual-only.md",
+        "Note at first probe": "episodes/continuous/lighting/memory.md",
+        "Final note": "episodes/continuous/lighting/final-note.md"
+      }
+    },
+    {
+      "mode": "continuous",
+      "scenario": "cleaning-scent",
+      "title": "Cleaning Scent",
+      "profile": "standard",
+      "turns": [
+        {
+          "role": "Person",
+          "channel": "task command",
+          "text": "Set out a cleaner so I can wipe my kitchen counter. I am home alone.",
+          "image": "media/cleaning-scent/teach-136/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "selected action",
+          "text": "Set out the fragrance-free cleaner. The fragrance-free cleaner lets you wipe the counter without adding a scent to the kitchen."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual evidence to person",
+          "text": "Camera sequence after the robot chose its action.",
+          "clip": "media/cleaning-scent/teach-136/B-none/view/view.mp4"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "private motion command to simulator",
+          "text": "Return the selected item to its starting spot and move the other item into its place."
+        },
+        {
+          "role": "Simulator",
+          "channel": "visual feedback to robot",
+          "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 3.0, 3.6667, 4.3333, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.6667, 9.3333, 10.0, 10.6667",
+          "clip": "media/cleaning-scent/teach-136/B-change/view/view.mp4"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "private visual audit",
+          "text": "The person returned the fragrance-free cleaner to the tray and set the mild-citrus cleaner beside the cloth. The swap suggests they wanted mild citrus for this cleanup."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Is mild citrus your usual choice for the kitchen counter, or does it depend on who’s home?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "I prefer mild citrus when I’m home alone and fragrance-free cleaner when guests are coming."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "writes personal note",
+          "text": "# Kitchen counter cleaner for solo use and guests\n\nFor the kitchen counter, the person prefers mild-citrus cleaner when home alone and fragrance-free cleaner when guests are expected.\n"
+        },
+        {
+          "role": "Person",
+          "channel": "new task",
+          "text": "Wipe the work surface in my private sewing room. Only I use it.",
+          "image": "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Use the fragrance-free cleaner. The fragrance-free cleaner will clean the surface without adding a scent."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Use the fragrance-free cleaner. Fragrance-free is a neutral choice because your citrus preference is specific to the kitchen counter."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "question to person",
+          "text": "Would you like mild citrus for the sewing surface too?"
+        },
+        {
+          "role": "Person Astra",
+          "channel": "spoken answer to robot",
+          "text": "Yes, please use mild citrus on my sewing surface."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "refines personal note",
+          "text": "# Cleaner preferences for kitchen counters and sewing surfaces\n\nUse mild-citrus cleaner on the kitchen counter when the person is home alone and fragrance-free cleaner when guests are expected. They also confirmed mild citrus for their private sewing surface.\n"
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Use the mild-citrus cleaner. You asked me to use mild citrus on your sewing surface.",
+          "clip": "media/cleaning-scent/transfer-239/A-none/view/view.mp4"
+        },
+        {
+          "role": "Person",
+          "channel": "scope control",
+          "text": "Wipe the shared worktop before the guests arrive for our craft session.",
+          "image": "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "cold comparison",
+          "text": "Use the fragrance-free cleaner. The fragrance-free cleaner avoids adding scent to the shared worktop."
+        },
+        {
+          "role": "Fresh Astra",
+          "channel": "note comparison",
+          "text": "Use the fragrance-free cleaner. You prefer fragrance-free cleaner when guests are expected."
+        },
+        {
+          "role": "Robot Astra",
+          "channel": "executed probe action",
+          "text": "Use the fragrance-free cleaner. Fragrance-free cleaner fits your preference when guests are coming to share the worktop.",
+          "clip": "media/cleaning-scent/exception-342/A-none/view/view.mp4"
+        }
+      ],
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      },
+      "transcript": "episodes/continuous/cleaning-scent/transcript.json",
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "artifacts": {
+        "Exact calls and model inputs": "episodes/continuous/cleaning-scent/calls.json",
+        "Visual-only draft": "episodes/continuous/cleaning-scent/visual-only.md",
+        "Note at first probe": "episodes/continuous/cleaning-scent/memory.md",
+        "Final note": "episodes/continuous/cleaning-scent/final-note.md"
+      }
+    }
+  ],
+  "artifacts": {
+    "Study design": "plan.json",
+    "Software and assets": "provenance.json",
+    "Final library on fresh layouts": "retention/index.html",
+    "Retention scores": "retention/results.json",
+    "Results and examples": "analysis.md",
+    "Numerical summary": "summary.json",
+    "Execution and recovery": "execution.json",
+    "Evidence validation": "evidence-validation.json"
+  }
+}

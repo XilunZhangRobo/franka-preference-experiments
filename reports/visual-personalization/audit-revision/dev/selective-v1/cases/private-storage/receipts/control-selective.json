@@ -1,0 +1,12 @@
+{
+  "input_sha256": "7a6358036b7e32e14fdc365092e4cd40c529388c99e3e2e9ed8174997e02de33",
+  "session": "control-selective",
+  "thread": "run-0084",
+  "request": "sessions/control-selective/1795631020111393620-a9144881/request.json",
+  "result": "sessions/control-selective/1795631020111393620-a9144881/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The tray beside the shared craft materials keeps all four rulers within reach for the first step.",
+    "question": ""
+  }
+}

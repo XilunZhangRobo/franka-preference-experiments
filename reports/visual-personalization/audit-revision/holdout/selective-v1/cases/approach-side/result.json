@@ -1,0 +1,138 @@
+{
+  "case_id": "approach-side",
+  "identity_sha256": "bdaff59821c649eb5ebe2a91dc066be834edaa47b7964f9392ec074b877a9269",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot lifted the cup. The person pointed to the tabletop with their left index finger, and the robot moved the cup toward that spot. The cup was still in the gripper at the end.",
+    "interpretation": "The person likely wanted the drink set down where they pointed. The gesture gives little evidence of a lasting preference for either side.",
+    "title": "Follow the pointed-to spot",
+    "note": "When bringing a drink, use a clear point to the tabletop as the placement cue, even if one hand is closer.",
+    "question": ""
+  },
+  "draft_note": "# Follow the pointed-to spot\n\nWhen bringing a drink, use a clear point to the tabletop as the placement cue, even if one hand is closer.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Follow the pointed-to spot\n\nWhen bringing a drink, use a clear point to the tabletop as the placement cue, even if one hand is closer.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person’s left hand is clear of the robot and can reach the cloth."
+        },
+        "correct": true,
+        "input_sha256": "3475a9f02214c2d9c9dae573238aacb2d1fa34d7a31cfe6eadf6151eccc21c55",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person’s left hand is clear of the robot and can reach the cloth."
+        },
+        "correct": true,
+        "input_sha256": "3475a9f02214c2d9c9dae573238aacb2d1fa34d7a31cfe6eadf6151eccc21c55",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The person’s left hand is visible and closest to the cloth.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The person’s left hand is visible and closest to the cloth.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The cloth is within reach of the person’s right hand."
+        },
+        "correct": true,
+        "input_sha256": "985a0b71919818a391e8c660c17748cbf19c8c0e832fef492a6b329acdee3474",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The cloth is within reach of the person’s right hand."
+        },
+        "correct": true,
+        "input_sha256": "985a0b71919818a391e8c660c17748cbf19c8c0e832fef492a6b329acdee3474",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The folded cloth is already in front of the person on their right, within easy reach.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The folded cloth is already in front of the person on their right, within easy reach.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

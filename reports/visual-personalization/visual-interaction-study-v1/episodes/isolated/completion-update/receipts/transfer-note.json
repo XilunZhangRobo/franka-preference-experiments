@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9c300cd3c5341503c2a9022cfaf052390eccdb488be4b5484c33a63abb836abc",
+  "thread": "run-0263",
+  "request": "episodes/isolated/completion-update/independent/transfer-note/1795591217134528301-176322eb/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person asked for routine updates right away when working alone."
+  },
+  "images": [
+    "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+  ]
+}

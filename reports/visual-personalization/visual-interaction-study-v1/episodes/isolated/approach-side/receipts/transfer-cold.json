@@ -1,0 +1,12 @@
+{
+  "input_sha256": "43bc844183f17bbad34bb53fa6e203f22fb8d228b7d8b113d45e8ec283774977",
+  "thread": "run-0250",
+  "request": "episodes/isolated/approach-side/independent/transfer-cold/1795590677969876128-0a966682/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person’s left hand is near the table edge with room to receive the cloth."
+  },
+  "images": [
+    "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  ]
+}

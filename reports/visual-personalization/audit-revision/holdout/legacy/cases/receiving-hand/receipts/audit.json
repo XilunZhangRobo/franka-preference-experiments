@@ -1,0 +1,14 @@
+{
+  "input_sha256": "c7bf23fdefcba8bf73e74e076dff7c7981e735c6dc9a1b7be997935ff2493cb4",
+  "session": "writer",
+  "thread": "run-0123",
+  "request": "sessions/writer/1795631206605754519-b6a93e19/request.json",
+  "result": "sessions/writer/1795631206605754519-b6a93e19/attempt-1/result.json",
+  "reply": {
+    "observation": "I offered the flashlight to your right hand. You took it with that hand, then transferred it to your left.",
+    "interpretation": "A left-hand offer might have saved you a step this time.",
+    "title": "Flashlight handoff",
+    "note": "You moved the flashlight to your left hand after this handoff.",
+    "question": "Would you prefer left-hand offers for flashlights, for other items too, or does it depend on the task?"
+  }
+}

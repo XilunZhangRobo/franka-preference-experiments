@@ -1,0 +1,12 @@
+{
+  "input_sha256": "0faed7dc7f5ef7ab02a3e69ccaedf26703bd74d09f07c9376a5ab0f81a3c26aa",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590266726723341-1bc14c72/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The more tender broccoli should be easier to chew alongside the warm dinner."
+  },
+  "images": [
+    "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+  ]
+}

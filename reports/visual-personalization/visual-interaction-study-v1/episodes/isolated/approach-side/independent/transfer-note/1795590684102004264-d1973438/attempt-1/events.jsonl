@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0251"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"There’s room to offer the folded cloth in front of their left shoulder, where they prefer it.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12433,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":32,"reasoning_output_tokens":0}}

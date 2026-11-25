@@ -1,0 +1,12 @@
+{
+  "input_sha256": "784722c9ec840c09050f17a59fca9a9471e3c21c049a860ff49c8c66390cd8b2",
+  "thread": "run-0183",
+  "request": "episodes/continuous/approach-side/independent/transfer-note/1795592467113755157-24dfa852/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person's left hand is free and close enough to take the cloth."
+  },
+  "images": [
+    "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  ]
+}

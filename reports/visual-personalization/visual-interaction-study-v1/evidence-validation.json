@@ -1,0 +1,1229 @@
+{
+  "status": "passed",
+  "episodes": [
+    {
+      "mode": "isolated",
+      "family": "paused-work",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "gift-finishing",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "receiving-hand",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "material-order",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "approach-side",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "completion-update",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "vegetable-texture",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": false,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "private-storage",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": false,
+        "transfer_learner": false,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "lighting",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "isolated",
+      "family": "cleaning-scent",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "contrast",
+      "family": "paused-work",
+      "profile": "reverse",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "contrast",
+      "family": "material-order",
+      "profile": "reverse",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "contrast",
+      "family": "vegetable-texture",
+      "profile": "reverse",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "contrast",
+      "family": "private-storage",
+      "profile": "reverse",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "paused-work",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "gift-finishing",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "receiving-hand",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "material-order",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "approach-side",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "completion-update",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "vegetable-texture",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": false,
+        "feedback_matches_persona": true,
+        "transfer_cold": true,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "private-storage",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": false,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "lighting",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": true,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    },
+    {
+      "mode": "continuous",
+      "family": "cleaning-scent",
+      "profile": "standard",
+      "scores": {
+        "teaching_miss": true,
+        "feedback_matches_persona": true,
+        "transfer_cold": false,
+        "transfer_note": false,
+        "transfer_before_question": true,
+        "transfer_learner": true,
+        "control_cold": true,
+        "control_note": true,
+        "control_before_question": true,
+        "control_learner": true
+      }
+    }
+  ],
+  "verified_request_namespaces": [
+    "sessions",
+    "episodes",
+    "retention"
+  ],
+  "session_count": 186,
+  "verified_calls": 374,
+  "recorded_failed_attempts": [
+    "episodes/continuous/cleaning-scent/independent/exception-cold/1795596026702138067-42141740/attempt-1/error.json",
+    "episodes/continuous/cleaning-scent/independent/transfer-note/1795595406949578996-b0a2fb17/attempt-1/error.json",
+    "retention/approach-side-exception/cold/1795597533101220191-2e9e257f/attempt-1/error.json",
+    "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-1/error.json",
+    "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-2/error.json",
+    "retention/approach-side-transfer/cold/1795597532792245579-20d6df4d/attempt-1/error.json",
+    "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-1/error.json",
+    "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-2/error.json",
+    "retention/cleaning-scent-exception/cold/1795598739394585889-1caf1180/attempt-1/error.json",
+    "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-1/error.json",
+    "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-2/error.json",
+    "retention/cleaning-scent-transfer/cold/1795598733759197017-f8c28c17/attempt-1/error.json",
+    "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-1/error.json",
+    "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-2/error.json",
+    "retention/completion-update-exception/cold/1795597536247381453-5d226d67/attempt-1/error.json",
+    "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-1/error.json",
+    "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-2/error.json",
+    "retention/completion-update-transfer/cold/1795597533683416742-de213473/attempt-1/error.json",
+    "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-1/error.json",
+    "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-2/error.json",
+    "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-1/error.json",
+    "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-2/error.json",
+    "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-1/error.json",
+    "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-2/error.json",
+    "retention/lighting-exception/cold/1795598733759058850-07edd292/attempt-1/error.json",
+    "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-1/error.json",
+    "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-2/error.json",
+    "retention/lighting-transfer/cold/1795598733104888335-5d1e3105/attempt-1/error.json",
+    "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-1/error.json",
+    "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-2/error.json",
+    "retention/material-order-exception/cold/1795596960323505081-448ad5ee/attempt-1/error.json",
+    "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-1/error.json",
+    "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-2/error.json",
+    "retention/material-order-transfer/cold/1795596959217152976-4c20f6e1/attempt-1/error.json",
+    "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-1/error.json",
+    "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-2/error.json",
+    "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-1/error.json",
+    "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-2/error.json",
+    "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-1/error.json",
+    "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-2/error.json",
+    "retention/private-storage-exception/cold/1795598137258176811-4d8e3654/attempt-1/error.json",
+    "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-1/error.json",
+    "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-2/error.json",
+    "retention/private-storage-transfer/cold/1795598133327033216-a6f6236c/attempt-1/error.json",
+    "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-1/error.json",
+    "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-2/error.json",
+    "retention/receiving-hand-exception/cold/1795596951939557972-7cd7135f/attempt-1/error.json",
+    "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-1/error.json",
+    "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-2/error.json",
+    "retention/receiving-hand-transfer/cold/1795596950859283917-351ec930/attempt-1/error.json",
+    "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-1/error.json",
+    "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-2/error.json",
+    "retention/vegetable-texture-exception/cold/1795598132327794595-e54d9e5d/attempt-1/error.json",
+    "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-1/error.json",
+    "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-2/error.json",
+    "retention/vegetable-texture-transfer/cold/1795598131727940031-6c2c0ffc/attempt-1/error.json",
+    "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-1/error.json",
+    "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-2/error.json",
+    "sessions/continuous/person/1795594808081592823-6a4fb84c/attempt-1/error.json",
+    "sessions/continuous/robot/1795593626127563994-446bd1ea/attempt-1/error.json",
+    "sessions/continuous/robot/1795593905409895689-0743552c/attempt-1/error.json"
+  ],
+  "verified_request_count": 394,
+  "unscored_superseded_retention_requests": [
+    {
+      "request": "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/request.json",
+      "successful_request": "retention/paused-work-transfer/cold/1795630720175892079-f3092e22/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-1",
+          "thread": "run-0306",
+          "status": "recorded timeout",
+          "events_sha256": "9094afd32bbea5c0fcfc3a1918ce1b4f39bc8ff46e8723703825d03889bddf00"
+        },
+        {
+          "directory": "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-2",
+          "thread": "run-0307",
+          "status": "recorded timeout",
+          "events_sha256": "323211d1f6af08c1e13a91c2b49d72cc1af9642bfd2413efdaef36877d2d1b4e"
+        }
+      ]
+    },
+    {
+      "request": "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/request.json",
+      "successful_request": "retention/paused-work-exception/retrieve/1795630732102925218-b822dea3/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-1",
+          "thread": "run-0308",
+          "status": "recorded timeout",
+          "events_sha256": "172a8d7e3e1c153d8f00be7eb14326a06ad9f240ef98090ce67e2013e0bf361a"
+        },
+        {
+          "directory": "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-2",
+          "thread": "run-0309",
+          "status": "recorded timeout",
+          "events_sha256": "a9b53ac434c89b6721e115aa7e73435c87e60073d6b0debbffbe029eecd96412"
+        }
+      ]
+    },
+    {
+      "request": "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/request.json",
+      "successful_request": "retention/gift-finishing-transfer/retrieve/1795630740652395075-14f1ef7d/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-1",
+          "thread": "run-0310",
+          "status": "recorded timeout",
+          "events_sha256": "40056c17f5684bac10d477cddc734405c4635ae84d161992e256cc43ea970922"
+        },
+        {
+          "directory": "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-2",
+          "thread": "run-0311",
+          "status": "recorded timeout",
+          "events_sha256": "0d9e4ceda5f6c2e25380fb72e3683df402eb90c9f8dcbbfedee79ad5081e45af"
+        }
+      ]
+    },
+    {
+      "request": "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/request.json",
+      "successful_request": "retention/gift-finishing-exception/cold/1795630749456438310-813bc86a/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-1",
+          "thread": "run-0312",
+          "status": "recorded timeout",
+          "events_sha256": "69aed29cc1ad3e3fd4830e5f0e1e0bfd7546924907630fca3e7347cf5a2b7c22"
+        },
+        {
+          "directory": "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-2",
+          "thread": "run-0313",
+          "status": "recorded timeout",
+          "events_sha256": "a60c0ea9dccbe2399a02c5f55e1fd73612964beb4a862aabed5958fb8f9ad8ca"
+        }
+      ]
+    },
+    {
+      "request": "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/request.json",
+      "successful_request": "retention/receiving-hand-transfer/retrieve/1795630760076828609-d8b4247a/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-1",
+          "thread": "run-0314",
+          "status": "recorded timeout",
+          "events_sha256": "c25982e3cc6fdfb4f63d6227bb15090d4a5f38e23d6abadb4a1a4e526829e5ad"
+        },
+        {
+          "directory": "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-2",
+          "thread": "run-0315",
+          "status": "recorded timeout",
+          "events_sha256": "5e29451d6a734ef8f66a9abc64a9bbb1031df110fcb8d9f9b31c756fae52a060"
+        }
+      ]
+    },
+    {
+      "request": "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/request.json",
+      "successful_request": "retention/receiving-hand-exception/decision/1795630767627403816-0a8c3a0c/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-1",
+          "thread": "run-0316",
+          "status": "recorded timeout",
+          "events_sha256": "c0e6f6f5cf4721d3fdf232775250e2e9d152db51645e04ee4de0881c86e1664d"
+        },
+        {
+          "directory": "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-2",
+          "thread": "run-0317",
+          "status": "recorded timeout",
+          "events_sha256": "e919a3a6752b1844a328668d82ac4d7bb573a1c2d922111d9d4dd12d674b54a5"
+        }
+      ]
+    },
+    {
+      "request": "retention/material-order-transfer/retrieve/1795597173670772188-83700399/request.json",
+      "successful_request": "retention/material-order-transfer/retrieve/1795630771400466899-8b5b7198/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-1",
+          "thread": "run-0318",
+          "status": "recorded timeout",
+          "events_sha256": "a192b5ea845919daa30b652e29baca40e9fa84e8ee4b1e3aa8bb16427abfe3b4"
+        },
+        {
+          "directory": "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-2",
+          "thread": "run-0319",
+          "status": "recorded timeout",
+          "events_sha256": "6f2889d9801dd0e4097b03f1063f6ab3037d36ff038844047bbca3ef52e85345"
+        }
+      ]
+    },
+    {
+      "request": "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/request.json",
+      "successful_request": "retention/material-order-exception/retrieve/1795630780353746287-7d78cd38/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-1",
+          "thread": "run-0320",
+          "status": "recorded timeout",
+          "events_sha256": "453b9d043401ede1a529b550e6397ca4c46ca1b1e347f6c4eb8f67b21dcbad80"
+        },
+        {
+          "directory": "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-2",
+          "thread": "run-0321",
+          "status": "recorded timeout",
+          "events_sha256": "9984286b92da51d689b6f211a6df1e6cde2aa8af46c5d4e5111e4c9d086f3240"
+        }
+      ]
+    },
+    {
+      "request": "retention/approach-side-transfer/decision/1795597777145659983-535af777/request.json",
+      "successful_request": "retention/approach-side-transfer/decision/1795630788304816806-38613fb4/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-1",
+          "thread": "run-0322",
+          "status": "recorded timeout",
+          "events_sha256": "0532613000bc14a90f0c23569290275a4cc979696bc33fc340b80d256f072e12"
+        },
+        {
+          "directory": "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-2",
+          "thread": "run-0323",
+          "status": "recorded timeout",
+          "events_sha256": "2d15075ea1f892f186eb90fdb6cc3e66b6b3e16cd1b63da7415768c36bcf9b09"
+        }
+      ]
+    },
+    {
+      "request": "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/request.json",
+      "successful_request": "retention/approach-side-exception/retrieve/1795630793985086503-25a1e3a1/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-1",
+          "thread": "run-0324",
+          "status": "recorded timeout",
+          "events_sha256": "08c731ddfe49770ec1675378f9ca9baf86a9fe4b1e05c2b92eddaf3ee22554e4"
+        },
+        {
+          "directory": "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-2",
+          "thread": "run-0325",
+          "status": "recorded timeout",
+          "events_sha256": "3470cc27fa9ac02b99174fefac91707a9d2dcaf3c6f0fc9fcd5bba5494ee0996"
+        }
+      ]
+    },
+    {
+      "request": "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/request.json",
+      "successful_request": "retention/completion-update-transfer/retrieve/1795630800880583357-254078fe/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-1",
+          "thread": "run-0326",
+          "status": "recorded timeout",
+          "events_sha256": "ed8469c1f080edf9e5c2c49b5cb391d955647273175af98a447f2a205162dab3"
+        },
+        {
+          "directory": "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-2",
+          "thread": "run-0327",
+          "status": "recorded timeout",
+          "events_sha256": "836bb65ab595d27ba4bfb286430f1f5d71d21c827986a1930141967a3ed43a5e"
+        }
+      ]
+    },
+    {
+      "request": "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/request.json",
+      "successful_request": "retention/completion-update-exception/retrieve/1795630811435506800-12952905/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-1",
+          "thread": "run-0328",
+          "status": "recorded timeout",
+          "events_sha256": "85165bc2a737710c282b5ed2a2c2795c6d11e18ceaadd48fd28c10a5c7e955f9"
+        },
+        {
+          "directory": "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-2",
+          "thread": "run-0329",
+          "status": "recorded timeout",
+          "events_sha256": "96f4e94da8aee8141131ccda1c9fc1a342251ba2779f7c1ff03f70af291b2db5"
+        }
+      ]
+    },
+    {
+      "request": "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/request.json",
+      "successful_request": "retention/vegetable-texture-transfer/decision/1795630821444402175-4f2365c1/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-1",
+          "thread": "run-0330",
+          "status": "recorded timeout",
+          "events_sha256": "9f2abf32729dbbaa86cb6f16df13cbaad6d7729afb13f709ebd2d19cebcceac4"
+        },
+        {
+          "directory": "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-2",
+          "thread": "run-0331",
+          "status": "recorded timeout",
+          "events_sha256": "5cfa5735594a2e7c8d4dc355eeb43e507846212af33d482fd3262b850a564bbd"
+        }
+      ]
+    },
+    {
+      "request": "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/request.json",
+      "successful_request": "retention/vegetable-texture-exception/retrieve/1795630824971496578-fb6df6c1/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-1",
+          "thread": "run-0332",
+          "status": "recorded timeout",
+          "events_sha256": "b90b8f8f18f89d2ee91d0f50e2f817b90a3f0cdb2d2e8b5af4f083928d9e62ff"
+        },
+        {
+          "directory": "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-2",
+          "thread": "run-0333",
+          "status": "recorded timeout",
+          "events_sha256": "b3ce082a384a7f01b3d96b8835ad26d8a1f8a35be7c5ba1be9a3f6816f0ddc77"
+        }
+      ]
+    },
+    {
+      "request": "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/request.json",
+      "successful_request": "retention/private-storage-transfer/retrieve/1795630833222315498-b2be1202/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-1",
+          "thread": "run-0334",
+          "status": "recorded timeout",
+          "events_sha256": "7392150607cc5671ed80347578f0d04bcfb0b4f053195ba103ddad803435a3e6"
+        },
+        {
+          "directory": "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-2",
+          "thread": "run-0335",
+          "status": "recorded timeout",
+          "events_sha256": "36f23d53cc858c34ced598632002675f34c1d21861edee2dd843695b3d278944"
+        }
+      ]
+    },
+    {
+      "request": "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/request.json",
+      "successful_request": "retention/private-storage-exception/retrieve/1795630841369978438-2e06bf46/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-1",
+          "thread": "run-0336",
+          "status": "recorded timeout",
+          "events_sha256": "7bc49bfc9f287c223ab6cd0d9813d8c8f6d969989873377a2af6b9a49bb6196b"
+        },
+        {
+          "directory": "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-2",
+          "thread": "run-0337",
+          "status": "recorded timeout",
+          "events_sha256": "310fad33986bf1a7996522cf2a1e0bc303189ca14bb2a3dd7b91b4e2baca315a"
+        }
+      ]
+    },
+    {
+      "request": "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/request.json",
+      "successful_request": "retention/lighting-transfer/retrieve/1795630849171937662-f381ac0b/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-1",
+          "thread": "run-0338",
+          "status": "recorded timeout",
+          "events_sha256": "8ebfbc03b1303b348c78a2b5be583841986a1f653bfa77cf498c7ac1fc54acf7"
+        },
+        {
+          "directory": "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-2",
+          "thread": "run-0339",
+          "status": "recorded timeout",
+          "events_sha256": "f5fec5faa0d9472aec72038608d5c8bf2085b9afc54e3b4c040cc2a99837f0fc"
+        }
+      ]
+    },
+    {
+      "request": "retention/lighting-exception/decision/1795598984607736802-6917d298/request.json",
+      "successful_request": "retention/lighting-exception/decision/1795630858222209604-7d2c4770/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-1",
+          "thread": "run-0340",
+          "status": "recorded timeout",
+          "events_sha256": "8d0c75329f8c0a5edcffdbe6efc3f4a5b080121466e4c98532ede8eae1e02efa"
+        },
+        {
+          "directory": "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-2",
+          "thread": "run-0341",
+          "status": "recorded timeout",
+          "events_sha256": "b2e33267eabe594949482648c9a46e342ada0bb37d4236966d76310ddcbab330"
+        }
+      ]
+    },
+    {
+      "request": "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/request.json",
+      "successful_request": "retention/cleaning-scent-transfer/retrieve/1795630861544931387-384b0e70/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-1",
+          "thread": "run-0342",
+          "status": "recorded timeout",
+          "events_sha256": "d567734064f33134085ee0dd4b17ce4b031d74d339cc65a6d624c690f7499241"
+        },
+        {
+          "directory": "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-2",
+          "thread": "run-0343",
+          "status": "recorded timeout",
+          "events_sha256": "424f21483473027291b112c1cf6af8eb09d754b5ff3d37a07a151f4b86f7f749"
+        }
+      ]
+    },
+    {
+      "request": "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/request.json",
+      "successful_request": "retention/cleaning-scent-exception/retrieve/1795630871098927110-be688718/request.json",
+      "scored": false,
+      "attempts": [
+        {
+          "directory": "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-1",
+          "thread": "run-0344",
+          "status": "recorded timeout",
+          "events_sha256": "56c345e6cd771ea906dde444dbcaafc5c5cd4436ae7315e4cddd981d5b1ff6e3"
+        },
+        {
+          "directory": "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-2",
+          "thread": "run-0345",
+          "status": "recorded timeout",
+          "events_sha256": "1823ac8ce3fb8f06dc7dbb98c512e3c67c5b1343f7de336c4bb30dc8dda6a790"
+        }
+      ]
+    }
+  ],
+  "transport_recoveries": [
+    {
+      "request": "sessions/isolated/lighting/robot/1795590611283927377-efeffe92/request.json",
+      "mode": "same-thread-continuation",
+      "original_attempt": "sessions/isolated/lighting/robot/1795590611283927377-efeffe92/attempt-1",
+      "successful_attempt": "sessions/isolated/lighting/robot/1795590611283927377-efeffe92/attempt-2",
+      "thread": "run-0270",
+      "original_image_count": 16,
+      "original_turn": "run-0346",
+      "continuation_images": 0,
+      "journal_sha256": "7e51033fd0fb838876eee78b8c32bce82031212b934b5259a3c35d5704e09070"
+    },
+    {
+      "request": "sessions/continuous/robot/1795593626127563994-446bd1ea/request.json",
+      "mode": "same-thread-continuation",
+      "original_attempt": "sessions/continuous/robot/1795593626127563994-446bd1ea/attempt-1",
+      "successful_attempt": "sessions/continuous/robot/1795593626127563994-446bd1ea/attempt-2",
+      "thread": "run-0178",
+      "original_image_count": 16,
+      "original_turn": "run-0347",
+      "continuation_images": 0,
+      "journal_sha256": "4fe4e6fe5b999e8aeae7754e5f8f2b20a38b5fb57398db21685e267e7b9393fe"
+    },
+    {
+      "request": "sessions/continuous/robot/1795593905409895689-0743552c/request.json",
+      "mode": "same-thread-continuation",
+      "original_attempt": "sessions/continuous/robot/1795593905409895689-0743552c/attempt-1",
+      "successful_attempt": "sessions/continuous/robot/1795593905409895689-0743552c/attempt-2",
+      "thread": "run-0178",
+      "original_image_count": 1,
+      "original_turn": "run-0348",
+      "continuation_images": 0,
+      "journal_sha256": "af8a23e9bd92796ef280f5796618889166ec82d14cc0d81b1e7317112babd067"
+    },
+    {
+      "request": "sessions/continuous/person/1795594808081592823-6a4fb84c/request.json",
+      "mode": "same-thread-continuation",
+      "original_attempt": "sessions/continuous/person/1795594808081592823-6a4fb84c/attempt-1",
+      "successful_attempt": "sessions/continuous/person/1795594808081592823-6a4fb84c/attempt-2",
+      "thread": "run-0179",
+      "original_image_count": 6,
+      "original_turn": "run-0349",
+      "continuation_images": 0,
+      "journal_sha256": "e1bbac9327cc02ec78a3a7d42200a2cfe78264e6a571303945dde5f41e4c73d4"
+    }
+  ],
+  "action_videos": {
+    "media/paused-work/teach-37/A-none/view": {
+      "sha256": "068cad074e5ebe891c3422362545651dd34fbad0b3532a61695ef36052333138",
+      "frames": 28
+    },
+    "media/paused-work/teach-37/A-accept/view": {
+      "sha256": "1f2a05569390a84e46075c36761e1babf787f30d2f8730a10dab23fd8c2eb1af",
+      "frames": 38
+    },
+    "media/paused-work/transfer-140/A-none/view": {
+      "sha256": "ba74e9b88174b8770369d38343cd9a62de7ef97b57e6e787b68eba95de5b6c5d",
+      "frames": 32
+    },
+    "media/paused-work/exception-243/B-none/view": {
+      "sha256": "c35c94f523983b5a3d4f226254566ec970b475e2b0da96962c872420900740c0",
+      "frames": 31
+    },
+    "media/gift-finishing/teach-48/B-none/view": {
+      "sha256": "3b81a5c0522d406258e5286c08a5e1f511c5109bef120694d8eec60c593a7fc3",
+      "frames": 21
+    },
+    "media/gift-finishing/teach-48/B-change/view": {
+      "sha256": "1268771fcbb2458e7aeb47051566856aea828091cae8b931645c8b7aa39e991e",
+      "frames": 42
+    },
+    "media/gift-finishing/transfer-151/B-none/view": {
+      "sha256": "a98a40f1f36936f1699a40e4a39f0c8fb05c684abe2a1dbb0a23903ceee08e80",
+      "frames": 77
+    },
+    "media/gift-finishing/exception-254/A-none/view": {
+      "sha256": "dfaf465236dab499ee47a13a2c40fa14b5d3f3633cde4c39dbc34c307250cc27",
+      "frames": 95
+    },
+    "media/receiving-hand/teach-59/A-none/view": {
+      "sha256": "49068e6821ef8c02257bca54892f61f7ba6fc2d0d395da98d1bf1ae103e256a3",
+      "frames": 19
+    },
+    "media/receiving-hand/teach-59/A-change/view": {
+      "sha256": "0cb253d02538afa418dc3179ad3c72e9e1621ad39998718402709e22d8d7a530",
+      "frames": 50
+    },
+    "media/receiving-hand/transfer-162/A-none/view": {
+      "sha256": "6b7509bc469de27a63a464cad3f3e3c602e2705f669757d3c58121b9c3bfdff3",
+      "frames": 20
+    },
+    "media/receiving-hand/exception-265/A-none/view": {
+      "sha256": "baea66c9965e985a43455104aa33f9b483217f55d9ec43600bd93b2e1fe0ab61",
+      "frames": 20
+    },
+    "media/material-order/teach-70/B-none/view": {
+      "sha256": "714447c59e7d570cd36db944134491784d0de0ba8fddef6c610afcf17672906c",
+      "frames": 50
+    },
+    "media/material-order/teach-70/B-accept/view": {
+      "sha256": "057f17747a85e97ab47940839bf86c47942251fe771cada34994ae50532c5ffd",
+      "frames": 60
+    },
+    "media/material-order/transfer-173/A-none/view": {
+      "sha256": "23cf89685af5cbad58c47095a2abef85a136f81e5ac325ffbff1077fa36674de",
+      "frames": 76
+    },
+    "media/material-order/exception-276/A-none/view": {
+      "sha256": "df1e37f20336eb3ac1b1d5e89c25b32f78acced666b502a42dec455163ca8312",
+      "frames": 95
+    },
+    "media/approach-side/teach-81/B-none/view": {
+      "sha256": "0d6f05e92f5ff69ab14d152a0ff60b436954c726926236ab9ef03e9b037863d3",
+      "frames": 19
+    },
+    "media/approach-side/teach-81/B-change/view": {
+      "sha256": "8f4fe9c83569af4c7b564c9d364e3bcb378a00652e049da7fec7c1f890aca827",
+      "frames": 35
+    },
+    "media/approach-side/transfer-184/A-none/view": {
+      "sha256": "1817b99085d08770d4d40da2d6631eaa282c8687673c1d2e6b6556b60816efc2",
+      "frames": 20
+    },
+    "media/approach-side/exception-287/A-none/view": {
+      "sha256": "f2cb656d827529c757c31c352a4929e8bb8fbf31fc1b6aa63ca96b9ac942c6ee",
+      "frames": 20
+    },
+    "media/completion-update/teach-92/B-none/view": {
+      "sha256": "2a3969cda82f8a648dec8b87bea5dbe382f052aae632eca04e9e485a6a1de130",
+      "frames": 64
+    },
+    "media/completion-update/teach-92/B-change/view": {
+      "sha256": "50238e4773ac7d40dae170bee1a6ccc993ca82d2e2100d592a47c407f11c7442",
+      "frames": 124
+    },
+    "media/completion-update/transfer-195/A-none/view": {
+      "sha256": "4f2f9623b4909c7f7677345946ea2a7a9e497f725f3c3616a3e09cf1fbd22a3d",
+      "frames": 53
+    },
+    "media/completion-update/exception-298/B-none/view": {
+      "sha256": "007591c96559a45d5eb78bc347bad5869f8220a3daa6926412a6f2a7cb9d04b3",
+      "frames": 36
+    },
+    "media/vegetable-texture/teach-103/B-none/view": {
+      "sha256": "ed6c198756f0f0cfd0943c9ffc5d08d0754917f286c76c4e2b3d8f5d3f7a3392",
+      "frames": 27
+    },
+    "media/vegetable-texture/teach-103/B-accept/view": {
+      "sha256": "dcb03dbb55de187dd1c8dafadefc4f4ab3bf4da290a722b53f1c817aa9891c7b",
+      "frames": 37
+    },
+    "media/vegetable-texture/transfer-206/B-none/view": {
+      "sha256": "1c7e70bc5234f6bc4800035cf94a08bde8ed429a0653ca1fe62dec67e3c6a9ff",
+      "frames": 30
+    },
+    "media/vegetable-texture/exception-309/A-none/view": {
+      "sha256": "b3ddf55cbb17f3be05cc1c02f0e90f05a7fe096e11e2e967a2e3a8ace9613515",
+      "frames": 27
+    },
+    "media/private-storage/teach-114/A-none/view": {
+      "sha256": "93265d30d818557eb614b0f7881c84bbf4f679a22001694662e31f5653a26f5b",
+      "frames": 91
+    },
+    "media/private-storage/teach-114/A-accept/view": {
+      "sha256": "b3ebab23ae80ee92039dd9b4db8fa308f6311e174055c9f129e8a3a78a883daa",
+      "frames": 101
+    },
+    "media/private-storage/transfer-217/B-none/view": {
+      "sha256": "197c9e1d71fcbd1e757d35adf79322bab57147a19b2a4ef0b7c2c6c5dd9e3bec",
+      "frames": 28
+    },
+    "media/private-storage/exception-320/B-none/view": {
+      "sha256": "c4f60f5f7bfc8012c3d05909bf98c08f40e7a0967c4460e8c69c8615bcc6fdca",
+      "frames": 29
+    },
+    "media/lighting/teach-125/B-none/view": {
+      "sha256": "897597da5624b151bde3cb519e97180b4a597605032e6abc7519dde2eff43c6e",
+      "frames": 17
+    },
+    "media/lighting/teach-125/B-change/view": {
+      "sha256": "aef37d1757ed9693f5207b8878a946bdfae218d91ec0c6a6486c5ce6c01f7aa8",
+      "frames": 39
+    },
+    "media/lighting/transfer-228/A-none/view": {
+      "sha256": "d3fa8d2ee270552ed696fb83dd3c70ac6198f00964a8aa259f6ee6949ba8fd08",
+      "frames": 23
+    },
+    "media/lighting/exception-331/A-none/view": {
+      "sha256": "f3d810ed2b0858bb487efaa5b28a7041e4d91feb94bf722c21c9d4b892491d9d",
+      "frames": 23
+    },
+    "media/cleaning-scent/teach-136/B-none/view": {
+      "sha256": "2fa4087a868a483bf20f31551b65566b5ef8bee866cf6fd4f2269cb46404bc40",
+      "frames": 28
+    },
+    "media/cleaning-scent/teach-136/B-change/view": {
+      "sha256": "722f63748f4762e514ff82c668292421bf223106ef021bcd1e4540c64e2e5277",
+      "frames": 66
+    },
+    "media/cleaning-scent/transfer-239/A-none/view": {
+      "sha256": "6bd1abac504f62223a05b5a3893e647900966234206c787313043193780fcaee",
+      "frames": 92
+    },
+    "media/cleaning-scent/exception-342/A-none/view": {
+      "sha256": "30d9fcf1d7b6861f628d29d9e95101c59953d63353e39d39b868d9e8736777e9",
+      "frames": 94
+    },
+    "media/paused-work/teach-37/A-change/view": {
+      "sha256": "a0d4cbba734e97ca5108312d73cb00030b1112b033227f4d2ccc1c451855090e",
+      "frames": 46
+    },
+    "media/paused-work/transfer-140/B-none/view": {
+      "sha256": "b839555480c333500d0fc7a46a0373ec2f6cd7a6f92e9ee55b8104637d557392",
+      "frames": 28
+    },
+    "media/material-order/teach-70/B-change/view": {
+      "sha256": "443d63a96abf8ea0621309e6de1fa322abc630c78dea00d182cc5622f3e4fab6",
+      "frames": 106
+    },
+    "media/material-order/transfer-173/B-none/view": {
+      "sha256": "8ba1065dffaf9b0ea5c05e7ff6fc09c605f163f6d301b6e4c5725770680c35eb",
+      "frames": 76
+    },
+    "media/vegetable-texture/teach-103/B-change/view": {
+      "sha256": "76999466b10e03de46edb3889151f48f6540b6a613fb067e6b56557ef11be45a",
+      "frames": 64
+    },
+    "media/vegetable-texture/transfer-206/A-none/view": {
+      "sha256": "87aad7c4af9764a72aa02a2f7441e6c1e57396361d9035f4234379f411402d2b",
+      "frames": 27
+    },
+    "media/private-storage/teach-114/A-change/view": {
+      "sha256": "0fc84798354af736cfaa0333be46069823c5599b60f48628bb3740309ddaf90a",
+      "frames": 165
+    },
+    "media/gift-finishing/teach-48/A-none/view": {
+      "sha256": "c8cada17811f6b09d708dc0745c50fd5f29e3c4a43f78f9567b83227cd5a0220",
+      "frames": 31
+    },
+    "media/gift-finishing/teach-48/A-accept/view": {
+      "sha256": "5547c408b5045244cd22a46b459c6220aeda7add5a28860c2bf090b3eb2425bc",
+      "frames": 47
+    },
+    "media/approach-side/teach-81/A-none/view": {
+      "sha256": "b4dfacb82dd03b599ad8c33cc6d7f2f1982d978ee1aebbb3cf9c3b038b9eaa65",
+      "frames": 20
+    },
+    "media/approach-side/teach-81/A-accept/view": {
+      "sha256": "4ea51ef238ef6fcb7b78009bd93ead373bcace10e3ae6a4712ecf8d832d09c18",
+      "frames": 30
+    },
+    "media/private-storage/teach-114/B-none/view": {
+      "sha256": "b682c5bd715d594356fc3b552ebd229ff93e46598e94df15b7b6ead767531fab",
+      "frames": 50
+    },
+    "media/private-storage/teach-114/B-change/view": {
+      "sha256": "ceababd669417231d19bcc022ef03fcec020ddce568e92a0f0d07010e281f9b5",
+      "frames": 120
+    },
+    "media/private-storage/transfer-217/A-none/view": {
+      "sha256": "de8248949cef38b4e08b36b7c0e8728432e3d2ad1294777227dcac13bb8b285a",
+      "frames": 75
+    }
+  },
+  "report_films": {
+    "report-media/episode-1-dbc92d0f31b6c878.mp4": {
+      "sha256": "fe0dc5b26bbf293327f613e969719100c0a84f6c14a5c51b4269c68e89780a0a",
+      "frames": 1638
+    },
+    "report-media/episode-2-62040f7b41e4821c.mp4": {
+      "sha256": "8415be646e3ab14f71639e8cc80c5fd85bd14a32e403ab51876a50288e558613",
+      "frames": 1982
+    },
+    "report-media/episode-3-7b0f87977dfd24af.mp4": {
+      "sha256": "960b7350e5e5dfb08d36417d1af9c4470f5bd67defb46b9a7e4612873ae2e2d9",
+      "frames": 1406
+    },
+    "report-media/episode-4-4382d0a5cd9cd665.mp4": {
+      "sha256": "1fd76d6af63234d038de2513271cc374b5bcbef02792013e2bacaa1bbad5a1fe",
+      "frames": 1834
+    },
+    "report-media/episode-5-999ee27aa8e381fd.mp4": {
+      "sha256": "45683272591393a6d3553fba17f19d4f68acb66f87838c548e6d8090b621750e",
+      "frames": 1448
+    },
+    "report-media/episode-6-a3318e0f08103c9a.mp4": {
+      "sha256": "1e453cbd5161e7197fcd9fc3d415715279603b604c9ab910b93faff20546e2f0",
+      "frames": 1910
+    },
+    "report-media/episode-7-74d75aeca4d8a794.mp4": {
+      "sha256": "e065b16d2770ca20798822be10250be1fa4800c2943f8d5556f834822faa1c58",
+      "frames": 1658
+    },
+    "report-media/episode-8-068c78f2dbc9d1e9.mp4": {
+      "sha256": "0c902fc673449f680f8930d30dc2495e40727e0b51fadefc3506b45b3d04eb9e",
+      "frames": 1806
+    },
+    "report-media/episode-9-5644b29402d9eb55.mp4": {
+      "sha256": "57cdd971c6c57d078948db69b9404a3fba136af82de7729c65c542c438fae926",
+      "frames": 1488
+    },
+    "report-media/episode-10-b7c6c28777ce7970.mp4": {
+      "sha256": "bff9da665879efa49d58e4e6c4eb67490cda9a19de92883da5590f1d9986beac",
+      "frames": 2072
+    },
+    "report-media/episode-11-8bf4fe5afb23de55.mp4": {
+      "sha256": "34b86f13adfe26deead31b74ec8eb47a4617c18f4e2aba6bc44c34dc959e99f0",
+      "frames": 1790
+    },
+    "report-media/episode-12-a3d35ce9170bc811.mp4": {
+      "sha256": "dcfd34600c2f8729ee3f791e62d743b7c312652c7bccb25a78a07ac11f2e5f05",
+      "frames": 2178
+    },
+    "report-media/episode-13-c8057825155bc819.mp4": {
+      "sha256": "f6a9c9656714eb853c14c308a0667a7d0547c8d7c41320a303cd403ca868cbb3",
+      "frames": 1742
+    },
+    "report-media/episode-14-1a814473d79bbdf8.mp4": {
+      "sha256": "cce4db860a5d966826e262dd00f99941e7402e5e45afd35a2e848bcd4fa01830",
+      "frames": 1850
+    },
+    "report-media/episode-15-90a39405f95f67ea.mp4": {
+      "sha256": "a14279723db9cabc97ba32762d9bf9e229feecb9e7d0287db9464781a2a39e5c",
+      "frames": 1482
+    },
+    "report-media/episode-16-be7cd47735c456a2.mp4": {
+      "sha256": "96b2bcbfa4278044ab0818305ede2e629327cbba2c2d6395f00ee572a454840e",
+      "frames": 2024
+    },
+    "report-media/episode-17-ec828335994e9dc3.mp4": {
+      "sha256": "08d530cd46cccca1d963173144c228b791d4105fbf09de014fdaac0faae2392d",
+      "frames": 1394
+    },
+    "report-media/episode-18-b7136a290ed23a33.mp4": {
+      "sha256": "1936e21f42f79e96a493cd8ab883daf4eb4eb3c846911b5f4e32cdae17cc7473",
+      "frames": 1870
+    },
+    "report-media/episode-19-4ac4b049fb685003.mp4": {
+      "sha256": "581ae8babeb30e86f87f1098491638fe0707559d286de20c750d628b03d4ded0",
+      "frames": 1680
+    },
+    "report-media/episode-20-e78eb58c3be0292a.mp4": {
+      "sha256": "563137e3e1a9efe4af4d0ab551ab21bebf63eb410089f1bdab60a20a78ca6294",
+      "frames": 1934
+    },
+    "report-media/episode-21-5d01f6ba57d9c06c.mp4": {
+      "sha256": "68e009daaf05968d3e0c13589d4bb14db1efdd203c31def2c3c3487331218044",
+      "frames": 1694
+    },
+    "report-media/episode-22-9a48a38eef6d9008.mp4": {
+      "sha256": "e5987530afb0824b104adef1313f3fe0581a106deb228360c5e01e01a4ae5913",
+      "frames": 2060
+    },
+    "report-media/episode-23-dba5f5fa3b186f34.mp4": {
+      "sha256": "7f9c53dc7b487c4ee31b9909624eed9078cf088703f349af7b929c69b3be4a7e",
+      "frames": 1404
+    },
+    "report-media/episode-24-aba4a57716827166.mp4": {
+      "sha256": "1c9035ab76a14e8f8ab33a54c8edd2dc5661d05ab89976d81242707f1cf55392",
+      "frames": 1880
+    }
+  },
+  "retention_scenes": 20
+}

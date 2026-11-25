@@ -1,0 +1,12 @@
+{
+  "input_sha256": "2a0ef966c1fcd49246988ca588934c5fc5d5106fc10aa454de5bf6d3a574f2f1",
+  "session": "transfer-selective",
+  "thread": "run-0130",
+  "request": "sessions/transfer-selective/1795631227888778317-971d72a5/request.json",
+  "result": "sessions/transfer-selective/1795631227888778317-971d72a5/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your left hand is free, and you prefer to receive items with it.",
+    "question": ""
+  }
+}

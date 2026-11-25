@@ -1,0 +1,12 @@
+{
+  "input_sha256": "4d7db10449947fee85bf46ad8bf2b7a526eabff426f4de97f7aff62803861e78",
+  "thread": "run-0215",
+  "request": "episodes/continuous/receiving-hand/independent/exception-note/1795592235859154340-86bddc46/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their left hand is on the cloth, so I’ll offer the remote to their free right hand."
+  },
+  "images": [
+    "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+  ]
+}

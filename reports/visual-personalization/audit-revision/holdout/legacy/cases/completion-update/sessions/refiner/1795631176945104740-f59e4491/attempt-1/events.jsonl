@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0102"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Timing of low-priority spoken updates\",\"note\":\"The person asked for brief spoken updates right away when working alone. During a video call, wait until the call ends. This preference applies to low-priority updates. Timing in other situations is unclear.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12019,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":58,"reasoning_output_tokens":0}}

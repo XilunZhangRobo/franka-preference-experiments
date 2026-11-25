@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "Prepare cooked green beans for the warm side dish.",
+    "options": {
+      "A": "Serve the firmer batch.",
+      "B": "Serve the more tender batch."
+    },
+    "memory": "# Broccoli tenderness\n\nWhen ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "fa67f5903e71ff798d1dfeeaf8afbae41ccf6eb451f52a8d78ac08b9d9b6e5b0"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

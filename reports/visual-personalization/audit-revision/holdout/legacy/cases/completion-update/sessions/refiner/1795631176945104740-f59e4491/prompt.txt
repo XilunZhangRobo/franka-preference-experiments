@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Timing of spoken updates\n\nThe person used the blue cube to replay a completion update during a writing task. Their preferred timing for future updates is unclear.\n", "question": "For future low-priority updates, should I speak while you’re working or wait until you pause?", "person_answer": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."}

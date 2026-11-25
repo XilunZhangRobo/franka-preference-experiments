@@ -1,0 +1,1 @@
+{"choice":"B","reason":"They preferred the first item on their left for assembly, but their preference for planting is unknown.","question":"Would you like the pot, scoop, and tag arranged from your left to your right in the order you’ll use them?"}

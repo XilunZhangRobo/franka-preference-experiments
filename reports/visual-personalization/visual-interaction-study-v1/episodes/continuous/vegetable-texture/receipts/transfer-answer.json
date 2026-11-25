@@ -1,0 +1,11 @@
+{
+  "input_sha256": "07767f1341d6073436aa4f3a9b789660b83108d3663c85a7b05a6ce0c0fe716a",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592812354804754-cc44f1cf/request.json",
+  "reply": {
+    "answer": "I’d like the green beans tender, please."
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

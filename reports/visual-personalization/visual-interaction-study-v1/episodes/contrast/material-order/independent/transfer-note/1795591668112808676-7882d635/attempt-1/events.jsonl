@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0227"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"A left-to-right row follows the requested order and is consistent with the person’s base-first setup.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12477,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":32,"reasoning_output_tokens":0}}

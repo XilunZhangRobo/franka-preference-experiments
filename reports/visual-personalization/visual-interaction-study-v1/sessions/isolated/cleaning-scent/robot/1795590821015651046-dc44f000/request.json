@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Set out a cleaner so I can wipe my kitchen counter. I am home alone.",
+    "options": {
+      "A": "Set out the mild-citrus cleaner.",
+      "B": "Set out the fragrance-free cleaner."
+    },
+    "written_library": {}
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "836f0c16377780a83b9eb38b73f8ed4629422115d59bc69b87bb68df4cc152b2"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"current_note": "# Cleaners for the sewing surface and kitchen counter\n\nUse mild citrus on your sewing surface. For the kitchen counter, use fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a kitchen counter preference based solely on someone else being home.\n", "person_answer": "Yes, please use fragrance-free cleaner on the shared craft worktop."}

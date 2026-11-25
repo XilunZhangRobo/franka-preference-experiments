@@ -1,0 +1,3 @@
+# Broccoli tenderness
+
+Check tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear.

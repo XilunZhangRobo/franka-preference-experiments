@@ -1,0 +1,17 @@
+{
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Pass me my lidded drinking mug.",
+    "options": {
+      "A": "Offer it to the person's left hand.",
+      "B": "Offer it to the person's right hand."
+    },
+    "memory": ""
+  },
+  "reply": {
+    "choice": "B",
+    "reason": "The person's right hand is free while their left hand holds a cloth."
+  },
+  "thread_id": "run-0352",
+  "image_sha256": "8b2e8b49682267a2c0255ea93c632e1bf732365dca7c5fd9db4426485807cbe2"
+}

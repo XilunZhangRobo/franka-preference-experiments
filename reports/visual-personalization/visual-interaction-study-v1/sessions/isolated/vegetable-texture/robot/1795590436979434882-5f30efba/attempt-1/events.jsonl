@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0300"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"You asked for the more tender green beans.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":90142,"cached_input_tokens":56832,"cache_write_input_tokens":0,"output_tokens":196,"reasoning_output_tokens":0}}

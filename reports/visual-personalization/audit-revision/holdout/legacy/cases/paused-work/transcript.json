@@ -1,0 +1,126 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0113",
+    "reply": {
+      "observation": "After I shelved the rust mat, you pointed at it and then toward the cleared spot.",
+      "interpretation": "You may have wanted the rust mat back within reach.",
+      "title": "",
+      "note": "",
+      "question": "Should I usually leave the rust mat within reach, or did you need it there just this time?"
+    }
+  },
+  {
+    "stage": "audit-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/audit-answer.json",
+    "thread": "run-0112",
+    "reply": {
+      "answer": "Usually leave the rust mat where it is when it’s clipped, since that marks a project I want to keep on the bench."
+    }
+  },
+  {
+    "stage": "refine",
+    "actor": "robot",
+    "channel": "written note",
+    "receipt": "receipts/refine.json",
+    "thread": "run-0118",
+    "reply": {
+      "title": "Clipped rust mat on the bench",
+      "note": "Usually leave the rust mat where it is when it’s clipped. The clip marks a project the user wants to keep on the bench. Their preference for an unclipped mat is unknown."
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0119",
+    "reply": {
+      "choice": "A",
+      "reason": "Shelving the teal mat clears space at the front of the counter for the cutting board."
+    }
+  },
+  {
+    "stage": "transfer-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-post_answer.json",
+    "thread": "run-0120",
+    "reply": {
+      "choice": "A",
+      "reason": "Shelving the teal mat makes room for the cutting board while keeping the clipped rust project in place."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0121",
+    "reply": {
+      "choice": "A",
+      "reason": "The clip marks the rust mat as a project you want to keep on the counter.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0115",
+    "reply": {
+      "choice": "B",
+      "reason": "Shelving the closed stitching kit clears a spot while keeping its contents together."
+    }
+  },
+  {
+    "stage": "control-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-post_answer.json",
+    "thread": "run-0117",
+    "reply": {
+      "choice": "B",
+      "reason": "Shelving the closed stitching kit clears a spot while leaving the mat and its supplies in place."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0116",
+    "reply": {
+      "choice": "B",
+      "reason": "Shelving the closed kit would clear space while leaving the project on the rust mat in place.",
+      "question": "Should I leave the organizer on the rust mat for your current project?"
+    }
+  },
+  {
+    "stage": "control-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/control-answer.json",
+    "thread": "run-0114",
+    "reply": {
+      "answer": "Leave it there if the rust mat is clipped."
+    }
+  },
+  {
+    "stage": "control-final",
+    "actor": "robot",
+    "channel": "final decision",
+    "receipt": "receipts/control-final.json",
+    "thread": "run-0116",
+    "reply": {
+      "choice": "B",
+      "reason": "Shelving the closed stitching kit frees a spot and leaves the organizer on the rust mat."
+    }
+  }
+]

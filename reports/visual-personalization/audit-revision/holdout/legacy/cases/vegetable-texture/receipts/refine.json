@@ -1,0 +1,11 @@
+{
+  "input_sha256": "25a3e2a1be864290eb1e3d450e77c19e3df46f10d8eb159c3ee44c7f708a1b99",
+  "session": "refiner",
+  "thread": "run-0137",
+  "request": "sessions/refiner/1795631226675688893-a0c2bf12/request.json",
+  "result": "sessions/refiner/1795631226675688893-a0c2bf12/attempt-1/result.json",
+  "reply": {
+    "title": "Tender broccoli with a warm dinner",
+    "note": "When serving broccoli with a warm dinner, make it tender. The person said this was what they wanted the plate gesture to convey. Their preference for broccoli at other meals is unknown."
+  }
+}

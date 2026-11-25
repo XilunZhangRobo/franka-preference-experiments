@@ -1,0 +1,11 @@
+{
+  "input_sha256": "4926ff6f846476d9b449b7ee47682dbd53271f5a837a58194391ad08aa0b02c1",
+  "session": "refiner",
+  "thread": "run-0092",
+  "request": "sessions/refiner/1795631120284035952-99dbdfef/request.json",
+  "result": "sessions/refiner/1795631120284035952-99dbdfef/attempt-1/result.json",
+  "reply": {
+    "title": "Drink placement in front of left shoulder",
+    "note": "When there’s room, place the drink in front of their left shoulder, as they requested. They pointed to a spot on the table once and said they have no stated preference about using the table."
+  }
+}

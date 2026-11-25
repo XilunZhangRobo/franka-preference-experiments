@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Flashlight handoff\n\nYou moved the flashlight to your left hand after this handoff.\n",
+    "question": "Would you prefer left-hand offers for flashlights, for other items too, or does it depend on the task?",
+    "person_answer": "I prefer my left hand for flashlights and other items, but use my right hand if my left is busy."
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

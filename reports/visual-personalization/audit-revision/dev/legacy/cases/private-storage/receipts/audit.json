@@ -1,0 +1,14 @@
+{
+  "input_sha256": "a6b07d2bb77cd0e192a66c6c21da7c53779130e136d1024635e587eadd6f8627",
+  "session": "writer",
+  "thread": "run-0059",
+  "request": "sessions/writer/1795631049083855303-f7d20423/request.json",
+  "result": "sessions/writer/1795631049083855303-f7d20423/attempt-1/result.json",
+  "reply": {
+    "observation": "After I put the house keys and flashlight in the shallow compartment and closed it, the person pointed toward the lid without speaking.",
+    "interpretation": "They may have wanted me to reopen it. The gesture alone didn’t tell me why.",
+    "title": "",
+    "note": "",
+    "question": "When I put the keys and flashlight away in the entryway, do you usually want me to leave the compartment open?"
+  }
+}

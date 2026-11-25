@@ -1,0 +1,1 @@
+{"choice":"B","reason":"The broccoli check makes tenderness worth considering, but your green bean preference is unclear.","question":"Would you prefer the firmer or more tender green beans?"}

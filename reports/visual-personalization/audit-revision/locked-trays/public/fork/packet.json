@@ -1,0 +1,14 @@
+{
+  "task": "Put the finished piece away.",
+  "options": {
+    "A": "Put the piece in the teal tray.",
+    "B": "Put the piece in the amber tray."
+  },
+  "frames": [
+    {
+      "t": 0.0,
+      "file": "i000.jpg"
+    }
+  ],
+  "speech_transcript": []
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Rust mat placement\n\nThe person may prefer to keep the rust mat on the bench while working.\n",
+    "question": "Should I usually leave the rust mat on the bench, or did you need it there just this time?",
+    "person_answer": "I didn’t need the rust mat there this time, but leave it on the bench whenever I clip it."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+    "options": {
+      "A": "Turn on the desk lamp.",
+      "B": "Turn on the overhead fixture."
+    },
+    "memory": "# Room light for puzzles\n\nTry the room light first for this person’s puzzle work. One switch change suggests a preference for this setup, but the reason is unclear.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "55a30608f4ddb7563abde7e6dce88653098cfeb075bb2f3c0e1bedb76502b2de"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

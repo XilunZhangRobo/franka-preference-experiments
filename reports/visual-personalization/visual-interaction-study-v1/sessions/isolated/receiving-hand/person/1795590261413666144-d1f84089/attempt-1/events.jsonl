@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0295"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"I prefer my left hand for flashlights and other items, but use my right if my left is busy.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28945,"cached_input_tokens":12416,"cache_write_input_tokens":0,"output_tokens":39,"reasoning_output_tokens":0}}

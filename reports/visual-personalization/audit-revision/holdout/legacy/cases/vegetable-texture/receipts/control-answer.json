@@ -1,0 +1,10 @@
+{
+  "input_sha256": "64a05e43297134978ead6314d7864b3043d443f53e7172c1d0ffcd8d5b1d64ab",
+  "session": "control-person",
+  "thread": "run-0133",
+  "request": "sessions/control-person/1795631267276709096-e5d89e86/request.json",
+  "result": "sessions/control-person/1795631267276709096-e5d89e86/attempt-1/result.json",
+  "reply": {
+    "answer": "I'd like them firm, please."
+  }
+}

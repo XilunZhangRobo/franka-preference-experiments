@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0276"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Pot, scoop, and tag row\",\"note\":\"For this setup, place the pot on the person’s right, the scoop in the middle, and the tag on their left. They explicitly asked to start with the pot on their right. Their preference for other tasks is unknown.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":91096,"cached_input_tokens":56832,"cache_write_input_tokens":0,"output_tokens":241,"reasoning_output_tokens":0}}

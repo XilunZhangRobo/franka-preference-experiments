@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Red base on the left, yellow cap on the right\n\nFor this assembly, place the red base by their left hand and the yellow cap by their right.\n", "question": "For other assemblies, do you also prefer the base on your left and the cap on your right?", "person_answer": "For my own assemblies, yes, if I use the base first and the cap second."}

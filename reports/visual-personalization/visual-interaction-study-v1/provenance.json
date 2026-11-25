@@ -1,0 +1,51 @@
+{
+  "revision": {
+    "commit": "6041067ac5024329e07e2dee4ce59dc5f05c533f",
+    "dirty": true
+  },
+  "assets": {
+    "panda": "535eaf3feda5e637227d822748e1a384ea767f145233a5ab70ac825c39ffb63f",
+    "scene": "072653bb66f8c63951c7d98f63bb0d5a8ccd06844b36cd18c1ad5a80206abf56"
+  },
+  "source": {
+    "__init__.py": "eac8e273a988fa0a846bdec1cf265cb844172c3f4a1d8576dce176ac27ca9b2b",
+    "analysis.py": "159a92c4d091c8ad968b6aa349b877320d6f44fd93f69c025a6bad27e3fcefbd",
+    "assets.py": "9b8485f456de86c007a6979ca24649094e4af864e59635b245873b8b3d41bd1a",
+    "avatar.py": "6d24b47ee4f1903933c0e506237cad895d2fc0c54894cdec5024266ba9d39a27",
+    "bench_cargo.py": "c03090b552afc1c149f9c57456f88107aafa2a6cbf15ac19aea4c5faced80b43",
+    "calibration.py": "509479dbb8899f7cb9c0c25367806e81c985d95493223031b702f7e96cc1f6f3",
+    "cli.py": "4a5be8d4699452a779260232990108da5dc90554332d1e7f18d72c33b6c3b7ab",
+    "codex_adapter.py": "3a20359b7c722735ca9a0de7d553eb93223140c264ee7abf0b0a20084d2e2434",
+    "contact.py": "d16ecdd3e6ae4594f8b63ce24a823ec9b48f153e37a14af9d523dbbfd2ce8d70",
+    "contextual.py": "87a08dd021698137530c7764aff3c34361dd5c5ed9d63e43bf94270bb4e35e73",
+    "cycles.py": "d404383e9247e94323b2ee1721fcf0348ea7b7d3ad83e762ea2d690673205671",
+    "episode.py": "9dc19224b0b8f8c9df191dc881eda9559d1617062f924e6809c493e547e54b4e",
+    "evidence.py": "3f38ca7cb4ec6b3d822aeb64abe3f1beb3c967085fa3faa5e1fad9f637f1bee0",
+    "gift_props.py": "d307db3fbceb5450f11a07129f7de265945c883466362cdc5745c3d5abd80c44",
+    "handover.py": "b1aff089a353a451d6cef1bf9633bd9cf7411c5d2ec9ff2dc1f828e0c58e3ea7",
+    "household.py": "f2a8097f60aa5f7f06e88b4ea452f01bb3f5c96a54d0ce55eefa1a9d53d39c37",
+    "http_adapter.py": "18a6026eb153c9c1d0932084bd12616b9753b0aa985462c3e54e23f1b45aaaf4",
+    "human_qa.py": "4638c65a19467b9bfffc1846fc2a34c6ac8e0b2ce05c05890b92c14d340f93be",
+    "interaction_astra.py": "80324fc33f9106952e671d6faeb1a918598ab2b0b5e4864f9adc21e92801c587",
+    "interaction_media.py": "191f7c194cfa946d3e9b59064c2e2c390279fdc7c704d3d28b2d16f275d448c2",
+    "interaction_retention.py": "f948ee056854729f5099e02a7c54b10330700f2b89c412bdeaa32c6d553a4a1b",
+    "interaction_sim.py": "62a9ad78ae2f7f901019ccd4e0641efec07d798f7a66047d86088c2f99d3b37f",
+    "interaction_study.py": "23084f7418e303391682eb0733a78b6ff373552147f9c0527e44446e051dad86",
+    "kitchen_props.py": "81eaee766c6d043dc1e8b82fcb659654bfc7524583661fea8f0c8fe6a724fa82",
+    "paused.py": "2dad5788ee8e215231911be69f8309b0a41ec5d59921881266cec824ac51f3b4",
+    "playback.py": "9a38a0e85f5f70c4a38065ca327fab77ed1888f8a5664b04361b88bc21bab07b",
+    "project_clip.py": "02ef570937133d9d06f6f871796871afad67fc80d7a7b0ad4fe59f6c043fa517",
+    "prop_clearance.py": "390b5211e10108abcb63946ba892759564f1462c458cae99d11473e17f345eef",
+    "prop_mesh.py": "d2bda25c76e171c98c19d54b554f319acc0e716470a0c60d1d3e298498caf393",
+    "protocol.py": "1f810ba99cfe58ef27e638ee5957220603f63f17dbb98c6e976b7c4171e4d852",
+    "quality.py": "0631a92ba60b6fa8af4cd42cbd1f87e42fecbb8805d546e91c3fe9b9c945b1ff",
+    "rendering.py": "a2f2b647e88e10d5b6deb0e7d348667a8fae291757375bc2e1f4d0eee9b88520",
+    "replay_identity.py": "aad52230b9040138d6c6a50494bd7e6835b62e72c44f26d31560cdbdf847c2d7",
+    "scene.py": "9ed5e6431f7d044389023391c85eda515164608c8684cf8eeec9fd5087c94ade",
+    "study.py": "5e0299263b676ae5691ac8d9cda672c370468acac618381cf54b3edf2d82c4c6",
+    "textile.py": "1abcbfd7842e1044ebd05d1880b8477aafad27926320771de4ba780868b28801",
+    "visibility.py": "a2ca88b2fb3adfd3ee3871ccb080d5fc0a302ab71a62d655cf9320b075537ecf",
+    "work_surface.py": "8e226c8b36ae34ae9a2c763a3101b7572099947c26e5ab44a838ff50a708154e",
+    "workshop.py": "4500fb1db7a846af36f3e5685389dd1123910307cf42e1dce73f12dcab55cb7e"
+  }
+}

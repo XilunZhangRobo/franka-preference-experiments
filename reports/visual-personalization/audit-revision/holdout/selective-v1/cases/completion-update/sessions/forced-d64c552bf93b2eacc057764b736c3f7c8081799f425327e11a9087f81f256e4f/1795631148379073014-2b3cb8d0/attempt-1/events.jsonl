@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0150"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The delivery update can wait for a clearer pause because setting the pencil down is only a weak cue.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12428,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":32,"reasoning_output_tokens":0}}

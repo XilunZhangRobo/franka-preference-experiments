@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Decorations for personal gift cards\n\nWhen a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.\n",
+    "person_answer": "I’d like to arrange the tissue and gift myself."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

@@ -1,0 +1,16 @@
+{
+  "input_sha256": "1d7c968488d83203fa41023c790dea7de8c6b7007f5f927b457d5defdddef9c4",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795591963122935862-47a10791/request.json",
+  "reply": {
+    "response": "B"
+  },
+  "images": [
+    "media/gift-finishing/teach-48/A-none/view/frame-00000.jpg",
+    "media/gift-finishing/teach-48/A-none/view/frame-00006.jpg",
+    "media/gift-finishing/teach-48/A-none/view/frame-00012.jpg",
+    "media/gift-finishing/teach-48/A-none/view/frame-00018.jpg",
+    "media/gift-finishing/teach-48/A-none/view/frame-00024.jpg",
+    "media/gift-finishing/teach-48/A-none/view/frame-00030.jpg"
+  ]
+}

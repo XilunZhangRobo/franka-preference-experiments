@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Broccoli and green bean texture\n\nChoose firmer broccoli for warm meals and chilled salads, as you confirmed after swapping batches at dinner. You also requested firmer green beans for this warm side dish. Your preference for green beans at future meals is still open.\n",
+    "person_answer": "I’d like the green beans firmer, please."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0240"
+}

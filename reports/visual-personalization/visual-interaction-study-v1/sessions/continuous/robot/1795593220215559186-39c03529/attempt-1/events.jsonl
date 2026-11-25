@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"observation\":\"The person moved the house keys and flashlight from the open tray into the shallow compartment and closed it.\",\"interpretation\":\"The compartment appears to be their usual storage spot for these two items.\",\"title\":\"Entryway storage for keys and flashlight\",\"note\":\"When putting away the house keys and flashlight after use, favor the shallow entryway compartment and close it.\",\"question\":\"Which other entryway items, if any, should I put in that compartment after use?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":2321406,"cached_input_tokens":2222848,"cache_write_input_tokens":0,"output_tokens":2201,"reasoning_output_tokens":0}}

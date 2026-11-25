@@ -1,0 +1,13 @@
+{
+  "input_sha256": "90375abee8e6fd492bdde842f9539982c18fa311597ffece0342171e23140705",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592782609459409-24cc7b72/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You usually like tender broccoli with warm dinners, so tender green beans are my tentative choice.",
+    "question": "Would you like the green beans tender or firm for this warm side dish?"
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

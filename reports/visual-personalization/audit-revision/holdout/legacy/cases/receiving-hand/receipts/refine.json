@@ -1,0 +1,11 @@
+{
+  "input_sha256": "c214698f60d6b0b3534c1fc88d7e2a7b4a9c0926f0c56de593c4368310a6316a",
+  "session": "refiner",
+  "thread": "run-0127",
+  "request": "sessions/refiner/1795631215869977200-32e1a6d3/request.json",
+  "result": "sessions/refiner/1795631215869977200-32e1a6d3/attempt-1/result.json",
+  "reply": {
+    "title": "Left-hand preference for item handoffs",
+    "note": "Offer flashlights and other items to your left hand by default. Use your right hand when your left is busy. You moved the flashlight to your left hand after the handoff and confirmed this preference applies to other items too."
+  }
+}

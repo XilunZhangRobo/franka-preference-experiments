@@ -1,0 +1,12 @@
+{
+  "input_sha256": "589a54afd32a4775f2bf58c6cebca23a95c6ad0e3a216ab309d624d7dae0b1c2",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592253435743260-c984be3d/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Placing the red base on your right and the yellow cap on your left keeps them in their current order for assembly."
+  },
+  "images": [
+    "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+  ]
+}

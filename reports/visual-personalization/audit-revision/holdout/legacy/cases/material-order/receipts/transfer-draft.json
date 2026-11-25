@@ -1,0 +1,11 @@
+{
+  "input_sha256": "3998166312c13dd0b6c3b3aba28dc5ca356bc5f8c54f81e97751359e054b0e4d",
+  "session": "forced-3998166312c13dd0b6c3b3aba28dc5ca356bc5f8c54f81e97751359e054b0e4d",
+  "thread": "run-0110",
+  "request": "sessions/forced-3998166312c13dd0b6c3b3aba28dc5ca356bc5f8c54f81e97751359e054b0e4d/1795631138883319842-bca2af6d/request.json",
+  "result": "sessions/forced-3998166312c13dd0b6c3b3aba28dc5ca356bc5f8c54f81e97751359e054b0e4d/1795631138883319842-bca2af6d/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "From the seated person’s perspective, they can use the pot, scoop, and tag in order from left to right."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "3289f96568d3ed6c360afaa227076719f3d98653efa229ce8106492e655b41ca",
+  "thread": "run-0201",
+  "request": "episodes/continuous/lighting/independent/transfer-note/1795593898524842922-41f545e8/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person is comparing tiles alone and prefers the overhead light for solo work."
+  },
+  "images": [
+    "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  ]
+}

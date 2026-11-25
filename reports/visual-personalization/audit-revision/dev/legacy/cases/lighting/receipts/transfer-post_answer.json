@@ -1,0 +1,11 @@
+{
+  "input_sha256": "09449191d32989d6e4ffbb087e31928325988334c48750d40685af503929cc7e",
+  "session": "forced-09449191d32989d6e4ffbb087e31928325988334c48750d40685af503929cc7e",
+  "thread": "run-0056",
+  "request": "sessions/forced-09449191d32989d6e4ffbb087e31928325988334c48750d40685af503929cc7e/1795631079548924000-ed29e565/request.json",
+  "result": "sessions/forced-09449191d32989d6e4ffbb087e31928325988334c48750d40685af503929cc7e/1795631079548924000-ed29e565/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person is comparing tiles alone and prefers the ceiling light for solo tabletop tasks."
+  }
+}

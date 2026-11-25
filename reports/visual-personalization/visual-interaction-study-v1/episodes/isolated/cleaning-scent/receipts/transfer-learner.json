@@ -1,0 +1,13 @@
+{
+  "input_sha256": "858f52191118d585199da660279d69264fd47152311b28546226a6a1c0d2ac44",
+  "thread": "run-0252",
+  "request": "sessions/isolated/cleaning-scent/robot/1795591092710830344-f1be810d/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You chose mild citrus once for the kitchen counter, so it seems plausible for your private sewing room.",
+    "question": "Do you prefer mild citrus or fragrance-free for the sewing surface?"
+  },
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ]
+}

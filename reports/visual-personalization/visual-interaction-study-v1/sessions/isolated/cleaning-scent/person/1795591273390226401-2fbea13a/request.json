@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Should I use fragrance-free cleaner on the shared craft worktop too?",
+    "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+    "private_brief": "I enjoy mild citrus cleaner in spaces I use privately. Use fragrance-free cleaner for shared surfaces when guests are coming."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "bbee631bd0f60191d95b396a87d1b3d12df77f7447e7b70c599ecb5aac56ea77"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0253"
+}

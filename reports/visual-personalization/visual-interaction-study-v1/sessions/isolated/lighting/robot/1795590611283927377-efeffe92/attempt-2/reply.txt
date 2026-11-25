@@ -1,0 +1,7 @@
+{
+  "observation": "After I turned on the desk lamp, the person switched it off and used the other switch, brightening the room.",
+  "interpretation": "They seemed to prefer overhead lighting for this puzzle.",
+  "title": "Puzzle lighting",
+  "note": "For puzzle work, try the overhead light first.",
+  "question": "Do you also prefer the overhead light for other tasks at this table?"
+}

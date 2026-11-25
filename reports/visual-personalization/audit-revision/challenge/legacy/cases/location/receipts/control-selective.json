@@ -1,0 +1,12 @@
+{
+  "input_sha256": "ca3def5030f39ac7f67101b110fa0ca7d2ac5dca563486ef994f0b247dacea61",
+  "session": "control-selective",
+  "thread": "run-0013",
+  "request": "sessions/control-selective/1795631346090588574-a7096878/request.json",
+  "result": "sessions/control-selective/1795631346090588574-a7096878/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You requested the amber tray for this piece.",
+    "question": ""
+  }
+}

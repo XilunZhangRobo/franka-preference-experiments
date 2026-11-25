@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "",
+    "question": "When I serve broccoli with a warm dinner, do you usually prefer it tender or firm?",
+    "person_answer": "I usually prefer tender broccoli with a warm dinner."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

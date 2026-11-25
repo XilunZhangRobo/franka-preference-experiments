@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "The delivery is complete while the person draws alone. Give a low-priority update.",
+    "options": {
+      "A": "Give a brief spoken update now.",
+      "B": "Give the spoken update at the person's next pause."
+    },
+    "notes": [
+      "# Low-priority updates during solo work and video calls\n\nThe person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update.\n"
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "e48718e0c731dd69d2bf434ad036c2213a5d58b6cfcbb5b98da04a6e31df7638"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

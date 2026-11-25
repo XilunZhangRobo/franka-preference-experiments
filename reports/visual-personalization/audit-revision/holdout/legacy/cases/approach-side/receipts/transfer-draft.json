@@ -1,0 +1,11 @@
+{
+  "input_sha256": "fd7bd320abc523b0f2b3286a73d1a352f8bc703dc0db5246255e6b10768147ad",
+  "session": "forced-fd7bd320abc523b0f2b3286a73d1a352f8bc703dc0db5246255e6b10768147ad",
+  "thread": "run-0094",
+  "request": "sessions/forced-fd7bd320abc523b0f2b3286a73d1a352f8bc703dc0db5246255e6b10768147ad/1795631125314407506-bd6103b6/request.json",
+  "result": "sessions/forced-fd7bd320abc523b0f2b3286a73d1a352f8bc703dc0db5246255e6b10768147ad/1795631125314407506-bd6103b6/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person's left hand is visible beside a clear spot on the table."
+  }
+}

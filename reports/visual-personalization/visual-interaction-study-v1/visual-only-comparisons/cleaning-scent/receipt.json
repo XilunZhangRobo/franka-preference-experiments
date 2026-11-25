@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "A",
+    "reason": "You previously chose mild citrus for a work surface when you were the only person present."
+  },
+  "request": "visual-only-comparisons/cleaning-scent/session/1795591505157385479-aecfae8f/request.json",
+  "thread": "run-0431",
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "780d76231dcf28cdb9d10c691fe37d6bb186fda5dfd6815dfa820dbffe0713b5"
+}

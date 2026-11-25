@@ -1,0 +1,4 @@
+id	kind	expected_u	expected_v
+L1	near_transfer	B	A
+L2	cross_task	A	B
+L3	shared_exception	B	B

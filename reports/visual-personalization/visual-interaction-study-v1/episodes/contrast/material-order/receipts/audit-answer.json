@@ -1,0 +1,9 @@
+{
+  "input_sha256": "21420af09755db23f5a67be26fd6174ab51484ebd2dd915452cd5061171bd150",
+  "thread": "run-0223",
+  "request": "sessions/contrast/material-order/person/1795591648295978712-65c51c8f/request.json",
+  "reply": {
+    "answer": "For my own assemblies, yes, if I use the base first and the cap second."
+  },
+  "images": []
+}

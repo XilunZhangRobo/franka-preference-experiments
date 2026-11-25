@@ -1,0 +1,10 @@
+{
+  "input_sha256": "6424b31f1464d642c1b43bd1a31adf03ce77124542a45803d240ed5abcda770a",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592540184676755-2a277986/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The shelf blocks your left side, so I’ll offer the cloth on your right as requested."
+  },
+  "images": []
+}

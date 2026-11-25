@@ -1,0 +1,1 @@
+{"choice":"B","reason":"The update can wait for the person’s next pause so it won’t interrupt the call."}

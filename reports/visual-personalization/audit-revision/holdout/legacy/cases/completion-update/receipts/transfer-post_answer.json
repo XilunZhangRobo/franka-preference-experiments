@@ -1,0 +1,11 @@
+{
+  "input_sha256": "d3874ebc0055397d55ff6696a1d049490ef9132e25ec68eca67e82f27938e69b",
+  "session": "forced-d3874ebc0055397d55ff6696a1d049490ef9132e25ec68eca67e82f27938e69b",
+  "thread": "run-0104",
+  "request": "sessions/forced-d3874ebc0055397d55ff6696a1d049490ef9132e25ec68eca67e82f27938e69b/1795631187049812646-ae469fcc/request.json",
+  "result": "sessions/forced-d3874ebc0055397d55ff6696a1d049490ef9132e25ec68eca67e82f27938e69b/1795631187049812646-ae469fcc/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone."
+  }
+}

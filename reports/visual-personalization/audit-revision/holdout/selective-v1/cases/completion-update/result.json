@@ -1,0 +1,138 @@
+{
+  "case_id": "completion-update",
+  "identity_sha256": "e2e506612df7632f186ff6af72d6458a4146fdaf2e2775b000889df86fe22112",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The person set the pencil down. The robot reached toward the blue device, which said “Work is complete.” Later, the person reached for the device and the same message played again.",
+    "interpretation": "Reaching for the device may mean the person prefers to hear routine updates when they choose. They may also have just wanted a replay.",
+    "title": "Keep routine updates available on demand",
+    "note": "For a similar low-priority update, leave it available for the person to play. Setting the pencil down alone is a weak cue that they want a spoken update.",
+    "question": ""
+  },
+  "draft_note": "# Keep routine updates available on demand\n\nFor a similar low-priority update, leave it available for the person to play. Setting the pencil down alone is a weak cue that they want a spoken update.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Keep routine updates available on demand\n\nFor a similar low-priority update, leave it available for the person to play. Setting the pencil down alone is a weak cue that they want a spoken update.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The delivery update can wait for a clearer pause because setting the pencil down is only a weak cue."
+        },
+        "correct": false,
+        "input_sha256": "d64c552bf93b2eacc057764b736c3f7c8081799f425327e11a9087f81f256e4f",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The delivery update can wait for a clearer pause because setting the pencil down is only a weak cue."
+        },
+        "correct": false,
+        "input_sha256": "d64c552bf93b2eacc057764b736c3f7c8081799f425327e11a9087f81f256e4f",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Waiting for a clearer pause fits this low-priority update because setting the pencil down alone is a weak cue.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "Waiting for a clearer pause fits this low-priority update because setting the pencil down alone is a weak cue.",
+          "question": ""
+        },
+        "before_correct": false,
+        "after_correct": false
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The update can wait for a pause so the robot avoids talking over the person on the call."
+        },
+        "correct": true,
+        "input_sha256": "3ef3a4cd5dd334dfe9df0b37457b025c313f701359ee8604cbab683ba87cfba6",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The update can wait for a pause so the robot avoids talking over the person on the call."
+        },
+        "correct": true,
+        "input_sha256": "3ef3a4cd5dd334dfe9df0b37457b025c313f701359ee8604cbab683ba87cfba6",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Waiting for a pause avoids interrupting the speaker with a low-priority update.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "Waiting for a pause avoids interrupting the speaker with a low-priority update.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

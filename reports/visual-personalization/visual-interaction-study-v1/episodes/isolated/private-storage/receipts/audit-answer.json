@@ -1,0 +1,9 @@
+{
+  "input_sha256": "c4dc565b83e78bfa4708f9b42a285fa750853572ec8504d1cc7b444ce9118c9f",
+  "thread": "run-0289",
+  "request": "sessions/isolated/private-storage/person/1795591000044221057-e6baa23a/request.json",
+  "reply": {
+    "answer": "Yes, keep my keys and flashlight in the closed compartment between uses."
+  },
+  "images": []
+}

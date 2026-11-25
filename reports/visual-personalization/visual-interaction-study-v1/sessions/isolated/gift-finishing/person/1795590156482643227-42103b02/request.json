@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "I like to do the finishing touches on personal gifts myself. Routine lunches for tomorrow should be packed completely.",
+    "task": "Help prepare the handmade card.",
+    "observed_robot_action": "Bring the flower over the card to attach it.",
+    "motion_options": {
+      "A": "Take the flower and put the finishing touch on the card yourself.",
+      "B": "Point to the card for the robot to finish placing the flower."
+    },
+    "seconds": [
+      0.0,
+      0.6667,
+      1.3333,
+      2.0,
+      2.6667,
+      3.3333
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "ab5b4499ff8d5050e1419f9740c038a79a83614d52beab64ef0b202426f8a0f0"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "b89285110f65479f017cf4541fea3995f6d80a71fb09ac9ddde6d39c9bbbc7f2"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "eb839eb4d9799cecfb94676a9a40e3751967151fa9dfe336dd4b1b7de59c59e4"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "4429986b0ecaf577f4049931f8e6176ab5cbeac27d1a4596e089d6314d3cce75"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "cd7deeb95a743e399ac0ee9340fc61f05f55b488f6df42400b39b18cef6b4046"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "ce84d33d0b19d70f9263cd77e8f63f2a98916be72c24600b347dfa8342dbd965"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

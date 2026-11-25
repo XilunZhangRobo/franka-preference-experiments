@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"current_note": "# Clipped project mats on the workbench and sewing counter\n\nWhen making room on your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces.\n", "person_answer": "Please shelve the closed stitching kit."}

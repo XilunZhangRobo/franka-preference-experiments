@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Prepare the labeled lunches for tomorrow morning.",
+    "options": {
+      "A": "Put a portion in each box and close each lid.",
+      "B": "Set out the boxes, portions, and lids for packing."
+    },
+    "memory": "# Decoration placement on handmade cards\n\nWhen making cards together, hand the person the decorations so they can place them themselves. They handled the final placement on this card and explicitly requested the same for future cards.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "a58858aa44fd3140126d485bbdb185788f2ac4d6c16519bd69a531405b7dbb7c"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

@@ -1,0 +1,7 @@
+{
+  "observation": "After I shelved the rust mat, you returned it to its original spot on the workbench.",
+  "interpretation": "You seemed to want the rust mat within reach for this task.",
+  "title": "Rust mat placement",
+  "note": "During this cleanup, you put the rust mat back on the bench.",
+  "question": "Should I usually leave the rust mat on the bench, or did you need it there just this time?"
+}

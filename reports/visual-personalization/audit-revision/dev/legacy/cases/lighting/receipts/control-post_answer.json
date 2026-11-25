@@ -1,0 +1,11 @@
+{
+  "input_sha256": "07c3f315070c382e34f096043f284b3767e1e796c4b0b325b55c755efdf1942e",
+  "session": "forced-07c3f315070c382e34f096043f284b3767e1e796c4b0b325b55c755efdf1942e",
+  "thread": "run-0052",
+  "request": "sessions/forced-07c3f315070c382e34f096043f284b3767e1e796c4b0b325b55c755efdf1942e/1795631093526791090-bc8010ad/request.json",
+  "result": "sessions/forced-07c3f315070c382e34f096043f284b3767e1e796c4b0b325b55c755efdf1942e/1795631093526791090-bc8010ad/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The desk lamp lights the craft table while keeping the rest of the room dim for the slide show."
+  }
+}

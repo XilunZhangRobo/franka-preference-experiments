@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Replay for routine updates\n\nThe person may find it useful to replay a routine update on demand.\n", "question": "For future routine updates, would you prefer to hear them at a pause or only when you tap the device?", "person_answer": "Tell me right away when I’m working alone, but wait until my video call ends if I’m on one."}

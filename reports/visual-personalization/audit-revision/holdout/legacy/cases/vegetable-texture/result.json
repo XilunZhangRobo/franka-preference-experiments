@@ -1,0 +1,139 @@
+{
+  "case_id": "vegetable-texture",
+  "identity_sha256": "efb3db0062d926729bc99eab510f8a846e0e8c0008f202a5f78642d9ef60cd90",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I placed broccoli from the left tray beside the dinner. The person then pointed at the plate.",
+    "interpretation": "The gesture drew my attention to the plate. I chose the tender batch because I expected it to be easier to chew. The gesture alone leaves their texture preference unclear.",
+    "title": "",
+    "note": "",
+    "question": "What did you want me to notice when you pointed at the plate?"
+  },
+  "draft_note": "",
+  "audit_question": "What did you want me to notice when you pointed at the plate?",
+  "audit_answer": "I wanted you to notice that I like my broccoli tender with a warm dinner.",
+  "refined_reply": {
+    "title": "Tender broccoli with a warm dinner",
+    "note": "When serving broccoli with a warm dinner, make it tender. The person said this was what they wanted the plate gesture to convey. Their preference for broccoli at other meals is unknown."
+  },
+  "post_answer_note": "# Tender broccoli with a warm dinner\n\nWhen serving broccoli with a warm dinner, make it tender. The person said this was what they wanted the plate gesture to convey. Their preference for broccoli at other meals is unknown.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 1
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "Tender green beans are a good fit for a warm, cooked side dish."
+        },
+        "correct": true,
+        "input_sha256": "b537d09ceda1314f34a9d8903bbe3b96504be15c25c60d1e852ff4737797e1f0",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "Tender green beans are the closest match to the person’s preference for tender broccoli with a warm dinner."
+        },
+        "correct": true,
+        "input_sha256": "91a20408759e1e4a8edbb6b6a831bb3da87b1fe31466b6ae877918f4567566e2",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Tender broccoli is a clue, but your preference for green beans is still unclear.",
+          "question": "Would you like the green beans firmer or more tender?"
+        },
+        "question": "Would you like the green beans firmer or more tender?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "I’d like them more tender, please.",
+        "final": {
+          "choice": "B",
+          "reason": "You asked for the more tender green beans."
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Firmer cooked green beans keep a pleasant crunch in a chilled salad."
+        },
+        "correct": true,
+        "input_sha256": "25b9d135b450c7916018dde79ac9d8b5b9fd0705f7bf5efa32e52e5acdea6181",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Firmer green beans will keep their crunch in the chilled salad."
+        },
+        "correct": true,
+        "input_sha256": "4ee3e3b28b639110f0163a4b4682e93b3a877256628b3d12be4ce7f9077f5dfe",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Firmer green beans usually hold their texture in a chilled salad.",
+          "question": "Would you like the green beans firm or tender in this salad?"
+        },
+        "question": "Would you like the green beans firm or tender in this salad?",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "I'd like them firm, please.",
+        "final": {
+          "choice": "A",
+          "reason": "You asked for firm green beans in the salad."
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

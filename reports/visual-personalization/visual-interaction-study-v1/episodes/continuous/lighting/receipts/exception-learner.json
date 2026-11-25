@@ -1,0 +1,13 @@
+{
+  "input_sha256": "c6633da7c7c62993570494d89982af3fe0c55154575c73a1d5c35f8e63d57375",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795594786864859995-fae2f746/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+    "question": ""
+  },
+  "images": [
+    "media/lighting/exception-331/initial-none/view/frame-00000.jpg"
+  ]
+}

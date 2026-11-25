@@ -1,0 +1,10 @@
+{
+  "input_sha256": "483c67bc52639d29a329e88f7e21270a9b8ffe28908e5098441c26b16fd0ba82",
+  "session": "audit-person",
+  "thread": "run-0058",
+  "request": "sessions/audit-person/1795631055975500917-036707f2/request.json",
+  "result": "sessions/audit-person/1795631055975500917-036707f2/attempt-1/result.json",
+  "reply": {
+    "answer": "No, I usually want the compartment closed."
+  }
+}

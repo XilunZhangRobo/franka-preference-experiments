@@ -1,0 +1,12 @@
+{
+  "input_sha256": "3c553b91b324caf3554eab1147cfe01070b2ec4e229dcdf58933b772903fed65",
+  "thread": "run-0189",
+  "request": "episodes/continuous/cleaning-scent/independent/transfer-note/1795595406949578996-b0a2fb17/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Fragrance-free is a neutral choice because your citrus preference is specific to the kitchen counter."
+  },
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ]
+}

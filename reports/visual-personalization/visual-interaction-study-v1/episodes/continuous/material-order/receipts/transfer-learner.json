@@ -1,0 +1,13 @@
+{
+  "input_sha256": "a66b0f97dba548089dbf6898e716ac5dd0d789d4b877c1007fd008b1fa45446d",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592313799538050-386ead5c/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Placing the pot on the seated person’s right starts the row with the first item, consistent with their assembly preference.",
+    "question": ""
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

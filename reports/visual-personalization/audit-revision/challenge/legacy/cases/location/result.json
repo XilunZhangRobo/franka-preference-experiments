@@ -1,0 +1,141 @@
+{
+  "case_id": "location",
+  "identity_sha256": "ba4ed95f0112f4b44b9e93a165052869f0236932c3c11a108ffd89422b520f20",
+  "seed_metadata": "challenge",
+  "draft_receipt": "../color/receipts/audit.json",
+  "draft_reply": {
+    "observation": "I put the finished piece in the amber tray. The person then moved it to the teal tray.",
+    "interpretation": "They may have wanted this piece stored in the teal tray.",
+    "title": "Tray for finished pieces",
+    "note": "The person chose the teal tray for this finished piece.",
+    "question": "Should I use the teal tray for future finished pieces too?"
+  },
+  "draft_note": "# Tray for finished pieces\n\nThe person chose the teal tray for this finished piece.\n",
+  "audit_question": "Should I use the teal tray for future finished pieces too?",
+  "audit_answer": "Use whichever tray is on my left unless I ask for a different tray for that piece.",
+  "refined_reply": {
+    "title": "Left tray for finished pieces",
+    "note": "Use whichever tray is on the person’s left for each finished piece unless they request a different tray for that piece. They chose teal for the earlier piece only."
+  },
+  "post_answer_note": "# Left tray for finished pieces\n\nUse whichever tray is on the person’s left for each finished piece unless they request a different tray for that piece. They chose teal for the earlier piece only.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 1,
+      "losses": 0,
+      "net": 1
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person chose the teal tray for this finished piece."
+        },
+        "correct": false,
+        "input_sha256": "318520c3209de493258d8a33b082928243bd8bfcadcc32ec5919985a370d7d6c",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The amber tray is on the person’s left, and the teal request applied only to the earlier piece."
+        },
+        "correct": true,
+        "input_sha256": "dcc132098e43840ace127fa41c9cba9e7534e7e20c768b2d83def9ce70951d23",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The amber tray is on the person’s left, where finished pieces go.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "inputs differ",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The amber tray is on the person’s left, where finished pieces go.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 1,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The person asked to use the amber tray for this piece."
+        },
+        "correct": true,
+        "input_sha256": "6cca3bba1b350f6ea3061313db9bc44b625f9f944eac22f464c4cc3b7a5d2b7e",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "You requested the amber tray for this piece."
+        },
+        "correct": true,
+        "input_sha256": "a90b23662d2ac9a322b327f3afef0052bee286e29dc419373b1a284c70bf0b50",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "You requested the amber tray for this piece.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "inputs differ",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "You requested the amber tray for this piece.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

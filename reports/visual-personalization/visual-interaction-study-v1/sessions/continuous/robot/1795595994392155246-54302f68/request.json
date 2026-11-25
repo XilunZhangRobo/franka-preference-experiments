@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Wipe the work surface in my private sewing room. Only I use it.",
+    "options": {
+      "A": "Use the mild-citrus cleaner.",
+      "B": "Use the fragrance-free cleaner."
+    },
+    "question": "Would you like mild citrus for the sewing surface too?",
+    "person_answer": "Yes, please use mild citrus on my sewing surface."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

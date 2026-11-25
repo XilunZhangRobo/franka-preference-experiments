@@ -1,0 +1,9 @@
+{
+  "input_sha256": "d417c3a14f9f08f23f3ee3d25d35a6f686c65b78b79e980b499de64db4ef1928",
+  "thread": "run-0295",
+  "request": "sessions/isolated/receiving-hand/person/1795590261413666144-d1f84089/request.json",
+  "reply": {
+    "answer": "I prefer my left hand for flashlights and other items, but use my right if my left is busy."
+  },
+  "images": []
+}

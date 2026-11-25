@@ -1,0 +1,10 @@
+{
+  "input_sha256": "b009dcd83c90d3886bcaed52367ac2f5c57e73a652bf8879262ac645061ea3ea",
+  "session": "audit-person",
+  "thread": "run-0131",
+  "request": "sessions/audit-person/1795631222503154207-c3d9f17d/request.json",
+  "result": "sessions/audit-person/1795631222503154207-c3d9f17d/attempt-1/result.json",
+  "reply": {
+    "answer": "I wanted you to notice that I like my broccoli tender with a warm dinner."
+  }
+}

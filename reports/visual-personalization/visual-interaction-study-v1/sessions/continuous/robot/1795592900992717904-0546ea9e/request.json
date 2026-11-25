@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Broccoli and green bean texture\n\nServe tender broccoli with warm dinners by default. The person also requested tender green beans for one warm side dish. Their usual preference for green beans is still unclear.\n",
+    "person_answer": "I’d like the green beans firm, please."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "a97c89d11488b186f3a6e843566e654247871ded7ccc22dc2780d74255ef33db",
+  "thread": "run-0251",
+  "request": "episodes/isolated/approach-side/independent/transfer-note/1795590684102004264-d1973438/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "There’s room to offer the folded cloth in front of their left shoulder, where they prefer it."
+  },
+  "images": [
+    "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  ]
+}

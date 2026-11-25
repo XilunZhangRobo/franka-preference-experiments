@@ -1,0 +1,16 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0028",
+    "reply": {
+      "observation": "The robot placed the white piece in the amber tray and withdrew. The person left it there.",
+      "interpretation": "The amber tray may be an acceptable place for finished pieces. The person gave no clear sign of a preference.",
+      "title": "Tray for finished pieces",
+      "note": "Use the amber tray again for a similar finished piece in this setup. Treat it as a tentative default.",
+      "question": ""
+    }
+  }
+]

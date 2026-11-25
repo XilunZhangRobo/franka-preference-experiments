@@ -1,0 +1,124 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Serve cooked broccoli alongside the warm dinner.",
+    "image": "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Serve the more tender batch. The more tender batch is likely cooked through and ready to serve."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/vegetable-texture/teach-103/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Return the selected item to its starting spot and move the other item into its place."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 2.6667, 3.3333, 4.0, 4.6667, 5.6667, 6.3333, 7.0, 7.6667, 8.3333, 9.0, 9.6667, 10.3333",
+    "clip": "media/vegetable-texture/teach-103/B-change/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "You returned the broccoli I served to its tray and put a floret from the other tray on your plate. Your swap suggests you preferred firmer broccoli with this dinner."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Should I choose firmer broccoli for you at future meals?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Yes, I prefer firmer broccoli with warm meals and in chilled salads."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Broccoli texture preference\n\nChoose firmer broccoli for warm meals and chilled salads. You swapped the tender broccoli for the firmer batch at dinner and confirmed this preference for both settings.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Prepare cooked green beans for the warm side dish.",
+    "image": "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Serve the more tender batch. The more tender beans are a good fit for a warm, cooked side dish."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Serve the more tender batch. Tender green beans suit a warm side dish, and the firmness preference is specific to broccoli."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Would you like the green beans firmer or more tender with this meal?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I’d like the green beans firmer, please."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Broccoli and green bean texture\n\nChoose firmer broccoli for warm meals and chilled salads, as you confirmed after swapping batches at dinner. You also requested firmer green beans for this warm side dish. Your preference for green beans at future meals is still open.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Serve the firmer batch. You asked for firmer green beans with this meal.",
+    "clip": "media/vegetable-texture/transfer-206/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Prepare cooked green beans for the chilled salad.",
+    "image": "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Serve the firmer batch. The firmer cooked beans will keep a pleasant crunch in the chilled salad."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Serve the firmer batch. Firmer green beans will keep a little crunch in the chilled salad."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Would you like the green beans firmer or more tender in this chilled salad?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I’d like the green beans firmer, please."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Broccoli and green bean texture\n\nChoose firmer broccoli for warm meals and chilled salads, as you confirmed. Favor firmer green beans in similar dishes because you requested them for both a warm side and a chilled salad.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Serve the firmer batch. You asked for firmer green beans in this chilled salad.",
+    "clip": "media/vegetable-texture/exception-309/A-none/view/view.mp4"
+  }
+]

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0246"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Drink and item handoff placement\",\"note\":\"Offer drinks and other items in front of the person’s left shoulder when there’s room. If a shelf blocks that spot, offer the item on their right. They pointed left during the drink handoff and confirmed this preference afterward.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":50467,"cached_input_tokens":17536,"cache_write_input_tokens":0,"output_tokens":201,"reasoning_output_tokens":0}}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0173"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Firmer cooked green beans keep a crisp bite in a chilled salad.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12404,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":26,"reasoning_output_tokens":0}}

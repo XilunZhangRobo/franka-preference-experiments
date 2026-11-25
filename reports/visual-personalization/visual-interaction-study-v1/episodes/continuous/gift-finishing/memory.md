@@ -1,0 +1,3 @@
+# Decorations for personal gift cards
+
+When a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.

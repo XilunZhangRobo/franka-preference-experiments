@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {"choice":"<letter>","reason":"one short sentence"}.
+{"task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.", "options": {"A": "Turn on the desk lamp.", "B": "Turn on the overhead fixture."}, "memory": "# Puzzle lighting\n\nFor puzzle work, try the room light first.\n"}

@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "A",
+    "reason": "You switched the flashlight to your left hand last time, so I’ll offer the remote to that hand."
+  },
+  "request": "visual-only-comparisons/receiving-hand/session/1795591465736836991-a0a65124/request.json",
+  "thread": "run-0437",
+  "images": [
+    "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "62759cfcfef15dba90f7ca8187c667162e0cb4bf22c3baf11805fea18e82581a"
+}

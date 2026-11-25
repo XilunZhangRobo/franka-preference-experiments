@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0294"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Left-hand preference for handoffs\",\"note\":\"Offer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":50285,"cached_input_tokens":30848,"cache_write_input_tokens":0,"output_tokens":178,"reasoning_output_tokens":0}}

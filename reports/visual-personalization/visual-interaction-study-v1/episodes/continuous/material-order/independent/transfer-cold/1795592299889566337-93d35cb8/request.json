@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Set out a row for the seated person to use the pot, scoop, then tag.",
+    "options": {
+      "A": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+      "B": "Place the pot at the person's left, scoop in the middle, and tag at their right."
+    },
+    "memory": ""
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "277e4f9ea6e913ab7407bd8f8ed3f929f9370ece30a9a6689864a1409392ea02"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

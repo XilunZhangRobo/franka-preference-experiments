@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0072",
+    "reply": {
+      "observation": "The robot held the pink flower over the card. The person took it and pressed it onto the end of the drawn stem.",
+      "interpretation": "They may have wanted help bringing the flower over while keeping the final placement in their hands.",
+      "title": "Offer the flower for final placement",
+      "note": "On a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0075",
+    "reply": {
+      "choice": "A",
+      "reason": "Packing the gift with the tissue and closing the box makes it ready to give."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0076",
+    "reply": {
+      "choice": "A",
+      "reason": "Packing the tissue and gift inside and closing the box gets it ready to give.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0073",
+    "reply": {
+      "choice": "A",
+      "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box finishes the task."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0074",
+    "reply": {
+      "choice": "A",
+      "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.",
+      "question": ""
+    }
+  }
+]

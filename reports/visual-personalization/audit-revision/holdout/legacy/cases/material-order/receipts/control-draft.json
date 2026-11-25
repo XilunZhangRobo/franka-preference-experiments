@@ -1,0 +1,11 @@
+{
+  "input_sha256": "a22e1d93145e7d2b426e7b6ec3817ec1fed1604c42f11600ae077508fedfead5",
+  "session": "forced-a22e1d93145e7d2b426e7b6ec3817ec1fed1604c42f11600ae077508fedfead5",
+  "thread": "run-0107",
+  "request": "sessions/forced-a22e1d93145e7d2b426e7b6ec3817ec1fed1604c42f11600ae077508fedfead5/1795631156243423601-eef589cc/request.json",
+  "result": "sessions/forced-a22e1d93145e7d2b426e7b6ec3817ec1fed1604c42f11600ae077508fedfead5/1795631156243423601-eef589cc/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The central tray makes the markers easy for all four people to reach."
+  }
+}

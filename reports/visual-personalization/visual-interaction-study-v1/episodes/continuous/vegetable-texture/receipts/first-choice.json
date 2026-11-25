@@ -1,0 +1,12 @@
+{
+  "input_sha256": "f9f53d273d25ed1be90741d62ed13ab10a1aa2eadf56c971b01e9862ef131b5e",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592704151079580-7f853fbf/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The tender broccoli is easy to cut and eat alongside the warm dinner."
+  },
+  "images": [
+    "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+  ]
+}

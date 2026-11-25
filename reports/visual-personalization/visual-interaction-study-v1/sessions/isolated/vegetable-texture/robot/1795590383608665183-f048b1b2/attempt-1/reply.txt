@@ -1,0 +1,1 @@
+{"observation":"After I served the tender broccoli, the person briefly touched the food on the plate with a fingertip.","interpretation":"They may have been checking temperature or texture. The gesture alone gives no clear preference.","title":"","note":"","question":"What were you checking when you touched the food?"}

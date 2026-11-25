@@ -1,0 +1,30 @@
+{
+  "input_sha256": "01d838733b7d350eb8fef075bfdee443b20c26b7286fcd35ae7b97237523aea4",
+  "thread": "run-0234",
+  "request": "sessions/contrast/private-storage/robot/1795591730577039335-6fe5256b/request.json",
+  "reply": {
+    "observation": "After I closed the compartment, the person reopened it, moved both items onto the tray, and closed the empty compartment.",
+    "interpretation": "The person seems to prefer keeping the keys and flashlight visible and easy to reach.",
+    "title": "Entryway tray for keys and flashlight",
+    "note": "When putting away the house keys and flashlight after use, place them together on the open entryway tray.",
+    "question": ""
+  },
+  "images": [
+    "media/private-storage/teach-114/A-change/view/frame-00000.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00010.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00022.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00032.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00044.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00054.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00066.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00076.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00088.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00098.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00110.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00120.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00132.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00142.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00154.jpg",
+    "media/private-storage/teach-114/A-change/view/frame-00164.jpg"
+  ]
+}

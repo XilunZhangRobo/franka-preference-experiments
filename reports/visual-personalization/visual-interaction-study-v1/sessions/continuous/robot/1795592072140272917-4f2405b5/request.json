@@ -1,0 +1,23 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Help get the gift box ready.",
+    "options": {
+      "A": "Arrange the tissue and gift inside and close the box.",
+      "B": "Open the box and set the tissue and gift alongside it."
+    },
+    "current_note": "# Decorations for personal gift cards\n\nWhen a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.\n",
+    "previous_notes": {
+      "01": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n"
+    }
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "2aa5967230264063a88563dd85d3b2e19ad67934fd7cedd68dfa808866b2f664"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

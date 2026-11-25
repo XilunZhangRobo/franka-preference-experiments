@@ -1,0 +1,7 @@
+{
+  "observation": "You put the fragrance-free cleaner back on the tray and set the mild-citrus cleaner beside the cloth.",
+  "interpretation": "You seemed to prefer mild citrus for this cleanup.",
+  "title": "Kitchen counter cleaner",
+  "note": "You chose mild citrus for the kitchen counter while home alone.",
+  "question": "Should I also set out mild citrus for the kitchen counter when someone else is home?"
+}

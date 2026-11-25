@@ -1,0 +1,11 @@
+{
+  "input_sha256": "7e73a77f18ccfaf592cea59cc07454868ef9308c35abcdfa5429eb4413eb4e57",
+  "session": "forced-7e73a77f18ccfaf592cea59cc07454868ef9308c35abcdfa5429eb4413eb4e57",
+  "thread": "run-0089",
+  "request": "sessions/forced-7e73a77f18ccfaf592cea59cc07454868ef9308c35abcdfa5429eb4413eb4e57/1795631150456484881-66a15500/request.json",
+  "result": "sessions/forced-7e73a77f18ccfaf592cea59cc07454868ef9308c35abcdfa5429eb4413eb4e57/1795631150456484881-66a15500/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person can take the folded cloth with their right hand now."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input_sha256": "f5e8889ce0acaef9fbaf420b08bb9030030cf1ccb00299849d6730206359e3fa",
+  "thread": "run-0228",
+  "request": "sessions/contrast/paused-work/robot/1795591611101151954-0147a16d/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The clip on the rust mat marks it as the one you want shelved."
+  },
+  "images": []
+}

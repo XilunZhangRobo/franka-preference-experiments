@@ -1,0 +1,11 @@
+{
+  "input_sha256": "ceda97c5137432ee2a7717f5c58851c4835e87e91cd8fda1a219889e19e073f2",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592531450713262-56d15c63/request.json",
+  "reply": {
+    "answer": "Please offer the cloth on my right when the shelf blocks my left side."
+  },
+  "images": [
+    "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  ]
+}

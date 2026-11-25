@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Prepare the labeled lunches for tomorrow morning.",
+    "options": {
+      "A": "Set out the boxes, portions, and lids for packing.",
+      "B": "Put a portion in each box and close each lid."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "4e89f7a76ad5b97f209e22abf4b84a8b3ba1b5ac87e8f3e18f040b0068bce6be"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

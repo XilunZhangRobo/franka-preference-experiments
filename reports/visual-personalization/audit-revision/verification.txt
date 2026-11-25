@@ -1,0 +1,868 @@
+{
+  "status": "passed",
+  "plan_sha256": "ef090ac7a0f7ecc9d3957dc9d6b45d0782368c36259363f264eb6a360cfeadf7",
+  "selection_sha256": "0d67d75329cd7cf005a65874c83380363b1503fa3b00b26e7236916ceae91cbc",
+  "calls": 186,
+  "threads": 177,
+  "links": 1448,
+  "cases": [
+    {
+      "stage": "dev",
+      "policy": "legacy",
+      "case": "gift-finishing",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "legacy",
+      "case": "private-storage",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "legacy",
+      "case": "cleaning-scent",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "legacy",
+      "case": "lighting",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "selective-v1",
+      "case": "gift-finishing",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "selective-v1",
+      "case": "private-storage",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "selective-v1",
+      "case": "cleaning-scent",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "policy": "selective-v1",
+      "case": "lighting",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "legacy",
+      "case": "paused-work",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 1
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "legacy",
+      "case": "approach-side",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "legacy",
+      "case": "completion-update",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "legacy",
+      "case": "vegetable-texture",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 1
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "legacy",
+      "case": "receiving-hand",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "legacy",
+      "case": "material-order",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "selective-v1",
+      "case": "paused-work",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 1,
+          "net": -1
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "selective-v1",
+      "case": "approach-side",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "selective-v1",
+      "case": "completion-update",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "selective-v1",
+      "case": "vegetable-texture",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 1
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "selective-v1",
+      "case": "receiving-hand",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "holdout",
+      "policy": "selective-v1",
+      "case": "material-order",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "challenge",
+      "policy": "legacy",
+      "case": "color",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "challenge",
+      "policy": "legacy",
+      "case": "location",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "challenge",
+      "policy": "legacy",
+      "case": "silence",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 1
+        },
+        "transfer": {
+          "available": 0,
+          "asked": 0
+        },
+        "control": {
+          "available": 0,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 0,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 0,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "challenge",
+      "policy": "selective-v1",
+      "case": "color",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "challenge",
+      "policy": "selective-v1",
+      "case": "location",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 1,
+          "asked": 0
+        },
+        "control": {
+          "available": 1,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 2,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    },
+    {
+      "stage": "challenge",
+      "policy": "selective-v1",
+      "case": "silence",
+      "questions": {
+        "audit": {
+          "available": 1,
+          "asked": 0
+        },
+        "transfer": {
+          "available": 0,
+          "asked": 0
+        },
+        "control": {
+          "available": 0,
+          "asked": 0
+        }
+      },
+      "changes": {
+        "audit": {
+          "pairs": 0,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "selective": {
+          "pairs": 0,
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      }
+    }
+  ]
+}

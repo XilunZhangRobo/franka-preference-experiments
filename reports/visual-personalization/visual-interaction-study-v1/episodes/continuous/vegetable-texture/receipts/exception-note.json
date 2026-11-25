@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cac2bc55c8938efb593a4b460f64f34054900b28b5a4de433fb7a196532503d7",
+  "thread": "run-0219",
+  "request": "episodes/continuous/vegetable-texture/independent/exception-note/1795592839124549664-7bc273de/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer green beans will keep a crisp bite in the chilled salad."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

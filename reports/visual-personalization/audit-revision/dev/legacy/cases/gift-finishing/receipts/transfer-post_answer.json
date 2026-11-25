@@ -1,0 +1,11 @@
+{
+  "input_sha256": "d86ee879d38e90d6c6c0125bfb598759681fc6796f9dcdbb529577df1aff16ba",
+  "session": "forced-d86ee879d38e90d6c6c0125bfb598759681fc6796f9dcdbb529577df1aff16ba",
+  "thread": "run-0048",
+  "request": "sessions/forced-d86ee879d38e90d6c6c0125bfb598759681fc6796f9dcdbb529577df1aff16ba/1795631046353199744-e819d5a9/request.json",
+  "result": "sessions/forced-d86ee879d38e90d6c6c0125bfb598759681fc6796f9dcdbb529577df1aff16ba/1795631046353199744-e819d5a9/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Packing the tissue and gift and closing the box makes it ready to give."
+  }
+}

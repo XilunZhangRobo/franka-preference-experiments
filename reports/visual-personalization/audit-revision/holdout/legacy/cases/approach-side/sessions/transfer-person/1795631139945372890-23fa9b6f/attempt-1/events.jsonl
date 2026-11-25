@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0093"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"In front of my left shoulder, please, if there’s room.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12398,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":22,"reasoning_output_tokens":0}}

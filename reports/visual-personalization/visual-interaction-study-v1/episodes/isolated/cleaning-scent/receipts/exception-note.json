@@ -1,0 +1,12 @@
+{
+  "input_sha256": "8727d1a7739a77c5f23af641b6fdcd27d7eeb7862106bbdc42dc4c6affe8e0eb",
+  "thread": "run-0255",
+  "request": "episodes/isolated/cleaning-scent/independent/exception-note/1795591259031315623-bb6c92b3/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You prefer fragrance-free cleaner when guests are expected."
+  },
+  "images": [
+    "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+  ]
+}

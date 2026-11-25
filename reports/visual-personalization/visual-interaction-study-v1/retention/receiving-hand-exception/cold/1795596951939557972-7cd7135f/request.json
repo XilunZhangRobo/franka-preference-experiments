@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Pass me the remote.",
+    "options": {
+      "A": "Offer it to the person's left hand.",
+      "B": "Offer it to the person's right hand."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "6c2a9b18f7cfa8f2c68d3645a19cf7d9f8bcb9948e896cdc4d6397b27946b2a0"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

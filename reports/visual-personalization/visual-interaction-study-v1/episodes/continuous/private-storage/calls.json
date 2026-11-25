@@ -1,0 +1,16 @@
+{
+  "first-choice": "episodes/continuous/private-storage/receipts/first-choice.json",
+  "person-response": "episodes/continuous/private-storage/receipts/person-response.json",
+  "audit": "episodes/continuous/private-storage/receipts/audit.json",
+  "audit-answer": "episodes/continuous/private-storage/receipts/audit-answer.json",
+  "updated-note": "episodes/continuous/private-storage/receipts/updated-note.json",
+  "transfer-cold": "episodes/continuous/private-storage/receipts/transfer-cold.json",
+  "transfer-note": "episodes/continuous/private-storage/receipts/transfer-note.json",
+  "transfer-learner": "episodes/continuous/private-storage/receipts/transfer-learner.json",
+  "transfer-answer": "episodes/continuous/private-storage/receipts/transfer-answer.json",
+  "transfer-act": "episodes/continuous/private-storage/receipts/transfer-act.json",
+  "transfer-refine": "episodes/continuous/private-storage/receipts/transfer-refine.json",
+  "exception-cold": "episodes/continuous/private-storage/receipts/exception-cold.json",
+  "exception-note": "episodes/continuous/private-storage/receipts/exception-note.json",
+  "exception-learner": "episodes/continuous/private-storage/receipts/exception-learner.json"
+}

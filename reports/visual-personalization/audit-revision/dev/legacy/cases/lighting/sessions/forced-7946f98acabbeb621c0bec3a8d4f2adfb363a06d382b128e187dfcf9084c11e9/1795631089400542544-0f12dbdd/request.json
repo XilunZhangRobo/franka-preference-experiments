@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+    "options": {
+      "A": "Turn on the desk lamp.",
+      "B": "Turn on the overhead fixture."
+    },
+    "memory": "# Puzzle lighting\n\nFor puzzle work, try the room light first.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "55a30608f4ddb7563abde7e6dce88653098cfeb075bb2f3c0e1bedb76502b2de"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

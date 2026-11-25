@@ -1,0 +1,25 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Bring me my drink.",
+    "options": {
+      "A": "Present it in the person's left-front quarter.",
+      "B": "Present it in the person's right-front quarter."
+    },
+    "written_library": {
+      "01": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n",
+      "02": "# Personal gift cards and gift box arrangement\n\nFor handmade cards given as personal gifts, leave decorations beside the card for the person to place. For this gift box, they asked to arrange the tissue and gift themselves. Their preference for future boxes is unknown.\n",
+      "03": "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n",
+      "04": "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n"
+    }
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "ad53e36b33f6474db680e1a7cf946047058b3f9acddde75cd07b10e29c3e64b0"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0085"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The open tray keeps your pen case easy to grab for tomorrow’s practice.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12415,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":27,"reasoning_output_tokens":0}}

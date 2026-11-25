@@ -1,0 +1,138 @@
+{
+  "case_id": "private-storage",
+  "identity_sha256": "5c702e08058f1d720384355a1c61664db1bad6ae6b1c8d8d07cc7e12cb791509",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot put the keys and flashlight in the shallow compartment and closed it. The person then pointed toward the lid.",
+    "interpretation": "The gesture drew attention to the closed compartment. The person may have wanted it left open for easy access, though the gesture alone is ambiguous.",
+    "title": "Entryway compartment",
+    "note": "Keep the keys and flashlight together in the compartment. Leave the lid preference undecided for now.",
+    "question": ""
+  },
+  "draft_note": "# Entryway compartment\n\nKeep the keys and flashlight together in the compartment. Leave the lid preference undecided for now.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Entryway compartment\n\nKeep the keys and flashlight together in the compartment. Leave the lid preference undecided for now.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case easy to grab for tomorrow’s practice."
+        },
+        "correct": false,
+        "input_sha256": "2ca87849b8dc1153f219be1ebc9861d71e4b9d886996ce005baf827c58bd0f37",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case easy to grab for tomorrow’s practice."
+        },
+        "correct": false,
+        "input_sha256": "2ca87849b8dc1153f219be1ebc9861d71e4b9d886996ce005baf827c58bd0f37",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case within easy reach for tomorrow.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case within easy reach for tomorrow.",
+          "question": ""
+        },
+        "before_correct": false,
+        "after_correct": false
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+        },
+        "correct": true,
+        "input_sha256": "4c15e5a964aa4971a9ee66799e9d56e16d82c75b871cdfb152edf12cd0eda713",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+        },
+        "correct": true,
+        "input_sha256": "4c15e5a964aa4971a9ee66799e9d56e16d82c75b871cdfb152edf12cd0eda713",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The tray beside the shared craft materials keeps all four rulers within reach for the first step.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The tray beside the shared craft materials keeps all four rulers within reach for the first step.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

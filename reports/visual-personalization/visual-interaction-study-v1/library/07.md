@@ -1,0 +1,3 @@
+# Broccoli and green bean texture
+
+Serve tender broccoli with warm dinners by default. For green beans, the person requested tender beans for one warm side dish and firm beans for one chilled salad. Treat those choices as tentative guides for similar dishes.

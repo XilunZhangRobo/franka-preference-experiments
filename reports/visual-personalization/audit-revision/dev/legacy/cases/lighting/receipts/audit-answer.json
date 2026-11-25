@@ -1,0 +1,10 @@
+{
+  "input_sha256": "8f7182a6638e1b771649bcea08d326a5cd6d0348e2cdbde84a3ad780935a404f",
+  "session": "audit-person",
+  "thread": "run-0049",
+  "request": "sessions/audit-person/1795631066670905364-2e4f3b9d/request.json",
+  "result": "sessions/audit-person/1795631066670905364-2e4f3b9d/attempt-1/result.json",
+  "reply": {
+    "answer": "Yes, when I work alone I prefer the ceiling light, but during a projected presentation I prefer just the craft table lit."
+  }
+}

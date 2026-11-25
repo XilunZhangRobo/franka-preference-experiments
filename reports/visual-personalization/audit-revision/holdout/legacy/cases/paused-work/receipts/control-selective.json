@@ -1,0 +1,12 @@
+{
+  "input_sha256": "f0e4cc7a998dc89a3f4909b6c831ac178935b63a18a901853ebe5211783cab2a",
+  "session": "control-selective",
+  "thread": "run-0116",
+  "request": "sessions/control-selective/1795631258363476819-5020d3bc/request.json",
+  "result": "sessions/control-selective/1795631258363476819-5020d3bc/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed kit would clear space while leaving the project on the rust mat in place.",
+    "question": "Should I leave the organizer on the rust mat for your current project?"
+  }
+}

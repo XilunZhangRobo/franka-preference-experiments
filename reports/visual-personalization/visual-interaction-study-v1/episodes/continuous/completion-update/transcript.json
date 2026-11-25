@@ -1,0 +1,106 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "The bin is full. Give the person a low-priority completion update.",
+    "image": "media/completion-update/teach-92/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Give the spoken update at the person's next pause. The bin update can wait until the person pauses."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/completion-update/teach-92/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Demonstrate the timing: resume writing and tap the announcement button before putting the pencil down."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 1.3333, 2.6667, 4.3333, 5.6667, 7.0, 8.3333, 8.8333, 9.3333, 11.0, 12.3333, 13.6667, 15.0, 16.3333, 16.5, 17.6667, 19.0, 20.3333",
+    "clip": "media/completion-update/teach-92/B-change/view/view.mp4"
+  },
+  {
+    "role": "device",
+    "channel": "simulated utterance",
+    "text": "Work is complete.",
+    "time": 8.8333
+  },
+  {
+    "role": "device",
+    "channel": "simulated utterance",
+    "text": "Work is complete.",
+    "time": 16.5
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "The device said “Work is complete” during a pause. The person resumed work, then touched the device and heard the same message again. They may have wanted to hear the update again at a time they chose."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "For low-priority updates, would you prefer to hear them at your next pause or only when you ask for them?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Low-priority updates during solo work and video calls\n\nThe person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "The delivery is complete while the person draws alone. Give a low-priority update.",
+    "image": "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Give the spoken update at the person's next pause. The delivery update can wait until the person pauses drawing."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Give a brief spoken update now. They’re drawing alone and asked for brief updates right away during solo work."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Give a brief spoken update now. You’re drawing alone and asked for brief updates right away during solo work.",
+    "clip": "media/completion-update/transfer-195/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+    "image": "media/completion-update/exception-298/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Give the spoken update at the person's next pause. The update can wait for the person’s next pause so it won’t interrupt the call."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Give the spoken update at the person's next pause. Waiting is the closer match to their preference for updates after the call ends."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Give the spoken update at the person's next pause. You asked me to wait until your video call ends before giving a low-priority update.",
+    "clip": "media/completion-update/exception-298/B-none/view/view.mp4"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "I prefer receiving things in my left hand when it is free. Use my free hand if the other one is busy.",
+    "task": "Hand me the flashlight.",
+    "observed_robot_action": "Offer it to the person's right hand.",
+    "motion_options": {
+      "A": "Take and keep the flashlight in your right hand.",
+      "B": "Take the flashlight in the offered hand, then pass it to your left hand."
+    },
+    "seconds": [
+      0.0,
+      0.6667,
+      1.3333,
+      1.6667,
+      2.3333,
+      3.0
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "9eb8cc1f6b64ec6ffd83a7a2b731a11b7a78fc584d3881f69b8395649e3413df"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "7b1062ecbe7e340eff9bd014f65680af09652a4bfc4b94e25962ec76421812ae"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "c469b5073a3867fd845e394d39459e9b9bfe3bf0f6456d975e9e487a4a23bdce"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "73609d3375d3f285bf18976e3250c8000395bcb55af0e56b52d55daaa7c6d0a0"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "be7cb211aa34299fd57cdd28825f506a93f5751d81445cc632a2440130f4cbd4"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "890f3e9132683dcf64fa97ed18ed27bb64037d23f4fec46d354bb4b2ed8b8b7c"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}

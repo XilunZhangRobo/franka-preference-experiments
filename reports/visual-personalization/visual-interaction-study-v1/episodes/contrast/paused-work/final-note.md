@@ -1,0 +1,3 @@
+# Shelving cue for project mats
+
+When clearing your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces. Your request to shelve the closed stitching kit applied to this cleanup only.

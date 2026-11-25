@@ -1,0 +1,13 @@
+{
+  "first-choice": "episodes/continuous/lighting/receipts/first-choice.json",
+  "person-response": "episodes/continuous/lighting/receipts/person-response.json",
+  "audit": "episodes/continuous/lighting/receipts/audit.json",
+  "audit-answer": "episodes/continuous/lighting/receipts/audit-answer.json",
+  "updated-note": "episodes/continuous/lighting/receipts/updated-note.json",
+  "transfer-cold": "episodes/continuous/lighting/receipts/transfer-cold.json",
+  "transfer-note": "episodes/continuous/lighting/receipts/transfer-note.json",
+  "transfer-learner": "episodes/continuous/lighting/receipts/transfer-learner.json",
+  "exception-cold": "episodes/continuous/lighting/receipts/exception-cold.json",
+  "exception-note": "episodes/continuous/lighting/receipts/exception-note.json",
+  "exception-learner": "episodes/continuous/lighting/receipts/exception-learner.json"
+}

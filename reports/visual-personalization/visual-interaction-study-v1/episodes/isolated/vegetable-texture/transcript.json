@@ -1,0 +1,124 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Serve cooked broccoli alongside the warm dinner.",
+    "image": "media/vegetable-texture/teach-103/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Serve the more tender batch. The more tender broccoli should be easier to chew alongside the warm dinner."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/vegetable-texture/teach-103/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Point at the selected arrangement and leave it in place."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.3333, 3.6667, 4.0, 4.3333, 4.6667, 5.3333, 5.6667, 6.0",
+    "clip": "media/vegetable-texture/teach-103/B-accept/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "After I served the tender broccoli, the person briefly touched the food on the plate with a fingertip. They may have been checking temperature or texture. The gesture alone gives no clear preference."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "What were you checking when you touched the food?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I was checking whether the broccoli was tender."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Broccoli tenderness\n\nCheck tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Prepare cooked green beans for the warm side dish.",
+    "image": "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Serve the more tender batch. The more tender beans are a good fit for a warm, cooked side dish."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Serve the firmer batch. Firmer cooked green beans will keep some bite when served warm."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Would you prefer the firmer or more tender green beans?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I'd prefer the more tender green beans."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Green bean and broccoli tenderness\n\nChoose the more tender green beans for a warm side dish, as the person requested. They also checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Serve the more tender batch. You asked for the more tender green beans.",
+    "clip": "media/vegetable-texture/transfer-206/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Prepare cooked green beans for the chilled salad.",
+    "image": "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Serve the firmer batch. Firmer cooked green beans hold their shape and add a crisp bite to the chilled salad."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Serve the firmer batch. The firmer cooked beans will hold their shape when tossed in the chilled salad."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Would you like the more tender green beans or the firmer ones for the chilled salad?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I'd like the firmer green beans for the chilled salad."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Green bean and broccoli tenderness\n\nServe more tender green beans for a warm side dish and firmer green beans for a chilled salad, as requested. The person checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Serve the firmer batch. You asked for the firmer green beans for the chilled salad.",
+    "clip": "media/vegetable-texture/exception-309/A-none/view/view.mp4"
+  }
+]

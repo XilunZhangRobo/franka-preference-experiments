@@ -1,0 +1,30 @@
+{
+  "input_sha256": "2189f8dcae44641ff9c47554694767c34852a055be4d500baf85f8d109ef7847",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590383608665183-f048b1b2/request.json",
+  "reply": {
+    "observation": "After I served the tender broccoli, the person briefly touched the food on the plate with a fingertip.",
+    "interpretation": "They may have been checking temperature or texture. The gesture alone gives no clear preference.",
+    "title": "",
+    "note": "",
+    "question": "What were you checking when you touched the food?"
+  },
+  "images": [
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00000.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00002.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00004.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00008.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00010.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00012.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00014.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00016.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00020.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00022.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00024.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00026.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00028.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00032.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00034.jpg",
+    "media/vegetable-texture/teach-103/B-accept/view/frame-00036.jpg"
+  ]
+}

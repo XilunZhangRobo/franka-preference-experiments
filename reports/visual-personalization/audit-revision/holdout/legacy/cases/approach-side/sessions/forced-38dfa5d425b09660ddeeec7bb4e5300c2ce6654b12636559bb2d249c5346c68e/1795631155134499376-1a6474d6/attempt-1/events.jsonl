@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0090"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The cloth is already near their right hand, and their left-side preference applies only to drinks.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12436,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":31,"reasoning_output_tokens":0}}

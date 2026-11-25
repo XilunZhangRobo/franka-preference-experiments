@@ -1,0 +1,11 @@
+{
+  "input_sha256": "aab00342f6e6872fea47a2bccee22b4036619295a261f42dd29aeb5fbbdbdd10",
+  "session": "forced-aab00342f6e6872fea47a2bccee22b4036619295a261f42dd29aeb5fbbdbdd10",
+  "thread": "run-0100",
+  "request": "sessions/forced-aab00342f6e6872fea47a2bccee22b4036619295a261f42dd29aeb5fbbdbdd10/1795631197370183647-464fbe70/request.json",
+  "result": "sessions/forced-aab00342f6e6872fea47a2bccee22b4036619295a261f42dd29aeb5fbbdbdd10/1795631197370183647-464fbe70/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Waiting is closer to the person’s preference to hear the update after the call ends."
+  }
+}

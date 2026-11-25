@@ -1,0 +1,64 @@
+{
+  "selected": "selective-v1",
+  "source_plan_sha256": "ef090ac7a0f7ecc9d3957dc9d6b45d0782368c36259363f264eb6a360cfeadf7",
+  "policy_sha256": {
+    "legacy": "b850d34135b9827b93e1d04a69cb4c3a71126641f78e17495d67012d05daed44",
+    "selective-v1": "bd0dcbf3ebf35540f788d15856eebba037af357060f7ea20b08bbee64bac4f6b"
+  },
+  "dev_result_sha256": {
+    "dev/legacy/cases/gift-finishing/result.json": "0d3a531f568ef17789fc86b4fc19f4e9d3fa0384fbd3f4c07cf7aef25db10a2a",
+    "dev/legacy/cases/private-storage/result.json": "fd1bbd66a4e4ba4f01b1a25c02de1c627b9dcdb93665096e327d183bc1c77bad",
+    "dev/legacy/cases/cleaning-scent/result.json": "8f03175617fce3a1561cc9da857f94867c9c663748143f2025bfb486626b20da",
+    "dev/legacy/cases/lighting/result.json": "154219d0a92968196cee9b1ffba75b9f157dee589f89aa3719a3a4ef0cdc6f42",
+    "dev/selective-v1/cases/gift-finishing/result.json": "9e5e51e5d32fc9c3c05cc2fb2a1873966fa2480ab196755216e8773ad19a347b",
+    "dev/selective-v1/cases/private-storage/result.json": "e7f852afa213459e6e13c43cb7ee623504a7b370eab2cb6cf83e647ac27f185a",
+    "dev/selective-v1/cases/cleaning-scent/result.json": "a76f380f5bf24f1eb9eebaa17a4c2f8166e858827dc692eddfe0c3f55371b814",
+    "dev/selective-v1/cases/lighting/result.json": "92ca53809340305d3b9b078b81fa0abcaa1e681c54d8fbceb547282bb6bcca91"
+  },
+  "development_counts": {
+    "legacy": {
+      "planned": 4,
+      "planned_probes": 8,
+      "complete": 4,
+      "audit_asked": 4,
+      "probe_asked": 2,
+      "seen_probes": 8,
+      "transfer_draft": 0,
+      "transfer_post_answer": 1,
+      "transfer_before_correct": 2,
+      "transfer_after_correct": 3,
+      "audit_conditional": 8,
+      "audit_gains": 1,
+      "audit_losses": 0,
+      "audit_changed": 1,
+      "prospective_conditional": 2,
+      "prospective_gains": 1,
+      "prospective_losses": 0,
+      "prospective_changed": 1,
+      "control_draft": 4,
+      "control_post_answer": 4,
+      "control_before_correct": 4,
+      "control_after_correct": 4,
+      "any_asked": 4
+    },
+    "selective-v1": {
+      "planned": 4,
+      "planned_probes": 8,
+      "complete": 4,
+      "audit_asked": 0,
+      "probe_asked": 0,
+      "seen_probes": 8,
+      "transfer_draft": 1,
+      "transfer_post_answer": 1,
+      "transfer_before_correct": 1,
+      "transfer_after_correct": 1,
+      "control_draft": 4,
+      "control_post_answer": 4,
+      "control_before_correct": 4,
+      "control_after_correct": 4,
+      "any_asked": 0
+    }
+  },
+  "rationale": "Advance the single scenario-independent revision unchanged for a paired test with the original prompt. Preserve all development outcomes. Testing the candidate does not make it the default.",
+  "frozen_at": "2026-11-25T18:25:06.030353+00:00"
+}

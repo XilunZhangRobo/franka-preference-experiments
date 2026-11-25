@@ -1,0 +1,13 @@
+{
+  "input_sha256": "5029c163410c05d927f9d877d47d30b55908a4eaad594190812a8550c0621ec0",
+  "thread": "run-0228",
+  "request": "sessions/contrast/paused-work/robot/1795591693975239613-e8050a0f/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The closed stitching kit can be moved without disturbing the loose sewing supplies.",
+    "question": "Which would you like shelved this time, the closed stitching kit or the loose organizer?"
+  },
+  "images": [
+    "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  ]
+}

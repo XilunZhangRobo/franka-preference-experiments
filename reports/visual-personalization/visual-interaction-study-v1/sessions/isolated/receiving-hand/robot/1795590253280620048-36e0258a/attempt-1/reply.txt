@@ -1,0 +1,7 @@
+{
+  "observation": "You took the flashlight with your right hand, then moved it to your left.",
+  "interpretation": "Offering it to your left hand may have saved you a hand switch.",
+  "title": "Flashlight handoffs",
+  "note": "You switched the flashlight to your left hand after this handoff.",
+  "question": "Would you prefer left-hand handoffs for flashlights, for other items too, or does it depend?"
+}

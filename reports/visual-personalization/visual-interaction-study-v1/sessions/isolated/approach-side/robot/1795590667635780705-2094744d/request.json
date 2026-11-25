@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Drink placement\n\nOn this occasion, the person indicated a spot toward their left for the drink.\n",
+    "question": "Would you prefer that I offer other items on your left, too?",
+    "person_answer": "Yes, please offer other items in front of my left shoulder when there’s room, or on my right if a shelf blocks my left."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0246"
+}

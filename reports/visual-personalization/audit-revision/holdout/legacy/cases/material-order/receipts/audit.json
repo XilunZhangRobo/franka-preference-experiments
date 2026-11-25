@@ -1,0 +1,14 @@
+{
+  "input_sha256": "552cdb0342f3169c791376ab4abd9d25c13cb8f17858360720e27251645d2983",
+  "session": "writer",
+  "thread": "run-0106",
+  "request": "sessions/writer/1795631133049277679-c29818f5/request.json",
+  "result": "sessions/writer/1795631133049277679-c29818f5/attempt-1/result.json",
+  "reply": {
+    "observation": "After I set the parts down, the person touched the red base with their right index finger. Both parts stayed where I placed them.",
+    "interpretation": "They may have been checking the base. I chose the layout, so the gesture alone tells me little about their preferred arrangement.",
+    "title": "",
+    "note": "",
+    "question": ""
+  }
+}

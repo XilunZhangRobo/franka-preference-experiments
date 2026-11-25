@@ -1,0 +1,11 @@
+{
+  "input_sha256": "30b7833ff444d1db8f56fe357527ac26c11e8e34d9ee080893d5a7c3305ea7ec",
+  "session": "forced-30b7833ff444d1db8f56fe357527ac26c11e8e34d9ee080893d5a7c3305ea7ec",
+  "thread": "run-0099",
+  "request": "sessions/forced-30b7833ff444d1db8f56fe357527ac26c11e8e34d9ee080893d5a7c3305ea7ec/1795631193895487625-e41f1938/request.json",
+  "result": "sessions/forced-30b7833ff444d1db8f56fe357527ac26c11e8e34d9ee080893d5a7c3305ea7ec/1795631193895487625-e41f1938/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The update can wait until the next pause to avoid interrupting the call."
+  }
+}

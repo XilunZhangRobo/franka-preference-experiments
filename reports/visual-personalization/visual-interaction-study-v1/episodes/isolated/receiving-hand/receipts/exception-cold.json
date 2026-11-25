@@ -1,0 +1,12 @@
+{
+  "input_sha256": "c2011945df6c4f25fd24d426b2cfeebe40397a7feb9e4e0a24fb1c464bb5d2d6",
+  "thread": "run-0296",
+  "request": "episodes/isolated/receiving-hand/independent/exception-cold/1795590337019396155-42c8c7ea/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person's right hand is free while their left hand rests on a cloth."
+  },
+  "images": [
+    "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+  ]
+}

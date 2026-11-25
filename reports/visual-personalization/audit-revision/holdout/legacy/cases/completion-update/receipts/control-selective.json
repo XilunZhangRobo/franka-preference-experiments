@@ -1,0 +1,12 @@
+{
+  "input_sha256": "3fc1731c9848a03924df2e6389dc6336b6ab60c7d3364da79b92dc8006eff3ed",
+  "session": "control-selective",
+  "thread": "run-0101",
+  "request": "sessions/control-selective/1795631201844971678-a7916e4a/request.json",
+  "result": "sessions/control-selective/1795631201844971678-a7916e4a/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "I’ll give the shelf update at the first pause after the call ends, as requested.",
+    "question": ""
+  }
+}

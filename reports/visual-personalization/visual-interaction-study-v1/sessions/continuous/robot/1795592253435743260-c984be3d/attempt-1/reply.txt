@@ -1,0 +1,1 @@
+{"choice":"B","reason":"Placing the red base on your right and the yellow cap on your left keeps them in their current order for assembly."}

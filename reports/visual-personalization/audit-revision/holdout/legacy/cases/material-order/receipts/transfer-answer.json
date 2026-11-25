@@ -1,0 +1,10 @@
+{
+  "input_sha256": "d76b24636dbb07d9a42f8c72c8d637f33a96850bbab835db9f588e4ce18d93f0",
+  "session": "transfer-person",
+  "thread": "run-0109",
+  "request": "sessions/transfer-person/1795631147288569780-0d7d4feb/request.json",
+  "result": "sessions/transfer-person/1795631147288569780-0d7d4feb/attempt-1/result.json",
+  "reply": {
+    "answer": "I’d like to start with the pot on my right."
+  }
+}

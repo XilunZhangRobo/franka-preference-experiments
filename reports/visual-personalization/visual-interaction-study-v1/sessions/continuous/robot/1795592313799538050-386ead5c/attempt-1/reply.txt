@@ -1,0 +1,1 @@
+{"choice":"A","reason":"Placing the pot on the seated person’s right starts the row with the first item, consistent with their assembly preference.","question":""}

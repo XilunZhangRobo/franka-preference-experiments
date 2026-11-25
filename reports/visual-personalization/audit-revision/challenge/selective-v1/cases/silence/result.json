@@ -1,0 +1,53 @@
+{
+  "case_id": "silence",
+  "identity_sha256": "eda2007426f67821eca6ee49855e42800b78fe340fefbd99993ed39161092d26",
+  "seed_metadata": "challenge",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot placed the white piece in the amber tray and withdrew. The person left it there.",
+    "interpretation": "The amber tray may be an acceptable place for finished pieces. The person gave no clear sign of a preference.",
+    "title": "Tray for finished pieces",
+    "note": "Use the amber tray again for a similar finished piece in this setup. Treat it as a tentative default.",
+    "question": ""
+  },
+  "draft_note": "# Tray for finished pieces\n\nUse the amber tray again for a similar finished piece in this setup. Treat it as a tentative default.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Tray for finished pieces\n\nUse the amber tray again for a similar finished piece in this setup. Treat it as a tentative default.\n",
+  "quiet": true,
+  "quiet_checks": {
+    "draft_note_written": true,
+    "asked": false,
+    "post_answer_note_written": true
+  },
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 0,
+      "asked": 0
+    },
+    "control": {
+      "available": 0,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 0,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 0,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {}
+}

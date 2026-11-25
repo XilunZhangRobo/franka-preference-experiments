@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "When there is room, I like things presented in front of my left shoulder. Use the accessible side when a shelf blocks the other side.",
+    "task": "Bring me my drink.",
+    "observed_robot_action": "Present it in the person's left-front quarter.",
+    "motion_options": {
+      "A": "Point to your right-front quarter for the drink.",
+      "B": "Point to your left-front quarter for the drink."
+    },
+    "seconds": [
+      0.0,
+      0.6667,
+      1.3333,
+      1.6667,
+      2.3333,
+      3.0
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "ad53e36b33f6474db680e1a7cf946047058b3f9acddde75cd07b10e29c3e64b0"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "661dba3c55b9d7215a07353f0411f1178fa50fbcfe553bbd405df6f2e0ea749d"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "5d63f2de281ef5a6dee4935c6606a4c3ad09159cdaa3fafec7fac0b0374552ef"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "057e1c728ad8d5078d5c102f406d85110c2ebd342fd8daad3f7909600d551f8f"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "433176f5aabf9a85cf15567e38fafd25731a7f419f27d99f17d1edba4dbc2d2a"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "35187b0ddaf87d9ba666be8f8cc77177b59372a8e9552ad02c2ea069c2a58d82"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}

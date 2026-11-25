@@ -1,0 +1,12 @@
+{
+  "input_sha256": "e7e509d996777323a5026fc35e7b1a165c0cab78217c523ae08e18856b0bda5e",
+  "thread": "run-0217",
+  "request": "episodes/continuous/receiving-hand/independent/transfer-note/1795592200184342304-e90aa473/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their left hand is free, and they prefer to receive items with it."
+  },
+  "images": [
+    "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+  ]
+}

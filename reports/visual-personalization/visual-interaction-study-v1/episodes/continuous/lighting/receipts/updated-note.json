@@ -1,0 +1,10 @@
+{
+  "input_sha256": "858d3241bbe01bd0928b40c5426ceaf32d36e5eaaab683eba2521c131ac5aa36",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593876015400208-acc0e504/request.json",
+  "reply": {
+    "title": "Overhead lighting for solo work",
+    "note": "Use the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown."
+  },
+  "images": []
+}

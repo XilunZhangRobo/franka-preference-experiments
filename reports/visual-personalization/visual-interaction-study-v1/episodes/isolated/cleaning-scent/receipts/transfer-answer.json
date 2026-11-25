@@ -1,0 +1,11 @@
+{
+  "input_sha256": "1c0eedfd7cfb703cca6a8965dd08b7e8d2d44cc8423ea98f19ce653fbe145899",
+  "thread": "run-0253",
+  "request": "sessions/isolated/cleaning-scent/person/1795591101140862764-2cbbec2a/request.json",
+  "reply": {
+    "answer": "I prefer mild citrus for my sewing surface."
+  },
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ]
+}

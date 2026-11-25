@@ -1,0 +1,1 @@
+{"choice":"B","reason":"Opening the box leaves you the option to arrange the gift yourself.","question":"Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"}

@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Which would you like shelved this time, the closed stitching kit or the loose organizer?",
+    "task": "Free a bench spot for a new project.",
+    "private_brief": "I clip a mat to mark the project I want shelved. An already closed kit can go on the shelf when starting a fresh project."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "7da0c38118a40f3790fa87c2b84cb07fabc01b0b45f0a1de5369f2bdbfe8f278"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0229"
+}

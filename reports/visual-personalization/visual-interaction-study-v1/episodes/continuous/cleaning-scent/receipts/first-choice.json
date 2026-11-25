@@ -1,0 +1,12 @@
+{
+  "input_sha256": "81131e1b06c2cdbc5793fad52cbd33501d15977ccfe50c47bdc2de378adf681b",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795594795763892157-1a76a6e9/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The fragrance-free cleaner lets you wipe the counter without adding a scent to the kitchen."
+  },
+  "images": [
+    "media/cleaning-scent/teach-136/initial-none/view/frame-00000.jpg"
+  ]
+}

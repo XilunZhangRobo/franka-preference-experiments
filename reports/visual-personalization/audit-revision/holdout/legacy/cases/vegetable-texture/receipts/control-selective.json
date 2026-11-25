@@ -1,0 +1,12 @@
+{
+  "input_sha256": "498103bdb07f1483367d9b4657ac65ed875dff0670e33d30be33418ee3746f7f",
+  "session": "control-selective",
+  "thread": "run-0135",
+  "request": "sessions/control-selective/1795631262798072457-fc08d439/request.json",
+  "result": "sessions/control-selective/1795631262798072457-fc08d439/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer green beans usually hold their texture in a chilled salad.",
+    "question": "Would you like the green beans firm or tender in this salad?"
+  }
+}

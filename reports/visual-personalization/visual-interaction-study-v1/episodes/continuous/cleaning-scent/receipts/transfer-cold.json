@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b6c2a455dce672d4fe8e831cba567661bc0de265d9545f1dd95b211e9145d2ea",
+  "thread": "run-0187",
+  "request": "episodes/continuous/cleaning-scent/independent/transfer-cold/1795595401570533910-cdccef2f/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The fragrance-free cleaner will clean the surface without adding a scent."
+  },
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ]
+}

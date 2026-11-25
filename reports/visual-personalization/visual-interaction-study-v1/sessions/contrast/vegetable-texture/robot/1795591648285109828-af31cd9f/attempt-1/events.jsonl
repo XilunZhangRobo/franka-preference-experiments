@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0240"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Broccoli and green bean texture\",\"note\":\"Choose firmer broccoli for warm meals and chilled salads, as you confirmed after swapping batches at dinner. You also requested firmer green beans for this warm side dish. Your preference for green beans at future meals is still open.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":111341,"cached_input_tokens":79488,"cache_write_input_tokens":0,"output_tokens":297,"reasoning_output_tokens":0}}

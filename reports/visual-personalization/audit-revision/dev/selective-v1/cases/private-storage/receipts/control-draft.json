@@ -1,0 +1,11 @@
+{
+  "input_sha256": "4c15e5a964aa4971a9ee66799e9d56e16d82c75b871cdfb152edf12cd0eda713",
+  "session": "forced-4c15e5a964aa4971a9ee66799e9d56e16d82c75b871cdfb152edf12cd0eda713",
+  "thread": "run-0083",
+  "request": "sessions/forced-4c15e5a964aa4971a9ee66799e9d56e16d82c75b871cdfb152edf12cd0eda713/1795631016439392948-5641c0ad/request.json",
+  "result": "sessions/forced-4c15e5a964aa4971a9ee66799e9d56e16d82c75b871cdfb152edf12cd0eda713/1795631016439392948-5641c0ad/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+  }
+}

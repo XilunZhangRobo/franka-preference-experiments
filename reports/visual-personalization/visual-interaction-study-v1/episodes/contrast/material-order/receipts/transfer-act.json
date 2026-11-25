@@ -1,0 +1,10 @@
+{
+  "input_sha256": "de2bfbed9898951f68eeee8287e30b81ab681f88da2eb7590a9a76015f5ef1ff",
+  "thread": "run-0222",
+  "request": "sessions/contrast/material-order/robot/1795591688602591281-6d4dd400/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The person asked for the pot, scoop, and tag in that order from their left to their right."
+  },
+  "images": []
+}

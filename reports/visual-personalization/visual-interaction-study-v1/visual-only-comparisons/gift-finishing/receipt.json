@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "A",
+    "reason": "You’ve relied on me for final placement before, so I’ll arrange the tissue and gift inside and close the box."
+  },
+  "request": "visual-only-comparisons/gift-finishing/session/1795591459043550998-92120318/request.json",
+  "thread": "run-0433",
+  "images": [
+    "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "349db7c63590cc6f9dec091335c59f06ef5ddd1fb5732e1b4c05e147ddfca593"
+}

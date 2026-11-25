@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The shelf blocks the approach on your left, and your right hand is free to take the cloth.\",\"question\":\"When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":989141,"cached_input_tokens":928768,"cache_write_input_tokens":0,"output_tokens":1350,"reasoning_output_tokens":0}}

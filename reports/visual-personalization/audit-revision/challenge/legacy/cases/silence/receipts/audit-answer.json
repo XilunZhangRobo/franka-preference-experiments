@@ -1,0 +1,10 @@
+{
+  "input_sha256": "b2a5f39a3f1379ab67f4fa1b7aef86a5000647001e5ef188fed3b69d4bdc09e2",
+  "session": "audit-person",
+  "thread": "run-0018",
+  "request": "sessions/audit-person/1795631280319049544-a31d0545/request.json",
+  "result": "sessions/audit-person/1795631280319049544-a31d0545/attempt-1/result.json",
+  "reply": {
+    "answer": "No, use the teal tray unless I ask for a different tray for a specific piece."
+  }
+}

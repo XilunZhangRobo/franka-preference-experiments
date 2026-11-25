@@ -1,0 +1,10 @@
+{
+  "input_sha256": "85e2375197c41a59ba03336d13733e93211539f29aa28599c937a871157b710e",
+  "thread": "run-0252",
+  "request": "sessions/isolated/cleaning-scent/robot/1795591279617686087-eb3a1e19/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You asked for fragrance-free cleaner on the shared craft worktop."
+  },
+  "images": []
+}

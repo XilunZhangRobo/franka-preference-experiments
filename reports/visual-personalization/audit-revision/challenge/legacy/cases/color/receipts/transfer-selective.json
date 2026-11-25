@@ -1,0 +1,12 @@
+{
+  "input_sha256": "6269aeb45aafc3d0fdb6998064db4f1a1021f12df26369f6ac8a502a6f128a11",
+  "session": "transfer-selective",
+  "thread": "run-0009",
+  "request": "sessions/transfer-selective/1795631296725602298-df041b6e/request.json",
+  "result": "sessions/transfer-selective/1795631296725602298-df041b6e/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You chose the teal tray for this piece.",
+    "question": ""
+  }
+}

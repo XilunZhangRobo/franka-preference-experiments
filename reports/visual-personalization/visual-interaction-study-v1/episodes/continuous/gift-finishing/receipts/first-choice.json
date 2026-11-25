@@ -1,0 +1,12 @@
+{
+  "input_sha256": "8c1f3b3de579ba6491a2450885ebc4d91bcc565abb6e4c2d4c2879e0f3b4d70f",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795591913262066043-d957b80a/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Setting the flower beside the card keeps it ready while you choose where to attach it."
+  },
+  "images": [
+    "media/gift-finishing/teach-48/initial-none/view/frame-00000.jpg"
+  ]
+}

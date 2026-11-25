@@ -1,0 +1,11 @@
+{
+  "input_sha256": "5ba3d1be16ae166ec2e821ba4ee1259c080fa169642b4d86a7f9ef04ae0c9a95",
+  "session": "forced-5ba3d1be16ae166ec2e821ba4ee1259c080fa169642b4d86a7f9ef04ae0c9a95",
+  "thread": "run-0073",
+  "request": "sessions/forced-5ba3d1be16ae166ec2e821ba4ee1259c080fa169642b4d86a7f9ef04ae0c9a95/1795631039529061772-33c0ae35/request.json",
+  "result": "sessions/forced-5ba3d1be16ae166ec2e821ba4ee1259c080fa169642b4d86a7f9ef04ae0c9a95/1795631039529061772-33c0ae35/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box finishes the task."
+  }
+}

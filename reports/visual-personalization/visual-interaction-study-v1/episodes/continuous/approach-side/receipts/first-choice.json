@@ -1,0 +1,12 @@
+{
+  "input_sha256": "edb511524b618be14a5412d8ce22c51442ce9a7b6a95951dbcaeb476b8e722ed",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592352194147326-fc68008a/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Presenting the drink in front of you on your left puts it within reach of your free, preferred hand."
+  },
+  "images": [
+    "media/approach-side/teach-81/initial-none/view/frame-00000.jpg"
+  ]
+}

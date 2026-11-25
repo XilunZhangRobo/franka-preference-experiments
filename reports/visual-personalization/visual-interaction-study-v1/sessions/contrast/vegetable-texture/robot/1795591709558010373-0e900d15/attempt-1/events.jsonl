@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0240"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"You chose firmer green beans for a warm side dish, so I’d lean toward the firmer batch here too.\",\"question\":\"Would you like the green beans firmer or more tender in this chilled salad?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":132744,"cached_input_tokens":99968,"cache_write_input_tokens":0,"output_tokens":351,"reasoning_output_tokens":0}}

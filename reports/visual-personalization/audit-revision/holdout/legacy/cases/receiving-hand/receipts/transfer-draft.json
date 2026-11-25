@@ -1,0 +1,11 @@
+{
+  "input_sha256": "2428c4b8b4dc78b3de2ab73295184ca6ba191327c4fce247cdbb84efa15e6714",
+  "session": "forced-2428c4b8b4dc78b3de2ab73295184ca6ba191327c4fce247cdbb84efa15e6714",
+  "thread": "run-0128",
+  "request": "sessions/forced-2428c4b8b4dc78b3de2ab73295184ca6ba191327c4fce247cdbb84efa15e6714/1795631220042924514-5ce661b2/request.json",
+  "result": "sessions/forced-2428c4b8b4dc78b3de2ab73295184ca6ba191327c4fce247cdbb84efa15e6714/1795631220042924514-5ce661b2/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You switched the flashlight to your left hand last time, so I’ll offer the remote to that hand."
+  }
+}

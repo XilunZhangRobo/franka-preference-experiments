@@ -1,0 +1,159 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 1,
+      "time": 0.16666666666666666,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 2,
+      "time": 0.3333333333333333,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 3,
+      "time": 0.5,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 4,
+      "time": 0.6666666666666666,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 5,
+      "time": 0.8333333333333334,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 6,
+      "time": 1.0,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 7,
+      "time": 1.1666666666666667,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 8,
+      "time": 1.3333333333333333,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 9,
+      "time": 1.5,
+      "actor": "robot",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 10,
+      "time": 1.6666666666666667,
+      "actor": "robot",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 11,
+      "time": 1.8333333333333333,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 12,
+      "time": 2.0,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 13,
+      "time": 2.1666666666666665,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 14,
+      "time": 2.3333333333333335,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 15,
+      "time": 2.5,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 16,
+      "time": 2.6666666666666665,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 17,
+      "time": 2.8333333333333335,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 18,
+      "time": 3.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 19,
+      "time": 3.1666666666666665,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "650281dd73f5742ff292f73d69a151d9d410b9ccd499d5860599d84a3f356a6e",
+  "max_robot_pinch_error_m": 0.0008211929848604316,
+  "final_positions_m": {
+    "cloth": [
+      -0.15255945475260257,
+      0.11714295932791638,
+      0.895
+    ]
+  },
+  "scene_sha256": "c63d947fa152068445598e49bc5cdcb6e6c5f247d387e06dd613985895000bd8"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0300"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Green bean and broccoli tenderness\",\"note\":\"Choose the more tender green beans for a warm side dish, as the person requested. They also checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":110509,"cached_input_tokens":76800,"cache_write_input_tokens":0,"output_tokens":246,"reasoning_output_tokens":0}}

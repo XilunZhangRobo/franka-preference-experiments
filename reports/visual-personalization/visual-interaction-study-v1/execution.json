@@ -1,0 +1,488 @@
+{
+  "protocol_revision": "12f52899202c18baa8511efdd0b026ed6bf86d71",
+  "renderer": "Blender Cycles CPU, 640 x 480, 12 samples, 6 frames per second. The robot/person model receives sampled JPEGs, with timestamps and simulated utterances archived.",
+  "technical_recovery": [
+    "The initial host filesystem temporarily ran out of space during three unfinished render attempts. Only complete atomically published clips were reused. The run continued on the data volume from recorded model choices.",
+    "Verified CLI transport: 4 recorded journal recoveries, 20 superseded retention requests without a scored response. See verified_transport for the error files and paired successful requests."
+  ],
+  "lighting_recovery": "sessions/isolated/lighting/robot/1795590611283927377-efeffe92/attempt-2/recovery.json",
+  "resumption_rule": "A completed response with identical prompt, context and image hashes is reused. The original preference profile and the planned task order are preserved.",
+  "profile_selection": "Originals and continuous trials always use the original profiles. Extra contrasts select a disagreeing, prewritten profile after observing the first action. Their initial mismatch is by construction.",
+  "actual_source_fingerprints": {
+    "interaction_retention.py": "8a340d812e1f33cc3045cb412d96f212da2021415e5445309f2ab25a8d03e78f",
+    "interaction_study.py": "b0ce23670fb1d0894dac9a82188898020c5beb6983d155fc991b9ed39d2468db",
+    "interaction_media.py": "191f7c194cfa946d3e9b59064c2e2c390279fdc7c704d3d28b2d16f275d448c2",
+    "interaction_sim.py": "62a9ad78ae2f7f901019ccd4e0641efec07d798f7a66047d86088c2f99d3b37f",
+    "interaction_astra.py": "f4c01a129b7339b38d2b4a3bbdce0410fd13a0810f05e771e6c9dff839ffe449"
+  },
+  "transport_recovery_records": [
+    "sessions/isolated/lighting/robot/1795590611283927377-efeffe92/attempt-2/recovery.json",
+    "sessions/continuous/robot/1795593626127563994-446bd1ea/attempt-2/recovery.json",
+    "sessions/continuous/robot/1795593905409895689-0743552c/attempt-2/recovery.json",
+    "sessions/continuous/person/1795594808081592823-6a4fb84c/attempt-2/recovery.json"
+  ],
+  "verified_episode_transport": {
+    "coverage": "24 completed teaching episodes and their probes, before final library retention",
+    "accepted_calls": 314,
+    "journal_recoveries": 4,
+    "adapter_error_files": [
+      "episodes/continuous/cleaning-scent/independent/exception-cold/1795596026702138067-42141740/attempt-1/error.json",
+      "episodes/continuous/cleaning-scent/independent/transfer-note/1795595406949578996-b0a2fb17/attempt-1/error.json",
+      "sessions/continuous/person/1795594808081592823-6a4fb84c/attempt-1/error.json",
+      "sessions/continuous/robot/1795593626127563994-446bd1ea/attempt-1/error.json",
+      "sessions/continuous/robot/1795593905409895689-0743552c/attempt-1/error.json"
+    ]
+  },
+  "verified_transport": {
+    "coverage": "complete original episodes and retention",
+    "accepted_calls": 374,
+    "archived_requests": 394,
+    "journal_recoveries": 4,
+    "adapter_error_files": [
+      "episodes/continuous/cleaning-scent/independent/exception-cold/1795596026702138067-42141740/attempt-1/error.json",
+      "episodes/continuous/cleaning-scent/independent/transfer-note/1795595406949578996-b0a2fb17/attempt-1/error.json",
+      "retention/approach-side-exception/cold/1795597533101220191-2e9e257f/attempt-1/error.json",
+      "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-1/error.json",
+      "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-2/error.json",
+      "retention/approach-side-transfer/cold/1795597532792245579-20d6df4d/attempt-1/error.json",
+      "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-1/error.json",
+      "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-2/error.json",
+      "retention/cleaning-scent-exception/cold/1795598739394585889-1caf1180/attempt-1/error.json",
+      "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-1/error.json",
+      "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-2/error.json",
+      "retention/cleaning-scent-transfer/cold/1795598733759197017-f8c28c17/attempt-1/error.json",
+      "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-1/error.json",
+      "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-2/error.json",
+      "retention/completion-update-exception/cold/1795597536247381453-5d226d67/attempt-1/error.json",
+      "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-1/error.json",
+      "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-2/error.json",
+      "retention/completion-update-transfer/cold/1795597533683416742-de213473/attempt-1/error.json",
+      "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-1/error.json",
+      "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-2/error.json",
+      "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-1/error.json",
+      "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-2/error.json",
+      "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-1/error.json",
+      "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-2/error.json",
+      "retention/lighting-exception/cold/1795598733759058850-07edd292/attempt-1/error.json",
+      "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-1/error.json",
+      "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-2/error.json",
+      "retention/lighting-transfer/cold/1795598733104888335-5d1e3105/attempt-1/error.json",
+      "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-1/error.json",
+      "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-2/error.json",
+      "retention/material-order-exception/cold/1795596960323505081-448ad5ee/attempt-1/error.json",
+      "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-1/error.json",
+      "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-2/error.json",
+      "retention/material-order-transfer/cold/1795596959217152976-4c20f6e1/attempt-1/error.json",
+      "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-1/error.json",
+      "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-2/error.json",
+      "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-1/error.json",
+      "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-2/error.json",
+      "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-1/error.json",
+      "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-2/error.json",
+      "retention/private-storage-exception/cold/1795598137258176811-4d8e3654/attempt-1/error.json",
+      "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-1/error.json",
+      "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-2/error.json",
+      "retention/private-storage-transfer/cold/1795598133327033216-a6f6236c/attempt-1/error.json",
+      "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-1/error.json",
+      "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-2/error.json",
+      "retention/receiving-hand-exception/cold/1795596951939557972-7cd7135f/attempt-1/error.json",
+      "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-1/error.json",
+      "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-2/error.json",
+      "retention/receiving-hand-transfer/cold/1795596950859283917-351ec930/attempt-1/error.json",
+      "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-1/error.json",
+      "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-2/error.json",
+      "retention/vegetable-texture-exception/cold/1795598132327794595-e54d9e5d/attempt-1/error.json",
+      "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-1/error.json",
+      "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-2/error.json",
+      "retention/vegetable-texture-transfer/cold/1795598131727940031-6c2c0ffc/attempt-1/error.json",
+      "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-1/error.json",
+      "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-2/error.json",
+      "sessions/continuous/person/1795594808081592823-6a4fb84c/attempt-1/error.json",
+      "sessions/continuous/robot/1795593626127563994-446bd1ea/attempt-1/error.json",
+      "sessions/continuous/robot/1795593905409895689-0743552c/attempt-1/error.json"
+    ],
+    "unscored_superseded_retention_requests": [
+      {
+        "request": "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/request.json",
+        "successful_request": "retention/paused-work-transfer/cold/1795630720175892079-f3092e22/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-1",
+            "thread": "run-0306",
+            "status": "recorded timeout",
+            "events_sha256": "9094afd32bbea5c0fcfc3a1918ce1b4f39bc8ff46e8723703825d03889bddf00"
+          },
+          {
+            "directory": "retention/paused-work-transfer/cold/1795596590787269251-db12f6ab/attempt-2",
+            "thread": "run-0307",
+            "status": "recorded timeout",
+            "events_sha256": "323211d1f6af08c1e13a91c2b49d72cc1af9642bfd2413efdaef36877d2d1b4e"
+          }
+        ]
+      },
+      {
+        "request": "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/request.json",
+        "successful_request": "retention/paused-work-exception/retrieve/1795630732102925218-b822dea3/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-1",
+            "thread": "run-0308",
+            "status": "recorded timeout",
+            "events_sha256": "172a8d7e3e1c153d8f00be7eb14326a06ad9f240ef98090ce67e2013e0bf361a"
+          },
+          {
+            "directory": "retention/paused-work-exception/retrieve/1795596600303291351-44b7f003/attempt-2",
+            "thread": "run-0309",
+            "status": "recorded timeout",
+            "events_sha256": "a9b53ac434c89b6721e115aa7e73435c87e60073d6b0debbffbe029eecd96412"
+          }
+        ]
+      },
+      {
+        "request": "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/request.json",
+        "successful_request": "retention/gift-finishing-transfer/retrieve/1795630740652395075-14f1ef7d/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-1",
+            "thread": "run-0310",
+            "status": "recorded timeout",
+            "events_sha256": "40056c17f5684bac10d477cddc734405c4635ae84d161992e256cc43ea970922"
+          },
+          {
+            "directory": "retention/gift-finishing-transfer/retrieve/1795596599151604932-019e2ac1/attempt-2",
+            "thread": "run-0311",
+            "status": "recorded timeout",
+            "events_sha256": "0d9e4ceda5f6c2e25380fb72e3683df402eb90c9f8dcbbfedee79ad5081e45af"
+          }
+        ]
+      },
+      {
+        "request": "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/request.json",
+        "successful_request": "retention/gift-finishing-exception/cold/1795630749456438310-813bc86a/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-1",
+            "thread": "run-0312",
+            "status": "recorded timeout",
+            "events_sha256": "69aed29cc1ad3e3fd4830e5f0e1e0bfd7546924907630fca3e7347cf5a2b7c22"
+          },
+          {
+            "directory": "retention/gift-finishing-exception/cold/1795596591925828261-ddbce233/attempt-2",
+            "thread": "run-0313",
+            "status": "recorded timeout",
+            "events_sha256": "a60c0ea9dccbe2399a02c5f55e1fd73612964beb4a862aabed5958fb8f9ad8ca"
+          }
+        ]
+      },
+      {
+        "request": "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/request.json",
+        "successful_request": "retention/receiving-hand-transfer/retrieve/1795630760076828609-d8b4247a/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-1",
+            "thread": "run-0314",
+            "status": "recorded timeout",
+            "events_sha256": "c25982e3cc6fdfb4f63d6227bb15090d4a5f38e23d6abadb4a1a4e526829e5ad"
+          },
+          {
+            "directory": "retention/receiving-hand-transfer/retrieve/1795597173034822967-24e8871a/attempt-2",
+            "thread": "run-0315",
+            "status": "recorded timeout",
+            "events_sha256": "5e29451d6a734ef8f66a9abc64a9bbb1031df110fcb8d9f9b31c756fae52a060"
+          }
+        ]
+      },
+      {
+        "request": "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/request.json",
+        "successful_request": "retention/receiving-hand-exception/decision/1795630767627403816-0a8c3a0c/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-1",
+            "thread": "run-0316",
+            "status": "recorded timeout",
+            "events_sha256": "c0e6f6f5cf4721d3fdf232775250e2e9d152db51645e04ee4de0881c86e1664d"
+          },
+          {
+            "directory": "retention/receiving-hand-exception/decision/1795597176181685539-609149d6/attempt-2",
+            "thread": "run-0317",
+            "status": "recorded timeout",
+            "events_sha256": "e919a3a6752b1844a328668d82ac4d7bb573a1c2d922111d9d4dd12d674b54a5"
+          }
+        ]
+      },
+      {
+        "request": "retention/material-order-transfer/retrieve/1795597173670772188-83700399/request.json",
+        "successful_request": "retention/material-order-transfer/retrieve/1795630771400466899-8b5b7198/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-1",
+            "thread": "run-0318",
+            "status": "recorded timeout",
+            "events_sha256": "a192b5ea845919daa30b652e29baca40e9fa84e8ee4b1e3aa8bb16427abfe3b4"
+          },
+          {
+            "directory": "retention/material-order-transfer/retrieve/1795597173670772188-83700399/attempt-2",
+            "thread": "run-0319",
+            "status": "recorded timeout",
+            "events_sha256": "6f2889d9801dd0e4097b03f1063f6ab3037d36ff038844047bbca3ef52e85345"
+          }
+        ]
+      },
+      {
+        "request": "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/request.json",
+        "successful_request": "retention/material-order-exception/retrieve/1795630780353746287-7d78cd38/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-1",
+            "thread": "run-0320",
+            "status": "recorded timeout",
+            "events_sha256": "453b9d043401ede1a529b550e6397ca4c46ca1b1e347f6c4eb8f67b21dcbad80"
+          },
+          {
+            "directory": "retention/material-order-exception/retrieve/1795597172730012779-58d667d2/attempt-2",
+            "thread": "run-0321",
+            "status": "recorded timeout",
+            "events_sha256": "9984286b92da51d689b6f211a6df1e6cde2aa8af46c5d4e5111e4c9d086f3240"
+          }
+        ]
+      },
+      {
+        "request": "retention/approach-side-transfer/decision/1795597777145659983-535af777/request.json",
+        "successful_request": "retention/approach-side-transfer/decision/1795630788304816806-38613fb4/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-1",
+            "thread": "run-0322",
+            "status": "recorded timeout",
+            "events_sha256": "0532613000bc14a90f0c23569290275a4cc979696bc33fc340b80d256f072e12"
+          },
+          {
+            "directory": "retention/approach-side-transfer/decision/1795597777145659983-535af777/attempt-2",
+            "thread": "run-0323",
+            "status": "recorded timeout",
+            "events_sha256": "2d15075ea1f892f186eb90fdb6cc3e66b6b3e16cd1b63da7415768c36bcf9b09"
+          }
+        ]
+      },
+      {
+        "request": "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/request.json",
+        "successful_request": "retention/approach-side-exception/retrieve/1795630793985086503-25a1e3a1/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-1",
+            "thread": "run-0324",
+            "status": "recorded timeout",
+            "events_sha256": "08c731ddfe49770ec1675378f9ca9baf86a9fe4b1e05c2b92eddaf3ee22554e4"
+          },
+          {
+            "directory": "retention/approach-side-exception/retrieve/1795597773313697580-b8d5dce8/attempt-2",
+            "thread": "run-0325",
+            "status": "recorded timeout",
+            "events_sha256": "3470cc27fa9ac02b99174fefac91707a9d2dcaf3c6f0fc9fcd5bba5494ee0996"
+          }
+        ]
+      },
+      {
+        "request": "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/request.json",
+        "successful_request": "retention/completion-update-transfer/retrieve/1795630800880583357-254078fe/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-1",
+            "thread": "run-0326",
+            "status": "recorded timeout",
+            "events_sha256": "ed8469c1f080edf9e5c2c49b5cb391d955647273175af98a447f2a205162dab3"
+          },
+          {
+            "directory": "retention/completion-update-transfer/retrieve/1795597771663349449-8ac250f7/attempt-2",
+            "thread": "run-0327",
+            "status": "recorded timeout",
+            "events_sha256": "836bb65ab595d27ba4bfb286430f1f5d71d21c827986a1930141967a3ed43a5e"
+          }
+        ]
+      },
+      {
+        "request": "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/request.json",
+        "successful_request": "retention/completion-update-exception/retrieve/1795630811435506800-12952905/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-1",
+            "thread": "run-0328",
+            "status": "recorded timeout",
+            "events_sha256": "85165bc2a737710c282b5ed2a2c2795c6d11e18ceaadd48fd28c10a5c7e955f9"
+          },
+          {
+            "directory": "retention/completion-update-exception/retrieve/1795597772312175018-6aa6fda6/attempt-2",
+            "thread": "run-0329",
+            "status": "recorded timeout",
+            "events_sha256": "96f4e94da8aee8141131ccda1c9fc1a342251ba2779f7c1ff03f70af291b2db5"
+          }
+        ]
+      },
+      {
+        "request": "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/request.json",
+        "successful_request": "retention/vegetable-texture-transfer/decision/1795630821444402175-4f2365c1/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-1",
+            "thread": "run-0330",
+            "status": "recorded timeout",
+            "events_sha256": "9f2abf32729dbbaa86cb6f16df13cbaad6d7729afb13f709ebd2d19cebcceac4"
+          },
+          {
+            "directory": "retention/vegetable-texture-transfer/decision/1795598379380416175-bb81cfa1/attempt-2",
+            "thread": "run-0331",
+            "status": "recorded timeout",
+            "events_sha256": "5cfa5735594a2e7c8d4dc355eeb43e507846212af33d482fd3262b850a564bbd"
+          }
+        ]
+      },
+      {
+        "request": "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/request.json",
+        "successful_request": "retention/vegetable-texture-exception/retrieve/1795630824971496578-fb6df6c1/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-1",
+            "thread": "run-0332",
+            "status": "recorded timeout",
+            "events_sha256": "b90b8f8f18f89d2ee91d0f50e2f817b90a3f0cdb2d2e8b5af4f083928d9e62ff"
+          },
+          {
+            "directory": "retention/vegetable-texture-exception/retrieve/1795598373741438245-99606466/attempt-2",
+            "thread": "run-0333",
+            "status": "recorded timeout",
+            "events_sha256": "b3ce082a384a7f01b3d96b8835ad26d8a1f8a35be7c5ba1be9a3f6816f0ddc77"
+          }
+        ]
+      },
+      {
+        "request": "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/request.json",
+        "successful_request": "retention/private-storage-transfer/retrieve/1795630833222315498-b2be1202/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-1",
+            "thread": "run-0334",
+            "status": "recorded timeout",
+            "events_sha256": "7392150607cc5671ed80347578f0d04bcfb0b4f053195ba103ddad803435a3e6"
+          },
+          {
+            "directory": "retention/private-storage-transfer/retrieve/1795598372989450877-686b59c1/attempt-2",
+            "thread": "run-0335",
+            "status": "recorded timeout",
+            "events_sha256": "36f23d53cc858c34ced598632002675f34c1d21861edee2dd843695b3d278944"
+          }
+        ]
+      },
+      {
+        "request": "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/request.json",
+        "successful_request": "retention/private-storage-exception/retrieve/1795630841369978438-2e06bf46/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-1",
+            "thread": "run-0336",
+            "status": "recorded timeout",
+            "events_sha256": "7bc49bfc9f287c223ab6cd0d9813d8c8f6d969989873377a2af6b9a49bb6196b"
+          },
+          {
+            "directory": "retention/private-storage-exception/retrieve/1795598373741547739-29dce63b/attempt-2",
+            "thread": "run-0337",
+            "status": "recorded timeout",
+            "events_sha256": "310fad33986bf1a7996522cf2a1e0bc303189ca14bb2a3dd7b91b4e2baca315a"
+          }
+        ]
+      },
+      {
+        "request": "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/request.json",
+        "successful_request": "retention/lighting-transfer/retrieve/1795630849171937662-f381ac0b/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-1",
+            "thread": "run-0338",
+            "status": "recorded timeout",
+            "events_sha256": "8ebfbc03b1303b348c78a2b5be583841986a1f653bfa77cf498c7ac1fc54acf7"
+          },
+          {
+            "directory": "retention/lighting-transfer/retrieve/1795598973901457402-e5a599cd/attempt-2",
+            "thread": "run-0339",
+            "status": "recorded timeout",
+            "events_sha256": "f5fec5faa0d9472aec72038608d5c8bf2085b9afc54e3b4c040cc2a99837f0fc"
+          }
+        ]
+      },
+      {
+        "request": "retention/lighting-exception/decision/1795598984607736802-6917d298/request.json",
+        "successful_request": "retention/lighting-exception/decision/1795630858222209604-7d2c4770/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-1",
+            "thread": "run-0340",
+            "status": "recorded timeout",
+            "events_sha256": "8d0c75329f8c0a5edcffdbe6efc3f4a5b080121466e4c98532ede8eae1e02efa"
+          },
+          {
+            "directory": "retention/lighting-exception/decision/1795598984607736802-6917d298/attempt-2",
+            "thread": "run-0341",
+            "status": "recorded timeout",
+            "events_sha256": "b2e33267eabe594949482648c9a46e342ada0bb37d4236966d76310ddcbab330"
+          }
+        ]
+      },
+      {
+        "request": "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/request.json",
+        "successful_request": "retention/cleaning-scent-transfer/retrieve/1795630861544931387-384b0e70/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-1",
+            "thread": "run-0342",
+            "status": "recorded timeout",
+            "events_sha256": "d567734064f33134085ee0dd4b17ce4b031d74d339cc65a6d624c690f7499241"
+          },
+          {
+            "directory": "retention/cleaning-scent-transfer/retrieve/1795598972347800605-7f404bac/attempt-2",
+            "thread": "run-0343",
+            "status": "recorded timeout",
+            "events_sha256": "424f21483473027291b112c1cf6af8eb09d754b5ff3d37a07a151f4b86f7f749"
+          }
+        ]
+      },
+      {
+        "request": "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/request.json",
+        "successful_request": "retention/cleaning-scent-exception/retrieve/1795630871098927110-be688718/request.json",
+        "scored": false,
+        "attempts": [
+          {
+            "directory": "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-1",
+            "thread": "run-0344",
+            "status": "recorded timeout",
+            "events_sha256": "56c345e6cd771ea906dde444dbcaafc5c5cd4436ae7315e4cddd981d5b1ff6e3"
+          },
+          {
+            "directory": "retention/cleaning-scent-exception/retrieve/1795598974356662023-1a8fb909/attempt-2",
+            "thread": "run-0345",
+            "status": "recorded timeout",
+            "events_sha256": "1823ac8ce3fb8f06dc7dbb98c512e3c67c5b1343f7de336c4bb30dc8dda6a790"
+          }
+        ]
+      }
+    ],
+    "unscored_superseded_retention_attempts": 40
+  }
+}

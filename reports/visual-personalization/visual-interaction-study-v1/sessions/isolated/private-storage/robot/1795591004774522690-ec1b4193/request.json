@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Entryway keys and flashlight\n\nThe shallow entryway compartment held both items after this cleanup.\n",
+    "question": "Should I use this compartment as the usual spot for the keys and flashlight?",
+    "person_answer": "Yes, keep my keys and flashlight in the closed compartment between uses."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0288"
+}

@@ -1,0 +1,13 @@
+id	kind	expected
+P1	main	B
+P2	main	A
+P3	exception	A
+D1	main	B
+D2	main	A
+D3	exception	B
+L1	main	A
+L2	main	B
+L3	exception	B
+S1	main	B
+S2	main	A
+S3	exception	A

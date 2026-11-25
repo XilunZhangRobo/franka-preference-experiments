@@ -1,0 +1,14 @@
+{
+  "input_sha256": "a7e65522a758deaec4f3d106742a4468eea0941ed3992806215681117a9b3c6a",
+  "session": "writer",
+  "thread": "run-0030",
+  "request": "sessions/writer/1795631001696763682-fa79f2e1/request.json",
+  "result": "sessions/writer/1795631001696763682-fa79f2e1/attempt-1/result.json",
+  "reply": {
+    "observation": "I set out the blue fragrance-free cleaner. You put it back on the tray and placed the orange bottle beside the cloth.",
+    "interpretation": "You appeared to prefer the orange cleaner for this task. I couldn't tell whether being home alone mattered.",
+    "title": "Kitchen counter cleaner",
+    "note": "You chose the orange cleaner for the kitchen counter on an occasion when you were home alone.",
+    "question": "For future kitchen counter cleanups, when would you like me to set out the orange cleaner?"
+  }
+}

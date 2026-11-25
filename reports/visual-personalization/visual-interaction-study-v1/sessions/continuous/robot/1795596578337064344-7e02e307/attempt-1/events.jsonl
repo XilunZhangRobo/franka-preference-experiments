@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Fragrance-free cleaner fits your preference when guests are coming to share the worktop.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":4047985,"cached_input_tokens":3917824,"cache_write_input_tokens":0,"output_tokens":2970,"reasoning_output_tokens":0}}

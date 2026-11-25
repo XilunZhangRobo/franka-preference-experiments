@@ -1,0 +1,126 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0030",
+    "reply": {
+      "observation": "I set out the blue fragrance-free cleaner. You put it back on the tray and placed the orange bottle beside the cloth.",
+      "interpretation": "You appeared to prefer the orange cleaner for this task. I couldn't tell whether being home alone mattered.",
+      "title": "Kitchen counter cleaner",
+      "note": "You chose the orange cleaner for the kitchen counter on an occasion when you were home alone.",
+      "question": "For future kitchen counter cleanups, when would you like me to set out the orange cleaner?"
+    }
+  },
+  {
+    "stage": "audit-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/audit-answer.json",
+    "thread": "run-0029",
+    "reply": {
+      "answer": "Set out the orange cleaner when I’m using the kitchen privately and no guests are coming."
+    }
+  },
+  {
+    "stage": "refine",
+    "actor": "robot",
+    "channel": "written note",
+    "receipt": "receipts/refine.json",
+    "thread": "run-0034",
+    "reply": {
+      "title": "Orange cleaner for kitchen counters",
+      "note": "Set out the orange cleaner for kitchen counter cleanup when I’m using the kitchen privately and no guests are coming. I chose it once while home alone. My preference for other situations is unspecified."
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0036",
+    "reply": {
+      "choice": "B",
+      "reason": "Fragrance-free is a neutral choice because your earlier orange-cleaner choice was for the kitchen."
+    }
+  },
+  {
+    "stage": "transfer-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-post_answer.json",
+    "thread": "run-0038",
+    "reply": {
+      "choice": "B",
+      "reason": "Your citrus preference is specific to kitchen counters, so I’ll use the fragrance-free cleaner in your sewing room."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0037",
+    "reply": {
+      "choice": "B",
+      "reason": "Your citrus preference is specific to the kitchen.",
+      "question": "Which cleaner do you prefer for the sewing table?"
+    }
+  },
+  {
+    "stage": "transfer-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/transfer-answer.json",
+    "thread": "run-0035",
+    "reply": {
+      "answer": "I prefer the mild citrus cleaner for my sewing table."
+    }
+  },
+  {
+    "stage": "transfer-final",
+    "actor": "robot",
+    "channel": "final decision",
+    "receipt": "receipts/transfer-final.json",
+    "thread": "run-0037",
+    "reply": {
+      "choice": "A",
+      "reason": "You prefer the mild-citrus cleaner for your sewing table."
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0031",
+    "reply": {
+      "choice": "A",
+      "reason": "The fragrance-free cleaner avoids adding a scent when the guests’ preferences are unknown."
+    }
+  },
+  {
+    "stage": "control-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-post_answer.json",
+    "thread": "run-0032",
+    "reply": {
+      "choice": "A",
+      "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop before guests arrive."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0033",
+    "reply": {
+      "choice": "A",
+      "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop before guests arrive.",
+      "question": ""
+    }
+  }
+]

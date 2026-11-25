@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "I like firm vegetables with warm meals. I want firm vegetables for chilled salads.",
+    "task": "Serve cooked broccoli alongside the warm dinner.",
+    "observed_robot_action": "Serve the more tender batch.",
+    "motion_options": {
+      "A": "Point at the selected arrangement and leave it in place.",
+      "B": "Return the selected item to its starting spot and move the other item into its place."
+    },
+    "seconds": [
+      0.0,
+      1.0,
+      1.6667,
+      2.6667,
+      3.3333,
+      4.3333
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "47cf8ee23d8ac7d7158644b2b3442281d917d8b43a4498f45c62c3035a2bdbaf"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "097c7c20c62ad9ff2ce1012435a7970e5bdaffc1e87d97ad285cc734a2a34ab5"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "964a892d160762f3c479d925c573532307070cc9a6d96c0b8ca9c36482830712"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "7053daf239f0a62cc5839992ad2a8cd4b182d5e81f8e111eab2114c78e1bde37"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "32e6b4ab93b84d262a077b5a5fc7b6d1e5aa8f20f39addb5df4d3efbb4edc8f7"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "6b140dfe92d300fa0a836e0abfb07cb9d5c9324517ec6cd73d57b57b99619f20"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

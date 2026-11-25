@@ -1,0 +1,12 @@
+{
+  "input_sha256": "2ec359e8f7ce9bb9f875be439926ea46a24a7612ed73eb76d0a5200739ea0d3f",
+  "thread": "run-0276",
+  "request": "sessions/isolated/material-order/robot/1795590106780221768-118a6b4c/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The red base is already on the person’s right and the yellow cap is on their left."
+  },
+  "images": [
+    "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+  ]
+}

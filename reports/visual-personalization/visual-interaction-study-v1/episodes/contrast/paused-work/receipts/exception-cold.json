@@ -1,0 +1,12 @@
+{
+  "input_sha256": "5f11f09976cd2e5a690ca22cebbd0aa489580fea71a60f1e25688df766932c92",
+  "thread": "run-0230",
+  "request": "episodes/contrast/paused-work/independent/exception-cold/1795591674955553502-6d195d8e/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed stitching kit clears a bench spot while keeping its contents together."
+  },
+  "images": [
+    "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  ]
+}

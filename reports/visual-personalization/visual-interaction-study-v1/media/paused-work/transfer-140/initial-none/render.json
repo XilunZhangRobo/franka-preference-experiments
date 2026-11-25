@@ -1,0 +1,16 @@
+{
+  "family": "paused-work",
+  "phase": "transfer",
+  "seed": 140,
+  "choice": "initial",
+  "response": "none",
+  "size": [
+    640,
+    480
+  ],
+  "fps": 6,
+  "samples": 12,
+  "renderer": "blender-cycles",
+  "device": "CPU",
+  "camera": "agent"
+}

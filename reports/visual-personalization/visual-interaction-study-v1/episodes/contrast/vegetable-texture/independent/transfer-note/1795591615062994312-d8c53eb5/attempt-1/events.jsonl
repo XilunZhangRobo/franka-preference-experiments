@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0245"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"Tender green beans suit a warm side dish, and the firmness preference is specific to broccoli.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12418,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":30,"reasoning_output_tokens":0}}

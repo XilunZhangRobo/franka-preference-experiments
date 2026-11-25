@@ -1,0 +1,10 @@
+{
+  "input_sha256": "1e0359de21a1b8b148426a11cc3c436c577138c0b9b6932d1f50d927c0fb3245",
+  "thread": "run-0288",
+  "request": "sessions/isolated/private-storage/robot/1795591004774522690-ec1b4193/request.json",
+  "reply": {
+    "title": "Entryway keys and flashlight",
+    "note": "The person confirmed that their house keys and flashlight belong in the shallow entryway compartment between uses. Close it after putting them away."
+  },
+  "images": []
+}

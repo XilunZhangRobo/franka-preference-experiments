@@ -1,0 +1,12 @@
+{
+  "input_sha256": "321fea57d555a3e5ad75f742f264dc3f507b698c428e3d7a98557219dff192db",
+  "session": "transfer-selective",
+  "thread": "run-0156",
+  "request": "sessions/transfer-selective/1795631177952483218-0b6b6032/request.json",
+  "result": "sessions/transfer-selective/1795631177952483218-0b6b6032/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The similar assembly’s default supports placing the pot on the person’s right, the scoop in the middle, and the tag on their left.",
+    "question": ""
+  }
+}

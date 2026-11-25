@@ -1,0 +1,1 @@
+{"choice":"A","reason":"The person is comparing tiles alone at this table and prefers overhead lighting for solo work.","question":""}

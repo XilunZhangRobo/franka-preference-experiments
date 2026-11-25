@@ -1,0 +1,12 @@
+{
+  "input_sha256": "8639f9ec039df62e06e967ea0ea364fb14e2dae642f8fbdf24071ebb25370b10",
+  "session": "control-selective",
+  "thread": "run-0154",
+  "request": "sessions/control-selective/1795631185905948891-d8cd3577/request.json",
+  "result": "sessions/control-selective/1795631185905948891-d8cd3577/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The central tray keeps the markers within reach of all four people.",
+    "question": ""
+  }
+}

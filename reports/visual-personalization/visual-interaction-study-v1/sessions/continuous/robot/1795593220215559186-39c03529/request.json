@@ -1,0 +1,95 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You are the household robot viewing the interaction from your camera. Consider what happened, why the person might have acted, and what could be useful in a different task. Distinguish what you saw from an inference. Decide whether the observed behavior merits a personal note. Ask at most one focused question if the evidence leaves an important scope ambiguity. Return JSON with short string fields observation, interpretation, title, note and question. Use empty strings for an unwarranted note or question.",
+  "context": {
+    "task": "Put the house keys and flashlight away after use in the entryway.",
+    "your_action": "Set them together on the open tray.",
+    "seconds": [
+      0.0,
+      1.3333,
+      2.6667,
+      4.0,
+      5.3333,
+      6.6667,
+      8.0,
+      9.3333,
+      10.3333,
+      11.6667,
+      13.0,
+      14.3333,
+      15.6667,
+      17.0,
+      18.3333,
+      19.6667
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "067d12b9d120846c0d0e529e70b9501fe9e1ce8671984f87f201903303eebd7e"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "249c0cd35589447e45d07a539bacdea9e2a535a3ae7a6abaaccd4e18029d5da5"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "ff7342edab686f77cea5204c3c1b8ef1ca8d83ad6d7aa6fcefabd68d85dde922"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "030df6622f1e4a704b9ca7b65b7e5afd42e5f567e7f6495b7c814bc9f3477289"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "a352a983f9765d0bab517d00d60f54c4171ad653947141236990af62bc1f291d"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "a21efa7e0ea708ad14fb77e086168bfb5c6caab17ac5e9a69e38f7577840c705"
+    },
+    {
+      "file": "image-006.jpg",
+      "sha256": "9d46031c681e0656d42861d5c6e8add362fda8192c0220de2c5d309a9c3db4bb"
+    },
+    {
+      "file": "image-007.jpg",
+      "sha256": "4a0c3911708eba76d77fad24dfd6efceaab876811c25883866a025a94dc29977"
+    },
+    {
+      "file": "image-008.jpg",
+      "sha256": "862a7583f39ced850e3dce6ad2e9ddbdd3a5c0636d8a24bda4340afb8592b716"
+    },
+    {
+      "file": "image-009.jpg",
+      "sha256": "4ecc05fc333096c9ec05dbcd356936007e789c504d03d59226da60ab2fe6eecc"
+    },
+    {
+      "file": "image-010.jpg",
+      "sha256": "77e737263f966774f137aad64f9c4009d26309496375723122813a1e6caf75a2"
+    },
+    {
+      "file": "image-011.jpg",
+      "sha256": "1158aa99f10602c84f098e77a6bf803842566cf7b53d82d2a60852d0a6e8db95"
+    },
+    {
+      "file": "image-012.jpg",
+      "sha256": "c14a12cbba512627e2ed4c062302f7cd7c9aaa4d0b79d670f12c6eddd0195baf"
+    },
+    {
+      "file": "image-013.jpg",
+      "sha256": "c4a2d749714fe129ab04756ea4f6e1664089508402c08ea782bb205977f5c0a3"
+    },
+    {
+      "file": "image-014.jpg",
+      "sha256": "a20649b64b3f9bed9e5c02e6eec9edcc8a8887ed63a98a2081c52cd35b4c3ff9"
+    },
+    {
+      "file": "image-015.jpg",
+      "sha256": "fc0b14682cbaf9c9a377cfd6ca7ce3f34d82c27c2220ef0a40db173b929cae3e"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

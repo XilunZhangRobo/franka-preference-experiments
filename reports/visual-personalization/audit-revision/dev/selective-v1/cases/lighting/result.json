@@ -1,0 +1,138 @@
+{
+  "case_id": "lighting",
+  "identity_sha256": "38ec0ee9795a99b37165e025c17116bbe410408fff7dbf47c126f93543076ff7",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot switched on the desk lamp. The person used the same switch to turn it off, then pressed the other switch. The room appeared brighter afterward.",
+    "interpretation": "They may prefer room lighting to a focused beam while working on the puzzle.",
+    "title": "Room light for puzzles",
+    "note": "Try the room light first for this person’s puzzle work. One switch change suggests a preference for this setup, but the reason is unclear.",
+    "question": ""
+  },
+  "draft_note": "# Room light for puzzles\n\nTry the room light first for this person’s puzzle work. One switch change suggests a preference for this setup, but the reason is unclear.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Room light for puzzles\n\nTry the room light first for this person’s puzzle work. One switch change suggests a preference for this setup, but the reason is unclear.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The desk lamp can light the tile patterns directly, and the room-light preference was specific to puzzles."
+        },
+        "correct": false,
+        "input_sha256": "95b9f780c243c2c1f016cb371142796a113f3baf64c78a29884e4571fcff08f2",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The desk lamp can light the tile patterns directly, and the room-light preference was specific to puzzles."
+        },
+        "correct": false,
+        "input_sha256": "95b9f780c243c2c1f016cb371142796a113f3baf64c78a29884e4571fcff08f2",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The desk lamp is beside the tile samples, and the room-light preference was specific to puzzles.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The desk lamp is beside the tile samples, and the room-light preference was specific to puzzles.",
+          "question": ""
+        },
+        "before_correct": false,
+        "after_correct": false
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+        },
+        "correct": true,
+        "input_sha256": "5be45a991f2ea53d287dce04f69be40bb720e715e1439e51527b5fa1b8569341",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+        },
+        "correct": true,
+        "input_sha256": "5be45a991f2ea53d287dce04f69be40bb720e715e1439e51527b5fa1b8569341",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0172"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\n  \"observation\": \"The robot moved broccoli from the left tray onto the dinner plate. The person then pointed at the food on the plate. No speech was heard.\",\n  \"interpretation\": \"The gesture drew attention to the plated food. It did not clearly indicate a preference for either batch.\",\n  \"title\": \"Broccoli tenderness\",\n  \"note\": \"When ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.\",\n  \"question\": \"\"\n}"}}
+{"type":"turn.completed","usage":{"input_tokens":18207,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":107,"reasoning_output_tokens":0}}

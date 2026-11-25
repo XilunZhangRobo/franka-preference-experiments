@@ -1,0 +1,11 @@
+{
+  "input_sha256": "cbaa7ad71bdf6aa65becb30485d7f71fadac94c933a4eea8bb2c47aabdc8d761",
+  "session": "refiner",
+  "thread": "run-0014",
+  "request": "sessions/refiner/1795631319181836704-29316e11/request.json",
+  "result": "sessions/refiner/1795631319181836704-29316e11/attempt-1/result.json",
+  "reply": {
+    "title": "Left tray for finished pieces",
+    "note": "Use whichever tray is on the person’s left for each finished piece unless they request a different tray for that piece. They chose teal for the earlier piece only."
+  }
+}

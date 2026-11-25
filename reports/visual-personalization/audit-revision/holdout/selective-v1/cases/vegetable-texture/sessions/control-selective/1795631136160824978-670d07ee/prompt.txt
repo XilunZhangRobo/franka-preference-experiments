@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).
+{"task": "Prepare cooked green beans for the chilled salad.", "options": {"A": "Serve the firmer batch.", "B": "Serve the more tender batch."}, "memory": "# Broccoli tenderness\n\nWhen ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.\n"}

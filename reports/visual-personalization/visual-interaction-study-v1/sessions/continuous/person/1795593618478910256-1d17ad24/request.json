@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "When I work alone I like the even light from the ceiling fixture. During a projected presentation keep the room dim and light just the craft table.",
+    "task": "Turn on a light for the person working on a puzzle.",
+    "observed_robot_action": "Turn on the desk lamp.",
+    "motion_options": {
+      "A": "Point at the selected arrangement and leave it in place.",
+      "B": "Switch the selected light off and switch on the other light."
+    },
+    "seconds": [
+      0.0,
+      0.6667,
+      1.0,
+      1.6667,
+      2.0,
+      2.6667
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "0537e318432ccd402cfe8089729d43cedb059119a0163a0bbf10af732100dc68"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "79b06597d28d6d344055d3eaff0a51dfd42a93c7ba825ccebdc46d0d34ad8925"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "a9714af284d070b6d4397135d0ac0876478bb3fc8789c3f59c8537d055874bcd"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "2743a0390b69c8f2c5eecb4c181aa2222e44c3b281bba14e96fc3f106a85064b"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "b1b154a9ced5f2b1382fae080a81e20b67376f243d6aa744b76de11f697aa41d"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "deb5f6ec55ce77789e1c1fe466936cff679c972a965fd7bf3f8e2f5921e68fee"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}

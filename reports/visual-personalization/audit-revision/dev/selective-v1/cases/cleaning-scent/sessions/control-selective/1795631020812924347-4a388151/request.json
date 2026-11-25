@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+    "options": {
+      "A": "Use the fragrance-free cleaner.",
+      "B": "Use the mild-citrus cleaner."
+    },
+    "memory": "# Cleaner choice when home alone\n\nNext time they ask for a counter cleaner while home alone, favor the orange bottle. This one choice leaves their scent preference open.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "bbee631bd0f60191d95b396a87d1b3d12df77f7447e7b70c599ecb5aac56ea77"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

@@ -1,0 +1,11 @@
+{
+  "input_sha256": "6cca3bba1b350f6ea3061313db9bc44b625f9f944eac22f464c4cc3b7a5d2b7e",
+  "session": "forced-6cca3bba1b350f6ea3061313db9bc44b625f9f944eac22f464c4cc3b7a5d2b7e",
+  "thread": "run-0011",
+  "request": "sessions/forced-6cca3bba1b350f6ea3061313db9bc44b625f9f944eac22f464c4cc3b7a5d2b7e/1795631336385588471-e5345786/request.json",
+  "result": "sessions/forced-6cca3bba1b350f6ea3061313db9bc44b625f9f944eac22f464c4cc3b7a5d2b7e/1795631336385588471-e5345786/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The person asked to use the amber tray for this piece."
+  }
+}

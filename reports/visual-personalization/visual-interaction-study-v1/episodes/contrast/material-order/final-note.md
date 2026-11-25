@@ -1,0 +1,3 @@
+# Left-to-right setup for assembly and planting
+
+For their own assemblies where the base is used first and the cap second, place the base on their left and the cap on their right. They demonstrated and confirmed this layout. For planting, they explicitly requested the pot on their left, the scoop in the middle, and the tag on their right. Their preference for other tasks or sequences is unknown.

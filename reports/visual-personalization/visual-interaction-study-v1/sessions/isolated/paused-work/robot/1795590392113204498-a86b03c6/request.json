@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Free a bench spot for a new project.",
+    "options": {
+      "A": "Shelve the loose organizer.",
+      "B": "Shelve the closed stitching kit."
+    },
+    "question": "Which would you like to keep on the bench for the new project?",
+    "person_answer": "Please keep the rust mat on the bench."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0282"
+}

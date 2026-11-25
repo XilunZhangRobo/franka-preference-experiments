@@ -1,0 +1,13 @@
+{
+  "input_sha256": "ac675cb8603c31da3ed2155689a28b1c016d155f0d49559c2eecae58e58083d8",
+  "thread": "run-0246",
+  "request": "sessions/isolated/approach-side/robot/1795590689680536571-ca68f81d/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "There’s room in front of the person’s left shoulder, where they prefer to receive items.",
+    "question": ""
+  },
+  "images": [
+    "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  ]
+}

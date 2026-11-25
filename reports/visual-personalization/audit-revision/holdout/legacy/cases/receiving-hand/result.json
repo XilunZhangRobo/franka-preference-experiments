@@ -1,0 +1,141 @@
+{
+  "case_id": "receiving-hand",
+  "identity_sha256": "dc3c97755693f723cb2e63d1d203e79b854f4fe5a3d1be0f0dbc7adc9ee1cd42",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I offered the flashlight to your right hand. You took it with that hand, then transferred it to your left.",
+    "interpretation": "A left-hand offer might have saved you a step this time.",
+    "title": "Flashlight handoff",
+    "note": "You moved the flashlight to your left hand after this handoff.",
+    "question": "Would you prefer left-hand offers for flashlights, for other items too, or does it depend on the task?"
+  },
+  "draft_note": "# Flashlight handoff\n\nYou moved the flashlight to your left hand after this handoff.\n",
+  "audit_question": "Would you prefer left-hand offers for flashlights, for other items too, or does it depend on the task?",
+  "audit_answer": "I prefer my left hand for flashlights and other items, but use my right hand if my left is busy.",
+  "refined_reply": {
+    "title": "Left-hand preference for item handoffs",
+    "note": "Offer flashlights and other items to your left hand by default. Use your right hand when your left is busy. You moved the flashlight to your left hand after the handoff and confirmed this preference applies to other items too."
+  },
+  "post_answer_note": "# Left-hand preference for item handoffs\n\nOffer flashlights and other items to your left hand by default. Use your right hand when your left is busy. You moved the flashlight to your left hand after the handoff and confirmed this preference applies to other items too.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "You switched the flashlight to your left hand last time, so I’ll offer the remote to that hand."
+        },
+        "correct": true,
+        "input_sha256": "2428c4b8b4dc78b3de2ab73295184ca6ba191327c4fce247cdbb84efa15e6714",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Your left hand is free, and you prefer to receive items with it."
+        },
+        "correct": true,
+        "input_sha256": "803b4c93806ef4d8742b44647bab651eb9f80612380d5217f598490ad8ab2741",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Your left hand is free, and you prefer to receive items with it.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Your left hand is free, and you prefer to receive items with it.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Their right hand is free and closest to the remote."
+        },
+        "correct": true,
+        "input_sha256": "a93271c568deb292929f20a03201056a00db90f901e785cdc7c19104ae45e389",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Your left hand is on the sponge, so I’ll offer the remote to your free right hand."
+        },
+        "correct": true,
+        "input_sha256": "89d60087cacc381a6d3a97981aa67f1dc548c7a83e8a0c83fc368600f8052974",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Your left hand is on the cloth, so I’ll offer the remote to your free right hand.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Your left hand is on the cloth, so I’ll offer the remote to your free right hand.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

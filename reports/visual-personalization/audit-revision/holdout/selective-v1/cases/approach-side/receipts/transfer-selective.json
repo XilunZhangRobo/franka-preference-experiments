@@ -1,0 +1,12 @@
+{
+  "input_sha256": "a9ff3ae5706b4554f765294e628ea3147551605531707b735e6b44c115314a00",
+  "session": "transfer-selective",
+  "thread": "run-0146",
+  "request": "sessions/transfer-selective/1795631203339826817-d28f9f88/request.json",
+  "result": "sessions/transfer-selective/1795631203339826817-d28f9f88/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person’s left hand is visible and closest to the cloth.",
+    "question": ""
+  }
+}

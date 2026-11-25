@@ -1,0 +1,12 @@
+{
+  "input_sha256": "29114f36bd3c6fafb324bf0ee6b45db26f92588f660b49896e56cada10c73587",
+  "thread": "run-0261",
+  "request": "episodes/isolated/completion-update/independent/exception-note/1795591318648197268-0f9fe8a5/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Waiting is closer to their preference to hear routine updates after the call ends."
+  },
+  "images": [
+    "media/completion-update/exception-298/initial-none/view/frame-00000.jpg"
+  ]
+}

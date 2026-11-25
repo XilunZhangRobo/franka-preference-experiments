@@ -1,0 +1,31 @@
+{
+  "families": [
+    "paused-work",
+    "gift-finishing",
+    "receiving-hand",
+    "material-order",
+    "approach-side",
+    "completion-update",
+    "vegetable-texture",
+    "private-storage",
+    "lighting",
+    "cleaning-scent"
+  ],
+  "model": "gpt-6.2-astra",
+  "phase_order": [
+    "teach",
+    "transfer",
+    "exception"
+  ],
+  "design": "All original preferences run first. If a first action already matches the original person, add a separate diagnostic episode whose prewritten profile disagrees with its observed first action. Contrasts measure response to a correction conditional on a miss. Continuous uses only the ten original preferences in the listed order.",
+  "seeds": "37+11*family_index+103*phase_index; retention adds 1701",
+  "size": [
+    640,
+    480
+  ],
+  "fps": 6,
+  "samples": 12,
+  "renderer": "Blender Cycles",
+  "clarification": "At most one question during audit and one per probe. Fresh cold and written-note comparisons cannot ask. The same persistent learner and person continue across the ten continuous episodes.",
+  "outcome": "All errors and null notes count. A successful scope choice can also reflect ordinary priors. A single development run per family estimates no population frequency."
+}

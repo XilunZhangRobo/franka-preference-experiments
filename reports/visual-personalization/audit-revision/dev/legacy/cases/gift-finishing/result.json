@@ -1,0 +1,140 @@
+{
+  "case_id": "gift-finishing",
+  "identity_sha256": "aaf724aaef875121bdd095c5a5b6d355cd6f4bcd93d2e36f577cb6a0cbf7fd74",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I held the pink flower over the card. The person took it from my gripper and placed it at the tip of the drawn stem.",
+    "interpretation": "They may have wanted to choose the flower’s exact position on this card.",
+    "title": "Flower placement on the handmade card",
+    "note": "For this card, the person handled the final placement.",
+    "question": "When we make other cards, would you like me to hand you the decorations so you can place them?"
+  },
+  "draft_note": "# Flower placement on the handmade card\n\nFor this card, the person handled the final placement.\n",
+  "audit_question": "When we make other cards, would you like me to hand you the decorations so you can place them?",
+  "audit_answer": "Yes, please hand me the decorations so I can place them myself.",
+  "refined_reply": {
+    "title": "Decoration placement on handmade cards",
+    "note": "When making cards together, hand the person the decorations so they can place them themselves. They handled the final placement on this card and explicitly requested the same for future cards."
+  },
+  "post_answer_note": "# Decoration placement on handmade cards\n\nWhen making cards together, hand the person the decorations so they can place them themselves. They handled the final placement on this card and explicitly requested the same for future cards.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Packing the gift with the tissue and closing the box makes it ready to give."
+        },
+        "correct": false,
+        "input_sha256": "116c881f3b97fbcd97a33c6c0c507cd821fcc6d9485d04499ee67821e919af8c",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Packing the tissue and gift and closing the box makes it ready to give."
+        },
+        "correct": false,
+        "input_sha256": "d86ee879d38e90d6c6c0125bfb598759681fc6796f9dcdbb529577df1aff16ba",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Opening the box lets either of us finish the wrapping.",
+          "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"
+        },
+        "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "I'd like to arrange the tissue and gift and close the box myself.",
+        "final": {
+          "choice": "B",
+          "reason": "Opening the box and setting the tissue and gift beside it lets you arrange them and close the box yourself."
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box finishes the lunches."
+        },
+        "correct": true,
+        "input_sha256": "dc4008dc694031fa8f004fe03aa778726c153968507cf13b6c4eb2b5cc163057",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Packing a portion in each labeled box and closing the lids will get both lunches ready for tomorrow."
+        },
+        "correct": true,
+        "input_sha256": "3d9a6ca8bb3c4a2a2fb155b44b93ac67314e5b35824891a172c9b68994713f76",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Packing a portion in each box and closing its labeled lid gets both lunches ready for tomorrow.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Packing a portion in each box and closing its labeled lid gets both lunches ready for tomorrow.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "The bin is full. Give the person a low-priority completion update.",
+    "options": {
+      "A": "Give a brief spoken update now.",
+      "B": "Give the spoken update at the person's next pause."
+    },
+    "written_library": {}
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "c21c47018fbf5399be7560ddc3c2abf3c3098b3a286e84e99073ab0f70453e5c"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

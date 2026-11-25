@@ -1,0 +1,12 @@
+{
+  "input_sha256": "e6745b1a4cadd51b3700527e6404c488b5439141b72ca590ac4890c815cde014",
+  "thread": "run-0297",
+  "request": "episodes/isolated/receiving-hand/independent/exception-note/1795590342497072014-c42832f7/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their left hand is on the sponge, so their right hand is free to take the remote."
+  },
+  "images": [
+    "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "input_sha256": "df0f552478976c55c3e71019dc82f108b752d7c47fd33bf7eb3064008a91085d",
+  "thread": "run-0288",
+  "request": "sessions/isolated/private-storage/robot/1795590989784460217-3ffea0ad/request.json",
+  "reply": {
+    "observation": "The person steadied the lid while I put the keys and flashlight inside, then pointed at the compartment after I closed it.",
+    "interpretation": "The gesture may have confirmed the storage spot, though the person said nothing.",
+    "title": "Entryway keys and flashlight",
+    "note": "The shallow entryway compartment held both items after this cleanup.",
+    "question": "Should I use this compartment as the usual spot for the keys and flashlight?"
+  },
+  "images": [
+    "media/private-storage/teach-114/A-accept/view/frame-00000.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00006.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00014.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00020.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00026.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00034.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00040.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00046.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00054.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00060.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00066.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00074.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00080.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00086.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00094.jpg",
+    "media/private-storage/teach-114/A-accept/view/frame-00100.jpg"
+  ]
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0190"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The update can wait for the person’s next pause so it won’t interrupt the call.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12393,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":30,"reasoning_output_tokens":0}}

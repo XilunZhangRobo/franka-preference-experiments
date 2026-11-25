@@ -1,0 +1,12 @@
+{
+  "input_sha256": "1da710cc31f9e43c7e408c9167d4266ce42abc28da7f57c05418a0164726f43e",
+  "session": "control-selective",
+  "thread": "run-0126",
+  "request": "sessions/control-selective/1795631239007681977-5bc10014/request.json",
+  "result": "sessions/control-selective/1795631239007681977-5bc10014/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your left hand is on the cloth, so I’ll offer the remote to your free right hand.",
+    "question": ""
+  }
+}

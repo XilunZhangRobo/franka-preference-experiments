@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0258"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The person is drawing alone and asked to hear routine updates right away during solo work.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":73058,"cached_input_tokens":59776,"cache_write_input_tokens":0,"output_tokens":236,"reasoning_output_tokens":0}}

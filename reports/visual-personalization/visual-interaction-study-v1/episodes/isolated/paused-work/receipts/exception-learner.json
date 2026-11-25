@@ -1,0 +1,13 @@
+{
+  "input_sha256": "6ea65f329dd26f1aa5339830ab7218f21ea96d0f66efb14e8d77ab0e165a6edb",
+  "thread": "run-0282",
+  "request": "sessions/isolated/paused-work/robot/1795590379456852492-610d1447/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The closed stitching kit is ready to shelve, and the loose organizer has exposed supplies.",
+    "question": "Which would you like to keep on the bench for the new project?"
+  },
+  "images": [
+    "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  ]
+}

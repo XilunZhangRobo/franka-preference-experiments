@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0177"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The more tender beans are easier to chew, but the person’s texture preference is unknown.\",\"question\":\"Would you prefer the green beans firmer or more tender?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12432,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":44,"reasoning_output_tokens":0}}

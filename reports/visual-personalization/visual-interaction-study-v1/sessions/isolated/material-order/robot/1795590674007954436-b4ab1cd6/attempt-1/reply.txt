@@ -1,0 +1,1 @@
+{"choice":"A","reason":"Starting on your right keeps the pot on its current side and the scoop in the middle.","question":"Would you like the row to start with the pot on your right or your left?"}

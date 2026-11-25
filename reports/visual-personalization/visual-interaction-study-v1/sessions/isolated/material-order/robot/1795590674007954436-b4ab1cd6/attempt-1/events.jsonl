@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0276"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Starting on your right keeps the pot on its current side and the scoop in the middle.\",\"question\":\"Would you like the row to start with the pot on your right or your left?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":50843,"cached_input_tokens":17536,"cache_write_input_tokens":0,"output_tokens":140,"reasoning_output_tokens":0}}

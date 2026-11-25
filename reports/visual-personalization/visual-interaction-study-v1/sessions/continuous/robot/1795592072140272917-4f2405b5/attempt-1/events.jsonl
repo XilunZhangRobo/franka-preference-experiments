@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"Opening the box leaves you the option to arrange the gift yourself.\",\"question\":\"Would you like to arrange the tissue and gift yourself, or should I pack and close the box?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":198179,"cached_input_tokens":174208,"cache_write_input_tokens":0,"output_tokens":470,"reasoning_output_tokens":0}}

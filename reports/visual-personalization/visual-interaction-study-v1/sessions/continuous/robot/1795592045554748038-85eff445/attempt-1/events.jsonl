@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Decorations for personal gift cards\",\"note\":\"When a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":169019,"cached_input_tokens":146048,"cache_write_input_tokens":0,"output_tokens":423,"reasoning_output_tokens":0}}

@@ -1,0 +1,94 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Turn on a light for the person working on a puzzle.",
+    "image": "media/lighting/teach-125/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Turn on the desk lamp. The desk lamp will shine directly on the puzzle pieces."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/lighting/teach-125/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Switch the selected light off and switch on the other light."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 1.6667, 2.0, 2.6667, 3.0, 3.3333, 3.6667, 4.3333, 4.6667, 5.0, 5.3333, 6.0, 6.3333",
+    "clip": "media/lighting/teach-125/B-change/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "After I turned on the desk lamp, the person switched it off and used the other switch, brightening the room. They seemed to prefer overhead lighting for this puzzle."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Do you also prefer the overhead light for other tasks at this table?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Yes, when I work alone, but during a projected presentation I prefer just the desk lamp."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Table lighting for solo work and presentations\n\nUse the overhead light for solo work at this table, including puzzles. During projected presentations, use only the desk lamp. The person confirmed both preferences. Lighting for other group activities is unspecified.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Turn on a light for the person comparing ceramic tile patterns.",
+    "image": "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Turn on the desk lamp. The desk lamp can shine directly on the tile samples so the person can compare their patterns."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Turn on the overhead fixture. The person is comparing tiles alone and prefers the overhead light for solo work at this table."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Turn on the overhead fixture. The person is comparing tiles alone at this table and prefers overhead lighting for solo work.",
+    "clip": "media/lighting/transfer-228/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+    "image": "media/lighting/exception-331/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim, as the person prefers during slide shows.",
+    "clip": "media/lighting/exception-331/A-none/view/view.mp4"
+  }
+]

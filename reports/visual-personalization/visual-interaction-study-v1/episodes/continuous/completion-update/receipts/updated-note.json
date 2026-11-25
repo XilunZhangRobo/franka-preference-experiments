@@ -1,0 +1,10 @@
+{
+  "input_sha256": "08fed9fa9d18087e8acb61cff91fb4df578a5efe86832bdb6b795abcf5ea73f6",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592626598869040-41aab236/request.json",
+  "reply": {
+    "title": "Low-priority updates during solo work and video calls",
+    "note": "The person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update."
+  },
+  "images": []
+}

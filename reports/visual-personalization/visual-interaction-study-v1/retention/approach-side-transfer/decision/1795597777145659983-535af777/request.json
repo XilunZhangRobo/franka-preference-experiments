@@ -1,0 +1,23 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Bring me the folded cloth.",
+    "options": {
+      "A": "Present it in the person's left-front quarter.",
+      "B": "Present it in the person's right-front quarter."
+    },
+    "notes": [
+      "# Drink placement and folded cloth handoffs\n\nUsually place drinks in front of the person’s left shoulder. If a shelf blocks that spot, use their right side. They also asked to receive the folded cloth on their right when a shelf blocks their left side.\n",
+      "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n"
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "f9a6f1134ab9f88fde5286619149f1f27097d42a841d6f8e277bfd72c04beadc"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

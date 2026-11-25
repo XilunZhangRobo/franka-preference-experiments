@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0095"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"There is room to offer the cloth in front of your left shoulder as requested.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":25270,"cached_input_tokens":16128,"cache_write_input_tokens":0,"output_tokens":73,"reasoning_output_tokens":0}}

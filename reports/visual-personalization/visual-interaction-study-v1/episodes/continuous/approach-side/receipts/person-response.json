@@ -1,0 +1,16 @@
+{
+  "input_sha256": "76ac390b6b7bd2be4706a50d7f007794c713a62c2e2fd7869c5f475e1f65be75",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592389350745424-c7682c46/request.json",
+  "reply": {
+    "response": "B"
+  },
+  "images": [
+    "media/approach-side/teach-81/A-none/view/frame-00000.jpg",
+    "media/approach-side/teach-81/A-none/view/frame-00004.jpg",
+    "media/approach-side/teach-81/A-none/view/frame-00008.jpg",
+    "media/approach-side/teach-81/A-none/view/frame-00010.jpg",
+    "media/approach-side/teach-81/A-none/view/frame-00014.jpg",
+    "media/approach-side/teach-81/A-none/view/frame-00018.jpg"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "A",
+    "reason": "Shelving the teal mat makes room for the cutting board and keeps the rust mat within reach."
+  },
+  "request": "visual-only-comparisons/paused-work/session/1795591452714431879-93fe2237/request.json",
+  "thread": "run-0435",
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "bb5ba9c9ebcf26cd28cee97b94f2afc61bce72f700566e688512cfc01f592ed9"
+}

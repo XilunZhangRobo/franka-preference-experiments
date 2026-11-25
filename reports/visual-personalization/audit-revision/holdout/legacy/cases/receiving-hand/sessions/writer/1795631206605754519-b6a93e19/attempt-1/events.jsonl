@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0123"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\n  \"observation\": \"I offered the flashlight to your right hand. You took it with that hand, then transferred it to your left.\",\n  \"interpretation\": \"A left-hand offer might have saved you a step this time.\",\n  \"title\": \"Flashlight handoff\",\n  \"note\": \"You moved the flashlight to your left hand after this handoff.\",\n  \"question\": \"Would you prefer left-hand offers for flashlights, for other items too, or does it depend on the task?\"\n}"}}
+{"type":"turn.completed","usage":{"input_tokens":18195,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":110,"reasoning_output_tokens":0}}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b370597abc0aa7fd8ae052f476df8feefaadb353e6d6296b80b2fb331e68d762",
+  "session": "transfer-selective",
+  "thread": "run-0076",
+  "request": "sessions/transfer-selective/1795631035803071524-ef0d8412/request.json",
+  "result": "sessions/transfer-selective/1795631035803071524-ef0d8412/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Packing the tissue and gift inside and closing the box gets it ready to give.",
+    "question": ""
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Review the camera interaction. What happened? What preference might explain it? Separate the visible evidence from your inference. Use context and ordinary judgment to write a short rule for a future choice, if the evidence supports one. Keep meaningful uncertainty in the note. Leave the person uninterrupted when you can proceed. Ask one brief question only when plausible readings still call for different actions and choosing poorly would matter. Return JSON with short string fields observation, interpretation, title, note and question. Leave unwarranted fields empty.",
+  "context": {
+    "task": "Put the finished piece away.",
+    "your_action": "You put the finished piece in the amber tray.",
+    "seconds": [
+      0.0,
+      0.5,
+      1.1667,
+      1.6667,
+      2.1667,
+      2.8333,
+      3.3333,
+      3.8333,
+      4.5,
+      5.0,
+      5.5,
+      6.1667,
+      6.6667,
+      7.1667,
+      7.8333,
+      8.3333
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "88ce8358e15c0774181ed355a40b20dee3f3fe23113abd7ce1bc7b0db054e913"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "54199bd69e249877c285e7468c1743bdc226d091b89ba74b0b2525d0c7993522"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "4b9dda683f1c4f66a22750cd69edd1b736e5ce3e3e9267b91087438cb50f8ef8"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "20693fbec5c1062bc158e385185341ccc710b918b1ad08b188ff41b7cb9f6c95"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "6ab72642eb714e6f2e46abdbe534e192fcaaf1117657e965bd07fe770f4b9444"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "720f2e71c78ab61851cc10305e7200218a3b24c1164513f96a0241401ef9a169"
+    },
+    {
+      "file": "image-006.jpg",
+      "sha256": "f4206a6527099b9d410bf707ac52df8c64e83baafc36e2efc1faf51c37911b14"
+    },
+    {
+      "file": "image-007.jpg",
+      "sha256": "f6511e244e033c8c1cc0dc68439d319c53acb675c20365ecd9e65672083798af"
+    },
+    {
+      "file": "image-008.jpg",
+      "sha256": "f02471ed82b56e901b10dfd5a37d9fe0705563296b68e61eee73fa567b88752b"
+    },
+    {
+      "file": "image-009.jpg",
+      "sha256": "9df1a32e4ba855f2d9730db1b18836659950c74276c73ff41e4be1ad2c2f775e"
+    },
+    {
+      "file": "image-010.jpg",
+      "sha256": "93eead4897a894db04317150715a00b6d9c391bd53d860ea8ca9c06bfc5750c6"
+    },
+    {
+      "file": "image-011.jpg",
+      "sha256": "545d7fcbdcce5fb0de62da35a4221ed6d17ef34fc0906d7813456d57bcf25cab"
+    },
+    {
+      "file": "image-012.jpg",
+      "sha256": "b9f818429e484cb3a633f929d3403c06aa779a481b06832811bbd6d50a5fdb10"
+    },
+    {
+      "file": "image-013.jpg",
+      "sha256": "cab7f55a9d6e9658b307657fd77334d195529cfdcbac6c0b5552caff498eabaa"
+    },
+    {
+      "file": "image-014.jpg",
+      "sha256": "215388e29197423055a21fab32a60eccf7210bba24b46ca5fce6091e3febddc5"
+    },
+    {
+      "file": "image-015.jpg",
+      "sha256": "2e5f82d5bfda50f6ee49e426ac2e1b092a818ae2729d060f12695daa48d63ed1"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

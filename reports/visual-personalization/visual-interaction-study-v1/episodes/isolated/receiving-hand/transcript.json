@@ -1,0 +1,94 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Hand me the flashlight.",
+    "image": "media/receiving-hand/teach-59/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Offer it to the person's right hand. The person's right hand is closer to the flashlight."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/receiving-hand/teach-59/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Take the flashlight in the offered hand, then pass it to your left hand."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.0, 1.6667, 2.0, 2.6667, 3.3333, 3.6667, 4.3333, 4.6667, 5.3333, 6.0, 6.3333, 7.0, 7.3333, 8.0",
+    "clip": "media/receiving-hand/teach-59/A-change/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "You took the flashlight with your right hand, then moved it to your left. Offering it to your left hand may have saved you a hand switch."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Would you prefer left-hand handoffs for flashlights, for other items too, or does it depend?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I prefer my left hand for flashlights and other items, but use my right if my left is busy."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Left-hand preference for handoffs\n\nOffer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Pass me the remote.",
+    "image": "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Offer it to the person's right hand. The person's right hand is closer to the remote."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Offer it to the person's left hand. Their left hand is free, and they prefer to receive items with it."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Offer it to the person's left hand. Your left hand is free, and you prefer to receive items with it.",
+    "clip": "media/receiving-hand/transfer-162/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Pass me the remote.",
+    "image": "media/receiving-hand/exception-265/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Offer it to the person's right hand. The person's right hand is free while their left hand rests on a cloth."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Offer it to the person's right hand. Their left hand is on the sponge, so their right hand is free to take the remote."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Offer it to the person's right hand. Your left hand is occupied, so I’ll offer the remote to your right hand as you prefer.",
+    "clip": "media/receiving-hand/exception-265/A-none/view/view.mp4"
+  }
+]

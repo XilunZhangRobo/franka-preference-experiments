@@ -1,0 +1,1 @@
+{"choice":"A","reason":"You asked to start with the pot on your right, followed by the scoop in the middle and the tag on your left."}

@@ -1,0 +1,30 @@
+{
+  "input_sha256": "a08f076e4468770aea28456e549f793c35b54f392e14cd0d506df5140d8595c6",
+  "thread": "run-0252",
+  "request": "sessions/isolated/cleaning-scent/robot/1795591053943849878-d1a49e87/request.json",
+  "reply": {
+    "observation": "You put the fragrance-free cleaner back on the tray and set the mild-citrus cleaner beside the cloth.",
+    "interpretation": "You seemed to prefer mild citrus for this cleanup.",
+    "title": "Kitchen counter cleaner",
+    "note": "You chose mild citrus for the kitchen counter while home alone.",
+    "question": "Should I also set out mild citrus for the kitchen counter when someone else is home?"
+  },
+  "images": [
+    "media/cleaning-scent/teach-136/B-change/view/frame-00000.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00004.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00008.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00012.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00018.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00022.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00026.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00030.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00034.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00038.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00042.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00046.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00052.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00056.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00060.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00064.jpg"
+  ]
+}

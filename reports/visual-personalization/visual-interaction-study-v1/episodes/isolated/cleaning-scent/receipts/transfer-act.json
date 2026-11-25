@@ -1,0 +1,10 @@
+{
+  "input_sha256": "203fc9d412acb980252881bfb6b4548f1160b87cd28f570d95ecfb7326c18fe1",
+  "thread": "run-0252",
+  "request": "sessions/isolated/cleaning-scent/robot/1795591106317677233-6b059f94/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You prefer mild citrus for your sewing surface."
+  },
+  "images": []
+}

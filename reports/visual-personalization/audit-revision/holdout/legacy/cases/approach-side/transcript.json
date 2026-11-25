@@ -1,0 +1,126 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0088",
+    "reply": {
+      "observation": "While I held the cup near the person's right hand, they pointed to the tabletop in front of them. I moved the cup toward that spot.",
+      "interpretation": "The gesture suggested they wanted me to set the drink down where they pointed.",
+      "title": "Drink placement",
+      "note": "On this occasion, the person indicated a spot on the table when I offered their drink.",
+      "question": "For future drinks, would you like me to set the cup on the table in front of you?"
+    }
+  },
+  {
+    "stage": "audit-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/audit-answer.json",
+    "thread": "run-0087",
+    "reply": {
+      "answer": "When there’s room, I like my drink in front of my left shoulder, but I don’t have a stated preference about setting it on the table."
+    }
+  },
+  {
+    "stage": "refine",
+    "actor": "robot",
+    "channel": "written note",
+    "receipt": "receipts/refine.json",
+    "thread": "run-0092",
+    "reply": {
+      "title": "Drink placement in front of left shoulder",
+      "note": "When there’s room, place the drink in front of their left shoulder, as they requested. They pointed to a spot on the table once and said they have no stated preference about using the table."
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0094",
+    "reply": {
+      "choice": "A",
+      "reason": "The person's left hand is visible beside a clear spot on the table."
+    }
+  },
+  {
+    "stage": "transfer-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-post_answer.json",
+    "thread": "run-0096",
+    "reply": {
+      "choice": "A",
+      "reason": "The person's left hand is near the cloth and has a clear reach."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0095",
+    "reply": {
+      "choice": "A",
+      "reason": "There is clear space near your left hand, and your stated left-side preference applies to drinks.",
+      "question": "Which side would you like me to offer the cloth on?"
+    }
+  },
+  {
+    "stage": "transfer-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/transfer-answer.json",
+    "thread": "run-0093",
+    "reply": {
+      "answer": "In front of my left shoulder, please, if there’s room."
+    }
+  },
+  {
+    "stage": "transfer-final",
+    "actor": "robot",
+    "channel": "final decision",
+    "receipt": "receipts/transfer-final.json",
+    "thread": "run-0095",
+    "reply": {
+      "choice": "A",
+      "reason": "There is room to offer the cloth in front of your left shoulder as requested."
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0089",
+    "reply": {
+      "choice": "A",
+      "reason": "The person can take the folded cloth with their right hand now."
+    }
+  },
+  {
+    "stage": "control-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-post_answer.json",
+    "thread": "run-0090",
+    "reply": {
+      "choice": "A",
+      "reason": "The cloth is already near their right hand, and their left-side preference applies only to drinks."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0091",
+    "reply": {
+      "choice": "A",
+      "reason": "Their right hand is near the folded cloth, and the left-side preference applies to drinks.",
+      "question": ""
+    }
+  }
+]

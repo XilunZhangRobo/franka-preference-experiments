@@ -1,0 +1,11 @@
+{
+  "input_sha256": "f4104ac9ba3482dc0c553f8065f420e209369f462f18345e77e6eb143a0a49ce",
+  "session": "refiner",
+  "thread": "run-0162",
+  "request": "sessions/refiner/1795631175858676288-f4292999/request.json",
+  "result": "sessions/refiner/1795631175858676288-f4292999/attempt-1/result.json",
+  "reply": {
+    "title": "Keep the clipped mat on the workbench",
+    "note": "On this workbench, keep whichever mat is clipped in place and shelve the kit if it’s already closed. Use the clip to identify the mat regardless of color or part count. The person didn’t specify what to do with an open kit."
+  }
+}

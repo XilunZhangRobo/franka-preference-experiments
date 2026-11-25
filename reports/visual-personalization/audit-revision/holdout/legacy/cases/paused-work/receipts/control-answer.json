@@ -1,0 +1,10 @@
+{
+  "input_sha256": "8be6f72ce51e89c1fbf860fc02788d045e5c6c8c2782eee9828e7c1d0e9439a0",
+  "session": "control-person",
+  "thread": "run-0114",
+  "request": "sessions/control-person/1795631262638332909-8626201a/request.json",
+  "result": "sessions/control-person/1795631262638332909-8626201a/attempt-1/result.json",
+  "reply": {
+    "answer": "Leave it there if the rust mat is clipped."
+  }
+}

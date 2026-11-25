@@ -1,0 +1,140 @@
+{
+  "case_id": "paused-work",
+  "identity_sha256": "3391a3ddfe370ce6c6524c4fe5a693ae3fbc7c7da5a39d62dcce9622af45513f",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "After I shelved the rust mat, you pointed at it and then toward the cleared spot.",
+    "interpretation": "You may have wanted the rust mat back within reach.",
+    "title": "",
+    "note": "",
+    "question": "Should I usually leave the rust mat within reach, or did you need it there just this time?"
+  },
+  "draft_note": "",
+  "audit_question": "Should I usually leave the rust mat within reach, or did you need it there just this time?",
+  "audit_answer": "Usually leave the rust mat where it is when it’s clipped, since that marks a project I want to keep on the bench.",
+  "refined_reply": {
+    "title": "Clipped rust mat on the bench",
+    "note": "Usually leave the rust mat where it is when it’s clipped. The clip marks a project the user wants to keep on the bench. Their preference for an unclipped mat is unknown."
+  },
+  "post_answer_note": "# Clipped rust mat on the bench\n\nUsually leave the rust mat where it is when it’s clipped. The clip marks a project the user wants to keep on the bench. Their preference for an unclipped mat is unknown.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 1
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Shelving the teal mat clears space at the front of the counter for the cutting board."
+        },
+        "correct": true,
+        "input_sha256": "686b66758d9d1e26bb7c2cde18088e9a0236ab4d7286df65b00f4e1e4fb51baa",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Shelving the teal mat makes room for the cutting board while keeping the clipped rust project in place."
+        },
+        "correct": true,
+        "input_sha256": "8b1233028f57a2d203e2df67213e788a7cefc0da0b737c077ce288a87a3e6c96",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The clip marks the rust mat as a project you want to keep on the counter.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The clip marks the rust mat as a project you want to keep on the counter.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "Shelving the closed stitching kit clears a spot while keeping its contents together."
+        },
+        "correct": true,
+        "input_sha256": "efb4cf5b4980f0aab5b65609fb2bf3a1d8e7947e22bad5f863f84bff8d5bda6a",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "Shelving the closed stitching kit clears a spot while leaving the mat and its supplies in place."
+        },
+        "correct": true,
+        "input_sha256": "c36f1f53769e0d0130737cd8714fbd44db8da531aea49d11ce7818a57d916fe0",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Shelving the closed kit would clear space while leaving the project on the rust mat in place.",
+          "question": "Should I leave the organizer on the rust mat for your current project?"
+        },
+        "question": "Should I leave the organizer on the rust mat for your current project?",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "Leave it there if the rust mat is clipped.",
+        "final": {
+          "choice": "B",
+          "reason": "Shelving the closed stitching kit frees a spot and leaves the organizer on the rust mat."
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

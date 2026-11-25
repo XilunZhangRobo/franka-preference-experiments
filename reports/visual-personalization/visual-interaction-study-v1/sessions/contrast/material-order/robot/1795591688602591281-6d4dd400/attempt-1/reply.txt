@@ -1,0 +1,1 @@
+{"choice":"B","reason":"The person asked for the pot, scoop, and tag in that order from their left to their right."}

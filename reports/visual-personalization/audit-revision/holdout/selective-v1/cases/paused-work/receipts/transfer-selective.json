@@ -1,0 +1,12 @@
+{
+  "input_sha256": "3aec4d9779bd13827725a39d23386649df63f9b23629d14d24860f2b719c9736",
+  "session": "transfer-selective",
+  "thread": "run-0165",
+  "request": "sessions/transfer-selective/1795631190342118093-9c7d2146/request.json",
+  "result": "sessions/transfer-selective/1795631190342118093-9c7d2146/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The rust mat is clipped in place, but the teal kit appears open.",
+    "question": "Should I shelve the teal mat with the kit still open?"
+  }
+}

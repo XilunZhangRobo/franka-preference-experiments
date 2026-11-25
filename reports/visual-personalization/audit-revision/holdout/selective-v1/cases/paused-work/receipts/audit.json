@@ -1,0 +1,14 @@
+{
+  "input_sha256": "08f1a60783fafee672e566a4693b8e91df9c345bdc2b4a5344c89df2cf9d10d1",
+  "session": "writer",
+  "thread": "run-0158",
+  "request": "sessions/writer/1795631165246026446-82eeb6fc/request.json",
+  "result": "sessions/writer/1795631165246026446-82eeb6fc/attempt-1/result.json",
+  "reply": {
+    "observation": "The robot moved the rust mat onto the raised shelf. The person then pointed at the mat and toward the tabletop. The teal mat stayed in place.",
+    "interpretation": "The gesture may have been a request to put the rust mat back. It did not clearly identify the teal mat as the one to shelve.",
+    "title": "Check which mat should stay",
+    "note": "For this workbench, the number of parts on a mat may be a poor guide to which mat the person wants within reach.",
+    "question": "Should I put the rust mat back and shelve the teal one instead?"
+  }
+}

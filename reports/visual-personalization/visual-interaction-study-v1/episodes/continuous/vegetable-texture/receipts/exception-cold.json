@@ -1,0 +1,12 @@
+{
+  "input_sha256": "ba9575de911a18e7e11d9d1402c318f3e9c7150047d5aa78a8e7421ad0c29789",
+  "thread": "run-0218",
+  "request": "episodes/continuous/vegetable-texture/independent/exception-cold/1795592834696368024-4babc020/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer cooked beans will stay crisp in the chilled salad."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

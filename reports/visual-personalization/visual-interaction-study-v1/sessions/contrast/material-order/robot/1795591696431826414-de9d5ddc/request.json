@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Base-first assembly setup: base left, cap right\n\nFor the person’s own assemblies, place the base on their left and the cap on their right when they use the base first and the cap second. They moved the red base and yellow cap into this layout and confirmed it for that sequence. Their preference for other sequences is unknown.\n",
+    "person_answer": "Yes, please arrange the pot, scoop, and tag in that order from my left to my right."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0222"
+}

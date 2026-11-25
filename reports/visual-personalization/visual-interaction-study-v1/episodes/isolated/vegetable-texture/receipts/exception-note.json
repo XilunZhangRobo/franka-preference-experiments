@@ -1,0 +1,12 @@
+{
+  "input_sha256": "59d0761394379d85a344ae3b281a7da31b7196397178ca1b1d10592d5b4cb1fe",
+  "thread": "run-0303",
+  "request": "episodes/isolated/vegetable-texture/independent/exception-note/1795590516921456963-c157af83/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The firmer cooked beans will hold their shape when tossed in the chilled salad."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

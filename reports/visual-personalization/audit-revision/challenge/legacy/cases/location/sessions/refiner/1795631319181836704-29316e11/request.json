@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Tray for finished pieces\n\nThe person chose the teal tray for this finished piece.\n",
+    "question": "Should I use the teal tray for future finished pieces too?",
+    "person_answer": "Use whichever tray is on my left unless I ask for a different tray for that piece."
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

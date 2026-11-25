@@ -1,0 +1,13 @@
+{
+  "input_sha256": "4723ef0436fd59b0414b2d23b167616f2e0a3c59addbaecc08daeadc480d264d",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592205863259338-499b1964/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your left hand is free, and you prefer to receive items in that hand.",
+    "question": ""
+  },
+  "images": [
+    "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+  ]
+}

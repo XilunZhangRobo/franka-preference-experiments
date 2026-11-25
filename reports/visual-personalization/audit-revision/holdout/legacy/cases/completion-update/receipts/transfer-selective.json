@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cb772792c7d34caf9510274cdc5d69dbfc6f5b886966b8eac2094d5a28976fd6",
+  "session": "transfer-selective",
+  "thread": "run-0105",
+  "request": "sessions/transfer-selective/1795631190372786336-f3024791/request.json",
+  "result": "sessions/transfer-selective/1795631190372786336-f3024791/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone.",
+    "question": ""
+  }
+}

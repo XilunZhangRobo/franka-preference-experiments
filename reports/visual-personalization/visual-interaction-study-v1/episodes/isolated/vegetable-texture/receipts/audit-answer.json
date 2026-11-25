@@ -1,0 +1,9 @@
+{
+  "input_sha256": "782cc250c91ca64258e30234303ebae8633d5f8b7f92887f8e568b2d5abe8725",
+  "thread": "run-0301",
+  "request": "sessions/isolated/vegetable-texture/person/1795590391792539754-d5e86547/request.json",
+  "reply": {
+    "answer": "I was checking whether the broccoli was tender."
+  },
+  "images": []
+}

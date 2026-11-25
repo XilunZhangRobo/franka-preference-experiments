@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Set out a row for the seated person to use the pot, scoop, then tag.",
+    "options": {
+      "A": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+      "B": "Place the pot at the person's left, scoop in the middle, and tag at their right."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "277e4f9ea6e913ab7407bd8f8ed3f929f9370ece30a9a6689864a1409392ea02"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

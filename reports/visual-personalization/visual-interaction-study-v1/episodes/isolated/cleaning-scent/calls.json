@@ -1,0 +1,19 @@
+{
+  "first-choice": "episodes/isolated/cleaning-scent/receipts/first-choice.json",
+  "person-response": "episodes/isolated/cleaning-scent/receipts/person-response.json",
+  "audit": "episodes/isolated/cleaning-scent/receipts/audit.json",
+  "audit-answer": "episodes/isolated/cleaning-scent/receipts/audit-answer.json",
+  "updated-note": "episodes/isolated/cleaning-scent/receipts/updated-note.json",
+  "transfer-cold": "episodes/isolated/cleaning-scent/receipts/transfer-cold.json",
+  "transfer-note": "episodes/isolated/cleaning-scent/receipts/transfer-note.json",
+  "transfer-learner": "episodes/isolated/cleaning-scent/receipts/transfer-learner.json",
+  "transfer-answer": "episodes/isolated/cleaning-scent/receipts/transfer-answer.json",
+  "transfer-act": "episodes/isolated/cleaning-scent/receipts/transfer-act.json",
+  "transfer-refine": "episodes/isolated/cleaning-scent/receipts/transfer-refine.json",
+  "exception-cold": "episodes/isolated/cleaning-scent/receipts/exception-cold.json",
+  "exception-note": "episodes/isolated/cleaning-scent/receipts/exception-note.json",
+  "exception-learner": "episodes/isolated/cleaning-scent/receipts/exception-learner.json",
+  "exception-answer": "episodes/isolated/cleaning-scent/receipts/exception-answer.json",
+  "exception-act": "episodes/isolated/cleaning-scent/receipts/exception-act.json",
+  "exception-refine": "episodes/isolated/cleaning-scent/receipts/exception-refine.json"
+}

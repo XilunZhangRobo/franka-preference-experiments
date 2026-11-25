@@ -1,0 +1,88 @@
+{
+  "protocol_version": 1,
+  "branch_selective": false,
+  "shared_selective_receipt_hashes": {},
+  "case_id": "cleaning-scent",
+  "model": "gpt-6.2-astra",
+  "prompts": {
+    "audit": "You are the household robot viewing the interaction from your camera. Consider what happened, why the person might have acted, and what could be useful in a different task. Distinguish what you saw from an inference. Decide whether the observed behavior merits a personal note. Ask at most one focused question if the evidence leaves an important scope ambiguity. Return JSON with short string fields observation, interpretation, title, note and question. Use empty strings for an unwarranted note or question.",
+    "refine": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+    "decide": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+    "selective": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+    "answer": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}."
+  },
+  "seed_metadata": "dev",
+  "quiet": false,
+  "private_brief": "I enjoy mild citrus cleaner in spaces I use privately. Use fragrance-free cleaner for shared surfaces when guests are coming.",
+  "audit_context": {
+    "task": "Set out a cleaner so I can wipe my kitchen counter. I am home alone.",
+    "your_action": "Set out the fragrance-free cleaner.",
+    "seconds": [
+      0.0,
+      0.6667,
+      1.3333,
+      2.0,
+      3.0,
+      3.6667,
+      4.3333,
+      5.0,
+      5.6667,
+      6.3333,
+      7.0,
+      7.6667,
+      8.6667,
+      9.3333,
+      10.0,
+      10.6667
+    ],
+    "heard": [],
+    "choice_reason": "The fragrance-free cleaner suits the task without adding a scent."
+  },
+  "audit_image_hashes": [
+    "836f0c16377780a83b9eb38b73f8ed4629422115d59bc69b87bb68df4cc152b2",
+    "d29fea4cb4108dc6996bab726bd7b3df81f5bc45cece5d0ffdc2c50dbe791e4c",
+    "402bdbb3a3612bfa5c977bcab535c77dd1055cdd009338f20bf920b7816707bb",
+    "3e1d1b0853e7abb723f580a6940b8b23ebcf5b374b5ede4d48e956f5a33109f6",
+    "87ff3978272e8aabcdd2328b17faafbb4f2af58724ee1e0a078528623b8efbe1",
+    "7692e2fdfebd5cdd09e4fe354be1bfad00e7a54f1e4b4950a492799d1a4054ba",
+    "2a6507fc900d7e9a4f040a63ab2b0009547b012919e323cd97423cd072fda365",
+    "941798ae7e5d4b69fc0ca788c98b0fd80871bd4b8edd515fc3bd8d8fd5ea3589",
+    "51e51d44025395fa92d682a6f841ef089039ce969ef790a176378bc1c95dd15c",
+    "32b71d8204ec518ebb4258b9380ec94fe871dafc21808e0aa6fdfb382bcb5d08",
+    "54b34ec3d3480c61a5a3803f68f58aca7596ce99e6a00057fe6d5c92e02898bb",
+    "84168f3c209e41d086df2ed5242e4c04f7dcd509fa0860a984a29ffa4f09d781",
+    "e039a5a6ed8b13b6edfac9e2c00546e257c8e5c9f64b1b1cebe0799a845983fe",
+    "cf3740907424f5362fb7b246dce6ccbf4bdd65a76e09805b0cbbdc7c7f77fd24",
+    "b0fe55a01b453b3689580f6f930ff1a8a7cddb9db0f0d936fcea318e0e8cf0f0",
+    "2121814bf8f309bfdccee16e91b06d7f8bf051de4fc34e36d6a656cb0d416ae5"
+  ],
+  "probes": {
+    "transfer": {
+      "public": {
+        "task": "Wipe the work surface in my private sewing room. Only I use it.",
+        "options": {
+          "A": "Use the mild-citrus cleaner.",
+          "B": "Use the fragrance-free cleaner."
+        }
+      },
+      "image_hashes": [
+        "1bdc3e8fd4b4d8d474205099f52f8d0572b0de7830c1e89d65d4c49e03a9a731"
+      ],
+      "expected": "A"
+    },
+    "control": {
+      "public": {
+        "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+        "options": {
+          "A": "Use the fragrance-free cleaner.",
+          "B": "Use the mild-citrus cleaner."
+        }
+      },
+      "image_hashes": [
+        "bbee631bd0f60191d95b396a87d1b3d12df77f7447e7b70c599ecb5aac56ea77"
+      ],
+      "expected": "A"
+    }
+  },
+  "shared_draft_receipt_sha256": null
+}

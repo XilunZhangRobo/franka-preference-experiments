@@ -1,0 +1,10 @@
+{
+  "input_sha256": "88d4788d417da2436faf466f5dbdae81619b44794886377449e60b04ca9b25df",
+  "thread": "run-0222",
+  "request": "sessions/contrast/material-order/robot/1795591655725297749-35ba4f13/request.json",
+  "reply": {
+    "title": "Base-first assembly setup: base left, cap right",
+    "note": "For the person’s own assemblies, place the base on their left and the cap on their right when they use the base first and the cap second. They moved the red base and yellow cap into this layout and confirmed it for that sequence. Their preference for other sequences is unknown."
+  },
+  "images": []
+}

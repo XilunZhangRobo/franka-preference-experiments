@@ -1,0 +1,12 @@
+{
+  "input_sha256": "8ce7c94008f3d639304307c7fa65ae2b02a9286fb3c312e3f84d79dfdd3427f5",
+  "thread": "run-0237",
+  "request": "episodes/contrast/private-storage/independent/exception-note/1795591775724291390-222530cb/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The tray keeps all four rulers within reach for the first craft step."
+  },
+  "images": [
+    "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+  ]
+}

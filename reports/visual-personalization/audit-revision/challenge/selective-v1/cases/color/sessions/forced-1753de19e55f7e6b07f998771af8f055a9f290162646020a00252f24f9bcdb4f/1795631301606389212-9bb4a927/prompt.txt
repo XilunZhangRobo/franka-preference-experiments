@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {"choice":"<letter>","reason":"one short sentence"}.
+{"task": "For this piece, please use the amber tray.", "options": {"A": "Put the piece in the teal tray.", "B": "Put the piece in the amber tray."}, "memory": "# Tray choice for finished pieces\n\nUse the teal tray for similar finished pieces in this setup. This single move may have been specific to this piece.\n"}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "67f0cdbf927bf8017ff51eba16b384b967dc8ef9b950229dd96731dc8b9b115f",
+  "thread": "run-0234",
+  "request": "sessions/contrast/private-storage/robot/1795591451456386272-fe38a08c/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The closed compartment keeps the keys and flashlight together and off the tabletop."
+  },
+  "images": [
+    "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+  ]
+}

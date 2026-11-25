@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Entryway storage for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, favor the shallow entryway compartment and close it.\n", "question": "Which other entryway items, if any, should I put in that compartment after use?", "person_answer": "Please put my other personal belongings in the closed compartment after use."}

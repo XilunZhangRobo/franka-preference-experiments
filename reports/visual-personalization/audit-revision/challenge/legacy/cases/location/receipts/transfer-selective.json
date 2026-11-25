@@ -1,0 +1,12 @@
+{
+  "input_sha256": "7a6aa1298215c6ded19e572c3de79ae6c11393e22f564c4eaf00c4bc46582c6c",
+  "session": "transfer-selective",
+  "thread": "run-0017",
+  "request": "sessions/transfer-selective/1795631332613397561-804ddc06/request.json",
+  "result": "sessions/transfer-selective/1795631332613397561-804ddc06/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The amber tray is on the person’s left, where finished pieces go.",
+    "question": ""
+  }
+}

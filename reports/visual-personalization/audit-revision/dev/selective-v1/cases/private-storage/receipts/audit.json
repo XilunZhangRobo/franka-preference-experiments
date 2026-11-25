@@ -1,0 +1,14 @@
+{
+  "input_sha256": "ac7c57962b372172c6fb0e042199c05b91dec5724bbcc30978be5a06acac3603",
+  "session": "writer",
+  "thread": "run-0082",
+  "request": "sessions/writer/1795631001695294307-860597ce/request.json",
+  "result": "sessions/writer/1795631001695294307-860597ce/attempt-1/result.json",
+  "reply": {
+    "observation": "The robot put the keys and flashlight in the shallow compartment and closed it. The person then pointed toward the lid.",
+    "interpretation": "The gesture drew attention to the closed compartment. The person may have wanted it left open for easy access, though the gesture alone is ambiguous.",
+    "title": "Entryway compartment",
+    "note": "Keep the keys and flashlight together in the compartment. Leave the lid preference undecided for now.",
+    "question": ""
+  }
+}

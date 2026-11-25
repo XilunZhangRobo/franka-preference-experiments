@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"observation\":\"I held the cup in front of the person on their left. They pointed across it toward the tabletop on their right, then withdrew their hand without taking it.\",\"interpretation\":\"They may have been showing me where to set the drink down.\",\"title\":\"Drink placement on the table\",\"note\":\"The person may prefer drinks set down in front of them on their right. This is based on one gesture.\",\"question\":\"Was the spot in front of you on your right where you usually want drinks, or was it specific to this cup?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":815665,"cached_input_tokens":758784,"cache_write_input_tokens":0,"output_tokens":1211,"reasoning_output_tokens":0}}

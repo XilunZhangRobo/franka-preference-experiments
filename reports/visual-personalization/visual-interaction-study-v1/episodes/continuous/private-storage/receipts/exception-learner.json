@@ -1,0 +1,13 @@
+{
+  "input_sha256": "c8a3f3c8a3dd5b6cbb3bf0973e131146ad41fd3b8fb26284a1d3dbf523a7a4c8",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593588147631799-59a479cc/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The shared tray keeps all four rulers within reach for the first craft step.",
+    "question": ""
+  },
+  "images": [
+    "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+  ]
+}

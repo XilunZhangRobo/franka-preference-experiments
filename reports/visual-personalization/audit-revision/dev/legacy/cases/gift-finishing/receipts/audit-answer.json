@@ -1,0 +1,10 @@
+{
+  "input_sha256": "a0b8590f153aae08918b97075350922ce6b8e83aa80b8d7c57679b3d81120cef",
+  "session": "audit-person",
+  "thread": "run-0039",
+  "request": "sessions/audit-person/1795631032174721496-0d979b1c/request.json",
+  "result": "sessions/audit-person/1795631032174721496-0d979b1c/attempt-1/result.json",
+  "reply": {
+    "answer": "Yes, please hand me the decorations so I can place them myself."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "7f8c216bdfee80e8211948a3052e3eef46789f54ddd6d607b351b04600893784",
+  "thread": "run-0200",
+  "request": "episodes/continuous/lighting/independent/transfer-cold/1795593889941225368-40ceafee/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The desk lamp can light the tile samples directly so their patterns are easier to compare."
+  },
+  "images": [
+    "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  ]
+}

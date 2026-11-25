@@ -1,0 +1,1 @@
+{"choice":"A","reason":"The person is drawing alone and asked to hear routine updates right away during solo work.","question":""}

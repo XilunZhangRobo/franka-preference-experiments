@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Drink placement and folded cloth handoffs\",\"note\":\"Usually place drinks in front of the person’s left shoulder. If a shelf blocks that spot, use their right side. They also asked to receive the folded cloth on their right when a shelf blocks their left side.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":1107716,"cached_input_tokens":1045632,"cache_write_input_tokens":0,"output_tokens":1442,"reasoning_output_tokens":0}}

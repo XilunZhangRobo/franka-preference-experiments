@@ -1,0 +1,10 @@
+{
+  "input_sha256": "338c3b0c32b83a16a98bcb0a24085c3a771d52c20fbf30f170e4e22de4fc9a46",
+  "session": "audit-person",
+  "thread": "run-0001",
+  "request": "sessions/audit-person/1795631281571365668-578d1294/request.json",
+  "result": "sessions/audit-person/1795631281571365668-578d1294/attempt-1/result.json",
+  "reply": {
+    "answer": "Yes, use the teal tray for future finished pieces unless I ask for a different tray for a particular piece."
+  }
+}

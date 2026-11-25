@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "", "question": "Should I usually leave the rust mat within reach, or did you need it there just this time?", "person_answer": "Usually leave the rust mat where it is when it’s clipped, since that marks a project I want to keep on the bench."}

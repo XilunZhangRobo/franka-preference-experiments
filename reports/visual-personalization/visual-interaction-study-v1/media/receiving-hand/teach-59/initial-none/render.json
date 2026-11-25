@@ -1,0 +1,16 @@
+{
+  "family": "receiving-hand",
+  "phase": "teach",
+  "seed": 59,
+  "choice": "initial",
+  "response": "none",
+  "size": [
+    640,
+    480
+  ],
+  "fps": 6,
+  "samples": 12,
+  "renderer": "blender-cycles",
+  "device": "CPU",
+  "camera": "agent"
+}

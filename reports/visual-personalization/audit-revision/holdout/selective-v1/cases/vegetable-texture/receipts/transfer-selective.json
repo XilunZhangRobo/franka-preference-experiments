@@ -1,0 +1,12 @@
+{
+  "input_sha256": "7fc45be71f8acc7ff2fb341bde7f1f58a1783a8cda3221bfa741e1d4cc88f819",
+  "session": "transfer-selective",
+  "thread": "run-0177",
+  "request": "sessions/transfer-selective/1795631117351053510-119cd055/request.json",
+  "result": "sessions/transfer-selective/1795631117351053510-119cd055/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The more tender beans are easier to chew, but the person’s texture preference is unknown.",
+    "question": "Would you prefer the green beans firmer or more tender?"
+  }
+}

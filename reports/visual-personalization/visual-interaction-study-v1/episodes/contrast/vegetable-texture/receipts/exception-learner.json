@@ -1,0 +1,13 @@
+{
+  "input_sha256": "4f7bc8edc32d2b1183ebc8770c8ed83cdf3f51dd06abdfafac072e5dbd2913cb",
+  "thread": "run-0240",
+  "request": "sessions/contrast/vegetable-texture/robot/1795591709558010373-0e900d15/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You chose firmer green beans for a warm side dish, so I’d lean toward the firmer batch here too.",
+    "question": "Would you like the green beans firmer or more tender in this chilled salad?"
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

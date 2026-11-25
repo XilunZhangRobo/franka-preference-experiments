@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Check which mat should stay\n\nFor this workbench, the number of parts on a mat may be a poor guide to which mat the person wants within reach.\n",
+    "question": "Should I put the rust mat back and shelve the teal one instead?",
+    "person_answer": "I’d keep whichever mat is clipped on the bench and shelve the kit if it’s already closed."
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

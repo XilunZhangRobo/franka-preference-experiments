@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b8f2cbe9a86acb933dbabca85987e1c0b002c7e53b2dd8d32c5c9030153ac902",
+  "session": "transfer-selective",
+  "thread": "run-0140",
+  "request": "sessions/transfer-selective/1795631240856146448-841ad1fd/request.json",
+  "result": "sessions/transfer-selective/1795631240856146448-841ad1fd/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Tender broccoli is a clue, but your preference for green beans is still unclear.",
+    "question": "Would you like the green beans firmer or more tender?"
+  }
+}

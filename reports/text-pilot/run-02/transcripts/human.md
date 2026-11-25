@@ -1,0 +1,24 @@
+# Coordinator and human role record
+
+The person agent was GPT‑6.2 Astra and resumed its earlier simulated-person role. The following brief supplied the private preferences and specified actions for it to describe. The experiment tests how a robot interprets those actions. The person agent's [exact reply](../inputs/observations.md) was the only portion relayed to the learner and the observation condition. The decision agents did not receive this brief or the grading key.
+
+## Coordinator to person agent
+
+```text
+We are preparing a new text-only run. Portray separate users P,Q,R,H,O,M,D,F,E,C and a negative control S. For each case, generate two neutral camera captions for the described scenes, using observable actions only. No human speech, labels about a person's preferences or intentions, or explanations. Return one compact numbered entry per caption, IDs P1, P2 etc. I will log your exact answer and relay the captions to a robot that cannot see these private briefs.
+P keeps meaningful originals in place and works around them; moving common copies is fine. P1 robot carries mug over wedding print; user lifts, wipes, returns it to its exact spot and shifts the drink toward a clear edge. P2 an ordinary laminated print occupies the working area; user slides that copy aside and sets drink down in the cleared spot.
+Q marks paused unfinished setups with a binder clip on a mat's corner and wants that layout and location preserved; unmarked completed setups may move. Q1 robot moves a clipped assembly mat, user returns it and restores loose parts. Q2 person finishes another setup, removes its clip, closes finished kit and shelves it.
+R wants robot prep, keeps creative finishing touches on personal gifts/cards; routine parcel closing is welcome. R1 robot stages paper flower then begins placing it, user halts arm with gesture and places it. R2 on plain return parcel after robot stages box, person slides lid toward robot and steps back as it closes.
+H prefers left receiving hand for pen and other objects when both hands free, follows current signals when occupied. H1 robot offers on right, person takes capped marker right, transfers it, writes left, then later reaches left for brush with both hands free. H2 robot offers lidded mug on right, person transfers it to left and drinks; at a later handoff left is holding a workpiece, person extends right and accepts.
+O prefers individual supplies staged in use order from their right to left, uses center for unordered shared supplies. O1 robot lays red base left yellow cap right; user reverses them before stacking red then yellow. O2 on opposite side of table, with yellow to be used first this time, user puts yellow to their own right then red left, uses in that order. At a separate shared activity user slides loose common supplies to middle.
+M prefers left-front approach and pickup on their own reach when both sides clear; right is fine if left blocked and they offer right. M1 robot offers from right-front, person points near left-front then takes item once repositioned. M2 on a separate visit, chair rotates; user reaches from own left for a front offer, later an occupied cart blocks left and the person extends right.
+D wants commonly used objects visible at point of use and others put away. D1 robot puts daily mug and pitcher in cupboard; person takes mug back to coffee maker and leaves pitcher. D2 after using a pen at the entry table, person returns it to entry tray and puts spare stationery inside drawer.
+F wants a one-phrase immediate completion notice while working alone, and waits during a live conversation. F1 robot quietly finishes while person writes; person looks back, points at completed bin then cups ear; robot gives a short completion update, and person resumes writing. F2 person in a conversation holds up a finger when robot comes with result and lowers it and turns toward robot after conversation ends.
+E prefers focused bedside/desk lamp when doing solo close work and overhead for groups. E1 while person reads in bed, robot turns overhead on; person switches it off and turns on bedside lamp. E2 at shared table, robot switches on local reading lamp, person switches it off and turns on overhead. Preserve reading versus shared activity context.
+C prefers softer vegetables served as a warm side, firm vegetables in a chilled salad. C1 person presses two cooked broccoli batches with fork, puts tender pieces on warm dinner plate. C2 in chilled salad preparation, person selects pieces that stay firm under fork and leaves soft ones.
+S control: robot moves mug past print; an unrelated person cleans a windowsill across the room. Caption the visible actions only. Do not pass an explanation to the robot.
+```
+
+## Private scoring key
+
+[Locked labels for the 33 decision probes](../grading-key.tsv).

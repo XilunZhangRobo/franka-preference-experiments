@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0246"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The shelf blocks the left-front spot, so I’ll offer the cloth on the person’s right as requested.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":91338,"cached_input_tokens":55936,"cache_write_input_tokens":0,"output_tokens":272,"reasoning_output_tokens":0}}

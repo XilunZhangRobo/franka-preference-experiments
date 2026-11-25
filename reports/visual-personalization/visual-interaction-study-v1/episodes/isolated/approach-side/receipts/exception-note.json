@@ -1,0 +1,12 @@
+{
+  "input_sha256": "dcf7230ff93ae5c3051808320c8bebbf4db79a8c6da614e0630df4c7c7ccaf70",
+  "thread": "run-0249",
+  "request": "episodes/isolated/approach-side/independent/exception-note/1795590734318320165-9b5d78c6/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The shelf blocks the preferred left-front spot, so I’ll offer the cloth on the person’s right."
+  },
+  "images": [
+    "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  ]
+}

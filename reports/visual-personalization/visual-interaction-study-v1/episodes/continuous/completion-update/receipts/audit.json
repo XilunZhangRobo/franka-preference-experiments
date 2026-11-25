@@ -1,0 +1,32 @@
+{
+  "input_sha256": "514e256314aecbbc9dfd1b349624913de464174a9635525a3919173d8f051ba4",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592592582692777-2c53adaf/request.json",
+  "reply": {
+    "observation": "The device said “Work is complete” during a pause. The person resumed work, then touched the device and heard the same message again.",
+    "interpretation": "They may have wanted to hear the update again at a time they chose.",
+    "title": "Timing of low-priority updates",
+    "note": "The person replayed one routine update. They may value being able to check these messages on demand.",
+    "question": "For low-priority updates, would you prefer to hear them at your next pause or only when you ask for them?"
+  },
+  "images": [
+    "media/completion-update/teach-92/B-change/view/frame-00000.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00008.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00016.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00026.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00034.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00042.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00050.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00053.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00056.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00066.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00074.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00082.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00090.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00098.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00099.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00106.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00114.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00122.jpg"
+  ]
+}

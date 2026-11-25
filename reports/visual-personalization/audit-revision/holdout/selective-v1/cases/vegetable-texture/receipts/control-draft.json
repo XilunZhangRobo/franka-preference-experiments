@@ -1,0 +1,11 @@
+{
+  "input_sha256": "6eea6d68acf4a35cf4f7d2ee0fb81eba45404abecb02535f8793ecb257cfde6a",
+  "session": "forced-6eea6d68acf4a35cf4f7d2ee0fb81eba45404abecb02535f8793ecb257cfde6a",
+  "thread": "run-0173",
+  "request": "sessions/forced-6eea6d68acf4a35cf4f7d2ee0fb81eba45404abecb02535f8793ecb257cfde6a/1795631129480159489-46ab7f3d/request.json",
+  "result": "sessions/forced-6eea6d68acf4a35cf4f7d2ee0fb81eba45404abecb02535f8793ecb257cfde6a/1795631129480159489-46ab7f3d/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer cooked green beans keep a crisp bite in a chilled salad."
+  }
+}

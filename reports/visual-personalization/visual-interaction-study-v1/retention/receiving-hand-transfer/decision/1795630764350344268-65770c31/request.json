@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Pass me the remote.",
+    "options": {
+      "A": "Offer it to the person's left hand.",
+      "B": "Offer it to the person's right hand."
+    },
+    "notes": [
+      "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n"
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "6283338b5990a8a43e5b991c48d456aea9946869103b400f4033465000b3af70"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

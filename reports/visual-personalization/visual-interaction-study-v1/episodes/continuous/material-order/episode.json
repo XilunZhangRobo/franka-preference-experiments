@@ -1,0 +1,121 @@
+{
+  "mode": "continuous",
+  "scenario": "material-order",
+  "title": "Material Order",
+  "profile": "standard",
+  "turns": [
+    {
+      "role": "Person",
+      "channel": "task command",
+      "text": "Set out the red base and yellow cap for assembly.",
+      "image": "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "selected action",
+      "text": "Set the red base on the person's right and the cap on their left. Placing the red base on your right and the yellow cap on your left keeps them in their current order for assembly."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual evidence to person",
+      "text": "Camera sequence after the robot chose its action.",
+      "clip": "media/material-order/teach-70/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "private motion command to simulator",
+      "text": "Point at the selected arrangement and leave it in place."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual feedback to robot",
+      "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 2.6667, 3.3333, 4.0, 4.6667, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.3333, 9.0, 9.6667",
+      "clip": "media/material-order/teach-70/B-accept/view/view.mp4"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "private visual audit",
+      "text": "The person touched the red base on their right with their right index finger and left both pieces in place. They may have been checking the base before assembly. The gesture alone gives little evidence of a preferred layout."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "Do you prefer the base on your right and the cap on your left for future assemblies?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "Yes, for my own assemblies, put the part I use first on my right and the next one on my left."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "writes personal note",
+      "text": "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n"
+    },
+    {
+      "role": "Person",
+      "channel": "new task",
+      "text": "Set out a row for the seated person to use the pot, scoop, then tag.",
+      "image": "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. From the seated person’s perspective, the row reads left to right as pot, scoop, then tag."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Place the pot at the person's right, scoop in the middle, and tag at their left. Arranging the pot, scoop, and tag from the person’s right to left matches their preferred order of use."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Place the pot at the person's right, scoop in the middle, and tag at their left. Placing the pot on the seated person’s right starts the row with the first item, consistent with their assembly preference.",
+      "clip": "media/material-order/transfer-173/A-none/view/view.mp4"
+    },
+    {
+      "role": "Person",
+      "channel": "scope control",
+      "text": "Put out the markers for four people sharing the table.",
+      "image": "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Put the markers together in the central tray. The central tray makes the markers easy for all four people to reach."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people.",
+      "clip": "media/material-order/exception-276/A-none/view/view.mp4"
+    }
+  ],
+  "scores": {
+    "teaching_miss": false,
+    "feedback_matches_persona": true,
+    "transfer_cold": false,
+    "transfer_note": true,
+    "transfer_before_question": true,
+    "transfer_learner": true,
+    "control_cold": true,
+    "control_note": true,
+    "control_before_question": true,
+    "control_learner": true
+  },
+  "transcript": "episodes/continuous/material-order/transcript.json",
+  "robot_thread": "run-0178",
+  "person_thread": "run-0179",
+  "artifacts": {
+    "Exact calls and model inputs": "episodes/continuous/material-order/calls.json",
+    "Visual-only draft": "episodes/continuous/material-order/visual-only.md",
+    "Note at first probe": "episodes/continuous/material-order/memory.md",
+    "Final note": "episodes/continuous/material-order/final-note.md"
+  }
+}

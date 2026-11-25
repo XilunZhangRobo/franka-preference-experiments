@@ -1,0 +1,138 @@
+{
+  "case_id": "gift-finishing",
+  "identity_sha256": "24ab3b582280a589edd32f192ae10096291898f16f361f817d5f26cb69a65772",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot held the pink flower over the card. The person took it and pressed it onto the end of the drawn stem.",
+    "interpretation": "They may have wanted help bringing the flower over while keeping the final placement in their hands.",
+    "title": "Offer the flower for final placement",
+    "note": "On a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.",
+    "question": ""
+  },
+  "draft_note": "# Offer the flower for final placement\n\nOn a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Offer the flower for final placement\n\nOn a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Packing the gift with the tissue and closing the box makes it ready to give."
+        },
+        "correct": false,
+        "input_sha256": "f802f5564ada9d51b2535740cf1f4aeba8fddaa0a7d31b438acb4e2e5ef0598d",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Packing the gift with the tissue and closing the box makes it ready to give."
+        },
+        "correct": false,
+        "input_sha256": "f802f5564ada9d51b2535740cf1f4aeba8fddaa0a7d31b438acb4e2e5ef0598d",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Packing the tissue and gift inside and closing the box gets it ready to give.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Packing the tissue and gift inside and closing the box gets it ready to give.",
+          "question": ""
+        },
+        "before_correct": false,
+        "after_correct": false
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box finishes the task."
+        },
+        "correct": true,
+        "input_sha256": "5ba3d1be16ae166ec2e821ba4ee1259c080fa169642b4d86a7f9ef04ae0c9a95",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box finishes the task."
+        },
+        "correct": true,
+        "input_sha256": "5ba3d1be16ae166ec2e821ba4ee1259c080fa169642b4d86a7f9ef04ae0c9a95",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

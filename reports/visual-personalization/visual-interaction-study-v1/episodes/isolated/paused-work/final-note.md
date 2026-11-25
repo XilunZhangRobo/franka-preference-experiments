@@ -1,0 +1,3 @@
+# Keeping the rust mat on the bench
+
+When clearing space, keep the clipped rust mat on the bench. You also asked to keep the unclipped rust mat for this project. Whether that preference applies to future projects is unclear.

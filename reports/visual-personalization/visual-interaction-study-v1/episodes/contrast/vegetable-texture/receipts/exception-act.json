@@ -1,0 +1,10 @@
+{
+  "input_sha256": "4b299e920a63093933f4d0626f853dabeaf9fc6fa792f774e293f3b1e5cd1ac8",
+  "thread": "run-0240",
+  "request": "sessions/contrast/vegetable-texture/robot/1795591720915295207-563872d6/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You asked for firmer green beans in this chilled salad."
+  },
+  "images": []
+}

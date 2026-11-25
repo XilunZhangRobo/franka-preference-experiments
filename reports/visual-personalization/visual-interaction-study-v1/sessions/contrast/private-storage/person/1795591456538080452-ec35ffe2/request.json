@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "I prefer my own belongings visible in the open tray between uses. Group equipment needed immediately should be available in the open.",
+    "task": "Put the house keys and flashlight away after use in the entryway.",
+    "observed_robot_action": "Place the items in the shallow compartment and close it.",
+    "motion_options": {
+      "A": "Move the belongings to the other storage location, opening and closing the compartment.",
+      "B": "Point at the selected arrangement and leave it in place."
+    },
+    "seconds": [
+      0.0,
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "2147348883c9be4545734fed9e385dbcf551901ef479547a7596f8fb7d03b0b7"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "c1a019c2bfbe84c5810862ed92b98624c5f4866fe8074cf48e06f77522e3e8a2"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "b5a2a0c45d2638403ec4d844251f06f848e349e2a17aa99c3012862827903f31"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "7689e3da5756475c41ec2a8c7b37936c6bf898cebc1ded51bb43f0cc648ebbcc"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "4996e9e7fa25f1c40a767a8eb651e4c150cb62e1a01dcddf8e20717e6910fb17"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "8afc511e25999acf225c3a9e5e497ae7811d1891a03ecb8c4dc7c80ec3de262f"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

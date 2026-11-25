@@ -1,0 +1,10 @@
+{
+  "input_sha256": "07890f6e9434579e73b949dc98862623bc98c9b202a8d8a493dd735aa277bcde",
+  "thread": "run-0252",
+  "request": "sessions/isolated/cleaning-scent/robot/1795591068158675795-34f26467/request.json",
+  "reply": {
+    "title": "Kitchen counter cleaner",
+    "note": "Use fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a preference based solely on someone else being home."
+  },
+  "images": []
+}

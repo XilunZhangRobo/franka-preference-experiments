@@ -1,0 +1,1 @@
+{"choice":"A","reason":"You chose firmer green beans for a warm side dish, so I’d lean toward the firmer batch here too.","question":"Would you like the green beans firmer or more tender in this chilled salad?"}

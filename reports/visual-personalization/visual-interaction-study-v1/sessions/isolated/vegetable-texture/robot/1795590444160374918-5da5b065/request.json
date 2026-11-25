@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Broccoli tenderness\n\nCheck tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear.\n",
+    "person_answer": "I'd prefer the more tender green beans."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0300"
+}

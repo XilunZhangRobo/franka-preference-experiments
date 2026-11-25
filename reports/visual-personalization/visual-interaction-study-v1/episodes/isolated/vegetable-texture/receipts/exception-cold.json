@@ -1,0 +1,12 @@
+{
+  "input_sha256": "ba9575de911a18e7e11d9d1402c318f3e9c7150047d5aa78a8e7421ad0c29789",
+  "thread": "run-0302",
+  "request": "episodes/isolated/vegetable-texture/independent/exception-cold/1795590511843060840-c5cf440f/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer cooked green beans hold their shape and add a crisp bite to the chilled salad."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

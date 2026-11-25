@@ -1,0 +1,12 @@
+{
+  "input_sha256": "a393288711af6050b0cb8f4ed39d85f1873248f3bcd89686bfff46402612b018",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592575557062854-a4d88a2d/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The bin update can wait until the person pauses."
+  },
+  "images": [
+    "media/completion-update/teach-92/initial-none/view/frame-00000.jpg"
+  ]
+}

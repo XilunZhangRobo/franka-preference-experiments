@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0259"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"Tell me right away when I’m working alone, but wait until my video call ends if I’m on one.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":29888,"cached_input_tokens":12416,"cache_write_input_tokens":0,"output_tokens":40,"reasoning_output_tokens":0}}

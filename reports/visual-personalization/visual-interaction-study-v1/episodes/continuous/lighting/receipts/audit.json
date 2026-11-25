@@ -1,0 +1,30 @@
+{
+  "input_sha256": "fc200c37ae2e459d98c7182fead987c04f64cc0025d297207c662d289c701eba",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593626127563994-446bd1ea/request.json",
+  "reply": {
+    "observation": "The person switched off the desk lamp, then pressed the other light control.",
+    "interpretation": "They appeared to prefer overhead lighting for this puzzle.",
+    "title": "Overhead lighting for puzzles",
+    "note": "Favor the overhead light for puzzles as a tentative preference based on this one switch.",
+    "question": "When do you prefer the overhead light to the desk lamp?"
+  },
+  "images": [
+    "media/lighting/teach-125/B-change/view/frame-00000.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00002.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00006.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00008.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00010.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00012.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00016.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00018.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00020.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00022.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00026.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00028.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00030.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00032.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00036.jpg",
+    "media/lighting/teach-125/B-change/view/frame-00038.jpg"
+  ]
+}

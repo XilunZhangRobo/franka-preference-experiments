@@ -1,0 +1,11 @@
+{
+  "input_sha256": "c0954830447ed2162bf9efdd798e7934a7aafe189f58b1cf3b837345706c24bb",
+  "session": "forced-c0954830447ed2162bf9efdd798e7934a7aafe189f58b1cf3b837345706c24bb",
+  "thread": "run-0160",
+  "request": "sessions/forced-c0954830447ed2162bf9efdd798e7934a7aafe189f58b1cf3b837345706c24bb/1795631208793288130-779265fc/request.json",
+  "result": "sessions/forced-c0954830447ed2162bf9efdd798e7934a7aafe189f58b1cf3b837345706c24bb/1795631208793288130-779265fc/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed stitching kit frees space and keeps the clipped mat on the bench."
+  }
+}

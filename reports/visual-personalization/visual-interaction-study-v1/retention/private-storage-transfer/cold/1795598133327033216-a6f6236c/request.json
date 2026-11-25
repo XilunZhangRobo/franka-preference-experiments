@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+    "options": {
+      "A": "Place the items in the shallow compartment and close it.",
+      "B": "Leave the pen case on the open tray."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "05f43df6ad03224c5979717915acfadaccae889f6ab320203bcbc57f5249d9af"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

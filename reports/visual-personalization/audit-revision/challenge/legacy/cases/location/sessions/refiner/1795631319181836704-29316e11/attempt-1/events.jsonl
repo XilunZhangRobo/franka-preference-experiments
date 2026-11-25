@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0014"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Left tray for finished pieces\",\"note\":\"Use whichever tray is on the person’s left for each finished piece unless they request a different tray for that piece. They chose teal for the earlier piece only.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":11990,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":48,"reasoning_output_tokens":0}}

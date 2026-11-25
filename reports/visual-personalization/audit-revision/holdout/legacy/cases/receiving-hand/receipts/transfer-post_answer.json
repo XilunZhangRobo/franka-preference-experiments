@@ -1,0 +1,11 @@
+{
+  "input_sha256": "803b4c93806ef4d8742b44647bab651eb9f80612380d5217f598490ad8ab2741",
+  "session": "forced-803b4c93806ef4d8742b44647bab651eb9f80612380d5217f598490ad8ab2741",
+  "thread": "run-0129",
+  "request": "sessions/forced-803b4c93806ef4d8742b44647bab651eb9f80612380d5217f598490ad8ab2741/1795631223967330048-32c1bc33/request.json",
+  "result": "sessions/forced-803b4c93806ef4d8742b44647bab651eb9f80612380d5217f598490ad8ab2741/1795631223967330048-32c1bc33/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your left hand is free, and you prefer to receive items with it."
+  }
+}

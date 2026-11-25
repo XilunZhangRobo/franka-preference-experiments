@@ -1,0 +1,10 @@
+{
+  "input_sha256": "923cf6b654cad3194532690116d688d7d6b45b310e989f637cc97087e1d9d13e",
+  "thread": "run-0300",
+  "request": "sessions/isolated/vegetable-texture/robot/1795590400624327971-06b8bada/request.json",
+  "reply": {
+    "title": "Broccoli tenderness",
+    "note": "Check tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear."
+  },
+  "images": []
+}

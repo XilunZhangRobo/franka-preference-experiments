@@ -1,0 +1,11 @@
+{
+  "input_sha256": "4e6ef012884e0e82dba25224aedb7f23259babcf990e53d34502a837603c9dfe",
+  "thread": "run-0253",
+  "request": "sessions/isolated/cleaning-scent/person/1795591273390226401-2fbea13a/request.json",
+  "reply": {
+    "answer": "Yes, please use fragrance-free cleaner on the shared craft worktop."
+  },
+  "images": [
+    "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+  ]
+}

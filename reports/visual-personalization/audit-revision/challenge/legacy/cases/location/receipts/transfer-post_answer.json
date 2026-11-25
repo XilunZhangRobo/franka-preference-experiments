@@ -1,0 +1,11 @@
+{
+  "input_sha256": "dcc132098e43840ace127fa41c9cba9e7534e7e20c768b2d83def9ce70951d23",
+  "session": "forced-dcc132098e43840ace127fa41c9cba9e7534e7e20c768b2d83def9ce70951d23",
+  "thread": "run-0016",
+  "request": "sessions/forced-dcc132098e43840ace127fa41c9cba9e7534e7e20c768b2d83def9ce70951d23/1795631328784234863-959b22a2/request.json",
+  "result": "sessions/forced-dcc132098e43840ace127fa41c9cba9e7534e7e20c768b2d83def9ce70951d23/1795631328784234863-959b22a2/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The amber tray is on the person’s left, and the teal request applied only to the earlier piece."
+  }
+}

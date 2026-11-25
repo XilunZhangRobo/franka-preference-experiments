@@ -1,0 +1,11 @@
+{
+  "input_sha256": "a93271c568deb292929f20a03201056a00db90f901e785cdc7c19104ae45e389",
+  "session": "forced-a93271c568deb292929f20a03201056a00db90f901e785cdc7c19104ae45e389",
+  "thread": "run-0124",
+  "request": "sessions/forced-a93271c568deb292929f20a03201056a00db90f901e785cdc7c19104ae45e389/1795631231510252867-5b0c4e20/request.json",
+  "result": "sessions/forced-a93271c568deb292929f20a03201056a00db90f901e785cdc7c19104ae45e389/1795631231510252867-5b0c4e20/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their right hand is free and closest to the remote."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "case_id": "vegetable-texture",
+  "identity_sha256": "e3a4ba79f95a820dc5ac1c53809c56fa7b44764e9beed4401765788e5df99a22",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot moved broccoli from the left tray onto the dinner plate. The person then pointed at the food on the plate. No speech was heard.",
+    "interpretation": "The gesture drew attention to the plated food. It did not clearly indicate a preference for either batch.",
+    "title": "Broccoli tenderness",
+    "note": "When ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.",
+    "question": ""
+  },
+  "draft_note": "# Broccoli tenderness\n\nWhen ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Broccoli tenderness\n\nWhen ease of chewing matters, choose the more tender batch. The person’s texture preference is still unknown.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The more tender green beans are easier to chew."
+        },
+        "correct": true,
+        "input_sha256": "85c6f19945045706b3b784e9fc65cc8a81baf6b8e03c814bdab14d5d167b47b1",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The more tender green beans are easier to chew."
+        },
+        "correct": true,
+        "input_sha256": "85c6f19945045706b3b784e9fc65cc8a81baf6b8e03c814bdab14d5d167b47b1",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The more tender beans are easier to chew, but the person’s texture preference is unknown.",
+          "question": "Would you prefer the green beans firmer or more tender?"
+        },
+        "question": "Would you prefer the green beans firmer or more tender?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "I’d prefer them more tender.",
+        "final": {
+          "choice": "B",
+          "reason": "You asked for the more tender green beans."
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Firmer cooked green beans keep a crisp bite in a chilled salad."
+        },
+        "correct": true,
+        "input_sha256": "6eea6d68acf4a35cf4f7d2ee0fb81eba45404abecb02535f8793ecb257cfde6a",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Firmer cooked green beans keep a crisp bite in a chilled salad."
+        },
+        "correct": true,
+        "input_sha256": "6eea6d68acf4a35cf4f7d2ee0fb81eba45404abecb02535f8793ecb257cfde6a",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Firmer cooked green beans hold their crunch in a chilled salad.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Firmer cooked green beans hold their crunch in a chilled salad.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

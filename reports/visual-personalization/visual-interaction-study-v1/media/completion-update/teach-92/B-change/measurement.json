@@ -1,0 +1,897 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 1,
+      "time": 0.16666666666666666,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 2,
+      "time": 0.3333333333333333,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 3,
+      "time": 0.5,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 4,
+      "time": 0.6666666666666666,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 5,
+      "time": 0.8333333333333334,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 6,
+      "time": 1.0,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 7,
+      "time": 1.1666666666666667,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 8,
+      "time": 1.3333333333333333,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 9,
+      "time": 1.5,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 10,
+      "time": 1.6666666666666667,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 11,
+      "time": 1.8333333333333333,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 12,
+      "time": 2.0,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 13,
+      "time": 2.1666666666666665,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 14,
+      "time": 2.3333333333333335,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 15,
+      "time": 2.5,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 16,
+      "time": 2.6666666666666665,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 17,
+      "time": 2.8333333333333335,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 18,
+      "time": 3.0,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 19,
+      "time": 3.1666666666666665,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 20,
+      "time": 3.3333333333333335,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 21,
+      "time": 3.5,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 22,
+      "time": 3.6666666666666665,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 23,
+      "time": 3.8333333333333335,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 24,
+      "time": 4.0,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 25,
+      "time": 4.166666666666667,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 26,
+      "time": 4.333333333333333,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 27,
+      "time": 4.5,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 28,
+      "time": 4.666666666666667,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 29,
+      "time": 4.833333333333333,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 30,
+      "time": 5.0,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 31,
+      "time": 5.166666666666667,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 32,
+      "time": 5.333333333333333,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 33,
+      "time": 5.5,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 34,
+      "time": 5.666666666666667,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 35,
+      "time": 5.833333333333333,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 36,
+      "time": 6.0,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 37,
+      "time": 6.166666666666667,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 38,
+      "time": 6.333333333333333,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 39,
+      "time": 6.5,
+      "actor": "human",
+      "action": "touch",
+      "utterance": ""
+    },
+    {
+      "index": 40,
+      "time": 6.666666666666667,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 41,
+      "time": 6.833333333333333,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 42,
+      "time": 7.0,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 43,
+      "time": 7.166666666666667,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 44,
+      "time": 7.333333333333333,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 45,
+      "time": 7.5,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 46,
+      "time": 7.666666666666667,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 47,
+      "time": 7.833333333333333,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 48,
+      "time": 8.0,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 49,
+      "time": 8.166666666666666,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 50,
+      "time": 8.333333333333334,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 51,
+      "time": 8.5,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 52,
+      "time": 8.666666666666666,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 53,
+      "time": 8.833333333333334,
+      "actor": "robot",
+      "action": "touch",
+      "utterance": "Work is complete."
+    },
+    {
+      "index": 54,
+      "time": 9.0,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 55,
+      "time": 9.166666666666666,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 56,
+      "time": 9.333333333333334,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 57,
+      "time": 9.5,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 58,
+      "time": 9.666666666666666,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 59,
+      "time": 9.833333333333334,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 60,
+      "time": 10.0,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 61,
+      "time": 10.166666666666666,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 62,
+      "time": 10.333333333333334,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 63,
+      "time": 10.5,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 64,
+      "time": 10.666666666666666,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 65,
+      "time": 10.833333333333334,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 66,
+      "time": 11.0,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 67,
+      "time": 11.166666666666666,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 68,
+      "time": 11.333333333333334,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 69,
+      "time": 11.5,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 70,
+      "time": 11.666666666666666,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 71,
+      "time": 11.833333333333334,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 72,
+      "time": 12.0,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 73,
+      "time": 12.166666666666666,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 74,
+      "time": 12.333333333333334,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 75,
+      "time": 12.5,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 76,
+      "time": 12.666666666666666,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 77,
+      "time": 12.833333333333334,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 78,
+      "time": 13.0,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 79,
+      "time": 13.166666666666666,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 80,
+      "time": 13.333333333333334,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 81,
+      "time": 13.5,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 82,
+      "time": 13.666666666666666,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 83,
+      "time": 13.833333333333334,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 84,
+      "time": 14.0,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 85,
+      "time": 14.166666666666666,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 86,
+      "time": 14.333333333333334,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 87,
+      "time": 14.5,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 88,
+      "time": 14.666666666666666,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 89,
+      "time": 14.833333333333334,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 90,
+      "time": 15.0,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 91,
+      "time": 15.166666666666666,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 92,
+      "time": 15.333333333333334,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 93,
+      "time": 15.5,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 94,
+      "time": 15.666666666666666,
+      "actor": "human-left",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 95,
+      "time": 15.833333333333334,
+      "actor": "human-left",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 96,
+      "time": 16.0,
+      "actor": "human-left",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 97,
+      "time": 16.166666666666668,
+      "actor": "human-left",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 98,
+      "time": 16.333333333333332,
+      "actor": "human-left",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 99,
+      "time": 16.5,
+      "actor": "human-left",
+      "action": "touch",
+      "utterance": "Work is complete."
+    },
+    {
+      "index": 100,
+      "time": 16.666666666666668,
+      "actor": "human-left",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 101,
+      "time": 16.833333333333332,
+      "actor": "human-left",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 102,
+      "time": 17.0,
+      "actor": "human-left",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 103,
+      "time": 17.166666666666668,
+      "actor": "human-left",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 104,
+      "time": 17.333333333333332,
+      "actor": "human-left",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 105,
+      "time": 17.5,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 106,
+      "time": 17.666666666666668,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 107,
+      "time": 17.833333333333332,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 108,
+      "time": 18.0,
+      "actor": "human",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 109,
+      "time": 18.166666666666668,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 110,
+      "time": 18.333333333333332,
+      "actor": "human",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 111,
+      "time": 18.5,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 112,
+      "time": 18.666666666666668,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 113,
+      "time": 18.833333333333332,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 114,
+      "time": 19.0,
+      "actor": "human",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 115,
+      "time": 19.166666666666668,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 116,
+      "time": 19.333333333333332,
+      "actor": "human",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 117,
+      "time": 19.5,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 118,
+      "time": 19.666666666666668,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 119,
+      "time": 19.833333333333332,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 120,
+      "time": 20.0,
+      "actor": "human",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 121,
+      "time": 20.166666666666668,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 122,
+      "time": 20.333333333333332,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 123,
+      "time": 20.5,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "7be7ae16546d9fd339d12f183be86ccd87e247ad937c7a86b294f9228a3feeac",
+  "max_robot_pinch_error_m": 0.0009046314193842034,
+  "final_positions_m": {
+    "speaker": [
+      0.14,
+      -0.072,
+      0.75
+    ],
+    "pencil": [
+      0.11,
+      0.13,
+      0.75
+    ],
+    "filled_bin": [
+      -0.155,
+      -0.062,
+      0.75
+    ]
+  },
+  "scene_sha256": "e5f491de9e71444d3db275d8aca1204122b6347111a69b25f7e1d2de7076a3a7"
+}

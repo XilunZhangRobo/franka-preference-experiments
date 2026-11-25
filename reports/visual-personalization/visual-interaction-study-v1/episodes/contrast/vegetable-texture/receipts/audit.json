@@ -1,0 +1,30 @@
+{
+  "input_sha256": "541f634c0a75c973cb848b9a51ab52e5ac0546b54ad07580b051dd60e7f74975",
+  "thread": "run-0240",
+  "request": "sessions/contrast/vegetable-texture/robot/1795591583937672574-ddc0d35e/request.json",
+  "reply": {
+    "observation": "You returned the broccoli I served to its tray and put a floret from the other tray on your plate.",
+    "interpretation": "Your swap suggests you preferred firmer broccoli with this dinner.",
+    "title": "Broccoli texture",
+    "note": "You chose the firmer broccoli when offered both batches at dinner.",
+    "question": "Should I choose firmer broccoli for you at future meals?"
+  },
+  "images": [
+    "media/vegetable-texture/teach-103/B-change/view/frame-00000.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00004.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00008.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00012.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00016.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00020.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00024.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00028.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00034.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00038.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00042.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00046.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00050.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00054.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00058.jpg",
+    "media/vegetable-texture/teach-103/B-change/view/frame-00062.jpg"
+  ]
+}

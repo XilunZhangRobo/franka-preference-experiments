@@ -1,0 +1,14 @@
+{
+  "input_sha256": "7c4de919acf88b530ff9571e21836c16a5c2d0ddf4b8b04d1403a43aa5f331f8",
+  "session": "writer",
+  "thread": "run-0088",
+  "request": "sessions/writer/1795631106961855576-fe5450f4/request.json",
+  "result": "sessions/writer/1795631106961855576-fe5450f4/attempt-1/result.json",
+  "reply": {
+    "observation": "While I held the cup near the person's right hand, they pointed to the tabletop in front of them. I moved the cup toward that spot.",
+    "interpretation": "The gesture suggested they wanted me to set the drink down where they pointed.",
+    "title": "Drink placement",
+    "note": "On this occasion, the person indicated a spot on the table when I offered their drink.",
+    "question": "For future drinks, would you like me to set the cup on the table in front of you?"
+  }
+}

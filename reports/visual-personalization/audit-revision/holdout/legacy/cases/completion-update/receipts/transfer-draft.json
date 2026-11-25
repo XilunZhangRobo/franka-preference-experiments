@@ -1,0 +1,11 @@
+{
+  "input_sha256": "771ce353c9855a961c87ee228fbecd5c9cc06eb4f1a518c09136d9fd34abbe9f",
+  "session": "forced-771ce353c9855a961c87ee228fbecd5c9cc06eb4f1a518c09136d9fd34abbe9f",
+  "thread": "run-0103",
+  "request": "sessions/forced-771ce353c9855a961c87ee228fbecd5c9cc06eb4f1a518c09136d9fd34abbe9f/1795631182970632514-759ef1a1/request.json",
+  "result": "sessions/forced-771ce353c9855a961c87ee228fbecd5c9cc06eb4f1a518c09136d9fd34abbe9f/1795631182970632514-759ef1a1/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The delivery update can wait until the person pauses drawing."
+  }
+}

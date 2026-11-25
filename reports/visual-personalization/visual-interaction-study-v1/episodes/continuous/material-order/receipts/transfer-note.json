@@ -1,0 +1,12 @@
+{
+  "input_sha256": "16a3ee9ae2fdf35861874dd0dc1f20e54c6afae16626f96cb55361ea922cbbd1",
+  "thread": "run-0205",
+  "request": "episodes/continuous/material-order/independent/transfer-note/1795592307320212923-7d3ea8c3/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Arranging the pot, scoop, and tag from the person’s right to left matches their preferred order of use."
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+    "options": {
+      "A": "Turn on the desk lamp.",
+      "B": "Turn on the overhead fixture."
+    },
+    "memory": "# Tabletop lighting for solo work and presentations\n\nFor puzzles and other tabletop tasks, I prefer the ceiling light when I work alone. During a projected presentation, I prefer only the craft table lit. My preference for other group settings is unspecified.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "55a30608f4ddb7563abde7e6dce88653098cfeb075bb2f3c0e1bedb76502b2de"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

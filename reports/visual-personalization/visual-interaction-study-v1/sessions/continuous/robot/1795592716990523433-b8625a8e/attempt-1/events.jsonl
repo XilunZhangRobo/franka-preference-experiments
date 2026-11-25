@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"observation\":\"After I served the tender broccoli, the person pointed at the food on their plate and left both batches where they were.\",\"interpretation\":\"They may have been checking the texture. The gesture alone leaves their preference unclear.\",\"title\":\"\",\"note\":\"\",\"question\":\"When I serve broccoli with a warm dinner, do you usually prefer it tender or firm?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":1591823,"cached_input_tokens":1508224,"cache_write_input_tokens":0,"output_tokens":1795,"reasoning_output_tokens":0}}

@@ -1,0 +1,7 @@
+{
+  "observation": "The person steadied the lid while I put the keys and flashlight inside, then pointed at the compartment after I closed it.",
+  "interpretation": "The gesture may have confirmed the storage spot, though the person said nothing.",
+  "title": "Entryway keys and flashlight",
+  "note": "The shallow entryway compartment held both items after this cleanup.",
+  "question": "Should I use this compartment as the usual spot for the keys and flashlight?"
+}

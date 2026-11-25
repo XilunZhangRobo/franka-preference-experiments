@@ -1,0 +1,11 @@
+{
+  "input_sha256": "e9e3e93dff85763c7beafbb7155ceb9de86ceb1aee0cc5c4e6921cff3feb7118",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592091693757058-1226c3de/request.json",
+  "reply": {
+    "answer": "I’d like to arrange the tissue and gift myself."
+  },
+  "images": [
+    "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "input_sha256": "91df0d3b896441dfab5e8f0e009a63557f67045f9816dd59a43f3a13a6c61e88",
+  "session": "forced-91df0d3b896441dfab5e8f0e009a63557f67045f9816dd59a43f3a13a6c61e88",
+  "thread": "run-0170",
+  "request": "sessions/forced-91df0d3b896441dfab5e8f0e009a63557f67045f9816dd59a43f3a13a6c61e88/1795631114105597070-7974a0ae/request.json",
+  "result": "sessions/forced-91df0d3b896441dfab5e8f0e009a63557f67045f9816dd59a43f3a13a6c61e88/1795631114105597070-7974a0ae/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their left hand is free, and the earlier flashlight handoff suggests it may be a good choice."
+  }
+}

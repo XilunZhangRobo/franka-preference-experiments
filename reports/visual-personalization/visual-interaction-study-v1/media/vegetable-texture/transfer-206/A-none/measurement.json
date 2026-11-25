@@ -1,0 +1,228 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 1,
+      "time": 0.16666666666666666,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 2,
+      "time": 0.3333333333333333,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 3,
+      "time": 0.5,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 4,
+      "time": 0.6666666666666666,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 5,
+      "time": 0.8333333333333334,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 6,
+      "time": 1.0,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 7,
+      "time": 1.1666666666666667,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 8,
+      "time": 1.3333333333333333,
+      "actor": "robot",
+      "action": "reach",
+      "utterance": ""
+    },
+    {
+      "index": 9,
+      "time": 1.5,
+      "actor": "robot",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 10,
+      "time": 1.6666666666666667,
+      "actor": "robot",
+      "action": "grasp",
+      "utterance": ""
+    },
+    {
+      "index": 11,
+      "time": 1.8333333333333333,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 12,
+      "time": 2.0,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 13,
+      "time": 2.1666666666666665,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 14,
+      "time": 2.3333333333333335,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 15,
+      "time": 2.5,
+      "actor": "robot",
+      "action": "transport",
+      "utterance": ""
+    },
+    {
+      "index": 16,
+      "time": 2.6666666666666665,
+      "actor": "robot",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 17,
+      "time": 2.8333333333333335,
+      "actor": "robot",
+      "action": "release",
+      "utterance": ""
+    },
+    {
+      "index": 18,
+      "time": 3.0,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 19,
+      "time": 3.1666666666666665,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 20,
+      "time": 3.3333333333333335,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 21,
+      "time": 3.5,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 22,
+      "time": 3.6666666666666665,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 23,
+      "time": 3.8333333333333335,
+      "actor": "robot",
+      "action": "withdraw",
+      "utterance": ""
+    },
+    {
+      "index": 24,
+      "time": 4.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 25,
+      "time": 4.166666666666667,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    },
+    {
+      "index": 26,
+      "time": 4.333333333333333,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "e6d58d20d4990341f587e67b7571b8ffda61d28e0bdd6c6f3e8ba27cb8987925",
+  "max_robot_pinch_error_m": 0.0007718516670580478,
+  "final_positions_m": {
+    "firm": [
+      0.0,
+      0.145,
+      0.759
+    ],
+    "firm_card": [
+      -0.135,
+      -0.072,
+      0.758
+    ],
+    "tender": [
+      0.135,
+      -0.025,
+      0.758
+    ],
+    "tender_card": [
+      0.135,
+      -0.072,
+      0.758
+    ],
+    "fork": [
+      0.0,
+      -0.12,
+      0.75
+    ]
+  },
+  "scene_sha256": "488eb8404d3d1aeb4a3b5bc8e796f48837379c86fe6fd3c9572796628f725108"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "shared visual draft",
+    "source": "../color/receipts/audit.json",
+    "receipt_sha256": "7b5af24983ce30afc2da69607ed5d77606834132fd988c7676631c1e4890ba54",
+    "reply": {
+      "observation": "I placed the white piece in the amber tray. The person then moved it to the teal tray and left it there.",
+      "interpretation": "The person likely wanted this finished piece in the teal tray.",
+      "title": "Tray choice for finished pieces",
+      "note": "Use the teal tray for similar finished pieces in this setup. This single move may have been specific to this piece.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0027",
+    "reply": {
+      "choice": "A",
+      "reason": "The teal tray was used for a similar finished piece in this setup."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "shared tentative decision",
+    "source": "../color/receipts/transfer-selective.json",
+    "receipt_sha256": "fb538b0b29693ef01fb65131a5510d0d8dcebb5602b23954e51ec307aca20d3f",
+    "reply": {
+      "choice": "A",
+      "reason": "The prior example points to the teal tray for a similar finished piece.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0026",
+    "reply": {
+      "choice": "B",
+      "reason": "You asked me to use the amber tray for this piece."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "shared tentative decision",
+    "source": "../color/receipts/control-selective.json",
+    "receipt_sha256": "917fc15900090684686849c5ab82df90aeffd27158ced4d99cb472cdc1420848",
+    "reply": {
+      "choice": "B",
+      "reason": "You specifically requested the amber tray for this piece.",
+      "question": ""
+    }
+  }
+]

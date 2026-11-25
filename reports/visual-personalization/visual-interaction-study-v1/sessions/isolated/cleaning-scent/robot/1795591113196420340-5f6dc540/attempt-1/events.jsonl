@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0252"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Cleaners for the sewing surface and kitchen counter\",\"note\":\"Use mild citrus on your sewing surface. For the kitchen counter, use fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a kitchen counter preference based solely on someone else being home.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":111507,"cached_input_tokens":97152,"cache_write_input_tokens":0,"output_tokens":303,"reasoning_output_tokens":0}}

@@ -1,0 +1,138 @@
+{
+  "case_id": "receiving-hand",
+  "identity_sha256": "cb69087e82e8ecd80898c432b3d1a74e5798edcc06a0d07d96551f9df8e9f66c",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The person took the flashlight with their right hand, then transferred it to their left.",
+    "interpretation": "They may have wanted the flashlight in their left hand for this task.",
+    "title": "Flashlight handoff",
+    "note": "For a similar handoff, offer the flashlight to their left hand if it is free. One transfer is only a tentative clue.",
+    "question": ""
+  },
+  "draft_note": "# Flashlight handoff\n\nFor a similar handoff, offer the flashlight to their left hand if it is free. One transfer is only a tentative clue.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Flashlight handoff\n\nFor a similar handoff, offer the flashlight to their left hand if it is free. One transfer is only a tentative clue.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Their left hand is free, and the earlier flashlight handoff suggests it may be a good choice."
+        },
+        "correct": true,
+        "input_sha256": "91df0d3b896441dfab5e8f0e009a63557f67045f9816dd59a43f3a13a6c61e88",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Their left hand is free, and the earlier flashlight handoff suggests it may be a good choice."
+        },
+        "correct": true,
+        "input_sha256": "91df0d3b896441dfab5e8f0e009a63557f67045f9816dd59a43f3a13a6c61e88",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Their left hand is free, and the earlier flashlight handoff suggests offering the remote there.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Their left hand is free, and the earlier flashlight handoff suggests offering the remote there.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "Their right hand is free while their left hand is resting on the cloth."
+        },
+        "correct": true,
+        "input_sha256": "d6b61185fc80b00e02c0f63bba9d9c95279815a3cf48bfa3bfd918821be15c99",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "Their right hand is free while their left hand is resting on the cloth."
+        },
+        "correct": true,
+        "input_sha256": "d6b61185fc80b00e02c0f63bba9d9c95279815a3cf48bfa3bfd918821be15c99",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Their right hand is free and closer to the remote, while their left hand is on a cloth.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Their right hand is free and closer to the remote, while their left hand is on a cloth.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

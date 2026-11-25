@@ -1,0 +1,3 @@
+# Broccoli and green bean texture
+
+Choose firmer broccoli for warm meals and chilled salads, as you confirmed. Favor firmer green beans in similar dishes because you requested them for both a warm side and a chilled salad.

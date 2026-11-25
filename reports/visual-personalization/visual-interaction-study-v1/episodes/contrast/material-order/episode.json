@@ -1,0 +1,136 @@
+{
+  "mode": "contrast",
+  "scenario": "material-order",
+  "title": "Material Order",
+  "profile": "reverse",
+  "turns": [
+    {
+      "role": "Person",
+      "channel": "task command",
+      "text": "Set out the red base and yellow cap for assembly.",
+      "image": "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "selected action",
+      "text": "Set the red base on the person's right and the cap on their left. The red base is already on the person’s right and the yellow cap is on their left."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual evidence to person",
+      "text": "Camera sequence after the robot chose its action.",
+      "clip": "media/material-order/teach-70/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "private motion command to simulator",
+      "text": "Swap the two components so their order is reversed."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual feedback to robot",
+      "text": "Robot camera playback. Sample times in seconds: 0.0, 1.0, 2.3333, 3.3333, 4.6667, 5.6667, 7.0, 8.0, 9.3333, 10.3333, 11.6667, 12.6667, 14.0, 15.0, 16.3333, 17.3333",
+      "clip": "media/material-order/teach-70/B-change/view/view.mp4"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "private visual audit",
+      "text": "After I set the pieces down, the person moved the red base to their left and the yellow cap to their right. They seem to prefer that arrangement for this assembly."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "For other assemblies, do you also prefer the base on your left and the cap on your right?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "For my own assemblies, yes, if I use the base first and the cap second."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "writes personal note",
+      "text": "# Base-first assembly setup: base left, cap right\n\nFor the person’s own assemblies, place the base on their left and the cap on their right when they use the base first and the cap second. They moved the red base and yellow cap into this layout and confirmed it for that sequence. Their preference for other sequences is unknown.\n"
+    },
+    {
+      "role": "Person",
+      "channel": "new task",
+      "text": "Set out a row for the seated person to use the pot, scoop, then tag.",
+      "image": "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. From the seated person’s left to right, the row follows the order they’ll use the pot, scoop, then tag."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. A left-to-right row follows the requested order and is consistent with the person’s base-first setup."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "Would you like the pot, scoop, and tag arranged from your left to your right in the order you’ll use them?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "Yes, please arrange the pot, scoop, and tag in that order from my left to my right."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "refines personal note",
+      "text": "# Left-to-right setup for assembly and planting\n\nFor their own assemblies where the base is used first and the cap second, place the base on their left and the cap on their right. They demonstrated and confirmed this layout. For planting, they explicitly requested the pot on their left, the scoop in the middle, and the tag on their right. Their preference for other tasks or sequences is unknown.\n"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. The person asked for the pot, scoop, and tag in that order from their left to their right.",
+      "clip": "media/material-order/transfer-173/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person",
+      "channel": "scope control",
+      "text": "Put out the markers for four people sharing the table.",
+      "image": "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Put the markers together in the central tray. All four people can reach the markers in the central tray."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people.",
+      "clip": "media/material-order/exception-276/A-none/view/view.mp4"
+    }
+  ],
+  "scores": {
+    "teaching_miss": true,
+    "feedback_matches_persona": true,
+    "transfer_cold": true,
+    "transfer_note": true,
+    "transfer_before_question": true,
+    "transfer_learner": true,
+    "control_cold": true,
+    "control_note": true,
+    "control_before_question": true,
+    "control_learner": true
+  },
+  "transcript": "episodes/contrast/material-order/transcript.json",
+  "robot_thread": "run-0222",
+  "person_thread": "run-0223",
+  "artifacts": {
+    "Exact calls and model inputs": "episodes/contrast/material-order/calls.json",
+    "Visual-only draft": "episodes/contrast/material-order/visual-only.md",
+    "Note at first probe": "episodes/contrast/material-order/memory.md",
+    "Final note": "episodes/contrast/material-order/final-note.md"
+  }
+}

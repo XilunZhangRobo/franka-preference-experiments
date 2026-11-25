@@ -1,0 +1,14 @@
+{
+  "input_sha256": "69432be8d743f965c6489ba56758c1796f5c792976cfe6f838dea2524236d487",
+  "session": "writer",
+  "thread": "run-0152",
+  "request": "sessions/writer/1795631166934631207-171a59c6/request.json",
+  "result": "sessions/writer/1795631166934631207-171a59c6/attempt-1/result.json",
+  "reply": {
+    "observation": "The robot placed the red base on the person’s right and the yellow cap on their left. The person touched the base with their right hand and left both pieces in place.",
+    "interpretation": "The person may prefer starting with the base within reach of their right hand.",
+    "title": "Assembly layout",
+    "note": "For a similar assembly, use base on the right and cap on the left as a default. One reach gives limited evidence of a lasting preference.",
+    "question": ""
+  }
+}

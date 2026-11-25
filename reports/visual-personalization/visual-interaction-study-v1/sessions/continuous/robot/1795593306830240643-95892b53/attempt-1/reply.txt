@@ -1,0 +1,1 @@
+{"choice":"A","reason":"You asked me to put your pen case in the usual closed compartment."}

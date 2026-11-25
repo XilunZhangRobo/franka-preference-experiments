@@ -1,0 +1,137 @@
+{
+  "case_id": "material-order",
+  "identity_sha256": "471b0bb205a47887b216aa4c491012a6487d761a076eea84dab7103282ad3f46",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "After I set the parts down, the person touched the red base with their right index finger. Both parts stayed where I placed them.",
+    "interpretation": "They may have been checking the base. I chose the layout, so the gesture alone tells me little about their preferred arrangement.",
+    "title": "",
+    "note": "",
+    "question": ""
+  },
+  "draft_note": "",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 1,
+      "losses": 0,
+      "net": 1
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "From the seated person’s perspective, they can use the pot, scoop, and tag in order from left to right."
+        },
+        "correct": false,
+        "input_sha256": "3998166312c13dd0b6c3b3aba28dc5ca356bc5f8c54f81e97751359e054b0e4d",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "From the seated person’s perspective, they can use the pot, scoop, and tag in order from left to right."
+        },
+        "correct": false,
+        "input_sha256": "3998166312c13dd0b6c3b3aba28dc5ca356bc5f8c54f81e97751359e054b0e4d",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "Starting at your left would put the pot, scoop, and tag in left-to-right order.",
+          "question": "Would you prefer to start with the pot on your left or your right?"
+        },
+        "question": "Would you prefer to start with the pot on your left or your right?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "I’d like to start with the pot on my right.",
+        "final": {
+          "choice": "A",
+          "reason": "The pot is on your right as requested, followed by the scoop in the middle and the tag on your left."
+        },
+        "before_correct": false,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 1
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The central tray makes the markers easy for all four people to reach."
+        },
+        "correct": true,
+        "input_sha256": "a22e1d93145e7d2b426e7b6ec3817ec1fed1604c42f11600ae077508fedfead5",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The central tray makes the markers easy for all four people to reach."
+        },
+        "correct": true,
+        "input_sha256": "a22e1d93145e7d2b426e7b6ec3817ec1fed1604c42f11600ae077508fedfead5",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The central tray keeps the markers within reach of all four people.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The central tray keeps the markers within reach of all four people.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

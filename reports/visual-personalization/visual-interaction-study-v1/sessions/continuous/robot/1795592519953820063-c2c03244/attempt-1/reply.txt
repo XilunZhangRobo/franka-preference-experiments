@@ -1,0 +1,1 @@
+{"choice":"A","reason":"The shelf blocks the approach on your left, and your right hand is free to take the cloth.","question":"When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?"}

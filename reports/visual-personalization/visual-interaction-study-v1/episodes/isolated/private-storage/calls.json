@@ -1,0 +1,13 @@
+{
+  "first-choice": "episodes/isolated/private-storage/receipts/first-choice.json",
+  "person-response": "episodes/isolated/private-storage/receipts/person-response.json",
+  "audit": "episodes/isolated/private-storage/receipts/audit.json",
+  "audit-answer": "episodes/isolated/private-storage/receipts/audit-answer.json",
+  "updated-note": "episodes/isolated/private-storage/receipts/updated-note.json",
+  "transfer-cold": "episodes/isolated/private-storage/receipts/transfer-cold.json",
+  "transfer-note": "episodes/isolated/private-storage/receipts/transfer-note.json",
+  "transfer-learner": "episodes/isolated/private-storage/receipts/transfer-learner.json",
+  "exception-cold": "episodes/isolated/private-storage/receipts/exception-cold.json",
+  "exception-note": "episodes/isolated/private-storage/receipts/exception-note.json",
+  "exception-learner": "episodes/isolated/private-storage/receipts/exception-learner.json"
+}

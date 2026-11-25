@@ -1,0 +1,14 @@
+{
+  "input_sha256": "0377a6ab504d2d15d4a2bc5800d4e7e648bf4821f758eebf8cc96427d5487625",
+  "session": "writer",
+  "thread": "run-0072",
+  "request": "sessions/writer/1795631024936286997-1391887d/request.json",
+  "result": "sessions/writer/1795631024936286997-1391887d/attempt-1/result.json",
+  "reply": {
+    "observation": "The robot held the pink flower over the card. The person took it and pressed it onto the end of the drawn stem.",
+    "interpretation": "They may have wanted help bringing the flower over while keeping the final placement in their hands.",
+    "title": "Offer the flower for final placement",
+    "note": "On a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.",
+    "question": ""
+  }
+}

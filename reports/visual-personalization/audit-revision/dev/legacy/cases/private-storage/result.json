@@ -1,0 +1,141 @@
+{
+  "case_id": "private-storage",
+  "identity_sha256": "793fa4c63a7d9c282665cb571b14ce5227ed11ef8227afd27b5a819aea9e9bde",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "After I put the house keys and flashlight in the shallow compartment and closed it, the person pointed toward the lid without speaking.",
+    "interpretation": "They may have wanted me to reopen it. The gesture alone didn’t tell me why.",
+    "title": "",
+    "note": "",
+    "question": "When I put the keys and flashlight away in the entryway, do you usually want me to leave the compartment open?"
+  },
+  "draft_note": "",
+  "audit_question": "When I put the keys and flashlight away in the entryway, do you usually want me to leave the compartment open?",
+  "audit_answer": "No, I usually want the compartment closed.",
+  "refined_reply": {
+    "title": "Entryway compartment closure",
+    "note": "Close the entryway compartment after putting away the keys and flashlight. The user said they usually prefer it closed."
+  },
+  "post_answer_note": "# Entryway compartment closure\n\nClose the entryway compartment after putting away the keys and flashlight. The user said they usually prefer it closed.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case visible and easy to grab tomorrow."
+        },
+        "correct": false,
+        "input_sha256": "c9f4cb9c2380ffe762762c068fd71cc41b68585451567c3a2b594c54cc9435d4",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case easy to reach for tomorrow’s practice."
+        },
+        "correct": false,
+        "input_sha256": "7dcaadf03c834e4cf9c91c0d16fc58808f2cd327300f07d6a75c2af51c2332d8",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case easy to see and grab tomorrow.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The open tray keeps your pen case easy to see and grab tomorrow.",
+          "question": ""
+        },
+        "before_correct": false,
+        "after_correct": false
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+        },
+        "correct": true,
+        "input_sha256": "5dfd2406a822499f540400d990f72ec127aec59071cac66c98ea5fde4323931f",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "The tray keeps all four rulers within reach for the first craft step."
+        },
+        "correct": true,
+        "input_sha256": "66c1a833af2b0d0de466fe40f2a462f436f3901bc32ed0403e573d27e5774e62",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "The tray keeps all four rulers within reach for the first craft step.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "The tray keeps all four rulers within reach for the first craft step.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

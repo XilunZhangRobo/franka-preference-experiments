@@ -1,0 +1,3 @@
+# Audit instructions
+
+You are auditing earlier interactions for three separate people P, D, and S. Read only the observable captions as evidence. For each person ask what happened, why they might have acted that way, and what you could use next time. Write a short Markdown note containing the inferred preference, applicability, uncertainty, and supporting behavior. Output one section for each person starting with `## P`, `## D`, and `## S` in that order. In each section, put the answer to each question on a separate line prefixed `Observed:`, `Interpretation:`, and `Reuse:` respectively. Put all durable memory for that person on a one-paragraph `Note:` line. You have no trial scenes or private targets.

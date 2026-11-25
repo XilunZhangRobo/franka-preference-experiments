@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {"choice":"<letter>","reason":"one short sentence"}.
+{"task": "Make room for the cutting board on my sewing counter.", "options": {"A": "Shelve the teal mat.", "B": "Shelve the rust mat."}, "memory": "# Keep the clipped rust mat on the workbench\n\nWhen clearing space, leave the rust mat on the bench if you’ve clipped it. You confirmed this rule after pointing from the shelved mat toward the bench. Your preference for an unclipped rust mat is unknown.\n"}

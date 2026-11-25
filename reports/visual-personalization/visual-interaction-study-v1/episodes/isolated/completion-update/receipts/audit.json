@@ -1,0 +1,32 @@
+{
+  "input_sha256": "514e256314aecbbc9dfd1b349624913de464174a9635525a3919173d8f051ba4",
+  "thread": "run-0258",
+  "request": "sessions/isolated/completion-update/robot/1795591180520747789-8403e1ed/request.json",
+  "reply": {
+    "observation": "The person set the pencil aside before the first update, then touched the blue device and heard the same update again.",
+    "interpretation": "They may have wanted to replay the update when they were ready to listen.",
+    "title": "Replay for routine updates",
+    "note": "The person may find it useful to replay a routine update on demand.",
+    "question": "For future routine updates, would you prefer to hear them at a pause or only when you tap the device?"
+  },
+  "images": [
+    "media/completion-update/teach-92/B-change/view/frame-00000.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00008.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00016.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00026.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00034.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00042.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00050.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00053.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00056.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00066.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00074.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00082.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00090.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00098.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00099.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00106.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00114.jpg",
+    "media/completion-update/teach-92/B-change/view/frame-00122.jpg"
+  ]
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0222"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The person asked for the pot, scoop, and tag in that order from their left to their right.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":91272,"cached_input_tokens":57984,"cache_write_input_tokens":0,"output_tokens":318,"reasoning_output_tokens":0}}

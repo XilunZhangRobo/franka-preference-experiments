@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?",
+    "task": "Bring me the folded cloth.",
+    "private_brief": "When there is room, I like things presented in front of my left shoulder. Use the accessible side when a shelf blocks the other side."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "b51a1d7e184cef0a4bab824555ceea0b7a724640f3ddd983832a4f91a42bb86e"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0276"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"You asked to start with the pot on your right, followed by the scoop in the middle and the tag on your left.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":70836,"cached_input_tokens":36992,"cache_write_input_tokens":0,"output_tokens":177,"reasoning_output_tokens":0}}

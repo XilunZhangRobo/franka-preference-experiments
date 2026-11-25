@@ -1,0 +1,33 @@
+{
+  "dev": [
+    "gift-finishing",
+    "private-storage",
+    "cleaning-scent",
+    "lighting"
+  ],
+  "holdout": [
+    "paused-work",
+    "approach-side",
+    "completion-update",
+    "vegetable-texture",
+    "receiving-hand",
+    "material-order"
+  ],
+  "basis": "Membership is determined by the SHA-256 sort order of notes-v1-split/ plus family. The six were withheld from revision decisions; all ten families were known to the project. The independent tray family is an additional prospective challenge.",
+  "sequence": "Finish original study analysis. Compare archived camera evidence under fresh legacy and revised writers on development families. Freeze one candidate before opening holdout or tray results. Run both on the same held-out cases and on two people with identical visible teaching histories. Keep every response.",
+  "metrics": "Count optional audit questions over demonstrations, prospective questions over decisions, episodes with any question, visual-only and post-answer transfer and control scores, tentative and final decisions, gains and losses. Report the deliberately ambiguous pairs separately. About one question per five ordinary opportunities is a soft guide. No quota, forced abstentions or forced questions.",
+  "inputs": {
+    "paused-work": "96e50aaa16fa58e3f1e8106aa775ea8c00e3856b5b8bb94f5febe1527ec39836",
+    "gift-finishing": "dba86ec6ad18cbf559b0b9ff5874bfc2124dc45e87ee2280c43d82a1bfae884a",
+    "receiving-hand": "4f126159b9872a3780b0fe3d78f7f755ac5feefaf3bd50ebeb41837b12230a4c",
+    "material-order": "d4768b989991dfd6dd4046dcc10d0ebaa1ea5f77e252a685a306c3458c3fadb8",
+    "approach-side": "cbb6ba545ab87041e69e703e2a1627eca98d8421cabfdb6a2c5903f8e8b5212e",
+    "completion-update": "f27c027987b9e54a063c6cbc6c42015f779e436f47302f735c0e86a6dd2f6b76",
+    "vegetable-texture": "5e28a28ac49d3e1a2bc22df7ebd144892cd0fbf0d29dc52dbadbceb1166b1195",
+    "private-storage": "c3d91a3eec527573b733efb924562f1b6b55de971f4fc71d4600ac659e247c19",
+    "lighting": "4a3abb044954dff4ecd6cd433d018e1f7dfa6c9e3b6c220481b39e997efc851f",
+    "cleaning-scent": "19da4de4c90e753343d1ac92d4ae88f487b53618eb786289b663bc6a4d56c74b"
+  },
+  "primary_criterion": "A useful revision reduces interruptions while preserving written transfer and scope. Assess whether it asks when a novel scene separates indistinguishable preferences. Small samples give descriptive evidence.",
+  "silence": "Include the robot-only rehearsal as one separate negative control. Updating a pre-existing file from an uneventful task remains a future hypothesis."
+}

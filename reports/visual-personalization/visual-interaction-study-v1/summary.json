@@ -1,0 +1,2911 @@
+{
+  "episodes": [
+    {
+      "mode": "isolated",
+      "family": "paused-work",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Shelve the rust mat.",
+      "preferred_teaching_action": "Shelve the rust mat.",
+      "audit_observation": "After I shelved the rust mat, you pointed at it and then toward the cleared spot on the bench.",
+      "audit_interpretation": "You may have wanted me to put the rust mat back so you could keep using it.",
+      "dialogue": {
+        "audit": {
+          "question": "When I clear space in the future, should I usually leave the rust mat on the bench, or did you need it there just this time?",
+          "answer": "Leave the rust mat on the bench when I’ve clipped it."
+        },
+        "exception": {
+          "question": "Which would you like to keep on the bench for the new project?",
+          "answer": "Please keep the rust mat on the bench."
+        }
+      },
+      "draft": "# Rust mat on the workbench\n\nYou appeared to want the rust mat within reach during this task.\n",
+      "first_probe_note": "# Keep the clipped rust mat on the workbench\n\nWhen clearing space, leave the rust mat on the bench if you’ve clipped it. You confirmed this rule after pointing from the shelved mat toward the bench. Your preference for an unclipped rust mat is unknown.\n",
+      "final_note": "# Keeping the rust mat on the bench\n\nWhen clearing space, keep the clipped rust mat on the bench. You also asked to keep the unclipped rust mat for this project. Whether that preference applies to future projects is unclear.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Shelve the teal mat.",
+          "cold": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat clears space at the front of the counter for the cutting board."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat makes room for the cutting board while keeping the clipped rust mat on the bench."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat makes room for the cutting board and leaves the clipped rust mat in place."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat makes room for the cutting board and leaves the clipped rust mat in place."
+          }
+        },
+        "exception": {
+          "expected": "Shelve the closed stitching kit.",
+          "cold": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit clears a spot while keeping its contents together."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit frees a spot and leaves the rust mat in place."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "The closed stitching kit is ready to shelve, and the loose organizer has exposed supplies."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit frees a spot and keeps the rust mat on the bench as requested."
+          }
+        }
+      },
+      "robot_thread": "run-0282",
+      "person_thread": "run-0283",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/paused-work/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "gift-finishing",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Take the flower and put the finishing touch on the card yourself.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Bring the flower over the card to attach it.",
+      "preferred_teaching_action": "Set the flower beside the card.",
+      "audit_observation": "You took the flower from my gripper and pressed it onto the drawn stem.",
+      "audit_interpretation": "You may have wanted to choose its exact position yourself.",
+      "dialogue": {
+        "audit": {
+          "question": "For future craft projects, would you like me to hand you decorations so you can place them yourself?",
+          "answer": "For personal gifts, yes, please hand me the decorations so I can add the finishing touches myself."
+        },
+        "transfer": {
+          "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?",
+          "answer": "I’d like to arrange the tissue and gift myself."
+        }
+      },
+      "draft": "# Placing card decorations\n\nWhen I brought the flower over this card, you handled the final placement.\n",
+      "first_probe_note": "# Decoration handoffs for personal gifts\n\nFor personal gifts, hand me the decorations so I can add the finishing touches myself, as I did with the flower on the handmade card. My preference for other craft projects is unknown.\n",
+      "final_note": "# Personal gift decorations and box packing\n\nFor personal gifts, hand me the decorations so I can place them myself, as I did with the card’s flower. For this gift box, set the tissue and gift beside the open box so I can arrange them. My preference for other boxes or craft projects is unknown.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Open the box and set the tissue and gift alongside it.",
+          "cold": {
+            "choice": "A",
+            "action": "Arrange the tissue and gift inside and close the box.",
+            "correct": false,
+            "reason": "Placing the tissue and gift inside and closing the box makes it ready to give."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Open the box and set the tissue and gift alongside it.",
+            "correct": true,
+            "reason": "Opening the box and setting the tissue and gift beside it lets you add the finishing touches yourself."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Open the box and set the tissue and gift alongside it.",
+            "correct": true,
+            "reason": "Opening the box leaves you the option to arrange the tissue and gift yourself."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Open the box and set the tissue and gift alongside it.",
+            "correct": true,
+            "reason": "Opening the box and setting the tissue and gift beside it lets you arrange them yourself."
+          }
+        },
+        "exception": {
+          "expected": "Put a portion in each box and close each lid.",
+          "cold": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box will finish the lunches."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "Packing each portion and closing its labeled box gets both lunches ready for tomorrow morning."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "Putting a portion in each labeled box and closing its lid gets both lunches ready for tomorrow."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "Putting a portion in each labeled box and closing its lid gets both lunches ready for tomorrow."
+          }
+        }
+      },
+      "robot_thread": "run-0264",
+      "person_thread": "run-0265",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/gift-finishing/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "receiving-hand",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Take the flashlight in the offered hand, then pass it to your left hand.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Offer it to the person's right hand.",
+      "preferred_teaching_action": "Offer it to the person's left hand.",
+      "audit_observation": "You took the flashlight with your right hand, then moved it to your left.",
+      "audit_interpretation": "Offering it to your left hand may have saved you a hand switch.",
+      "dialogue": {
+        "audit": {
+          "question": "Would you prefer left-hand handoffs for flashlights, for other items too, or does it depend?",
+          "answer": "I prefer my left hand for flashlights and other items, but use my right if my left is busy."
+        }
+      },
+      "draft": "# Flashlight handoffs\n\nYou switched the flashlight to your left hand after this handoff.\n",
+      "first_probe_note": "# Left-hand preference for handoffs\n\nOffer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.\n",
+      "final_note": "# Left-hand preference for handoffs\n\nOffer flashlights and other items to the left hand by default. Use the right hand if the left is busy. The person confirmed this preference after switching the flashlight from right to left.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Offer it to the person's left hand.",
+          "cold": {
+            "choice": "B",
+            "action": "Offer it to the person's right hand.",
+            "correct": false,
+            "reason": "The person's right hand is closer to the remote."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Offer it to the person's left hand.",
+            "correct": true,
+            "reason": "Their left hand is free, and they prefer to receive items with it."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Offer it to the person's left hand.",
+            "correct": true,
+            "reason": "Your left hand is free, and you prefer to receive items with it."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Offer it to the person's left hand.",
+            "correct": true,
+            "reason": "Your left hand is free, and you prefer to receive items with it."
+          }
+        },
+        "exception": {
+          "expected": "Offer it to the person's right hand.",
+          "cold": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "The person's right hand is free while their left hand rests on a cloth."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "Their left hand is on the sponge, so their right hand is free to take the remote."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "Your left hand is occupied, so I’ll offer the remote to your right hand as you prefer."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "Your left hand is occupied, so I’ll offer the remote to your right hand as you prefer."
+          }
+        }
+      },
+      "robot_thread": "run-0294",
+      "person_thread": "run-0295",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/receiving-hand/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "material-order",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Set the red base on the person's right and the cap on their left.",
+      "preferred_teaching_action": "Set the red base on the person's right and the cap on their left.",
+      "audit_observation": "The person touched the red base with their right index finger and withdrew their hand. Both parts stayed in place.",
+      "audit_interpretation": "They may have been indicating or checking the base. The gesture alone leaves their preferred layout unclear.",
+      "dialogue": {
+        "transfer": {
+          "question": "Would you like the row to start with the pot on your right or your left?",
+          "answer": "Start with the pot on my right, please."
+        }
+      },
+      "draft": "",
+      "first_probe_note": "",
+      "final_note": "# Pot, scoop, and tag row\n\nFor this setup, place the pot on the person’s right, the scoop in the middle, and the tag on their left. They explicitly asked to start with the pot on their right. Their preference for other tasks is unknown.\n",
+      "draft_changed": false,
+      "probes": {
+        "transfer": {
+          "expected": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+          "cold": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": false,
+            "reason": "From the seated person’s left to right, the row will read pot, scoop, then tag."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": false,
+            "reason": "The seated person can use the pot, scoop, and tag in order from left to right."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+            "correct": true,
+            "reason": "Starting on your right keeps the pot on its current side and the scoop in the middle."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+            "correct": true,
+            "reason": "You asked to start with the pot on your right, followed by the scoop in the middle and the tag on your left."
+          }
+        },
+        "exception": {
+          "expected": "Put the markers together in the central tray.",
+          "cold": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray gives all four people easy access to the markers."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          }
+        }
+      },
+      "robot_thread": "run-0276",
+      "person_thread": "run-0277",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/material-order/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "approach-side",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Point to your left-front quarter for the drink.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Present it in the person's right-front quarter.",
+      "preferred_teaching_action": "Present it in the person's left-front quarter.",
+      "audit_observation": "When I offered the cup on the person’s right, they pointed at the table with their left hand, and I moved the cup toward that spot.",
+      "audit_interpretation": "They seemed to want the drink closer to their left hand.",
+      "dialogue": {
+        "audit": {
+          "question": "Would you prefer that I offer other items on your left, too?",
+          "answer": "Yes, please offer other items in front of my left shoulder when there’s room, or on my right if a shelf blocks my left."
+        }
+      },
+      "draft": "# Drink placement\n\nOn this occasion, the person indicated a spot toward their left for the drink.\n",
+      "first_probe_note": "# Drink and item handoff placement\n\nOffer drinks and other items in front of the person’s left shoulder when there’s room. If a shelf blocks that spot, offer the item on their right. They pointed left during the drink handoff and confirmed this preference afterward.\n",
+      "final_note": "# Drink and item handoff placement\n\nOffer drinks and other items in front of the person’s left shoulder when there’s room. If a shelf blocks that spot, offer the item on their right. They pointed left during the drink handoff and confirmed this preference afterward.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Present it in the person's left-front quarter.",
+          "cold": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "The person’s left hand is near the table edge with room to receive the cloth."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "There’s room to offer the folded cloth in front of their left shoulder, where they prefer it."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "There’s room in front of the person’s left shoulder, where they prefer to receive items."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "There’s room in front of the person’s left shoulder, where they prefer to receive items."
+          }
+        },
+        "exception": {
+          "expected": "Present it in the person's right-front quarter.",
+          "cold": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The person’s right hand is near the folded cloth and has a clear path to receive it."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The shelf blocks the preferred left-front spot, so I’ll offer the cloth on the person’s right."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The shelf blocks the left-front spot, so I’ll offer the cloth on the person’s right as requested."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The shelf blocks the left-front spot, so I’ll offer the cloth on the person’s right as requested."
+          }
+        }
+      },
+      "robot_thread": "run-0246",
+      "person_thread": "run-0247",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/approach-side/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "completion-update",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Demonstrate the timing: resume writing and tap the announcement button before putting the pencil down.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Give the spoken update at the person's next pause.",
+      "preferred_teaching_action": "Give a brief spoken update now.",
+      "audit_observation": "The person set the pencil aside before the first update, then touched the blue device and heard the same update again.",
+      "audit_interpretation": "They may have wanted to replay the update when they were ready to listen.",
+      "dialogue": {
+        "audit": {
+          "question": "For future routine updates, would you prefer to hear them at a pause or only when you tap the device?",
+          "answer": "Tell me right away when I’m working alone, but wait until my video call ends if I’m on one."
+        }
+      },
+      "draft": "# Replay for routine updates\n\nThe person may find it useful to replay a routine update on demand.\n",
+      "first_probe_note": "# Routine update timing during solo work and video calls\n\nThe person asked to hear routine updates right away when working alone. If they’re on a video call, wait until the call ends. They tapped the device once to hear an update again, but their replay preference is unclear.\n",
+      "final_note": "# Routine update timing during solo work and video calls\n\nThe person asked to hear routine updates right away when working alone. If they’re on a video call, wait until the call ends. They tapped the device once to hear an update again, but their replay preference is unclear.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Give a brief spoken update now.",
+          "cold": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": false,
+            "reason": "The delivery update can wait until the person pauses drawing."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Give a brief spoken update now.",
+            "correct": true,
+            "reason": "The person asked for routine updates right away when working alone."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Give a brief spoken update now.",
+            "correct": true,
+            "reason": "The person is drawing alone and asked to hear routine updates right away during solo work."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Give a brief spoken update now.",
+            "correct": true,
+            "reason": "The person is drawing alone and asked to hear routine updates right away during solo work."
+          }
+        },
+        "exception": {
+          "expected": "Give the spoken update at the person's next pause.",
+          "cold": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "The update can wait until the person pauses so it won’t interrupt the call."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "Waiting is closer to their preference to hear routine updates after the call ends."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "The person asked to hear routine updates after the video call ends."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "The person asked to hear routine updates after the video call ends."
+          }
+        }
+      },
+      "robot_thread": "run-0258",
+      "person_thread": "run-0259",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/completion-update/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "vegetable-texture",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Serve the more tender batch.",
+      "preferred_teaching_action": "Serve the more tender batch.",
+      "audit_observation": "After I served the tender broccoli, the person briefly touched the food on the plate with a fingertip.",
+      "audit_interpretation": "They may have been checking temperature or texture. The gesture alone gives no clear preference.",
+      "dialogue": {
+        "audit": {
+          "question": "What were you checking when you touched the food?",
+          "answer": "I was checking whether the broccoli was tender."
+        },
+        "transfer": {
+          "question": "Would you prefer the firmer or more tender green beans?",
+          "answer": "I'd prefer the more tender green beans."
+        },
+        "exception": {
+          "question": "Would you like the more tender green beans or the firmer ones for the chilled salad?",
+          "answer": "I'd like the firmer green beans for the chilled salad."
+        }
+      },
+      "draft": "",
+      "first_probe_note": "# Broccoli tenderness\n\nCheck tenderness when serving cooked broccoli. The person said they touched it to check whether it was tender. Their preferred firmness is still unclear.\n",
+      "final_note": "# Green bean and broccoli tenderness\n\nServe more tender green beans for a warm side dish and firmer green beans for a chilled salad, as requested. The person checked the broccoli for tenderness, but their preferred broccoli firmness is still unclear.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Serve the more tender batch.",
+          "cold": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "The more tender beans are a good fit for a warm, cooked side dish."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": false,
+            "reason": "Firmer cooked green beans will keep some bite when served warm."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "The broccoli check makes tenderness worth considering, but your green bean preference is unclear."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "You asked for the more tender green beans."
+          }
+        },
+        "exception": {
+          "expected": "Serve the firmer batch.",
+          "cold": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "Firmer cooked green beans hold their shape and add a crisp bite to the chilled salad."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "The firmer cooked beans will hold their shape when tossed in the chilled salad."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": false,
+            "reason": "You preferred tender green beans for the warm side dish, but your salad preference is unclear."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "You asked for the firmer green beans for the chilled salad."
+          }
+        }
+      },
+      "robot_thread": "run-0300",
+      "person_thread": "run-0301",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/vegetable-texture/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "private-storage",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Place the items in the shallow compartment and close it.",
+      "preferred_teaching_action": "Place the items in the shallow compartment and close it.",
+      "audit_observation": "The person steadied the lid while I put the keys and flashlight inside, then pointed at the compartment after I closed it.",
+      "audit_interpretation": "The gesture may have confirmed the storage spot, though the person said nothing.",
+      "dialogue": {
+        "audit": {
+          "question": "Should I use this compartment as the usual spot for the keys and flashlight?",
+          "answer": "Yes, keep my keys and flashlight in the closed compartment between uses."
+        }
+      },
+      "draft": "# Entryway keys and flashlight\n\nThe shallow entryway compartment held both items after this cleanup.\n",
+      "first_probe_note": "# Entryway keys and flashlight\n\nThe person confirmed that their house keys and flashlight belong in the shallow entryway compartment between uses. Close it after putting them away.\n",
+      "final_note": "# Entryway keys and flashlight\n\nThe person confirmed that their house keys and flashlight belong in the shallow entryway compartment between uses. Close it after putting them away.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Place the items in the shallow compartment and close it.",
+          "cold": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case visible and easy to grab tomorrow."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case easy to see and grab tomorrow."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case visible and easy to grab tomorrow."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case visible and easy to grab tomorrow."
+          }
+        },
+        "exception": {
+          "expected": "Set the rulers on the tray beside the shared craft materials.",
+          "cold": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach for the first craft step."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach for the first craft step."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach for the group’s first craft step."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach for the group’s first craft step."
+          }
+        }
+      },
+      "robot_thread": "run-0288",
+      "person_thread": "run-0289",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/private-storage/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "lighting",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Switch the selected light off and switch on the other light.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Turn on the desk lamp.",
+      "preferred_teaching_action": "Turn on the overhead fixture.",
+      "audit_observation": "After I turned on the desk lamp, the person switched it off and used the other switch, brightening the room.",
+      "audit_interpretation": "They seemed to prefer overhead lighting for this puzzle.",
+      "dialogue": {
+        "audit": {
+          "question": "Do you also prefer the overhead light for other tasks at this table?",
+          "answer": "Yes, when I work alone, but during a projected presentation I prefer just the desk lamp."
+        }
+      },
+      "draft": "# Puzzle lighting\n\nFor puzzle work, try the overhead light first.\n",
+      "first_probe_note": "# Table lighting for solo work and presentations\n\nUse the overhead light for solo work at this table, including puzzles. During projected presentations, use only the desk lamp. The person confirmed both preferences. Lighting for other group activities is unspecified.\n",
+      "final_note": "# Table lighting for solo work and presentations\n\nUse the overhead light for solo work at this table, including puzzles. During projected presentations, use only the desk lamp. The person confirmed both preferences. Lighting for other group activities is unspecified.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Turn on the overhead fixture.",
+          "cold": {
+            "choice": "B",
+            "action": "Turn on the desk lamp.",
+            "correct": false,
+            "reason": "The desk lamp can shine directly on the tile samples so the person can compare their patterns."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Turn on the overhead fixture.",
+            "correct": true,
+            "reason": "The person is comparing tiles alone and prefers the overhead light for solo work at this table."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Turn on the overhead fixture.",
+            "correct": true,
+            "reason": "The person is comparing tiles alone at this table and prefers overhead lighting for solo work."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Turn on the overhead fixture.",
+            "correct": true,
+            "reason": "The person is comparing tiles alone at this table and prefers overhead lighting for solo work."
+          }
+        },
+        "exception": {
+          "expected": "Turn on the desk lamp.",
+          "cold": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim, as the person prefers during slide shows."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim, as the person prefers during slide shows."
+          }
+        }
+      },
+      "robot_thread": "run-0270",
+      "person_thread": "run-0271",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/lighting/transcript.json"
+    },
+    {
+      "mode": "isolated",
+      "family": "cleaning-scent",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Return the selected item to its starting spot and move the other item into its place.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Set out the fragrance-free cleaner.",
+      "preferred_teaching_action": "Set out the mild-citrus cleaner.",
+      "audit_observation": "You put the fragrance-free cleaner back on the tray and set the mild-citrus cleaner beside the cloth.",
+      "audit_interpretation": "You seemed to prefer mild citrus for this cleanup.",
+      "dialogue": {
+        "audit": {
+          "question": "Should I also set out mild citrus for the kitchen counter when someone else is home?",
+          "answer": "Use fragrance-free if guests are coming, but I haven’t specified a preference just because someone else is home."
+        },
+        "transfer": {
+          "question": "Do you prefer mild citrus or fragrance-free for the sewing surface?",
+          "answer": "I prefer mild citrus for my sewing surface."
+        },
+        "exception": {
+          "question": "Should I use fragrance-free cleaner on the shared craft worktop too?",
+          "answer": "Yes, please use fragrance-free cleaner on the shared craft worktop."
+        }
+      },
+      "draft": "# Kitchen counter cleaner\n\nYou chose mild citrus for the kitchen counter while home alone.\n",
+      "first_probe_note": "# Kitchen counter cleaner\n\nUse fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a preference based solely on someone else being home.\n",
+      "final_note": "# Cleaners for sewing, crafts, and kitchen counters\n\nUse mild citrus on your private sewing surface. When guests are expected, use fragrance-free cleaner on the kitchen counter and shared craft worktop. You chose mild citrus once for the kitchen counter while home alone. Your kitchen counter preference when someone else is home and no guests are expected is unspecified.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Use the mild-citrus cleaner.",
+          "cold": {
+            "choice": "B",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": false,
+            "reason": "The fragrance-free cleaner avoids adding a scent you haven’t requested."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Use the mild-citrus cleaner.",
+            "correct": true,
+            "reason": "Your past choice of mild citrus while home alone is the closest match for a surface only you use."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Use the mild-citrus cleaner.",
+            "correct": true,
+            "reason": "You chose mild citrus once for the kitchen counter, so it seems plausible for your private sewing room."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Use the mild-citrus cleaner.",
+            "correct": true,
+            "reason": "You prefer mild citrus for your sewing surface."
+          }
+        },
+        "exception": {
+          "expected": "Use the fragrance-free cleaner.",
+          "cold": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "The fragrance-free cleaner avoids adding a scent that might bother guests."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "You prefer fragrance-free cleaner when guests are expected."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "You prefer fragrance-free cleaner on the kitchen counter before guests arrive."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "You asked for fragrance-free cleaner on the shared craft worktop."
+          }
+        }
+      },
+      "robot_thread": "run-0252",
+      "person_thread": "run-0253",
+      "prior_note_count": 0,
+      "transcript": "episodes/isolated/cleaning-scent/transcript.json"
+    },
+    {
+      "mode": "contrast",
+      "family": "paused-work",
+      "profile": "reverse",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Bring the shelved mat back to its original spot and leave the other mat alone.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Shelve the rust mat.",
+      "preferred_teaching_action": "Shelve the teal mat.",
+      "audit_observation": "After I shelved the rust mat, you returned it to its original spot on the workbench.",
+      "audit_interpretation": "You seemed to want the rust mat within reach for this task.",
+      "dialogue": {
+        "audit": {
+          "question": "Should I usually leave the rust mat on the bench, or did you need it there just this time?",
+          "answer": "Just this time, because I clip the mat I want shelved."
+        },
+        "transfer": {
+          "question": "Do you use the same clip cue on your sewing counter?",
+          "answer": "Yes, I clip the mat for the project I want shelved there too."
+        },
+        "exception": {
+          "question": "Which would you like shelved this time, the closed stitching kit or the loose organizer?",
+          "answer": "Please shelve the closed stitching kit."
+        }
+      },
+      "draft": "# Rust mat placement\n\nDuring this cleanup, you put the rust mat back on the bench.\n",
+      "first_probe_note": "# Workbench mat shelving cue\n\nWhen clearing the workbench, shelve the mat you mark with a clip. This time the teal mat had the clip, and you returned the rust mat to the bench. The cue is the clip, regardless of mat color.\n",
+      "final_note": "# Shelving cue for project mats\n\nWhen clearing your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces. Your request to shelve the closed stitching kit applied to this cleanup only.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Shelve the rust mat.",
+          "cold": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": false,
+            "reason": "Shelving the teal mat clears space at the front of the counter for the cutting board."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Shelve the rust mat.",
+            "correct": true,
+            "reason": "The clip is on the rust mat, marking it for shelving."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Shelve the rust mat.",
+            "correct": true,
+            "reason": "The rust mat has the clip you use to mark a mat for shelving on your workbench."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Shelve the rust mat.",
+            "correct": true,
+            "reason": "The clip on the rust mat marks it as the one you want shelved."
+          }
+        },
+        "exception": {
+          "expected": "Shelve the closed stitching kit.",
+          "cold": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit clears a bench spot while keeping its contents together."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit frees a spot and leaves the rust mat’s loose supplies in place."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "The closed stitching kit can be moved without disturbing the loose sewing supplies."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "You asked me to shelve the closed stitching kit to free a bench spot."
+          }
+        }
+      },
+      "robot_thread": "run-0228",
+      "person_thread": "run-0229",
+      "prior_note_count": 0,
+      "transcript": "episodes/contrast/paused-work/transcript.json"
+    },
+    {
+      "mode": "contrast",
+      "family": "material-order",
+      "profile": "reverse",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Swap the two components so their order is reversed.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Set the red base on the person's right and the cap on their left.",
+      "preferred_teaching_action": "Set the red base on the person's left and the cap on their right.",
+      "audit_observation": "After I set the pieces down, the person moved the red base to their left and the yellow cap to their right.",
+      "audit_interpretation": "They seem to prefer that arrangement for this assembly.",
+      "dialogue": {
+        "audit": {
+          "question": "For other assemblies, do you also prefer the base on your left and the cap on your right?",
+          "answer": "For my own assemblies, yes, if I use the base first and the cap second."
+        },
+        "transfer": {
+          "question": "Would you like the pot, scoop, and tag arranged from your left to your right in the order you’ll use them?",
+          "answer": "Yes, please arrange the pot, scoop, and tag in that order from my left to my right."
+        }
+      },
+      "draft": "# Red base on the left, yellow cap on the right\n\nFor this assembly, place the red base by their left hand and the yellow cap by their right.\n",
+      "first_probe_note": "# Base-first assembly setup: base left, cap right\n\nFor the person’s own assemblies, place the base on their left and the cap on their right when they use the base first and the cap second. They moved the red base and yellow cap into this layout and confirmed it for that sequence. Their preference for other sequences is unknown.\n",
+      "final_note": "# Left-to-right setup for assembly and planting\n\nFor their own assemblies where the base is used first and the cap second, place the base on their left and the cap on their right. They demonstrated and confirmed this layout. For planting, they explicitly requested the pot on their left, the scoop in the middle, and the tag on their right. Their preference for other tasks or sequences is unknown.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+          "cold": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": true,
+            "reason": "From the seated person’s left to right, the row follows the order they’ll use the pot, scoop, then tag."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": true,
+            "reason": "A left-to-right row follows the requested order and is consistent with the person’s base-first setup."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": true,
+            "reason": "They preferred the first item on their left for assembly, but their preference for planting is unknown."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": true,
+            "reason": "The person asked for the pot, scoop, and tag in that order from their left to their right."
+          }
+        },
+        "exception": {
+          "expected": "Put the markers together in the central tray.",
+          "cold": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "All four people can reach the markers in the central tray."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          }
+        }
+      },
+      "robot_thread": "run-0222",
+      "person_thread": "run-0223",
+      "prior_note_count": 0,
+      "transcript": "episodes/contrast/material-order/transcript.json"
+    },
+    {
+      "mode": "contrast",
+      "family": "vegetable-texture",
+      "profile": "reverse",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Return the selected item to its starting spot and move the other item into its place.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Serve the more tender batch.",
+      "preferred_teaching_action": "Serve the firmer batch.",
+      "audit_observation": "You returned the broccoli I served to its tray and put a floret from the other tray on your plate.",
+      "audit_interpretation": "Your swap suggests you preferred firmer broccoli with this dinner.",
+      "dialogue": {
+        "audit": {
+          "question": "Should I choose firmer broccoli for you at future meals?",
+          "answer": "Yes, I prefer firmer broccoli with warm meals and in chilled salads."
+        },
+        "transfer": {
+          "question": "Would you like the green beans firmer or more tender with this meal?",
+          "answer": "I’d like the green beans firmer, please."
+        },
+        "exception": {
+          "question": "Would you like the green beans firmer or more tender in this chilled salad?",
+          "answer": "I’d like the green beans firmer, please."
+        }
+      },
+      "draft": "# Broccoli texture\n\nYou chose the firmer broccoli when offered both batches at dinner.\n",
+      "first_probe_note": "# Broccoli texture preference\n\nChoose firmer broccoli for warm meals and chilled salads. You swapped the tender broccoli for the firmer batch at dinner and confirmed this preference for both settings.\n",
+      "final_note": "# Broccoli and green bean texture\n\nChoose firmer broccoli for warm meals and chilled salads, as you confirmed. Favor firmer green beans in similar dishes because you requested them for both a warm side and a chilled salad.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Serve the firmer batch.",
+          "cold": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": false,
+            "reason": "The more tender beans are a good fit for a warm, cooked side dish."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": false,
+            "reason": "Tender green beans suit a warm side dish, and the firmness preference is specific to broccoli."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "Your preference for firmer broccoli suggests you might like firmer green beans too."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "You asked for firmer green beans with this meal."
+          }
+        },
+        "exception": {
+          "expected": "Serve the firmer batch.",
+          "cold": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "The firmer cooked beans will keep a pleasant crunch in the chilled salad."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "Firmer green beans will keep a little crunch in the chilled salad."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "You chose firmer green beans for a warm side dish, so I’d lean toward the firmer batch here too."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "You asked for firmer green beans in this chilled salad."
+          }
+        }
+      },
+      "robot_thread": "run-0240",
+      "person_thread": "run-0241",
+      "prior_note_count": 0,
+      "transcript": "episodes/contrast/vegetable-texture/transcript.json"
+    },
+    {
+      "mode": "contrast",
+      "family": "private-storage",
+      "profile": "reverse",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Move the belongings to the other storage location, opening and closing the compartment.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Place the items in the shallow compartment and close it.",
+      "preferred_teaching_action": "Set them together on the open tray.",
+      "audit_observation": "After I closed the compartment, the person reopened it, moved both items onto the tray, and closed the empty compartment.",
+      "audit_interpretation": "The person seems to prefer keeping the keys and flashlight visible and easy to reach.",
+      "dialogue": {},
+      "draft": "# Entryway tray for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, place them together on the open entryway tray.\n",
+      "first_probe_note": "# Entryway tray for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, place them together on the open entryway tray.\n",
+      "final_note": "# Entryway tray for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, place them together on the open entryway tray.\n",
+      "draft_changed": false,
+      "probes": {
+        "transfer": {
+          "expected": "Leave the pen case on the open tray.",
+          "cold": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": true,
+            "reason": "The open tray keeps your pen case easy to find and grab tomorrow."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": true,
+            "reason": "The open tray keeps your pen case easy to find and grab tomorrow."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": true,
+            "reason": "The open tray keeps the pen case easy to spot and pick up for tomorrow’s practice."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": true,
+            "reason": "The open tray keeps the pen case easy to spot and pick up for tomorrow’s practice."
+          }
+        },
+        "exception": {
+          "expected": "Set the rulers on the tray beside the shared craft materials.",
+          "cold": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach for the first craft step."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach for the first craft step."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach when the group starts the first step."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The tray keeps all four rulers within reach when the group starts the first step."
+          }
+        }
+      },
+      "robot_thread": "run-0234",
+      "person_thread": "run-0235",
+      "prior_note_count": 0,
+      "transcript": "episodes/contrast/private-storage/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "paused-work",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Shelve the rust mat.",
+      "preferred_teaching_action": "Shelve the rust mat.",
+      "audit_observation": "After I shelved the rust mat, the person pointed at it and then at the open bench.",
+      "audit_interpretation": "They may have wanted me to put the rust mat back within reach.",
+      "dialogue": {
+        "audit": {
+          "question": "Should I usually leave the rust mat on the bench, or did you need it there just this time?",
+          "answer": "I didn’t need the rust mat there this time, but leave it on the bench whenever I clip it."
+        }
+      },
+      "draft": "# Rust mat placement\n\nThe person may prefer to keep the rust mat on the bench while working.\n",
+      "first_probe_note": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n",
+      "final_note": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Shelve the teal mat.",
+          "cold": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat clears space for the cutting board at the front of the counter."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Shelve the rust mat.",
+            "correct": false,
+            "reason": "They said the rust mat could be moved this time, so shelving it makes room for the cutting board."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat makes room for the cutting board and keeps the clipped rust mat on the counter as requested."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Shelve the teal mat.",
+            "correct": true,
+            "reason": "Shelving the teal mat makes room for the cutting board and keeps the clipped rust mat on the counter as requested."
+          }
+        },
+        "exception": {
+          "expected": "Shelve the closed stitching kit.",
+          "cold": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit clears bench space while keeping its contents together."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "Shelving the closed stitching kit clears a spot while keeping its contents together."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "The closed stitching kit can be shelved as one piece without disturbing the loose sewing supplies."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Shelve the closed stitching kit.",
+            "correct": true,
+            "reason": "The closed stitching kit can be shelved as one piece without disturbing the loose sewing supplies."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 0,
+      "transcript": "episodes/continuous/paused-work/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "gift-finishing",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Take the flower and put the finishing touch on the card yourself.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Set the flower beside the card.",
+      "preferred_teaching_action": "Set the flower beside the card.",
+      "audit_observation": "After I set the flower beside the card, the person picked it up and pressed it onto the end of the drawn stem.",
+      "audit_interpretation": "They may have wanted to choose the flower’s exact placement themselves.",
+      "dialogue": {
+        "audit": {
+          "question": "For future handmade cards, would you like me to leave decorations beside the card for you to place?",
+          "answer": "Yes, when the card is a personal gift, please leave the decorations beside it for me to place."
+        },
+        "transfer": {
+          "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?",
+          "answer": "I’d like to arrange the tissue and gift myself."
+        }
+      },
+      "draft": "# Handmade card decoration placement\n\nWhen helping with handmade cards, the person may prefer decorations within reach so they can place them themselves.\n",
+      "first_probe_note": "# Decorations for personal gift cards\n\nWhen a handmade card is a personal gift, leave the decorations beside it for the person to place. They confirmed this preference for personal gifts only.\n",
+      "final_note": "# Personal gift cards and gift box arrangement\n\nFor handmade cards given as personal gifts, leave decorations beside the card for the person to place. For this gift box, they asked to arrange the tissue and gift themselves. Their preference for future boxes is unknown.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Open the box and set the tissue and gift alongside it.",
+          "cold": {
+            "choice": "A",
+            "action": "Arrange the tissue and gift inside and close the box.",
+            "correct": false,
+            "reason": "Placing the tissue and gift inside and closing the box makes it ready to give."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Arrange the tissue and gift inside and close the box.",
+            "correct": false,
+            "reason": "Placing the tissue and gift inside and closing the box makes it ready to give."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Open the box and set the tissue and gift alongside it.",
+            "correct": true,
+            "reason": "Opening the box leaves you the option to arrange the gift yourself."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Open the box and set the tissue and gift alongside it.",
+            "correct": true,
+            "reason": "Opening the box and setting the tissue and gift beside it lets you arrange them yourself."
+          }
+        },
+        "exception": {
+          "expected": "Put a portion in each box and close each lid.",
+          "cold": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box will finish the task."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "Packing each portion and closing its labeled lid makes both lunches ready for tomorrow morning."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Put a portion in each box and close each lid.",
+            "correct": true,
+            "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 1,
+      "transcript": "episodes/continuous/gift-finishing/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "receiving-hand",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Take the flashlight in the offered hand, then pass it to your left hand.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Offer it to the person's right hand.",
+      "preferred_teaching_action": "Offer it to the person's left hand.",
+      "audit_observation": "The person took the flashlight with their right hand, then moved it to their left hand.",
+      "audit_interpretation": "They may have wanted the flashlight in their left hand for this task.",
+      "dialogue": {
+        "audit": {
+          "question": "Should I usually offer items to your left hand, or did switching hands suit this particular task?",
+          "answer": "Please offer things to my left hand unless it’s busy, in which case use my right."
+        }
+      },
+      "draft": "# Flashlight handoff preference\n\nFor flashlight handoffs, the left hand may be a better choice. This is based on one handoff.\n",
+      "first_probe_note": "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n",
+      "final_note": "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Offer it to the person's left hand.",
+          "cold": {
+            "choice": "B",
+            "action": "Offer it to the person's right hand.",
+            "correct": false,
+            "reason": "The person's right hand is closer to the remote."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Offer it to the person's left hand.",
+            "correct": true,
+            "reason": "Their left hand is free, and they prefer to receive items with it."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Offer it to the person's left hand.",
+            "correct": true,
+            "reason": "Your left hand is free, and you prefer to receive items in that hand."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Offer it to the person's left hand.",
+            "correct": true,
+            "reason": "Your left hand is free, and you prefer to receive items in that hand."
+          }
+        },
+        "exception": {
+          "expected": "Offer it to the person's right hand.",
+          "cold": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "The person's right hand is free while their left hand rests on a cloth."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "Their left hand is on the cloth, so I’ll offer the remote to their free right hand."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "Your left hand is busy, so I’ll offer the remote to your right hand as requested."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Offer it to the person's right hand.",
+            "correct": true,
+            "reason": "Your left hand is busy, so I’ll offer the remote to your right hand as requested."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 2,
+      "transcript": "episodes/continuous/receiving-hand/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "material-order",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Set the red base on the person's right and the cap on their left.",
+      "preferred_teaching_action": "Set the red base on the person's right and the cap on their left.",
+      "audit_observation": "The person touched the red base on their right with their right index finger and left both pieces in place.",
+      "audit_interpretation": "They may have been checking the base before assembly. The gesture alone gives little evidence of a preferred layout.",
+      "dialogue": {
+        "audit": {
+          "question": "Do you prefer the base on your right and the cap on your left for future assemblies?",
+          "answer": "Yes, for my own assemblies, put the part I use first on my right and the next one on my left."
+        }
+      },
+      "draft": "",
+      "first_probe_note": "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n",
+      "final_note": "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+          "cold": {
+            "choice": "B",
+            "action": "Place the pot at the person's left, scoop in the middle, and tag at their right.",
+            "correct": false,
+            "reason": "From the seated person’s perspective, the row reads left to right as pot, scoop, then tag."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+            "correct": true,
+            "reason": "Arranging the pot, scoop, and tag from the person’s right to left matches their preferred order of use."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+            "correct": true,
+            "reason": "Placing the pot on the seated person’s right starts the row with the first item, consistent with their assembly preference."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+            "correct": true,
+            "reason": "Placing the pot on the seated person’s right starts the row with the first item, consistent with their assembly preference."
+          }
+        },
+        "exception": {
+          "expected": "Put the markers together in the central tray.",
+          "cold": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray makes the markers easy for all four people to reach."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Put the markers together in the central tray.",
+            "correct": true,
+            "reason": "The central tray keeps the markers within reach of all four people."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 3,
+      "transcript": "episodes/continuous/material-order/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "approach-side",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point to your left-front quarter for the drink.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Present it in the person's left-front quarter.",
+      "preferred_teaching_action": "Present it in the person's left-front quarter.",
+      "audit_observation": "I held the cup in front of the person on their left. They pointed across it toward the tabletop on their right, then withdrew their hand without taking it.",
+      "audit_interpretation": "They may have been showing me where to set the drink down.",
+      "dialogue": {
+        "audit": {
+          "question": "Was the spot in front of you on your right where you usually want drinks, or was it specific to this cup?",
+          "answer": "I usually want drinks in front of my left shoulder, with the right side as a backup if a shelf blocks the left."
+        },
+        "exception": {
+          "question": "When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?",
+          "answer": "Please offer the cloth on my right when the shelf blocks my left side."
+        }
+      },
+      "draft": "# Drink placement on the table\n\nThe person may prefer drinks set down in front of them on their right. This is based on one gesture.\n",
+      "first_probe_note": "# Drink placement in front of left shoulder\n\nThe person usually wants drinks in front of their left shoulder. Use the right side if a shelf blocks the spot on the left.\n",
+      "final_note": "# Drink placement and folded cloth handoffs\n\nUsually place drinks in front of the person’s left shoulder. If a shelf blocks that spot, use their right side. They also asked to receive the folded cloth on their right when a shelf blocks their left side.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Present it in the person's left-front quarter.",
+          "cold": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "The person's left hand is visible at the table edge and can easily reach the cloth there."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "The person's left hand is free and close enough to take the cloth."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "Offering the cloth in front of you on your left puts it within reach of your free left hand, as you prefer."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Present it in the person's left-front quarter.",
+            "correct": true,
+            "reason": "Offering the cloth in front of you on your left puts it within reach of your free left hand, as you prefer."
+          }
+        },
+        "exception": {
+          "expected": "Present it in the person's right-front quarter.",
+          "cold": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The cloth is near the person's right hand, and there is room to offer it there."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The person can reach the cloth on their right, and their left-side preference applies to drinks."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The shelf blocks the approach on your left, and your right hand is free to take the cloth."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Present it in the person's right-front quarter.",
+            "correct": true,
+            "reason": "The shelf blocks your left side, so I’ll offer the cloth on your right as requested."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 4,
+      "transcript": "episodes/continuous/approach-side/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "completion-update",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Demonstrate the timing: resume writing and tap the announcement button before putting the pencil down.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Give the spoken update at the person's next pause.",
+      "preferred_teaching_action": "Give a brief spoken update now.",
+      "audit_observation": "The device said “Work is complete” during a pause. The person resumed work, then touched the device and heard the same message again.",
+      "audit_interpretation": "They may have wanted to hear the update again at a time they chose.",
+      "dialogue": {
+        "audit": {
+          "question": "For low-priority updates, would you prefer to hear them at your next pause or only when you ask for them?",
+          "answer": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."
+        }
+      },
+      "draft": "# Timing of low-priority updates\n\nThe person replayed one routine update. They may value being able to check these messages on demand.\n",
+      "first_probe_note": "# Low-priority updates during solo work and video calls\n\nThe person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update.\n",
+      "final_note": "# Low-priority updates during solo work and video calls\n\nThe person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Give a brief spoken update now.",
+          "cold": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": false,
+            "reason": "The delivery update can wait until the person pauses drawing."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Give a brief spoken update now.",
+            "correct": true,
+            "reason": "They’re drawing alone and asked for brief updates right away during solo work."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Give a brief spoken update now.",
+            "correct": true,
+            "reason": "You’re drawing alone and asked for brief updates right away during solo work."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Give a brief spoken update now.",
+            "correct": true,
+            "reason": "You’re drawing alone and asked for brief updates right away during solo work."
+          }
+        },
+        "exception": {
+          "expected": "Give the spoken update at the person's next pause.",
+          "cold": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "The update can wait for the person’s next pause so it won’t interrupt the call."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "Waiting is the closer match to their preference for updates after the call ends."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "You asked me to wait until your video call ends before giving a low-priority update."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Give the spoken update at the person's next pause.",
+            "correct": true,
+            "reason": "You asked me to wait until your video call ends before giving a low-priority update."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 5,
+      "transcript": "episodes/continuous/completion-update/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "vegetable-texture",
+      "profile": "standard",
+      "teaching_miss": false,
+      "feedback_agreement": true,
+      "motion": "Point at the selected arrangement and leave it in place.",
+      "motion_id": "accept",
+      "expected_motion_id": "accept",
+      "teaching_action": "Serve the more tender batch.",
+      "preferred_teaching_action": "Serve the more tender batch.",
+      "audit_observation": "After I served the tender broccoli, the person pointed at the food on their plate and left both batches where they were.",
+      "audit_interpretation": "They may have been checking the texture. The gesture alone leaves their preference unclear.",
+      "dialogue": {
+        "audit": {
+          "question": "When I serve broccoli with a warm dinner, do you usually prefer it tender or firm?",
+          "answer": "I usually prefer tender broccoli with a warm dinner."
+        },
+        "transfer": {
+          "question": "Would you like the green beans tender or firm for this warm side dish?",
+          "answer": "I’d like the green beans tender, please."
+        },
+        "exception": {
+          "question": "Would you like the green beans firm or tender in this salad?",
+          "answer": "I’d like the green beans firm, please."
+        }
+      },
+      "draft": "",
+      "first_probe_note": "# Broccoli texture for warm dinners\n\nServe tender broccoli with warm dinners by default. The person said they usually prefer it that way.\n",
+      "final_note": "# Broccoli and green bean texture\n\nServe tender broccoli with warm dinners by default. For green beans, the person requested tender beans for one warm side dish and firm beans for one chilled salad. Treat those choices as tentative guides for similar dishes.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Serve the more tender batch.",
+          "cold": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "The more tender beans are a good fit for a warm cooked side dish."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "Their preference for tender broccoli at warm dinners suggests they may enjoy tender green beans too."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "You usually like tender broccoli with warm dinners, so tender green beans are my tentative choice."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Serve the more tender batch.",
+            "correct": true,
+            "reason": "You asked for tender green beans for this warm side dish."
+          }
+        },
+        "exception": {
+          "expected": "Serve the firmer batch.",
+          "cold": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "Firmer cooked beans will stay crisp in the chilled salad."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "Firmer green beans will keep a crisp bite in the chilled salad."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "Firmer beans will hold their shape when the chilled salad is tossed."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Serve the firmer batch.",
+            "correct": true,
+            "reason": "You asked for firm green beans in this chilled salad."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 6,
+      "transcript": "episodes/continuous/vegetable-texture/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "private-storage",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Move the belongings to the other storage location, opening and closing the compartment.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Set them together on the open tray.",
+      "preferred_teaching_action": "Place the items in the shallow compartment and close it.",
+      "audit_observation": "The person moved the house keys and flashlight from the open tray into the shallow compartment and closed it.",
+      "audit_interpretation": "The compartment appears to be their usual storage spot for these two items.",
+      "dialogue": {
+        "audit": {
+          "question": "Which other entryway items, if any, should I put in that compartment after use?",
+          "answer": "Please put my other personal belongings in the closed compartment after use."
+        },
+        "transfer": {
+          "question": "Would you like the case on the tray for tomorrow or in your usual closed compartment?",
+          "answer": "Please put my pen case in the usual closed compartment."
+        }
+      },
+      "draft": "# Entryway storage for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, favor the shallow entryway compartment and close it.\n",
+      "first_probe_note": "# Entryway storage for personal belongings\n\nAfter use, put the house keys, flashlight, and the person’s other personal belongings in the shallow entryway compartment and close it. They moved the keys and flashlight there and asked for the same storage for their other belongings.\n",
+      "final_note": "# Entryway storage for personal belongings and pen case\n\nAfter use, put the house keys, flashlight, and other personal belongings in the shallow entryway compartment and close it. The person confirmed that the pen case goes there even when they want it handy for the next day.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Place the items in the shallow compartment and close it.",
+          "cold": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case easy to find and grab tomorrow."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case visible and easy to grab for tomorrow’s practice."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Leave the pen case on the open tray.",
+            "correct": false,
+            "reason": "The open tray keeps your pen case visible and easy to grab tomorrow."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Place the items in the shallow compartment and close it.",
+            "correct": true,
+            "reason": "You asked me to put your pen case in the usual closed compartment."
+          }
+        },
+        "exception": {
+          "expected": "Set the rulers on the tray beside the shared craft materials.",
+          "cold": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+          },
+          "tentative": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The shared tray keeps all four rulers within reach for the first craft step."
+          },
+          "executed": {
+            "choice": "B",
+            "action": "Set the rulers on the tray beside the shared craft materials.",
+            "correct": true,
+            "reason": "The shared tray keeps all four rulers within reach for the first craft step."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 7,
+      "transcript": "episodes/continuous/private-storage/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "lighting",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Switch the selected light off and switch on the other light.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Turn on the desk lamp.",
+      "preferred_teaching_action": "Turn on the overhead fixture.",
+      "audit_observation": "The person switched off the desk lamp, then pressed the other light control.",
+      "audit_interpretation": "They appeared to prefer overhead lighting for this puzzle.",
+      "dialogue": {
+        "audit": {
+          "question": "When do you prefer the overhead light to the desk lamp?",
+          "answer": "I prefer the overhead light when I’m working alone."
+        }
+      },
+      "draft": "# Overhead lighting for puzzles\n\nFavor the overhead light for puzzles as a tentative preference based on this one switch.\n",
+      "first_probe_note": "# Overhead lighting for solo work\n\nUse the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown.\n",
+      "final_note": "# Overhead lighting for solo work\n\nUse the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Turn on the overhead fixture.",
+          "cold": {
+            "choice": "B",
+            "action": "Turn on the desk lamp.",
+            "correct": false,
+            "reason": "The desk lamp can light the tile samples directly so their patterns are easier to compare."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Turn on the overhead fixture.",
+            "correct": true,
+            "reason": "The person is comparing tiles alone and prefers the overhead light for solo work."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Turn on the overhead fixture.",
+            "correct": true,
+            "reason": "You’re comparing tiles alone, and you prefer overhead lighting for solo work."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Turn on the overhead fixture.",
+            "correct": true,
+            "reason": "You’re comparing tiles alone, and you prefer overhead lighting for solo work."
+          }
+        },
+        "exception": {
+          "expected": "Turn on the desk lamp.",
+          "cold": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp will light the craft table while keeping the room dim for the slide show."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Turn on the desk lamp.",
+            "correct": true,
+            "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 8,
+      "transcript": "episodes/continuous/lighting/transcript.json"
+    },
+    {
+      "mode": "continuous",
+      "family": "cleaning-scent",
+      "profile": "standard",
+      "teaching_miss": true,
+      "feedback_agreement": true,
+      "motion": "Return the selected item to its starting spot and move the other item into its place.",
+      "motion_id": "change",
+      "expected_motion_id": "change",
+      "teaching_action": "Set out the fragrance-free cleaner.",
+      "preferred_teaching_action": "Set out the mild-citrus cleaner.",
+      "audit_observation": "The person returned the fragrance-free cleaner to the tray and set the mild-citrus cleaner beside the cloth.",
+      "audit_interpretation": "The swap suggests they wanted mild citrus for this cleanup.",
+      "dialogue": {
+        "audit": {
+          "question": "Is mild citrus your usual choice for the kitchen counter, or does it depend on who’s home?",
+          "answer": "I prefer mild citrus when I’m home alone and fragrance-free cleaner when guests are coming."
+        },
+        "transfer": {
+          "question": "Would you like mild citrus for the sewing surface too?",
+          "answer": "Yes, please use mild citrus on my sewing surface."
+        }
+      },
+      "draft": "# Kitchen counter cleaner preference\n\nWhen the person is home alone, mild citrus may be their preferred counter cleaner, based on one swap.\n",
+      "first_probe_note": "# Kitchen counter cleaner for solo use and guests\n\nFor the kitchen counter, the person prefers mild-citrus cleaner when home alone and fragrance-free cleaner when guests are expected.\n",
+      "final_note": "# Cleaner preferences for kitchen counters and sewing surfaces\n\nUse mild-citrus cleaner on the kitchen counter when the person is home alone and fragrance-free cleaner when guests are expected. They also confirmed mild citrus for their private sewing surface.\n",
+      "draft_changed": true,
+      "probes": {
+        "transfer": {
+          "expected": "Use the mild-citrus cleaner.",
+          "cold": {
+            "choice": "B",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": false,
+            "reason": "The fragrance-free cleaner will clean the surface without adding a scent."
+          },
+          "note": {
+            "choice": "B",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": false,
+            "reason": "Fragrance-free is a neutral choice because your citrus preference is specific to the kitchen counter."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Use the mild-citrus cleaner.",
+            "correct": true,
+            "reason": "Mild citrus is a likely fit for your private sewing room because you prefer it for the kitchen counter when you’re home alone."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Use the mild-citrus cleaner.",
+            "correct": true,
+            "reason": "You asked me to use mild citrus on your sewing surface."
+          }
+        },
+        "exception": {
+          "expected": "Use the fragrance-free cleaner.",
+          "cold": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "The fragrance-free cleaner avoids adding scent to the shared worktop."
+          },
+          "note": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "You prefer fragrance-free cleaner when guests are expected."
+          },
+          "tentative": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "Fragrance-free cleaner fits your preference when guests are coming to share the worktop."
+          },
+          "executed": {
+            "choice": "A",
+            "action": "Use the fragrance-free cleaner.",
+            "correct": true,
+            "reason": "Fragrance-free cleaner fits your preference when guests are coming to share the worktop."
+          }
+        }
+      },
+      "robot_thread": "run-0178",
+      "person_thread": "run-0179",
+      "prior_note_count": 9,
+      "transcript": "episodes/continuous/cleaning-scent/transcript.json"
+    }
+  ],
+  "groups": {
+    "isolated": {
+      "episodes": 10,
+      "teaching_misses": 6,
+      "feedback_agreements": 10,
+      "questions": 16,
+      "episodes_without_questions": 0,
+      "draft_changes": 9,
+      "questions_by_stage": {
+        "audit": 9,
+        "transfer": 4,
+        "exception": 3
+      },
+      "transfer": {
+        "cold": 3,
+        "note": 7,
+        "tentative": 9,
+        "executed": 9,
+        "gains": 5,
+        "losses": 1
+      },
+      "exception": {
+        "cold": 10,
+        "note": 10,
+        "tentative": 9,
+        "executed": 10,
+        "gains": 0,
+        "losses": 0
+      }
+    },
+    "contrast": {
+      "episodes": 4,
+      "teaching_misses": 4,
+      "feedback_agreements": 4,
+      "questions": 8,
+      "episodes_without_questions": 1,
+      "draft_changes": 3,
+      "questions_by_stage": {
+        "audit": 3,
+        "transfer": 3,
+        "exception": 2
+      },
+      "transfer": {
+        "cold": 2,
+        "note": 3,
+        "tentative": 4,
+        "executed": 4,
+        "gains": 1,
+        "losses": 0
+      },
+      "exception": {
+        "cold": 4,
+        "note": 4,
+        "tentative": 4,
+        "executed": 4,
+        "gains": 0,
+        "losses": 0
+      }
+    },
+    "continuous": {
+      "episodes": 10,
+      "teaching_misses": 5,
+      "feedback_agreements": 10,
+      "questions": 16,
+      "episodes_without_questions": 0,
+      "draft_changes": 10,
+      "questions_by_stage": {
+        "audit": 10,
+        "transfer": 4,
+        "exception": 2
+      },
+      "transfer": {
+        "cold": 3,
+        "note": 6,
+        "tentative": 9,
+        "executed": 10,
+        "gains": 4,
+        "losses": 1
+      },
+      "exception": {
+        "cold": 10,
+        "note": 10,
+        "tentative": 10,
+        "executed": 10,
+        "gains": 0,
+        "losses": 0
+      }
+    }
+  },
+  "visual_comparisons": [
+    {
+      "family": "paused-work",
+      "draft_correct": true,
+      "valid": true,
+      "draft_choice": "A",
+      "expected": "A",
+      "cold_correct": true,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/paused-work/receipt.json",
+      "receipt_sha256": "c043ad407cf05c41abfe03490f54ce89ca2d32076814d0fcd914f45551878c94"
+    },
+    {
+      "family": "gift-finishing",
+      "draft_correct": false,
+      "valid": true,
+      "draft_choice": "A",
+      "expected": "B",
+      "cold_correct": false,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/gift-finishing/receipt.json",
+      "receipt_sha256": "57fbe4502cfa686d32eb2c2249b4094e9465a33a270efa431d33efb635b49bc6"
+    },
+    {
+      "family": "receiving-hand",
+      "draft_correct": true,
+      "valid": true,
+      "draft_choice": "A",
+      "expected": "A",
+      "cold_correct": false,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/receiving-hand/receipt.json",
+      "receipt_sha256": "b0ac063bbf83ff96faa8ee265c22bd047361502a0f80546d389b917420144130"
+    },
+    {
+      "family": "approach-side",
+      "draft_correct": true,
+      "valid": true,
+      "draft_choice": "A",
+      "expected": "A",
+      "cold_correct": true,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/approach-side/receipt.json",
+      "receipt_sha256": "23acc066453e4bd6c4b8edb918e79cc926f6fed84defe2c761bc86cb56a845b7"
+    },
+    {
+      "family": "completion-update",
+      "draft_correct": false,
+      "valid": true,
+      "draft_choice": "B",
+      "expected": "A",
+      "cold_correct": false,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/completion-update/receipt.json",
+      "receipt_sha256": "b1ca1ca3ba2cc4b1cde8f012fd32d67d6b6a1d93eecd3fbdaad451ccfc53a6dd"
+    },
+    {
+      "family": "vegetable-texture",
+      "draft_correct": true,
+      "valid": true,
+      "draft_choice": "B",
+      "expected": "B",
+      "cold_correct": true,
+      "note_correct": false,
+      "receipt": "visual-only-comparisons/vegetable-texture/receipt.json",
+      "receipt_sha256": "48ae2d075c3ffbcf0283923608ad67cdc4ff139ce77069fae995fb957f9d6c34"
+    },
+    {
+      "family": "private-storage",
+      "draft_correct": false,
+      "valid": true,
+      "draft_choice": "B",
+      "expected": "A",
+      "cold_correct": false,
+      "note_correct": false,
+      "receipt": "visual-only-comparisons/private-storage/receipt.json",
+      "receipt_sha256": "6aaa8a448f71039fe473e5ad73bb903d318d6789ecdedfc4a5ca397e6bd45898"
+    },
+    {
+      "family": "lighting",
+      "draft_correct": false,
+      "valid": true,
+      "draft_choice": "B",
+      "expected": "A",
+      "cold_correct": false,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/lighting/receipt.json",
+      "receipt_sha256": "d5dcfb6f4bf5a6325ba647aa73d177349324ec15d0bf06cb8cab2c6f475dbf66"
+    },
+    {
+      "family": "cleaning-scent",
+      "draft_correct": true,
+      "valid": true,
+      "draft_choice": "A",
+      "expected": "A",
+      "cold_correct": false,
+      "note_correct": true,
+      "receipt": "visual-only-comparisons/cleaning-scent/receipt.json",
+      "receipt_sha256": "94074581e07d03a2cc5bf37408326256ce335d1f9bdd8c3c09fb0c190a21bf30"
+    }
+  ],
+  "retention": {
+    "library": {
+      "N-39307f1617": {
+        "title": "Clipped rust mat placement",
+        "file": "library/01.md",
+        "sha256": "1df7d0bbf25168992d723b6ca13f786ca092910d656b53d7d334b34a5785e086"
+      },
+      "N-83c30a4ea7": {
+        "title": "Personal gift cards and gift box arrangement",
+        "file": "library/02.md",
+        "sha256": "2fd396340e14b1d4860d5dd6269f23b522b7aa9b29fc396173b7da11022c3bbf"
+      },
+      "N-14f935e0ab": {
+        "title": "Left-hand handoff preference",
+        "file": "library/03.md",
+        "sha256": "b59d569b099353cb33bd1a83d063ad09a46d8f13a32f712f4674df0da77165c9"
+      },
+      "N-3150d3ad58": {
+        "title": "Assembly parts by order of use",
+        "file": "library/04.md",
+        "sha256": "90d2349fab202ae851fde26207e5fe73b32be5604f4e8c96e86ef56d5b9a0630"
+      },
+      "N-a717044ab0": {
+        "title": "Drink placement and folded cloth handoffs",
+        "file": "library/05.md",
+        "sha256": "06b380442761edd487b5d512a7d3afd4360663356d032562c379df4b56bb1ab6"
+      },
+      "N-66a3c417d0": {
+        "title": "Low-priority updates during solo work and video calls",
+        "file": "library/06.md",
+        "sha256": "2bee9da37263d3efdaa54919620151c02ff118512db14559e2b65315835e9d33"
+      },
+      "N-a4e874cc23": {
+        "title": "Broccoli and green bean texture",
+        "file": "library/07.md",
+        "sha256": "21f3cc8ebc5841d838681177ac8a471ee591f86854795ad06b6a6ec577857a5d"
+      },
+      "N-ba35af96c8": {
+        "title": "Entryway storage for personal belongings and pen case",
+        "file": "library/08.md",
+        "sha256": "0717af5d55e2c97fe1ede1ead7c39a314834b1670a41eee723c0a7f471c78d8a"
+      },
+      "N-01819a7d1d": {
+        "title": "Overhead lighting for solo work",
+        "file": "library/09.md",
+        "sha256": "01215945389334e9e7a5635a8efaf60d4f7b9de76551cd6d5f4c9528ad4a5d02"
+      },
+      "N-52881ea58e": {
+        "title": "Cleaner preferences for kitchen counters and sewing surfaces",
+        "file": "library/10.md",
+        "sha256": "5b77cd1ae2a32dcc1aca9a7995ed2e69000d6db5baa081e0efb123f32c91e0c6"
+      }
+    },
+    "planned_notes": 10,
+    "available_notes": 10,
+    "library_slots": [
+      {
+        "family": "paused-work",
+        "filename": "01.md",
+        "note_id": "N-39307f1617",
+        "status": "present"
+      },
+      {
+        "family": "gift-finishing",
+        "filename": "02.md",
+        "note_id": "N-83c30a4ea7",
+        "status": "present"
+      },
+      {
+        "family": "receiving-hand",
+        "filename": "03.md",
+        "note_id": "N-14f935e0ab",
+        "status": "present"
+      },
+      {
+        "family": "material-order",
+        "filename": "04.md",
+        "note_id": "N-3150d3ad58",
+        "status": "present"
+      },
+      {
+        "family": "approach-side",
+        "filename": "05.md",
+        "note_id": "N-a717044ab0",
+        "status": "present"
+      },
+      {
+        "family": "completion-update",
+        "filename": "06.md",
+        "note_id": "N-66a3c417d0",
+        "status": "present"
+      },
+      {
+        "family": "vegetable-texture",
+        "filename": "07.md",
+        "note_id": "N-a4e874cc23",
+        "status": "present"
+      },
+      {
+        "family": "private-storage",
+        "filename": "08.md",
+        "note_id": "N-ba35af96c8",
+        "status": "present"
+      },
+      {
+        "family": "lighting",
+        "filename": "09.md",
+        "note_id": "N-01819a7d1d",
+        "status": "present"
+      },
+      {
+        "family": "cleaning-scent",
+        "filename": "10.md",
+        "note_id": "N-52881ea58e",
+        "status": "present"
+      }
+    ],
+    "summary": {
+      "transfer": {
+        "planned": 10,
+        "paired_scored": 10,
+        "cold_scored": 10,
+        "cold_correct": 2,
+        "library_scored": 10,
+        "library_correct": 9,
+        "gains": 8,
+        "losses": 1
+      },
+      "exception": {
+        "planned": 10,
+        "paired_scored": 10,
+        "cold_scored": 10,
+        "cold_correct": 10,
+        "library_scored": 10,
+        "library_correct": 9,
+        "gains": 0,
+        "losses": 1
+      }
+    },
+    "scenes": [
+      {
+        "family": "paused-work",
+        "phase": "transfer",
+        "task": "Make room for the cutting board on my sewing counter.",
+        "expected": "A",
+        "folder": "paused-work-transfer",
+        "options": {
+          "A": "Shelve the rust mat.",
+          "B": "Shelve the teal mat."
+        },
+        "selected": [
+          "N-39307f1617"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "paused-work",
+        "phase": "exception",
+        "task": "Free a bench spot for a new project.",
+        "expected": "B",
+        "folder": "paused-work-exception",
+        "options": {
+          "A": "Shelve the loose organizer.",
+          "B": "Shelve the closed stitching kit."
+        },
+        "selected": [
+          "N-39307f1617"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": false,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "gift-finishing",
+        "phase": "transfer",
+        "task": "Help get the gift box ready.",
+        "expected": "A",
+        "folder": "gift-finishing-transfer",
+        "options": {
+          "A": "Open the box and set the tissue and gift alongside it.",
+          "B": "Arrange the tissue and gift inside and close the box."
+        },
+        "selected": [
+          "N-83c30a4ea7"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "gift-finishing",
+        "phase": "exception",
+        "task": "Prepare the labeled lunches for tomorrow morning.",
+        "expected": "B",
+        "folder": "gift-finishing-exception",
+        "options": {
+          "A": "Set out the boxes, portions, and lids for packing.",
+          "B": "Put a portion in each box and close each lid."
+        },
+        "selected": [
+          "N-3150d3ad58"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "receiving-hand",
+        "phase": "transfer",
+        "task": "Pass me the remote.",
+        "expected": "A",
+        "folder": "receiving-hand-transfer",
+        "options": {
+          "A": "Offer it to the person's left hand.",
+          "B": "Offer it to the person's right hand."
+        },
+        "selected": [
+          "N-14f935e0ab"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "receiving-hand",
+        "phase": "exception",
+        "task": "Pass me the remote.",
+        "expected": "B",
+        "folder": "receiving-hand-exception",
+        "options": {
+          "A": "Offer it to the person's left hand.",
+          "B": "Offer it to the person's right hand."
+        },
+        "selected": [
+          "N-14f935e0ab"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "material-order",
+        "phase": "transfer",
+        "task": "Set out a row for the seated person to use the pot, scoop, then tag.",
+        "expected": "A",
+        "folder": "material-order-transfer",
+        "options": {
+          "A": "Place the pot at the person's right, scoop in the middle, and tag at their left.",
+          "B": "Place the pot at the person's left, scoop in the middle, and tag at their right."
+        },
+        "selected": [
+          "N-3150d3ad58"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "material-order",
+        "phase": "exception",
+        "task": "Put out the markers for four people sharing the table.",
+        "expected": "B",
+        "folder": "material-order-exception",
+        "options": {
+          "A": "Lay the markers in a row in front of the seated person.",
+          "B": "Put the markers together in the central tray."
+        },
+        "selected": [],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "approach-side",
+        "phase": "transfer",
+        "task": "Bring me the folded cloth.",
+        "expected": "A",
+        "folder": "approach-side-transfer",
+        "options": {
+          "A": "Present it in the person's left-front quarter.",
+          "B": "Present it in the person's right-front quarter."
+        },
+        "selected": [
+          "N-a717044ab0",
+          "N-14f935e0ab"
+        ],
+        "cold": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "approach-side",
+        "phase": "exception",
+        "task": "Bring me the folded cloth.",
+        "expected": "A",
+        "folder": "approach-side-exception",
+        "options": {
+          "A": "Present it in the person's right-front quarter.",
+          "B": "Wait by the shelf for access to the person's left-front quarter."
+        },
+        "selected": [
+          "N-a717044ab0",
+          "N-14f935e0ab"
+        ],
+        "cold": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "completion-update",
+        "phase": "transfer",
+        "task": "The delivery is complete while the person draws alone. Give a low-priority update.",
+        "expected": "A",
+        "folder": "completion-update-transfer",
+        "options": {
+          "A": "Give a brief spoken update now.",
+          "B": "Give the spoken update at the person's next pause."
+        },
+        "selected": [
+          "N-66a3c417d0"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "completion-update",
+        "phase": "exception",
+        "task": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+        "expected": "A",
+        "folder": "completion-update-exception",
+        "options": {
+          "A": "Give the spoken update at the person's next pause.",
+          "B": "Give a brief spoken update now."
+        },
+        "selected": [
+          "N-66a3c417d0"
+        ],
+        "cold": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "vegetable-texture",
+        "phase": "transfer",
+        "task": "Prepare cooked green beans for the warm side dish.",
+        "expected": "B",
+        "folder": "vegetable-texture-transfer",
+        "options": {
+          "A": "Serve the firmer batch.",
+          "B": "Serve the more tender batch."
+        },
+        "selected": [
+          "N-a4e874cc23"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "vegetable-texture",
+        "phase": "exception",
+        "task": "Prepare cooked green beans for the chilled salad.",
+        "expected": "B",
+        "folder": "vegetable-texture-exception",
+        "options": {
+          "A": "Serve the more tender batch.",
+          "B": "Serve the firmer batch."
+        },
+        "selected": [
+          "N-a4e874cc23"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "private-storage",
+        "phase": "transfer",
+        "task": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+        "expected": "A",
+        "folder": "private-storage-transfer",
+        "options": {
+          "A": "Place the items in the shallow compartment and close it.",
+          "B": "Leave the pen case on the open tray."
+        },
+        "selected": [
+          "N-ba35af96c8"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "private-storage",
+        "phase": "exception",
+        "task": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+        "expected": "A",
+        "folder": "private-storage-exception",
+        "options": {
+          "A": "Set the rulers on the tray beside the shared craft materials.",
+          "B": "Place the items in the shallow compartment and close it."
+        },
+        "selected": [
+          "N-3150d3ad58"
+        ],
+        "cold": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "lighting",
+        "phase": "transfer",
+        "task": "Turn on a light for the person comparing ceramic tile patterns.",
+        "expected": "B",
+        "folder": "lighting-transfer",
+        "options": {
+          "A": "Turn on the desk lamp.",
+          "B": "Turn on the overhead fixture."
+        },
+        "selected": [
+          "N-01819a7d1d"
+        ],
+        "cold": {
+          "choice": "A",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "lighting",
+        "phase": "exception",
+        "task": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+        "expected": "B",
+        "folder": "lighting-exception",
+        "options": {
+          "A": "Turn on the overhead fixture.",
+          "B": "Turn on the desk lamp."
+        },
+        "selected": [
+          "N-01819a7d1d"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "B",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "cleaning-scent",
+        "phase": "transfer",
+        "task": "Wipe the work surface in my private sewing room. Only I use it.",
+        "expected": "A",
+        "folder": "cleaning-scent-transfer",
+        "options": {
+          "A": "Use the mild-citrus cleaner.",
+          "B": "Use the fragrance-free cleaner."
+        },
+        "selected": [
+          "N-52881ea58e"
+        ],
+        "cold": {
+          "choice": "B",
+          "correct": false,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      },
+      {
+        "family": "cleaning-scent",
+        "phase": "exception",
+        "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+        "expected": "A",
+        "folder": "cleaning-scent-exception",
+        "options": {
+          "A": "Use the fragrance-free cleaner.",
+          "B": "Use the mild-citrus cleaner."
+        },
+        "selected": [
+          "N-52881ea58e"
+        ],
+        "cold": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        },
+        "library": {
+          "choice": "A",
+          "correct": true,
+          "status": "scored"
+        }
+      }
+    ]
+  },
+  "continuity": {
+    "robot_threads": 1,
+    "person_threads": 1,
+    "prior_note_counts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

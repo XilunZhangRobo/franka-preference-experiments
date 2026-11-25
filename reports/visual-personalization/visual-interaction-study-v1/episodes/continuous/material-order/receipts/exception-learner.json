@@ -1,0 +1,13 @@
+{
+  "input_sha256": "48931d0c7e62f5ef2d1656f25f2b58de8a23a9da7a16d4c628e357909dddb373",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592343556432189-f3dae5d1/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The central tray keeps the markers within reach of all four people.",
+    "question": ""
+  },
+  "images": [
+    "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+  ]
+}

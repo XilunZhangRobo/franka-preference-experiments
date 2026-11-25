@@ -1,0 +1,11 @@
+{
+  "input_sha256": "fa241dd12b66184db9091fb469a5d02321b61f383a6286d838998084a9dbb946",
+  "session": "forced-fa241dd12b66184db9091fb469a5d02321b61f383a6286d838998084a9dbb946",
+  "thread": "run-0055",
+  "request": "sessions/forced-fa241dd12b66184db9091fb469a5d02321b61f383a6286d838998084a9dbb946/1795631075123184422-0f648067/request.json",
+  "result": "sessions/forced-fa241dd12b66184db9091fb469a5d02321b61f383a6286d838998084a9dbb946/1795631075123184422-0f648067/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The desk lamp can light the tile samples directly so the person can compare their patterns."
+  }
+}

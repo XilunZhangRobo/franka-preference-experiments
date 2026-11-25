@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Help get the gift box ready.",
+    "options": {
+      "A": "Open the box and set the tissue and gift alongside it.",
+      "B": "Arrange the tissue and gift inside and close the box."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "ea5724cac525f142602db46ce9f18da0fe8761ca2cebf7af19a1032a21685f11"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

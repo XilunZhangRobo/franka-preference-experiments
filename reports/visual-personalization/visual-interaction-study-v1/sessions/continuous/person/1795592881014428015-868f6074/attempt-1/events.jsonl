@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0179"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"I’d like the green beans firm, please.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":455061,"cached_input_tokens":405632,"cache_write_input_tokens":0,"output_tokens":343,"reasoning_output_tokens":0}}

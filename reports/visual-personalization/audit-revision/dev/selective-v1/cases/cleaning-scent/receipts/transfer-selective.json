@@ -1,0 +1,12 @@
+{
+  "input_sha256": "42de5c193d338d1b982464ff1aeb8eb648a099fd5a7af212bb28561a843d676f",
+  "session": "transfer-selective",
+  "thread": "run-0071",
+  "request": "sessions/transfer-selective/1795631012513170696-5b0ea1e0/request.json",
+  "result": "sessions/transfer-selective/1795631012513170696-5b0ea1e0/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The orange bottle is the best match for your earlier cleaner choice on a surface only you use.",
+    "question": ""
+  }
+}

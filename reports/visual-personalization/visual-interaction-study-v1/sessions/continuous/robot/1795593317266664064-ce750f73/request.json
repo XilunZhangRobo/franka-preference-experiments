@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Entryway storage for personal belongings\n\nAfter use, put the house keys, flashlight, and the person’s other personal belongings in the shallow entryway compartment and close it. They moved the keys and flashlight there and asked for the same storage for their other belongings.\n",
+    "person_answer": "Please put my pen case in the usual closed compartment."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

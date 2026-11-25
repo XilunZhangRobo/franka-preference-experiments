@@ -1,0 +1,12 @@
+{
+  "input_sha256": "5ab187f772020f2f1af5f4b056fa240789de707c2e370ce487fd482f720065a4",
+  "thread": "run-0181",
+  "request": "episodes/continuous/approach-side/independent/exception-note/1795592513273670312-a77d789a/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person can reach the cloth on their right, and their left-side preference applies to drinks."
+  },
+  "images": [
+    "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  ]
+}

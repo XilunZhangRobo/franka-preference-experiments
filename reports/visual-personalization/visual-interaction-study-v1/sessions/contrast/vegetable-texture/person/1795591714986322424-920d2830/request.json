@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Would you like the green beans firmer or more tender in this chilled salad?",
+    "task": "Prepare cooked green beans for the chilled salad.",
+    "private_brief": "I like firm vegetables with warm meals. I want firm vegetables for chilled salads."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "db8f24f1528a3a83e03035d07d70da440d1bda7e2bce11452f1d9d34db800070"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0241"
+}

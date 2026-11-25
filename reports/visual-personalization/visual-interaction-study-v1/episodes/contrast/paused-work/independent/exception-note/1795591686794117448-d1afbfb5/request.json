@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Free a bench spot for a new project.",
+    "options": {
+      "A": "Shelve the loose organizer.",
+      "B": "Shelve the closed stitching kit."
+    },
+    "memory": "# Workbench mat shelving cue\n\nWhen clearing the workbench, shelve the mat you mark with a clip. This time the teal mat had the clip, and you returned the rust mat to the bench. The cue is the clip, regardless of mat color.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "7da0c38118a40f3790fa87c2b84cb07fabc01b0b45f0a1de5369f2bdbfe8f278"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

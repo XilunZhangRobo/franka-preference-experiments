@@ -1,0 +1,13 @@
+{
+  "first-choice": "episodes/continuous/material-order/receipts/first-choice.json",
+  "person-response": "episodes/continuous/material-order/receipts/person-response.json",
+  "audit": "episodes/continuous/material-order/receipts/audit.json",
+  "audit-answer": "episodes/continuous/material-order/receipts/audit-answer.json",
+  "updated-note": "episodes/continuous/material-order/receipts/updated-note.json",
+  "transfer-cold": "episodes/continuous/material-order/receipts/transfer-cold.json",
+  "transfer-note": "episodes/continuous/material-order/receipts/transfer-note.json",
+  "transfer-learner": "episodes/continuous/material-order/receipts/transfer-learner.json",
+  "exception-cold": "episodes/continuous/material-order/receipts/exception-cold.json",
+  "exception-note": "episodes/continuous/material-order/receipts/exception-note.json",
+  "exception-learner": "episodes/continuous/material-order/receipts/exception-learner.json"
+}

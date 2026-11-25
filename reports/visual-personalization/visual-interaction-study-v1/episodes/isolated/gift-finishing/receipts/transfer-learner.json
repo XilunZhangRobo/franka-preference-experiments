@@ -1,0 +1,13 @@
+{
+  "input_sha256": "96bdf1f3f885354e6c474c29ae5096150a3912b723cc3e04c94f155886a7915e",
+  "thread": "run-0264",
+  "request": "sessions/isolated/gift-finishing/robot/1795590287419065834-4ee613a8/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Opening the box leaves you the option to arrange the tissue and gift yourself.",
+    "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"
+  },
+  "images": [
+    "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+  ]
+}

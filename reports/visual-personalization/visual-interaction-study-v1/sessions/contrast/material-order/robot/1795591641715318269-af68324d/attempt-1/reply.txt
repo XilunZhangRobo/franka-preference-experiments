@@ -1,0 +1,7 @@
+{
+  "observation": "After I set the pieces down, the person moved the red base to their left and the yellow cap to their right.",
+  "interpretation": "They seem to prefer that arrangement for this assembly.",
+  "title": "Red base on the left, yellow cap on the right",
+  "note": "For this assembly, place the red base by their left hand and the yellow cap by their right.",
+  "question": "For other assemblies, do you also prefer the base on your left and the cap on your right?"
+}

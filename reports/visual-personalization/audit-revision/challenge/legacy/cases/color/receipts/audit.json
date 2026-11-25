@@ -1,0 +1,14 @@
+{
+  "input_sha256": "5899d6e3981fd3bdc18a1c7fb7b83d820baf7f92efbd1cc36ddabfd5ddc03196",
+  "session": "writer",
+  "thread": "run-0002",
+  "request": "sessions/writer/1795631274676321035-0ac60a4b/request.json",
+  "result": "sessions/writer/1795631274676321035-0ac60a4b/attempt-1/result.json",
+  "reply": {
+    "observation": "I put the finished piece in the amber tray. The person then moved it to the teal tray.",
+    "interpretation": "They may have wanted this piece stored in the teal tray.",
+    "title": "Tray for finished pieces",
+    "note": "The person chose the teal tray for this finished piece.",
+    "question": "Should I use the teal tray for future finished pieces too?"
+  }
+}

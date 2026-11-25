@@ -1,0 +1,12 @@
+{
+  "input_sha256": "325b5967d3adf2a027ff2c844e6729528bfefbeb594e96fea59d2bf7afac8fae",
+  "session": "control-selective",
+  "thread": "run-0079",
+  "request": "sessions/control-selective/1795631095310927935-2dffb083/request.json",
+  "result": "sessions/control-selective/1795631095310927935-2dffb083/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+    "question": ""
+  }
+}

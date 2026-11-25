@@ -1,0 +1,11 @@
+{
+  "input_sha256": "d6c9f0d9079a7955d82c86e9f1414a405488d2ba8ebf711490a297ffe51bea76",
+  "thread": "run-0229",
+  "request": "sessions/contrast/paused-work/person/1795591702557460039-dc89042a/request.json",
+  "reply": {
+    "answer": "Please shelve the closed stitching kit."
+  },
+  "images": [
+    "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  ]
+}

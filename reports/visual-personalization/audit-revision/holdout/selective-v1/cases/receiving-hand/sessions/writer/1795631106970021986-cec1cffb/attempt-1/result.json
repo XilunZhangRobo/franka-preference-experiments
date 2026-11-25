@@ -1,0 +1,11 @@
+{
+  "thread_id": "run-0167",
+  "reply": {
+    "observation": "The person took the flashlight with their right hand, then transferred it to their left.",
+    "interpretation": "They may have wanted the flashlight in their left hand for this task.",
+    "title": "Flashlight handoff",
+    "note": "For a similar handoff, offer the flashlight to their left hand if it is free. One transfer is only a tentative clue.",
+    "question": ""
+  },
+  "elapsed_s": 7.132201795000583
+}

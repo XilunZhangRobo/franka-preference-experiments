@@ -1,0 +1,31 @@
+{
+  "label": "Supplemental held-out mug handoff",
+  "conditions": [
+    "both-free",
+    "left-occupied"
+  ],
+  "arms": [
+    "empty",
+    "original-note"
+  ],
+  "task": "Pass me my lidded drinking mug.",
+  "renderer": {
+    "size": [
+      640,
+      480
+    ],
+    "fps": 6,
+    "renderer": "blender-cycles",
+    "samples": 12,
+    "camera": "agent",
+    "device": "CPU"
+  },
+  "seed": 3931,
+  "original_note": "../episodes/isolated/receiving-hand/memory.md",
+  "original_note_sha256": "0e3037097a29630e01f1117cc2c6a231d50af0fc732786ce60e44dd1a4ef2658",
+  "expected": {
+    "both-free": "left",
+    "left-occupied": "right"
+  },
+  "design": "Four fresh independent Astra decisions; each pair sees identical camera bytes and option ordering. A free hand can receive the mug; an occupied hand leaves the robot holding its offer. Both conditions share a kitchen layout and starting mug position. No teaching or clarification."
+}

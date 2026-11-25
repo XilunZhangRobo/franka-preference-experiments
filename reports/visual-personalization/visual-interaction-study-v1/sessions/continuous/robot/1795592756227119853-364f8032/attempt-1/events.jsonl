@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Broccoli texture for warm dinners\",\"note\":\"Serve tender broccoli with warm dinners by default. The person said they usually prefer it that way.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":1669726,"cached_input_tokens":1584512,"cache_write_input_tokens":0,"output_tokens":1831,"reasoning_output_tokens":0}}

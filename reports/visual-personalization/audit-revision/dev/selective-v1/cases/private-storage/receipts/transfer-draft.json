@@ -1,0 +1,11 @@
+{
+  "input_sha256": "2ca87849b8dc1153f219be1ebc9861d71e4b9d886996ce005baf827c58bd0f37",
+  "session": "forced-2ca87849b8dc1153f219be1ebc9861d71e4b9d886996ce005baf827c58bd0f37",
+  "thread": "run-0085",
+  "request": "sessions/forced-2ca87849b8dc1153f219be1ebc9861d71e4b9d886996ce005baf827c58bd0f37/1795631008140632668-91e63c18/request.json",
+  "result": "sessions/forced-2ca87849b8dc1153f219be1ebc9861d71e4b9d886996ce005baf827c58bd0f37/1795631008140632668-91e63c18/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The open tray keeps your pen case easy to grab for tomorrow’s practice."
+  }
+}

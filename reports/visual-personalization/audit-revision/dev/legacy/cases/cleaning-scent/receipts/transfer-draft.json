@@ -1,0 +1,11 @@
+{
+  "input_sha256": "546951bb29bbc2682546b066202bf522e5c01d3beeec84b14615f80d1f40a7d4",
+  "session": "forced-546951bb29bbc2682546b066202bf522e5c01d3beeec84b14615f80d1f40a7d4",
+  "thread": "run-0036",
+  "request": "sessions/forced-546951bb29bbc2682546b066202bf522e5c01d3beeec84b14615f80d1f40a7d4/1795631018392516697-5be6dc75/request.json",
+  "result": "sessions/forced-546951bb29bbc2682546b066202bf522e5c01d3beeec84b14615f80d1f40a7d4/1795631018392516697-5be6dc75/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Fragrance-free is a neutral choice because your earlier orange-cleaner choice was for the kitchen."
+  }
+}

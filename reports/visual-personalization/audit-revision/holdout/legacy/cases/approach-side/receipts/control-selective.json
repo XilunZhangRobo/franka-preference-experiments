@@ -1,0 +1,12 @@
+{
+  "input_sha256": "009024747e10e6b35d3fc1fb15072f63e23ba544df8b768e4fb4e3fcfe59f865",
+  "session": "control-selective",
+  "thread": "run-0091",
+  "request": "sessions/control-selective/1795631160769508613-264348a3/request.json",
+  "result": "sessions/control-selective/1795631160769508613-264348a3/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their right hand is near the folded cloth, and the left-side preference applies to drinks.",
+    "question": ""
+  }
+}

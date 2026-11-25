@@ -1,0 +1,11 @@
+{
+  "input_sha256": "1cd0c2f3687297e25238c43dc12454be7bbc4cc80bc6f3c95a50f9c621bf4071",
+  "session": "transfer-selective",
+  "thread": "run-0165",
+  "request": "sessions/transfer-selective/1795631200646770367-c59b4886/request.json",
+  "result": "sessions/transfer-selective/1795631200646770367-c59b4886/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The teal kit appears open, so the rust mat is the only remaining option."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Prepare cooked green beans for the chilled salad.",
+    "options": {
+      "A": "Serve the more tender batch.",
+      "B": "Serve the firmer batch."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "482c9fc119b5877b639f1bc7ef943fecf6812d557095c88b94100e2d31059412"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0077",
+    "reply": {
+      "observation": "The robot switched on the desk lamp. The person used the same switch to turn it off, then pressed the other switch. The room appeared brighter afterward.",
+      "interpretation": "They may prefer room lighting to a focused beam while working on the puzzle.",
+      "title": "Room light for puzzles",
+      "note": "Try the room light first for this person’s puzzle work. One switch change suggests a preference for this setup, but the reason is unclear.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0080",
+    "reply": {
+      "choice": "B",
+      "reason": "The desk lamp can light the tile patterns directly, and the room-light preference was specific to puzzles."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0081",
+    "reply": {
+      "choice": "B",
+      "reason": "The desk lamp is beside the tile samples, and the room-light preference was specific to puzzles.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0078",
+    "reply": {
+      "choice": "A",
+      "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0079",
+    "reply": {
+      "choice": "A",
+      "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+      "question": ""
+    }
+  }
+]

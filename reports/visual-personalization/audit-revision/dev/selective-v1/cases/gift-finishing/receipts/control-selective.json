@@ -1,0 +1,12 @@
+{
+  "input_sha256": "31452b73e714a6adea07eedaad889638bf4ab0c8b300ed5415fb1eaba7f901af",
+  "session": "control-selective",
+  "thread": "run-0074",
+  "request": "sessions/control-selective/1795631044057604690-5a1630ab/request.json",
+  "result": "sessions/control-selective/1795631044057604690-5a1630ab/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Packing one portion in each box and closing its labeled lid gets both lunches ready for tomorrow morning.",
+    "question": ""
+  }
+}

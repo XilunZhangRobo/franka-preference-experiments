@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "current_note": "# Keep the clipped rust mat on the workbench\n\nWhen clearing space, leave the rust mat on the bench if you’ve clipped it. You confirmed this rule after pointing from the shelved mat toward the bench. Your preference for an unclipped rust mat is unknown.\n",
+    "person_answer": "Please keep the rust mat on the bench."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0282"
+}

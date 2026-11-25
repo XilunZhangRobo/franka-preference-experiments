@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0167",
+    "reply": {
+      "observation": "The person took the flashlight with their right hand, then transferred it to their left.",
+      "interpretation": "They may have wanted the flashlight in their left hand for this task.",
+      "title": "Flashlight handoff",
+      "note": "For a similar handoff, offer the flashlight to their left hand if it is free. One transfer is only a tentative clue.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0170",
+    "reply": {
+      "choice": "A",
+      "reason": "Their left hand is free, and the earlier flashlight handoff suggests it may be a good choice."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0171",
+    "reply": {
+      "choice": "A",
+      "reason": "Their left hand is free, and the earlier flashlight handoff suggests offering the remote there.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0168",
+    "reply": {
+      "choice": "A",
+      "reason": "Their right hand is free while their left hand is resting on the cloth."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0169",
+    "reply": {
+      "choice": "A",
+      "reason": "Their right hand is free and closer to the remote, while their left hand is on a cloth.",
+      "question": ""
+    }
+  }
+]

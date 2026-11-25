@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b1a2e865793f5521967ed494d4598401646ebcc40b3b284eac65a7364871c408",
+  "session": "control-selective",
+  "thread": "run-0144",
+  "request": "sessions/control-selective/1795631210834775553-7691d569/request.json",
+  "result": "sessions/control-selective/1795631210834775553-7691d569/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The folded cloth is already in front of the person on their right, within easy reach.",
+    "question": ""
+  }
+}

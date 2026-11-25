@@ -1,0 +1,1 @@
+{"choice":"A","reason":"Your preference for firmer broccoli suggests you might like firmer green beans too.","question":"Would you like the green beans firmer or more tender with this meal?"}

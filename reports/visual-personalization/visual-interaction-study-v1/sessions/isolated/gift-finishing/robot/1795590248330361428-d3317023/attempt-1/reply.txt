@@ -1,0 +1,7 @@
+{
+  "observation": "You took the flower from my gripper and pressed it onto the drawn stem.",
+  "interpretation": "You may have wanted to choose its exact position yourself.",
+  "title": "Placing card decorations",
+  "note": "When I brought the flower over this card, you handled the final placement.",
+  "question": "For future craft projects, would you like me to hand you decorations so you can place them yourself?"
+}

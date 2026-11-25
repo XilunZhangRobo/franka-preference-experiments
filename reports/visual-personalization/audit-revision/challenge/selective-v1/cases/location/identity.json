@@ -1,0 +1,90 @@
+{
+  "protocol_version": 1,
+  "branch_selective": true,
+  "shared_selective_receipt_hashes": {
+    "transfer": "fb538b0b29693ef01fb65131a5510d0d8dcebb5602b23954e51ec307aca20d3f",
+    "control": "917fc15900090684686849c5ab82df90aeffd27158ced4d99cb472cdc1420848"
+  },
+  "case_id": "location",
+  "model": "gpt-6.2-astra",
+  "prompts": {
+    "audit": "Review the camera interaction. What happened? What preference might explain it? Separate the visible evidence from your inference. Use context and ordinary judgment to write a short rule for a future choice, if the evidence supports one. Keep meaningful uncertainty in the note. Leave the person uninterrupted when you can proceed. Ask one brief question only when plausible readings still call for different actions and choosing poorly would matter. Return JSON with short string fields observation, interpretation, title, note and question. Leave unwarranted fields empty.",
+    "refine": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+    "decide": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+    "selective": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+    "answer": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}."
+  },
+  "seed_metadata": "challenge",
+  "quiet": false,
+  "private_brief": "My finished pieces go in the tray on my own left, whichever color is there. Its position relative to my body matters to me. If I explicitly request a different tray for one piece, use the tray I request.",
+  "audit_context": {
+    "task": "Put the finished piece away.",
+    "your_action": "You put the finished piece in the amber tray.",
+    "seconds": [
+      0.0,
+      0.5,
+      1.1667,
+      1.6667,
+      2.1667,
+      2.8333,
+      3.3333,
+      3.8333,
+      4.5,
+      5.0,
+      5.5,
+      6.1667,
+      6.6667,
+      7.1667,
+      7.8333,
+      8.3333
+    ],
+    "heard": []
+  },
+  "audit_image_hashes": [
+    "88ce8358e15c0774181ed355a40b20dee3f3fe23113abd7ce1bc7b0db054e913",
+    "54199bd69e249877c285e7468c1743bdc226d091b89ba74b0b2525d0c7993522",
+    "4b9dda683f1c4f66a22750cd69edd1b736e5ce3e3e9267b91087438cb50f8ef8",
+    "20693fbec5c1062bc158e385185341ccc710b918b1ad08b188ff41b7cb9f6c95",
+    "6ab72642eb714e6f2e46abdbe534e192fcaaf1117657e965bd07fe770f4b9444",
+    "720f2e71c78ab61851cc10305e7200218a3b24c1164513f96a0241401ef9a169",
+    "f4206a6527099b9d410bf707ac52df8c64e83baafc36e2efc1faf51c37911b14",
+    "f6511e244e033c8c1cc0dc68439d319c53acb675c20365ecd9e65672083798af",
+    "f02471ed82b56e901b10dfd5a37d9fe0705563296b68e61eee73fa567b88752b",
+    "9df1a32e4ba855f2d9730db1b18836659950c74276c73ff41e4be1ad2c2f775e",
+    "93eead4897a894db04317150715a00b6d9c391bd53d860ea8ca9c06bfc5750c6",
+    "545d7fcbdcce5fb0de62da35a4221ed6d17ef34fc0906d7813456d57bcf25cab",
+    "b9f818429e484cb3a633f929d3403c06aa779a481b06832811bbd6d50a5fdb10",
+    "cab7f55a9d6e9658b307657fd77334d195529cfdcbac6c0b5552caff498eabaa",
+    "215388e29197423055a21fab32a60eccf7210bba24b46ca5fce6091e3febddc5",
+    "2e5f82d5bfda50f6ee49e426ac2e1b092a818ae2729d060f12695daa48d63ed1"
+  ],
+  "probes": {
+    "transfer": {
+      "public": {
+        "task": "Put the finished piece away.",
+        "options": {
+          "A": "Put the piece in the teal tray.",
+          "B": "Put the piece in the amber tray."
+        }
+      },
+      "image_hashes": [
+        "d224d4661b3bf5fece040bc647b3237902c7f03599ad1d5f20be252c28f9ab8c"
+      ],
+      "expected": "B"
+    },
+    "control": {
+      "public": {
+        "task": "For this piece, please use the amber tray.",
+        "options": {
+          "A": "Put the piece in the teal tray.",
+          "B": "Put the piece in the amber tray."
+        }
+      },
+      "image_hashes": [
+        "d224d4661b3bf5fece040bc647b3237902c7f03599ad1d5f20be252c28f9ab8c"
+      ],
+      "expected": "B"
+    }
+  },
+  "shared_draft_receipt_sha256": "7b5af24983ce30afc2da69607ed5d77606834132fd988c7676631c1e4890ba54"
+}

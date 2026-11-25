@@ -1,0 +1,11 @@
+{
+  "input_sha256": "985a0b71919818a391e8c660c17748cbf19c8c0e832fef492a6b329acdee3474",
+  "session": "forced-985a0b71919818a391e8c660c17748cbf19c8c0e832fef492a6b329acdee3474",
+  "thread": "run-0143",
+  "request": "sessions/forced-985a0b71919818a391e8c660c17748cbf19c8c0e832fef492a6b329acdee3474/1795631207112837589-befb7ff9/request.json",
+  "result": "sessions/forced-985a0b71919818a391e8c660c17748cbf19c8c0e832fef492a6b329acdee3474/1795631207112837589-befb7ff9/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The cloth is within reach of the person’s right hand."
+  }
+}

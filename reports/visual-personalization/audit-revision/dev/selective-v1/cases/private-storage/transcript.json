@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0082",
+    "reply": {
+      "observation": "The robot put the keys and flashlight in the shallow compartment and closed it. The person then pointed toward the lid.",
+      "interpretation": "The gesture drew attention to the closed compartment. The person may have wanted it left open for easy access, though the gesture alone is ambiguous.",
+      "title": "Entryway compartment",
+      "note": "Keep the keys and flashlight together in the compartment. Leave the lid preference undecided for now.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0085",
+    "reply": {
+      "choice": "B",
+      "reason": "The open tray keeps your pen case easy to grab for tomorrow’s practice."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0086",
+    "reply": {
+      "choice": "B",
+      "reason": "The open tray keeps your pen case within easy reach for tomorrow.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0083",
+    "reply": {
+      "choice": "B",
+      "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0084",
+    "reply": {
+      "choice": "B",
+      "reason": "The tray beside the shared craft materials keeps all four rulers within reach for the first step.",
+      "question": ""
+    }
+  }
+]

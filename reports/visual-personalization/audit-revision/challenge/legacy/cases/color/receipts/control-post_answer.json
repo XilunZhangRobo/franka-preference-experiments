@@ -1,0 +1,11 @@
+{
+  "input_sha256": "5b9a3b61978346836c58624ec2e1b1486f0278a1f308ed7443853674d0b7acb9",
+  "session": "forced-5b9a3b61978346836c58624ec2e1b1486f0278a1f308ed7443853674d0b7acb9",
+  "thread": "run-0004",
+  "request": "sessions/forced-5b9a3b61978346836c58624ec2e1b1486f0278a1f308ed7443853674d0b7acb9/1795631304626410070-906d62cd/request.json",
+  "result": "sessions/forced-5b9a3b61978346836c58624ec2e1b1486f0278a1f308ed7443853674d0b7acb9/1795631304626410070-906d62cd/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You asked me to put this piece in the amber tray."
+  }
+}

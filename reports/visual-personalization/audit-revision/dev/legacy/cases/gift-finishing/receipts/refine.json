@@ -1,0 +1,11 @@
+{
+  "input_sha256": "2a332f55ab9af0d1c1c94795dc5a26c306e67e0d53f8ce7382f38f26ab6eaf9e",
+  "session": "refiner",
+  "thread": "run-0044",
+  "request": "sessions/refiner/1795631036898085321-06f0e751/request.json",
+  "result": "sessions/refiner/1795631036898085321-06f0e751/attempt-1/result.json",
+  "reply": {
+    "title": "Decoration placement on handmade cards",
+    "note": "When making cards together, hand the person the decorations so they can place them themselves. They handled the final placement on this card and explicitly requested the same for future cards."
+  }
+}

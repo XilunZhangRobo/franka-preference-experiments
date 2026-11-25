@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Should I usually leave the rust mat on the bench, or did you need it there just this time?",
+    "task": "Clear a spot on my workbench.",
+    "private_brief": "I clip a mat to mark the project I want shelved. An already closed kit can go on the shelf when starting a fresh project."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0229"
+}

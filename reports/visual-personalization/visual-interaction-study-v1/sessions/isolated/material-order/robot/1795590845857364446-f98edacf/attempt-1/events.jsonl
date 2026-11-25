@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0276"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The central tray keeps the markers within reach of all four people.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":112165,"cached_input_tokens":56832,"cache_write_input_tokens":0,"output_tokens":269,"reasoning_output_tokens":0}}

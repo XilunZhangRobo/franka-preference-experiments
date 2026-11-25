@@ -1,0 +1,10 @@
+{
+  "input_sha256": "2e12dbfd439bf2c2dcddb15b3eecab6d94325f074742452ac29f5bbe79bc03bd",
+  "thread": "run-0228",
+  "request": "sessions/contrast/paused-work/robot/1795591571128646406-df9e8697/request.json",
+  "reply": {
+    "title": "Workbench mat shelving cue",
+    "note": "When clearing the workbench, shelve the mat you mark with a clip. This time the teal mat had the clip, and you returned the rust mat to the bench. The cue is the clip, regardless of mat color."
+  },
+  "images": []
+}

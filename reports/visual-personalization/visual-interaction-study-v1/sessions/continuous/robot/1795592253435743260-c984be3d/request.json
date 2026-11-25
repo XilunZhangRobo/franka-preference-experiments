@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Set out the red base and yellow cap for assembly.",
+    "options": {
+      "A": "Set the red base on the person's left and the cap on their right.",
+      "B": "Set the red base on the person's right and the cap on their left."
+    },
+    "written_library": {
+      "01": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n",
+      "02": "# Personal gift cards and gift box arrangement\n\nFor handmade cards given as personal gifts, leave decorations beside the card for the person to place. For this gift box, they asked to arrange the tissue and gift themselves. Their preference for future boxes is unknown.\n",
+      "03": "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n"
+    }
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "3f7ca9bdeb9f408761fabf181b37f92ae1869e6cc123a9f391aac12af2c00a09"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

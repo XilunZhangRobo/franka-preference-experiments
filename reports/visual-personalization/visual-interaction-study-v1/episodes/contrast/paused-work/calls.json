@@ -1,0 +1,19 @@
+{
+  "first-choice": "episodes/contrast/paused-work/receipts/first-choice.json",
+  "person-response": "episodes/contrast/paused-work/receipts/person-response.json",
+  "audit": "episodes/contrast/paused-work/receipts/audit.json",
+  "audit-answer": "episodes/contrast/paused-work/receipts/audit-answer.json",
+  "updated-note": "episodes/contrast/paused-work/receipts/updated-note.json",
+  "transfer-cold": "episodes/contrast/paused-work/receipts/transfer-cold.json",
+  "transfer-note": "episodes/contrast/paused-work/receipts/transfer-note.json",
+  "transfer-learner": "episodes/contrast/paused-work/receipts/transfer-learner.json",
+  "transfer-answer": "episodes/contrast/paused-work/receipts/transfer-answer.json",
+  "transfer-act": "episodes/contrast/paused-work/receipts/transfer-act.json",
+  "transfer-refine": "episodes/contrast/paused-work/receipts/transfer-refine.json",
+  "exception-cold": "episodes/contrast/paused-work/receipts/exception-cold.json",
+  "exception-note": "episodes/contrast/paused-work/receipts/exception-note.json",
+  "exception-learner": "episodes/contrast/paused-work/receipts/exception-learner.json",
+  "exception-answer": "episodes/contrast/paused-work/receipts/exception-answer.json",
+  "exception-act": "episodes/contrast/paused-work/receipts/exception-act.json",
+  "exception-refine": "episodes/contrast/paused-work/receipts/exception-refine.json"
+}

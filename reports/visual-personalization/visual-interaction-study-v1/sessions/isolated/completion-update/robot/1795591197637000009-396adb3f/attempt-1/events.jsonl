@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0258"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Routine update timing during solo work and video calls\",\"note\":\"The person asked to hear routine updates right away when working alone. If they’re on a video call, wait until the call ends. They tapped the device once to hear an update again, but their replay preference is unclear.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":52157,"cached_input_tokens":39936,"cache_write_input_tokens":0,"output_tokens":204,"reasoning_output_tokens":0}}

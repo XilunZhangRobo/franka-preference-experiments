@@ -1,0 +1,11 @@
+{
+  "input_sha256": "dc4008dc694031fa8f004fe03aa778726c153968507cf13b6c4eb2b5cc163057",
+  "session": "forced-dc4008dc694031fa8f004fe03aa778726c153968507cf13b6c4eb2b5cc163057",
+  "thread": "run-0041",
+  "request": "sessions/forced-dc4008dc694031fa8f004fe03aa778726c153968507cf13b6c4eb2b5cc163057/1795631062362587259-7cec31c4/request.json",
+  "result": "sessions/forced-dc4008dc694031fa8f004fe03aa778726c153968507cf13b6c4eb2b5cc163057/1795631062362587259-7cec31c4/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box finishes the lunches."
+  }
+}

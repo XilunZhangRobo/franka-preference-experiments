@@ -1,0 +1,11 @@
+{
+  "input_sha256": "082ce57bc28356d9ef47589121050a1655bac51b39f9d9ce85e2d7f479a51991",
+  "thread": "run-0223",
+  "request": "sessions/contrast/material-order/person/1795591682624215801-57473750/request.json",
+  "reply": {
+    "answer": "Yes, please arrange the pot, scoop, and tag in that order from my left to my right."
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

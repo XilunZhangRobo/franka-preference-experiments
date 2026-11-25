@@ -1,0 +1,13 @@
+{
+  "input_sha256": "baa187ca50ea442d179051220e90c9c788772429de70ffbd02995bc06b35b543",
+  "thread": "run-0228",
+  "request": "sessions/contrast/paused-work/robot/1795591594233456041-7b0b67f1/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The rust mat has the clip you use to mark a mat for shelving on your workbench.",
+    "question": "Do you use the same clip cue on your sewing counter?"
+  },
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ]
+}

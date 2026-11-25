@@ -1,0 +1,99 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Set out the red base and yellow cap for assembly.",
+    "image": "media/material-order/teach-70/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Set the red base on the person's right and the cap on their left. The red base is already on the person’s right and the yellow cap is on their left."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/material-order/teach-70/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Point at the selected arrangement and leave it in place."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 2.6667, 3.3333, 4.0, 4.6667, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.3333, 9.0, 9.6667",
+    "clip": "media/material-order/teach-70/B-accept/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "The person touched the red base with their right index finger and withdrew their hand. Both parts stayed in place. They may have been indicating or checking the base. The gesture alone leaves their preferred layout unclear."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "(No preference note written.)"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Set out a row for the seated person to use the pot, scoop, then tag.",
+    "image": "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. From the seated person’s left to right, the row will read pot, scoop, then tag."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Place the pot at the person's left, scoop in the middle, and tag at their right. The seated person can use the pot, scoop, and tag in order from left to right."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Would you like the row to start with the pot on your right or your left?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Start with the pot on my right, please."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Pot, scoop, and tag row\n\nFor this setup, place the pot on the person’s right, the scoop in the middle, and the tag on their left. They explicitly asked to start with the pot on their right. Their preference for other tasks is unknown.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Place the pot at the person's right, scoop in the middle, and tag at their left. You asked to start with the pot on your right, followed by the scoop in the middle and the tag on your left.",
+    "clip": "media/material-order/transfer-173/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Put out the markers for four people sharing the table.",
+    "image": "media/material-order/exception-276/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Put the markers together in the central tray. The central tray gives all four people easy access to the markers."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Put the markers together in the central tray. The central tray keeps the markers within reach of all four people.",
+    "clip": "media/material-order/exception-276/A-none/view/view.mp4"
+  }
+]

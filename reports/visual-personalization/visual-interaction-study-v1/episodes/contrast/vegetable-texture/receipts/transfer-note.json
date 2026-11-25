@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9a47d66c3a0eba17cd3a57ae14659aac29ec8216d44d24daa0b79584901db157",
+  "thread": "run-0245",
+  "request": "episodes/contrast/vegetable-texture/independent/transfer-note/1795591615062994312-d8c53eb5/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Tender green beans suit a warm side dish, and the firmness preference is specific to broccoli."
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "input_sha256": "75fed2e0216bc4c8ca36c8e5a91e8582f32d7b77e338eeda4676e6b9ef20adee",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593220215559186-39c03529/request.json",
+  "reply": {
+    "observation": "The person moved the house keys and flashlight from the open tray into the shallow compartment and closed it.",
+    "interpretation": "The compartment appears to be their usual storage spot for these two items.",
+    "title": "Entryway storage for keys and flashlight",
+    "note": "When putting away the house keys and flashlight after use, favor the shallow entryway compartment and close it.",
+    "question": "Which other entryway items, if any, should I put in that compartment after use?"
+  },
+  "images": [
+    "media/private-storage/teach-114/B-change/view/frame-00000.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00008.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00016.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00024.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00032.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00040.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00048.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00056.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00062.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00070.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00078.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00086.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00094.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00102.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00110.jpg",
+    "media/private-storage/teach-114/B-change/view/frame-00118.jpg"
+  ]
+}

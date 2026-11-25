@@ -1,0 +1,11 @@
+{
+  "input_sha256": "66a35c50e88b89f96cb770faaf4619fe5cae46867db04ebd5f5abdde1dbbb68f",
+  "session": "refiner",
+  "thread": "run-0118",
+  "request": "sessions/refiner/1795631228054148000-1b05a69f/request.json",
+  "result": "sessions/refiner/1795631228054148000-1b05a69f/attempt-1/result.json",
+  "reply": {
+    "title": "Clipped rust mat on the bench",
+    "note": "Usually leave the rust mat where it is when it’s clipped. The clip marks a project the user wants to keep on the bench. Their preference for an unclipped mat is unknown."
+  }
+}

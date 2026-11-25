@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "The delivery is complete while the person draws alone. Give a low-priority update.",
+    "options": {
+      "A": "Give a brief spoken update now.",
+      "B": "Give the spoken update at the person's next pause."
+    },
+    "memory": "# Timing of spoken updates\n\nThe person used the blue cube to replay a completion update during a writing task. Their preferred timing for future updates is unclear.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "53482fda0030a2f4e246f523629338350d8551544e5f216109f270ea49cd08ad"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

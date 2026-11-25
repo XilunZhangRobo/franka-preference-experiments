@@ -1,0 +1,12 @@
+{
+  "input_sha256": "da73ca76872805460779d238113668bbe24c0444a223419bc9a85b5965f1356f",
+  "thread": "run-0260",
+  "request": "episodes/isolated/completion-update/independent/exception-cold/1795591312507871955-29fd4426/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The update can wait until the person pauses so it won’t interrupt the call."
+  },
+  "images": [
+    "media/completion-update/exception-298/initial-none/view/frame-00000.jpg"
+  ]
+}

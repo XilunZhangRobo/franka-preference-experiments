@@ -1,0 +1,31 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Wipe the work surface in my private sewing room. Only I use it.",
+    "options": {
+      "A": "Use the mild-citrus cleaner.",
+      "B": "Use the fragrance-free cleaner."
+    },
+    "current_note": "# Kitchen counter cleaner for solo use and guests\n\nFor the kitchen counter, the person prefers mild-citrus cleaner when home alone and fragrance-free cleaner when guests are expected.\n",
+    "previous_notes": {
+      "01": "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n",
+      "02": "# Personal gift cards and gift box arrangement\n\nFor handmade cards given as personal gifts, leave decorations beside the card for the person to place. For this gift box, they asked to arrange the tissue and gift themselves. Their preference for future boxes is unknown.\n",
+      "03": "# Left-hand handoff preference\n\nThe person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\n",
+      "04": "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n",
+      "05": "# Drink placement and folded cloth handoffs\n\nUsually place drinks in front of the person’s left shoulder. If a shelf blocks that spot, use their right side. They also asked to receive the folded cloth on their right when a shelf blocks their left side.\n",
+      "06": "# Low-priority updates during solo work and video calls\n\nThe person asked for brief, low-priority updates right away when working alone. If they’re on a video call, wait until it ends to give the update.\n",
+      "07": "# Broccoli and green bean texture\n\nServe tender broccoli with warm dinners by default. For green beans, the person requested tender beans for one warm side dish and firm beans for one chilled salad. Treat those choices as tentative guides for similar dishes.\n",
+      "08": "# Entryway storage for personal belongings and pen case\n\nAfter use, put the house keys, flashlight, and other personal belongings in the shallow entryway compartment and close it. The person confirmed that the pen case goes there even when they want it handy for the next day.\n",
+      "09": "# Overhead lighting for solo work\n\nUse the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown.\n"
+    }
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "1bdc3e8fd4b4d8d474205099f52f8d0572b0de7830c1e89d65d4c49e03a9a731"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

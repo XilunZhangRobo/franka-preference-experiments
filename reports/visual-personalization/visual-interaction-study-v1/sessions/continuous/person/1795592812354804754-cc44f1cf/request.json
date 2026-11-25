@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Would you like the green beans tender or firm for this warm side dish?",
+    "task": "Prepare cooked green beans for the warm side dish.",
+    "private_brief": "I like tender vegetables with warm meals. I want firm vegetables for chilled salads."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "fa67f5903e71ff798d1dfeeaf8afbae41ccf6eb451f52a8d78ac08b9d9b6e5b0"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}

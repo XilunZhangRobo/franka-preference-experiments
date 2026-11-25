@@ -1,0 +1,46 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "00516b6a1e239a16b478f7bdb6c7556d4d2f027c298a885a2ac754538ce68880",
+  "max_robot_pinch_error_m": 0.0,
+  "final_positions_m": {
+    "firm": [
+      -0.135,
+      -0.025,
+      0.758
+    ],
+    "firm_card": [
+      -0.135,
+      -0.072,
+      0.758
+    ],
+    "tender": [
+      0.135,
+      -0.025,
+      0.758
+    ],
+    "tender_card": [
+      0.135,
+      -0.072,
+      0.758
+    ],
+    "fork": [
+      0.0,
+      -0.12,
+      0.75
+    ]
+  },
+  "scene_sha256": "488eb8404d3d1aeb4a3b5bc8e796f48837379c86fe6fd3c9572796628f725108"
+}

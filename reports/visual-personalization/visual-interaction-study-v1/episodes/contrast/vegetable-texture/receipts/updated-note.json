@@ -1,0 +1,10 @@
+{
+  "input_sha256": "202cdd3044635a7da98fc98fa331d7e0a8114e81138c96eb3f3118a9ca653381",
+  "thread": "run-0240",
+  "request": "sessions/contrast/vegetable-texture/robot/1795591602112438174-6752952d/request.json",
+  "reply": {
+    "title": "Broccoli texture preference",
+    "note": "Choose firmer broccoli for warm meals and chilled salads. You swapped the tender broccoli for the firmer batch at dinner and confirmed this preference for both settings."
+  },
+  "images": []
+}

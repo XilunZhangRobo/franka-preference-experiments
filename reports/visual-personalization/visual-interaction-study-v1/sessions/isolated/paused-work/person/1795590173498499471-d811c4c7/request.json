@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "I clip a mat to mark a project I want to keep on the bench. An already closed kit can go on the shelf when starting a fresh project.",
+    "task": "Clear a spot on my workbench.",
+    "observed_robot_action": "Shelve the rust mat.",
+    "motion_options": {
+      "A": "Bring the shelved mat back to its original spot and leave the other mat alone.",
+      "B": "Point at the selected arrangement and leave it in place."
+    },
+    "seconds": [
+      0.0,
+      1.0,
+      1.6667,
+      2.6667,
+      3.3333,
+      4.3333
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "b0da9bd8a083b535fecb023f2317986e413f1949986755d49c12a9abad198fb5"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "7d4ffb8e6e2c0009f8d6ff44cdd65ee9dfc56e2f16763a749b69a58bf3ab3eef"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "e7ffbae8184e49bcf746e05570c036d2eef689eecf1a22863580f14c229b4c44"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "ddd4a58aa94d648b9d8a3922d7f7445ce657ec6ebbb88ac837c2b3489b985179"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "a4b9e6ff1fa3a5bebdbbce73f0c79b325a8d80e279f2c9430baf2fc22979a49d"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "5116c1732758b93712ddb9e74dc638d5b8ef99a5f50a1cfbbd58b28256554ce3"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

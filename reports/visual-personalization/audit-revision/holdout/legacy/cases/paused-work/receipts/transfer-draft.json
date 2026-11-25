@@ -1,0 +1,11 @@
+{
+  "input_sha256": "686b66758d9d1e26bb7c2cde18088e9a0236ab4d7286df65b00f4e1e4fb51baa",
+  "session": "forced-686b66758d9d1e26bb7c2cde18088e9a0236ab4d7286df65b00f4e1e4fb51baa",
+  "thread": "run-0119",
+  "request": "sessions/forced-686b66758d9d1e26bb7c2cde18088e9a0236ab4d7286df65b00f4e1e4fb51baa/1795631236837634515-4308f58d/request.json",
+  "result": "sessions/forced-686b66758d9d1e26bb7c2cde18088e9a0236ab4d7286df65b00f4e1e4fb51baa/1795631236837634515-4308f58d/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Shelving the teal mat clears space at the front of the counter for the cutting board."
+  }
+}

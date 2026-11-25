@@ -1,0 +1,11 @@
+{
+  "input_sha256": "7620ac0f4d4d30a0b8d7db532e4e144278ea862df90a7655904bc3d3ec6e8cf8",
+  "thread": "run-0301",
+  "request": "sessions/isolated/vegetable-texture/person/1795590431302559685-05e175e3/request.json",
+  "reply": {
+    "answer": "I'd prefer the more tender green beans."
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

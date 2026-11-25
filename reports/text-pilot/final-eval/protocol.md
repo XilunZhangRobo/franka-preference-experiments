@@ -1,0 +1,5 @@
+# Locked final evaluation
+
+Evaluate the ten selected task families in a single batch. Each family contributes its qualifying probe from the earlier evaluation, a new transfer action in a different scene, and a new exception scene. The repeat probes reuse the same decisions, with five A/B labels reversed to balance letter frequency. The other 20 scenes are new to the decision agents. Use the exact previously produced notes or observable descriptions as the only personal context. Each arm uses a separately spawned GPT‑6.2 Astra agent with fresh context. The cold arm has no personal context. All arms get the same trial order. The scorer reports replay, transfer, and exception separately and retains all outcomes. The task selection makes replay a confirmation of the screening signal. Use the new transfer and exception probes to assess behavior in new scenes.
+
+The assistant locked the [trial text](inputs/scenes.md), [scoring labels](grading-key.tsv), and zero-shot decision prompts before receiving any decision output. No private preference or answer key is available to the decision agents.

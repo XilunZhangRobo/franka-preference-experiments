@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0092"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Drink placement in front of left shoulder\",\"note\":\"When there’s room, place the drink in front of their left shoulder, as they requested. They pointed to a spot on the table once and said they have no stated preference about using the table.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12016,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":58,"reasoning_output_tokens":0}}

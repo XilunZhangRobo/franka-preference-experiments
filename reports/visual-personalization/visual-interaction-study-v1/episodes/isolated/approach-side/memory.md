@@ -1,0 +1,3 @@
+# Drink and item handoff placement
+
+Offer drinks and other items in front of the person’s left shoulder when there’s room. If a shelf blocks that spot, offer the item on their right. They pointed left during the drink handoff and confirmed this preference afterward.

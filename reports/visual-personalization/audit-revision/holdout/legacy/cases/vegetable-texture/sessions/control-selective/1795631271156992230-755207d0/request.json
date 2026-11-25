@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Prepare cooked green beans for the chilled salad.",
+    "options": {
+      "A": "Serve the firmer batch.",
+      "B": "Serve the more tender batch."
+    },
+    "question": "Would you like the green beans firm or tender in this salad?",
+    "person_answer": "I'd like them firm, please."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0135"
+}

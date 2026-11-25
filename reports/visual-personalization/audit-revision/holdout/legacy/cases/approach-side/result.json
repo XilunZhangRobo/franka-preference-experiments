@@ -1,0 +1,140 @@
+{
+  "case_id": "approach-side",
+  "identity_sha256": "eeb51012658e24262aa2e6fbc69dbee679ecfc73c7fed0c7007c101ff9fcca38",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "While I held the cup near the person's right hand, they pointed to the tabletop in front of them. I moved the cup toward that spot.",
+    "interpretation": "The gesture suggested they wanted me to set the drink down where they pointed.",
+    "title": "Drink placement",
+    "note": "On this occasion, the person indicated a spot on the table when I offered their drink.",
+    "question": "For future drinks, would you like me to set the cup on the table in front of you?"
+  },
+  "draft_note": "# Drink placement\n\nOn this occasion, the person indicated a spot on the table when I offered their drink.\n",
+  "audit_question": "For future drinks, would you like me to set the cup on the table in front of you?",
+  "audit_answer": "When there’s room, I like my drink in front of my left shoulder, but I don’t have a stated preference about setting it on the table.",
+  "refined_reply": {
+    "title": "Drink placement in front of left shoulder",
+    "note": "When there’s room, place the drink in front of their left shoulder, as they requested. They pointed to a spot on the table once and said they have no stated preference about using the table."
+  },
+  "post_answer_note": "# Drink placement in front of left shoulder\n\nWhen there’s room, place the drink in front of their left shoulder, as they requested. They pointed to a spot on the table once and said they have no stated preference about using the table.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 1
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person's left hand is visible beside a clear spot on the table."
+        },
+        "correct": true,
+        "input_sha256": "fd7bd320abc523b0f2b3286a73d1a352f8bc703dc0db5246255e6b10768147ad",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person's left hand is near the cloth and has a clear reach."
+        },
+        "correct": true,
+        "input_sha256": "69fb583b33e1703bc7ace4b67534eb367228bf286f653a38ae05a2f66d8b4cf0",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "There is clear space near your left hand, and your stated left-side preference applies to drinks.",
+          "question": "Which side would you like me to offer the cloth on?"
+        },
+        "question": "Which side would you like me to offer the cloth on?",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "same thread",
+        "answer": "In front of my left shoulder, please, if there’s room.",
+        "final": {
+          "choice": "A",
+          "reason": "There is room to offer the cloth in front of your left shoulder as requested."
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person can take the folded cloth with their right hand now."
+        },
+        "correct": true,
+        "input_sha256": "7e73a77f18ccfaf592cea59cc07454868ef9308c35abcdfa5429eb4413eb4e57",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The cloth is already near their right hand, and their left-side preference applies only to drinks."
+        },
+        "correct": true,
+        "input_sha256": "38dfa5d425b09660ddeeec7bb4e5300c2ce6654b12636559bb2d249c5346c68e",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Their right hand is near the folded cloth, and the left-side preference applies to drinks.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Their right hand is near the folded cloth, and the left-side preference applies to drinks.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

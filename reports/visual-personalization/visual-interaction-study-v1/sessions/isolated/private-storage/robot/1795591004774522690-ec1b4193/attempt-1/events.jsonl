@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0288"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Entryway keys and flashlight\",\"note\":\"The person confirmed that their house keys and flashlight belong in the shallow entryway compartment between uses. Close it after putting them away.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":50443,"cached_input_tokens":27776,"cache_write_input_tokens":0,"output_tokens":174,"reasoning_output_tokens":0}}

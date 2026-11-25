@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+    "options": {
+      "A": "Place the items in the shallow compartment and close it.",
+      "B": "Leave the pen case on the open tray."
+    },
+    "question": "Would you like the case on the tray for tomorrow or in your usual closed compartment?",
+    "person_answer": "Please put my pen case in the usual closed compartment."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0178"
+}

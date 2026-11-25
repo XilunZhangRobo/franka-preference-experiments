@@ -1,0 +1,12 @@
+{
+  "input_sha256": "aabaf87fda49dfa869bdffdc219f6c4f96b561b90e386cc5de3871469ebcfe38",
+  "session": "transfer-selective",
+  "thread": "run-0121",
+  "request": "sessions/transfer-selective/1795631246442322896-1210f9a7/request.json",
+  "result": "sessions/transfer-selective/1795631246442322896-1210f9a7/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The clip marks the rust mat as a project you want to keep on the counter.",
+    "question": ""
+  }
+}

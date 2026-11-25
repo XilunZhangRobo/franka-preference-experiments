@@ -1,0 +1,16 @@
+{
+  "input_sha256": "9c652d1ef969864ae73d918653f880e702f22c568e1ba473ea3f8a04f4e18adc",
+  "thread": "run-0241",
+  "request": "sessions/contrast/vegetable-texture/person/1795591456298178665-618fbcca/request.json",
+  "reply": {
+    "response": "B"
+  },
+  "images": [
+    "media/vegetable-texture/teach-103/B-none/view/frame-00000.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00006.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00010.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00016.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00020.jpg",
+    "media/vegetable-texture/teach-103/B-none/view/frame-00026.jpg"
+  ]
+}

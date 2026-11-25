@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "B",
+    "reason": "The desk lamp can shine directly on the tile samples to make their patterns easier to compare."
+  },
+  "request": "visual-only-comparisons/lighting/session/1795591499259940638-90c7fde0/request.json",
+  "thread": "run-0434",
+  "images": [
+    "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "13c5b65dcd8a6ceb080a8f4a8b6d9f979f3a766aff9fb52320b41118fdfb61c1"
+}

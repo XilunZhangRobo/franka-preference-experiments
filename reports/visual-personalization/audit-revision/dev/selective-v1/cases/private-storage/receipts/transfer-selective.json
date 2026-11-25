@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cbcc2689e54295aabc501fc3a0ed7b1a89c814bfbeb00bca340192cab39ef92b",
+  "session": "transfer-selective",
+  "thread": "run-0086",
+  "request": "sessions/transfer-selective/1795631011915463003-d4632710/request.json",
+  "result": "sessions/transfer-selective/1795631011915463003-d4632710/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The open tray keeps your pen case within easy reach for tomorrow.",
+    "question": ""
+  }
+}

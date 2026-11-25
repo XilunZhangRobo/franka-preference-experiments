@@ -1,0 +1,11 @@
+{
+  "input_sha256": "b2925f9cd01e2c3528496dbd6e1f433cae73ec54267e5dd2726174c5640fa824",
+  "session": "forced-b2925f9cd01e2c3528496dbd6e1f433cae73ec54267e5dd2726174c5640fa824",
+  "thread": "run-0155",
+  "request": "sessions/forced-b2925f9cd01e2c3528496dbd6e1f433cae73ec54267e5dd2726174c5640fa824/1795631173971704498-75331276/request.json",
+  "result": "sessions/forced-b2925f9cd01e2c3528496dbd6e1f433cae73ec54267e5dd2726174c5640fa824/1795631173971704498-75331276/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Placing the pot, scoop, and tag from right to left follows the remembered assembly default."
+  }
+}

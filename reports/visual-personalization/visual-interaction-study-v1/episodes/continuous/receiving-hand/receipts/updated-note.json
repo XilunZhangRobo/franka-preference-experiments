@@ -1,0 +1,10 @@
+{
+  "input_sha256": "9ac1f5670e432d5bb56f818065b71e1c6fec5b8d7f5d260fb945799e5eb70060",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592181942474839-8b5243d0/request.json",
+  "reply": {
+    "title": "Left-hand handoff preference",
+    "note": "The person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand."
+  },
+  "images": []
+}

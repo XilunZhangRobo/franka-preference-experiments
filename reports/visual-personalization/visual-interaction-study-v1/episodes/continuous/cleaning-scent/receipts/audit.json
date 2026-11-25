@@ -1,0 +1,30 @@
+{
+  "input_sha256": "a08f076e4468770aea28456e549f793c35b54f392e14cd0d506df5140d8595c6",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795595370203243869-4f6718cf/request.json",
+  "reply": {
+    "observation": "The person returned the fragrance-free cleaner to the tray and set the mild-citrus cleaner beside the cloth.",
+    "interpretation": "The swap suggests they wanted mild citrus for this cleanup.",
+    "title": "Kitchen counter cleaner preference",
+    "note": "When the person is home alone, mild citrus may be their preferred counter cleaner, based on one swap.",
+    "question": "Is mild citrus your usual choice for the kitchen counter, or does it depend on who’s home?"
+  },
+  "images": [
+    "media/cleaning-scent/teach-136/B-change/view/frame-00000.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00004.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00008.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00012.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00018.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00022.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00026.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00030.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00034.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00038.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00042.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00046.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00052.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00056.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00060.jpg",
+    "media/cleaning-scent/teach-136/B-change/view/frame-00064.jpg"
+  ]
+}

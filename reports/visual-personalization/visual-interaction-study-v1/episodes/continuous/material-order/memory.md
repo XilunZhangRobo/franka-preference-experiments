@@ -1,0 +1,3 @@
+# Assembly parts by order of use
+
+For the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.

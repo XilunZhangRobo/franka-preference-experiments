@@ -1,0 +1,10 @@
+{
+  "input_sha256": "9594c55f48914cad076680a54c458c837f46f5cacdcb9e97d3d0864e3f54181e",
+  "session": "transfer-person",
+  "thread": "run-0045",
+  "request": "sessions/transfer-person/1795631054714969285-7119f60d/request.json",
+  "result": "sessions/transfer-person/1795631054714969285-7119f60d/attempt-1/result.json",
+  "reply": {
+    "answer": "I'd like to arrange the tissue and gift and close the box myself."
+  }
+}

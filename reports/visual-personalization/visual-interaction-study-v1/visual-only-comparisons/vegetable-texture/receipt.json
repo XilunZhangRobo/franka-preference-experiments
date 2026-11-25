@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "B",
+    "reason": "The more tender beans are a good fit for a warm, cooked side dish."
+  },
+  "request": "visual-only-comparisons/vegetable-texture/session/1795591485115253269-a52eae3c/request.json",
+  "thread": "run-0438",
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "89bc260c542b12477736b501d047447b833d39768cf6625bb0f96f261a80d144"
+}

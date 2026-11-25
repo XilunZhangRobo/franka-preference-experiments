@@ -1,0 +1,12 @@
+{
+  "input_sha256": "e835ccf1d0d12f4591b3f68b3e4f6931cc98ba9cc422713730bd4e829d294aa5",
+  "session": "control-selective",
+  "thread": "run-0069",
+  "request": "sessions/control-selective/1795631020812924347-4a388151/request.json",
+  "result": "sessions/control-selective/1795631020812924347-4a388151/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Fragrance-free cleaner avoids adding scent to the worktop the guests will share.",
+    "question": ""
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "mode": "continuous",
+  "scenario": "lighting",
+  "title": "Lighting",
+  "profile": "standard",
+  "turns": [
+    {
+      "role": "Person",
+      "channel": "task command",
+      "text": "Turn on a light for the person working on a puzzle.",
+      "image": "media/lighting/teach-125/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "selected action",
+      "text": "Turn on the desk lamp. The desk lamp can light the puzzle pieces directly."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual evidence to person",
+      "text": "Camera sequence after the robot chose its action.",
+      "clip": "media/lighting/teach-125/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "private motion command to simulator",
+      "text": "Switch the selected light off and switch on the other light."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual feedback to robot",
+      "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 1.6667, 2.0, 2.6667, 3.0, 3.3333, 3.6667, 4.3333, 4.6667, 5.0, 5.3333, 6.0, 6.3333",
+      "clip": "media/lighting/teach-125/B-change/view/view.mp4"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "private visual audit",
+      "text": "The person switched off the desk lamp, then pressed the other light control. They appeared to prefer overhead lighting for this puzzle."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "When do you prefer the overhead light to the desk lamp?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "I prefer the overhead light when I’m working alone."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "writes personal note",
+      "text": "# Overhead lighting for solo work\n\nUse the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown.\n"
+    },
+    {
+      "role": "Person",
+      "channel": "new task",
+      "text": "Turn on a light for the person comparing ceramic tile patterns.",
+      "image": "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Turn on the desk lamp. The desk lamp can light the tile samples directly so their patterns are easier to compare."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Turn on the overhead fixture. The person is comparing tiles alone and prefers the overhead light for solo work."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Turn on the overhead fixture. You’re comparing tiles alone, and you prefer overhead lighting for solo work.",
+      "clip": "media/lighting/transfer-228/A-none/view/view.mp4"
+    },
+    {
+      "role": "Person",
+      "channel": "scope control",
+      "text": "A projected slide show is in progress. Keep the room dim while giving the craft table enough light.",
+      "image": "media/lighting/exception-331/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Turn on the desk lamp. The desk lamp will light the craft table while keeping the room dim for the slide show."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Turn on the desk lamp. The desk lamp lights the craft table while keeping the room dim for the slide show.",
+      "clip": "media/lighting/exception-331/A-none/view/view.mp4"
+    }
+  ],
+  "scores": {
+    "teaching_miss": true,
+    "feedback_matches_persona": true,
+    "transfer_cold": false,
+    "transfer_note": true,
+    "transfer_before_question": true,
+    "transfer_learner": true,
+    "control_cold": true,
+    "control_note": true,
+    "control_before_question": true,
+    "control_learner": true
+  },
+  "transcript": "episodes/continuous/lighting/transcript.json",
+  "robot_thread": "run-0178",
+  "person_thread": "run-0179",
+  "artifacts": {
+    "Exact calls and model inputs": "episodes/continuous/lighting/calls.json",
+    "Visual-only draft": "episodes/continuous/lighting/visual-only.md",
+    "Note at first probe": "episodes/continuous/lighting/memory.md",
+    "Final note": "episodes/continuous/lighting/final-note.md"
+  }
+}

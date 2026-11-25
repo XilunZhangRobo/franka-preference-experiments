@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+    "options": {
+      "A": "Place the items in the shallow compartment and close it.",
+      "B": "Leave the pen case on the open tray."
+    },
+    "memory": "# Entryway compartment\n\nKeep the keys and flashlight together in the compartment. Leave the lid preference undecided for now.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "66d3e471cd7418336713f62e304ab3bdfdb43e990a7486173e4587d4fdd07c92"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

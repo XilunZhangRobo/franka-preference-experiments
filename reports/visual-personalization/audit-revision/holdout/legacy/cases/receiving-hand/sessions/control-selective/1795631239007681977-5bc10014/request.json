@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Pass me the remote.",
+    "options": {
+      "A": "Offer it to the person's right hand.",
+      "B": "Offer it to the person's left hand."
+    },
+    "memory": "# Left-hand preference for item handoffs\n\nOffer flashlights and other items to your left hand by default. Use your right hand when your left is busy. You moved the flashlight to your left hand after the handoff and confirmed this preference applies to other items too.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "ee8ff8ed137110d671946d6f607658f6f8348c68180069c3176d48b17b6e8f86"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

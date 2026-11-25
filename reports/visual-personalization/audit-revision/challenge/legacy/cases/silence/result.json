@@ -1,0 +1,56 @@
+{
+  "case_id": "silence",
+  "identity_sha256": "4485c82cd1a564244a468c2cd9af53de95ad6e5c664ce6825b8b3fb193a9a084",
+  "seed_metadata": "challenge",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I placed the finished piece in the amber tray. The person kept their hands near the trays and left the piece there.",
+    "interpretation": "The placement may have been acceptable for this task. I saw no clear signal of a tray preference.",
+    "title": "",
+    "note": "",
+    "question": "Should I use the amber tray for future finished pieces?"
+  },
+  "draft_note": "",
+  "audit_question": "Should I use the amber tray for future finished pieces?",
+  "audit_answer": "No, use the teal tray unless I ask for a different tray for a specific piece.",
+  "refined_reply": {
+    "title": "Teal tray for finished pieces",
+    "note": "Use the teal tray for future finished pieces unless I ask for a different tray for a specific piece."
+  },
+  "post_answer_note": "# Teal tray for finished pieces\n\nUse the teal tray for future finished pieces unless I ask for a different tray for a specific piece.\n",
+  "quiet": true,
+  "quiet_checks": {
+    "draft_note_written": false,
+    "asked": true,
+    "post_answer_note_written": true
+  },
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 0,
+      "asked": 0
+    },
+    "control": {
+      "available": 0,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 0,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 0,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {}
+}

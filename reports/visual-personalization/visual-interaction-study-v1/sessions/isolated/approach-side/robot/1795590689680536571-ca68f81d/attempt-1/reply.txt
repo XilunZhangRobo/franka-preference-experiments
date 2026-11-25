@@ -1,0 +1,1 @@
+{"choice":"A","reason":"There’s room in front of the person’s left shoulder, where they prefer to receive items.","question":""}

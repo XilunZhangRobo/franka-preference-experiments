@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0301"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"I'd prefer the more tender green beans.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":44146,"cached_input_tokens":26752,"cache_write_input_tokens":0,"output_tokens":42,"reasoning_output_tokens":0}}

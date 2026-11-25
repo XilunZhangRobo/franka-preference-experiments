@@ -1,0 +1,12 @@
+{
+  "input_sha256": "fd61b95d227e4361e64b2038045278830bc8827a540ba8f3dae6e4fb7c5fcafe",
+  "thread": "run-0195",
+  "request": "episodes/continuous/gift-finishing/independent/exception-note/1795592124129282620-0037e107/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Packing each portion and closing its labeled lid makes both lunches ready for tomorrow morning."
+  },
+  "images": [
+    "media/gift-finishing/exception-254/initial-none/view/frame-00000.jpg"
+  ]
+}

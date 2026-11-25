@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Make room for the cutting board on my sewing counter.",
+    "options": {
+      "A": "Shelve the teal mat.",
+      "B": "Shelve the rust mat."
+    },
+    "memory": "# Keep the clipped mat on the workbench\n\nOn this workbench, keep whichever mat is clipped in place and shelve the kit if it’s already closed. Use the clip to identify the mat regardless of color or part count. The person didn’t specify what to do with an open kit.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "245ae9c5392a4ebcadc29d6770de66e60b738ce65abb8a4ffba9171e4814089d"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

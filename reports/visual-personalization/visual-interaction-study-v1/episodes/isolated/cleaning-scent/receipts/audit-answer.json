@@ -1,0 +1,9 @@
+{
+  "input_sha256": "7e82e15eab93330ec883dbab0a7d6ddcd55f2b7dff7933ef32620e06a0564433",
+  "thread": "run-0253",
+  "request": "sessions/isolated/cleaning-scent/person/1795591062658410151-f58656e5/request.json",
+  "reply": {
+    "answer": "Use fragrance-free if guests are coming, but I haven’t specified a preference just because someone else is home."
+  },
+  "images": []
+}

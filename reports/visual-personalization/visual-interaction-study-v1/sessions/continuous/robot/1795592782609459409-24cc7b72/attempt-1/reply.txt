@@ -1,0 +1,1 @@
+{"choice":"B","reason":"You usually like tender broccoli with warm dinners, so tender green beans are my tentative choice.","question":"Would you like the green beans tender or firm for this warm side dish?"}

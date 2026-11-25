@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0252"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"You chose mild citrus once for the kitchen counter, so it seems plausible for your private sewing room.\",\"question\":\"Do you prefer mild citrus or fragrance-free for the sewing surface?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":70514,"cached_input_tokens":57088,"cache_write_input_tokens":0,"output_tokens":215,"reasoning_output_tokens":0}}

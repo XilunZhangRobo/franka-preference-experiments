@@ -1,0 +1,136 @@
+{
+  "mode": "continuous",
+  "scenario": "private-storage",
+  "title": "Private Storage",
+  "profile": "standard",
+  "turns": [
+    {
+      "role": "Person",
+      "channel": "task command",
+      "text": "Put the house keys and flashlight away after use in the entryway.",
+      "image": "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "selected action",
+      "text": "Set them together on the open tray. The entryway tray keeps the keys and flashlight together and easy to find next time."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual evidence to person",
+      "text": "Camera sequence after the robot chose its action.",
+      "clip": "media/private-storage/teach-114/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "private motion command to simulator",
+      "text": "Move the belongings to the other storage location, opening and closing the compartment."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual feedback to robot",
+      "text": "Robot camera playback. Sample times in seconds: 0.0, 1.3333, 2.6667, 4.0, 5.3333, 6.6667, 8.0, 9.3333, 10.3333, 11.6667, 13.0, 14.3333, 15.6667, 17.0, 18.3333, 19.6667",
+      "clip": "media/private-storage/teach-114/B-change/view/view.mp4"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "private visual audit",
+      "text": "The person moved the house keys and flashlight from the open tray into the shallow compartment and closed it. The compartment appears to be their usual storage spot for these two items."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "Which other entryway items, if any, should I put in that compartment after use?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "Please put my other personal belongings in the closed compartment after use."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "writes personal note",
+      "text": "# Entryway storage for personal belongings\n\nAfter use, put the house keys, flashlight, and the person’s other personal belongings in the shallow entryway compartment and close it. They moved the keys and flashlight there and asked for the same storage for their other belongings.\n"
+    },
+    {
+      "role": "Person",
+      "channel": "new task",
+      "text": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+      "image": "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to find and grab tomorrow."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Leave the pen case on the open tray. The open tray keeps your pen case visible and easy to grab for tomorrow’s practice."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "Would you like the case on the tray for tomorrow or in your usual closed compartment?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "Please put my pen case in the usual closed compartment."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "refines personal note",
+      "text": "# Entryway storage for personal belongings and pen case\n\nAfter use, put the house keys, flashlight, and other personal belongings in the shallow entryway compartment and close it. The person confirmed that the pen case goes there even when they want it handy for the next day.\n"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Place the items in the shallow compartment and close it. You asked me to put your pen case in the usual closed compartment.",
+      "clip": "media/private-storage/transfer-217/A-none/view/view.mp4"
+    },
+    {
+      "role": "Person",
+      "channel": "scope control",
+      "text": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+      "image": "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Set the rulers on the tray beside the shared craft materials. Placing all four rulers on the tray keeps them within reach for the first craft step."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Set the rulers on the tray beside the shared craft materials. Placing all four rulers on the tray keeps them within reach for the first craft step."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Set the rulers on the tray beside the shared craft materials. The shared tray keeps all four rulers within reach for the first craft step.",
+      "clip": "media/private-storage/exception-320/B-none/view/view.mp4"
+    }
+  ],
+  "scores": {
+    "teaching_miss": true,
+    "feedback_matches_persona": true,
+    "transfer_cold": false,
+    "transfer_note": false,
+    "transfer_before_question": false,
+    "transfer_learner": true,
+    "control_cold": true,
+    "control_note": true,
+    "control_before_question": true,
+    "control_learner": true
+  },
+  "transcript": "episodes/continuous/private-storage/transcript.json",
+  "robot_thread": "run-0178",
+  "person_thread": "run-0179",
+  "artifacts": {
+    "Exact calls and model inputs": "episodes/continuous/private-storage/calls.json",
+    "Visual-only draft": "episodes/continuous/private-storage/visual-only.md",
+    "Note at first probe": "episodes/continuous/private-storage/memory.md",
+    "Final note": "episodes/continuous/private-storage/final-note.md"
+  }
+}

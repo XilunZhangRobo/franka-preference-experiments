@@ -1,0 +1,13 @@
+{
+  "input_sha256": "a6c4cb8f4557155851e18e8a22a2c66e866022f23e433b5c81e8309744241397",
+  "thread": "run-0222",
+  "request": "sessions/contrast/material-order/robot/1795591676546553599-9a2251b4/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "They preferred the first item on their left for assembly, but their preference for planting is unknown.",
+    "question": "Would you like the pot, scoop, and tag arranged from your left to your right in the order you’ll use them?"
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

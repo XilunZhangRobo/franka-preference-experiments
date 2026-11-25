@@ -1,0 +1,1 @@
+{"choice":"B","reason":"You preferred tender green beans for the warm side dish, but your salad preference is unclear.","question":"Would you like the more tender green beans or the firmer ones for the chilled salad?"}

@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Flashlight handoff preference\n\nFor flashlight handoffs, the left hand may be a better choice. This is based on one handoff.\n", "question": "Should I usually offer items to your left hand, or did switching hands suit this particular task?", "person_answer": "Please offer things to my left hand unless it’s busy, in which case use my right."}

@@ -1,0 +1,11 @@
+{
+  "input_sha256": "336ececd4ce4df471cf695f6c8a0e68b95326a1ee1b479827862bb47c057c3bf",
+  "session": "transfer-selective",
+  "thread": "run-0111",
+  "request": "sessions/transfer-selective/1795631152768405438-d107df0b/request.json",
+  "result": "sessions/transfer-selective/1795631152768405438-d107df0b/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The pot is on your right as requested, followed by the scoop in the middle and the tag on your left."
+  }
+}

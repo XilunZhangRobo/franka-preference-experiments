@@ -1,0 +1,141 @@
+{
+  "case_id": "lighting",
+  "identity_sha256": "91af0245cc5ce3b575abfa3437220db0c12c8e5b0cd80b9ae15db16e5b842e50",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I turned on the desk lamp. The person pressed the same switch, and the bright spot disappeared. They then pressed the other switch, and the table looked more evenly lit.",
+    "interpretation": "They seemed to prefer more even lighting for this puzzle.",
+    "title": "Puzzle lighting",
+    "note": "For puzzle work, try the room light first.",
+    "question": "Do you also prefer the room light for other tabletop tasks?"
+  },
+  "draft_note": "# Puzzle lighting\n\nFor puzzle work, try the room light first.\n",
+  "audit_question": "Do you also prefer the room light for other tabletop tasks?",
+  "audit_answer": "Yes, when I work alone I prefer the ceiling light, but during a projected presentation I prefer just the craft table lit.",
+  "refined_reply": {
+    "title": "Tabletop lighting for solo work and presentations",
+    "note": "For puzzles and other tabletop tasks, I prefer the ceiling light when I work alone. During a projected presentation, I prefer only the craft table lit. My preference for other group settings is unspecified."
+  },
+  "post_answer_note": "# Tabletop lighting for solo work and presentations\n\nFor puzzles and other tabletop tasks, I prefer the ceiling light when I work alone. During a projected presentation, I prefer only the craft table lit. My preference for other group settings is unspecified.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 1,
+      "losses": 0,
+      "net": 1
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The desk lamp can light the tile samples directly so the person can compare their patterns."
+        },
+        "correct": false,
+        "input_sha256": "fa241dd12b66184db9091fb469a5d02321b61f383a6286d838998084a9dbb946",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person is comparing tiles alone and prefers the ceiling light for solo tabletop tasks."
+        },
+        "correct": true,
+        "input_sha256": "09449191d32989d6e4ffbb087e31928325988334c48750d40685af503929cc7e",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The person appears to be comparing tiles alone, and they prefer the overhead light for solo tabletop work.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The person appears to be comparing tiles alone, and they prefer the overhead light for solo tabletop work.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 1,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show."
+        },
+        "correct": true,
+        "input_sha256": "7946f98acabbeb621c0bec3a8d4f2adfb363a06d382b128e187dfcf9084c11e9",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the rest of the room dim for the slide show."
+        },
+        "correct": true,
+        "input_sha256": "07c3f315070c382e34f096043f284b3767e1e796c4b0b325b55c755efdf1942e",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The desk lamp lights the craft table while keeping the room dim for the slide show.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

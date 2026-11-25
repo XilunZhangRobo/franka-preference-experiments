@@ -1,0 +1,11 @@
+{
+  "thread_id": "run-0158",
+  "reply": {
+    "observation": "The robot moved the rust mat onto the raised shelf. The person then pointed at the mat and toward the tabletop. The teal mat stayed in place.",
+    "interpretation": "The gesture may have been a request to put the rust mat back. It did not clearly identify the teal mat as the one to shelve.",
+    "title": "Check which mat should stay",
+    "note": "For this workbench, the number of parts on a mat may be a poor guide to which mat the person wants within reach.",
+    "question": "Should I put the rust mat back and shelve the teal one instead?"
+  },
+  "elapsed_s": 6.426874810364097
+}

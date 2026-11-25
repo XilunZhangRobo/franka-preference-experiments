@@ -1,0 +1,11 @@
+{
+  "input_sha256": "b537d09ceda1314f34a9d8903bbe3b96504be15c25c60d1e852ff4737797e1f0",
+  "session": "forced-b537d09ceda1314f34a9d8903bbe3b96504be15c25c60d1e852ff4737797e1f0",
+  "thread": "run-0139",
+  "request": "sessions/forced-b537d09ceda1314f34a9d8903bbe3b96504be15c25c60d1e852ff4737797e1f0/1795631230751011011-031b098f/request.json",
+  "result": "sessions/forced-b537d09ceda1314f34a9d8903bbe3b96504be15c25c60d1e852ff4737797e1f0/1795631230751011011-031b098f/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Tender green beans are a good fit for a warm, cooked side dish."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cfc867d85d25d67e473ebb9b87f7ec5ebf3d8929b50a813321e4eaa97005cb7f",
+  "session": "transfer-selective",
+  "thread": "run-0047",
+  "request": "sessions/transfer-selective/1795631050431512642-b17d93f3/request.json",
+  "result": "sessions/transfer-selective/1795631050431512642-b17d93f3/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Opening the box lets either of us finish the wrapping.",
+    "question": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"
+  }
+}

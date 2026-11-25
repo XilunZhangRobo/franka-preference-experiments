@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Drink placement in front of left shoulder\",\"note\":\"The person usually wants drinks in front of their left shoulder. Use the right side if a shelf blocks the spot on the left.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":872542,"cached_input_tokens":815104,"cache_write_input_tokens":0,"output_tokens":1255,"reasoning_output_tokens":0}}

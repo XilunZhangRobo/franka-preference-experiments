@@ -1,0 +1,11 @@
+{
+  "input_sha256": "69fb583b33e1703bc7ace4b67534eb367228bf286f653a38ae05a2f66d8b4cf0",
+  "session": "forced-69fb583b33e1703bc7ace4b67534eb367228bf286f653a38ae05a2f66d8b4cf0",
+  "thread": "run-0096",
+  "request": "sessions/forced-69fb583b33e1703bc7ace4b67534eb367228bf286f653a38ae05a2f66d8b4cf0/1795631128737992246-3f870a99/request.json",
+  "result": "sessions/forced-69fb583b33e1703bc7ace4b67534eb367228bf286f653a38ae05a2f66d8b4cf0/1795631128737992246-3f870a99/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person's left hand is near the cloth and has a clear reach."
+  }
+}

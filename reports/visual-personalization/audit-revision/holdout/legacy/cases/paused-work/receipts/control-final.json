@@ -1,0 +1,11 @@
+{
+  "input_sha256": "b3c031763007a04ef8df46f4ea6d236c5369eb8db1753c99bbfed4c2e2a7da42",
+  "session": "control-selective",
+  "thread": "run-0116",
+  "request": "sessions/control-selective/1795631267816760899-0ecf9fb7/request.json",
+  "result": "sessions/control-selective/1795631267816760899-0ecf9fb7/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed stitching kit frees a spot and leaves the organizer on the rust mat."
+  }
+}

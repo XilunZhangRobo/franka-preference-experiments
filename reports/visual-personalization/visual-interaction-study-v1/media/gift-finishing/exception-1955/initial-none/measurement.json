@@ -1,0 +1,51 @@
+{
+  "replay_identity_version": 2,
+  "source_size": [
+    640,
+    480
+  ],
+  "events": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "actor": "idle",
+      "action": "rest",
+      "utterance": ""
+    }
+  ],
+  "state_sha256": "529198adfc680cbfd03ff9454f00a387b7edea3c622b0c02499a86b6593bdd76",
+  "max_robot_pinch_error_m": 0.0,
+  "final_positions_m": {
+    "lunchbox0": [
+      -0.148518,
+      0.075,
+      0.75
+    ],
+    "portion0": [
+      -0.148518,
+      -0.09,
+      0.75
+    ],
+    "cover0": [
+      -0.0668331,
+      -0.14,
+      0.75
+    ],
+    "lunchbox1": [
+      0.131482,
+      0.075,
+      0.75
+    ],
+    "portion1": [
+      0.131482,
+      -0.09,
+      0.75
+    ],
+    "cover1": [
+      0.0591669,
+      -0.14,
+      0.75
+    ]
+  },
+  "scene_sha256": "c1e3fb0ed9f3845b3103532578f8484e3fddaa8cfcbcdaffa9ae738d5bf43298"
+}

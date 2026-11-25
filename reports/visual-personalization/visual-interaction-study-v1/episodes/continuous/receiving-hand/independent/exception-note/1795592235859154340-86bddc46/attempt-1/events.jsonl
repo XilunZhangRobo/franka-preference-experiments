@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0215"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"Their left hand is on the cloth, so I’ll offer the remote to their free right hand.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12412,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":32,"reasoning_output_tokens":0}}

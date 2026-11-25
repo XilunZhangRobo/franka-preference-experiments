@@ -1,0 +1,11 @@
+{
+  "input_sha256": "7f68f9dc590432d655cdde7da3ac27cf20c9e33ac4a8353350eb436071d97e08",
+  "session": "forced-7f68f9dc590432d655cdde7da3ac27cf20c9e33ac4a8353350eb436071d97e08",
+  "thread": "run-0166",
+  "request": "sessions/forced-7f68f9dc590432d655cdde7da3ac27cf20c9e33ac4a8353350eb436071d97e08/1795631185212987145-6a73dc06/request.json",
+  "result": "sessions/forced-7f68f9dc590432d655cdde7da3ac27cf20c9e33ac4a8353350eb436071d97e08/1795631185212987145-6a73dc06/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The rust mat has the clip, so shelving the teal mat makes room for the cutting board."
+  }
+}

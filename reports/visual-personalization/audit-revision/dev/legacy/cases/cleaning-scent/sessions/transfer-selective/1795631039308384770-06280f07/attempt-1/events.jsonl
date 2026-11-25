@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0037"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"You prefer the mild-citrus cleaner for your sewing table.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":25271,"cached_input_tokens":22528,"cache_write_input_tokens":0,"output_tokens":58,"reasoning_output_tokens":0}}

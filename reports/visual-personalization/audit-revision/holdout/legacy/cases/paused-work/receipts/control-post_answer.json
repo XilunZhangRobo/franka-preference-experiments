@@ -1,0 +1,11 @@
+{
+  "input_sha256": "c36f1f53769e0d0130737cd8714fbd44db8da531aea49d11ce7818a57d916fe0",
+  "session": "forced-c36f1f53769e0d0130737cd8714fbd44db8da531aea49d11ce7818a57d916fe0",
+  "thread": "run-0117",
+  "request": "sessions/forced-c36f1f53769e0d0130737cd8714fbd44db8da531aea49d11ce7818a57d916fe0/1795631254390834188-ec22c9db/request.json",
+  "result": "sessions/forced-c36f1f53769e0d0130737cd8714fbd44db8da531aea49d11ce7818a57d916fe0/1795631254390834188-ec22c9db/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed stitching kit clears a spot while leaving the mat and its supplies in place."
+  }
+}

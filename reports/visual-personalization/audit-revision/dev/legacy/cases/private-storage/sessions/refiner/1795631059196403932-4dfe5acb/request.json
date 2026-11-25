@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "",
+    "question": "When I put the keys and flashlight away in the entryway, do you usually want me to leave the compartment open?",
+    "person_answer": "No, I usually want the compartment closed."
+  },
+  "images": [],
+  "persistent": false,
+  "previous_thread_id": null
+}

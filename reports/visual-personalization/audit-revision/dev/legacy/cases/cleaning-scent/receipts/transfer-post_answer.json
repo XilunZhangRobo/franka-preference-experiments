@@ -1,0 +1,11 @@
+{
+  "input_sha256": "c5f74fc65ca4d47e774d1f73f76876499f459e2aff9a27cdf9d685ca47a0dff6",
+  "session": "forced-c5f74fc65ca4d47e774d1f73f76876499f459e2aff9a27cdf9d685ca47a0dff6",
+  "thread": "run-0038",
+  "request": "sessions/forced-c5f74fc65ca4d47e774d1f73f76876499f459e2aff9a27cdf9d685ca47a0dff6/1795631023016539601-8af427e4/request.json",
+  "result": "sessions/forced-c5f74fc65ca4d47e774d1f73f76876499f459e2aff9a27cdf9d685ca47a0dff6/1795631023016539601-8af427e4/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Your citrus preference is specific to kitchen counters, so I’ll use the fragrance-free cleaner in your sewing room."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input_sha256": "34c7f4e0c4674ab6693ee4756ba57072562360b6c9b545b42d4515fa85336973",
+  "session": "transfer-person",
+  "thread": "run-0163",
+  "request": "sessions/transfer-person/1795631196372567572-5d22c749/request.json",
+  "result": "sessions/transfer-person/1795631196372567572-5d22c749/attempt-1/result.json",
+  "reply": {
+    "answer": "No, only shelve the teal mat if the kit is already closed."
+  }
+}

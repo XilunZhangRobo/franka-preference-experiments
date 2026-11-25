@@ -1,0 +1,12 @@
+{
+  "input_sha256": "dd7e133643e8caec9d2455927a4d323bc8719911f8c0c003c1380d297d504499",
+  "thread": "run-0248",
+  "request": "episodes/isolated/approach-side/independent/exception-cold/1795590729645291913-3ad0459f/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The person’s right hand is near the folded cloth and has a clear path to receive it."
+  },
+  "images": [
+    "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  ]
+}

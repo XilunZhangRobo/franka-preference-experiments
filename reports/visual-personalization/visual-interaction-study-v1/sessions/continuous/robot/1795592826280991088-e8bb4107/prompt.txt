@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"current_note": "# Broccoli texture for warm dinners\n\nServe tender broccoli with warm dinners by default. The person said they usually prefer it that way.\n", "person_answer": "I’d like the green beans tender, please."}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0178"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Left-hand handoff preference\",\"note\":\"The person asks that items be offered to their left hand by default. If their left hand is busy, offer the item to their right hand.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":395742,"cached_input_tokens":359936,"cache_write_input_tokens":0,"output_tokens":771,"reasoning_output_tokens":0}}

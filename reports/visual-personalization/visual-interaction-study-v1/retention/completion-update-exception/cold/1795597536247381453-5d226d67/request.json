@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+    "options": {
+      "A": "Give the spoken update at the person's next pause.",
+      "B": "Give a brief spoken update now."
+    },
+    "notes": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "05c8320b215e10130d5957774f27984909a6bb01e3ddf523465b3c9ab1ef2d31"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

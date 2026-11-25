@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+    "options": {
+      "A": "Place the items in the shallow compartment and close it.",
+      "B": "Set the rulers on the tray beside the shared craft materials."
+    },
+    "memory": "# Entryway compartment closure\n\nClose the entryway compartment after putting away the keys and flashlight. The user said they usually prefer it closed.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "78e1571edea352866fab2de2e23632618c43d363dd09e03668e208cfd49b829b"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

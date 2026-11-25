@@ -1,0 +1,124 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Set out a cleaner so I can wipe my kitchen counter. I am home alone.",
+    "image": "media/cleaning-scent/teach-136/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Set out the fragrance-free cleaner. The fragrance-free cleaner suits the task without adding a scent."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/cleaning-scent/teach-136/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Return the selected item to its starting spot and move the other item into its place."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.6667, 1.3333, 2.0, 3.0, 3.6667, 4.3333, 5.0, 5.6667, 6.3333, 7.0, 7.6667, 8.6667, 9.3333, 10.0, 10.6667",
+    "clip": "media/cleaning-scent/teach-136/B-change/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "You put the fragrance-free cleaner back on the tray and set the mild-citrus cleaner beside the cloth. You seemed to prefer mild citrus for this cleanup."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Should I also set out mild citrus for the kitchen counter when someone else is home?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Use fragrance-free if guests are coming, but I haven’t specified a preference just because someone else is home."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Kitchen counter cleaner\n\nUse fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a preference based solely on someone else being home.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Wipe the work surface in my private sewing room. Only I use it.",
+    "image": "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Use the fragrance-free cleaner. The fragrance-free cleaner avoids adding a scent you haven’t requested."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Use the mild-citrus cleaner. Your past choice of mild citrus while home alone is the closest match for a surface only you use."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Do you prefer mild citrus or fragrance-free for the sewing surface?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I prefer mild citrus for my sewing surface."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Cleaners for the sewing surface and kitchen counter\n\nUse mild citrus on your sewing surface. For the kitchen counter, use fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a kitchen counter preference based solely on someone else being home.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Use the mild-citrus cleaner. You prefer mild citrus for your sewing surface.",
+    "clip": "media/cleaning-scent/transfer-239/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Wipe the shared worktop before the guests arrive for our craft session.",
+    "image": "media/cleaning-scent/exception-342/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Use the fragrance-free cleaner. The fragrance-free cleaner avoids adding a scent that might bother guests."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Use the fragrance-free cleaner. You prefer fragrance-free cleaner when guests are expected."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Should I use fragrance-free cleaner on the shared craft worktop too?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Yes, please use fragrance-free cleaner on the shared craft worktop."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Cleaners for sewing, crafts, and kitchen counters\n\nUse mild citrus on your private sewing surface. When guests are expected, use fragrance-free cleaner on the kitchen counter and shared craft worktop. You chose mild citrus once for the kitchen counter while home alone. Your kitchen counter preference when someone else is home and no guests are expected is unspecified.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Use the fragrance-free cleaner. You asked for fragrance-free cleaner on the shared craft worktop.",
+    "clip": "media/cleaning-scent/exception-342/A-none/view/view.mp4"
+  }
+]

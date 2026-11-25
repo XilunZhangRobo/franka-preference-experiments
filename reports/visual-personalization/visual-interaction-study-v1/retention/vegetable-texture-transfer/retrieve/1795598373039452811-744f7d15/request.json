@@ -1,0 +1,61 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Select zero to three notes relevant to this task and observation. Return {\"ids\":[\"note ID\", ...]}.",
+  "context": {
+    "task": "Prepare cooked green beans for the warm side dish.",
+    "options": {
+      "A": "Serve the firmer batch.",
+      "B": "Serve the more tender batch."
+    },
+    "catalog": [
+      {
+        "id": "N-39307f1617",
+        "title": "Clipped rust mat placement"
+      },
+      {
+        "id": "N-83c30a4ea7",
+        "title": "Personal gift cards and gift box arrangement"
+      },
+      {
+        "id": "N-14f935e0ab",
+        "title": "Left-hand handoff preference"
+      },
+      {
+        "id": "N-3150d3ad58",
+        "title": "Assembly parts by order of use"
+      },
+      {
+        "id": "N-a717044ab0",
+        "title": "Drink placement and folded cloth handoffs"
+      },
+      {
+        "id": "N-66a3c417d0",
+        "title": "Low-priority updates during solo work and video calls"
+      },
+      {
+        "id": "N-a4e874cc23",
+        "title": "Broccoli and green bean texture"
+      },
+      {
+        "id": "N-ba35af96c8",
+        "title": "Entryway storage for personal belongings and pen case"
+      },
+      {
+        "id": "N-01819a7d1d",
+        "title": "Overhead lighting for solo work"
+      },
+      {
+        "id": "N-52881ea58e",
+        "title": "Cleaner preferences for kitchen counters and sewing surfaces"
+      }
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "2ee81c4d99e4e5f4fb2fc5105740b5a6fbac70f6d62bb812d824899996a14244"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

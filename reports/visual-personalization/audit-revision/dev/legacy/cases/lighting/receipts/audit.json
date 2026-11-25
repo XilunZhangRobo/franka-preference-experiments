@@ -1,0 +1,14 @@
+{
+  "input_sha256": "81caab8626d60361f21b91d81d1ce91126a4ee871206d2b6b8f2f98623e5d007",
+  "session": "writer",
+  "thread": "run-0050",
+  "request": "sessions/writer/1795631059885769853-dda3664c/request.json",
+  "result": "sessions/writer/1795631059885769853-dda3664c/attempt-1/result.json",
+  "reply": {
+    "observation": "I turned on the desk lamp. The person pressed the same switch, and the bright spot disappeared. They then pressed the other switch, and the table looked more evenly lit.",
+    "interpretation": "They seemed to prefer more even lighting for this puzzle.",
+    "title": "Puzzle lighting",
+    "note": "For puzzle work, try the room light first.",
+    "question": "Do you also prefer the room light for other tabletop tasks?"
+  }
+}

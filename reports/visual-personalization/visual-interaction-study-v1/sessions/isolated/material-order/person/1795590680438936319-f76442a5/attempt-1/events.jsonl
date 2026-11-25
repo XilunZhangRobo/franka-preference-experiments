@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0277"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"Start with the pot on my right, please.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":29400,"cached_input_tokens":12416,"cache_write_input_tokens":0,"output_tokens":27,"reasoning_output_tokens":0}}

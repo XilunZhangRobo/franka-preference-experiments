@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0253"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"Use fragrance-free if guests are coming, but I haven’t specified a preference just because someone else is home.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":29052,"cached_input_tokens":14208,"cache_write_input_tokens":0,"output_tokens":39,"reasoning_output_tokens":0}}

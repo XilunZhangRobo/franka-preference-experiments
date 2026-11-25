@@ -1,0 +1,88 @@
+{
+  "protocol_version": 1,
+  "branch_selective": false,
+  "shared_selective_receipt_hashes": {},
+  "case_id": "paused-work",
+  "model": "gpt-6.2-astra",
+  "prompts": {
+    "audit": "Review the camera interaction. What happened? What preference might explain it? Separate the visible evidence from your inference. Use context and ordinary judgment to write a short rule for a future choice, if the evidence supports one. Keep meaningful uncertainty in the note. Leave the person uninterrupted when you can proceed. Ask one brief question only when plausible readings still call for different actions and choosing poorly would matter. Return JSON with short string fields observation, interpretation, title, note and question. Leave unwarranted fields empty.",
+    "refine": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+    "decide": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+    "selective": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+    "answer": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}."
+  },
+  "seed_metadata": "holdout",
+  "quiet": false,
+  "private_brief": "I clip a mat to mark a project I want to keep on the bench. An already closed kit can go on the shelf when starting a fresh project.",
+  "audit_context": {
+    "task": "Clear a spot on my workbench.",
+    "your_action": "Shelve the rust mat.",
+    "seconds": [
+      0.0,
+      0.3333,
+      0.6667,
+      1.3333,
+      1.6667,
+      2.0,
+      2.3333,
+      2.6667,
+      3.3333,
+      3.6667,
+      4.0,
+      4.3333,
+      4.6667,
+      5.3333,
+      5.6667,
+      6.0
+    ],
+    "heard": [],
+    "choice_reason": "Shelving the rust mat clears a spot while leaving the busier teal mat in place."
+  },
+  "audit_image_hashes": [
+    "ecbcef967d9f48a4e403badfc0eb6c4a944d0d6d82d35c502b0cd3c3adea503f",
+    "d27b7b8caf9c8ad1d3b91d60abafd46349553a00c9a8a1d5d79f426918b8f38b",
+    "9f5c42b9e1f8900f2c489b4fa2955f03f0d042a5d275e184452e3857a40c4d4a",
+    "de1094c72f140e97a48152a6139a58348424fca582006dd445f705b65fb4274a",
+    "e759d95bfbc46836a7f8a17bc8af77bc3107faf7448b0dd6326c9a25cd461cb2",
+    "3fd561a1b3a0dade2fecdf7aa5edd2c5197568b685644c70776680131fd2c58d",
+    "e83aa53d9d09339322087060cc96f326e40247c03cd2119587226a5c53411037",
+    "5a363fa7274aed6cd1bc035b50fcc2f674d907cb7585b0e666faff3bbd1154f2",
+    "e304c2c9bb304a82402a5e0402dd068af63133821d8163c811393d8ed88cfcc1",
+    "fc3c8685b951d654c02a93c047a3d6fa82946f0a18f95d0dd1ecef30ca41f901",
+    "d178c6c327e905c849f671f80ec7fb05163381f4cc85474fd4bbc9796e7109b9",
+    "59a62a0bc5f34b19f51a14a966317c691ec961df767a63e9af0f4b6ef131f2ef",
+    "705f6cf65bcd2799201ab3c0ede33b7f7af059fe17a6ef8987fa553cc7d25f04",
+    "e030a7bbca9d5e8ab4f39ef97c0d42a3d5c852e73937437fbdf4c82134f4f2e5",
+    "717a8d5237322bc57d54e9a980db42cfe4df762c5986b2a737f98636d5b80bfb",
+    "7dfde8f034bc6a75473eed2d0025a20b6f7d3f59d164ae7069e321f6abb649f8"
+  ],
+  "probes": {
+    "transfer": {
+      "public": {
+        "task": "Make room for the cutting board on my sewing counter.",
+        "options": {
+          "A": "Shelve the teal mat.",
+          "B": "Shelve the rust mat."
+        }
+      },
+      "image_hashes": [
+        "245ae9c5392a4ebcadc29d6770de66e60b738ce65abb8a4ffba9171e4814089d"
+      ],
+      "expected": "A"
+    },
+    "control": {
+      "public": {
+        "task": "Free a bench spot for a new project.",
+        "options": {
+          "A": "Shelve the loose organizer.",
+          "B": "Shelve the closed stitching kit."
+        }
+      },
+      "image_hashes": [
+        "7da0c38118a40f3790fa87c2b84cb07fabc01b0b45f0a1de5369f2bdbfe8f278"
+      ],
+      "expected": "B"
+    }
+  },
+  "shared_draft_receipt_sha256": null
+}

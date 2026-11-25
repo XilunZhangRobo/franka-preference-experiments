@@ -1,0 +1,12 @@
+{
+  "input_sha256": "59bc63a42f7d00b77840ce695606c7fd6b4a8cd9156262a9bde15b103b815f1b",
+  "thread": "run-0209",
+  "request": "episodes/continuous/paused-work/independent/transfer-note/1795591866164021312-56dfcb5c/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "They said the rust mat could be moved this time, so shelving it makes room for the cutting board."
+  },
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ]
+}

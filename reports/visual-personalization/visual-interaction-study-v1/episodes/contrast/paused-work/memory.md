@@ -1,0 +1,3 @@
+# Workbench mat shelving cue
+
+When clearing the workbench, shelve the mat you mark with a clip. This time the teal mat had the clip, and you returned the rust mat to the bench. The cue is the clip, regardless of mat color.

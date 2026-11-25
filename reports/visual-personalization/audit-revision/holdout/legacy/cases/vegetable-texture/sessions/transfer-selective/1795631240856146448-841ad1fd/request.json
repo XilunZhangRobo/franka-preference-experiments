@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Prepare cooked green beans for the warm side dish.",
+    "options": {
+      "A": "Serve the firmer batch.",
+      "B": "Serve the more tender batch."
+    },
+    "memory": "# Tender broccoli with a warm dinner\n\nWhen serving broccoli with a warm dinner, make it tender. The person said this was what they wanted the plate gesture to convey. Their preference for broccoli at other meals is unknown.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "fa67f5903e71ff798d1dfeeaf8afbae41ccf6eb451f52a8d78ac08b9d9b6e5b0"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

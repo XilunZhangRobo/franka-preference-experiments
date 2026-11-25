@@ -1,0 +1,141 @@
+{
+  "case_id": "completion-update",
+  "identity_sha256": "e7c4e43ac5c44cb1e7b3c449330bde6f40e22452fdcd89d6c0add38b14f70ec9",
+  "seed_metadata": "holdout",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "I touched the blue cube after the person set the pencil down. It said “Work is complete.” Later, the person touched the cube while the pencil was still on the paper, and it repeated the message.",
+    "interpretation": "They may have wanted to hear the update while working or may simply have wanted to replay it.",
+    "title": "Timing of spoken updates",
+    "note": "The person used the blue cube to replay a completion update during a writing task. Their preferred timing for future updates is unclear.",
+    "question": "For future low-priority updates, should I speak while you’re working or wait until you pause?"
+  },
+  "draft_note": "# Timing of spoken updates\n\nThe person used the blue cube to replay a completion update during a writing task. Their preferred timing for future updates is unclear.\n",
+  "audit_question": "For future low-priority updates, should I speak while you’re working or wait until you pause?",
+  "audit_answer": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one.",
+  "refined_reply": {
+    "title": "Timing of low-priority spoken updates",
+    "note": "The person asked for brief spoken updates right away when working alone. During a video call, wait until the call ends. This preference applies to low-priority updates. Timing in other situations is unclear."
+  },
+  "post_answer_note": "# Timing of low-priority spoken updates\n\nThe person asked for brief spoken updates right away when working alone. During a video call, wait until the call ends. This preference applies to low-priority updates. Timing in other situations is unclear.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 1
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 1,
+      "losses": 0,
+      "net": 1
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The delivery update can wait until the person pauses drawing."
+        },
+        "correct": false,
+        "input_sha256": "771ce353c9855a961c87ee228fbecd5c9cc06eb4f1a518c09136d9fd34abbe9f",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone."
+        },
+        "correct": true,
+        "input_sha256": "d3874ebc0055397d55ff6696a1d049490ef9132e25ec68eca67e82f27938e69b",
+        "reused": false,
+        "receipt": "receipts/transfer-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 1,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "B",
+      "draft": {
+        "reply": {
+          "choice": "B",
+          "reason": "The update can wait until the next pause to avoid interrupting the call."
+        },
+        "correct": true,
+        "input_sha256": "30b7833ff444d1db8f56fe357527ac26c11e8e34d9ee080893d5a7c3305ea7ec",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "B",
+          "reason": "Waiting is closer to the person’s preference to hear the update after the call ends."
+        },
+        "correct": true,
+        "input_sha256": "aab00342f6e6872fea47a2bccee22b4036619295a261f42dd29aeb5fbbdbdd10",
+        "reused": false,
+        "receipt": "receipts/control-post_answer.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "B",
+          "reason": "I’ll give the shelf update at the first pause after the call ends, as requested.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "B",
+          "reason": "I’ll give the shelf update at the first pause after the call ends, as requested.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

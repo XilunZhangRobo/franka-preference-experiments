@@ -1,0 +1,10 @@
+{
+  "input_sha256": "f8616baaf69e51892e5b6b70a1779629d0b0d62a5a97594cb0e0a46f4852244f",
+  "thread": "run-0276",
+  "request": "sessions/isolated/material-order/robot/1795590687424013048-594d1137/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You asked to start with the pot on your right, followed by the scoop in the middle and the tag on your left."
+  },
+  "images": []
+}

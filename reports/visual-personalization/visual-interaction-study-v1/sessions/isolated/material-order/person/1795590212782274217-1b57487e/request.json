@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Play the person in your private brief. Observe the result of the robot action. Select one physical response to enact. Return {\"response\":\"<letter>\"}. Your choice is sent privately to the simulator. The robot sees only your resulting motion.",
+  "context": {
+    "private_brief": "For my own assembly work I use the first component on my right, then work left. When a group shares supplies, put them in the common tray.",
+    "task": "Set out the red base and yellow cap for assembly.",
+    "observed_robot_action": "Set the red base on the person's right and the cap on their left.",
+    "motion_options": {
+      "A": "Swap the two components so their order is reversed.",
+      "B": "Point at the selected arrangement and leave it in place."
+    },
+    "seconds": [
+      0.0,
+      1.6667,
+      3.3333,
+      4.6667,
+      6.3333,
+      8.0
+    ],
+    "heard": []
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "3f7ca9bdeb9f408761fabf181b37f92ae1869e6cc123a9f391aac12af2c00a09"
+    },
+    {
+      "file": "image-001.jpg",
+      "sha256": "b94b3e174a60c66af2127f1e0e13560f8083339e176cef65d3319f2306adcbce"
+    },
+    {
+      "file": "image-002.jpg",
+      "sha256": "3b01b3954230ffa66f47fa98b7fb8a86503aa25a3f4178833f54d11b978d25b9"
+    },
+    {
+      "file": "image-003.jpg",
+      "sha256": "d2e64e60a637cf12f6e79983b94372243e9c3b5a0289218b5f0760733c38c849"
+    },
+    {
+      "file": "image-004.jpg",
+      "sha256": "33414d3a0b7b2093a14460f6242af60d3be3aaf1b39d7913230e5020b7334c60"
+    },
+    {
+      "file": "image-005.jpg",
+      "sha256": "9529f65fcb00f5a1c96a57cb208a3cd01f64f3b9f6b4d9b1059b0ff1055934e7"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

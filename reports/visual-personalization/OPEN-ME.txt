@@ -1,0 +1,5 @@
+Robot personalization across ten simulated tasks
+
+Extract the entire ZIP into one folder. Open index.html in Firefox, Chrome, Edge, or Safari.
+Choose an experiment and a trial. Its interaction menu links to robot action, human response, note, transfer and scope control.
+The linked evidence pages, images and videos are included for offline viewing.

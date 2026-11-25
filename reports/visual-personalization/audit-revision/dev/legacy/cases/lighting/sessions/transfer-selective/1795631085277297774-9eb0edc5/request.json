@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Turn on a light for the person comparing ceramic tile patterns.",
+    "options": {
+      "A": "Turn on the overhead fixture.",
+      "B": "Turn on the desk lamp."
+    },
+    "memory": "# Tabletop lighting for solo work and presentations\n\nFor puzzles and other tabletop tasks, I prefer the ceiling light when I work alone. During a projected presentation, I prefer only the craft table lit. My preference for other group settings is unspecified.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "b364d8fbf238d822f07533ab4fbfc45e6a4bd4cf3e1423c7978642f650feceed"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

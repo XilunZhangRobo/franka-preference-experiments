@@ -1,0 +1,16 @@
+{
+  "first-choice": "episodes/isolated/paused-work/receipts/first-choice.json",
+  "person-response": "episodes/isolated/paused-work/receipts/person-response.json",
+  "audit": "episodes/isolated/paused-work/receipts/audit.json",
+  "audit-answer": "episodes/isolated/paused-work/receipts/audit-answer.json",
+  "updated-note": "episodes/isolated/paused-work/receipts/updated-note.json",
+  "transfer-cold": "episodes/isolated/paused-work/receipts/transfer-cold.json",
+  "transfer-note": "episodes/isolated/paused-work/receipts/transfer-note.json",
+  "transfer-learner": "episodes/isolated/paused-work/receipts/transfer-learner.json",
+  "exception-cold": "episodes/isolated/paused-work/receipts/exception-cold.json",
+  "exception-note": "episodes/isolated/paused-work/receipts/exception-note.json",
+  "exception-learner": "episodes/isolated/paused-work/receipts/exception-learner.json",
+  "exception-answer": "episodes/isolated/paused-work/receipts/exception-answer.json",
+  "exception-act": "episodes/isolated/paused-work/receipts/exception-act.json",
+  "exception-refine": "episodes/isolated/paused-work/receipts/exception-refine.json"
+}

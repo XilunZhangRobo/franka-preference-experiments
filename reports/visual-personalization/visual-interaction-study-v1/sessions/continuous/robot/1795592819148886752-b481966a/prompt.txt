@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {"choice":"<letter>","reason":"one short sentence"}.
+{"task": "Prepare cooked green beans for the warm side dish.", "options": {"A": "Serve the firmer batch.", "B": "Serve the more tender batch."}, "question": "Would you like the green beans tender or firm for this warm side dish?", "person_answer": "I’d like the green beans tender, please."}

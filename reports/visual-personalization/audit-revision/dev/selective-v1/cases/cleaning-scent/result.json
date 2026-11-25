@@ -1,0 +1,138 @@
+{
+  "case_id": "cleaning-scent",
+  "identity_sha256": "8c0762a6c64cddc53dab304a47e7e6029d9af7420f004bdf3bd1561c1830f15c",
+  "seed_metadata": "dev",
+  "draft_receipt": "receipts/audit.json",
+  "draft_reply": {
+    "observation": "The robot set the blue bottle beside the cloth. The person returned it to the tray and put the orange bottle in its place.",
+    "interpretation": "The swap suggests they preferred the orange cleaner for this job. The reason is unclear.",
+    "title": "Cleaner choice when home alone",
+    "note": "Next time they ask for a counter cleaner while home alone, favor the orange bottle. This one choice leaves their scent preference open.",
+    "question": ""
+  },
+  "draft_note": "# Cleaner choice when home alone\n\nNext time they ask for a counter cleaner while home alone, favor the orange bottle. This one choice leaves their scent preference open.\n",
+  "audit_question": "",
+  "audit_answer": null,
+  "refined_reply": null,
+  "post_answer_note": "# Cleaner choice when home alone\n\nNext time they ask for a counter cleaner while home alone, favor the orange bottle. This one choice leaves their scent preference open.\n",
+  "quiet": false,
+  "quiet_checks": null,
+  "opportunities": {
+    "audit": {
+      "available": 1,
+      "asked": 0
+    },
+    "transfer": {
+      "available": 1,
+      "asked": 0
+    },
+    "control": {
+      "available": 1,
+      "asked": 0
+    }
+  },
+  "changes": {
+    "audit": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    },
+    "selective": {
+      "pairs": 2,
+      "gains": 0,
+      "losses": 0,
+      "net": 0
+    }
+  },
+  "probes": {
+    "transfer": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The orange mild-citrus cleaner matches your guidance for this one cleaning choice."
+        },
+        "correct": true,
+        "input_sha256": "51f86456a5af43253beb289ac09b21cf936ed904400c5a2e42f7b15f4536675a",
+        "reused": false,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The orange mild-citrus cleaner matches your guidance for this one cleaning choice."
+        },
+        "correct": true,
+        "input_sha256": "51f86456a5af43253beb289ac09b21cf936ed904400c5a2e42f7b15f4536675a",
+        "reused": true,
+        "receipt": "receipts/transfer-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "The orange bottle is the best match for your earlier cleaner choice on a surface only you use.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/transfer-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "The orange bottle is the best match for your earlier cleaner choice on a surface only you use.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    },
+    "control": {
+      "expected": "A",
+      "draft": {
+        "reply": {
+          "choice": "A",
+          "reason": "The fragrance-free cleaner suits a shared worktop because the orange-bottle preference applies only when home alone."
+        },
+        "correct": true,
+        "input_sha256": "65fac9adb7ff8c667404eb615af3382df43585626bf89137b1d478a7d6729d22",
+        "reused": false,
+        "receipt": "receipts/control-draft.json"
+      },
+      "post_answer": {
+        "reply": {
+          "choice": "A",
+          "reason": "The fragrance-free cleaner suits a shared worktop because the orange-bottle preference applies only when home alone."
+        },
+        "correct": true,
+        "input_sha256": "65fac9adb7ff8c667404eb615af3382df43585626bf89137b1d478a7d6729d22",
+        "reused": true,
+        "receipt": "receipts/control-draft.json"
+      },
+      "selective": {
+        "tentative": {
+          "choice": "A",
+          "reason": "Fragrance-free cleaner avoids adding scent to the worktop the guests will share.",
+          "question": ""
+        },
+        "question": "",
+        "tentative_receipt": "receipts/control-selective.json",
+        "share_status": "not requested",
+        "final_context": "tentative action",
+        "answer": null,
+        "final": {
+          "choice": "A",
+          "reason": "Fragrance-free cleaner avoids adding scent to the worktop the guests will share.",
+          "question": ""
+        },
+        "before_correct": true,
+        "after_correct": true
+      },
+      "audit_note_change": 0,
+      "selective_change": 0
+    }
+  }
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Clear a spot on my workbench.",
+    "image": "media/paused-work/teach-37/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Shelve the rust mat. Shelving the rust mat clears a spot while moving fewer loose parts."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/paused-work/teach-37/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Bring the shelved mat back to its original spot and leave the other mat alone."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 2.0, 2.3333, 3.0, 3.3333, 4.0, 4.3333, 5.0, 5.3333, 6.0, 6.3333, 7.0, 7.3333",
+    "clip": "media/paused-work/teach-37/A-change/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "After I shelved the rust mat, you returned it to its original spot on the workbench. You seemed to want the rust mat within reach for this task."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Should I usually leave the rust mat on the bench, or did you need it there just this time?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Just this time, because I clip the mat I want shelved."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Workbench mat shelving cue\n\nWhen clearing the workbench, shelve the mat you mark with a clip. This time the teal mat had the clip, and you returned the rust mat to the bench. The cue is the clip, regardless of mat color.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Make room for the cutting board on my sewing counter.",
+    "image": "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Shelve the teal mat. Shelving the teal mat clears space at the front of the counter for the cutting board."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Shelve the rust mat. The clip is on the rust mat, marking it for shelving."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Do you use the same clip cue on your sewing counter?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Yes, I clip the mat for the project I want shelved there too."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Clipped project mats on the workbench and sewing counter\n\nWhen making room on your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Shelve the rust mat. The clip on the rust mat marks it as the one you want shelved.",
+    "clip": "media/paused-work/transfer-140/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Free a bench spot for a new project.",
+    "image": "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Shelve the closed stitching kit. Shelving the closed stitching kit clears a bench spot while keeping its contents together."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Shelve the closed stitching kit. Shelving the closed stitching kit frees a spot and leaves the rust mat’s loose supplies in place."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Which would you like shelved this time, the closed stitching kit or the loose organizer?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Please shelve the closed stitching kit."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Shelving cue for project mats\n\nWhen clearing your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces. Your request to shelve the closed stitching kit applied to this cleanup only.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Shelve the closed stitching kit. You asked me to shelve the closed stitching kit to free a bench spot.",
+    "clip": "media/paused-work/exception-243/B-none/view/view.mp4"
+  }
+]

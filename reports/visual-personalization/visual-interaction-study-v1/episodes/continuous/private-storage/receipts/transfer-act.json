@@ -1,0 +1,10 @@
+{
+  "input_sha256": "f0c2437e908054771876b44f38312a13b1007d4f7e452bf5daaad6c77a2556d5",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593306830240643-95892b53/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You asked me to put your pen case in the usual closed compartment."
+  },
+  "images": []
+}

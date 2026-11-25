@@ -1,0 +1,105 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0098",
+    "reply": {
+      "observation": "I touched the blue cube after the person set the pencil down. It said “Work is complete.” Later, the person touched the cube while the pencil was still on the paper, and it repeated the message.",
+      "interpretation": "They may have wanted to hear the update while working or may simply have wanted to replay it.",
+      "title": "Timing of spoken updates",
+      "note": "The person used the blue cube to replay a completion update during a writing task. Their preferred timing for future updates is unclear.",
+      "question": "For future low-priority updates, should I speak while you’re working or wait until you pause?"
+    }
+  },
+  {
+    "stage": "audit-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/audit-answer.json",
+    "thread": "run-0097",
+    "reply": {
+      "answer": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."
+    }
+  },
+  {
+    "stage": "refine",
+    "actor": "robot",
+    "channel": "written note",
+    "receipt": "receipts/refine.json",
+    "thread": "run-0102",
+    "reply": {
+      "title": "Timing of low-priority spoken updates",
+      "note": "The person asked for brief spoken updates right away when working alone. During a video call, wait until the call ends. This preference applies to low-priority updates. Timing in other situations is unclear."
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0103",
+    "reply": {
+      "choice": "B",
+      "reason": "The delivery update can wait until the person pauses drawing."
+    }
+  },
+  {
+    "stage": "transfer-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-post_answer.json",
+    "thread": "run-0104",
+    "reply": {
+      "choice": "A",
+      "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0105",
+    "reply": {
+      "choice": "A",
+      "reason": "The person is drawing alone and prefers brief spoken updates right away when working alone.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0099",
+    "reply": {
+      "choice": "B",
+      "reason": "The update can wait until the next pause to avoid interrupting the call."
+    }
+  },
+  {
+    "stage": "control-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-post_answer.json",
+    "thread": "run-0100",
+    "reply": {
+      "choice": "B",
+      "reason": "Waiting is closer to the person’s preference to hear the update after the call ends."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0101",
+    "reply": {
+      "choice": "B",
+      "reason": "I’ll give the shelf update at the first pause after the call ends, as requested.",
+      "question": ""
+    }
+  }
+]

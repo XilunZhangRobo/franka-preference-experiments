@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+    "options": {
+      "A": "Use the fragrance-free cleaner.",
+      "B": "Use the mild-citrus cleaner."
+    },
+    "question": "Should I use fragrance-free cleaner on the shared craft worktop too?",
+    "person_answer": "Yes, please use fragrance-free cleaner on the shared craft worktop."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0252"
+}

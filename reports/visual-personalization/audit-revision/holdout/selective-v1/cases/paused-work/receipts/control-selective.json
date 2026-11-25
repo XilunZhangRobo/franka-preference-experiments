@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9872311b7080cccd6d07e6679fda9d22e8297144fb8960795bd683564debad6f",
+  "session": "control-selective",
+  "thread": "run-0161",
+  "request": "sessions/control-selective/1795631212517213675-324b8e15/request.json",
+  "result": "sessions/control-selective/1795631212517213675-324b8e15/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The stitching kit is closed, so shelving it frees space and leaves the clipped mat in place.",
+    "question": ""
+  }
+}

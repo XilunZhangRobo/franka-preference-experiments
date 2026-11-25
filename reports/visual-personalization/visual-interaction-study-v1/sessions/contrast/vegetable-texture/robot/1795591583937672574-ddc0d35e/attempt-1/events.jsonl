@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0240"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\n  \"observation\": \"You returned the broccoli I served to its tray and put a floret from the other tray on your plate.\",\n  \"interpretation\": \"Your swap suggests you preferred firmer broccoli with this dinner.\",\n  \"title\": \"Broccoli texture\",\n  \"note\": \"You chose the firmer broccoli when offered both batches at dinner.\",\n  \"question\": \"Should I choose firmer broccoli for you at future meals?\"\n}"}}
+{"type":"turn.completed","usage":{"input_tokens":31224,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":121,"reasoning_output_tokens":0}}

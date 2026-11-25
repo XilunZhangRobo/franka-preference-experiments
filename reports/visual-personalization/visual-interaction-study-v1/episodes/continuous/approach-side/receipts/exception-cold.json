@@ -1,0 +1,12 @@
+{
+  "input_sha256": "dd7e133643e8caec9d2455927a4d323bc8719911f8c0c003c1380d297d504499",
+  "thread": "run-0180",
+  "request": "episodes/continuous/approach-side/independent/exception-cold/1795592505284541714-6c246f8e/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The cloth is near the person's right hand, and there is room to offer it there."
+  },
+  "images": [
+    "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  ]
+}

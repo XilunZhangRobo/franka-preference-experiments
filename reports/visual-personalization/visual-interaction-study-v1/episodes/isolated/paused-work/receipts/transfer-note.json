@@ -1,0 +1,12 @@
+{
+  "input_sha256": "c957d97867319fd092591158d1ee6be3ae40ac1e913c19552c27043b164c49e9",
+  "thread": "run-0287",
+  "request": "episodes/isolated/paused-work/independent/transfer-note/1795590287272391654-b5e071b6/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Shelving the teal mat makes room for the cutting board while keeping the clipped rust mat on the bench."
+  },
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ]
+}

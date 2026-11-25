@@ -1,0 +1,16 @@
+{
+  "first-choice": "episodes/continuous/gift-finishing/receipts/first-choice.json",
+  "person-response": "episodes/continuous/gift-finishing/receipts/person-response.json",
+  "audit": "episodes/continuous/gift-finishing/receipts/audit.json",
+  "audit-answer": "episodes/continuous/gift-finishing/receipts/audit-answer.json",
+  "updated-note": "episodes/continuous/gift-finishing/receipts/updated-note.json",
+  "transfer-cold": "episodes/continuous/gift-finishing/receipts/transfer-cold.json",
+  "transfer-note": "episodes/continuous/gift-finishing/receipts/transfer-note.json",
+  "transfer-learner": "episodes/continuous/gift-finishing/receipts/transfer-learner.json",
+  "transfer-answer": "episodes/continuous/gift-finishing/receipts/transfer-answer.json",
+  "transfer-act": "episodes/continuous/gift-finishing/receipts/transfer-act.json",
+  "transfer-refine": "episodes/continuous/gift-finishing/receipts/transfer-refine.json",
+  "exception-cold": "episodes/continuous/gift-finishing/receipts/exception-cold.json",
+  "exception-note": "episodes/continuous/gift-finishing/receipts/exception-note.json",
+  "exception-learner": "episodes/continuous/gift-finishing/receipts/exception-learner.json"
+}

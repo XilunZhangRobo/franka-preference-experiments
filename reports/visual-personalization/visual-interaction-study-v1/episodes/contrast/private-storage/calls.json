@@ -1,0 +1,11 @@
+{
+  "first-choice": "episodes/contrast/private-storage/receipts/first-choice.json",
+  "person-response": "episodes/contrast/private-storage/receipts/person-response.json",
+  "audit": "episodes/contrast/private-storage/receipts/audit.json",
+  "transfer-cold": "episodes/contrast/private-storage/receipts/transfer-cold.json",
+  "transfer-note": "episodes/contrast/private-storage/receipts/transfer-note.json",
+  "transfer-learner": "episodes/contrast/private-storage/receipts/transfer-learner.json",
+  "exception-cold": "episodes/contrast/private-storage/receipts/exception-cold.json",
+  "exception-note": "episodes/contrast/private-storage/receipts/exception-note.json",
+  "exception-learner": "episodes/contrast/private-storage/receipts/exception-learner.json"
+}

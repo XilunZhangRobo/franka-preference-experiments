@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Help get the gift box ready.",
+    "options": {
+      "A": "Arrange the tissue and gift inside and close the box.",
+      "B": "Open the box and set the tissue and gift alongside it."
+    },
+    "memory": "# Offer the flower for final placement\n\nOn a similar card, bring the flower within reach and let the person place it if they reach for it. This may have been specific to this card.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "2aa5967230264063a88563dd85d3b2e19ad67934fd7cedd68dfa808866b2f664"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0021",
+    "reply": {
+      "observation": "I placed the white piece in the amber tray. The person then moved it to the teal tray and left it there.",
+      "interpretation": "The person likely wanted this finished piece in the teal tray.",
+      "title": "Tray choice for finished pieces",
+      "note": "Use the teal tray for similar finished pieces in this setup. This single move may have been specific to this piece.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0024",
+    "reply": {
+      "choice": "A",
+      "reason": "The teal tray was used for a similar finished piece in this setup."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0025",
+    "reply": {
+      "choice": "A",
+      "reason": "The prior example points to the teal tray for a similar finished piece.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0022",
+    "reply": {
+      "choice": "B",
+      "reason": "You asked me to put this piece in the amber tray."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0023",
+    "reply": {
+      "choice": "B",
+      "reason": "You specifically requested the amber tray for this piece.",
+      "question": ""
+    }
+  }
+]

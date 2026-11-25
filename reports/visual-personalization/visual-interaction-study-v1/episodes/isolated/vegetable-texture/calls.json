@@ -1,0 +1,19 @@
+{
+  "first-choice": "episodes/isolated/vegetable-texture/receipts/first-choice.json",
+  "person-response": "episodes/isolated/vegetable-texture/receipts/person-response.json",
+  "audit": "episodes/isolated/vegetable-texture/receipts/audit.json",
+  "audit-answer": "episodes/isolated/vegetable-texture/receipts/audit-answer.json",
+  "updated-note": "episodes/isolated/vegetable-texture/receipts/updated-note.json",
+  "transfer-cold": "episodes/isolated/vegetable-texture/receipts/transfer-cold.json",
+  "transfer-note": "episodes/isolated/vegetable-texture/receipts/transfer-note.json",
+  "transfer-learner": "episodes/isolated/vegetable-texture/receipts/transfer-learner.json",
+  "transfer-answer": "episodes/isolated/vegetable-texture/receipts/transfer-answer.json",
+  "transfer-act": "episodes/isolated/vegetable-texture/receipts/transfer-act.json",
+  "transfer-refine": "episodes/isolated/vegetable-texture/receipts/transfer-refine.json",
+  "exception-cold": "episodes/isolated/vegetable-texture/receipts/exception-cold.json",
+  "exception-note": "episodes/isolated/vegetable-texture/receipts/exception-note.json",
+  "exception-learner": "episodes/isolated/vegetable-texture/receipts/exception-learner.json",
+  "exception-answer": "episodes/isolated/vegetable-texture/receipts/exception-answer.json",
+  "exception-act": "episodes/isolated/vegetable-texture/receipts/exception-act.json",
+  "exception-refine": "episodes/isolated/vegetable-texture/receipts/exception-refine.json"
+}

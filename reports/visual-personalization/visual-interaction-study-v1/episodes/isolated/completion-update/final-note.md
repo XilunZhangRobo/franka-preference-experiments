@@ -1,0 +1,3 @@
+# Routine update timing during solo work and video calls
+
+The person asked to hear routine updates right away when working alone. If they’re on a video call, wait until the call ends. They tapped the device once to hear an update again, but their replay preference is unclear.

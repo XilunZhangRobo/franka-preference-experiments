@@ -1,0 +1,136 @@
+{
+  "mode": "isolated",
+  "scenario": "gift-finishing",
+  "title": "Gift Finishing",
+  "profile": "standard",
+  "turns": [
+    {
+      "role": "Person",
+      "channel": "task command",
+      "text": "Help prepare the handmade card.",
+      "image": "media/gift-finishing/teach-48/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "selected action",
+      "text": "Bring the flower over the card to attach it. The drawn stem on the card gives the flower a place to go."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual evidence to person",
+      "text": "Camera sequence after the robot chose its action.",
+      "clip": "media/gift-finishing/teach-48/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "private motion command to simulator",
+      "text": "Take the flower and put the finishing touch on the card yourself."
+    },
+    {
+      "role": "Simulator",
+      "channel": "visual feedback to robot",
+      "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 1.0, 1.3333, 1.6667, 2.3333, 2.6667, 3.0, 3.6667, 4.0, 4.3333, 5.0, 5.3333, 5.6667, 6.3333, 6.6667",
+      "clip": "media/gift-finishing/teach-48/B-change/view/view.mp4"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "private visual audit",
+      "text": "You took the flower from my gripper and pressed it onto the drawn stem. You may have wanted to choose its exact position yourself."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "For future craft projects, would you like me to hand you decorations so you can place them yourself?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "For personal gifts, yes, please hand me the decorations so I can add the finishing touches myself."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "writes personal note",
+      "text": "# Decoration handoffs for personal gifts\n\nFor personal gifts, hand me the decorations so I can add the finishing touches myself, as I did with the flower on the handmade card. My preference for other craft projects is unknown.\n"
+    },
+    {
+      "role": "Person",
+      "channel": "new task",
+      "text": "Help get the gift box ready.",
+      "image": "media/gift-finishing/transfer-151/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Arrange the tissue and gift inside and close the box. Placing the tissue and gift inside and closing the box makes it ready to give."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Open the box and set the tissue and gift alongside it. Opening the box and setting the tissue and gift beside it lets you add the finishing touches yourself."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "question to person",
+      "text": "Would you like to arrange the tissue and gift yourself, or should I pack and close the box?"
+    },
+    {
+      "role": "Person Astra",
+      "channel": "spoken answer to robot",
+      "text": "I’d like to arrange the tissue and gift myself."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "refines personal note",
+      "text": "# Personal gift decorations and box packing\n\nFor personal gifts, hand me the decorations so I can place them myself, as I did with the card’s flower. For this gift box, set the tissue and gift beside the open box so I can arrange them. My preference for other boxes or craft projects is unknown.\n"
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Open the box and set the tissue and gift alongside it. Opening the box and setting the tissue and gift beside it lets you arrange them yourself.",
+      "clip": "media/gift-finishing/transfer-151/B-none/view/view.mp4"
+    },
+    {
+      "role": "Person",
+      "channel": "scope control",
+      "text": "Prepare the labeled lunches for tomorrow morning.",
+      "image": "media/gift-finishing/exception-254/initial-none/view/frame-00000.jpg"
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "cold comparison",
+      "text": "Put a portion in each box and close each lid. The boxes, portions, and labeled lids are already set out, so packing and closing each box will finish the lunches."
+    },
+    {
+      "role": "Fresh Astra",
+      "channel": "note comparison",
+      "text": "Put a portion in each box and close each lid. Packing each portion and closing its labeled box gets both lunches ready for tomorrow morning."
+    },
+    {
+      "role": "Robot Astra",
+      "channel": "executed probe action",
+      "text": "Put a portion in each box and close each lid. Putting a portion in each labeled box and closing its lid gets both lunches ready for tomorrow.",
+      "clip": "media/gift-finishing/exception-254/A-none/view/view.mp4"
+    }
+  ],
+  "scores": {
+    "teaching_miss": true,
+    "feedback_matches_persona": true,
+    "transfer_cold": false,
+    "transfer_note": true,
+    "transfer_before_question": true,
+    "transfer_learner": true,
+    "control_cold": true,
+    "control_note": true,
+    "control_before_question": true,
+    "control_learner": true
+  },
+  "transcript": "episodes/isolated/gift-finishing/transcript.json",
+  "robot_thread": "run-0264",
+  "person_thread": "run-0265",
+  "artifacts": {
+    "Exact calls and model inputs": "episodes/isolated/gift-finishing/calls.json",
+    "Visual-only draft": "episodes/isolated/gift-finishing/visual-only.md",
+    "Note at first probe": "episodes/isolated/gift-finishing/memory.md",
+    "Final note": "episodes/isolated/gift-finishing/final-note.md"
+  }
+}

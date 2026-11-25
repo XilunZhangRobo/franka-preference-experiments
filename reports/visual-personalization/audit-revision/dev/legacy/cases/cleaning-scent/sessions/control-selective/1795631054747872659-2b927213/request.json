@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "Wipe the shared worktop before the guests arrive for our craft session.",
+    "options": {
+      "A": "Use the fragrance-free cleaner.",
+      "B": "Use the mild-citrus cleaner."
+    },
+    "memory": "# Orange cleaner for kitchen counters\n\nSet out the orange cleaner for kitchen counter cleanup when I’m using the kitchen privately and no guests are coming. I chose it once while home alone. My preference for other situations is unspecified.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "bbee631bd0f60191d95b396a87d1b3d12df77f7447e7b70c599ecb5aac56ea77"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

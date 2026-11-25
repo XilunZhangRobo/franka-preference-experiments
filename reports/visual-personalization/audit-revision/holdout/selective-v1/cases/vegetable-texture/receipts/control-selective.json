@@ -1,0 +1,12 @@
+{
+  "input_sha256": "0c38ad6cc9b5d10f42fc972a9bfa978dd013fce45833226393bc7cf17e450a5e",
+  "session": "control-selective",
+  "thread": "run-0174",
+  "request": "sessions/control-selective/1795631136160824978-670d07ee/request.json",
+  "result": "sessions/control-selective/1795631136160824978-670d07ee/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer cooked green beans hold their crunch in a chilled salad.",
+    "question": ""
+  }
+}

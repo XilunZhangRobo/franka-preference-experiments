@@ -1,0 +1,3 @@
+# Cleaner preferences for kitchen counters and sewing surfaces
+
+Use mild-citrus cleaner on the kitchen counter when the person is home alone and fragrance-free cleaner when guests are expected. They also confirmed mild citrus for their private sewing surface.

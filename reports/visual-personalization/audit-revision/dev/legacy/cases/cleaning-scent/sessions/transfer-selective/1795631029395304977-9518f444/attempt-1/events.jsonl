@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0037"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"Your citrus preference is specific to the kitchen.\",\"question\":\"Which cleaner do you prefer for the sewing table?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12470,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":33,"reasoning_output_tokens":0}}

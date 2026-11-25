@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "B",
+    "reason": "The delivery update can wait until the person pauses drawing."
+  },
+  "request": "visual-only-comparisons/completion-update/session/1795591480397936275-ff0786e7/request.json",
+  "thread": "run-0432",
+  "images": [
+    "media/completion-update/transfer-195/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "414dfaaf063f3cc6b44c320f4420f3b2a5ab7ba03003ef3ebc80d8db9c486855"
+}

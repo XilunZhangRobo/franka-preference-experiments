@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {"answer":"your spoken reply"}.
+{"question": "Which would you like shelved this time, the closed stitching kit or the loose organizer?", "task": "Free a bench spot for a new project.", "private_brief": "I clip a mat to mark the project I want shelved. An already closed kit can go on the shelf when starting a fresh project."}

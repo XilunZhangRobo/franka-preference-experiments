@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0271"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"answer\":\"Yes, when I work alone, but during a projected presentation I prefer just the desk lamp.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":29000,"cached_input_tokens":12416,"cache_write_input_tokens":0,"output_tokens":36,"reasoning_output_tokens":0}}

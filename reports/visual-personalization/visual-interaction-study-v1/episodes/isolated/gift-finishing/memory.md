@@ -1,0 +1,3 @@
+# Decoration handoffs for personal gifts
+
+For personal gifts, hand me the decorations so I can add the finishing touches myself, as I did with the flower on the handmade card. My preference for other craft projects is unknown.

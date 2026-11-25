@@ -1,0 +1,9 @@
+{
+  "input_sha256": "73f424a63b6a4878ed2d5e4e347f99aa8a501eedf00e610283688bcc337c4bce",
+  "thread": "run-0259",
+  "request": "sessions/isolated/completion-update/person/1795591189956781704-18b8cac9/request.json",
+  "reply": {
+    "answer": "Tell me right away when I’m working alone, but wait until my video call ends if I’m on one."
+  },
+  "images": []
+}

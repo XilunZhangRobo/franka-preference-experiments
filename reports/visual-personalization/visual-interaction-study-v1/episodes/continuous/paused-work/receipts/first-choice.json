@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9361b22a395a298fd3bc4c9027a8b2183ca79a8c512d20b3cd31ac37c51f3625",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795591821582912936-09568bea/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Shelving the rust mat clears a spot while leaving the teal mat’s larger collection of parts in place."
+  },
+  "images": [
+    "media/paused-work/teach-37/initial-none/view/frame-00000.jpg"
+  ]
+}

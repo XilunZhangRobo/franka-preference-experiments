@@ -1,0 +1,12 @@
+{
+  "input_sha256": "942a7c115712db357738c7ab40b37022b206e26dc6f7aac45f4327cdbc34ecb0",
+  "thread": "run-0257",
+  "request": "episodes/isolated/cleaning-scent/independent/transfer-note/1795591085381071173-d7abd1df/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Your past choice of mild citrus while home alone is the closest match for a surface only you use."
+  },
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ]
+}

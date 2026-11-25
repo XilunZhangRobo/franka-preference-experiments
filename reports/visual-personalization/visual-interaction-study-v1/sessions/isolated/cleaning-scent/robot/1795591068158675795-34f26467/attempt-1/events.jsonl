@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0252"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Kitchen counter cleaner\",\"note\":\"Use fragrance-free cleaner when guests are expected. You chose mild citrus once while home alone. You haven’t specified a preference based solely on someone else being home.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":50499,"cached_input_tokens":38016,"cache_write_input_tokens":0,"output_tokens":168,"reasoning_output_tokens":0}}

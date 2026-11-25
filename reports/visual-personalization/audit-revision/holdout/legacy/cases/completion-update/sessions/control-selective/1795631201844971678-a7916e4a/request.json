@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}. Before acting you may ask the person a focused question if its answer could change your choice. Include \"question\" (empty string to act immediately). Even when asking, record your tentative choice.",
+  "context": {
+    "task": "The shelf is organized while the person speaks on a video call. Give a low-priority update.",
+    "options": {
+      "A": "Give a brief spoken update now.",
+      "B": "Give the spoken update at the person's next pause."
+    },
+    "memory": "# Timing of low-priority spoken updates\n\nThe person asked for brief spoken updates right away when working alone. During a video call, wait until the call ends. This preference applies to low-priority updates. Timing in other situations is unclear.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "f48a2914174e8a32b4f8b14508c5e6b07d0e6deb647b1590edfd06d2f88dd0c3"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

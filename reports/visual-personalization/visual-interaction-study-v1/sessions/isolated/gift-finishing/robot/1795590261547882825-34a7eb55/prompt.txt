@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Placing card decorations\n\nWhen I brought the flower over this card, you handled the final placement.\n", "question": "For future craft projects, would you like me to hand you decorations so you can place them yourself?", "person_answer": "For personal gifts, yes, please hand me the decorations so I can add the finishing touches myself."}

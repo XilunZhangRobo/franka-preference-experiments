@@ -1,0 +1,10 @@
+{
+  "input_sha256": "f0917e213b954c98e104f7ac28a0d6f2fbb11915f00cd4c28b6eec2a54cf60f5",
+  "thread": "run-0222",
+  "request": "sessions/contrast/material-order/robot/1795591696431826414-de9d5ddc/request.json",
+  "reply": {
+    "title": "Left-to-right setup for assembly and planting",
+    "note": "For their own assemblies where the base is used first and the cap second, place the base on their left and the cap on their right. They demonstrated and confirmed this layout. For planting, they explicitly requested the pot on their left, the scoop in the middle, and the tag on their right. Their preference for other tasks or sequences is unknown."
+  },
+  "images": []
+}

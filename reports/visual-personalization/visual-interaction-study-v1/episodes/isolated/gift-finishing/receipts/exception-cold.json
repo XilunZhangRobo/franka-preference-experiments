@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cf8beb0d7d7bad21698eb8478793f93be91fc8e7e8ebf2ab06d8f3a4b1eef08b",
+  "thread": "run-0266",
+  "request": "episodes/isolated/gift-finishing/independent/exception-cold/1795590438773357095-8f248274/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The boxes, portions, and labeled lids are already set out, so packing and closing each box will finish the lunches."
+  },
+  "images": [
+    "media/gift-finishing/exception-254/initial-none/view/frame-00000.jpg"
+  ]
+}

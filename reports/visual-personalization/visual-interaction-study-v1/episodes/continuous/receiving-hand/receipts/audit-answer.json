@@ -1,0 +1,9 @@
+{
+  "input_sha256": "acc1d55995333ff3e61638b5fbc4f476d04aeeb177749ebe77f1685d3b444fd0",
+  "thread": "run-0179",
+  "request": "sessions/continuous/person/1795592176365358030-4012edd8/request.json",
+  "reply": {
+    "answer": "Please offer things to my left hand unless it’s busy, in which case use my right."
+  },
+  "images": []
+}

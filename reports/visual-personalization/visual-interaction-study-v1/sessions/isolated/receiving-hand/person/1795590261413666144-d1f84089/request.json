@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Would you prefer left-hand handoffs for flashlights, for other items too, or does it depend?",
+    "task": "Hand me the flashlight.",
+    "private_brief": "I prefer receiving things in my left hand when it is free. Use my free hand if the other one is busy."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0295"
+}

@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+    "options": {
+      "A": "Set the rulers on the tray beside the shared craft materials.",
+      "B": "Place the items in the shallow compartment and close it."
+    },
+    "notes": [
+      "# Assembly parts by order of use\n\nFor the person’s own assemblies, they asked for the part they use first on their right and the part they use next on their left.\n"
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "6116ce356afb22f75545796691e232b1006bf7fd5c8ae128b9e459f62876479a"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

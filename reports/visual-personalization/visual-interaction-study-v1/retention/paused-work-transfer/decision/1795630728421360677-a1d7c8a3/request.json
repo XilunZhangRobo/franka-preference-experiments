@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}.",
+  "context": {
+    "task": "Make room for the cutting board on my sewing counter.",
+    "options": {
+      "A": "Shelve the rust mat.",
+      "B": "Shelve the teal mat."
+    },
+    "notes": [
+      "# Clipped rust mat placement\n\nLeave the rust mat on the bench whenever the person clips it. They said they didn’t need it there this time and gave no standing rule for an unclipped mat.\n"
+    ]
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "e18f35d585d9439d3fc49cbe6feb13d903e6332cf31e2e38f143181d6876a6fe"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

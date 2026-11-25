@@ -1,0 +1,11 @@
+{
+  "input_sha256": "51fc5b932e70ad0f4024edad59fbad70320791ee7ff69e10d45b70a827616b36",
+  "session": "forced-51fc5b932e70ad0f4024edad59fbad70320791ee7ff69e10d45b70a827616b36",
+  "thread": "run-0153",
+  "request": "sessions/forced-51fc5b932e70ad0f4024edad59fbad70320791ee7ff69e10d45b70a827616b36/1795631182530727832-2d64d6a7/request.json",
+  "result": "sessions/forced-51fc5b932e70ad0f4024edad59fbad70320791ee7ff69e10d45b70a827616b36/1795631182530727832-2d64d6a7/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The central tray keeps the markers within reach of all four people."
+  }
+}

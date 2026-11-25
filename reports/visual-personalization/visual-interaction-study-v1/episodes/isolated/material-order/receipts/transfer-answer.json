@@ -1,0 +1,11 @@
+{
+  "input_sha256": "f169460b4f0da0cf56512be6ed9927ef9b1e3aed40c889f49b3fcbd994e838e4",
+  "thread": "run-0277",
+  "request": "sessions/isolated/material-order/person/1795590680438936319-f76442a5/request.json",
+  "reply": {
+    "answer": "Start with the pot on my right, please."
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

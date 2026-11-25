@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Choose one available action using the task, the camera and any personal knowledge. Act on the best-supported choice. Ask the person only when the remaining plausible readings lead to different actions here and choosing poorly would matter. Return JSON with choice (the tentative option letter), reason (one short sentence) and question (empty to act immediately).",
+  "context": {
+    "task": "Make room for the cutting board on my sewing counter.",
+    "options": {
+      "A": "Shelve the teal mat.",
+      "B": "Shelve the rust mat."
+    },
+    "memory": "# Keep the clipped mat on the workbench\n\nOn this workbench, keep whichever mat is clipped in place and shelve the kit if it’s already closed. Use the clip to identify the mat regardless of color or part count. The person didn’t specify what to do with an open kit.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "245ae9c5392a4ebcadc29d6770de66e60b738ce65abb8a4ffba9171e4814089d"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

@@ -1,0 +1,30 @@
+{
+  "input_sha256": "49642b790442211b22c6274f79a5c941d0c8f4c1ba0c638cbd003b17d9c75bca",
+  "thread": "run-0294",
+  "request": "sessions/isolated/receiving-hand/robot/1795590253280620048-36e0258a/request.json",
+  "reply": {
+    "observation": "You took the flashlight with your right hand, then moved it to your left.",
+    "interpretation": "Offering it to your left hand may have saved you a hand switch.",
+    "title": "Flashlight handoffs",
+    "note": "You switched the flashlight to your left hand after this handoff.",
+    "question": "Would you prefer left-hand handoffs for flashlights, for other items too, or does it depend?"
+  },
+  "images": [
+    "media/receiving-hand/teach-59/A-change/view/frame-00000.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00004.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00006.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00010.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00012.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00016.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00020.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00022.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00026.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00028.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00032.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00036.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00038.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00042.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00044.jpg",
+    "media/receiving-hand/teach-59/A-change/view/frame-00048.jpg"
+  ]
+}

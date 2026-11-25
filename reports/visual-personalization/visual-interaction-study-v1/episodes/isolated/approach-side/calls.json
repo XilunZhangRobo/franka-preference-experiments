@@ -1,0 +1,13 @@
+{
+  "first-choice": "episodes/isolated/approach-side/receipts/first-choice.json",
+  "person-response": "episodes/isolated/approach-side/receipts/person-response.json",
+  "audit": "episodes/isolated/approach-side/receipts/audit.json",
+  "audit-answer": "episodes/isolated/approach-side/receipts/audit-answer.json",
+  "updated-note": "episodes/isolated/approach-side/receipts/updated-note.json",
+  "transfer-cold": "episodes/isolated/approach-side/receipts/transfer-cold.json",
+  "transfer-note": "episodes/isolated/approach-side/receipts/transfer-note.json",
+  "transfer-learner": "episodes/isolated/approach-side/receipts/transfer-learner.json",
+  "exception-cold": "episodes/isolated/approach-side/receipts/exception-cold.json",
+  "exception-note": "episodes/isolated/approach-side/receipts/exception-note.json",
+  "exception-learner": "episodes/isolated/approach-side/receipts/exception-learner.json"
+}

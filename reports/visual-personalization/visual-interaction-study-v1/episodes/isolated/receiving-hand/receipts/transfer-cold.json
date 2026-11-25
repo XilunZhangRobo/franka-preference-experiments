@@ -1,0 +1,12 @@
+{
+  "input_sha256": "a960c9f3f06adafac80eda87918c9fa6d07e4a378cee71eb632f21098781683b",
+  "thread": "run-0298",
+  "request": "episodes/isolated/receiving-hand/independent/transfer-cold/1795590280847844497-1872d1c0/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The person's right hand is closer to the remote."
+  },
+  "images": [
+    "media/receiving-hand/transfer-162/initial-none/view/frame-00000.jpg"
+  ]
+}

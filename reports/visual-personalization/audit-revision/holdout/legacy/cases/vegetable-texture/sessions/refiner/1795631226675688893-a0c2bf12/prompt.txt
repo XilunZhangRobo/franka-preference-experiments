@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "", "question": "What did you want me to notice when you pointed at the plate?", "person_answer": "I wanted you to notice that I like my broccoli tender with a warm dinner."}

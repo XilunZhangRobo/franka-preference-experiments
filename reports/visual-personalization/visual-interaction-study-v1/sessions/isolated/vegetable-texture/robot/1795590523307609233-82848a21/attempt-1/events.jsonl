@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0300"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"You preferred tender green beans for the warm side dish, but your salad preference is unclear.\",\"question\":\"Would you like the more tender green beans or the firmer ones for the chilled salad?\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":131623,"cached_input_tokens":97024,"cache_write_input_tokens":0,"output_tokens":296,"reasoning_output_tokens":0}}

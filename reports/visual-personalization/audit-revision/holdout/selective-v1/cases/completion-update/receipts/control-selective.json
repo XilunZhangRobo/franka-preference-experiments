@@ -1,0 +1,12 @@
+{
+  "input_sha256": "85619eef5de7cb043f1d25da764025564fd05f29f00cab1ab51842e8e6fd02d8",
+  "session": "control-selective",
+  "thread": "run-0149",
+  "request": "sessions/control-selective/1795631162212951153-8cd3ef65/request.json",
+  "result": "sessions/control-selective/1795631162212951153-8cd3ef65/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Waiting for a pause avoids interrupting the speaker with a low-priority update.",
+    "question": ""
+  }
+}

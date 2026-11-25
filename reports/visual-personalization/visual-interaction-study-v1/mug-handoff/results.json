@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "both-free",
+    "arm": "empty",
+    "choice": "A",
+    "hand": "left",
+    "expected": "left",
+    "correct": true,
+    "transcript": "both-free/empty/choice.json",
+    "clip": "both-free/empty/execution/view/view.mp4",
+    "image": "both-free/initial/view/frame-00000.jpg",
+    "session": "run-0350",
+    "reason": "The person’s left hand is closer to the mug.",
+    "clip_sha256": "49e10bdc3e4e5a2db5d7dcc144e8eedb964a6bbc9ccac7ae1983234fd4345d0a",
+    "frames": 34
+  },
+  {
+    "condition": "both-free",
+    "arm": "original-note",
+    "choice": "A",
+    "hand": "left",
+    "expected": "left",
+    "correct": true,
+    "transcript": "both-free/original-note/choice.json",
+    "clip": "both-free/original-note/execution/view/view.mp4",
+    "image": "both-free/initial/view/frame-00000.jpg",
+    "session": "run-0351",
+    "reason": "Their left hand is free, and they prefer to receive items with it.",
+    "clip_sha256": "49e10bdc3e4e5a2db5d7dcc144e8eedb964a6bbc9ccac7ae1983234fd4345d0a",
+    "frames": 34
+  },
+  {
+    "condition": "left-occupied",
+    "arm": "empty",
+    "choice": "B",
+    "hand": "right",
+    "expected": "right",
+    "correct": true,
+    "transcript": "left-occupied/empty/choice.json",
+    "clip": "left-occupied/empty/execution/view/view.mp4",
+    "image": "left-occupied/initial/view/frame-00000.jpg",
+    "session": "run-0352",
+    "reason": "The person's right hand is free while their left hand holds a cloth.",
+    "clip_sha256": "08e948966a0a75f35155dedc84c3b388f78d9208fba925a83f7f848943bedcb2",
+    "frames": 35
+  },
+  {
+    "condition": "left-occupied",
+    "arm": "original-note",
+    "choice": "B",
+    "hand": "right",
+    "expected": "right",
+    "correct": true,
+    "transcript": "left-occupied/original-note/choice.json",
+    "clip": "left-occupied/original-note/execution/view/view.mp4",
+    "image": "left-occupied/initial/view/frame-00000.jpg",
+    "session": "run-0353",
+    "reason": "Their left hand is busy with the cloth, so I’ll offer the mug to their free right hand.",
+    "clip_sha256": "08e948966a0a75f35155dedc84c3b388f78d9208fba925a83f7f848943bedcb2",
+    "frames": 35
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "input_sha256": "4ee3e3b28b639110f0163a4b4682e93b3a877256628b3d12be4ce7f9077f5dfe",
+  "session": "forced-4ee3e3b28b639110f0163a4b4682e93b3a877256628b3d12be4ce7f9077f5dfe",
+  "thread": "run-0136",
+  "request": "sessions/forced-4ee3e3b28b639110f0163a4b4682e93b3a877256628b3d12be4ce7f9077f5dfe/1795631258720158459-15cb3ea9/request.json",
+  "result": "sessions/forced-4ee3e3b28b639110f0163a4b4682e93b3a877256628b3d12be4ce7f9077f5dfe/1795631258720158459-15cb3ea9/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer green beans will keep their crunch in the chilled salad."
+  }
+}

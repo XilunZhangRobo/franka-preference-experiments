@@ -1,0 +1,27 @@
+{
+  "family": "receiving-hand",
+  "phase": "exception",
+  "visible": {
+    "task": "Pass me the remote.",
+    "options": {
+      "A": "Offer it to the person's left hand.",
+      "B": "Offer it to the person's right hand."
+    }
+  },
+  "expected": "B",
+  "image_sha256": "6c2a9b18f7cfa8f2c68d3645a19cf7d9f8bcb9948e896cdc4d6397b27946b2a0",
+  "notes": {
+    "N-39307f1617": "1df7d0bbf25168992d723b6ca13f786ca092910d656b53d7d334b34a5785e086",
+    "N-83c30a4ea7": "2fd396340e14b1d4860d5dd6269f23b522b7aa9b29fc396173b7da11022c3bbf",
+    "N-14f935e0ab": "b59d569b099353cb33bd1a83d063ad09a46d8f13a32f712f4674df0da77165c9",
+    "N-3150d3ad58": "90d2349fab202ae851fde26207e5fe73b32be5604f4e8c96e86ef56d5b9a0630",
+    "N-a717044ab0": "06b380442761edd487b5d512a7d3afd4360663356d032562c379df4b56bb1ab6",
+    "N-66a3c417d0": "2bee9da37263d3efdaa54919620151c02ff118512db14559e2b65315835e9d33",
+    "N-a4e874cc23": "21f3cc8ebc5841d838681177ac8a471ee591f86854795ad06b6a6ec577857a5d",
+    "N-ba35af96c8": "0717af5d55e2c97fe1ede1ead7c39a314834b1670a41eee723c0a7f471c78d8a",
+    "N-01819a7d1d": "01215945389334e9e7a5635a8efaf60d4f7b9de76551cd6d5f4c9528ad4a5d02",
+    "N-52881ea58e": "5b77cd1ae2a32dcc1aca9a7995ed2e69000d6db5baa081e0efb123f32c91e0c6"
+  },
+  "selection_instruction": "Select zero to three notes relevant to this task and observation. Return {\"ids\":[\"note ID\", ...]}.",
+  "decision_instruction": "Choose exactly one of the offered actions for the task and the observed scene. Return {\"choice\":\"option letter\"}."
+}

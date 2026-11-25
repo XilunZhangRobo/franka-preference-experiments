@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0142",
+    "reply": {
+      "observation": "The robot lifted the cup. The person pointed to the tabletop with their left index finger, and the robot moved the cup toward that spot. The cup was still in the gripper at the end.",
+      "interpretation": "The person likely wanted the drink set down where they pointed. The gesture gives little evidence of a lasting preference for either side.",
+      "title": "Follow the pointed-to spot",
+      "note": "When bringing a drink, use a clear point to the tabletop as the placement cue, even if one hand is closer.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0145",
+    "reply": {
+      "choice": "A",
+      "reason": "The person’s left hand is clear of the robot and can reach the cloth."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0146",
+    "reply": {
+      "choice": "A",
+      "reason": "The person’s left hand is visible and closest to the cloth.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0143",
+    "reply": {
+      "choice": "A",
+      "reason": "The cloth is within reach of the person’s right hand."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0144",
+    "reply": {
+      "choice": "A",
+      "reason": "The folded cloth is already in front of the person on their right, within easy reach.",
+      "question": ""
+    }
+  }
+]

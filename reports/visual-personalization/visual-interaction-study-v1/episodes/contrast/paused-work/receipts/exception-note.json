@@ -1,0 +1,12 @@
+{
+  "input_sha256": "95236f42a84a14811c477a76859b21086a8d2f3398e43775b3bf3a26cabfbbe6",
+  "thread": "run-0231",
+  "request": "episodes/contrast/paused-work/independent/exception-note/1795591686794117448-d1afbfb5/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "Shelving the closed stitching kit frees a spot and leaves the rust mat’s loose supplies in place."
+  },
+  "images": [
+    "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  ]
+}

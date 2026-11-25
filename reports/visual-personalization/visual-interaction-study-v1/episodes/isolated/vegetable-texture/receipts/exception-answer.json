@@ -1,0 +1,11 @@
+{
+  "input_sha256": "e3752bad12a4013b6cd0f23bc93874ef2493845c86ffad1bc08af1c71c16f502",
+  "thread": "run-0301",
+  "request": "sessions/isolated/vegetable-texture/person/1795590529351549122-dd229c14/request.json",
+  "reply": {
+    "answer": "I'd like the firmer green beans for the chilled salad."
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

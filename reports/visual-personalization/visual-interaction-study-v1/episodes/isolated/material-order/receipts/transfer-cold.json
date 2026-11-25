@@ -1,0 +1,12 @@
+{
+  "input_sha256": "e42edb68d6b46dc5050b9709c4426fbec75785e3721a6edb98f46423cf4ba3b2",
+  "thread": "run-0280",
+  "request": "episodes/isolated/material-order/independent/transfer-cold/1795590662088053783-3999abb4/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "From the seated person’s left to right, the row will read pot, scoop, then tag."
+  },
+  "images": [
+    "media/material-order/transfer-173/initial-none/view/frame-00000.jpg"
+  ]
+}

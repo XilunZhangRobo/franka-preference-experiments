@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9cf0a6a952a848474d10a68173c6430edb6af32380c661b7c3123c0bb905c2fc",
+  "thread": "run-0233",
+  "request": "episodes/contrast/paused-work/independent/transfer-note/1795591587651827876-51f66d91/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The clip is on the rust mat, marking it for shelving."
+  },
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ]
+}

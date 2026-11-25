@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {\"title\":\"a short searchable title\",\"note\":\"a short reusable rule with relevant evidence and limits\"}.",
+  "context": {
+    "draft": "# Puzzle lighting\n\nFor puzzle work, try the overhead light first.\n",
+    "question": "Do you also prefer the overhead light for other tasks at this table?",
+    "person_answer": "Yes, when I work alone, but during a projected presentation I prefer just the desk lamp."
+  },
+  "images": [],
+  "persistent": true,
+  "previous_thread_id": "run-0270"
+}

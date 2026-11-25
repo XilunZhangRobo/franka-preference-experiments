@@ -1,0 +1,7 @@
+{
+  "observation": "The person set the pencil aside before the first update, then touched the blue device and heard the same update again.",
+  "interpretation": "They may have wanted to replay the update when they were ready to listen.",
+  "title": "Replay for routine updates",
+  "note": "The person may find it useful to replay a routine update on demand.",
+  "question": "For future routine updates, would you prefer to hear them at a pause or only when you tap the device?"
+}

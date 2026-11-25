@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Turn on a light for the person comparing ceramic tile patterns.",
+    "options": {
+      "A": "Turn on the overhead fixture.",
+      "B": "Turn on the desk lamp."
+    },
+    "memory": "# Overhead lighting for solo work\n\nUse the overhead light by default when the person is working alone. They confirmed this preference after switching lights during a puzzle. Their preference for shared work is unknown.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "b364d8fbf238d822f07533ab4fbfc45e6a4bd4cf3e1423c7978642f650feceed"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

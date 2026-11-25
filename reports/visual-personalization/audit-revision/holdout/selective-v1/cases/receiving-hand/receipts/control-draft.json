@@ -1,0 +1,11 @@
+{
+  "input_sha256": "d6b61185fc80b00e02c0f63bba9d9c95279815a3cf48bfa3bfd918821be15c99",
+  "session": "forced-d6b61185fc80b00e02c0f63bba9d9c95279815a3cf48bfa3bfd918821be15c99",
+  "thread": "run-0168",
+  "request": "sessions/forced-d6b61185fc80b00e02c0f63bba9d9c95279815a3cf48bfa3bfd918821be15c99/1795631122460498192-79f096fa/request.json",
+  "result": "sessions/forced-d6b61185fc80b00e02c0f63bba9d9c95279815a3cf48bfa3bfd918821be15c99/1795631122460498192-79f096fa/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their right hand is free while their left hand is resting on the cloth."
+  }
+}

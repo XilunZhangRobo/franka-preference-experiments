@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0228"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"title\":\"Shelving cue for project mats\",\"note\":\"When clearing your workbench or sewing counter, shelve the project mat marked with a clip, regardless of color. You confirmed this cue for both surfaces. Your request to shelve the closed stitching kit applied to this cleanup only.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":176840,"cached_input_tokens":160384,"cache_write_input_tokens":0,"output_tokens":457,"reasoning_output_tokens":0}}

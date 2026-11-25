@@ -1,0 +1,13 @@
+{
+  "input_sha256": "25a4fbe2bcd2ae6c706b1c5c68abaa551dc2ac30d2ac4de6ea4cae27b57c57bf",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795595969877606641-04d43e73/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Mild citrus is a likely fit for your private sewing room because you prefer it for the kitchen counter when you’re home alone.",
+    "question": "Would you like mild citrus for the sewing surface too?"
+  },
+  "images": [
+    "media/cleaning-scent/transfer-239/initial-none/view/frame-00000.jpg"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "input_sha256": "cfcdfecf4b9e22019aa015d72719b9b3accc4e86cb72fb041f261e3d34e0cc2e",
+  "thread": "run-0271",
+  "request": "sessions/isolated/lighting/person/1795590874857559511-c65d64d6/request.json",
+  "reply": {
+    "answer": "Yes, when I work alone, but during a projected presentation I prefer just the desk lamp."
+  },
+  "images": []
+}

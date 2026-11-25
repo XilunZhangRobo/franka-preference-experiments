@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0067",
+    "reply": {
+      "observation": "The robot set the blue bottle beside the cloth. The person returned it to the tray and put the orange bottle in its place.",
+      "interpretation": "The swap suggests they preferred the orange cleaner for this job. The reason is unclear.",
+      "title": "Cleaner choice when home alone",
+      "note": "Next time they ask for a counter cleaner while home alone, favor the orange bottle. This one choice leaves their scent preference open.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0070",
+    "reply": {
+      "choice": "A",
+      "reason": "The orange mild-citrus cleaner matches your guidance for this one cleaning choice."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0071",
+    "reply": {
+      "choice": "A",
+      "reason": "The orange bottle is the best match for your earlier cleaner choice on a surface only you use.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0068",
+    "reply": {
+      "choice": "A",
+      "reason": "The fragrance-free cleaner suits a shared worktop because the orange-bottle preference applies only when home alone."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0069",
+    "reply": {
+      "choice": "A",
+      "reason": "Fragrance-free cleaner avoids adding scent to the worktop the guests will share.",
+      "question": ""
+    }
+  }
+]

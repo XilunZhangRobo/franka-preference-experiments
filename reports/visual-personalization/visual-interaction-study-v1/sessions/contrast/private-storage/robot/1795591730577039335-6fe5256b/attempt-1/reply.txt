@@ -1,0 +1,7 @@
+{
+  "observation": "After I closed the compartment, the person reopened it, moved both items onto the tray, and closed the empty compartment.",
+  "interpretation": "The person seems to prefer keeping the keys and flashlight visible and easy to reach.",
+  "title": "Entryway tray for keys and flashlight",
+  "note": "When putting away the house keys and flashlight after use, place them together on the open entryway tray.",
+  "question": ""
+}

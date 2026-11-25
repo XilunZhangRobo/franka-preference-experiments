@@ -1,0 +1,10 @@
+{
+  "input_sha256": "ebadf6dbb19294298aa8bc46c8accfd852837734a657720ed8a2fa4e522524e8",
+  "thread": "run-0276",
+  "request": "sessions/isolated/material-order/robot/1795590693656452615-f9444a2e/request.json",
+  "reply": {
+    "title": "Pot, scoop, and tag row",
+    "note": "For this setup, place the pot on the person’s right, the scoop in the middle, and the tag on their left. They explicitly asked to start with the pot on their right. Their preference for other tasks is unknown."
+  },
+  "images": []
+}

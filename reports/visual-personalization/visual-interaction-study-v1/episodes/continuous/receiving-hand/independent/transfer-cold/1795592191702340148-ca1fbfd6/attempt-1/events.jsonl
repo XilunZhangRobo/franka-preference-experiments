@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0216"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"B\",\"reason\":\"The person's right hand is closer to the remote.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12377,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":22,"reasoning_output_tokens":0}}

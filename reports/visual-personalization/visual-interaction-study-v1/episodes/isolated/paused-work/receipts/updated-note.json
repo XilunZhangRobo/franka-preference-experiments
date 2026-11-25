@@ -1,0 +1,10 @@
+{
+  "input_sha256": "3a800c8b870431b9004065acc6c354fb48fd9200a0275089fc367c3c4741acc8",
+  "thread": "run-0282",
+  "request": "sessions/isolated/paused-work/robot/1795590267457659778-f60632fd/request.json",
+  "reply": {
+    "title": "Keep the clipped rust mat on the workbench",
+    "note": "When clearing space, leave the rust mat on the bench if you’ve clipped it. You confirmed this rule after pointing from the shelved mat toward the bench. Your preference for an unclipped rust mat is unknown."
+  },
+  "images": []
+}

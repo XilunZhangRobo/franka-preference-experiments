@@ -1,0 +1,11 @@
+{
+  "input_sha256": "93c54c7999585b5d0743c70f2b5fa672e107de56e4acef72e84fee02f3034b32",
+  "session": "forced-93c54c7999585b5d0743c70f2b5fa672e107de56e4acef72e84fee02f3034b32",
+  "thread": "run-0031",
+  "request": "sessions/forced-93c54c7999585b5d0743c70f2b5fa672e107de56e4acef72e84fee02f3034b32/1795631044643903831-a5e90e14/request.json",
+  "result": "sessions/forced-93c54c7999585b5d0743c70f2b5fa672e107de56e4acef72e84fee02f3034b32/1795631044643903831-a5e90e14/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The fragrance-free cleaner avoids adding a scent when the guests’ preferences are unknown."
+  }
+}

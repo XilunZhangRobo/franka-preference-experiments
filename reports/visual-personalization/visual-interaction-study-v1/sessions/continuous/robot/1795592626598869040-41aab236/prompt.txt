@@ -1,0 +1,3 @@
+Use only the supplied images, conversation, and text. Do not use tools. Reply only with the requested JSON object.
+Update your written preference note based on the exchange. Preserve uncertainty where appropriate. Return {"title":"a short searchable title","note":"a short reusable rule with relevant evidence and limits"}.
+{"draft": "# Timing of low-priority updates\n\nThe person replayed one routine update. They may value being able to check these messages on demand.\n", "question": "For low-priority updates, would you prefer to hear them at your next pause or only when you ask for them?", "person_answer": "Give me brief updates right away when I’m working alone, but wait until my video call ends if I’m on one."}

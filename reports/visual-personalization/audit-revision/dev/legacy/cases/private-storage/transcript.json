@@ -1,0 +1,105 @@
+[
+  {
+    "stage": "audit",
+    "actor": "robot",
+    "channel": "visual draft",
+    "receipt": "receipts/audit.json",
+    "thread": "run-0059",
+    "reply": {
+      "observation": "After I put the house keys and flashlight in the shallow compartment and closed it, the person pointed toward the lid without speaking.",
+      "interpretation": "They may have wanted me to reopen it. The gesture alone didn’t tell me why.",
+      "title": "",
+      "note": "",
+      "question": "When I put the keys and flashlight away in the entryway, do you usually want me to leave the compartment open?"
+    }
+  },
+  {
+    "stage": "audit-answer",
+    "actor": "person",
+    "channel": "spoken answer",
+    "receipt": "receipts/audit-answer.json",
+    "thread": "run-0058",
+    "reply": {
+      "answer": "No, I usually want the compartment closed."
+    }
+  },
+  {
+    "stage": "refine",
+    "actor": "robot",
+    "channel": "written note",
+    "receipt": "receipts/refine.json",
+    "thread": "run-0063",
+    "reply": {
+      "title": "Entryway compartment closure",
+      "note": "Close the entryway compartment after putting away the keys and flashlight. The user said they usually prefer it closed."
+    }
+  },
+  {
+    "stage": "transfer-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-draft.json",
+    "thread": "run-0064",
+    "reply": {
+      "choice": "B",
+      "reason": "The open tray keeps your pen case visible and easy to grab tomorrow."
+    }
+  },
+  {
+    "stage": "transfer-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/transfer-post_answer.json",
+    "thread": "run-0065",
+    "reply": {
+      "choice": "B",
+      "reason": "The open tray keeps your pen case easy to reach for tomorrow’s practice."
+    }
+  },
+  {
+    "stage": "transfer-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/transfer-selective.json",
+    "thread": "run-0066",
+    "reply": {
+      "choice": "B",
+      "reason": "The open tray keeps your pen case easy to see and grab tomorrow.",
+      "question": ""
+    }
+  },
+  {
+    "stage": "control-draft",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-draft.json",
+    "thread": "run-0060",
+    "reply": {
+      "choice": "B",
+      "reason": "Placing all four rulers on the tray keeps them within reach for the first craft step."
+    }
+  },
+  {
+    "stage": "control-post_answer",
+    "actor": "fresh robot",
+    "channel": "forced choice",
+    "receipt": "receipts/control-post_answer.json",
+    "thread": "run-0061",
+    "reply": {
+      "choice": "B",
+      "reason": "The tray keeps all four rulers within reach for the first craft step."
+    }
+  },
+  {
+    "stage": "control-selective",
+    "actor": "robot",
+    "channel": "tentative decision",
+    "receipt": "receipts/control-selective.json",
+    "thread": "run-0062",
+    "reply": {
+      "choice": "B",
+      "reason": "The tray keeps all four rulers within reach for the first craft step.",
+      "question": ""
+    }
+  }
+]

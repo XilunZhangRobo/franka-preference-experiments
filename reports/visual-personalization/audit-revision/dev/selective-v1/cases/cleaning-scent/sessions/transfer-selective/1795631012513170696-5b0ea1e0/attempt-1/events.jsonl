@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0071"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The orange bottle is the best match for your earlier cleaner choice on a surface only you use.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12443,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":34,"reasoning_output_tokens":0}}

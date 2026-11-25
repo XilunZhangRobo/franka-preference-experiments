@@ -1,0 +1,1 @@
+{"observation":"After I served the tender broccoli, the person pointed at the food on their plate and left both batches where they were.","interpretation":"They may have been checking the texture. The gesture alone leaves their preference unclear.","title":"","note":"","question":"When I serve broccoli with a warm dinner, do you usually prefer it tender or firm?"}

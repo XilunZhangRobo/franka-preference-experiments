@@ -1,0 +1,12 @@
+{
+  "input_sha256": "b172ba5fb476483933532329b4f503220e1f987197786eff31d258686e9d6df5",
+  "session": "transfer-selective",
+  "thread": "run-0171",
+  "request": "sessions/transfer-selective/1795631118536599055-dfe7ffe9/request.json",
+  "result": "sessions/transfer-selective/1795631118536599055-dfe7ffe9/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Their left hand is free, and the earlier flashlight handoff suggests offering the remote there.",
+    "question": ""
+  }
+}

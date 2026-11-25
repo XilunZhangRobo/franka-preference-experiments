@@ -1,0 +1,12 @@
+{
+  "reply": {
+    "choice": "A",
+    "reason": "The person’s left hand is visible near the cloth, making a left-front handoff easy to reach."
+  },
+  "request": "visual-only-comparisons/approach-side/session/1795591471585944752-417474d9/request.json",
+  "thread": "run-0430",
+  "images": [
+    "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  ],
+  "input_sha256": "db3b844d13afbba3ff9bf2f093cbef71365aef4ddaa22947d526942a176748bd"
+}

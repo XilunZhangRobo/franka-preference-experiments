@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+    "options": {
+      "A": "Place the items in the shallow compartment and close it.",
+      "B": "Leave the pen case on the open tray."
+    },
+    "memory": "# Entryway storage for personal belongings\n\nAfter use, put the house keys, flashlight, and the person’s other personal belongings in the shallow entryway compartment and close it. They moved the keys and flashlight there and asked for the same storage for their other belongings.\n"
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "66d3e471cd7418336713f62e304ab3bdfdb43e990a7486173e4587d4fdd07c92"
+    }
+  ],
+  "persistent": false,
+  "previous_thread_id": null
+}

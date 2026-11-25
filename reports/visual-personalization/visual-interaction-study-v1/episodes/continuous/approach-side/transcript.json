@@ -1,0 +1,109 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Bring me my drink.",
+    "image": "media/approach-side/teach-81/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Present it in the person's left-front quarter. Presenting the drink in front of you on your left puts it within reach of your free, preferred hand."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/approach-side/teach-81/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Point to your left-front quarter for the drink."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 0.3333, 0.6667, 1.0, 1.3333, 1.6667, 2.0, 2.3333, 2.6667, 3.0, 3.3333, 3.6667, 4.0, 4.3333, 4.6667",
+    "clip": "media/approach-side/teach-81/A-accept/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "I held the cup in front of the person on their left. They pointed across it toward the tabletop on their right, then withdrew their hand without taking it. They may have been showing me where to set the drink down."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "Was the spot in front of you on your right where you usually want drinks, or was it specific to this cup?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "I usually want drinks in front of my left shoulder, with the right side as a backup if a shelf blocks the left."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Drink placement in front of left shoulder\n\nThe person usually wants drinks in front of their left shoulder. Use the right side if a shelf blocks the spot on the left.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "Bring me the folded cloth.",
+    "image": "media/approach-side/transfer-184/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Present it in the person's left-front quarter. The person's left hand is visible at the table edge and can easily reach the cloth there."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Present it in the person's left-front quarter. The person's left hand is free and close enough to take the cloth."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Present it in the person's left-front quarter. Offering the cloth in front of you on your left puts it within reach of your free left hand, as you prefer.",
+    "clip": "media/approach-side/transfer-184/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Bring me the folded cloth.",
+    "image": "media/approach-side/exception-287/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Present it in the person's right-front quarter. The cloth is near the person's right hand, and there is room to offer it there."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Present it in the person's right-front quarter. The person can reach the cloth on their right, and their left-side preference applies to drinks."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "question to person",
+    "text": "When a shelf blocks your left side, would you like me to offer the cloth on your right or wait?"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "spoken answer to robot",
+    "text": "Please offer the cloth on my right when the shelf blocks my left side."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "refines personal note",
+    "text": "# Drink placement and folded cloth handoffs\n\nUsually place drinks in front of the person’s left shoulder. If a shelf blocks that spot, use their right side. They also asked to receive the folded cloth on their right when a shelf blocks their left side.\n"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Present it in the person's right-front quarter. The shelf blocks your left side, so I’ll offer the cloth on your right as requested.",
+    "clip": "media/approach-side/exception-287/A-none/view/view.mp4"
+  }
+]

@@ -1,0 +1,3 @@
+# Keep the clipped rust mat on the workbench
+
+When clearing space, leave the rust mat on the bench if you’ve clipped it. You confirmed this rule after pointing from the shelved mat toward the bench. Your preference for an unclipped rust mat is unknown.

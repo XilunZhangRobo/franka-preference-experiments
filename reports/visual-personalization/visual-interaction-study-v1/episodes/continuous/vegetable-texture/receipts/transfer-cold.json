@@ -1,0 +1,12 @@
+{
+  "input_sha256": "89bc260c542b12477736b501d047447b833d39768cf6625bb0f96f261a80d144",
+  "thread": "run-0220",
+  "request": "episodes/continuous/vegetable-texture/independent/transfer-cold/1795592766845704129-e905953b/request.json",
+  "reply": {
+    "choice": "B",
+    "reason": "The more tender beans are a good fit for a warm cooked side dish."
+  },
+  "images": [
+    "media/vegetable-texture/transfer-206/initial-none/view/frame-00000.jpg"
+  ]
+}

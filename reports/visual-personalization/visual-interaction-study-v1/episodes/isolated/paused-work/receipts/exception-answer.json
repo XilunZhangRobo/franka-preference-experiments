@@ -1,0 +1,11 @@
+{
+  "input_sha256": "98aeeba815426dc035cb16e25a2390a70b867dc27f6cdfc6b5894e3be3428c0d",
+  "thread": "run-0283",
+  "request": "sessions/isolated/paused-work/person/1795590387840057283-5766f9c7/request.json",
+  "reply": {
+    "answer": "Please keep the rust mat on the bench."
+  },
+  "images": [
+    "media/paused-work/exception-243/initial-none/view/frame-00000.jpg"
+  ]
+}

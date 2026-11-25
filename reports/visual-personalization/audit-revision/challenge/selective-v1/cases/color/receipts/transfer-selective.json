@@ -1,0 +1,12 @@
+{
+  "input_sha256": "52ff599759b5db514bfb0b08394e0b6faff754338812ce24e8456adf914601bc",
+  "session": "transfer-selective",
+  "thread": "run-0025",
+  "request": "sessions/transfer-selective/1795631298131085993-cc8fd835/request.json",
+  "result": "sessions/transfer-selective/1795631298131085993-cc8fd835/attempt-1/result.json",
+  "reply": {
+    "choice": "A",
+    "reason": "The prior example points to the teal tray for a similar finished piece.",
+    "question": ""
+  }
+}

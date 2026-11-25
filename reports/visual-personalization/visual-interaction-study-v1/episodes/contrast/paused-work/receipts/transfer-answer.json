@@ -1,0 +1,11 @@
+{
+  "input_sha256": "c2faf2583a1df9f90a00ee7768c119def8ee9086c41be2eaf6c5729601464d25",
+  "thread": "run-0229",
+  "request": "sessions/contrast/paused-work/person/1795591600812638074-3e9c4d57/request.json",
+  "reply": {
+    "answer": "Yes, I clip the mat for the project I want shelved there too."
+  },
+  "images": [
+    "media/paused-work/transfer-140/initial-none/view/frame-00000.jpg"
+  ]
+}

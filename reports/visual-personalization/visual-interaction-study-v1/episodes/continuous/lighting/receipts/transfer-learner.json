@@ -1,0 +1,13 @@
+{
+  "input_sha256": "d3d53c22f6be7c5548dc0e7fd17ef7c326439fc5fb6891c40f6e711fe2b1d9a6",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795593905409895689-0743552c/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You’re comparing tiles alone, and you prefer overhead lighting for solo work.",
+    "question": ""
+  },
+  "images": [
+    "media/lighting/transfer-228/initial-none/view/frame-00000.jpg"
+  ]
+}

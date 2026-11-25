@@ -1,0 +1,14 @@
+{
+  "input_sha256": "0978353d44c7adadb0dca3eede5b009462e7ff49b1ed11a277af51c461123100",
+  "session": "writer",
+  "thread": "run-0077",
+  "request": "sessions/writer/1795631074498606853-43b55f16/request.json",
+  "result": "sessions/writer/1795631074498606853-43b55f16/attempt-1/result.json",
+  "reply": {
+    "observation": "The robot switched on the desk lamp. The person used the same switch to turn it off, then pressed the other switch. The room appeared brighter afterward.",
+    "interpretation": "They may prefer room lighting to a focused beam while working on the puzzle.",
+    "title": "Room light for puzzles",
+    "note": "Try the room light first for this person’s puzzle work. One switch change suggests a preference for this setup, but the reason is unclear.",
+    "question": ""
+  }
+}

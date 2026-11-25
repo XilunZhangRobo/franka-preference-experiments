@@ -1,0 +1,10 @@
+{
+  "input_sha256": "f9a500549187ee5cef910c02f44bf57230366a423920008e83feaeef7586c8ad",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795595994392155246-54302f68/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "You asked me to use mild citrus on your sewing surface."
+  },
+  "images": []
+}

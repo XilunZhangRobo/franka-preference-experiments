@@ -1,0 +1,13 @@
+{
+  "input_sha256": "80707416823ea6dba9e27895cfd59818ed599c5073d43b238739f1f240cd9326",
+  "thread": "run-0178",
+  "request": "sessions/continuous/robot/1795592871979848026-740cee33/request.json",
+  "reply": {
+    "choice": "A",
+    "reason": "Firmer beans will hold their shape when the chilled salad is tossed.",
+    "question": "Would you like the green beans firm or tender in this salad?"
+  },
+  "images": [
+    "media/vegetable-texture/exception-309/initial-none/view/frame-00000.jpg"
+  ]
+}

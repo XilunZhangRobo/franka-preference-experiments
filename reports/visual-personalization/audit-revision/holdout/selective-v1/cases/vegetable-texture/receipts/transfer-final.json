@@ -1,0 +1,11 @@
+{
+  "input_sha256": "bbf294df9921347cc3a7d64288ebfe5e70649908c3360a3643c144e891071d1a",
+  "session": "transfer-selective",
+  "thread": "run-0177",
+  "request": "sessions/transfer-selective/1795631126107467527-a875e715/request.json",
+  "result": "sessions/transfer-selective/1795631126107467527-a875e715/attempt-1/result.json",
+  "reply": {
+    "choice": "B",
+    "reason": "You asked for the more tender green beans."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input_sha256": "88bef6701acd62387d4e518b427c8e3f4d4dde495ea6e5adde407a4a89853cdc",
+  "thread": "run-0270",
+  "request": "sessions/isolated/lighting/robot/1795590880460270356-54b657ce/request.json",
+  "reply": {
+    "title": "Table lighting for solo work and presentations",
+    "note": "Use the overhead light for solo work at this table, including puzzles. During projected presentations, use only the desk lamp. The person confirmed both preferences. Lighting for other group activities is unspecified."
+  },
+  "images": []
+}

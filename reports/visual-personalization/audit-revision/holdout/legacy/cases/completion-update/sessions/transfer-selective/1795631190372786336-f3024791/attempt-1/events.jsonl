@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"run-0105"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"choice\":\"A\",\"reason\":\"The person is drawing alone and prefers brief spoken updates right away when working alone.\",\"question\":\"\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12476,"cached_input_tokens":10240,"cache_write_input_tokens":0,"output_tokens":31,"reasoning_output_tokens":0}}

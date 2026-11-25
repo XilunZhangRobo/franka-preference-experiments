@@ -1,0 +1,84 @@
+[
+  {
+    "role": "Person",
+    "channel": "task command",
+    "text": "Put the house keys and flashlight away after use in the entryway.",
+    "image": "media/private-storage/teach-114/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "selected action",
+    "text": "Place the items in the shallow compartment and close it. The closed compartment keeps the keys and flashlight together and off the tabletop."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual evidence to person",
+    "text": "Camera sequence after the robot chose its action.",
+    "clip": "media/private-storage/teach-114/A-none/view/view.mp4"
+  },
+  {
+    "role": "Person Astra",
+    "channel": "private motion command to simulator",
+    "text": "Move the belongings to the other storage location, opening and closing the compartment."
+  },
+  {
+    "role": "Simulator",
+    "channel": "visual feedback to robot",
+    "text": "Robot camera playback. Sample times in seconds: 0.0, 1.6667, 3.6667, 5.3333, 7.3333, 9.0, 11.0, 12.6667, 14.6667, 16.3333, 18.3333, 20.0, 22.0, 23.6667, 25.6667, 27.3333",
+    "clip": "media/private-storage/teach-114/A-change/view/view.mp4"
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "private visual audit",
+    "text": "After I closed the compartment, the person reopened it, moved both items onto the tray, and closed the empty compartment. The person seems to prefer keeping the keys and flashlight visible and easy to reach."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "writes personal note",
+    "text": "# Entryway tray for keys and flashlight\n\nWhen putting away the house keys and flashlight after use, place them together on the open entryway tray.\n"
+  },
+  {
+    "role": "Person",
+    "channel": "new task",
+    "text": "I finished calligraphy practice. Leave my pen case handy for tomorrow.",
+    "image": "media/private-storage/transfer-217/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to find and grab tomorrow."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Leave the pen case on the open tray. The open tray keeps your pen case easy to find and grab tomorrow."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Leave the pen case on the open tray. The open tray keeps the pen case easy to spot and pick up for tomorrow’s practice.",
+    "clip": "media/private-storage/transfer-217/B-none/view/view.mp4"
+  },
+  {
+    "role": "Person",
+    "channel": "scope control",
+    "text": "Set out four rulers as the group takes their seats for crafts. The first step uses rulers.",
+    "image": "media/private-storage/exception-320/initial-none/view/frame-00000.jpg"
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "cold comparison",
+    "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the first craft step."
+  },
+  {
+    "role": "Fresh Astra",
+    "channel": "note comparison",
+    "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach for the first craft step."
+  },
+  {
+    "role": "Robot Astra",
+    "channel": "executed probe action",
+    "text": "Set the rulers on the tray beside the shared craft materials. The tray keeps all four rulers within reach when the group starts the first step.",
+    "clip": "media/private-storage/exception-320/B-none/view/view.mp4"
+  }
+]

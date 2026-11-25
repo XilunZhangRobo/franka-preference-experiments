@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "You control a household robot. Choose one available action to perform now. Use the current task, camera and any personal knowledge supplied. Return {\"choice\":\"<letter>\",\"reason\":\"one short sentence\"}.",
+  "context": {
+    "task": "Bring me my drink.",
+    "options": {
+      "A": "Present it in the person's left-front quarter.",
+      "B": "Present it in the person's right-front quarter."
+    },
+    "written_library": {}
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "ad53e36b33f6474db680e1a7cf946047058b3f9acddde75cd07b10e29c3e64b0"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": null
+}

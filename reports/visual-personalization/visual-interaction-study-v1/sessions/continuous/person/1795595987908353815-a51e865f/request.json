@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.2-astra",
+  "instruction": "Reply as this person to the robot question in one short sentence. Answer only what was asked, using the private brief. If the brief does not specify, say so. Return {\"answer\":\"your spoken reply\"}.",
+  "context": {
+    "question": "Would you like mild citrus for the sewing surface too?",
+    "task": "Wipe the work surface in my private sewing room. Only I use it.",
+    "private_brief": "I enjoy mild citrus cleaner in spaces I use privately. Use fragrance-free cleaner for shared surfaces when guests are coming."
+  },
+  "images": [
+    {
+      "file": "image-000.jpg",
+      "sha256": "1bdc3e8fd4b4d8d474205099f52f8d0572b0de7830c1e89d65d4c49e03a9a731"
+    }
+  ],
+  "persistent": true,
+  "previous_thread_id": "run-0179"
+}
