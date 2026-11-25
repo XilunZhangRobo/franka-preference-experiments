@@ -57,6 +57,14 @@ For every family, phase and condition, record planned, attempted, rendered, deli
 
 Advance a family from draft to visual pilot when a reviewer can decode the cue and actions from the delivered media and the confound checks distinguish the competing rules. Advance to a reported held-out result when the locked comparison and attrition record are available. After changing a scene, camera, action semantics or scoring, assign a new version, document the affected comparisons, recheck cue visibility and rerun affected pairs. If held-out results informed the change, reserve fresh test scenes for confirmation.
 
+### How Matt reviews experiment recordings
+
+Lead with an index of named experiments. Give every recorded trial its own page, including each fresh-start, continuous-learning, and contrasting-preference run. On that page, provide direct links to the robot action, the human response, the audit and written note, the transfer task, and the scope control. Keep other experiments’ interactions on their own pages.
+
+Embed an independently playable clip beside each physical interaction. Use the actual event boundaries, preserve overlapping robot and human movement when it explains a handoff, and record the source and frame range for each cut. Put the task command, corresponding exchange, memory or outcome beside the evidence it explains. Keep the full session recording accessible as an optional appendix.
+
+Share an offline ZIP with relative links. Test a fresh extraction by clicking through the experiment index, switching trials, and playing the clips in a browser.
+
 ## 5. Calibrate a physical claim
 
 Describe hardware, camera intrinsics/extrinsics, object dimensions and poses, robot and gripper geometry, and the task-specific quantity to compare. For camera registration, preserve the profile, measured corners, units, residuals and independent check points.

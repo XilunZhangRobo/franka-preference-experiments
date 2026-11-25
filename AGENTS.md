@@ -6,3 +6,4 @@ Use [the experiment lifecycle](docs/experiment-lifecycle.md) when changing a sce
 - Preserve a reproduction command, asset and code revisions, and raw observations for each reported run. Document how a reviewer can make a faulty implementation fail its tests.
 - Treat simulated motions and synthetic counterexamples as evidence about this simulator. Claims about physical behavior require paired measurements on the named hardware and task.
 - On headless Linux export `MUJOCO_GL=egl` before running tests. Run `python -m unittest discover -s tests` after changing behavior. For scene changes, also inspect representative rendered teaching, transfer, and exception clips from the evaluation camera.
+- For experiment reports, follow [Matt’s recording and navigation preferences](docs/experiment-lifecycle.md#how-matt-reviews-experiment-recordings).
