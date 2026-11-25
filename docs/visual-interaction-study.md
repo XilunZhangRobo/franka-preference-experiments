@@ -36,6 +36,12 @@ python tools/verify_interactions.py runs/interaction-study --videos
 
 The run's `index.html` contains annotated videos, exact transcripts, camera observations and results. `library/` contains the continuing robot's actual Markdown notes. `retention/index.html` lists retrievals and paired decisions. `analysis.md` compares task families and identifies cases where a clarification changed the draft. The grader works from separate examiner records. A matched choice on an easy scope control can come from ordinary robot behavior. Results apply to this simulation, camera, person brief, and discrete action menu.
 
+## Selective clarification
+
+The revised writer reviews each interaction with two questions. *What happened? What preference might explain it?* It writes a short rule when the visible evidence supports one. It can ask the person a single focused question when plausible interpretations would lead to different actions and choosing poorly would matter. The evaluation counts interruptions after demonstrations and during subsequent choices separately. The approximate one-in-five guide is used to interpret the observed rate.
+
+To run a new experiment with the exact revised prompts, append `--note-policy docs/note-policies/selective-v1.json` to the study command and choose a new run directory. The manifest records the file digest. [Revised prompts](note-policies/selective-v1.json)
+
 ## Follow-up hypotheses
 
 The note-writing backlog includes a proposed test of how a person’s opportunity to intervene affects the interpretation of an uneventful task. [Research note](personalization-research-notes.md)
