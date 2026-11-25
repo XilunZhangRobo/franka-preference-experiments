@@ -59,6 +59,8 @@ class Validator:
         self.retained = []
         self.requests = set()
         self.retries = []
+        self.unscored = []
+        self.failed_threads = set()
         self.recoveries = []
         self.films = {}
         self.trials = {}
@@ -298,7 +300,10 @@ class Validator:
                 "resume" not in argv and ("--ephemeral" in argv) == (not persistent),
                 "wrong fresh session",
             )
-            require(tid not in self.threads, f"reused fresh identity {group}")
+            require(
+                tid not in self.threads and tid not in self.failed_threads,
+                f"reused fresh identity {group}",
+            )
         self.threads[tid] = group
         self.last[group] = tid
         if receipt is not None:
@@ -577,6 +582,94 @@ class Validator:
             )
         self.episodes.append(dict(mode=mode, family=f, profile=profile, scores=scores))
 
+    def retention_reply(self, stage, instruction, context, frame):
+        requests = sorted(stage.glob("*/request.json"))
+        successful = [p for p in requests if list(p.parent.glob("attempt-*/result.json"))]
+        require(
+            len(successful) == 1 and successful[0] == requests[-1],
+            f"expected one final successful retention request: {stage}",
+        )
+        final = successful[0]
+        reply = self.raw(final, instruction, context, [frame], self.rel(stage))
+        require(read(stage / "receipt.json") == reply, "retention receipt differs")
+        reference = read(final)
+        attempt = next(final.parent.glob("attempt-*/result.json")).parent
+        argv = read(attempt / "argv.json")
+        for path in requests[:-1]:
+            call = path.parent
+            require(
+                read(path) == reference
+                and (call / "prompt.txt").read_bytes()
+                == (final.parent / "prompt.txt").read_bytes(),
+                "superseded input differs",
+            )
+            for image in reference["images"]:
+                require(
+                    digest(self.path(call / image["file"])) == image["sha256"],
+                    "superseded image differs",
+                )
+            attempts = sorted(call.glob("attempt-*"))
+            require(
+                attempts
+                and [a.name for a in attempts]
+                == [f"attempt-{i}" for i in range(1, len(attempts) + 1)],
+                "missing failed attempt",
+            )
+            observed = []
+            for failed in attempts:
+                files = {p.name for p in failed.iterdir()}
+                required = {"argv.json", "events.jsonl", "stderr.txt"}
+                require(
+                    files in (required, required | {"error.json"}),
+                    "ambiguous failed retention archive",
+                )
+                require(read(failed / "argv.json") == argv, "superseded invocation differs")
+                events = [
+                    json.loads(line) for line in (failed / "events.jsonl").read_text().splitlines()
+                ]
+                require(
+                    [e.get("type") for e in events] == ["thread.started", "turn.started"],
+                    "superseded request contains an answer, tool activity or unexpected event",
+                )
+                tid = events[0]["thread_id"]
+                require(
+                    isinstance(tid, str)
+                    and tid
+                    and tid not in self.threads
+                    and tid not in self.failed_threads,
+                    "reused failed thread",
+                )
+                self.failed_threads.add(tid)
+                error = failed / "error.json"
+                if error.is_file():
+                    data = read(error)
+                    require(
+                        data["type"] == "TimeoutExpired" and data["elapsed_s"] > 0,
+                        "unexpected failed retention error",
+                    )
+                    self.retries.append(self.rel(error))
+                observed.append(
+                    {
+                        "directory": self.rel(failed),
+                        "thread": tid,
+                        "status": "recorded timeout"
+                        if error.is_file()
+                        else "interrupted without terminal event",
+                        "events_sha256": digest(failed / "events.jsonl"),
+                    }
+                )
+            require(path not in self.requests, "failed request reused")
+            self.requests.add(path)
+            self.unscored.append(
+                {
+                    "request": self.rel(path),
+                    "successful_request": self.rel(final),
+                    "scored": False,
+                    "attempts": observed,
+                }
+            )
+        return reply
+
     def check_retention(self):
         directory = self.root / "retention"
         results = read(directory / "results.json")
@@ -613,12 +706,7 @@ class Validator:
                 )
 
                 def ask(key, prompt, ctx):
-                    stage = folder / key
-                    requests = list(stage.glob("*/request.json"))
-                    require(len(requests) == 1, "wrong retention request count")
-                    reply = self.raw(requests[0], prompt, ctx, [frame], self.rel(stage))
-                    require(read(stage / "receipt.json") == reply, "retention receipt differs")
-                    return reply
+                    return self.retention_reply(folder / key, prompt, ctx, frame)
 
                 expected = t.expected("standard")
                 row = dict(
@@ -765,6 +853,15 @@ class Validator:
                 self.requests == raw_requests,
                 "unaccounted raw model requests: " + str(raw_requests ^ self.requests),
             )
+            all_errors = {
+                self.rel(p)
+                for name in namespaces
+                for p in (self.root / name).rglob("attempt-*/error.json")
+            }
+            require(
+                set(self.retries) == all_errors and len(self.retries) == len(all_errors),
+                "unaccounted or duplicated adapter error files",
+            )
             if self.videos:
                 films = list((self.root / "report-media").glob("episode-*.mp4"))
                 require(len(films) == len(eps), "wrong count of chart films")
@@ -790,12 +887,51 @@ class Validator:
             verified_request_namespaces=["sessions", "episodes", "retention"],
             session_count=len(self.threads),
             verified_calls=self.calls,
-            recorded_failed_attempts=self.retries,
+            recorded_failed_attempts=sorted(self.retries),
+            verified_request_count=len(self.requests),
+            unscored_superseded_retention_requests=self.unscored,
             transport_recoveries=self.recoveries,
             action_videos=self.media,
             report_films=self.films,
             retention_scenes=len(self.retained),
         )
+
+
+def update_execution(root, validated):
+    path = root / "execution.json"
+    execution = read(path)
+    records = validated["transport_recoveries"]
+    superseded = validated["unscored_superseded_retention_requests"]
+    execution["transport_recovery_records"] = [
+        str(Path(record["successful_attempt"]) / "recovery.json") for record in records
+    ]
+    execution["verified_transport"] = {
+        "coverage": "complete original episodes and retention",
+        "accepted_calls": validated["verified_calls"],
+        "archived_requests": validated["verified_request_count"],
+        "journal_recoveries": len(records),
+        "adapter_error_files": validated["recorded_failed_attempts"],
+        "unscored_superseded_retention_requests": superseded,
+        "unscored_superseded_retention_attempts": sum(len(r["attempts"]) for r in superseded),
+    }
+    preserved = [
+        entry
+        for entry in execution.get("technical_recovery", [])
+        if not (
+            entry.startswith("The original launcher stopped during an isolated lighting")
+            or entry.startswith("A later visual audit exceeded")
+            or entry.startswith("Verified CLI transport:")
+        )
+    ]
+    preserved.append(
+        f"Verified CLI transport: {len(records)} recorded journal recoveries, "
+        f"{len(superseded)} superseded retention requests without a scored response. "
+        "See verified_transport for the error files and paired successful requests."
+    )
+    execution["technical_recovery"] = preserved
+    temporary = path.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(execution, indent=2, ensure_ascii=False) + "\n")
+    temporary.replace(path)
 
 
 def main():
@@ -814,12 +950,21 @@ def main():
         action="store_true",
         help="Audit the isolated lighting upload and recovery plus its prerequisite turns.",
     )
+    parser.add_argument(
+        "--update-execution",
+        action="store_true",
+        help="After full validation, refresh execution.json from the verified archive.",
+    )
     args = parser.parse_args()
+    if args.update_execution and (args.partial or args.lighting_recovery):
+        parser.error("--update-execution requires the full run")
     validator = Validator(args.run, args.videos)
     try:
         result = (
             validator.lighting_recovery() if args.lighting_recovery else validator.run(args.partial)
         )
+        if args.update_execution:
+            update_execution(validator.root, result)
     except (
         OSError,
         ValueError,
