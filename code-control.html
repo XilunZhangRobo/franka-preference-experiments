@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Astra Medium writing Franka end-effector control code after reviewing interactions in ten MuJoCo tasks.">
+  <title>Astra Medium code control · Franka Preference Experiments</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .trial-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 325px),1fr)); gap:22px; }
+    .trial video { aspect-ratio:4/3; }
+    .trial-body { padding:16px 20px 20px; display:grid; gap:6px; }
+    .trial-body h3 { font:500 1.65rem/1.2 Georgia,serif; }
+    .trial-body p:not(.kicker) { color:var(--muted); }
+    .trial-body a { width:fit-content; margin-top:4px; }
+    .method blockquote { margin:12px 0 26px; padding-inline-start:14px; border-inline-start:3px solid var(--accent); }
+    .intro p.date { font-size:.95rem; margin:0 0 8px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#trials">Skip to recordings</a>
+  <header class="site-header page">
+    <a class="brand" href="index.html">Franka Preference Experiments</a>
+    <nav aria-label="Sections"><a href="#trials">Recordings</a></nav>
+  </header>
+  <main class="page">
+    <section class="intro" aria-labelledby="title">
+      <p class="date">MuJoCo · November 26, 2026</p>
+      <h1 id="title">Astra Medium <em>code control</em></h1>
+      <p>Astra Medium wrote Python to control a Franka arm. In each task, the same session reviewed robot-camera frames of the interaction and rewrote its code for the reset scene.</p>
+    </section>
+    <section aria-label="Results after reviewing the interaction">
+      <dl class="measurements">
+        <div><dt>Preferences matched</dt><dd>3/10</dd></div>
+        <div><dt>Tasks completed</dt><dd>7/10</dd></div>
+        <div><dt>Programs executed successfully</dt><dd>9/10</dd></div>
+      </dl>
+      <div class="method">
+        <p>One run per task. Astra specified end-effector waypoints, durations and gripper commands. MuJoCo handled inverse kinematics and simulated grasps.</p>
+        <blockquote>“Watch how I interact and see if you can infer my preference. Then let’s try again.”</blockquote>
+      </div>
+    </section>
+    <section id="trials" aria-labelledby="trials-title">
+      <div class="section-head"><h2 id="trials-title">Robot-camera recordings</h2><span>10 rewritten programs</span></div>
+      <div class="trial-grid">
+        <article class="featured trial" id="paused-work">
+          <video controls playsinline preload="none" src="code-control-paused-work.mp4" aria-label="Paused work robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference missed</p>
+            <h3>Paused work</h3>
+            <p>Shelved the teal mat. The preference was to keep that mat on the bench.</p>
+            <a href="code-control-paused-work.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="gift-finishing">
+          <video controls playsinline preload="none" src="code-control-gift-finishing.mp4" aria-label="Gift finishing robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference missed</p>
+            <h3>Gift finishing</h3>
+            <p>Moved the flower over the card. The person preferred to add the finishing touch themselves.</p>
+            <a href="code-control-gift-finishing.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="receiving-hand">
+          <video controls playsinline preload="none" src="code-control-receiving-hand.mp4" aria-label="Receiving hand robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference matched</p>
+            <h3>Receiving hand</h3>
+            <p>Offered the flashlight to the person’s preferred left hand.</p>
+            <a href="code-control-receiving-hand.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="material-order">
+          <video controls playsinline preload="none" src="code-control-material-order.mp4" aria-label="Material order robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Execution failed</p>
+            <h3>Material order</h3>
+            <p>Placed both pieces correctly, then hit an unreachable retreat waypoint.</p>
+            <a href="code-control-material-order.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="approach-side">
+          <video controls playsinline preload="none" src="code-control-approach-side.mp4" aria-label="Approach side robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Task incomplete</p>
+            <h3>Approach side</h3>
+            <p>Held the cup outside the scored presentation regions.</p>
+            <a href="code-control-approach-side.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="completion-update">
+          <video controls playsinline preload="none" src="code-control-completion-update.mp4" aria-label="Completion update robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference missed</p>
+            <h3>Completion update</h3>
+            <p>Gave the update after the pause. The person preferred an immediate update.</p>
+            <a href="code-control-completion-update.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="vegetable-texture">
+          <video controls playsinline preload="none" src="code-control-vegetable-texture.mp4" aria-label="Vegetable texture robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference missed</p>
+            <h3>Vegetable texture</h3>
+            <p>Served firm broccoli. The person preferred tender broccoli.</p>
+            <a href="code-control-vegetable-texture.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="private-storage">
+          <video controls playsinline preload="none" src="code-control-private-storage.mp4" aria-label="Private storage robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Task incomplete</p>
+            <h3>Private storage</h3>
+            <p>Put the flashlight in the compartment and the keys in the open tray.</p>
+            <a href="code-control-private-storage.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="lighting">
+          <video controls playsinline preload="none" src="code-control-lighting.mp4" aria-label="Lighting robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference matched</p>
+            <h3>Lighting</h3>
+            <p>Switched on the person’s preferred overhead light.</p>
+            <a href="code-control-lighting.mp4" download>Download MP4</a>
+          </div>
+        </article>
+        <article class="featured trial" id="cleaning-scent">
+          <video controls playsinline preload="none" src="code-control-cleaning-scent.mp4" aria-label="Cleaning scent robot-camera recording"></video>
+          <div class="trial-body">
+            <p class="kicker">Preference matched</p>
+            <h3>Cleaning scent</h3>
+            <p>Set out the person’s preferred mild citrus cleaner.</p>
+            <a href="code-control-cleaning-scent.mp4" download>Download MP4</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page"><span>Franka Preference Experiments</span><span>MuJoCo · Astra Medium</span></footer>
+</body>
+</html>

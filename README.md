@@ -1,5 +1,9 @@
 # Franka Preference Experiments
 
+## Latest results
+
+[Astra Medium code control in MuJoCo](https://xilunzhangrobo.github.io/franka-preference-experiments/code-control.html) includes all ten robot-camera recordings from the rewritten programs. Astra matched 3 of 10 preferences, completed 7 of 10 tasks, and executed 9 of 10 programs.
+
 [Open the experiment dashboard](https://xilunzhangrobo.github.io/franka-preference-experiments/)
 
 Robot-eye recordings of ten Astra Medium benchmarks for learning preferences from silent human interaction. The dashboard includes the matched mug-handle pilot, the nine additional seeded transfer runs, and earlier simulator previews.
