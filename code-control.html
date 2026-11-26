@@ -7,12 +7,24 @@
   <title>Astra Medium code control · Franka Preference Experiments</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .trial-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 325px),1fr)); gap:22px; }
+    .trial-grid { display:grid; gap:26px; }
+    .clip-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .clip-grid section { min-width:0; }
+    .clip-grid section + section { border-inline-start:1px solid var(--line); }
+    .clip-header { display:grid; gap:5px; padding:14px 20px; border-top:1px solid var(--line); }
+    .clip-header h4 { margin:0; font-size:1rem; }
+    .clip-header p { color:var(--muted); }
+    .clip-body { padding:12px 20px 18px; display:grid; gap:6px; }
+    .clip-body a { width:fit-content; }
+    .task-instruction { margin:4px 0 0; padding-inline-start:12px; border-inline-start:3px solid var(--accent); }
+    @media (max-width:700px) {
+      .clip-grid { grid-template-columns:1fr; }
+      .clip-grid section + section { border-inline-start:0; }
+    }
     .trial video { aspect-ratio:4/3; }
     .trial-body { padding:16px 20px 20px; display:grid; gap:6px; }
     .trial-body h3 { font:500 1.65rem/1.2 Georgia,serif; }
     .trial-body p:not(.kicker) { color:var(--muted); }
-    .trial-body a { width:fit-content; margin-top:4px; }
     .method blockquote { margin:12px 0 26px; padding-inline-start:14px; border-inline-start:3px solid var(--accent); }
     .intro p.date { font-size:.95rem; margin:0 0 8px; }
   </style>
@@ -36,101 +48,279 @@
         <div><dt>Programs executed successfully</dt><dd>9/10</dd></div>
       </dl>
       <div class="method">
-        <p>One run per task. Astra specified end-effector waypoints, durations and gripper commands. MuJoCo handled inverse kinematics and simulated grasps.</p>
+        <p>The scores summarize the rewritten programs. Astra viewed ordered frames from the interaction recordings below. Astra specified end-effector waypoints, durations and gripper commands. MuJoCo handled inverse kinematics and simulated grasps.</p>
         <blockquote>“Watch how I interact and see if you can infer my preference. Then let’s try again.”</blockquote>
       </div>
     </section>
     <section id="trials" aria-labelledby="trials-title">
-      <div class="section-head"><h2 id="trials-title">Robot-camera recordings</h2><span>10 rewritten programs</span></div>
+      <div class="section-head"><h2 id="trials-title">Robot-camera recordings</h2><span>10 interactions and 10 retries</span></div>
       <div class="trial-grid">
-        <article class="featured trial" id="paused-work">
-          <video controls playsinline preload="none" src="code-control-paused-work.mp4" aria-label="Paused work robot-camera recording"></video>
+        <article class="featured trial" id="paused-work" aria-labelledby="paused-work-title">
           <div class="trial-body">
-            <p class="kicker">Preference missed</p>
-            <h3>Paused work</h3>
-            <p>Shelved the teal mat. The preference was to keep that mat on the bench.</p>
-            <a href="code-control-paused-work.mp4" download>Download MP4</a>
+            <h3 id="paused-work-title">Paused work</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Clear a spot on my workbench.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="paused-work-interaction">
+              <div class="clip-header"><h4 id="paused-work-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-paused-work.mp4" aria-label="Paused work interaction recording"></video>
+              <div class="clip-body">
+                <p>The person points to the mat on the shelf, a simulated acceptance gesture.</p>
+                <a href="code-feedback-paused-work.mp4#t=10.125">Jump to the human action at 0:10</a>
+                <a href="code-feedback-paused-work.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="paused-work-retry">
+              <div class="clip-header"><h4 id="paused-work-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-paused-work.mp4" aria-label="Paused work retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference missed</p>
+                <p>Shelved the teal mat. The preference was to keep that mat on the bench.</p>
+                <a href="code-control-paused-work.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="gift-finishing">
-          <video controls playsinline preload="none" src="code-control-gift-finishing.mp4" aria-label="Gift finishing robot-camera recording"></video>
+        <article class="featured trial" id="gift-finishing" aria-labelledby="gift-finishing-title">
           <div class="trial-body">
-            <p class="kicker">Preference missed</p>
-            <h3>Gift finishing</h3>
-            <p>Moved the flower over the card. The person preferred to add the finishing touch themselves.</p>
-            <a href="code-control-gift-finishing.mp4" download>Download MP4</a>
+            <h3 id="gift-finishing-title">Gift finishing</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Help prepare the handmade card.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="gift-finishing-interaction">
+              <div class="clip-header"><h4 id="gift-finishing-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-gift-finishing.mp4" aria-label="Gift finishing interaction recording"></video>
+              <div class="clip-body">
+                <p>The person takes the flower and places it on the card themselves.</p>
+                <a href="code-feedback-gift-finishing.mp4#t=8.375">Jump to the human action at 0:08</a>
+                <a href="code-feedback-gift-finishing.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="gift-finishing-retry">
+              <div class="clip-header"><h4 id="gift-finishing-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-gift-finishing.mp4" aria-label="Gift finishing retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference missed</p>
+                <p>Moved the flower over the card. The person preferred to add the finishing touch themselves.</p>
+                <a href="code-control-gift-finishing.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="receiving-hand">
-          <video controls playsinline preload="none" src="code-control-receiving-hand.mp4" aria-label="Receiving hand robot-camera recording"></video>
+        <article class="featured trial" id="receiving-hand" aria-labelledby="receiving-hand-title">
           <div class="trial-body">
-            <p class="kicker">Preference matched</p>
-            <h3>Receiving hand</h3>
-            <p>Offered the flashlight to the person’s preferred left hand.</p>
-            <a href="code-control-receiving-hand.mp4" download>Download MP4</a>
+            <h3 id="receiving-hand-title">Receiving hand</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Hand me the flashlight.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="receiving-hand-interaction">
+              <div class="clip-header"><h4 id="receiving-hand-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-receiving-hand.mp4" aria-label="Receiving hand interaction recording"></video>
+              <div class="clip-body">
+                <p>The person takes the flashlight with their right hand and passes it to their left.</p>
+                <a href="code-feedback-receiving-hand.mp4#t=10.125">Jump to the human action at 0:10</a>
+                <a href="code-feedback-receiving-hand.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="receiving-hand-retry">
+              <div class="clip-header"><h4 id="receiving-hand-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-receiving-hand.mp4" aria-label="Receiving hand retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference matched</p>
+                <p>Offered the flashlight to the person’s preferred left hand.</p>
+                <a href="code-control-receiving-hand.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="material-order">
-          <video controls playsinline preload="none" src="code-control-material-order.mp4" aria-label="Material order robot-camera recording"></video>
+        <article class="featured trial" id="material-order" aria-labelledby="material-order-title">
           <div class="trial-body">
-            <p class="kicker">Execution failed</p>
-            <h3>Material order</h3>
-            <p>Placed both pieces correctly, then hit an unreachable retreat waypoint.</p>
-            <a href="code-control-material-order.mp4" download>Download MP4</a>
+            <h3 id="material-order-title">Material order</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Set out the red base and yellow cap for assembly.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="material-order-interaction">
+              <div class="clip-header"><h4 id="material-order-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-material-order.mp4" aria-label="Material order interaction recording"></video>
+              <div class="clip-body">
+                <p>The person points to the arrangement and leaves the pieces in place.</p>
+                <a href="code-feedback-material-order.mp4#t=16.375">Jump to the human action at 0:16</a>
+                <a href="code-feedback-material-order.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="material-order-retry">
+              <div class="clip-header"><h4 id="material-order-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-material-order.mp4" aria-label="Material order retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Execution failed</p>
+                <p>Placed both pieces correctly, then hit an unreachable retreat waypoint.</p>
+                <a href="code-control-material-order.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="approach-side">
-          <video controls playsinline preload="none" src="code-control-approach-side.mp4" aria-label="Approach side robot-camera recording"></video>
+        <article class="featured trial" id="approach-side" aria-labelledby="approach-side-title">
           <div class="trial-body">
-            <p class="kicker">Task incomplete</p>
-            <h3>Approach side</h3>
-            <p>Held the cup outside the scored presentation regions.</p>
-            <a href="code-control-approach-side.mp4" download>Download MP4</a>
+            <h3 id="approach-side-title">Approach side</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Bring me my drink.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="approach-side-interaction">
+              <div class="clip-header"><h4 id="approach-side-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-approach-side.mp4" aria-label="Approach side interaction recording"></video>
+              <div class="clip-body">
+                <p>The initial presentation was outside the scored regions. The simulator generated no human response.</p>
+                <a href="code-feedback-approach-side.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="approach-side-retry">
+              <div class="clip-header"><h4 id="approach-side-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-approach-side.mp4" aria-label="Approach side retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Task incomplete</p>
+                <p>Held the cup outside the scored presentation regions.</p>
+                <a href="code-control-approach-side.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="completion-update">
-          <video controls playsinline preload="none" src="code-control-completion-update.mp4" aria-label="Completion update robot-camera recording"></video>
+        <article class="featured trial" id="completion-update" aria-labelledby="completion-update-title">
           <div class="trial-body">
-            <p class="kicker">Preference missed</p>
-            <h3>Completion update</h3>
-            <p>Gave the update after the pause. The person preferred an immediate update.</p>
-            <a href="code-control-completion-update.mp4" download>Download MP4</a>
+            <h3 id="completion-update-title">Completion update</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">The bin is full. Give the person a low-priority completion update.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="completion-update-interaction">
+              <div class="clip-header"><h4 id="completion-update-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-completion-update.mp4" aria-label="Completion update interaction recording"></video>
+              <div class="clip-body">
+                <p>The person reenacts the timing, tapping the announcement button before setting down the pencil.</p>
+                <a href="code-feedback-completion-update.mp4#t=29">Jump to the human action at 0:29</a>
+                <a href="code-feedback-completion-update.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="completion-update-retry">
+              <div class="clip-header"><h4 id="completion-update-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-completion-update.mp4" aria-label="Completion update retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference missed</p>
+                <p>Gave the update after the pause. The person preferred an immediate update.</p>
+                <a href="code-control-completion-update.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="vegetable-texture">
-          <video controls playsinline preload="none" src="code-control-vegetable-texture.mp4" aria-label="Vegetable texture robot-camera recording"></video>
+        <article class="featured trial" id="vegetable-texture" aria-labelledby="vegetable-texture-title">
           <div class="trial-body">
-            <p class="kicker">Preference missed</p>
-            <h3>Vegetable texture</h3>
-            <p>Served firm broccoli. The person preferred tender broccoli.</p>
-            <a href="code-control-vegetable-texture.mp4" download>Download MP4</a>
+            <h3 id="vegetable-texture-title">Vegetable texture</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Serve cooked broccoli alongside the warm dinner.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="vegetable-texture-interaction">
+              <div class="clip-header"><h4 id="vegetable-texture-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-vegetable-texture.mp4" aria-label="Vegetable texture interaction recording"></video>
+              <div class="clip-body">
+                <p>The person points to the serving and leaves it in place.</p>
+                <a href="code-feedback-vegetable-texture.mp4#t=8.625">Jump to the human action at 0:08</a>
+                <a href="code-feedback-vegetable-texture.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="vegetable-texture-retry">
+              <div class="clip-header"><h4 id="vegetable-texture-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-vegetable-texture.mp4" aria-label="Vegetable texture retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference missed</p>
+                <p>Served firm broccoli. The person preferred tender broccoli.</p>
+                <a href="code-control-vegetable-texture.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="private-storage">
-          <video controls playsinline preload="none" src="code-control-private-storage.mp4" aria-label="Private storage robot-camera recording"></video>
+        <article class="featured trial" id="private-storage" aria-labelledby="private-storage-title">
           <div class="trial-body">
-            <p class="kicker">Task incomplete</p>
-            <h3>Private storage</h3>
-            <p>Put the flashlight in the compartment and the keys in the open tray.</p>
-            <a href="code-control-private-storage.mp4" download>Download MP4</a>
+            <h3 id="private-storage-title">Private storage</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Put the house keys and flashlight away after use in the entryway.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="private-storage-interaction">
+              <div class="clip-header"><h4 id="private-storage-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-private-storage.mp4" aria-label="Private storage interaction recording"></video>
+              <div class="clip-body">
+                <p>The first program split the items between two storage locations. The simulator generated no human response.</p>
+                <a href="code-feedback-private-storage.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="private-storage-retry">
+              <div class="clip-header"><h4 id="private-storage-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-private-storage.mp4" aria-label="Private storage retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Task incomplete</p>
+                <p>Put the flashlight in the compartment and the keys in the open tray.</p>
+                <a href="code-control-private-storage.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="lighting">
-          <video controls playsinline preload="none" src="code-control-lighting.mp4" aria-label="Lighting robot-camera recording"></video>
+        <article class="featured trial" id="lighting" aria-labelledby="lighting-title">
           <div class="trial-body">
-            <p class="kicker">Preference matched</p>
-            <h3>Lighting</h3>
-            <p>Switched on the person’s preferred overhead light.</p>
-            <a href="code-control-lighting.mp4" download>Download MP4</a>
+            <h3 id="lighting-title">Lighting</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Turn on a light for the person working on a puzzle.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="lighting-interaction">
+              <div class="clip-header"><h4 id="lighting-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-lighting.mp4" aria-label="Lighting interaction recording"></video>
+              <div class="clip-body">
+                <p>The person switches off the desk lamp and turns on the overhead light.</p>
+                <a href="code-feedback-lighting.mp4#t=4.25">Jump to the human action at 0:04</a>
+                <a href="code-feedback-lighting.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="lighting-retry">
+              <div class="clip-header"><h4 id="lighting-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-lighting.mp4" aria-label="Lighting retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference matched</p>
+                <p>Switched on the person’s preferred overhead light.</p>
+                <a href="code-control-lighting.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
-        <article class="featured trial" id="cleaning-scent">
-          <video controls playsinline preload="none" src="code-control-cleaning-scent.mp4" aria-label="Cleaning scent robot-camera recording"></video>
+        <article class="featured trial" id="cleaning-scent" aria-labelledby="cleaning-scent-title">
           <div class="trial-body">
-            <p class="kicker">Preference matched</p>
-            <h3>Cleaning scent</h3>
-            <p>Set out the person’s preferred mild citrus cleaner.</p>
-            <a href="code-control-cleaning-scent.mp4" download>Download MP4</a>
+            <h3 id="cleaning-scent-title">Cleaning scent</h3>
+            <p class="kicker">Task instruction sent to Astra</p>
+            <blockquote class="task-instruction">Set out a cleaner so I can wipe my kitchen counter. I am home alone.</blockquote>
+          </div>
+          <div class="clip-grid">
+            <section aria-labelledby="cleaning-scent-interaction">
+              <div class="clip-header"><h4 id="cleaning-scent-interaction">Interaction Astra reviewed</h4></div>
+              <video controls playsinline preload="none" src="code-feedback-cleaning-scent.mp4" aria-label="Cleaning scent interaction recording"></video>
+              <div class="clip-body">
+                <p>The person returns the fragrance-free bottle and sets out the citrus bottle.</p>
+                <a href="code-feedback-cleaning-scent.mp4#t=10.875">Jump to the human action at 0:10</a>
+                <a href="code-feedback-cleaning-scent.mp4" download>Download interaction MP4</a>
+              </div>
+            </section>
+            <section aria-labelledby="cleaning-scent-retry">
+              <div class="clip-header"><h4 id="cleaning-scent-retry">Retry with rewritten code</h4></div>
+              <video controls playsinline preload="none" src="code-control-cleaning-scent.mp4" aria-label="Cleaning scent retry recording"></video>
+              <div class="clip-body">
+                <p class="kicker">Preference matched</p>
+                <p>Set out the person’s preferred mild citrus cleaner.</p>
+                <a href="code-control-cleaning-scent.mp4" download>Download retry MP4</a>
+              </div>
+            </section>
           </div>
         </article>
       </div>
