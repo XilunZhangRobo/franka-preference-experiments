@@ -1,0 +1,1 @@
+Next time I shelve these records, I’ll remember that they placed Glass Lake beside South Wind and Night Train at the far right after playing it. I’ll watch what they do after playing a different record before treating that as a rule.

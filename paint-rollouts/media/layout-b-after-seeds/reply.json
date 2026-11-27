@@ -1,0 +1,4 @@
+{
+  "program": "pickup_x = [-255, -153, -51, 51, 153, 255]\nshelf_x = [-255, -153, -51, 51, 153, 255]\npickup_order = [0, 2, 4, 5, 1, 3]\nfor slot in range(6):\n    move(pickup_x[pickup_order[slot]], -174, shelf_x[slot], 50, 40, 0, 19)",
+  "account": "The shelf is empty. From left to right, the pickup row holds Clay, Sage, Mauve, Olive, Ochre, and Harbor. Sage and Olive are open with stir sticks. The other four have lids. I used the note’s far-right grouping as a tentative preference and placed Sage and Olive in the two rightmost slots, preserving pickup order within each group."
+}

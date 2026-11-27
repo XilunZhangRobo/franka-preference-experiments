@@ -1,0 +1,4 @@
+{
+  "program": "positions = [-255, -153, -51, 51, 153, 255]\nfor x in positions:\n    move(x, -174, x, 50, 40, 0, 19)",
+  "account": "The closeups show Mauve, Harbor, Olive, Ochre, Clay, and Sage in increasing x order. Mauve and Olive have stir sticks in them. The overhead view shows six empty shelf positions aligned with the pickup row. The program moves each pot to the shelf at the same x, preserving its order and using the calibrated grasp height, yaw, and shelf rise."
+}

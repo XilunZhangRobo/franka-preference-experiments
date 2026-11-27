@@ -1,0 +1,92 @@
+{
+  "task_complete": true,
+  "preference_match": false,
+  "supported": {
+    "item0": true,
+    "item2": true,
+    "item4": true,
+    "item5": true,
+    "item1": true,
+    "item3": true
+  },
+  "order_from_Matts_left": [
+    "item3",
+    "item1",
+    "item5",
+    "item4",
+    "item2",
+    "item0"
+  ],
+  "kind": "paints",
+  "seed": 9053,
+  "active_slots": [
+    1,
+    3
+  ],
+  "target": [
+    "item2",
+    "item5"
+  ],
+  "command": "Put away the paint pots.",
+  "received_note": "Next time I shelve these books, I’ll keep the red-tabbed ones together on the right. That matches how the person arranged them this time.",
+  "execution": {
+    "moves": 6,
+    "log": []
+  },
+  "moves": [
+    [
+      -255,
+      -174,
+      -255,
+      50,
+      40,
+      0,
+      19
+    ],
+    [
+      -153,
+      -174,
+      -153,
+      50,
+      40,
+      0,
+      19
+    ],
+    [
+      -51,
+      -174,
+      -51,
+      50,
+      40,
+      0,
+      19
+    ],
+    [
+      51,
+      -174,
+      51,
+      50,
+      40,
+      0,
+      19
+    ],
+    [
+      153,
+      -174,
+      153,
+      50,
+      40,
+      0,
+      19
+    ],
+    [
+      255,
+      -174,
+      255,
+      50,
+      40,
+      0,
+      19
+    ]
+  ]
+}

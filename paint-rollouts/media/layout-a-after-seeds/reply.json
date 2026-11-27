@@ -1,0 +1,4 @@
+{
+  "program": "pickup_x = [-255, -153, -51, 51, 153, 255]\nshelf_x = [-255, -153, -51, 51, 153, 255]\norder = [1, 3, 4, 5, 0, 2]\nfor slot in range(6):\n    move(pickup_x[order[slot]], -174, shelf_x[slot], 50, 40, 0, 19)",
+  "account": "Mauve and Olive have stir sticks and visible paint drips. Harbor, Ochre, Clay, and Sage have lids. I inferred from the note that the two open pots belong together at the far right and kept the pickup order within each group. The planned shelf order from left to right is Harbor, Ochre, Clay, Sage, Mauve, Olive."
+}

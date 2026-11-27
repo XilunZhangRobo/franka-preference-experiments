@@ -1,0 +1,37 @@
+{
+  "instruction": "Use the camera images, request, available note and apparatus information to operate the Franka. Return JSON with program (plain Python) and account (what you observed and how you used it). Write a complete placement program. move(sx,sy,dx,dy,h,yaw,rise) grasps at a source XY and height, lifts, carries to a destination XY, lowers to h+rise, opens and retracts. All distances are millimetres. move does not select or identify anything. Use the marked pickup and shelf positions. You can use simple variables, lists, indexing, arithmetic and bounded for loops. The last two images are the present overhead and oblique views. The three before them are simultaneous closeups of the pickup row, in increasing world x. Any earlier images are chronological observations from immediately before the request.",
+  "context": {
+    "command": "Put away the paint pots.",
+    "apparatus": {
+      "pickup_x_mm": [
+        -255,
+        -153,
+        -51,
+        51,
+        153,
+        255
+      ],
+      "shelf_x_mm": [
+        -255,
+        -153,
+        -51,
+        51,
+        153,
+        255
+      ],
+      "pickup_y_mm": -174,
+      "shelf_y_mm": 50,
+      "calibrated_grasp_height_mm": 40,
+      "calibrated_yaw_degrees": 0,
+      "shelf_rise_mm": 19
+    },
+    "personal_note": "Next time I shelve these books, I’ll keep the red-tabbed ones together on the right. That matches how the person arranged them this time."
+  },
+  "hashes": [
+    "f28466f3d3643ca10e81d7813e405d6feb1cdc42d46835ed91b0d3efb18c1441",
+    "460dda181fb8967901443fe1512ef50c3c491cfcd4f25a54e77e98b305da8937",
+    "99b9ca9e10b3937dc1820852628b123ed0495a8b15d1fcbcf0e8c7167362a06f",
+    "878092ba004e4cd43fe18c9b505057b215a134328bd025d9c4dd3cdb4f3a1d14",
+    "b52a9fbe84da7f1434f41d900c854a1a0a86eacbd4e6b2a8db5da177269fa30f"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "program": "positions = [-255, -153, -51, 51, 153, 255]\nfor x in positions:\n    move(x, -174, x, 50, 40, 0, 19)",
+  "account": "The pickup row contains Clay, Sage, Mauve, Olive, Ochre, and Harbor from left to right. The shelf is empty. I assigned each pot to the shelf mark directly across from it, preserving that order. The note concerns books and gives no shelving preference for paint pots."
+}

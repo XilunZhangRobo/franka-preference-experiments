@@ -1,0 +1,1 @@
+Next time I file project folders, I’ll remember that they moved Kitchen beside Textiles at the far right. I’ll watch where they put the next folder with a worksheet. When shelving records, I’ll remember that they placed Glass Lake beside South Wind and Night Train at the far right after playing it. I’m still unsure whether the two choices share a rule.

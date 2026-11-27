@@ -1,0 +1,4 @@
+{
+  "program": "pickup_x = [-255, -153, -51, 51, 153, 255]\nshelf_x = [-255, -153, -51, 51, 153, 255]\nfor i in range(6):\n    move(pickup_x[i], -174, shelf_x[i], 50, 40, 0, 19)",
+  "account": "The closeups show six paint pots in increasing x order: Mauve, Harbor, Olive, Ochre, Clay, and Sage. The overhead view shows an empty shelf aligned with the pickup row. I chose the shelf position directly across from each pot to preserve that order. The note concerns red-tabbed books and gives no sorting preference for paint pots."
+}

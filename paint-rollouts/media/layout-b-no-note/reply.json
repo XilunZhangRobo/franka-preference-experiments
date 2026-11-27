@@ -1,0 +1,4 @@
+{
+  "program": "xs = [-255, -153, -51, 51, 153, 255]\nfor x in xs:\n    move(x, -174, x, 50, 40, 0, 19)",
+  "account": "The closeups show Clay, Sage, Mauve, Olive, Ochre, and Harbor from left to right. The overhead and oblique views show six pots in the pickup row and an empty shelf. The program places each pot in the shelf position directly across from it, preserving the row order and using the supplied grasp height, yaw, and shelf rise."
+}
