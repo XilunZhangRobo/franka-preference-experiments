@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Records · empty memory · layout 205</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Records · empty memory · layout 205</h1><p><a href="shelf.html">Back to this experiment</a></p><blockquote>Shelve the records.</blockquote><p>Completed · missed</p><figure><video controls playsinline preload="none" poster="films/shelf-records-205-empty/start.jpg" src="films/shelf-records-205-empty/review.mp4"></video><figcaption>Recorded trial execution. Cycles · presentation camera · 6× speed · simulation 0.4–83.6 s. Matt’s left is on the right side of this image.</figcaption></figure><p><small><a href="films/shelf-records-205-empty/start.jpg">Starting arrangement</a> · <a href="films/shelf-records-205-empty/end.jpg">Final arrangement</a></small></p><p><a href="evidence/d44393aac4ee8219205f340d501719678654a745ebaa5f0199c160813728872e.mp4">Download the original MuJoCo recording</a></p><h2>Model exchange</h2><details><summary>controller · 13 input images</summary><pre>You control a simulated Franka. Read the human&#x27;s command, personal note if supplied, and camera images. Some images may show what just happened before the command. The final two show the present workspace from overhead and from the robot&#x27;s oblique camera. Use these observations to decide what to move and where. Return a JSON object with program (plain Python code) and a short account of what you saw that motivated the program. Write the complete manipulation program. You may use lists, for over a list or range, indexing, assignments and numeric arithmetic. transfer(sx,sy,dx,dy,grip_z,yaw,rise) is a generic contact maneuver: at (sx,sy), approach vertically with open jaws, descend to grip_z, squeeze, lift to clearance, traverse to (dx,dy), lower to grip_z+rise, open and retract. Coordinates, height and rise are in mm. It does not identify, snap, center or orient objects. Yaw zero closes along y, 90 along x. From the person&#x27;s viewpoint, left along this shelf is increasing x. Each object needs a vacant landing spot. Do not use imports or any other robot functions.</pre><pre>{
+  &quot;command&quot;: &quot;Shelve the records.&quot;,
+  &quot;calibration&quot;: {
+    &quot;front_registration_x_mm&quot;: [
+      -255,
+      -153,
+      -51,
+      51,
+      153,
+      255
+    ],
+    &quot;front_registration_y_mm&quot;: -174,
+    &quot;shelf_registration_x_mm&quot;: [
+      -255,
+      -153,
+      -51,
+      51,
+      153,
+      255
+    ],
+    &quot;shelf_registration_y_mm&quot;: 50,
+    &quot;shelf_rise_mm&quot;: 19,
+    &quot;grasp_reference&quot;: &quot;Upright face-out jackets: clamp across thickness at 56 mm, yaw zero.&quot;
+  },
+  &quot;proprioception&quot;: [
+    -314.9,
+    -274.0,
+    245.9,
+    0.0,
+    0.0,
+    0.0,
+    72.0
+  ]
+}</pre><a href="evidence/6ca18314763fd81c52adc5b344958b5c7a67abbab34b8304c52af58a67de2875.jpg">Frame 1</a> · <a href="evidence/32c71995ef21f08018b095e71057cbc6ea2486161dc5f1ac87f328ea1d973982.jpg">Frame 2</a> · <a href="evidence/d5ca746955280dd6b24921711fc809562d4bf7bf6a1be16380156d73e6a11262.jpg">Frame 3</a> · <a href="evidence/0522c78a979415e10947e19ce04a4cfbbc947e193cfbb9f8fe837e091fec3b67.jpg">Frame 4</a> · <a href="evidence/cd829569053c1ad0a0b83b88096573134a620f0b46be84b5991158e2e5d60d18.jpg">Frame 5</a> · <a href="evidence/40fd5e0d21903fc10570791b0b9f5a41f1f1de50346501ac265c2039dfff2b05.jpg">Frame 6</a> · <a href="evidence/26471355492288efc05f25ad1bf56833e57afdda09f1bdecead5b8555bec0865.jpg">Frame 7</a> · <a href="evidence/5ac33fb198c25066f20ac9694fe533cf3ac02486c1c7f261715c2b6978bc80ab.jpg">Frame 8</a> · <a href="evidence/7ab2db22d578aec8872f39f10e91d6ffbc2af4bdc77852d898d44c1666a477b7.jpg">Frame 9</a> · <a href="evidence/369e25a192df11f47708e58a4162f18f5866d2407a03dcf3672ea8804b6bf1c1.jpg">Frame 10</a> · <a href="evidence/43d00287ee7629c52d63699aacbc58db8d498134175841735c983509cdfa7c3c.jpg">Frame 11</a> · <a href="evidence/a0539cfeda05db2668a335c9572ab3be79d18c7eb3c3566edca6ba42b6f26e06.jpg">Frame 12</a> · <a href="evidence/5268a37f7988ef3343622907d9ae74287c94a429584793b5b02ac6c7a8b8a58c.jpg">Frame 13</a><pre>{
+  &quot;program&quot;: &quot;source_x = [-284, -171, -57, 57, 171, 284]\nshelf_x = [-255, -153, -51, 51, 153, 255]\nfor i in range(6):\n    transfer(source_x[i], -194, shelf_x[i], 50, 56, 0, 19)&quot;,
+  &quot;account&quot;: &quot;I saw the person put the loose record into the green jacket. The turntable and shelf are empty, and six upright jackets stand in front. I used their visible centers for pickup and kept their order on the shelf.&quot;
+}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;task_complete&quot;: true,
+  &quot;preference_match&quot;: false,
+  &quot;supported&quot;: {
+    &quot;record4&quot;: true,
+    &quot;record3&quot;: true,
+    &quot;record0&quot;: true,
+    &quot;record1&quot;: true,
+    &quot;record5&quot;: true,
+    &quot;record2&quot;: true
+  },
+  &quot;order_from_Matts_left&quot;: [
+    &quot;record2&quot;,
+    &quot;record5&quot;,
+    &quot;record1&quot;,
+    &quot;record0&quot;,
+    &quot;record3&quot;,
+    &quot;record4&quot;
+  ],
+  &quot;execution&quot;: {
+    &quot;moves&quot;: 6,
+    &quot;log&quot;: []
+  },
+  &quot;transfers&quot;: 6,
+  &quot;time_s&quot;: 83.59999999998657
+}</pre></details></main></html>

@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Motor capability · seed 31 · empty memory</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Motor capability · seed 31 · empty memory</h1><p><a href="coffee.html">Back to this experiment</a></p><blockquote>Bring my coffee to the coaster.</blockquote><figure><video controls playsinline preload="none" poster="films/coffee-motor-31-empty/start.jpg" src="films/coffee-motor-31-empty/review.mp4"></video><figcaption>Motor capability · seed 31 · empty memory Cycles · presentation camera · real time · simulation 0.0–13.2 s.</figcaption></figure><p><small><a href="films/coffee-motor-31-empty/start.jpg">Starting arrangement</a> · <a href="films/coffee-motor-31-empty/end.jpg">Final arrangement</a></small></p><p>Released upright on the mat, 4.44 mm from its center.</p><p><a href="evidence/edc5b3b0db235d8411e90b349c9e9c71cd4f6c6454224409b6ab1c4501019939.mp4">Download the original MuJoCo recording</a></p><details><summary>Controller · 2 input images</summary><pre>Operate the simulated Franka from two RGB views, overhead then oblique. Write a short complete Python program in a JSON object with the field program. grip() pinches the fixture-centered wooden grip and raises the object. travel(x,y) moves the held object level in a straight horizontal segment to any reachable tabletop XY in millimetres. set_down() lowers and opens at the current XY. All segments execute in order. The overhead white grid is in millimetres (+x right, +y up), the cyan rulers mark pixels. Decide your own route. You may use local variables, lists, indexing, arithmetic and bounded for loops. At most 12 operations. Return a question instead if one is necessary.</pre><pre>{
+  &quot;command&quot;: &quot;Bring my coffee to the coaster.&quot;,
+  &quot;fixture_xy_mm&quot;: [
+    180.0,
+    -23.48
+  ],
+  &quot;round_mat_center_xy_mm&quot;: [
+    -180.0,
+    -11.48
+  ]
+}</pre><a href="evidence/213570f2290ad2946a3d62575e46b2d32516f6ea23e628b2629055b569e9c9c0.jpg">Frame 1</a> · <a href="evidence/cb13e9a3f6b0d433bfcde6358f613d56726e400a0a4d1cede7b12256a38b25bd.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;grip()\ntravel(180, 110)\ntravel(-180, 110)\ntravel(-180, -11.48)\nset_down()&quot;}</pre></details><p><a href="evidence/120ea2874cb2f4b93327f4d642c89fb4586e4d5d8504c1babf741f786fde4915.json">Archived response</a></p><p><a href="evidence/2792826edacf2537b5075f190034155d7318b3e965a4bc00105994dca1478b11.json">Physical result</a></p><details><summary>Measured outcome</summary><pre>{
+  &quot;task_complete&quot;: true,
+  &quot;preference_match&quot;: true,
+  &quot;cargo_goal_distance_mm&quot;: 4.44,
+  &quot;cargo_base_height_mm&quot;: 3.89,
+  &quot;upright&quot;: true,
+  &quot;photo_peak_corner_displacement_mm&quot;: 0.0,
+  &quot;vessel_overlapped_photo&quot;: false,
+  &quot;mat_contact&quot;: true,
+  &quot;released&quot;: true,
+  &quot;bilateral_samples&quot;: 748,
+  &quot;observed_projection_overlap&quot;: false
+}</pre></details></main></html>

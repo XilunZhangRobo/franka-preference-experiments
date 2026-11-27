@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Earlier inspection on the same free program</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Earlier inspection on the same free program</h1><p><a href="jars.html">Back to this experiment</a></p><blockquote>Finish labeling these two batches of preserves for the sale.</blockquote><figure><video controls playsinline preload="none" poster="films/jars-timing-teaching/start.jpg" src="films/jars-timing-teaching/review.mp4"></video><figcaption>Earlier inspection on the same free program Cycles · presentation camera · 6× speed · simulation 1.3–61.5 s.</figcaption></figure><p><small><a href="films/jars-timing-teaching/start.jpg">Starting arrangement</a> · <a href="films/jars-timing-teaching/end.jpg">Final arrangement</a></small></p><p>The original motor program ran on an identical reset. With one finished sample in each design and the robot’s gripper empty, Matt lifted that sample before the next seal moved. All six jars finished labeled.</p><p><a href="evidence/49618676e37d02c6affe71109582b0aec97357c2ff99fcddb9fa7c0a6ae129de.mp4">Download the original MuJoCo recording</a></p><details><summary>Measured outcome</summary><pre>{
+  &quot;measurement_interval_s&quot;: 0.05,
+  &quot;proof_criterion&quot;: &quot;Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.&quot;,
+  &quot;initial_supported&quot;: {
+    &quot;jar0_0&quot;: {
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 0.0
+    }
+  },
+  &quot;final_supported&quot;: {
+    &quot;jar0_0&quot;: {
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 0.22
+    },
+    &quot;jar0_1&quot;: {
+      &quot;seal&quot;: &quot;seal0_1&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.28
+    },
+    &quot;jar0_2&quot;: {
+      &quot;seal&quot;: &quot;seal0_2&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.07
+    },
+    &quot;jar1_0&quot;: {
+      &quot;seal&quot;: &quot;seal1_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.69
+    },
+    &quot;jar1_1&quot;: {
+      &quot;seal&quot;: &quot;seal1_1&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.04
+    },
+    &quot;jar1_2&quot;: {
+      &quot;seal&quot;: &quot;seal1_2&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.17
+    }
+  },
+  &quot;matching_count&quot;: 6,
+  &quot;matching_within_10mm&quot;: 6,
+  &quot;jar_max_lifts_mm&quot;: {
+    &quot;jar0_0&quot;: 85.38,
+    &quot;jar0_1&quot;: 0.02,
+    &quot;jar0_2&quot;: 0.01,
+    &quot;jar1_0&quot;: 85.36,
+    &quot;jar1_1&quot;: 0.02,
+    &quot;jar1_2&quot;: 0.01
+  },
+  &quot;max_proof_hold_s&quot;: {
+    &quot;jar0_0&quot;: 0.0,
+    &quot;jar0_1&quot;: 0.0,
+    &quot;jar0_2&quot;: 0.0,
+    &quot;jar1_0&quot;: 0.0,
+    &quot;jar1_1&quot;: 0.0,
+    &quot;jar1_2&quot;: 0.0
+  },
+  &quot;inspected&quot;: {},
+  &quot;first_seal_motion_s&quot;: {
+    &quot;seal0_0&quot;: 4.85,
+    &quot;seal0_1&quot;: 11.15,
+    &quot;seal0_2&quot;: 20.8,
+    &quot;seal1_0&quot;: 29.0,
+    &quot;seal1_1&quot;: 44.4,
+    &quot;seal1_2&quot;: 54.05
+  },
+  &quot;inspection_before_next_label&quot;: [
+    false,
+    false
+  ],
+  &quot;complete&quot;: false,
+  &quot;labels_complete&quot;: true,
+  &quot;preference_match&quot;: false,
+  &quot;released&quot;: true
+}</pre></details><figure><video controls playsinline preload="none" poster="films/jars-timing-response/start.jpg" src="films/jars-timing-response/review.mp4"></video><figcaption>Matt inspects before the next seal moves Cycles · inspection camera · 6× speed · simulation 1.3–45.3 s.</figcaption></figure><p><small><a href="films/jars-timing-response/start.jpg">Starting arrangement</a> · <a href="films/jars-timing-response/end.jpg">Final arrangement</a></small></p><p>A fresh auditor inferred a pause before continuing a new batch. The review covered the actual robot motion preceding each human inspection.</p><blockquote># When to pause for a first-item check
+
+Observed: The person lifted and returned the first labeled jar in each batch.
+Likely preference: At the start of a new batch, leave time to check the first finished item before continuing.
+Still unclear: The check may have been specific to these labels. The person gave no explicit approval signal.
+</blockquote><p><a href="evidence/3c65e3f7f09749850328957653674b8e2e6ba6904ab6f7643d771da3fa3c9e9a.mp4">Download the original MuJoCo recording</a></p><details><summary>Visual reviewer · 23 input images</summary><pre>What happened? What preference might explain it? When would it matter again? Use the observed sequence as evidence. If a note is warranted, title it for a future decision a robot might face in different tasks. In the note write three short lines labeled Observed, Likely preference and Still unclear. Preserve the order of events when meaningful. State the broadest decision rule the evidence supports and the boundary or competing explanation that could change a future action. Keep an item-specific observation when broader evidence is absent. Leave Still unclear empty if there is no meaningful uncertainty. Silence alone does not create a new note.  Create a note only if the person&#x27;s visible response warrants it. Return JSON with string fields observation, interpretation, title, and note.</pre><pre>{
+  &quot;command&quot;: &quot;Finish labeling these two batches of preserves for the sale.&quot;,
+  &quot;existing_note&quot;: &quot;&quot;,
+  &quot;recording&quot;: &quot;89 chronological camera frames at two per second. Read each sheet from upper left to lower right. Trailing black tiles are padding.&quot;
+}</pre><a href="evidence/7419d3e12cdecfa1a44037433af5abb1f413015ec85c485c9585745adec1ee4f.jpg">Frame 1</a> · <a href="evidence/d81cb4cbbc4c0a8d6d12895ffae771d371bce8cc47cdb6cc52e878db4117fdac.jpg">Frame 2</a> · <a href="evidence/2ea10ed1a362d8aae95ff309886133c386c59d96c172d5c8d2b0fe112272ac06.jpg">Frame 3</a> · <a href="evidence/e9c5db730b0f9c1a7da8922fa37ee826f45c2820410ebe51fe5e959ea4fb0f74.jpg">Frame 4</a> · <a href="evidence/4a1746e8864cd055ddab0df90e9d2dfc5185d51d1a34b0ea1f9577fc91d57f2d.jpg">Frame 5</a> · <a href="evidence/99086b7c17b598468756807d58e62c8da4d57202fa23f31f607e259a5cf70df5.jpg">Frame 6</a> · <a href="evidence/d4161a3e39267a02d72d7116032740dc14f1d50ba588911e8e77a62670df8231.jpg">Frame 7</a> · <a href="evidence/04b1868a6d0aac0d5e1797626ac5252aece93c84d2f08d364a70f0d73e5a74b6.jpg">Frame 8</a> · <a href="evidence/2dbe5eade71eda14192a4603cbe57ce715fbdab4fb2c69148d5f5d62136c1064.jpg">Frame 9</a> · <a href="evidence/f9036ae01128936d75d7f069087e8c5739ca1ae2b5694dfbfca12bd4c895d7d7.jpg">Frame 10</a> · <a href="evidence/2e81fddabf107ed22578809f0fa6a43a4e266c97f3eff72038001add30ec959c.jpg">Frame 11</a> · <a href="evidence/ce836bb5a78e75613e4195b0efd0bf1f66bd9c397ee08e9d36a92a516552d7ca.jpg">Frame 12</a> · <a href="evidence/151695819dd1ebeb39280cfa8485fbf2e5e6d24946f4d8d0a8bb678be542fe18.jpg">Frame 13</a> · <a href="evidence/bc7545748992e5e7a4018bd948910f0ba8c69f0ee2cf5ab9b3585318d6256f84.jpg">Frame 14</a> · <a href="evidence/156633d29ec2647f19e675d4bc635464bfd8d110060fe40e437c09dec511c00e.jpg">Frame 15</a> · <a href="evidence/d43e44ad6c72e92ccf56cf7295183379c3abf45175641991df309ceb37337459.jpg">Frame 16</a> · <a href="evidence/c89f34a0bc8e883257b7a8d1cfd2ee72569d83992e41942a9ef8d8e4ac9d9823.jpg">Frame 17</a> · <a href="evidence/85a29e13f01f2fbb4eb773aad9ed88ce265b6f0a2aef5065c0fb0aa685bfc544.jpg">Frame 18</a> · <a href="evidence/818a084eacfcfed023c90dd4bf763f4d4dae46e30613959296ffc62c8f24d223.jpg">Frame 19</a> · <a href="evidence/a43e61ffe240fd05be39601ef126cbb34a944389bcc35b13f301de19cd0f203f.jpg">Frame 20</a> · <a href="evidence/65ca186b0f2cbd95c1e943cb0227559db6b0322377f30fb9aab24a5fc29e94db.jpg">Frame 21</a> · <a href="evidence/0db0d65816195b73412ccab4e22163cec5b9425b808e203fae63879cab9b7c31.jpg">Frame 22</a> · <a href="evidence/576407626865a4a2e357fdea146e066590efee3120012136e9de33c890bf6e27.jpg">Frame 23</a><pre>{
+  &quot;observation&quot;: &quot;The person lifted and returned the already-labeled front jar of the purple-banded batch. The robot labeled the other two purple-banded jars in succession, then labeled the front jar of the red-banded batch. It waited while the person lifted and returned that jar, then picked up the next label.&quot;,
+  &quot;interpretation&quot;: &quot;Handling the first labeled jar in each batch suggests the person may want to check one example before the robot labels the rest of that batch.&quot;,
+  &quot;title&quot;: &quot;When to pause for a first-item check&quot;,
+  &quot;note&quot;: &quot;Observed: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.&quot;
+}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;audit&quot;: {
+    &quot;observation&quot;: &quot;The person lifted and returned the already-labeled front jar of the purple-banded batch. The robot labeled the other two purple-banded jars in succession, then labeled the front jar of the red-banded batch. It waited while the person lifted and returned that jar, then picked up the next label.&quot;,
+    &quot;interpretation&quot;: &quot;Handling the first labeled jar in each batch suggests the person may want to check one example before the robot labels the rest of that batch.&quot;,
+    &quot;title&quot;: &quot;When to pause for a first-item check&quot;,
+    &quot;note&quot;: &quot;Observed: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.&quot;
+  }
+}</pre></details></main></html>

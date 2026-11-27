@@ -1,0 +1,2406 @@
+{
+  "description": "Two batches of three free jars, six separate printed seals and a physical Franka gripper. One jar started sealed. The robot could place a selected seal on a jar or lift any jar for a chosen height and duration. Each policy wrote its own program.",
+  "executive": {
+    "recall": "The original note reproduced Matt’s after-second checks in both batches. The earlier demonstration yielded two on-time checks.",
+    "transfer": "On two new designs the notes reproduced their respective timings; empty memory skipped inspection.",
+    "negative-control": "The original note skipped checks on approved designs. The earlier-demonstration note still triggered both checks."
+  },
+  "timing_diagnostic": {
+    "plan": {
+      "design": "Counterfactual replay of precisely the free teaching program on the same reset. The empty gripper travels above the next loose seal; before descent or contact, the participant lifts the free first finished jar and returns it. No changes to held-out motor interface or success criteria.",
+      "source_request": "47c61dca2b1219bb3643d04bd4b3c5a6a76dfd8a9ba5b5255d0fcb1e7f63a3f4",
+      "source_program": "1670c658501489dead5d8c8f7bcf52d3207029b668943b822e52804dcb548401",
+      "comparators": [
+        "recall-empty",
+        "transfer-empty",
+        "approved-empty"
+      ],
+      "outcomes": "Primary: stable robot-held labeled jar at least 50 mm above start for at least 0.25 s before handling the second loose seal of that design. Also report actual lift height and order independent of minimum height; one fresh policy per stage.",
+      "auditor": "Same camera, sampling, audit prompt and neutral task as the first demonstration; new observation only. Retain note verbatim."
+    },
+    "note": "# When to pause for a first-item check\n\nObserved: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.\n",
+    "review": {
+      "observation": "The person lifted and returned the already-labeled front jar of the purple-banded batch. The robot labeled the other two purple-banded jars in succession, then labeled the front jar of the red-banded batch. It waited while the person lifted and returned that jar, then picked up the next label.",
+      "interpretation": "Handling the first labeled jar in each batch suggests the person may want to check one example before the robot labels the rest of that batch.",
+      "title": "When to pause for a first-item check",
+      "note": "Observed: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal."
+    },
+    "outcomes": {
+      "recall": {
+        "completed": true,
+        "both_before": true,
+        "matched": true
+      },
+      "transfer": {
+        "completed": true,
+        "both_before": true,
+        "matched": true
+      },
+      "approved": {
+        "completed": true,
+        "both_before": true,
+        "matched": false
+      }
+    }
+  },
+  "results": "The explicit Astra control completed all six labels and presented both first pieces on time. Matt’s original demonstration lifted each first jar after the second had been finished. With the resulting note, Astra reproduced that order for both designs in same-scene recall and again with the new PEAR and CHERRY designs on the shifted fixture. Neither empty-memory agent lifted a jar. The learned lifts missed the prespecified before-second deadline. Both original approved-design controls continued directly. In the separate timing diagnostic Matt inspected each first jar before the next seal was picked up. Its independent visual note led Astra to inspect both designs before continuing on the original and new starts. On approved designs it also inspected both unnecessarily. Each condition ran once; transfer kept the jar task and motor interface.",
+  "note": "# When to leave a sample accessible for review\n\nObserved: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown.\n",
+  "visual_audit": {
+    "observation": "The front jar of the first batch was already labeled. After the robot labeled the next jar, the person lifted the front jar and put it back. The robot labeled the third jar, then the first two jars of the second batch. Again, the person lifted the first labeled jar of that batch and put it back. The recording ends with one jar still unlabeled.",
+    "interpretation": "The person may prefer a chance to inspect an early example from each batch. Both times they handled the first jar after the second had been labeled.",
+    "title": "When to leave a sample accessible for review",
+    "note": "Observed: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown."
+  },
+  "episodes": [
+    {
+      "slug": "jars-cal-211-direct",
+      "title": "Scripted handling check · direct · seed 211",
+      "stage": "motor",
+      "role": "scripted calibration",
+      "seed": 211,
+      "command": "Scripted trajectory with direct handling.",
+      "outcome": "All six matched seals finished within 10 mm of center. 0 of two first pieces were inspected before the next label.",
+      "source_dir": "runs/accessible-jars/calibration/211-direct",
+      "poses": "runs/accessible-jars/calibration/211-direct/poses.npz",
+      "pose_sha256": "7ed14259d55e9a7b9a9387980ec65a6e86b0da3acf4c31f231d071a03d83d6ea",
+      "time_s": [
+        1.320000000000001,
+        50.66000000001595
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.17
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.27
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.06
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.58
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.18
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.02,
+          "jar0_2": 0.01,
+          "jar1_0": 0.05,
+          "jar1_1": 0.01,
+          "jar1_2": 0.0
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.75,
+          "seal0_2": 15.4,
+          "seal1_0": 23.6,
+          "seal1_1": 33.6,
+          "seal1_2": 43.25
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true
+      }
+    },
+    {
+      "slug": "jars-cal-211-lift",
+      "title": "Scripted handling check · lift · seed 211",
+      "stage": "motor",
+      "role": "scripted calibration",
+      "seed": 211,
+      "command": "Scripted trajectory with lift handling.",
+      "outcome": "All six matched seals finished within 10 mm of center. 2 of two first pieces were inspected before the next label.",
+      "source_dir": "runs/accessible-jars/calibration/211-lift",
+      "poses": "runs/accessible-jars/calibration/211-lift/poses.npz",
+      "pose_sha256": "c67a9c01161ba1bed068b2083f76f63da7a24ad56a9e60d2f262053efa3e138a",
+      "time_s": [
+        1.320000000000001,
+        68.89000000002085
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 1.42
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.29
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.06
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.49
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.59
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.4
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 95.16,
+          "jar0_1": 0.01,
+          "jar0_2": 0.0,
+          "jar1_0": 95.05,
+          "jar1_1": 0.02,
+          "jar1_2": 0.02
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.85,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.85,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {
+          "jar0_0": {
+            "time_s": 7.85,
+            "seal": "seal0_0"
+          },
+          "jar1_0": {
+            "time_s": 43.3,
+            "seal": "seal1_0"
+          }
+        },
+        "first_seal_motion_s": {
+          "seal0_0": 7.0,
+          "seal0_1": 16.4,
+          "seal0_2": 26.05,
+          "seal1_0": 34.25,
+          "seal1_1": 51.8,
+          "seal1_2": 61.5
+        },
+        "inspection_before_next_label": [
+          true,
+          true
+        ],
+        "complete": true,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true
+      }
+    },
+    {
+      "slug": "jars-cal-212-direct",
+      "title": "Scripted handling check · direct · seed 212",
+      "stage": "motor",
+      "role": "scripted calibration",
+      "seed": 212,
+      "command": "Scripted trajectory with direct handling.",
+      "outcome": "All six matched seals finished within 10 mm of center. 0 of two first pieces were inspected before the next label.",
+      "source_dir": "runs/accessible-jars/calibration/212-direct",
+      "poses": "runs/accessible-jars/calibration/212-direct/poses.npz",
+      "pose_sha256": "0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af",
+      "time_s": [
+        1.320000000000001,
+        50.420000000015655
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.17
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.33
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.54
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.14
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 0.98
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.01,
+          "jar1_0": 0.05,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.65,
+          "seal0_2": 15.3,
+          "seal1_0": 23.5,
+          "seal1_1": 33.45,
+          "seal1_2": 43.15
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true
+      }
+    },
+    {
+      "slug": "jars-cal-212-lift",
+      "title": "Scripted handling check · lift · seed 212",
+      "stage": "motor",
+      "role": "scripted calibration",
+      "seed": 212,
+      "command": "Scripted trajectory with lift handling.",
+      "outcome": "All six matched seals finished within 10 mm of center. 2 of two first pieces were inspected before the next label.",
+      "source_dir": "runs/accessible-jars/calibration/212-lift",
+      "poses": "runs/accessible-jars/calibration/212-lift/poses.npz",
+      "pose_sha256": "59e278d2e0eb492daae33c2e0c77d9d8703557ce9c6f42a8fbbe0ae112de43b5",
+      "time_s": [
+        1.320000000000001,
+        68.65000000002141
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 1.28
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.35
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.09
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.84
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.67
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.44
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 95.06,
+          "jar0_1": 0.02,
+          "jar0_2": 0.01,
+          "jar1_0": 94.97,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.85,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.8,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {
+          "jar0_0": {
+            "time_s": 7.75,
+            "seal": "seal0_0"
+          },
+          "jar1_0": {
+            "time_s": 43.2,
+            "seal": "seal1_0"
+          }
+        },
+        "first_seal_motion_s": {
+          "seal0_0": 6.9,
+          "seal0_1": 16.25,
+          "seal0_2": 25.9,
+          "seal1_0": 34.1,
+          "seal1_1": 51.7,
+          "seal1_2": 61.35
+        },
+        "inspection_before_next_label": [
+          true,
+          true
+        ],
+        "complete": true,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true
+      }
+    },
+    {
+      "slug": "jars-explicit-empty",
+      "title": "Explicit motor capability · empty memory",
+      "stage": "motor",
+      "role": "fresh Astra program",
+      "seed": 211,
+      "command": "Finish both batches. Before labeling a second jar of either design, lift the first finished jar of that design and hold it steady for me to inspect. Then return it and finish the rest.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 2 of two first pieces before handling the next label.",
+      "source_dir": "runs/accessible-jars/trials/explicit-empty",
+      "poses": "runs/accessible-jars/trials/explicit-empty/poses.npz",
+      "pose_sha256": "a37d60979d33be832aef6ebfeda53de0f0ad62d9806505ffa66c3adc6a650991",
+      "time_s": [
+        1.320000000000001,
+        73.31000000001055
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.84
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.19
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.08
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.33
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.56
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.4
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 75.55,
+          "jar0_1": 0.02,
+          "jar0_2": 0.0,
+          "jar1_0": 75.68,
+          "jar1_1": 0.01,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 3.2,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 3.25,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {
+          "jar0_0": {
+            "time_s": 7.75,
+            "seal": "seal0_0"
+          },
+          "jar1_0": {
+            "time_s": 27.1,
+            "seal": "seal1_0"
+          }
+        },
+        "first_seal_motion_s": {
+          "seal0_0": 7.0,
+          "seal1_0": 18.15,
+          "seal0_1": 38.0,
+          "seal0_2": 47.65,
+          "seal1_1": 56.25,
+          "seal1_2": 65.9
+        },
+        "inspection_before_next_label": [
+          true,
+          true
+        ],
+        "complete": true,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 80,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.560000000001198,
+              "peak_mm": 75.55,
+              "longest_still_supported_bilateral_s": 3.2,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 80,
+              "requested_hold_s": 3,
+              "start_s": 23.369999999997926,
+              "end_s": 32.93999999999429,
+              "peak_mm": 75.68,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 2,
+          "after_second_before_third": 0,
+          "events": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 80,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.560000000001198,
+              "peak_mm": 75.55,
+              "longest_still_supported_bilateral_s": 3.2,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 80,
+              "requested_hold_s": 3,
+              "start_s": 23.369999999997926,
+              "end_s": 32.93999999999429,
+              "peak_mm": 75.68,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        }
+      },
+      "camera_sha256": [
+        "60784a79c9f055af4761814639ba5c1d48dd98890d4d81a11dc3399214ca1779",
+        "bced0f12ee84035fe59f38137b08094bdfbb451bef41166d31451e1b66832a74"
+      ]
+    },
+    {
+      "slug": "jars-teach-empty",
+      "title": "Ordinary teaching encounter · empty memory",
+      "stage": "teaching",
+      "role": "fresh Astra program",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label. After the second jar of each design was finished, Matt lifted the first jar, held it and put it back.",
+      "source_dir": "runs/accessible-jars/trials/teach-empty-after-placement",
+      "poses": "runs/accessible-jars/trials/teach-empty-after-placement/poses.npz",
+      "pose_sha256": "b2b264908622c8192da235dcaa7d2e84d1967b747b62269dff92f98a75236bac",
+      "time_s": [
+        1.320000000000001,
+        61.46000000002915
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.22
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.27
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.09
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.69
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.08
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.17
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 85.43,
+          "jar0_1": 0.02,
+          "jar0_2": 0.01,
+          "jar1_0": 85.45,
+          "jar1_1": 0.01,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.75,
+          "seal0_0": 11.9,
+          "seal0_2": 20.8,
+          "seal1_0": 29.0,
+          "seal1_1": 39.0,
+          "seal1_2": 54.05
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true
+      },
+      "camera_sha256": [
+        "60784a79c9f055af4761814639ba5c1d48dd98890d4d81a11dc3399214ca1779",
+        "bced0f12ee84035fe59f38137b08094bdfbb451bef41166d31451e1b66832a74"
+      ]
+    },
+    {
+      "slug": "jars-recall-empty",
+      "title": "Same kitchen and jars · empty memory",
+      "stage": "recall",
+      "role": "fresh Astra program",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label.",
+      "source_dir": "runs/accessible-jars/trials/recall-empty",
+      "poses": "runs/accessible-jars/trials/recall-empty/poses.npz",
+      "pose_sha256": "7ed14259d55e9a7b9a9387980ec65a6e86b0da3acf4c31f231d071a03d83d6ea",
+      "time_s": [
+        1.320000000000001,
+        50.66000000001595
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.17
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.27
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.06
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.58
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.18
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.02,
+          "jar0_2": 0.01,
+          "jar1_0": 0.05,
+          "jar1_1": 0.01,
+          "jar1_2": 0.0
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.75,
+          "seal0_2": 15.4,
+          "seal1_0": 23.6,
+          "seal1_1": 33.6,
+          "seal1_2": 43.25
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": []
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 0,
+          "after_second_before_third": 0,
+          "events": []
+        }
+      },
+      "camera_sha256": [
+        "60784a79c9f055af4761814639ba5c1d48dd98890d4d81a11dc3399214ca1779",
+        "bced0f12ee84035fe59f38137b08094bdfbb451bef41166d31451e1b66832a74"
+      ]
+    },
+    {
+      "slug": "jars-recall-note",
+      "title": "Same kitchen and jars · learned note",
+      "stage": "recall",
+      "role": "fresh Astra program",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label. After completing the second jar in each design, Astra lifted and held the first. Peak heights were 46.4 mm and 46.7 mm.",
+      "source_dir": "runs/accessible-jars/trials/recall-note",
+      "poses": "runs/accessible-jars/trials/recall-note/poses.npz",
+      "pose_sha256": "f8874ee8b9a69b89f083508096bab7d41090637e4a21d22673fc82b3fe621da8",
+      "time_s": [
+        1.320000000000001,
+        67.39000000002434
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.27
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.08
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.29
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.07
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.41
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 46.44,
+          "jar0_1": 0.02,
+          "jar0_2": 0.01,
+          "jar1_0": 46.68,
+          "jar1_1": 0.01,
+          "jar1_2": 0.02
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.75,
+          "seal0_0": 14.15,
+          "seal0_2": 23.75,
+          "seal1_0": 31.95,
+          "seal1_1": 41.95,
+          "seal1_2": 60.0
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0",
+                "jar0_1"
+              ],
+              "requested_mm": 50,
+              "requested_hold_s": 1,
+              "start_s": 10.800000000000276,
+              "end_s": 18.31000000000073,
+              "peak_mm": 46.44,
+              "longest_still_supported_bilateral_s": 1.25,
+              "after_second_before_third": true
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0",
+                "jar1_1"
+              ],
+              "requested_mm": 50,
+              "requested_hold_s": 1,
+              "start_s": 46.99000000001146,
+              "end_s": 54.53000000002068,
+              "peak_mm": 46.68,
+              "longest_still_supported_bilateral_s": 1.2,
+              "after_second_before_third": true
+            }
+          ]
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 0,
+          "after_second_before_third": 2,
+          "events": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0",
+                "jar0_1"
+              ],
+              "requested_mm": 50,
+              "requested_hold_s": 1,
+              "start_s": 10.800000000000276,
+              "end_s": 18.31000000000073,
+              "peak_mm": 46.44,
+              "longest_still_supported_bilateral_s": 1.25,
+              "after_second_before_third": true
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0",
+                "jar1_1"
+              ],
+              "requested_mm": 50,
+              "requested_hold_s": 1,
+              "start_s": 46.99000000001146,
+              "end_s": 54.53000000002068,
+              "peak_mm": 46.68,
+              "longest_still_supported_bilateral_s": 1.2,
+              "after_second_before_third": true
+            }
+          ]
+        }
+      },
+      "camera_sha256": [
+        "60784a79c9f055af4761814639ba5c1d48dd98890d4d81a11dc3399214ca1779",
+        "bced0f12ee84035fe59f38137b08094bdfbb451bef41166d31451e1b66832a74"
+      ],
+      "note": "# When to leave a sample accessible for review\n\nObserved: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown.\n"
+    },
+    {
+      "slug": "jars-transfer-empty",
+      "title": "Two new market designs · empty memory",
+      "stage": "transfer",
+      "role": "fresh Astra program",
+      "seed": 212,
+      "command": "Finish labeling these two new batches for the market.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label.",
+      "source_dir": "runs/accessible-jars/trials/transfer-empty",
+      "poses": "runs/accessible-jars/trials/transfer-empty/poses.npz",
+      "pose_sha256": "0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af",
+      "time_s": [
+        1.320000000000001,
+        50.420000000015655
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.17
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.33
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.54
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.14
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 0.98
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.01,
+          "jar1_0": 0.05,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.65,
+          "seal0_2": 15.3,
+          "seal1_0": 23.5,
+          "seal1_1": 33.45,
+          "seal1_2": 43.15
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": []
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 0,
+          "after_second_before_third": 0,
+          "events": []
+        }
+      },
+      "camera_sha256": [
+        "e41454967f766e7907c1f031e2627f344a07dbf77a9b0609ee9a97cfdb9b6cfb",
+        "89819695987d56583390dcbeb59e36e325b33b83fa2450f975529061d999a4d7"
+      ]
+    },
+    {
+      "slug": "jars-transfer-note",
+      "title": "Two new market designs · learned note",
+      "stage": "transfer",
+      "role": "fresh Astra program",
+      "seed": 212,
+      "command": "Finish labeling these two new batches for the market.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label. After completing the second jar in each design, Astra lifted and held the first. Peak heights were 27.2 mm and 27.3 mm.",
+      "source_dir": "runs/accessible-jars/trials/transfer-note",
+      "poses": "runs/accessible-jars/trials/transfer-note/poses.npz",
+      "pose_sha256": "faa9ab275f958ff6304dbea99345de88a222d435dfdd070b8a6d917171357319",
+      "time_s": [
+        1.320000000000001,
+        66.82000000002567
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.6
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.33
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.94
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.13
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.45
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 27.17,
+          "jar0_1": 0.0,
+          "jar0_2": 0.01,
+          "jar1_0": 27.32,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.65,
+          "seal0_0": 14.0,
+          "seal0_2": 23.5,
+          "seal1_0": 31.7,
+          "seal1_1": 41.65,
+          "seal1_2": 59.55
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0",
+                "jar0_1"
+              ],
+              "requested_mm": 30,
+              "requested_hold_s": 1,
+              "start_s": 10.680000000000236,
+              "end_s": 18.04000000000088,
+              "peak_mm": 27.17,
+              "longest_still_supported_bilateral_s": 1.2,
+              "after_second_before_third": true
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0",
+                "jar1_1"
+              ],
+              "requested_mm": 30,
+              "requested_hold_s": 1,
+              "start_s": 46.72000000001113,
+              "end_s": 54.08000000002013,
+              "peak_mm": 27.32,
+              "longest_still_supported_bilateral_s": 1.25,
+              "after_second_before_third": true
+            }
+          ]
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 0,
+          "after_second_before_third": 2,
+          "events": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0",
+                "jar0_1"
+              ],
+              "requested_mm": 30,
+              "requested_hold_s": 1,
+              "start_s": 10.680000000000236,
+              "end_s": 18.04000000000088,
+              "peak_mm": 27.17,
+              "longest_still_supported_bilateral_s": 1.2,
+              "after_second_before_third": true
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0",
+                "jar1_1"
+              ],
+              "requested_mm": 30,
+              "requested_hold_s": 1,
+              "start_s": 46.72000000001113,
+              "end_s": 54.08000000002013,
+              "peak_mm": 27.32,
+              "longest_still_supported_bilateral_s": 1.25,
+              "after_second_before_third": true
+            }
+          ]
+        }
+      },
+      "camera_sha256": [
+        "e41454967f766e7907c1f031e2627f344a07dbf77a9b0609ee9a97cfdb9b6cfb",
+        "89819695987d56583390dcbeb59e36e325b33b83fa2450f975529061d999a4d7"
+      ],
+      "note": "# When to leave a sample accessible for review\n\nObserved: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown.\n"
+    },
+    {
+      "slug": "jars-approved-empty",
+      "title": "Previously approved designs · empty memory",
+      "stage": "negative-control",
+      "role": "fresh Astra program",
+      "seed": 212,
+      "command": "I’ve already approved both designs. Finish labeling these two batches for the market.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label. Matt had already approved the designs, so direct labeling met the request.",
+      "source_dir": "runs/accessible-jars/trials/approved-empty",
+      "poses": "runs/accessible-jars/trials/approved-empty/poses.npz",
+      "pose_sha256": "0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af",
+      "time_s": [
+        1.320000000000001,
+        50.420000000015655
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.17
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.33
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.54
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.14
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 0.98
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.01,
+          "jar1_0": 0.05,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.65,
+          "seal0_2": 15.3,
+          "seal1_0": 23.5,
+          "seal1_1": 33.45,
+          "seal1_2": 43.15
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": []
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 0,
+          "after_second_before_third": 0,
+          "events": []
+        }
+      },
+      "camera_sha256": [
+        "e41454967f766e7907c1f031e2627f344a07dbf77a9b0609ee9a97cfdb9b6cfb",
+        "89819695987d56583390dcbeb59e36e325b33b83fa2450f975529061d999a4d7"
+      ]
+    },
+    {
+      "slug": "jars-approved-note",
+      "title": "Previously approved designs · learned note",
+      "stage": "negative-control",
+      "role": "fresh Astra program",
+      "seed": 212,
+      "command": "I’ve already approved both designs. Finish labeling these two batches for the market.",
+      "outcome": "All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label. Matt had already approved the designs, so direct labeling met the request.",
+      "source_dir": "runs/accessible-jars/trials/approved-note",
+      "poses": "runs/accessible-jars/trials/approved-note/poses.npz",
+      "pose_sha256": "0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af",
+      "time_s": [
+        1.320000000000001,
+        50.420000000015655
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.17
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.33
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.1
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.54
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.14
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 0.98
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.01,
+          "jar1_0": 0.05,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_1": 5.65,
+          "seal0_2": 15.3,
+          "seal1_0": 23.5,
+          "seal1_1": 33.45,
+          "seal1_2": 43.15
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": []
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 0,
+          "after_second_before_third": 0,
+          "events": []
+        }
+      },
+      "camera_sha256": [
+        "e41454967f766e7907c1f031e2627f344a07dbf77a9b0609ee9a97cfdb9b6cfb",
+        "89819695987d56583390dcbeb59e36e325b33b83fa2450f975529061d999a4d7"
+      ],
+      "note": "# When to leave a sample accessible for review\n\nObserved: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown.\n"
+    },
+    {
+      "slug": "jars-teach-response",
+      "title": "Matt checks the first finished jar",
+      "stage": "teaching",
+      "role": "visual teaching prefix",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "Matt lifted the first jar from each design about 85 mm and held each steady for 1.22 s with the printed seal supported. Each returned within 0.04 mm of its starting position.",
+      "source_dir": "runs/accessible-jars/inspections",
+      "poses": "runs/accessible-jars/inspections/poses.npz",
+      "pose_sha256": "400f652b104b42419c821fcaa81219bb2306bb789e561e269a2b2a49c24778a8",
+      "time_s": [
+        1.320000000000001,
+        52.400000000018075
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211,
+        true
+      ],
+      "camera": "inspection",
+      "score": {
+        "events": [
+          {
+            "jar": "jar0_0",
+            "seal": "seal0_0",
+            "start": 10.800000000000276,
+            "end": 16.2000000000019,
+            "skin_grasp_error_mm": 5.415294033330678e-05,
+            "peak_lift_mm": 85.4517375010202,
+            "supported_still_s": 1.22,
+            "returned_error_mm": 0.03215641250317568,
+            "design_row": 0,
+            "trigger_seal": "seal0_1",
+            "target_jar": "jar0_1",
+            "trigger": "physical completion of a second matching jar before either first inspection"
+          },
+          {
+            "jar": "jar1_0",
+            "seal": "seal1_0",
+            "start": 44.04000000000786,
+            "end": 49.44000000001446,
+            "skin_grasp_error_mm": 1.465960756574505e-05,
+            "peak_lift_mm": 85.45163297968206,
+            "supported_still_s": 1.22,
+            "returned_error_mm": 0.03837776803417954,
+            "design_row": 1,
+            "trigger_seal": "seal1_1",
+            "target_jar": "jar1_1",
+            "trigger": "physical completion of a second matching jar before either first inspection"
+          }
+        ],
+        "auditor": {
+          "observation": "The front jar of the first batch was already labeled. After the robot labeled the next jar, the person lifted the front jar and put it back. The robot labeled the third jar, then the first two jars of the second batch. Again, the person lifted the first labeled jar of that batch and put it back. The recording ends with one jar still unlabeled.",
+          "interpretation": "The person may prefer a chance to inspect an early example from each batch. Both times they handled the first jar after the second had been labeled.",
+          "title": "When to leave a sample accessible for review",
+          "note": "Observed: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown."
+        }
+      },
+      "feedback_for": "jars-teach-empty",
+      "audit_request": "runs/accessible-jars/audit/session/1795738392557643762-c1be83b1/request.json"
+    },
+    {
+      "slug": "jars-timing-teaching",
+      "title": "Earlier inspection on the same free program",
+      "stage": "diagnostic",
+      "role": "prespecified diagnostic replay",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "The original motor program ran on an identical reset. With one finished sample in each design and the robot’s gripper empty, Matt lifted that sample before the next seal moved. All six jars finished labeled.",
+      "source_dir": "runs/accessible-jars/timing-diagnostic/teaching",
+      "poses": "runs/accessible-jars/timing-diagnostic/teaching/poses.npz",
+      "pose_sha256": "182af61698d89c0d18caa0c72cf58913216b760592300675aee975f86de0dd9f",
+      "time_s": [
+        1.320000000000001,
+        61.46000000002915
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.22
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.28
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.07
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.69
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.04
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.17
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 85.38,
+          "jar0_1": 0.02,
+          "jar0_2": 0.01,
+          "jar1_0": 85.36,
+          "jar1_1": 0.02,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 0.0,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 0.0,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {},
+        "first_seal_motion_s": {
+          "seal0_0": 4.85,
+          "seal0_1": 11.15,
+          "seal0_2": 20.8,
+          "seal1_0": 29.0,
+          "seal1_1": 44.4,
+          "seal1_2": 54.05
+        },
+        "inspection_before_next_label": [
+          false,
+          false
+        ],
+        "complete": false,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true
+      }
+    },
+    {
+      "slug": "jars-timing-response",
+      "title": "Matt inspects before the next seal moves",
+      "stage": "diagnostic",
+      "role": "independent visual audit",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "A fresh auditor inferred a pause before continuing a new batch. The review covered the actual robot motion preceding each human inspection.",
+      "source_dir": "runs/accessible-jars/timing-diagnostic/inspections",
+      "poses": "runs/accessible-jars/timing-diagnostic/inspections/poses.npz",
+      "pose_sha256": "710ebac2780d6b99ea5284b0fc2b76dd86d96b67f4a8b77c81791d52826e2d89",
+      "time_s": [
+        1.320000000000001,
+        45.3000000000094
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211,
+        true
+      ],
+      "camera": "inspection",
+      "score": {
+        "audit": {
+          "observation": "The person lifted and returned the already-labeled front jar of the purple-banded batch. The robot labeled the other two purple-banded jars in succession, then labeled the front jar of the red-banded batch. It waited while the person lifted and returned that jar, then picked up the next label.",
+          "interpretation": "Handling the first labeled jar in each batch suggests the person may want to check one example before the robot labels the rest of that batch.",
+          "title": "When to pause for a first-item check",
+          "note": "Observed: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal."
+        }
+      },
+      "feedback_for": "jars-timing-teaching",
+      "note": "# When to pause for a first-item check\n\nObserved: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.\n",
+      "audit_request": "runs/accessible-jars/timing-diagnostic/audit/session/1795738685449331348-c5dbc585/request.json"
+    },
+    {
+      "slug": "jars-recall-timing-note",
+      "title": "Same kitchen and jars · earlier demonstration",
+      "stage": "diagnostic",
+      "role": "fresh Astra program with diagnostic note",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "6 of six jars finished with centered matching seals. Astra presented 2 of two first pieces before continuing. Actual lift heights were 56.3 mm and 56.3 mm, with stable supported holds of 3.25 s and 3.25 s.",
+      "source_dir": "runs/accessible-jars/timing-diagnostic/trials/recall-timing-note",
+      "poses": "runs/accessible-jars/timing-diagnostic/trials/recall-timing-note/poses.npz",
+      "pose_sha256": "8308e3f40c84208916ab54731537e1eacb1c5b97c77a15c2da72a74897cbec90",
+      "time_s": [
+        1.320000000000001,
+        72.71000000001195
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.67
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.29
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.08
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 0.95
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.57
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.39
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 56.3,
+          "jar0_1": 0.02,
+          "jar0_2": 0.0,
+          "jar1_0": 56.34,
+          "jar1_1": 0.01,
+          "jar1_2": 0.0
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 2.75,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 2.8,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {
+          "jar0_0": {
+            "time_s": 7.6,
+            "seal": "seal0_0"
+          },
+          "jar1_0": {
+            "time_s": 44.95,
+            "seal": "seal1_0"
+          }
+        },
+        "first_seal_motion_s": {
+          "seal0_0": 7.0,
+          "seal0_1": 18.3,
+          "seal0_2": 27.95,
+          "seal1_0": 36.15,
+          "seal1_1": 55.65,
+          "seal1_2": 65.3
+        },
+        "inspection_before_next_label": [
+          true,
+          true
+        ],
+        "complete": true,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.320000000001118,
+              "peak_mm": 56.3,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 41.34000000000456,
+              "end_s": 50.67000000001596,
+              "peak_mm": 56.34,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 2,
+          "after_second_before_third": 0,
+          "events": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.320000000001118,
+              "peak_mm": 56.3,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 41.34000000000456,
+              "end_s": 50.67000000001596,
+              "peak_mm": 56.34,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        }
+      },
+      "note": "# When to pause for a first-item check\n\nObserved: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.\n"
+    },
+    {
+      "slug": "jars-transfer-timing-note",
+      "title": "Two new market designs · earlier demonstration",
+      "stage": "diagnostic",
+      "role": "fresh Astra program with diagnostic note",
+      "seed": 212,
+      "command": "Finish labeling these two new batches for the market.",
+      "outcome": "6 of six jars finished with centered matching seals. Astra presented 2 of two first pieces before continuing. Actual lift heights were 56.3 mm and 56.4 mm, with stable supported holds of 3.25 s and 3.25 s.",
+      "source_dir": "runs/accessible-jars/timing-diagnostic/trials/transfer-timing-note",
+      "poses": "runs/accessible-jars/timing-diagnostic/trials/transfer-timing-note/poses.npz",
+      "pose_sha256": "296efc0484a010644ab3623f9d0b076150582c9258e97807db5a9a10a0e5f30a",
+      "time_s": [
+        1.320000000000001,
+        72.4700000000125
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 1.02
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.35
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.09
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.42
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.68
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.45
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 56.27,
+          "jar0_1": 0.01,
+          "jar0_2": 0.01,
+          "jar1_0": 56.35,
+          "jar1_1": 0.01,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 2.7,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 2.75,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {
+          "jar0_0": {
+            "time_s": 7.5,
+            "seal": "seal0_0"
+          },
+          "jar1_0": {
+            "time_s": 44.85,
+            "seal": "seal1_0"
+          }
+        },
+        "first_seal_motion_s": {
+          "seal0_0": 6.9,
+          "seal0_1": 18.15,
+          "seal0_2": 27.85,
+          "seal1_0": 36.0,
+          "seal1_1": 55.5,
+          "seal1_2": 65.2
+        },
+        "inspection_before_next_label": [
+          true,
+          true
+        ],
+        "complete": true,
+        "labels_complete": true,
+        "preference_match": true,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.200000000001078,
+              "peak_mm": 56.27,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 41.22000000000441,
+              "end_s": 50.550000000015814,
+              "peak_mm": 56.35,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 2,
+          "after_second_before_third": 0,
+          "events": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.200000000001078,
+              "peak_mm": 56.27,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 41.22000000000441,
+              "end_s": 50.550000000015814,
+              "peak_mm": 56.35,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        }
+      },
+      "note": "# When to pause for a first-item check\n\nObserved: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.\n"
+    },
+    {
+      "slug": "jars-approved-timing-note",
+      "title": "Previously approved designs · earlier demonstration",
+      "stage": "diagnostic",
+      "role": "fresh Astra program with diagnostic note",
+      "seed": 212,
+      "command": "I’ve already approved both designs. Finish labeling these two batches for the market.",
+      "outcome": "6 of six jars finished with centered matching seals. Astra presented 2 of two first pieces before continuing. Actual lift heights were 56.3 mm and 56.4 mm, with stable supported holds of 3.25 s and 3.25 s. Matt had already approved these designs; these inspections missed the scope control.",
+      "source_dir": "runs/accessible-jars/timing-diagnostic/trials/approved-timing-note",
+      "poses": "runs/accessible-jars/timing-diagnostic/trials/approved-timing-note/poses.npz",
+      "pose_sha256": "296efc0484a010644ab3623f9d0b076150582c9258e97807db5a9a10a0e5f30a",
+      "time_s": [
+        1.320000000000001,
+        72.4700000000125
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        212
+      ],
+      "camera": "agent",
+      "score": {
+        "measurement_interval_s": 0.05,
+        "proof_criterion": "Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.",
+        "initial_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 0.0
+          }
+        },
+        "final_supported": {
+          "jar0_0": {
+            "seal": "seal0_0",
+            "matching": true,
+            "center_error_mm": 1.02
+          },
+          "jar0_1": {
+            "seal": "seal0_1",
+            "matching": true,
+            "center_error_mm": 1.35
+          },
+          "jar0_2": {
+            "seal": "seal0_2",
+            "matching": true,
+            "center_error_mm": 1.09
+          },
+          "jar1_0": {
+            "seal": "seal1_0",
+            "matching": true,
+            "center_error_mm": 1.42
+          },
+          "jar1_1": {
+            "seal": "seal1_1",
+            "matching": true,
+            "center_error_mm": 1.68
+          },
+          "jar1_2": {
+            "seal": "seal1_2",
+            "matching": true,
+            "center_error_mm": 1.45
+          }
+        },
+        "matching_count": 6,
+        "matching_within_10mm": 6,
+        "jar_max_lifts_mm": {
+          "jar0_0": 56.27,
+          "jar0_1": 0.01,
+          "jar0_2": 0.01,
+          "jar1_0": 56.35,
+          "jar1_1": 0.01,
+          "jar1_2": 0.01
+        },
+        "max_proof_hold_s": {
+          "jar0_0": 2.7,
+          "jar0_1": 0.0,
+          "jar0_2": 0.0,
+          "jar1_0": 2.75,
+          "jar1_1": 0.0,
+          "jar1_2": 0.0
+        },
+        "inspected": {
+          "jar0_0": {
+            "time_s": 7.5,
+            "seal": "seal0_0"
+          },
+          "jar1_0": {
+            "time_s": 44.85,
+            "seal": "seal1_0"
+          }
+        },
+        "first_seal_motion_s": {
+          "seal0_0": 6.9,
+          "seal0_1": 18.15,
+          "seal0_2": 27.85,
+          "seal1_0": 36.0,
+          "seal1_1": 55.5,
+          "seal1_2": 65.2
+        },
+        "inspection_before_next_label": [
+          true,
+          true
+        ],
+        "complete": true,
+        "labels_complete": true,
+        "preference_match": false,
+        "released": true,
+        "observed_timing": {
+          "post_hoc": true,
+          "source_waypoints_exact": true,
+          "lifts": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.200000000001078,
+              "peak_mm": 56.27,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 41.22000000000441,
+              "end_s": 50.550000000015814,
+              "peak_mm": 56.35,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        },
+        "physical_gestures": {
+          "criterion": "Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.",
+          "before_next": 2,
+          "after_second_before_third": 0,
+          "events": [
+            {
+              "jar": "jar0_0",
+              "already_finished": [
+                "jar0_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 1.320000000000001,
+              "end_s": 13.200000000001078,
+              "peak_mm": 56.27,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            },
+            {
+              "jar": "jar1_0",
+              "already_finished": [
+                "jar1_0"
+              ],
+              "requested_mm": 60,
+              "requested_hold_s": 3,
+              "start_s": 41.22000000000441,
+              "end_s": 50.550000000015814,
+              "peak_mm": 56.35,
+              "longest_still_supported_bilateral_s": 3.25,
+              "after_second_before_third": false
+            }
+          ]
+        }
+      },
+      "note": "# When to pause for a first-item check\n\nObserved: The person lifted and returned the first labeled jar in each batch.\nLikely preference: At the start of a new batch, leave time to check the first finished item before continuing.\nStill unclear: The check may have been specific to these labels. The person gave no explicit approval signal.\n"
+    }
+  ],
+  "excluded_engineering": [
+    {
+      "slug": "jars-excluded-calibration-211-hand",
+      "title": "Engineering diagnostic",
+      "stage": "motor",
+      "role": "excluded diagnostic",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "Early hand calibration failed the return tolerance.",
+      "source_dir": "runs/accessible-jars/calibration/211-hand",
+      "poses": "runs/accessible-jars/calibration/211-hand/poses.npz",
+      "pose_sha256": "f884f068c97e034bfda6f90f300da4e9655239d2184bf34dd3356b30bb50a8a8",
+      "time_s": [
+        1.320000000000001,
+        11.400000000000476
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {}
+    },
+    {
+      "slug": "jars-excluded-calibration-211-human",
+      "title": "Engineering diagnostic",
+      "stage": "motor",
+      "role": "excluded diagnostic",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "Hand-only preflight verified pickup of both finished designs; partial batch by design.",
+      "source_dir": "runs/accessible-jars/calibration/211-human",
+      "poses": "runs/accessible-jars/calibration/211-human/poses.npz",
+      "pose_sha256": "aa6981bb2ccf25fc99c3bf4f0668352f063277655af460189de29e2a7cca6c08",
+      "time_s": [
+        1.320000000000001,
+        40.50000000000353
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {}
+    },
+    {
+      "slug": "jars-excluded-trials-teach-empty",
+      "title": "Engineering diagnostic",
+      "stage": "motor",
+      "role": "excluded diagnostic",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "Pilot pausing with the next loose seal suspended caused two seals to slip. Four of six were supported at finish. It supplied no learning evidence.",
+      "source_dir": "runs/accessible-jars/trials/teach-empty",
+      "poses": "runs/accessible-jars/trials/teach-empty/poses.npz",
+      "pose_sha256": "fd8b6d5035e08c89ad2476cd1de9ee9a16d2009898c933c9cc693bbe67e9f760",
+      "time_s": [
+        1.320000000000001,
+        61.490000000029184
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {}
+    },
+    {
+      "slug": "jars-excluded-response",
+      "title": "Engineering diagnostic",
+      "stage": "motor",
+      "role": "excluded diagnostic",
+      "seed": 211,
+      "command": "Finish labeling these two batches of preserves for the sale.",
+      "outcome": "Obstructed draft observation camera. A camera-only alternative provided the submitted audit.",
+      "source_dir": "runs/accessible-jars/response",
+      "poses": "runs/accessible-jars/response/poses.npz",
+      "pose_sha256": "7e4c24222e74ebc0431f8776bdbb7f81fb98bffc06092809c0570e05d287e728",
+      "time_s": [
+        1.320000000000001,
+        52.400000000018075
+      ],
+      "factory": "visual_prefs.accessible_jars.JarTable",
+      "args": [
+        211
+      ],
+      "camera": "agent",
+      "score": {}
+    }
+  ],
+  "pairs": {
+    "recall-note_vs_teach-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    },
+    "recall-note_vs_recall-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    },
+    "transfer-note_vs_transfer-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    },
+    "approved-note_vs_approved-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    },
+    "recall-timing-note_vs_recall-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    },
+    "transfer-timing-note_vs_transfer-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    },
+    "approved-timing-note_vs_approved-empty": {
+      "same_camera_bytes": true,
+      "same_command_and_interface": true,
+      "only_note_changed": true
+    }
+  },
+  "overview_slugs": [
+    "jars-teach-empty",
+    "jars-recall-note",
+    "jars-transfer-note",
+    "jars-approved-note"
+  ],
+  "sources": {
+    "tools/accessible_jars.py": "374c2c7053c2d5a5fbeaed39a048b5c3e8b16f877b15162891599ae8e3fd82ae",
+    "tools/accessible_jars_audit.py": "7f0ab203118cf8dd79a47962439b7a027f1e97b620562103d4c5a617f464a966",
+    "tools/accessible_jars_manifest.py": "e406b6a35ab792615616648e26054b1343e5c5e1d626d2924153221f28849430",
+    "tools/accessible_jars_timing.py": "09dd9ab18158f706660fc0d17d23cc6f3ce7bb3fd5df9470d32f29815406aa56",
+    "tools/accessible_jars_timing_demo.py": "e0cbbffb72b92067acf33f7955ae2f06b8fd5ae8ff85bf93e21b4f8439fcb931",
+    "tools/accessible_jars_trial.py": "d181d58ae3846f64066e4225c7ec30d54fbbafa4ccb186f34188aa3414cde8d6",
+    "visual_prefs/accessible_jars.py": "94ea3d00f2cccc020b37acbb65488840816d3edac826d600cd48c742467df916",
+    "visual_prefs/accessible_jars_response.py": "af990e483456253331bb003634378e3d1783f31a70e886fa3e6774a07ea3a5bf"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "shelf": {
+    "teaching": "runs/accessible_shelf/trials/books-203-teach/controller",
+    "recall": "runs/accessible_shelf/trials/books-203-matched/controller",
+    "note": "runs/accessible_shelf/trials/books-203-teach/learned-note.md",
+    "same_command_and_interface": true,
+    "image_sha256": [
+      "b2cde26455f6d65c77a03a127d493ac44697a3cba06cb0b3ccd79143ecd8138a",
+      "10b45e0ff56ac78d04418167c94cc7a4931f6bf0f986e34510ca5c3e744fddca"
+    ],
+    "teaching_thread": "01a21a16-d56b-7d12-ade0-bd84ad723b0b",
+    "recall_thread": "01a21a55-153b-7fc0-a7fe-8e13cf96ec3e"
+  },
+  "game": {
+    "teaching": "runs/accessible-game/code/teach-83-empty/policy",
+    "recall": "runs/accessible-game/code/recall-83-matched/policy",
+    "note": "runs/accessible-game/code/note.txt",
+    "same_command_and_interface": true,
+    "image_sha256": [
+      "71924d67b873355ea6f5b737c4f13e1af1df627c846a45d4e52ee499f7d9e040",
+      "a3a8b735759889521d7258e8f52f80fb9ae7d95450a2c569d5c2fbcf5912dd35"
+    ],
+    "teaching_thread": "01a21a18-d8c9-7781-b916-d8f7e6a78fa8",
+    "recall_thread": "01a21a55-0f93-73b1-86e9-7280a7e73e1d"
+  },
+  "fabric": {
+    "teaching": "runs/accessible_fabric/trials/teach-empty/turn-01",
+    "recall": "runs/accessible_fabric/trials/recall-note/turn-01",
+    "note": "runs/accessible_fabric/teaching-note.md",
+    "same_command_and_interface": true,
+    "image_sha256": [
+      "fc1ad60ab0f760cfd14cf73174b496eb713d79b03d111e96c4c09232b22c6a3d",
+      "5906553caace80a414d02235fb976943f4b864090ef565a68ec68ff4e7325ee9"
+    ],
+    "teaching_thread": "01a21a18-acfd-7c90-8bff-0975798be0d3",
+    "recall_thread": "01a21a55-13fd-7ba3-b3c9-60e2911c0ce5"
+  }
+}

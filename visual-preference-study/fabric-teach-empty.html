@@ -1,0 +1,112 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Teaching attempt · empty memory</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Teaching attempt · empty memory</h1><p><a href="fabric.html">Back to this experiment</a></p><blockquote>Set out three fabric samples on the counter so I can choose between them.</blockquote><p>Completed · missed</p><figure><video controls playsinline preload="none" poster="films/fabric-teach-empty/start.jpg" src="films/fabric-teach-empty/review.mp4"></video><figcaption>Recorded trial execution. Cycles · presentation camera · 6× speed · simulation 1.8–41.5 s.</figcaption></figure><p><small><a href="films/fabric-teach-empty/start.jpg">Starting arrangement</a> · <a href="films/fabric-teach-empty/end.jpg">Final arrangement</a></small></p><p><a href="evidence/696403cbae5228a6e32de56c929a8752384458e158e13b7d9620d563118efa75.mp4">Download the original MuJoCo recording</a></p><h2>Model exchange</h2><details><summary>turn-01 · 2 input images</summary><pre>Operate the simulated Franka. The images are a metric overhead view followed by an oblique view. Use the calibrated transport function place(sample, slot, inset_mm). The six tabbed cards in the opening overhead view are numbered 0,1,2 left to right in the row nearer the robot (bottom of that view), then 3,4,5 in the other row. The counter at the top has slots 0,1,2 from left to right. The last argument is the distance to slide the card farther into the slot after lowering it, in whole mm from 0 to 38. The fingers and the boards move with contacts and gravity. Return a JSON object with a program string containing up to three Python calls to place with integer arguments, or {&quot;done&quot;:true}. You can inspect the next camera views after each program. Use at most four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Set out three fabric samples on the counter so I can choose between them.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: []
+}</pre><a href="evidence/fc1ad60ab0f760cfd14cf73174b496eb713d79b03d111e96c4c09232b22c6a3d.jpg">Frame 1</a> · <a href="evidence/5906553caace80a414d02235fb976943f4b864090ef565a68ec68ff4e7325ee9.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;place(3, 0, 12)\nplace(4, 1, 12)\nplace(2, 2, 12)&quot;}</pre></details><details><summary>turn-02 · 2 input images</summary><pre>Operate the simulated Franka. The images are a metric overhead view followed by an oblique view. Use the calibrated transport function place(sample, slot, inset_mm). The six tabbed cards in the opening overhead view are numbered 0,1,2 left to right in the row nearer the robot (bottom of that view), then 3,4,5 in the other row. The counter at the top has slots 0,1,2 from left to right. The last argument is the distance to slide the card farther into the slot after lowering it, in whole mm from 0 to 38. The fingers and the boards move with contacts and gravity. Return a JSON object with a program string containing up to three Python calls to place with integer arguments, or {&quot;done&quot;:true}. You can inspect the next camera views after each program. Use at most four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Set out three fabric samples on the counter so I can choose between them.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;place(3, 0, 12)\nplace(4, 1, 12)\nplace(2, 2, 12)&quot;,
+      &quot;feedback&quot;: &quot;Executed 3 transport calls.&quot;
+    }
+  ]
+}</pre><a href="evidence/19cf36b6a15d8e1ed895b5c6c8c24e65b64137f2113683a02d632bb7b7b9d54d.jpg">Frame 1</a> · <a href="evidence/062301dedd923010d66889483f544d8b83ad67a56a5d586517b08bc5e5da79a0.jpg">Frame 2</a><pre>{&quot;done&quot;:true}</pre></details><h3>Visual reviewer</h3><details><summary>session · 8 input images</summary><pre>What happened? What preference might explain it? When would it matter again? Use the observed sequence as evidence. If a note is warranted, title it for a future decision a robot might face in different tasks. In the note write three short lines labeled Observed, Likely preference and Still unclear. Preserve the order of events when meaningful. State the broadest decision rule the evidence supports and the boundary or competing explanation that could change a future action. Keep an item-specific observation when broader evidence is absent. Leave Still unclear empty if there is no meaningful uncertainty. Silence alone does not create a new note.  Only an observable response by the person warrants creating a note. Return a JSON object with string fields observation, interpretation, title, and note. Leave unwarranted fields empty.</pre><pre>{
+  &quot;command&quot;: &quot;Set out three fabric samples on the counter so I can choose between them.&quot;,
+  &quot;existing_note&quot;: &quot;&quot;,
+  &quot;recording&quot;: &quot;31 chronological camera frames. Read each sheet left to right, top to bottom; trailing black tiles are padding.&quot;
+}</pre><a href="evidence/951987b022dc212714c1f911ef7b45c8810753caccac5141cb3ab0035b0273f1.jpg">Frame 1</a> · <a href="evidence/ec825da49eb14ecbc50c9394864e573c6a1f379b61275546460a4d183cb4070c.jpg">Frame 2</a> · <a href="evidence/62470f36048534830bf69cfa20e52bf1052b9680bc8a353e12256c625bd32994.jpg">Frame 3</a> · <a href="evidence/d9e22da555781792598a2a625a2e5f2db8bade132ec28d4963d90551bf11f93f.jpg">Frame 4</a> · <a href="evidence/9ad721acaa45a8365cb320972ea4c0a6d1d788916ef98c49c33c644558b34e82.jpg">Frame 5</a> · <a href="evidence/35793757aeb9adc9c6dae7ac02a7e1b703028745728e11f4cac6e174b7e24ea7.jpg">Frame 6</a> · <a href="evidence/ad0c9ff608bd352525e5b8de89e0c5eb29cd2a420fd10f823c634a7910a51190.jpg">Frame 7</a> · <a href="evidence/c9d21d3f69b2b32a03dad6ae2794d85978b687f57dd270d7f9946be8d4781d35.jpg">Frame 8</a><pre>{
+  &quot;observation&quot;: &quot;After the robot withdrew, the person slid the blue sample closer, then the green, then the pink. All three ended up side by side near the front edge in their original left-to-right order.&quot;,
+  &quot;interpretation&quot;: &quot;Moving all three closer suggests the person wanted the options within easy reach for comparison. They did not visibly choose a fabric.&quot;,
+  &quot;title&quot;: &quot;Where to place options for comparison&quot;,
+  &quot;note&quot;: &quot;Observed: The person pulled each sample toward them and kept the row intact.\nLikely preference: When setting out options to compare, place them side by side within easy reach.\nStill unclear: Whether the exact distance from the edge mattered.&quot;
+}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;sample&quot;: 0,
+      &quot;on_counter&quot;: false,
+      &quot;position&quot;: [
+        -0.13399999912317728,
+        -0.15199999315264948,
+        0.7498922464036735
+      ],
+      &quot;pinched&quot;: false,
+      &quot;label_px&quot;: 774,
+      &quot;face_px&quot;: 1465
+    },
+    {
+      &quot;sample&quot;: 1,
+      &quot;on_counter&quot;: false,
+      &quot;position&quot;: [
+        -8.403723482242112e-10,
+        -0.15199999354239518,
+        0.749892246403673
+      ],
+      &quot;pinched&quot;: false,
+      &quot;label_px&quot;: 768,
+      &quot;face_px&quot;: 1508
+    },
+    {
+      &quot;sample&quot;: 2,
+      &quot;on_counter&quot;: true,
+      &quot;position&quot;: [
+        0.14074805044575925,
+        0.11761891887848036,
+        0.7658922464036046
+      ],
+      &quot;pinched&quot;: true,
+      &quot;label_px&quot;: 736,
+      &quot;face_px&quot;: 2724
+    },
+    {
+      &quot;sample&quot;: 3,
+      &quot;on_counter&quot;: true,
+      &quot;position&quot;: [
+        -0.142422923613119,
+        0.11757166574392941,
+        0.7658922464036741
+      ],
+      &quot;pinched&quot;: true,
+      &quot;label_px&quot;: 766,
+      &quot;face_px&quot;: 2723
+    },
+    {
+      &quot;sample&quot;: 4,
+      &quot;on_counter&quot;: true,
+      &quot;position&quot;: [
+        -0.0016986172282086947,
+        0.11752537641896339,
+        0.7658922464036733
+      ],
+      &quot;pinched&quot;: true,
+      &quot;label_px&quot;: 758,
+      &quot;face_px&quot;: 2860
+    },
+    {
+      &quot;sample&quot;: 5,
+      &quot;on_counter&quot;: false,
+      &quot;position&quot;: [
+        0.13399999911586355,
+        -0.03999999358450898,
+        0.7498922464036732
+      ],
+      &quot;pinched&quot;: false,
+      &quot;label_px&quot;: 976,
+      &quot;face_px&quot;: 1863
+    }
+  ],
+  &quot;completed&quot;: true,
+  &quot;preference_match&quot;: false
+}</pre></details></main></html>

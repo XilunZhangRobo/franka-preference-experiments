@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ordinary teaching encounter · empty memory</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Ordinary teaching encounter · empty memory</h1><p><a href="jars.html">Back to this experiment</a></p><blockquote>Finish labeling these two batches of preserves for the sale.</blockquote><figure><video controls playsinline preload="none" poster="films/jars-teach-empty/start.jpg" src="films/jars-teach-empty/review.mp4"></video><figcaption>Ordinary teaching encounter · empty memory Cycles · presentation camera · 6× speed · simulation 1.3–61.5 s.</figcaption></figure><p><small><a href="films/jars-teach-empty/start.jpg">Starting arrangement</a> · <a href="films/jars-teach-empty/end.jpg">Final arrangement</a></small></p><p>All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label. After the second jar of each design was finished, Matt lifted the first jar, held it and put it back.</p><p><a href="evidence/ddeebe5926921b834b5b6375f3114d01460e0cb15f83d36e94b88aa705aacc71.mp4">Download the original MuJoCo recording</a></p><details><summary>turn-01 · 2 input images</summary><pre>Operate the simulated Franka using the two current camera views (metric overhead, then oblique). The six jars on the left are numbered 0,1,2 from left to right in the top row in the overhead view and 3,4,5 in the lower row. The printed seals have the same numbering within the right-hand six-position dispenser; a seal may already be on a jar. place(seal_id,jar_id) transports a printed seal by its tab to a jar lid. lift(jar_id,height_mm,seconds) grasps the jar, raises it 10 to 110 mm, holds for 0 to 3 seconds, and returns it to its place. Objects move under contact and gravity. You decide which operations to use, their arguments, and their order. Return a JSON object with a program string containing Python calls, integer or decimal arguments, and optional for loops over ranges or integer lists. You will see updated views after a program. Return {&quot;done&quot;:true} when finished. Up to four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Finish labeling these two batches of preserves for the sale.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: []
+}</pre><a href="evidence/60784a79c9f055af4761814639ba5c1d48dd98890d4d81a11dc3399214ca1779.jpg">Frame 1</a> · <a href="evidence/bced0f12ee84035fe59f38137b08094bdfbb451bef41166d31451e1b66832a74.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;for i in range(1,6):\n    place(i,i)&quot;}</pre></details><details><summary>turn-02 · 2 input images</summary><pre>Operate the simulated Franka using the two current camera views (metric overhead, then oblique). The six jars on the left are numbered 0,1,2 from left to right in the top row in the overhead view and 3,4,5 in the lower row. The printed seals have the same numbering within the right-hand six-position dispenser; a seal may already be on a jar. place(seal_id,jar_id) transports a printed seal by its tab to a jar lid. lift(jar_id,height_mm,seconds) grasps the jar, raises it 10 to 110 mm, holds for 0 to 3 seconds, and returns it to its place. Objects move under contact and gravity. You decide which operations to use, their arguments, and their order. Return a JSON object with a program string containing Python calls, integer or decimal arguments, and optional for loops over ranges or integer lists. You will see updated views after a program. Return {&quot;done&quot;:true} when finished. Up to four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Finish labeling these two batches of preserves for the sale.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;for i in range(1,6):\n    place(i,i)&quot;,
+      &quot;feedback&quot;: &quot;Executed 5 operations.&quot;
+    }
+  ]
+}</pre><a href="evidence/d4996a20d92525f1dff8abc6b651bf4f877a3f2c5880a05fcb90e39697edf75f.jpg">Frame 1</a> · <a href="evidence/14af294b88ffee4df5a46bf6380b653b2b950d34e97b896bce8455bd594febcc.jpg">Frame 2</a><pre>{&quot;done&quot;:true}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;measurement_interval_s&quot;: 0.05,
+  &quot;proof_criterion&quot;: &quot;Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.&quot;,
+  &quot;initial_supported&quot;: {
+    &quot;jar0_0&quot;: {
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 0.0
+    }
+  },
+  &quot;final_supported&quot;: {
+    &quot;jar0_0&quot;: {
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 0.22
+    },
+    &quot;jar0_1&quot;: {
+      &quot;seal&quot;: &quot;seal0_1&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.27
+    },
+    &quot;jar0_2&quot;: {
+      &quot;seal&quot;: &quot;seal0_2&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.09
+    },
+    &quot;jar1_0&quot;: {
+      &quot;seal&quot;: &quot;seal1_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.69
+    },
+    &quot;jar1_1&quot;: {
+      &quot;seal&quot;: &quot;seal1_1&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.08
+    },
+    &quot;jar1_2&quot;: {
+      &quot;seal&quot;: &quot;seal1_2&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.17
+    }
+  },
+  &quot;matching_count&quot;: 6,
+  &quot;matching_within_10mm&quot;: 6,
+  &quot;jar_max_lifts_mm&quot;: {
+    &quot;jar0_0&quot;: 85.43,
+    &quot;jar0_1&quot;: 0.02,
+    &quot;jar0_2&quot;: 0.01,
+    &quot;jar1_0&quot;: 85.45,
+    &quot;jar1_1&quot;: 0.01,
+    &quot;jar1_2&quot;: 0.01
+  },
+  &quot;max_proof_hold_s&quot;: {
+    &quot;jar0_0&quot;: 0.0,
+    &quot;jar0_1&quot;: 0.0,
+    &quot;jar0_2&quot;: 0.0,
+    &quot;jar1_0&quot;: 0.0,
+    &quot;jar1_1&quot;: 0.0,
+    &quot;jar1_2&quot;: 0.0
+  },
+  &quot;inspected&quot;: {},
+  &quot;first_seal_motion_s&quot;: {
+    &quot;seal0_1&quot;: 5.75,
+    &quot;seal0_0&quot;: 11.9,
+    &quot;seal0_2&quot;: 20.8,
+    &quot;seal1_0&quot;: 29.0,
+    &quot;seal1_1&quot;: 39.0,
+    &quot;seal1_2&quot;: 54.05
+  },
+  &quot;inspection_before_next_label&quot;: [
+    false,
+    false
+  ],
+  &quot;complete&quot;: false,
+  &quot;labels_complete&quot;: true,
+  &quot;preference_match&quot;: false,
+  &quot;released&quot;: true
+}</pre></details><figure><video controls playsinline preload="none" poster="films/jars-teach-response/start.jpg" src="films/jars-teach-response/review.mp4"></video><figcaption>Matt checks the first finished jar Cycles · inspection camera · 6× speed · simulation 1.3–52.4 s.</figcaption></figure><p><small><a href="films/jars-teach-response/start.jpg">Starting arrangement</a> · <a href="films/jars-teach-response/end.jpg">Final arrangement</a></small></p><p>Matt lifted the first jar from each design about 85 mm and held each steady for 1.22 s with the printed seal supported. Each returned within 0.04 mm of its starting position.</p><p><a href="evidence/f8e0ac9385563d43b1220ebbfe500920b6a167e6216da196e87768217c43dfdf.mp4">Download the original MuJoCo recording</a></p><details><summary>Visual reviewer · 26 input images</summary><pre>What happened? What preference might explain it? When would it matter again? Use the observed sequence as evidence. If a note is warranted, title it for a future decision a robot might face in different tasks. In the note write three short lines labeled Observed, Likely preference and Still unclear. Preserve the order of events when meaningful. State the broadest decision rule the evidence supports and the boundary or competing explanation that could change a future action. Keep an item-specific observation when broader evidence is absent. Leave Still unclear empty if there is no meaningful uncertainty. Silence alone does not create a new note.  Create a note only if the person&#x27;s visible response warrants it. Return JSON with string fields observation, interpretation, title, and note.</pre><pre>{
+  &quot;command&quot;: &quot;Finish labeling these two batches of preserves for the sale.&quot;,
+  &quot;existing_note&quot;: &quot;&quot;,
+  &quot;recording&quot;: &quot;103 chronological camera frames at two per second. Read each sheet from upper left to lower right. Trailing black tiles are padding.&quot;
+}</pre><a href="evidence/7419d3e12cdecfa1a44037433af5abb1f413015ec85c485c9585745adec1ee4f.jpg">Frame 1</a> · <a href="evidence/cabd4f1d3d39382156f0f38ac49df7aa4ec986cc99f3dac0d0efa5d6d18dc802.jpg">Frame 2</a> · <a href="evidence/ff7bac2697b28b690541643bbe07ddeb5cc332751210b3d1af48ded403616240.jpg">Frame 3</a> · <a href="evidence/bf09688824675912c099c6c98aad6c19ccd8e7c56f8ea4a8c32ebc9a3e32d4eb.jpg">Frame 4</a> · <a href="evidence/79fe54a4b352afaa8365e38799754c7e72aa97dbf3aa4d6ad46f75ce0dd503ef.jpg">Frame 5</a> · <a href="evidence/e9806dcd30abc32736a2387f3ca9f2a1073146d386c257917dec43721163d43e.jpg">Frame 6</a> · <a href="evidence/6039048791ff6567e5c8e2b9bd624b6f512ec1b0d27a99109486fa25d72e9e40.jpg">Frame 7</a> · <a href="evidence/510fd69e3a16bc7793437d4c9c45e23281194a6bcbe2cc0b2751dd44845d6989.jpg">Frame 8</a> · <a href="evidence/022ae25bfbb2659da53fb0982752e3fc00393f9d9c28ef4d7e045d66ec3be898.jpg">Frame 9</a> · <a href="evidence/8dcacf4a204d2e8afb180c557ecb855260cf52c75619269ac5929a5c427989e8.jpg">Frame 10</a> · <a href="evidence/899e5909ee786d734609a76c3aba7b565fc767e481754c83118efc44c772ae01.jpg">Frame 11</a> · <a href="evidence/77100c84fb5d6c88eaef714978b7ca1f8a4f1c29b41041acf05befd1491ccdc2.jpg">Frame 12</a> · <a href="evidence/a4b29bacf43bdb0c699b92f49fe93758b363f51d78266c688ee5ce868ff5ab22.jpg">Frame 13</a> · <a href="evidence/14ad45e003c9d72449c5995518dddf65bf89d8f6da2f3dce3ec58b4384f3641f.jpg">Frame 14</a> · <a href="evidence/70d9835e7ca58c159e3cd4af9c7e0f88f84a4f78068aed3788b9281328007a3d.jpg">Frame 15</a> · <a href="evidence/632aafe6de2939c84a414f5dfdb5d373a3c7b3ae44c45e5b1519bd7ea613968b.jpg">Frame 16</a> · <a href="evidence/8bc000205a27c69c23e69a4f6e7d6a88591a9420de79f0b8d631489f432dd6a9.jpg">Frame 17</a> · <a href="evidence/90fe54fb47c914849ba3ecb5fcb913a148451337ad9a5dd6eb234a2770f6e9b0.jpg">Frame 18</a> · <a href="evidence/bf9c155542d74313bbbce5d43a76c93d39e27c6a15e79dd8179c3f69edc31d3f.jpg">Frame 19</a> · <a href="evidence/880bdfd648699ad4a93ba93d0c0b06a1109f60f122967fac6631d2bdd5152be3.jpg">Frame 20</a> · <a href="evidence/b57ffc4b0d86bf0e362296cf66290b3b23d5b397b4d9e3c24b4903f2c66a232f.jpg">Frame 21</a> · <a href="evidence/6eb38199bd7a0a27c4e86cf3ab6ee7fdb9634aab506c852c60ed1700697d1f83.jpg">Frame 22</a> · <a href="evidence/659c0c7ecc0b3e7bdd8f254a55618c24d51ef9bdc26473cba4f56425333beb44.jpg">Frame 23</a> · <a href="evidence/8f9bcabb2b54d7d6d79c88ade8787627e3ebbd4c0a575fd1b7252a36d25c5073.jpg">Frame 24</a> · <a href="evidence/6f31e0139f77fd094f9d09fa35177a86cdd8e8f63a61fce142887e4cc1abf25e.jpg">Frame 25</a> · <a href="evidence/7ebed3aa1f6cf51e4ab148fe9906a962c9db5ffd961c70048415cef0f9a9bafd.jpg">Frame 26</a><pre>{
+  &quot;observation&quot;: &quot;The front jar of the first batch was already labeled. After the robot labeled the next jar, the person lifted the front jar and put it back. The robot labeled the third jar, then the first two jars of the second batch. Again, the person lifted the first labeled jar of that batch and put it back. The recording ends with one jar still unlabeled.&quot;,
+  &quot;interpretation&quot;: &quot;The person may prefer a chance to inspect an early example from each batch. Both times they handled the first jar after the second had been labeled.&quot;,
+  &quot;title&quot;: &quot;When to leave a sample accessible for review&quot;,
+  &quot;note&quot;: &quot;Observed: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown.&quot;
+}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;events&quot;: [
+    {
+      &quot;jar&quot;: &quot;jar0_0&quot;,
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;start&quot;: 10.800000000000276,
+      &quot;end&quot;: 16.2000000000019,
+      &quot;skin_grasp_error_mm&quot;: 5.415294033330678e-05,
+      &quot;peak_lift_mm&quot;: 85.4517375010202,
+      &quot;supported_still_s&quot;: 1.22,
+      &quot;returned_error_mm&quot;: 0.03215641250317568,
+      &quot;design_row&quot;: 0,
+      &quot;trigger_seal&quot;: &quot;seal0_1&quot;,
+      &quot;target_jar&quot;: &quot;jar0_1&quot;,
+      &quot;trigger&quot;: &quot;physical completion of a second matching jar before either first inspection&quot;
+    },
+    {
+      &quot;jar&quot;: &quot;jar1_0&quot;,
+      &quot;seal&quot;: &quot;seal1_0&quot;,
+      &quot;start&quot;: 44.04000000000786,
+      &quot;end&quot;: 49.44000000001446,
+      &quot;skin_grasp_error_mm&quot;: 1.465960756574505e-05,
+      &quot;peak_lift_mm&quot;: 85.45163297968206,
+      &quot;supported_still_s&quot;: 1.22,
+      &quot;returned_error_mm&quot;: 0.03837776803417954,
+      &quot;design_row&quot;: 1,
+      &quot;trigger_seal&quot;: &quot;seal1_1&quot;,
+      &quot;target_jar&quot;: &quot;jar1_1&quot;,
+      &quot;trigger&quot;: &quot;physical completion of a second matching jar before either first inspection&quot;
+    }
+  ],
+  &quot;auditor&quot;: {
+    &quot;observation&quot;: &quot;The front jar of the first batch was already labeled. After the robot labeled the next jar, the person lifted the front jar and put it back. The robot labeled the third jar, then the first two jars of the second batch. Again, the person lifted the first labeled jar of that batch and put it back. The recording ends with one jar still unlabeled.&quot;,
+    &quot;interpretation&quot;: &quot;The person may prefer a chance to inspect an early example from each batch. Both times they handled the first jar after the second had been labeled.&quot;,
+    &quot;title&quot;: &quot;When to leave a sample accessible for review&quot;,
+    &quot;note&quot;: &quot;Observed: In each batch, the person lifted and returned the first labeled jar after the second was labeled.\nLikely preference: Keep an early finished item from each batch within reach for a check.\nStill unclear: The front jar was also the easiest to reach. No explicit approval or correction was shown.&quot;
+  }
+}</pre></details></main></html>

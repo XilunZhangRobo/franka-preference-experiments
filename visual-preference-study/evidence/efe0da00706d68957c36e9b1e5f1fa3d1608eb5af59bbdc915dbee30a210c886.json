@@ -1,0 +1,1253 @@
+{
+  "description": "The Franka lifts one object by a wooden grip and follows a fresh Astra program through freely chosen XY waypoints. A photograph or watercolor lies between pickup and destination. The coffee scene has two cups and two coasters.",
+  "results": "Three of four initial motor controls completed. Both fresh controls passed after the travel bounds were disclosed. Primary seed 41 and follow-up seed 84 avoided the photograph unassisted. In follow-up seed 85 the original trigger moved the photograph 132.5 mm into a route which would have cleared it. A reviewer inferred a preference for keeping photos clear. Supplying that diagnostic note changed none of the three tested routes. After repair, the same seed-85 program cleared the stationary photograph by 6.32 mm with no response. On a scripted true crossing, the repaired participant moved the print and increased minimum clearance from zero to 51.88 mm. A bypass remained 54.94 mm clear with or without the participant. In the final fresh teaching case, seed 210, Astra kept the coffee 33.85 mm clear and Matt never intervened. The blind audit saved no note. On an identical opening a controller given a prior episode\u2019s authentic visual note chose a wider route (58.00 mm clearance). Both delivered the cup. The historical note also changed the watering-can lane slightly and left the dry-cloth route unchanged. All empty and historical-note programs completed their tasks and satisfied the relevant preference. This is a ceiling result for the tested preference, with no evidence of newly learned improvement from the corrected scene. An exact reset of the historical three-cup source had a different outcome. The original and fresh empty-memory controllers both served the terracotta cup and crossed the stationary photograph. The fresh controller given that encounter\u2019s visual note used its eight code turns and left the cup tipped, unsupported and 91.2 mm from the target; the fresh empty-memory controller released it upright 0.6 mm from center. The note did not repair the original failed route and complete service.",
+  "note": "",
+  "visual_audit": {
+    "observation": "The robot lifted the terracotta cup, carried it across the table, and set it on the round coaster on the right. The gripper then released the cup and withdrew. The person beside the table showed no visible reaction.",
+    "note": ""
+  },
+  "diagnostic_audit": {
+    "observation": "The robot lifted the terracotta cup. As it carried the cup across the table, the person reached in and slid the nearby photograph to the right. The robot set the cup on the right-hand round coaster and released it.",
+    "note": "They may prefer to keep photos clear of a cup\u2019s path when it is moved across the table."
+  },
+  "historical_note": "# Keep drinks clear of the photo\n\nThe person appears to prefer keeping drinks clear of the photo. When carrying or setting down another cup near it, leave space around it.\n",
+  "historical_source": "runs/approved-capability/coffee/rust-audit",
+  "historical_source_check": {
+    "passive": {
+      "minimum_signed_support_gap_mm": -3.1527190937789897,
+      "maximum_gripper_error": 0.0,
+      "events": []
+    },
+    "active": {
+      "minimum_signed_support_gap_mm": -24.33129075176624,
+      "maximum_gripper_error": 0.0,
+      "events": [
+        {
+          "phase": "reach",
+          "time_s": 5.819999999999581,
+          "cup": "cup2",
+          "cup_xyz_m": [
+            0.1839753929017845,
+            0.09590668670579101,
+            0.8268753475208228
+          ],
+          "measured_heading": [
+            -0.99999832310362,
+            0.001831335564034823
+          ]
+        },
+        {
+          "phase": "slide",
+          "time_s": 6.18999999999954,
+          "nearest_hand_skin_mm": 0.0
+        },
+        {
+          "phase": "withdraw",
+          "time_s": 6.719999999999482
+        },
+        {
+          "phase": "done",
+          "time_s": 7.149999999999435
+        }
+      ]
+    }
+  },
+  "pairs": {
+    "recall-85-note": {
+      "comparator": "teach-85-empty",
+      "identical_opening_cameras": true,
+      "identical_context_except_note": true,
+      "identical_executed_waypoints": true
+    },
+    "transfer-62-note": {
+      "comparator": "transfer-62-empty",
+      "identical_opening_cameras": true,
+      "identical_context_except_note": true,
+      "identical_executed_waypoints": true
+    },
+    "dry-72-note": {
+      "comparator": "dry-72-empty",
+      "identical_opening_cameras": true,
+      "identical_context_except_note": true,
+      "identical_executed_waypoints": true
+    },
+    "recall-210-historical": {
+      "comparator": "teach-210-empty",
+      "identical_opening_cameras": true,
+      "identical_context_except_note": true,
+      "identical_executed_waypoints": false
+    },
+    "transfer-62-historical": {
+      "comparator": "transfer-62-empty",
+      "identical_opening_cameras": true,
+      "identical_context_except_note": true,
+      "identical_executed_waypoints": false
+    },
+    "dry-72-historical": {
+      "comparator": "dry-72-empty",
+      "identical_opening_cameras": true,
+      "identical_context_except_note": true,
+      "identical_executed_waypoints": true
+    }
+  },
+  "calibration": {
+    "bypass-active": {
+      "task_complete": true,
+      "preference_match": true,
+      "cargo_goal_distance_mm": 3.42,
+      "cargo_base_height_mm": 3.89,
+      "upright": true,
+      "photo_peak_corner_displacement_mm": 0.0,
+      "vessel_overlapped_photo": false,
+      "mat_contact": true,
+      "released": true,
+      "bilateral_samples": 767,
+      "observed_projection_overlap": false,
+      "minimum_measured_clearance_mm": 54.936,
+      "minimum_signed_support_gap_mm": 54.936
+    },
+    "bypass-passive": {
+      "task_complete": true,
+      "preference_match": true,
+      "cargo_goal_distance_mm": 3.42,
+      "cargo_base_height_mm": 3.89,
+      "upright": true,
+      "photo_peak_corner_displacement_mm": 0.0,
+      "vessel_overlapped_photo": false,
+      "mat_contact": true,
+      "released": true,
+      "bilateral_samples": 767,
+      "observed_projection_overlap": false,
+      "minimum_measured_clearance_mm": 54.936,
+      "minimum_signed_support_gap_mm": 54.936
+    },
+    "crossing-active": {
+      "task_complete": true,
+      "preference_match": false,
+      "cargo_goal_distance_mm": 1.87,
+      "cargo_base_height_mm": 3.89,
+      "upright": true,
+      "photo_peak_corner_displacement_mm": 116.249,
+      "vessel_overlapped_photo": false,
+      "mat_contact": true,
+      "released": true,
+      "bilateral_samples": 508,
+      "observed_projection_overlap": false,
+      "minimum_measured_clearance_mm": 51.877,
+      "minimum_signed_support_gap_mm": 51.877
+    },
+    "crossing-passive": {
+      "task_complete": true,
+      "preference_match": false,
+      "cargo_goal_distance_mm": 1.87,
+      "cargo_base_height_mm": 3.89,
+      "upright": true,
+      "photo_peak_corner_displacement_mm": 0.0,
+      "vessel_overlapped_photo": true,
+      "mat_contact": true,
+      "released": true,
+      "bilateral_samples": 508,
+      "observed_projection_overlap": true,
+      "minimum_measured_clearance_mm": 0.0,
+      "minimum_signed_support_gap_mm": -63.919
+    }
+  },
+  "executive": {
+    "recall": "The corrected teaching run kept 33.85 mm clear without help and produced no note. A historical note widened clearance to 58.00 mm. The false-trigger diagnostic note left the original route unchanged. On the original three-cup apparatus, the note controller left the cup tipped and off its coaster, so repair remains unestablished.",
+    "transfer": "All watering-can arms avoided the painting. The diagnostic note left the route unchanged; the historical note shifted one waypoint by 10 mm. Minimum clearance was about 39 mm in both.",
+    "negative-control": "All three dry-cloth programs used identical waypoints and left the painting undisturbed. A direct route or a detour was acceptable."
+  },
+  "stage_status": {
+    "recall": "Exact-scene testing uses a note from a prior physical intervention. The corrected teaching generated no note. Seed-85 recall is retained as a false-trigger diagnostic."
+  },
+  "overview_slugs": [
+    "coffee-teach-210-empty",
+    "coffee-recall-210-historical",
+    "coffee-transfer-62-historical",
+    "coffee-dry-72-historical"
+  ],
+  "episodes": [
+    {
+      "slug": "coffee-dry-72-empty",
+      "stage": "negative-control",
+      "title": "Folded cloth and watercolor \u00b7 seed 72 \u00b7 empty memory",
+      "command": "Put the folded cloth on the round mat.",
+      "outcome": "Released upright on the mat, 4.11 mm from its center. Both conditions chose identical waypoints and left the painting in place. Either route was acceptable.",
+      "source_dir": "runs/accessible-coffee/dry-72-empty",
+      "poses": "runs/accessible-coffee/dry-72-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "cloth",
+        72,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 72,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 4.11,
+        "cargo_base_height_mm": 3.84,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": null,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 816,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/dry-72-empty/controller/session/1795738107496810337-a98e43d0/request.json",
+      "reply": "runs/accessible-coffee/dry-72-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/dry-72-empty/result.json",
+      "pose_sha256": "2782da5cfe0fb580b6c1355b506859c62d626d1f032864c0f7223c83cf569290",
+      "camera_sha256": [
+        "644e32ab4a25c8a22650f762148d5d6b548472ba3260b394a6a650e5b60b27b1",
+        "1726bf9829e073c69b491da6a8750a4c2afff422d1a466c88570b3bd2e5d410b"
+      ]
+    },
+    {
+      "slug": "coffee-dry-72-historical",
+      "stage": "negative-control",
+      "title": "Folded cloth and watercolor \u00b7 seed 72 \u00b7 historical visual note",
+      "command": "Put the folded cloth on the round mat.",
+      "outcome": "Released upright on the mat, 4.11 mm from its center. Prior physical-intervention note supplied. Minimum artwork clearance was 53.71 mm.",
+      "source_dir": "runs/accessible-coffee/dry-72-historical",
+      "poses": "runs/accessible-coffee/dry-72-historical/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "cloth",
+        72,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 72,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 4.11,
+        "cargo_base_height_mm": 3.84,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": null,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 816,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 53.713,
+        "minimum_signed_support_gap_mm": 53.713
+      },
+      "request": "runs/accessible-coffee/dry-72-historical/controller/session/1795738512478182872-8c8d779c/request.json",
+      "reply": "runs/accessible-coffee/dry-72-historical/controller/reply.json",
+      "result": "runs/accessible-coffee/dry-72-historical/result.json",
+      "pose_sha256": "2782da5cfe0fb580b6c1355b506859c62d626d1f032864c0f7223c83cf569290",
+      "camera_sha256": [
+        "644e32ab4a25c8a22650f762148d5d6b548472ba3260b394a6a650e5b60b27b1",
+        "1726bf9829e073c69b491da6a8750a4c2afff422d1a466c88570b3bd2e5d410b"
+      ]
+    },
+    {
+      "slug": "coffee-dry-72-note",
+      "stage": "negative-control",
+      "title": "Folded cloth and watercolor \u00b7 seed 72 \u00b7 false-trigger diagnostic note",
+      "command": "Put the folded cloth on the round mat.",
+      "outcome": "Released upright on the mat, 4.11 mm from its center. Both conditions chose identical waypoints and left the painting in place. Either route was acceptable.",
+      "source_dir": "runs/accessible-coffee/dry-72-note",
+      "poses": "runs/accessible-coffee/dry-72-note/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "cloth",
+        72,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 72,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 4.11,
+        "cargo_base_height_mm": 3.84,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": null,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 816,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/dry-72-note/controller/session/1795738302536732616-c9f33f70/request.json",
+      "reply": "runs/accessible-coffee/dry-72-note/controller/reply.json",
+      "result": "runs/accessible-coffee/dry-72-note/result.json",
+      "pose_sha256": "2782da5cfe0fb580b6c1355b506859c62d626d1f032864c0f7223c83cf569290",
+      "camera_sha256": [
+        "644e32ab4a25c8a22650f762148d5d6b548472ba3260b394a6a650e5b60b27b1",
+        "1726bf9829e073c69b491da6a8750a4c2afff422d1a466c88570b3bd2e5d410b"
+      ]
+    },
+    {
+      "slug": "coffee-motor-31-empty",
+      "stage": "motor",
+      "title": "Motor capability \u00b7 seed 31 \u00b7 empty memory",
+      "command": "Bring my coffee to the coaster.",
+      "outcome": "Released upright on the mat, 4.44 mm from its center.",
+      "source_dir": "runs/accessible-coffee/motor-31-empty",
+      "poses": "runs/accessible-coffee/motor-31-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        31,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 31,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 4.44,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 748,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/motor-31-empty/controller/session/1795738015676521466-830cecfb/request.json",
+      "reply": "runs/accessible-coffee/motor-31-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/motor-31-empty/result.json",
+      "pose_sha256": "de551d9fa8cbcc980d30df0ab45f4ffa03baa840dd40498d4aa3fce7b86b87bc",
+      "camera_sha256": [
+        "213570f2290ad2946a3d62575e46b2d32516f6ea23e628b2629055b569e9c9c0",
+        "cb13e9a3f6b0d433bfcde6358f613d56726e400a0a4d1cede7b12256a38b25bd"
+      ]
+    },
+    {
+      "slug": "coffee-motor-32-empty",
+      "stage": "motor",
+      "title": "Motor capability \u00b7 seed 32 \u00b7 empty memory",
+      "command": "Take the watering can along the front edge of the table before setting it on the mat.",
+      "outcome": "The gripper lifted the can. The program requested y = \u2212280 mm, outside the unadvertised travel limit, and stopped before delivery.",
+      "source_dir": "runs/accessible-coffee/motor-32-empty",
+      "poses": "runs/accessible-coffee/motor-32-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "watering",
+        32,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 32,
+      "score": {
+        "task_complete": false,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 363.8,
+        "cargo_base_height_mm": 66.06,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": false,
+        "released": false,
+        "bilateral_samples": 197,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/motor-32-empty/controller/session/1795738023790463768-042be4c5/request.json",
+      "reply": "runs/accessible-coffee/motor-32-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/motor-32-empty/result.json",
+      "pose_sha256": "8a0cfc0fb5c9f8362a8166ae73e74aaea9b46c3e3affea997e2b16a6a755c326",
+      "camera_sha256": [
+        "51bb9e5c3790ffcf2417edc58a3094198385e95bc3a3a653000dc33b6926af64",
+        "d08e52429450bc3a5974ab4fdef34ff1e7f6e837839259656e0f6836cd3ce507"
+      ]
+    },
+    {
+      "slug": "coffee-motor-34-empty",
+      "stage": "motor",
+      "title": "Motor capability \u00b7 seed 34 \u00b7 empty memory",
+      "command": "Take the watering can along the front edge of the table before setting it on the mat.",
+      "outcome": "Released upright on the mat, 9.45 mm from its center.",
+      "source_dir": "runs/accessible-coffee/motor-34-empty",
+      "poses": "runs/accessible-coffee/motor-34-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "watering",
+        34,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 34,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 9.45,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 868,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/motor-34-empty/controller/session/1795738056315024710-5846f1d2/request.json",
+      "reply": "runs/accessible-coffee/motor-34-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/motor-34-empty/result.json",
+      "pose_sha256": "fb32588cf0ea84279d509d2c3bc509e95cc4baf0d0c80b092df1be042ab4ea3b",
+      "camera_sha256": [
+        "8f3a66300b9a1d78de47d6aff5470f943cf928b7726b9369d323472c4858293c",
+        "c439aac60fca349c8a464b8b2e7d0c83b26e06cbc0585f1a516ca0365cb0695c"
+      ]
+    },
+    {
+      "slug": "coffee-motor-35-empty",
+      "stage": "motor",
+      "title": "Motor capability \u00b7 seed 35 \u00b7 empty memory",
+      "command": "Bring my coffee to the coaster.",
+      "outcome": "Released upright on the mat, 3.71 mm from its center.",
+      "source_dir": "runs/accessible-coffee/motor-35-empty",
+      "poses": "runs/accessible-coffee/motor-35-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        35,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 35,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 3.71,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 711,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/motor-35-empty/controller/session/1795738063313088620-63942ab0/request.json",
+      "reply": "runs/accessible-coffee/motor-35-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/motor-35-empty/result.json",
+      "pose_sha256": "9787149d46a037d7947ac00c57d6f2fad755318d4f68892f371b1fc5bfd6da5a",
+      "camera_sha256": [
+        "e27643d9804f1a3312961d213f4303f50f4112bc2083cee5f6fb9e9cf14ce71a",
+        "a1971981e7672f7cdb98de21ad8bdb1f8857b10bf055e1bf971a4c7c9ec48561"
+      ]
+    },
+    {
+      "slug": "coffee-recall-210-historical",
+      "stage": "recall",
+      "title": "Same-scene recall \u00b7 seed 210 \u00b7 historical visual note",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 2.91 mm from its center. Prior physical-intervention note supplied. Minimum artwork clearance was 58.00 mm.",
+      "source_dir": "runs/accessible-coffee/recall-210-historical",
+      "poses": "runs/accessible-coffee/recall-210-historical/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        210,
+        false,
+        true
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 2.91,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 737,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 57.996,
+        "minimum_signed_support_gap_mm": 57.996
+      },
+      "request": "runs/accessible-coffee/recall-210-historical/controller/session/1795738511312472846-417e9a8d/request.json",
+      "reply": "runs/accessible-coffee/recall-210-historical/controller/reply.json",
+      "result": "runs/accessible-coffee/recall-210-historical/result.json",
+      "pose_sha256": "1db3fb8035683a6629ff163365e9dd35e748ed3a5718a35ff8da010c84935df2",
+      "camera_sha256": [
+        "1e44d68eab3aa6e2b0fb908407550f7e45a815f8d2e88c4aa0cfbc5885f8e5d6",
+        "62c7c379330cc9d2b572e4e5d38c0511667568d468a242a74707d89eb3b83045"
+      ]
+    },
+    {
+      "slug": "coffee-recall-85-note",
+      "stage": "recall",
+      "title": "Same-scene recall \u00b7 seed 85 \u00b7 false-trigger diagnostic note",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 2.50 mm from its center. The learned-note program executed the same route as the original free attempt. Matt remained passive.",
+      "source_dir": "runs/accessible-coffee/recall-85-note",
+      "poses": "runs/accessible-coffee/recall-85-note/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        85,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 85,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 2.5,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 612,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/recall-85-note/controller/session/1795738302296628307-ba682e2a/request.json",
+      "reply": "runs/accessible-coffee/recall-85-note/controller/reply.json",
+      "result": "runs/accessible-coffee/recall-85-note/result.json",
+      "pose_sha256": "88d74ac7284cf67f9fd210092e7325d222996a668116900b3919f90d28fa0a9c",
+      "camera_sha256": [
+        "b89f465da804386b453b4b1a1cbf88d47f54f5394536ab1df5b406e0e558045d",
+        "f0779dff9beadd583993657899d7302fe5c84e643fad37d0b753e307006e0ce0"
+      ]
+    },
+    {
+      "slug": "coffee-teach-210-empty",
+      "stage": "teaching",
+      "title": "Unassisted coffee service \u00b7 seed 210 \u00b7 empty memory",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 0.32 mm from its center. The cup stayed clear of the photograph and Matt made no correction.",
+      "source_dir": "runs/accessible-coffee/teach-210-empty",
+      "poses": "runs/accessible-coffee/teach-210-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        210,
+        true,
+        true
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 0.32,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 710,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 33.852,
+        "minimum_signed_support_gap_mm": 33.852
+      },
+      "request": "runs/accessible-coffee/teach-210-empty/controller/session/1795738486047378328-50c9a8d6/request.json",
+      "reply": "runs/accessible-coffee/teach-210-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/teach-210-empty/result.json",
+      "pose_sha256": "ffb416ba07d22c2b9178e719b2bcc9c17d2d253d62e71ed65fd7e167ced6f47b",
+      "camera_sha256": [
+        "1e44d68eab3aa6e2b0fb908407550f7e45a815f8d2e88c4aa0cfbc5885f8e5d6",
+        "62c7c379330cc9d2b572e4e5d38c0511667568d468a242a74707d89eb3b83045"
+      ]
+    },
+    {
+      "slug": "coffee-teach-41-empty",
+      "stage": "teaching",
+      "title": "Unassisted coffee service \u00b7 seed 41 \u00b7 empty memory",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 3.36 mm from its center. The cup stayed clear of the photograph and Matt made no correction.",
+      "source_dir": "runs/accessible-coffee/teach-41-empty",
+      "poses": "runs/accessible-coffee/teach-41-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        41,
+        true,
+        false
+      ],
+      "camera": "agent",
+      "seed": 41,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 3.36,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 736,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/teach-41-empty/controller/session/1795738107301513101-9f6eafb9/request.json",
+      "reply": "runs/accessible-coffee/teach-41-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/teach-41-empty/result.json",
+      "pose_sha256": "943e5d54c78ee7679f5bed9990b24d933da742a08386723687dd01d62110bcfd",
+      "camera_sha256": [
+        "45084e7493c8d8423d175da05a6a6133c29505a4a17b72a4837e9b5f5031ee63",
+        "1e2fdcd1c47dd8e6bd61917d5e1afea6921238ea1eb864456c3e2eb55af0e0eb"
+      ]
+    },
+    {
+      "slug": "coffee-teach-84-empty",
+      "stage": "teaching",
+      "title": "Unassisted coffee service \u00b7 seed 84 \u00b7 empty memory",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 1.53 mm from its center. The cup stayed clear of the photograph and Matt made no correction.",
+      "source_dir": "runs/accessible-coffee/teach-84-empty",
+      "poses": "runs/accessible-coffee/teach-84-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        84,
+        true,
+        false
+      ],
+      "camera": "agent",
+      "seed": 84,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 1.53,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 708,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/teach-84-empty/controller/session/1795738241775120802-e02225eb/request.json",
+      "reply": "runs/accessible-coffee/teach-84-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/teach-84-empty/result.json",
+      "pose_sha256": "32f315adbd6e9488ce9d3af4f3fb7c695092ece48dcfad32d9cafb77c4876c06",
+      "camera_sha256": [
+        "8804165145f4190ab9bad45b7c81150a971f589cd8473f70227b48f7ed1c4792",
+        "cf2c4142b507e18c2b8acaf297415fff5fce35fa7ab9dd251339cf418b118c99"
+      ]
+    },
+    {
+      "slug": "coffee-teach-85-empty",
+      "stage": "teaching",
+      "title": "Unassisted coffee service \u00b7 seed 85 \u00b7 empty memory",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 2.50 mm from its center. Matt slid the photograph 132.5 mm. His pull placed it in the projected cup path. The original path cleared the stationary photograph in passive replay.",
+      "source_dir": "runs/accessible-coffee/teach-85-empty",
+      "poses": "runs/accessible-coffee/teach-85-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        85,
+        true,
+        false
+      ],
+      "camera": "agent",
+      "seed": 85,
+      "score": {
+        "task_complete": true,
+        "preference_match": false,
+        "cargo_goal_distance_mm": 2.5,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 132.503,
+        "vessel_overlapped_photo": true,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 612,
+        "observed_projection_overlap": true
+      },
+      "request": "runs/accessible-coffee/teach-85-empty/controller/session/1795738248256322401-f7daeb01/request.json",
+      "reply": "runs/accessible-coffee/teach-85-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/teach-85-empty/result.json",
+      "pose_sha256": "ec4d003ed0f9baf54e1c22cfab1bc7a93fca5cf929c74f5badb4436c284317fd",
+      "camera_sha256": [
+        "b89f465da804386b453b4b1a1cbf88d47f54f5394536ab1df5b406e0e558045d",
+        "f0779dff9beadd583993657899d7302fe5c84e643fad37d0b753e307006e0ce0"
+      ]
+    },
+    {
+      "slug": "coffee-transfer-62-empty",
+      "stage": "transfer",
+      "title": "Watering can and watercolor \u00b7 seed 62 \u00b7 empty memory",
+      "command": "Put the watering can on the round mat.",
+      "outcome": "Released upright on the mat, 3.19 mm from its center. The can avoided the painting. The empty and seed-85 diagnostic-note programs chose identical waypoints.",
+      "source_dir": "runs/accessible-coffee/transfer-62-empty",
+      "poses": "runs/accessible-coffee/transfer-62-empty/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "watering",
+        62,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 62,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 3.19,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 769,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/transfer-62-empty/controller/session/1795738108501436577-8e3bdcce/request.json",
+      "reply": "runs/accessible-coffee/transfer-62-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/transfer-62-empty/result.json",
+      "pose_sha256": "631f142597b0b9efb84a380529fe7cbe77ad7f5dbed24b7e9dbd7ee6795048a2",
+      "camera_sha256": [
+        "e502eed4bb66f71f2f2280e3bfde97311c3f7c22b37b1e5c5c8ec9d38e199097",
+        "c68273d1a4f2a848a21c67b7201f1884dc6b05a44e2742ca158c5cea2b95fd0d"
+      ]
+    },
+    {
+      "slug": "coffee-transfer-62-historical",
+      "stage": "transfer",
+      "title": "Watering can and watercolor \u00b7 seed 62 \u00b7 historical visual note",
+      "command": "Put the watering can on the round mat.",
+      "outcome": "Released upright on the mat, 2.85 mm from its center. Prior physical-intervention note supplied. Minimum artwork clearance was 38.98 mm.",
+      "source_dir": "runs/accessible-coffee/transfer-62-historical",
+      "poses": "runs/accessible-coffee/transfer-62-historical/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "watering",
+        62,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 62,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 2.85,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 772,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 38.982,
+        "minimum_signed_support_gap_mm": 38.982
+      },
+      "request": "runs/accessible-coffee/transfer-62-historical/controller/session/1795738512781762364-b33dd177/request.json",
+      "reply": "runs/accessible-coffee/transfer-62-historical/controller/reply.json",
+      "result": "runs/accessible-coffee/transfer-62-historical/result.json",
+      "pose_sha256": "da4cba81b856006956405f520293304cbe10158be99292ca52677fc5107a9207",
+      "camera_sha256": [
+        "e502eed4bb66f71f2f2280e3bfde97311c3f7c22b37b1e5c5c8ec9d38e199097",
+        "c68273d1a4f2a848a21c67b7201f1884dc6b05a44e2742ca158c5cea2b95fd0d"
+      ]
+    },
+    {
+      "slug": "coffee-transfer-62-note",
+      "stage": "transfer",
+      "title": "Watering can and watercolor \u00b7 seed 62 \u00b7 false-trigger diagnostic note",
+      "command": "Put the watering can on the round mat.",
+      "outcome": "Released upright on the mat, 3.19 mm from its center. The can avoided the painting. The empty and seed-85 diagnostic-note programs chose identical waypoints.",
+      "source_dir": "runs/accessible-coffee/transfer-62-note",
+      "poses": "runs/accessible-coffee/transfer-62-note/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "watering",
+        62,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 62,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 3.19,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 769,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/transfer-62-note/controller/session/1795738300490428306-1d2b8139/request.json",
+      "reply": "runs/accessible-coffee/transfer-62-note/controller/reply.json",
+      "result": "runs/accessible-coffee/transfer-62-note/result.json",
+      "pose_sha256": "631f142597b0b9efb84a380529fe7cbe77ad7f5dbed24b7e9dbd7ee6795048a2",
+      "camera_sha256": [
+        "e502eed4bb66f71f2f2280e3bfde97311c3f7c22b37b1e5c5c8ec9d38e199097",
+        "c68273d1a4f2a848a21c67b7201f1884dc6b05a44e2742ca158c5cea2b95fd0d"
+      ]
+    },
+    {
+      "slug": "coffee-teach-85-empty-passive",
+      "stage": "teaching",
+      "title": "Original code, passive participant \u00b7 seed 85 \u00b7 empty memory",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 2.50 mm from its center. Replaying the original free program with Matt passive cleared the stationary photo.",
+      "source_dir": "runs/accessible-coffee/teach-85-empty/passive-replay",
+      "poses": "runs/accessible-coffee/teach-85-empty/passive-replay/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        85,
+        false,
+        false
+      ],
+      "camera": "agent",
+      "seed": 85,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 2.5,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 612,
+        "observed_projection_overlap": false
+      },
+      "request": "runs/accessible-coffee/teach-85-empty/controller/session/1795738248256322401-f7daeb01/request.json",
+      "reply": "runs/accessible-coffee/teach-85-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/teach-85-empty/passive-replay/result.json",
+      "pose_sha256": "88d74ac7284cf67f9fd210092e7325d222996a668116900b3919f90d28fa0a9c",
+      "camera_sha256": [
+        "b89f465da804386b453b4b1a1cbf88d47f54f5394536ab1df5b406e0e558045d",
+        "f0779dff9beadd583993657899d7302fe5c84e643fad37d0b753e307006e0ce0"
+      ],
+      "description": "Deterministic counterfactual replay of the original motor code. No new policy call."
+    },
+    {
+      "slug": "coffee-teach-85-empty-guarded",
+      "stage": "teaching",
+      "title": "Original code, repaired participant trigger \u00b7 seed 85 \u00b7 empty memory",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Released upright on the mat, 2.50 mm from its center. The repaired trigger left the stationary photograph in place; measured minimum clearance was 6.318 mm.",
+      "source_dir": "runs/accessible-coffee/teach-85-empty/guarded-replay",
+      "poses": "runs/accessible-coffee/teach-85-empty/guarded-replay/poses.npz",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        85,
+        true,
+        true
+      ],
+      "camera": "agent",
+      "seed": 85,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 2.5,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 612,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 6.318,
+        "minimum_signed_support_gap_mm": 6.318
+      },
+      "request": "runs/accessible-coffee/teach-85-empty/controller/session/1795738248256322401-f7daeb01/request.json",
+      "reply": "runs/accessible-coffee/teach-85-empty/controller/reply.json",
+      "result": "runs/accessible-coffee/teach-85-empty/guarded-replay/result.json",
+      "pose_sha256": "88d74ac7284cf67f9fd210092e7325d222996a668116900b3919f90d28fa0a9c",
+      "camera_sha256": [
+        "b89f465da804386b453b4b1a1cbf88d47f54f5394536ab1df5b406e0e558045d",
+        "f0779dff9beadd583993657899d7302fe5c84e643fad37d0b753e307006e0ce0"
+      ],
+      "description": "Deterministic counterfactual replay of the original motor code. No new policy call."
+    },
+    {
+      "slug": "coffee-calibration-bypass-active",
+      "stage": "motor",
+      "title": "Physical calibration \u00b7 bypass-active",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Measured clearance 54.936 mm. Photo displacement 0.00 mm.",
+      "description": "Scripted physical crossing/bypass control. No model program or personal note.",
+      "source_dir": "runs/accessible-coffee/calibration/bypass-active",
+      "poses": "runs/accessible-coffee/calibration/bypass-active/poses.npz",
+      "pose_sha256": "482999d5510acdba65b7bfc0977882126ccfd905f3404bca541544b4e39e4af8",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        210,
+        true,
+        true
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 3.42,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 767,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 54.936,
+        "minimum_signed_support_gap_mm": 54.936
+      }
+    },
+    {
+      "slug": "coffee-calibration-bypass-passive",
+      "stage": "motor",
+      "title": "Physical calibration \u00b7 bypass-passive",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Measured clearance 54.936 mm. Photo displacement 0.00 mm.",
+      "description": "Scripted physical crossing/bypass control. No model program or personal note.",
+      "source_dir": "runs/accessible-coffee/calibration/bypass-passive",
+      "poses": "runs/accessible-coffee/calibration/bypass-passive/poses.npz",
+      "pose_sha256": "482999d5510acdba65b7bfc0977882126ccfd905f3404bca541544b4e39e4af8",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        210,
+        false,
+        true
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "task_complete": true,
+        "preference_match": true,
+        "cargo_goal_distance_mm": 3.42,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 767,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 54.936,
+        "minimum_signed_support_gap_mm": 54.936
+      }
+    },
+    {
+      "slug": "coffee-calibration-crossing-active",
+      "stage": "motor",
+      "title": "Physical calibration \u00b7 crossing-active",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Measured clearance 51.877 mm. Photo displacement 116.25 mm.",
+      "description": "Scripted physical crossing/bypass control. No model program or personal note.",
+      "source_dir": "runs/accessible-coffee/calibration/crossing-active",
+      "poses": "runs/accessible-coffee/calibration/crossing-active/poses.npz",
+      "pose_sha256": "028bd93ebf28d99b5b01d55f536c45dafc53c9500b38d282f3ca6d9859a3deb1",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        210,
+        true,
+        true
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "task_complete": true,
+        "preference_match": false,
+        "cargo_goal_distance_mm": 1.87,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 116.249,
+        "vessel_overlapped_photo": false,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 508,
+        "observed_projection_overlap": false,
+        "minimum_measured_clearance_mm": 51.877,
+        "minimum_signed_support_gap_mm": 51.877
+      }
+    },
+    {
+      "slug": "coffee-calibration-crossing-passive",
+      "stage": "motor",
+      "title": "Physical calibration \u00b7 crossing-passive",
+      "command": "Bring my terracotta cup to the round coaster across from it.",
+      "outcome": "Measured clearance 0.000 mm. Photo displacement 0.00 mm.",
+      "description": "Scripted physical crossing/bypass control. No model program or personal note.",
+      "source_dir": "runs/accessible-coffee/calibration/crossing-passive",
+      "poses": "runs/accessible-coffee/calibration/crossing-passive/poses.npz",
+      "pose_sha256": "b566f8e1957e19be66198f4ffb08d34f474c6a97f6b83bde8e038c41cc92c4b5",
+      "factory": "visual_prefs.accessible_coffee.CoffeeTable",
+      "args": [
+        "coffee",
+        210,
+        false,
+        true
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "task_complete": true,
+        "preference_match": false,
+        "cargo_goal_distance_mm": 1.87,
+        "cargo_base_height_mm": 3.89,
+        "upright": true,
+        "photo_peak_corner_displacement_mm": 0.0,
+        "vessel_overlapped_photo": true,
+        "mat_contact": true,
+        "released": true,
+        "bilateral_samples": 508,
+        "observed_projection_overlap": true,
+        "minimum_measured_clearance_mm": 0.0,
+        "minimum_signed_support_gap_mm": -63.919
+      }
+    },
+    {
+      "slug": "coffee-rust-source-original",
+      "stage": "diagnostic",
+      "title": "Historical source \u00b7 original teaching",
+      "command": "Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.",
+      "outcome": "The target cup was released upright on coaster 2, 4.2 mm from its center. The carried cup crossed the stationary print in passive replay (signed footprint gap -3.15 mm). Matt moved the print in the teaching episode.",
+      "source_dir": "runs/approved-capability/coffee/rust-cup",
+      "poses": "runs/film-replay/coffee/coffee/rust-cup/poses.npz",
+      "factory": "tools.recover_coffee_film.factory",
+      "args": [
+        "coffee/rust-cup"
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "passive": {
+          "minimum_signed_support_gap_mm": -3.1527190937789897,
+          "maximum_gripper_error": 0.0,
+          "events": []
+        },
+        "active": {
+          "minimum_signed_support_gap_mm": -24.33129075176624,
+          "maximum_gripper_error": 0.0,
+          "events": [
+            {
+              "phase": "reach",
+              "time_s": 5.819999999999581,
+              "cup": "cup2",
+              "cup_xyz_m": [
+                0.1839753929017845,
+                0.09590668670579101,
+                0.8268753475208228
+              ],
+              "measured_heading": [
+                -0.99999832310362,
+                0.001831335564034823
+              ]
+            },
+            {
+              "phase": "slide",
+              "time_s": 6.18999999999954,
+              "nearest_hand_skin_mm": 0.0
+            },
+            {
+              "phase": "withdraw",
+              "time_s": 6.719999999999482
+            },
+            {
+              "phase": "done",
+              "time_s": 7.149999999999435
+            }
+          ]
+        }
+      },
+      "request": "runs/approved-capability/coffee/rust-cup/turn-01/model/session/1795728455698866666-8c1b05ca/request.json",
+      "reply": "runs/approved-capability/coffee/rust-cup/turn-01/model/reply.json",
+      "camera_sha256": [
+        "9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44",
+        "12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b"
+      ],
+      "pose_sha256": "fd01fea7882ea73ede4e7166c5eef34a93e7964f81f1a988a9d6970bdf783bbf",
+      "description": "Original three-cup setup, original eight-snippet low-level Python/RGB-D controller and original participant. Source episode, fresh empty run, and fresh note run have identical opening image bytes."
+    },
+    {
+      "slug": "coffee-rust-source-empty",
+      "stage": "diagnostic",
+      "title": "Historical exact-scene replication \u00b7 empty memory",
+      "command": "Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.",
+      "outcome": "The controller completed the requested service. The cup ended 0.6 mm from coaster 2. With the photo stationary, the signed cup-to-print footprint gap was -6.11 mm.",
+      "source_dir": "runs/accessible-coffee/historical-exact/empty",
+      "poses": "runs/accessible-coffee/historical-exact/empty/poses.npz",
+      "factory": "tools.recover_coffee_film.factory",
+      "args": [
+        "coffee/rust-cup"
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "active": {
+          "minimum_signed_gap_mm": -31.964810359148075,
+          "photo_displacement_mm": 131.4568421399534,
+          "events": [
+            {
+              "phase": "reach",
+              "time_s": 10.500000000000176,
+              "cup": "cup2",
+              "cup_xyz_m": [
+                0.1738834920764514,
+                0.09187755335504061,
+                0.8477203270722268
+              ],
+              "measured_heading": [
+                -0.9996697816114263,
+                0.02569684285983336
+              ]
+            },
+            {
+              "phase": "slide",
+              "time_s": 10.860000000000296,
+              "nearest_hand_skin_mm": 0.0
+            },
+            {
+              "phase": "withdraw",
+              "time_s": 11.38000000000047
+            },
+            {
+              "phase": "done",
+              "time_s": 11.80000000000061
+            }
+          ]
+        },
+        "passive": {
+          "minimum_signed_gap_mm": -6.107959820824293,
+          "photo_displacement_mm": 9.30684327783819e-07,
+          "events": []
+        },
+        "cup_supported": true,
+        "other_cups_unmoved": true,
+        "task_complete": true,
+        "cup_coaster_error_mm": 0.6,
+        "opening_hashes": [
+          "9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44",
+          "12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b"
+        ]
+      },
+      "request": "runs/accessible-coffee/historical-exact/empty/turn-01/model/session/1795738716462724279-f65640c4/request.json",
+      "reply": "runs/accessible-coffee/historical-exact/empty/turn-01/model/reply.json",
+      "camera_sha256": [
+        "9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44",
+        "12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b"
+      ],
+      "pose_sha256": "cb213af812060251e191d7ae29a8853df4d4e9f043a83c2aaaad93e6a5e002ff",
+      "description": "Original three-cup setup, original eight-snippet low-level Python/RGB-D controller and original participant. Source episode, fresh empty run, and fresh note run have identical opening image bytes."
+    },
+    {
+      "slug": "coffee-rust-source-note",
+      "stage": "diagnostic",
+      "title": "Historical exact-scene replication \u00b7 original visual note",
+      "command": "Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.",
+      "outcome": "The controller did not complete the requested service. The cup ended 91.2 mm from coaster 2. With the photo stationary, the signed cup-to-print footprint gap was 6.21 mm.",
+      "source_dir": "runs/accessible-coffee/historical-exact/note",
+      "poses": "runs/accessible-coffee/historical-exact/note/poses.npz",
+      "factory": "tools.recover_coffee_film.factory",
+      "args": [
+        "coffee/rust-cup"
+      ],
+      "camera": "agent",
+      "seed": 210,
+      "score": {
+        "active": {
+          "minimum_signed_gap_mm": -67.53593855241158,
+          "photo_displacement_mm": 133.55122367093003,
+          "events": [
+            {
+              "phase": "reach",
+              "time_s": 5.82999999999958,
+              "cup": "cup2",
+              "cup_xyz_m": [
+                0.18128378350649693,
+                0.09668838643368752,
+                0.8062247187915926
+              ],
+              "measured_heading": [
+                -0.9990280666299357,
+                -0.044078589878226854
+              ]
+            },
+            {
+              "phase": "slide",
+              "time_s": 6.199999999999539,
+              "nearest_hand_skin_mm": 0.0
+            },
+            {
+              "phase": "withdraw",
+              "time_s": 6.729999999999481
+            },
+            {
+              "phase": "done",
+              "time_s": 7.1599999999994335
+            }
+          ]
+        },
+        "passive": {
+          "minimum_signed_gap_mm": 6.208084939793135,
+          "photo_displacement_mm": 2.9178901435671164e-07,
+          "events": []
+        },
+        "cup_supported": false,
+        "other_cups_unmoved": true,
+        "task_complete": false,
+        "cup_coaster_error_mm": 91.2,
+        "opening_hashes": [
+          "9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44",
+          "12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b"
+        ]
+      },
+      "request": "runs/accessible-coffee/historical-exact/note/turn-01/model/session/1795738725118689751-db7994dc/request.json",
+      "reply": "runs/accessible-coffee/historical-exact/note/turn-01/model/reply.json",
+      "camera_sha256": [
+        "9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44",
+        "12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b"
+      ],
+      "pose_sha256": "bfe642a32c936b31c2720b3c1feb164dc5744aac8402f34307b55b78aa52ed36",
+      "description": "Original three-cup setup, original eight-snippet low-level Python/RGB-D controller and original participant. Source episode, fresh empty run, and fresh note run have identical opening image bytes."
+    }
+  ],
+  "sources": {
+    "visual_prefs/accessible_coffee.py": "544255ab0eede56e08d7ac42682b3639cec9266d3529662b1264a88d37ad167a",
+    "tools/accessible_coffee.py": "aa31264c0d3c3c6419b6f43a2eed755933dfd03fd4d5d14939bd47dd000d39fd",
+    "tools/accessible_coffee_audit.py": "9d63b7d08745a4ca8662734dd90daaa2e9be2cc81e217fb18787b88f08120403",
+    "visual_prefs/multistep_photo_intervention.py": "5b47491a9742ea31bf3e741b2e8177caa0e13f2d8b93c0ef7c3e0b98da4d7a8d",
+    "visual_prefs/native_photo.py": "f93d79d48fe6cf42003ba36e647e8856d5a1f09f28d8ac0e03309a8e5b3fcfa1",
+    "tools/multistep_watercolor_transfer.py": "43294a0c7586333c0f1147db19a9460283a9076b5e05e4fb1cd2cf32c1eebfbd",
+    "runs/accessible-coffee/plan.json": "b84f66c77460a6e042d972c1c2b945effb2d71c34bc1f338a16ff907056fb244",
+    "runs/accessible-coffee/secondary-plan.json": "28dcf5fc4ba502ba6e530594d07fb4dd267a55bb98ede8a56c5f8db1ca2879cb",
+    "runs/accessible-coffee/guarded-plan.json": "2e23aa8d94be78c027ab574c9f4a0c332aef9d92b8d5d01950bf4f31c94a263a",
+    "visual_prefs/accessible_coffee_clearance.py": "5d1207cf2402019f8cb1c774f4fb908b6f32c5528639b749dddb6cd4698eda44",
+    "tools/accessible_coffee_historical.py": "4082d702eb63745a9e0d204db3364e7b8a345edfb001813a24fb02a674dea379"
+  },
+  "historical_exact_scene": {
+    "source": "coffee-rust-source-original",
+    "paired_slugs": [
+      "coffee-rust-source-empty",
+      "coffee-rust-source-note"
+    ],
+    "summary": "An exact reset of the historical three-cup source had a different outcome. The original and fresh empty-memory controllers both served the terracotta cup and crossed the stationary photograph. The fresh controller given that encounter\u2019s visual note used its eight code turns and left the cup tipped, unsupported and 91.2 mm from the target; the fresh empty-memory controller released it upright 0.6 mm from center. The note did not repair the original failed route and complete service.",
+    "source_command_interface": "original multistep low-level RGB-D programs",
+    "source_note": "runs/approved-capability/coffee/rust-audit/personal-note.md"
+  }
+}

@@ -1,0 +1,650 @@
+{
+  "coffee-calibration-bypass-active": {
+    "poses": "evidence/482999d5510acdba65b7bfc0977882126ccfd905f3404bca541544b4e39e4af8.npz",
+    "page": "coffee-calibration-bypass-active.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-calibration-bypass-passive": {
+    "poses": "evidence/482999d5510acdba65b7bfc0977882126ccfd905f3404bca541544b4e39e4af8.npz",
+    "page": "coffee-calibration-bypass-passive.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-calibration-crossing-active": {
+    "poses": "evidence/028bd93ebf28d99b5b01d55f536c45dafc53c9500b38d282f3ca6d9859a3deb1.npz",
+    "page": "coffee-calibration-crossing-active.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-calibration-crossing-passive": {
+    "poses": "evidence/b566f8e1957e19be66198f4ffb08d34f474c6a97f6b83bde8e038c41cc92c4b5.npz",
+    "page": "coffee-calibration-crossing-passive.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-dry-72-empty": {
+    "poses": "evidence/2782da5cfe0fb580b6c1355b506859c62d626d1f032864c0f7223c83cf569290.npz",
+    "page": "coffee-dry-72-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-dry-72-historical": {
+    "poses": "evidence/2782da5cfe0fb580b6c1355b506859c62d626d1f032864c0f7223c83cf569290.npz",
+    "page": "coffee-dry-72-historical.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-dry-72-note": {
+    "poses": "evidence/2782da5cfe0fb580b6c1355b506859c62d626d1f032864c0f7223c83cf569290.npz",
+    "page": "coffee-dry-72-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-motor-31-empty": {
+    "poses": "evidence/de551d9fa8cbcc980d30df0ab45f4ffa03baa840dd40498d4aa3fce7b86b87bc.npz",
+    "page": "coffee-motor-31-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-motor-32-empty": {
+    "poses": "evidence/8a0cfc0fb5c9f8362a8166ae73e74aaea9b46c3e3affea997e2b16a6a755c326.npz",
+    "page": "coffee-motor-32-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-motor-34-empty": {
+    "poses": "evidence/fb32588cf0ea84279d509d2c3bc509e95cc4baf0d0c80b092df1be042ab4ea3b.npz",
+    "page": "coffee-motor-34-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-motor-35-empty": {
+    "poses": "evidence/9787149d46a037d7947ac00c57d6f2fad755318d4f68892f371b1fc5bfd6da5a.npz",
+    "page": "coffee-motor-35-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-recall-210-historical": {
+    "poses": "evidence/1db3fb8035683a6629ff163365e9dd35e748ed3a5718a35ff8da010c84935df2.npz",
+    "page": "coffee-recall-210-historical.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-recall-85-note": {
+    "poses": "evidence/88d74ac7284cf67f9fd210092e7325d222996a668116900b3919f90d28fa0a9c.npz",
+    "page": "coffee-recall-85-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-rust-source-empty": {
+    "poses": "evidence/cb213af812060251e191d7ae29a8853df4d4e9f043a83c2aaaad93e6a5e002ff.npz",
+    "page": "coffee-rust-source-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-rust-source-note": {
+    "poses": "evidence/bfe642a32c936b31c2720b3c1feb164dc5744aac8402f34307b55b78aa52ed36.npz",
+    "page": "coffee-rust-source-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-rust-source-original": {
+    "poses": "evidence/fd01fea7882ea73ede4e7166c5eef34a93e7964f81f1a988a9d6970bdf783bbf.npz",
+    "page": "coffee-rust-source-original.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-teach-210-empty": {
+    "poses": "evidence/ffb416ba07d22c2b9178e719b2bcc9c17d2d253d62e71ed65fd7e167ced6f47b.npz",
+    "page": "coffee-teach-210-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-teach-41-empty": {
+    "poses": "evidence/943e5d54c78ee7679f5bed9990b24d933da742a08386723687dd01d62110bcfd.npz",
+    "page": "coffee-teach-41-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-teach-84-empty": {
+    "poses": "evidence/32f315adbd6e9488ce9d3af4f3fb7c695092ece48dcfad32d9cafb77c4876c06.npz",
+    "page": "coffee-teach-84-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-teach-85-empty": {
+    "poses": "evidence/ec4d003ed0f9baf54e1c22cfab1bc7a93fca5cf929c74f5badb4436c284317fd.npz",
+    "page": "coffee-teach-85-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-teach-85-empty-guarded": {
+    "poses": "evidence/88d74ac7284cf67f9fd210092e7325d222996a668116900b3919f90d28fa0a9c.npz",
+    "page": "coffee-teach-85-empty-guarded.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-teach-85-empty-passive": {
+    "poses": "evidence/88d74ac7284cf67f9fd210092e7325d222996a668116900b3919f90d28fa0a9c.npz",
+    "page": "coffee-teach-85-empty-passive.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-transfer-62-empty": {
+    "poses": "evidence/631f142597b0b9efb84a380529fe7cbe77ad7f5dbed24b7e9dbd7ee6795048a2.npz",
+    "page": "coffee-transfer-62-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-transfer-62-historical": {
+    "poses": "evidence/da4cba81b856006956405f520293304cbe10158be99292ca52677fc5107a9207.npz",
+    "page": "coffee-transfer-62-historical.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "coffee-transfer-62-note": {
+    "poses": "evidence/631f142597b0b9efb84a380529fe7cbe77ad7f5dbed24b7e9dbd7ee6795048a2.npz",
+    "page": "coffee-transfer-62-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-adjusted-exception-empty": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-adjusted-exception-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-adjusted-exception-mask-note": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-adjusted-exception-mask-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-adjusted-exception-note": {
+    "poses": "evidence/f0531678618bfd4aebbe39f23dc0bce41da9cf4f31adabbca0b72e67a33cea18.npz",
+    "page": "fabric-adjusted-exception-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-adjusted-transfer-empty": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-adjusted-transfer-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-adjusted-transfer-mask-note": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-adjusted-transfer-mask-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-adjusted-transfer-note": {
+    "poses": "evidence/f463a59c53fe6a1772bfd8a32f391d5b348fd4f1bf70aa673ea43a76acb94460.npz",
+    "page": "fabric-adjusted-transfer-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-exception-empty": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-exception-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-exception-note": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-exception-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-prior-exception-mask-note": {
+    "poses": "evidence/3812837708e2ebf67a937114c7870f8d034c68010ca83c7f62ec947a3e06d0c3.npz",
+    "page": "fabric-prior-exception-mask-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-prior-transfer-mask-note": {
+    "poses": "evidence/4506ca219d6a9efd2a1533249e81c4dabfc9d360b8478e4a8335dc43e03e7fc1.npz",
+    "page": "fabric-prior-transfer-mask-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-recall-note": {
+    "poses": "evidence/026b35efaf5222d3fd561dd464c1b264b3eeacd4d736aa4c5904b33a9a6a85bc.npz",
+    "page": "fabric-recall-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-response": {
+    "poses": "evidence/004b13031b6a38673c98c1d6b6c5d7f5a50774ced8e1332cac5f36666fbeedf2.npz",
+    "page": "fabric.html",
+    "interval": [
+      28.94999999999675,
+      41.17000000000313
+    ]
+  },
+  "fabric-teach-empty": {
+    "poses": "evidence/004b13031b6a38673c98c1d6b6c5d7f5a50774ced8e1332cac5f36666fbeedf2.npz",
+    "page": "fabric-teach-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-transfer-empty": {
+    "poses": "evidence/89d1c892a47f1219f0e79c3a445b6cfd1413ee23be7210c3a5ee5c3e95644045.npz",
+    "page": "fabric-transfer-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "fabric-transfer-note": {
+    "poses": "evidence/f463a59c53fe6a1772bfd8a32f391d5b348fd4f1bf70aa673ea43a76acb94460.npz",
+    "page": "fabric-transfer-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-finished-103-empty": {
+    "poses": "evidence/e89de3c80cfa7ae543514a14a595d1f5db2b69198692c8f4fc81495b54226122.npz",
+    "page": "game-finished-103-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-finished-103-matched": {
+    "poses": "evidence/2ca570b25a4f9bfa097655db9ee462072b4b46b2851a13e11381604c887274ee.npz",
+    "page": "game-finished-103-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-motor-11-empty": {
+    "poses": "evidence/04b3e9a608f034a5a07ffdb333f9e6c2d3906910b402862332050d05a85a6e00.npz",
+    "page": "game-motor-11-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-motor-17-empty": {
+    "poses": "evidence/4e3748d69691d133175c05f2ff1c604681c728bf2c91de6137f1019c122d9035.npz",
+    "page": "game-motor-17-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-motor-23-empty": {
+    "poses": "evidence/7ccee7d71b72836c02f970cc3c0c095f34ad8aab30a84989b3718cc9629f59a2.npz",
+    "page": "game-motor-23-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-motor-29-empty": {
+    "poses": "evidence/7fc8829765c7dfb53b5989e90faf71228d0a8498965299012bff9580dc785883.npz",
+    "page": "game-motor-29-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-recall-83-matched": {
+    "poses": "evidence/ba08046b8f9b168828509d66de701878c4ffbc8e2578e4a4f4999a4683f62844.npz",
+    "page": "game-recall-83-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-teach-83-empty": {
+    "poses": "evidence/983c3dcc2d2747caa4496265d0b946e8f592d3630b40eab5166ff652b358e6f5.npz",
+    "page": "game-teach-83-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-teach-83-empty-feedback": {
+    "poses": "evidence/edcc2b2241f607bf55e3ab45b541aa73101936451e8ceeccd1d8215fd8ca24d4.npz",
+    "page": "game-teach-83-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-transfer-97-empty": {
+    "poses": "evidence/c845b927f5d57f18000a208fabfa0b532ce9cb3504fd632215355383f254b411.npz",
+    "page": "game-transfer-97-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "game-transfer-97-matched": {
+    "poses": "evidence/a248aec1848dce56705659442959ceec67d28fc0d91baa24381bd79cb0221e52.npz",
+    "page": "game-transfer-97-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-approved-empty": {
+    "poses": "evidence/0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af.npz",
+    "page": "jars-approved-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-approved-note": {
+    "poses": "evidence/0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af.npz",
+    "page": "jars-approved-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-approved-timing-note": {
+    "poses": "evidence/296efc0484a010644ab3623f9d0b076150582c9258e97807db5a9a10a0e5f30a.npz",
+    "page": "jars-approved-timing-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-cal-211-direct": {
+    "poses": "evidence/7ed14259d55e9a7b9a9387980ec65a6e86b0da3acf4c31f231d071a03d83d6ea.npz",
+    "page": "jars-cal-211-direct.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-cal-211-lift": {
+    "poses": "evidence/c67a9c01161ba1bed068b2083f76f63da7a24ad56a9e60d2f262053efa3e138a.npz",
+    "page": "jars-cal-211-lift.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-cal-212-direct": {
+    "poses": "evidence/0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af.npz",
+    "page": "jars-cal-212-direct.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-cal-212-lift": {
+    "poses": "evidence/59e278d2e0eb492daae33c2e0c77d9d8703557ce9c6f42a8fbbe0ae112de43b5.npz",
+    "page": "jars-cal-212-lift.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-explicit-empty": {
+    "poses": "evidence/a37d60979d33be832aef6ebfeda53de0f0ad62d9806505ffa66c3adc6a650991.npz",
+    "page": "jars-explicit-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-recall-empty": {
+    "poses": "evidence/7ed14259d55e9a7b9a9387980ec65a6e86b0da3acf4c31f231d071a03d83d6ea.npz",
+    "page": "jars-recall-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-recall-note": {
+    "poses": "evidence/f8874ee8b9a69b89f083508096bab7d41090637e4a21d22673fc82b3fe621da8.npz",
+    "page": "jars-recall-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-recall-timing-note": {
+    "poses": "evidence/8308e3f40c84208916ab54731537e1eacb1c5b97c77a15c2da72a74897cbec90.npz",
+    "page": "jars-recall-timing-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-teach-empty": {
+    "poses": "evidence/b2b264908622c8192da235dcaa7d2e84d1967b747b62269dff92f98a75236bac.npz",
+    "page": "jars-teach-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-teach-response": {
+    "poses": "evidence/400f652b104b42419c821fcaa81219bb2306bb789e561e269a2b2a49c24778a8.npz",
+    "page": "jars-teach-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-timing-response": {
+    "poses": "evidence/710ebac2780d6b99ea5284b0fc2b76dd86d96b67f4a8b77c81791d52826e2d89.npz",
+    "page": "jars-timing-teaching.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-timing-teaching": {
+    "poses": "evidence/182af61698d89c0d18caa0c72cf58913216b760592300675aee975f86de0dd9f.npz",
+    "page": "jars-timing-teaching.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-transfer-empty": {
+    "poses": "evidence/0918aee2f8e91596367d424bf783bbf5ff8960cb97e3af249764cba9964bb7af.npz",
+    "page": "jars-transfer-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-transfer-note": {
+    "poses": "evidence/faa9ab275f958ff6304dbea99345de88a222d435dfdd070b8a6d917171357319.npz",
+    "page": "jars-transfer-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "jars-transfer-timing-note": {
+    "poses": "evidence/296efc0484a010644ab3623f9d0b076150582c9258e97807db5a9a10a0e5f30a.npz",
+    "page": "jars-transfer-timing-note.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "label-covers": {
+    "poses": "evidence/be32628b7eef4affab8571ee0c1cbf2dd6c1b258a3a5415ac886f0568e076e1e.npz",
+    "page": "fabric.html",
+    "interval": [
+      29.9099999999967,
+      47.640000000011035
+    ]
+  },
+  "shelf-books-203-matched": {
+    "poses": "evidence/7c9be1a74aaa893c61a29d798d08a25e54ced52fb2571a8ba5dd839544ecf521.npz",
+    "page": "shelf-books-203-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-books-203-teach": {
+    "poses": "evidence/b61901239db05d380d204a87ef1c36342c776d6432a1071a889edbb91e651a94.npz",
+    "page": "shelf-books-203-teach.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-books-205-empty": {
+    "poses": "evidence/44ae47b3e3d922641bbe5f8d063fcee64f257379bcd78dc0f0f7bf6dba686b3f.npz",
+    "page": "shelf-books-205-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-books-205-matched": {
+    "poses": "evidence/300aa536493a0638167540d19cd1db1f6eca89dd6df4fd3814bb17837a4ef219.npz",
+    "page": "shelf-books-205-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-detail-shared-203-matched": {
+    "poses": "evidence/1338bb6010270fefdfed81b8e15b4e194fa0af5ac0cb8eb7c1f83eb9a58560d3.npz",
+    "page": "shelf-detail-shared-203-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-records-203-empty": {
+    "poses": "evidence/d83016394b69cfbc7d73aa3918e4ae1c867fdc4549ed7262e581ff3acad79b97.npz",
+    "page": "shelf-records-203-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-records-203-matched": {
+    "poses": "evidence/d83016394b69cfbc7d73aa3918e4ae1c867fdc4549ed7262e581ff3acad79b97.npz",
+    "page": "shelf-records-203-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-records-205-empty": {
+    "poses": "evidence/a086556f741f37afb419eaf9fb6782afd68e5b926672a7e67e294101a9b77db9.npz",
+    "page": "shelf-records-205-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-records-205-matched": {
+    "poses": "evidence/8f16680c6e2c74d01e9d3fc7010c7b84c61da4ada12f12678de91601ddceea83.npz",
+    "page": "shelf-records-205-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-shared-203-empty": {
+    "poses": "evidence/dcf4d6d1c0ac7f3ea9d322face84016211a8a37d1a211cd7d69c4bff475db49a.npz",
+    "page": "shelf-shared-203-empty.html",
+    "interval": [
+      null,
+      null
+    ]
+  },
+  "shelf-shared-203-matched": {
+    "poses": "evidence/4dffd9acf4591f4ab9016df343ec2f1a249babb95a489c735206a840fbf0d355.npz",
+    "page": "shelf-shared-203-matched.html",
+    "interval": [
+      null,
+      null
+    ]
+  }
+}

@@ -1,0 +1,626 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Historical source · original teaching</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Historical source · original teaching</h1><p><a href="coffee.html">Back to this experiment</a></p><blockquote>Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.</blockquote><figure><video controls playsinline preload="none" poster="films/coffee-rust-source-original/start.jpg" src="films/coffee-rust-source-original/review.mp4"></video><figcaption>Original three-cup setup, original eight-snippet low-level Python/RGB-D controller and original participant. Source episode, fresh empty run, and fresh note run have identical opening image bytes. Cycles · presentation camera · real time · simulation 0.0–11.3 s.</figcaption></figure><p><small><a href="films/coffee-rust-source-original/start.jpg">Starting arrangement</a> · <a href="films/coffee-rust-source-original/end.jpg">Final arrangement</a></small></p><p>The target cup was released upright on coaster 2, 4.2 mm from its center. The carried cup crossed the stationary print in passive replay (signed footprint gap -3.15 mm). Matt moved the print in the teaching episode.</p><p><a href="evidence/b8b0545deaa75252594e145bb9361925c31c082786480ae760f325020cb874dc.mp4">Download the original MuJoCo recording</a></p><details><summary>Controller · 2 input images</summary><pre>Operate the simulated Franka for the supplied task. The two current RGB images are overhead (metric) and oblique (agent). Cyan ticks are pixel coordinates. The overhead white grid is in millimetres at tabletop height. World +x is image right, +y is up, z is height above the tabletop. Zero rotation points the gripper down, closing along y. A depth query measures XYZ in mm at a visible pixel from the current snapshot. Query up to 24 points per snippet. After each snippet you receive the next images and your own results. Return {&quot;program&quot;:&quot;...&quot;} to run Python or {&quot;done&quot;:true} to finish. Position is in millimetres, roll/pitch/yaw in degrees, and gap is the aperture in millimetres. There are at most eight snippets. Write plain Python statements. move(x,y,z,roll,pitch,yaw,gap) takes seven finite numbers and returns the seven measured values. state() reads those values. surface(&quot;metric&quot; or &quot;agent&quot;, u, v) takes integer pixel coordinates and returns XYZ or None. print(...) records values. Use ordinary assignments and unpacking, numbers, short strings, True/False/None, lists, tuples, indexing/slicing, if/else, and for over range(...) or a list/tuple. Local def helpers support positional parameters, defaults, and return. Calls accept positional arguments and *sequence. Available builtins: range, min, max, abs, round, len, int, float. Operators: + - * / // %, numeric comparisons, equality, is/is not None, and/or/not. No imports, attributes, comprehensions, recursion, keyword arguments or while loops. Each range or sequence has at most 128 elements. At most 128 sensor calls and 40 print calls. At most 12 move calls per program (or the smaller remaining budget).</pre><pre>{
+  &quot;command&quot;: &quot;Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;bounds&quot;: [
+    [
+      -370,
+      370
+    ],
+    [
+      -300,
+      275
+    ],
+    [
+      2,
+      275
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -180,
+      180
+    ],
+    [
+      0,
+      80
+    ]
+  ],
+  &quot;state&quot;: [
+    -3.146378018470172,
+    -210.5040173376648,
+    155.25735477018964,
+    1.6524154503400337,
+    0.1403081806075134,
+    0.3057084174950624,
+    72.00000003150025
+  ],
+  &quot;previous_turns&quot;: []
+}</pre><a href="evidence/9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44.jpg">Frame 1</a> · <a href="evidence/12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;for p in [(467,148),(443,148),(491,148),(428,149),(467,123),(467,172),(203,152),(162,221),(203,292),(451,112)]:\n print(p,surface(\&quot;metric\&quot;,*p))&quot;}</pre></details><details><summary>turn-02 · 2 input images</summary><pre>Operate the simulated Franka for the supplied task. The two current RGB images are overhead (metric) and oblique (agent). Cyan ticks are pixel coordinates. The overhead white grid is in millimetres at tabletop height. World +x is image right, +y is up, z is height above the tabletop. Zero rotation points the gripper down, closing along y. A depth query measures XYZ in mm at a visible pixel from the current snapshot. Query up to 24 points per snippet. After each snippet you receive the next images and your own results. Return {&quot;program&quot;:&quot;...&quot;} to run Python or {&quot;done&quot;:true} to finish. Position is in millimetres, roll/pitch/yaw in degrees, and gap is the aperture in millimetres. There are at most eight snippets. Write plain Python statements. move(x,y,z,roll,pitch,yaw,gap) takes seven finite numbers and returns the seven measured values. state() reads those values. surface(&quot;metric&quot; or &quot;agent&quot;, u, v) takes integer pixel coordinates and returns XYZ or None. print(...) records values. Use ordinary assignments and unpacking, numbers, short strings, True/False/None, lists, tuples, indexing/slicing, if/else, and for over range(...) or a list/tuple. Local def helpers support positional parameters, defaults, and return. Calls accept positional arguments and *sequence. Available builtins: range, min, max, abs, round, len, int, float. Operators: + - * / // %, numeric comparisons, equality, is/is not None, and/or/not. No imports, attributes, comprehensions, recursion, keyword arguments or while loops. Each range or sequence has at most 128 elements. At most 128 sensor calls and 40 print calls. At most 12 move calls per program (or the smaller remaining budget).</pre><pre>{
+  &quot;command&quot;: &quot;Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;bounds&quot;: [
+    [
+      -370,
+      370
+    ],
+    [
+      -300,
+      275
+    ],
+    [
+      2,
+      275
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -180,
+      180
+    ],
+    [
+      0,
+      80
+    ]
+  ],
+  &quot;state&quot;: [
+    -3.146378018470172,
+    -210.5040173376648,
+    155.25735477018964,
+    1.6524154503400337,
+    0.1403081806075134,
+    0.3057084174950624,
+    72.00000003150025
+  ],
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;for p in [(467,148),(443,148),(491,148),(428,149),(467,123),(467,172),(203,152),(162,221),(203,292),(451,112)]:\n print(p,surface(\&quot;metric\&quot;,*p))&quot;,
+      &quot;feedback&quot;: {
+        &quot;log&quot;: [
+          &quot;(467, 148) [194.53, 95.68, 61.02]&quot;,
+          &quot;(443, 148) [161.57, 94.7, 66.26]&quot;,
+          &quot;(491, 148) [224.3, 94.67, 66.42]&quot;,
+          &quot;(428, 149) [143.19, 94.43, 60.6]&quot;,
+          &quot;(467, 123) [192.85, 127.32, 66.64]&quot;,
+          &quot;(467, 172) [194.5, 64.01, 61.13]&quot;,
+          &quot;(203, 152) [-167.15, 100.54, 4.0]&quot;,
+          &quot;(162, 221) [-225.97, 1.54, 4.0]&quot;,
+          &quot;(203, 292) [-167.15, -100.32, 4.0]&quot;,
+          &quot;(451, 112) [189.74, 158.97, -0.0]&quot;
+        ],
+        &quot;moves&quot;: 0,
+        &quot;samples&quot;: [
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              194.53,
+              95.68,
+              61.02
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 443,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              161.57,
+              94.7,
+              66.26
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 491,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              224.3,
+              94.67,
+              66.42
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 428,
+            &quot;v&quot;: 149,
+            &quot;xyz&quot;: [
+              143.19,
+              94.43,
+              60.6
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 123,
+            &quot;xyz&quot;: [
+              192.85,
+              127.32,
+              66.64
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 172,
+            &quot;xyz&quot;: [
+              194.5,
+              64.01,
+              61.13
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 203,
+            &quot;v&quot;: 152,
+            &quot;xyz&quot;: [
+              -167.15,
+              100.54,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 162,
+            &quot;v&quot;: 221,
+            &quot;xyz&quot;: [
+              -225.97,
+              1.54,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 203,
+            &quot;v&quot;: 292,
+            &quot;xyz&quot;: [
+              -167.15,
+              -100.32,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 451,
+            &quot;v&quot;: 112,
+            &quot;xyz&quot;: [
+              189.74,
+              158.97,
+              -0.0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}</pre><a href="evidence/9abd13cf7be0b05b322059cfaeb27b3e396b902572f4ff46ad0ba9600151ba44.jpg">Frame 1</a> · <a href="evidence/12127069d2e5d8e6ad18adcb367ad1040289d0ba6c849ec9b000c39da791603b.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;print(move(194,96,150,0,0,0,80))\nprint(move(194,96,45,0,0,0,80))\nprint(move(194,96,45,0,0,0,52))\nprint(move(194,96,135,0,0,0,52))&quot;}</pre></details><details><summary>turn-03 · 2 input images</summary><pre>Operate the simulated Franka for the supplied task. The two current RGB images are overhead (metric) and oblique (agent). Cyan ticks are pixel coordinates. The overhead white grid is in millimetres at tabletop height. World +x is image right, +y is up, z is height above the tabletop. Zero rotation points the gripper down, closing along y. A depth query measures XYZ in mm at a visible pixel from the current snapshot. Query up to 24 points per snippet. After each snippet you receive the next images and your own results. Return {&quot;program&quot;:&quot;...&quot;} to run Python or {&quot;done&quot;:true} to finish. Position is in millimetres, roll/pitch/yaw in degrees, and gap is the aperture in millimetres. There are at most eight snippets. Write plain Python statements. move(x,y,z,roll,pitch,yaw,gap) takes seven finite numbers and returns the seven measured values. state() reads those values. surface(&quot;metric&quot; or &quot;agent&quot;, u, v) takes integer pixel coordinates and returns XYZ or None. print(...) records values. Use ordinary assignments and unpacking, numbers, short strings, True/False/None, lists, tuples, indexing/slicing, if/else, and for over range(...) or a list/tuple. Local def helpers support positional parameters, defaults, and return. Calls accept positional arguments and *sequence. Available builtins: range, min, max, abs, round, len, int, float. Operators: + - * / // %, numeric comparisons, equality, is/is not None, and/or/not. No imports, attributes, comprehensions, recursion, keyword arguments or while loops. Each range or sequence has at most 128 elements. At most 128 sensor calls and 40 print calls. At most 12 move calls per program (or the smaller remaining budget).</pre><pre>{
+  &quot;command&quot;: &quot;Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;bounds&quot;: [
+    [
+      -370,
+      370
+    ],
+    [
+      -300,
+      275
+    ],
+    [
+      2,
+      275
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -180,
+      180
+    ],
+    [
+      0,
+      80
+    ]
+  ],
+  &quot;state&quot;: [
+    193.9136681141249,
+    95.7183972218946,
+    134.31808497820074,
+    -0.05390971881458346,
+    0.021000560312640325,
+    -0.000776903559646709,
+    67.75676837451644
+  ],
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;for p in [(467,148),(443,148),(491,148),(428,149),(467,123),(467,172),(203,152),(162,221),(203,292),(451,112)]:\n print(p,surface(\&quot;metric\&quot;,*p))&quot;,
+      &quot;feedback&quot;: {
+        &quot;log&quot;: [
+          &quot;(467, 148) [194.53, 95.68, 61.02]&quot;,
+          &quot;(443, 148) [161.57, 94.7, 66.26]&quot;,
+          &quot;(491, 148) [224.3, 94.67, 66.42]&quot;,
+          &quot;(428, 149) [143.19, 94.43, 60.6]&quot;,
+          &quot;(467, 123) [192.85, 127.32, 66.64]&quot;,
+          &quot;(467, 172) [194.5, 64.01, 61.13]&quot;,
+          &quot;(203, 152) [-167.15, 100.54, 4.0]&quot;,
+          &quot;(162, 221) [-225.97, 1.54, 4.0]&quot;,
+          &quot;(203, 292) [-167.15, -100.32, 4.0]&quot;,
+          &quot;(451, 112) [189.74, 158.97, -0.0]&quot;
+        ],
+        &quot;moves&quot;: 0,
+        &quot;samples&quot;: [
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              194.53,
+              95.68,
+              61.02
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 443,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              161.57,
+              94.7,
+              66.26
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 491,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              224.3,
+              94.67,
+              66.42
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 428,
+            &quot;v&quot;: 149,
+            &quot;xyz&quot;: [
+              143.19,
+              94.43,
+              60.6
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 123,
+            &quot;xyz&quot;: [
+              192.85,
+              127.32,
+              66.64
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 172,
+            &quot;xyz&quot;: [
+              194.5,
+              64.01,
+              61.13
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 203,
+            &quot;v&quot;: 152,
+            &quot;xyz&quot;: [
+              -167.15,
+              100.54,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 162,
+            &quot;v&quot;: 221,
+            &quot;xyz&quot;: [
+              -225.97,
+              1.54,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 203,
+            &quot;v&quot;: 292,
+            &quot;xyz&quot;: [
+              -167.15,
+              -100.32,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 451,
+            &quot;v&quot;: 112,
+            &quot;xyz&quot;: [
+              189.74,
+              158.97,
+              -0.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      &quot;program&quot;: &quot;print(move(194,96,150,0,0,0,80))\nprint(move(194,96,45,0,0,0,80))\nprint(move(194,96,45,0,0,0,52))\nprint(move(194,96,135,0,0,0,52))&quot;,
+      &quot;feedback&quot;: {
+        &quot;log&quot;: [
+          &quot;[193.88, 95.8, 150.0, 0.0, 0.0, -0.0, 80.0]&quot;,
+          &quot;[193.99, 95.96, 45.13, -0.01, 0.0, -0.0, 80.0]&quot;,
+          &quot;[194.0, 95.91, 45.08, -0.01, 0.0, -0.0, 67.47]&quot;,
+          &quot;[193.91, 95.72, 134.32, -0.05, 0.02, -0.0, 67.76]&quot;
+        ],
+        &quot;moves&quot;: 4,
+        &quot;samples&quot;: []
+      }
+    }
+  ]
+}</pre><a href="evidence/9769c5015568f41eaecebb07499e347a550b61185704d595f472328e7dd8c0c5.jpg">Frame 1</a> · <a href="evidence/2d7c1bd4b78e9646c777152bc681bfd90cbeb7b4475d7e54628fe26793a467df.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;print(move(-167,101,135,0,0,0,52))\nprint(move(-167,101,45,0,0,0,52))\nprint(move(-167,101,45,0,0,0,80))\nprint(move(-167,101,150,0,0,0,80))&quot;}</pre></details><details><summary>turn-04 · 2 input images</summary><pre>Operate the simulated Franka for the supplied task. The two current RGB images are overhead (metric) and oblique (agent). Cyan ticks are pixel coordinates. The overhead white grid is in millimetres at tabletop height. World +x is image right, +y is up, z is height above the tabletop. Zero rotation points the gripper down, closing along y. A depth query measures XYZ in mm at a visible pixel from the current snapshot. Query up to 24 points per snippet. After each snippet you receive the next images and your own results. Return {&quot;program&quot;:&quot;...&quot;} to run Python or {&quot;done&quot;:true} to finish. Position is in millimetres, roll/pitch/yaw in degrees, and gap is the aperture in millimetres. There are at most eight snippets. Write plain Python statements. move(x,y,z,roll,pitch,yaw,gap) takes seven finite numbers and returns the seven measured values. state() reads those values. surface(&quot;metric&quot; or &quot;agent&quot;, u, v) takes integer pixel coordinates and returns XYZ or None. print(...) records values. Use ordinary assignments and unpacking, numbers, short strings, True/False/None, lists, tuples, indexing/slicing, if/else, and for over range(...) or a list/tuple. Local def helpers support positional parameters, defaults, and return. Calls accept positional arguments and *sequence. Available builtins: range, min, max, abs, round, len, int, float. Operators: + - * / // %, numeric comparisons, equality, is/is not None, and/or/not. No imports, attributes, comprehensions, recursion, keyword arguments or while loops. Each range or sequence has at most 128 elements. At most 128 sensor calls and 40 print calls. At most 12 move calls per program (or the smaller remaining budget).</pre><pre>{
+  &quot;command&quot;: &quot;Serve just the terracotta-colored coffee on the coaster nearest the person. Set the cup down upright and release it. Leave the other coffees on the tray.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;bounds&quot;: [
+    [
+      -370,
+      370
+    ],
+    [
+      -300,
+      275
+    ],
+    [
+      2,
+      275
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -70,
+      70
+    ],
+    [
+      -180,
+      180
+    ],
+    [
+      0,
+      80
+    ]
+  ],
+  &quot;state&quot;: [
+    -167.0250125521217,
+    101.09096393829593,
+    149.85096981927148,
+    0.01727357634549159,
+    0.002024175606591927,
+    -9.644668898240053e-05,
+    80.00000042863964
+  ],
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;for p in [(467,148),(443,148),(491,148),(428,149),(467,123),(467,172),(203,152),(162,221),(203,292),(451,112)]:\n print(p,surface(\&quot;metric\&quot;,*p))&quot;,
+      &quot;feedback&quot;: {
+        &quot;log&quot;: [
+          &quot;(467, 148) [194.53, 95.68, 61.02]&quot;,
+          &quot;(443, 148) [161.57, 94.7, 66.26]&quot;,
+          &quot;(491, 148) [224.3, 94.67, 66.42]&quot;,
+          &quot;(428, 149) [143.19, 94.43, 60.6]&quot;,
+          &quot;(467, 123) [192.85, 127.32, 66.64]&quot;,
+          &quot;(467, 172) [194.5, 64.01, 61.13]&quot;,
+          &quot;(203, 152) [-167.15, 100.54, 4.0]&quot;,
+          &quot;(162, 221) [-225.97, 1.54, 4.0]&quot;,
+          &quot;(203, 292) [-167.15, -100.32, 4.0]&quot;,
+          &quot;(451, 112) [189.74, 158.97, -0.0]&quot;
+        ],
+        &quot;moves&quot;: 0,
+        &quot;samples&quot;: [
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              194.53,
+              95.68,
+              61.02
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 443,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              161.57,
+              94.7,
+              66.26
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 491,
+            &quot;v&quot;: 148,
+            &quot;xyz&quot;: [
+              224.3,
+              94.67,
+              66.42
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 428,
+            &quot;v&quot;: 149,
+            &quot;xyz&quot;: [
+              143.19,
+              94.43,
+              60.6
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 123,
+            &quot;xyz&quot;: [
+              192.85,
+              127.32,
+              66.64
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 467,
+            &quot;v&quot;: 172,
+            &quot;xyz&quot;: [
+              194.5,
+              64.01,
+              61.13
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 203,
+            &quot;v&quot;: 152,
+            &quot;xyz&quot;: [
+              -167.15,
+              100.54,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 162,
+            &quot;v&quot;: 221,
+            &quot;xyz&quot;: [
+              -225.97,
+              1.54,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 203,
+            &quot;v&quot;: 292,
+            &quot;xyz&quot;: [
+              -167.15,
+              -100.32,
+              4.0
+            ]
+          },
+          {
+            &quot;view&quot;: &quot;metric&quot;,
+            &quot;u&quot;: 451,
+            &quot;v&quot;: 112,
+            &quot;xyz&quot;: [
+              189.74,
+              158.97,
+              -0.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      &quot;program&quot;: &quot;print(move(194,96,150,0,0,0,80))\nprint(move(194,96,45,0,0,0,80))\nprint(move(194,96,45,0,0,0,52))\nprint(move(194,96,135,0,0,0,52))&quot;,
+      &quot;feedback&quot;: {
+        &quot;log&quot;: [
+          &quot;[193.88, 95.8, 150.0, 0.0, 0.0, -0.0, 80.0]&quot;,
+          &quot;[193.99, 95.96, 45.13, -0.01, 0.0, -0.0, 80.0]&quot;,
+          &quot;[194.0, 95.91, 45.08, -0.01, 0.0, -0.0, 67.47]&quot;,
+          &quot;[193.91, 95.72, 134.32, -0.05, 0.02, -0.0, 67.76]&quot;
+        ],
+        &quot;moves&quot;: 4,
+        &quot;samples&quot;: []
+      }
+    },
+    {
+      &quot;program&quot;: &quot;print(move(-167,101,135,0,0,0,52))\nprint(move(-167,101,45,0,0,0,52))\nprint(move(-167,101,45,0,0,0,80))\nprint(move(-167,101,150,0,0,0,80))&quot;,
+      &quot;feedback&quot;: {
+        &quot;log&quot;: [
+          &quot;[-166.69, 100.67, 134.48, -0.06, -0.01, 0.0, 67.48]&quot;,
+          &quot;[-170.23, 117.39, 73.78, 2.99, 0.35, 0.04, 80.68]&quot;,
+          &quot;[-171.08, 117.8, 73.72, 3.07, 0.42, 0.07, 80.83]&quot;,
+          &quot;[-167.03, 101.09, 149.85, 0.02, 0.0, -0.0, 80.0]&quot;
+        ],
+        &quot;moves&quot;: 4,
+        &quot;samples&quot;: []
+      }
+    }
+  ]
+}</pre><a href="evidence/51f570e67eee59b2b1c21eb4f62485caf1121e160da8e9428aa756ad440d9b0a.jpg">Frame 1</a> · <a href="evidence/ded165ae35aa8734641a6e62c2f93472738efcb067760637d86f7ff86a71a867.jpg">Frame 2</a><pre>{&quot;done&quot;:true}</pre></details><p><a href="evidence/43dcabeb3210c94e0fed84bc787d2865667900f6f6761acb5bacadc231d96341.json">Archived response</a></p><details><summary>Measured outcome</summary><pre>{
+  &quot;passive&quot;: {
+    &quot;minimum_signed_support_gap_mm&quot;: -3.1527190937789897,
+    &quot;maximum_gripper_error&quot;: 0.0,
+    &quot;events&quot;: []
+  },
+  &quot;active&quot;: {
+    &quot;minimum_signed_support_gap_mm&quot;: -24.33129075176624,
+    &quot;maximum_gripper_error&quot;: 0.0,
+    &quot;events&quot;: [
+      {
+        &quot;phase&quot;: &quot;reach&quot;,
+        &quot;time_s&quot;: 5.819999999999581,
+        &quot;cup&quot;: &quot;cup2&quot;,
+        &quot;cup_xyz_m&quot;: [
+          0.1839753929017845,
+          0.09590668670579101,
+          0.8268753475208228
+        ],
+        &quot;measured_heading&quot;: [
+          -0.99999832310362,
+          0.001831335564034823
+        ]
+      },
+      {
+        &quot;phase&quot;: &quot;slide&quot;,
+        &quot;time_s&quot;: 6.18999999999954,
+        &quot;nearest_hand_skin_mm&quot;: 0.0
+      },
+      {
+        &quot;phase&quot;: &quot;withdraw&quot;,
+        &quot;time_s&quot;: 6.719999999999482
+      },
+      {
+        &quot;phase&quot;: &quot;done&quot;,
+        &quot;time_s&quot;: 7.149999999999435
+      }
+    ]
+  }
+}</pre></details></main></html>

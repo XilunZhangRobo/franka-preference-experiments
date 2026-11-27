@@ -1,0 +1,84 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Books · empty memory · layout 203</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Books · empty memory · layout 203</h1><p><a href="shelf.html">Back to this experiment</a></p><blockquote>Shelve the books.</blockquote><p>Completed · missed</p><figure><video controls playsinline preload="none" poster="films/shelf-books-203-teach/start.jpg" src="films/shelf-books-203-teach/review.mp4"></video><figcaption>Recorded trial execution. Cycles · presentation camera · 6× speed · simulation 0.4–146.6 s. Matt’s left is on the right side of this image.</figcaption></figure><p><small><a href="films/shelf-books-203-teach/start.jpg">Starting arrangement</a> · <a href="films/shelf-books-203-teach/end.jpg">Final arrangement</a></small></p><p><a href="evidence/455024369221cc2697c0e51558c78273d33e5adb613aca13d0bea903f6a5c17f.mp4">Download the original MuJoCo recording</a></p><p><a href="films/shelf-books-203-teach/review.mp4#t=14.9">Jump to Matt’s book correction</a></p><h2>Model exchange</h2><details><summary>controller · 2 input images</summary><pre>You control a simulated Franka. Read the human&#x27;s command, personal note if supplied, and camera images. Some images may show what just happened before the command. The final two show the present workspace from overhead and from the robot&#x27;s oblique camera. Use these observations to decide what to move and where. Return a JSON object with program (plain Python code) and a short account of what you saw that motivated the program. Write the complete manipulation program. You may use lists, for over a list or range, indexing, assignments and numeric arithmetic. transfer(sx,sy,dx,dy,grip_z,yaw,rise) is a generic contact maneuver: at (sx,sy), approach vertically with open jaws, descend to grip_z, squeeze, lift to clearance, traverse to (dx,dy), lower to grip_z+rise, open and retract. Coordinates, height and rise are in mm. It does not identify, snap, center or orient objects. Yaw zero closes along y, 90 along x. From the person&#x27;s viewpoint, left along this shelf is increasing x. Each object needs a vacant landing spot. Do not use imports or any other robot functions.</pre><pre>{
+  &quot;command&quot;: &quot;Shelve the books.&quot;,
+  &quot;calibration&quot;: {
+    &quot;front_registration_x_mm&quot;: [
+      -255,
+      -170,
+      -85,
+      0,
+      85,
+      170,
+      255
+    ],
+    &quot;front_registration_y_mm&quot;: -174,
+    &quot;shelf_registration_x_mm&quot;: [
+      -255,
+      -170,
+      -85,
+      0,
+      85,
+      170,
+      255
+    ],
+    &quot;shelf_registration_y_mm&quot;: 50,
+    &quot;shelf_rise_mm&quot;: 19,
+    &quot;grasp_reference&quot;: &quot;Upright narrow spines: clamp across thickness at 70 mm, yaw 90.&quot;
+  },
+  &quot;proprioception&quot;: [
+    -314.9,
+    -274.0,
+    245.9,
+    0.0,
+    0.0,
+    0.0,
+    72.0
+  ]
+}</pre><a href="evidence/b2cde26455f6d65c77a03a127d493ac44697a3cba06cb0b3ccd79143ecd8138a.jpg">Frame 1</a> · <a href="evidence/10b45e0ff56ac78d04418167c94cc7a4931f6bf0f986e34510ca5c3e744fddca.jpg">Frame 2</a><pre>{
+  &quot;program&quot;: &quot;xs = [-255, -170, -85, 0, 85, 170, 255]\nfor x in xs:\n    transfer(x, -174, x, 50, 70, 90, 19)&quot;,
+  &quot;account&quot;: &quot;Seven upright books stand in front of an empty shelf. Each book has an open shelf position directly across from it, so the program preserves their order.&quot;
+}</pre></details><details><summary>visual-review · 19 input images</summary><pre>Review the chronological camera images of the robot&#x27;s previous shelving task and the person&#x27;s subsequent actions. Return JSON with observation, interpretation, and note. In the note, write only what this encounter supports about how this person wants the robot to act in future. Distinguish observation from inference, acknowledge uncertainty, and identify the circumstances in which it may matter.</pre><pre>{
+  &quot;previous_command&quot;: &quot;Shelve the books.&quot;
+}</pre><a href="evidence/10b45e0ff56ac78d04418167c94cc7a4931f6bf0f986e34510ca5c3e744fddca.jpg">Frame 1</a> · <a href="evidence/5f2459adedb7c9776d846b3df3392ffc7c79ca657a57a95e8ae623fef9078e44.jpg">Frame 2</a> · <a href="evidence/5a6c8828d48b1f034ac5feaf6c672cca0b89423191ba1a65d1501bbeb45ccb2b.jpg">Frame 3</a> · <a href="evidence/2f30d896dc625cd4aeb57ca9ea5b2e35c8bad4baf9ff0d9c60bf9706e95aa1fc.jpg">Frame 4</a> · <a href="evidence/1412debd9b60abff7e173b8e3ca2b9f3dba937a2744546089e786ec16a2f5726.jpg">Frame 5</a> · <a href="evidence/03bdb43e2a2bb0a7e065303363a718ce1adb34f8d85d29528e0baa2cc00738c7.jpg">Frame 6</a> · <a href="evidence/7c7e9437d6c095c83f2fb44a1ae490046d2f98e05dcb8e5883ced9d9e1fac097.jpg">Frame 7</a> · <a href="evidence/756ad17dafcaccede529d218bc8743d18a89a7712273afdf07855c7ab051ec85.jpg">Frame 8</a> · <a href="evidence/8732611b90c01c932667513f6284a2f8cd2b50e4b4409bf3878484872f7d3f77.jpg">Frame 9</a> · <a href="evidence/2edb5be6de9b697143ffd372ce7e6400a02bf18b0a9c5c8003e4e9fe4c0cefc7.jpg">Frame 10</a> · <a href="evidence/f1bd96a9fc48a53d545e27929ccc976632934ea3dde0a6a9e2d929ace5e6b371.jpg">Frame 11</a> · <a href="evidence/b2fb34eb581945e1965f98c20508bb72281abfdd6366430b1db81074c2367169.jpg">Frame 12</a> · <a href="evidence/7356d632714f045a75dab0968a1fed3a986f0ebab32d197e812dfc1eb58bd53f.jpg">Frame 13</a> · <a href="evidence/92f90c2b5f90dcc85c0a1eaff5a64faa38c9990414615e6a95407ab601b90cb6.jpg">Frame 14</a> · <a href="evidence/6a590a93554699552b6e7802551c8a7deca1a060bd5906c16c10897d40b000d2.jpg">Frame 15</a> · <a href="evidence/880c60b439044ee5688064d97dd8c8e82a61ad3dd16e23e46cebe49f86bd0876.jpg">Frame 16</a> · <a href="evidence/e1a464a4659d829173b18d6080eb36fa4b1457f4e2b87972ddc0626b543914b6.jpg">Frame 17</a> · <a href="evidence/db2dab8507a1d4771531e59730463238171a2a882998c4b1840aa8d59c8de37f.jpg">Frame 18</a> · <a href="evidence/155c291b0f6f62b04da2d3831a9359ac60a21d29491dbd15e3cd0a286245f47d.jpg">Frame 19</a><pre>{
+  &quot;observation&quot;: &quot;After the robot shelved all seven books, the person rearranged them. The three books with visible red tabs began in the first, second, and fourth positions from the left. By the end, they occupied the three rightmost positions, in teal, purple, then red order.&quot;,
+  &quot;interpretation&quot;: &quot;The person’s rearrangement suggests they may have wanted the red-tabbed books grouped on the right. The images do not establish whether the tabs guided their choices or whether they wanted an exact order for all seven books.&quot;,
+  &quot;note&quot;: &quot;When shelving these books on this rack again, the person may prefer the robot to group the red-tabbed books at the right end.&quot;
+}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;task_complete&quot;: true,
+  &quot;preference_match&quot;: false,
+  &quot;supported&quot;: {
+    &quot;volume0&quot;: true,
+    &quot;volume5&quot;: true,
+    &quot;volume1&quot;: true,
+    &quot;volume3&quot;: true,
+    &quot;volume2&quot;: true,
+    &quot;volume4&quot;: true,
+    &quot;volume6&quot;: true
+  },
+  &quot;order_from_Matts_left&quot;: [
+    &quot;volume6&quot;,
+    &quot;volume4&quot;,
+    &quot;volume2&quot;,
+    &quot;volume3&quot;,
+    &quot;volume1&quot;,
+    &quot;volume5&quot;,
+    &quot;volume0&quot;
+  ],
+  &quot;execution&quot;: {
+    &quot;moves&quot;: 7,
+    &quot;log&quot;: []
+  },
+  &quot;transfers&quot;: 7,
+  &quot;time_s&quot;: 89.60999999997256
+}</pre></details></main></html>

@@ -1,0 +1,113 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Same kitchen and jars · empty memory</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Same kitchen and jars · empty memory</h1><p><a href="jars.html">Back to this experiment</a></p><blockquote>Finish labeling these two batches of preserves for the sale.</blockquote><figure><video controls playsinline preload="none" poster="films/jars-recall-empty/start.jpg" src="films/jars-recall-empty/review.mp4"></video><figcaption>Same kitchen and jars · empty memory Cycles · presentation camera · 6× speed · simulation 1.3–50.7 s.</figcaption></figure><p><small><a href="films/jars-recall-empty/start.jpg">Starting arrangement</a> · <a href="films/jars-recall-empty/end.jpg">Final arrangement</a></small></p><p>All six jars finished upright with matching seals centered to within 10 mm. Astra presented 0 of two first pieces before handling the next label.</p><p><a href="evidence/0d2d5d76c51debc420e30a57232cd6a72aac9c5162a8d93e8310b91cfdc7d6af.mp4">Download the original MuJoCo recording</a></p><details><summary>turn-01 · 2 input images</summary><pre>Operate the simulated Franka using the two current camera views (metric overhead, then oblique). The six jars on the left are numbered 0,1,2 from left to right in the top row in the overhead view and 3,4,5 in the lower row. The printed seals have the same numbering within the right-hand six-position dispenser; a seal may already be on a jar. place(seal_id,jar_id) transports a printed seal by its tab to a jar lid. lift(jar_id,height_mm,seconds) grasps the jar, raises it 10 to 110 mm, holds for 0 to 3 seconds, and returns it to its place. Objects move under contact and gravity. You decide which operations to use, their arguments, and their order. Return a JSON object with a program string containing Python calls, integer or decimal arguments, and optional for loops over ranges or integer lists. You will see updated views after a program. Return {&quot;done&quot;:true} when finished. Up to four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Finish labeling these two batches of preserves for the sale.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: []
+}</pre><a href="evidence/60784a79c9f055af4761814639ba5c1d48dd98890d4d81a11dc3399214ca1779.jpg">Frame 1</a> · <a href="evidence/bced0f12ee84035fe59f38137b08094bdfbb451bef41166d31451e1b66832a74.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;for i in range(1,6):\n    place(i,i)&quot;}</pre></details><details><summary>turn-02 · 2 input images</summary><pre>Operate the simulated Franka using the two current camera views (metric overhead, then oblique). The six jars on the left are numbered 0,1,2 from left to right in the top row in the overhead view and 3,4,5 in the lower row. The printed seals have the same numbering within the right-hand six-position dispenser; a seal may already be on a jar. place(seal_id,jar_id) transports a printed seal by its tab to a jar lid. lift(jar_id,height_mm,seconds) grasps the jar, raises it 10 to 110 mm, holds for 0 to 3 seconds, and returns it to its place. Objects move under contact and gravity. You decide which operations to use, their arguments, and their order. Return a JSON object with a program string containing Python calls, integer or decimal arguments, and optional for loops over ranges or integer lists. You will see updated views after a program. Return {&quot;done&quot;:true} when finished. Up to four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Finish labeling these two batches of preserves for the sale.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;for i in range(1,6):\n    place(i,i)&quot;,
+      &quot;feedback&quot;: &quot;Executed 5 operations.&quot;
+    }
+  ]
+}</pre><a href="evidence/6a9fc5f8f5039236121c5072ede9acbfa293a43cbd75c8a27290471160cc7f6e.jpg">Frame 1</a> · <a href="evidence/84649741d7da23bbec8dd70695ec62951c903c189173ad5f552ae7331f4bbccf.jpg">Frame 2</a><pre>{&quot;done&quot;:true}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;measurement_interval_s&quot;: 0.05,
+  &quot;proof_criterion&quot;: &quot;Matching seal supported by upright jar, bilateral finger contacts and 50 mm lift with body speed at most 25 mm/s for 0.25 s before handling another loose seal of that design.&quot;,
+  &quot;initial_supported&quot;: {
+    &quot;jar0_0&quot;: {
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 0.0
+    }
+  },
+  &quot;final_supported&quot;: {
+    &quot;jar0_0&quot;: {
+      &quot;seal&quot;: &quot;seal0_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 0.17
+    },
+    &quot;jar0_1&quot;: {
+      &quot;seal&quot;: &quot;seal0_1&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.27
+    },
+    &quot;jar0_2&quot;: {
+      &quot;seal&quot;: &quot;seal0_2&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.06
+    },
+    &quot;jar1_0&quot;: {
+      &quot;seal&quot;: &quot;seal1_0&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.58
+    },
+    &quot;jar1_1&quot;: {
+      &quot;seal&quot;: &quot;seal1_1&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.1
+    },
+    &quot;jar1_2&quot;: {
+      &quot;seal&quot;: &quot;seal1_2&quot;,
+      &quot;matching&quot;: true,
+      &quot;center_error_mm&quot;: 1.18
+    }
+  },
+  &quot;matching_count&quot;: 6,
+  &quot;matching_within_10mm&quot;: 6,
+  &quot;jar_max_lifts_mm&quot;: {
+    &quot;jar0_0&quot;: 0.0,
+    &quot;jar0_1&quot;: 0.02,
+    &quot;jar0_2&quot;: 0.01,
+    &quot;jar1_0&quot;: 0.05,
+    &quot;jar1_1&quot;: 0.01,
+    &quot;jar1_2&quot;: 0.0
+  },
+  &quot;max_proof_hold_s&quot;: {
+    &quot;jar0_0&quot;: 0.0,
+    &quot;jar0_1&quot;: 0.0,
+    &quot;jar0_2&quot;: 0.0,
+    &quot;jar1_0&quot;: 0.0,
+    &quot;jar1_1&quot;: 0.0,
+    &quot;jar1_2&quot;: 0.0
+  },
+  &quot;inspected&quot;: {},
+  &quot;first_seal_motion_s&quot;: {
+    &quot;seal0_1&quot;: 5.75,
+    &quot;seal0_2&quot;: 15.4,
+    &quot;seal1_0&quot;: 23.6,
+    &quot;seal1_1&quot;: 33.6,
+    &quot;seal1_2&quot;: 43.25
+  },
+  &quot;inspection_before_next_label&quot;: [
+    false,
+    false
+  ],
+  &quot;complete&quot;: false,
+  &quot;labels_complete&quot;: true,
+  &quot;preference_match&quot;: false,
+  &quot;released&quot;: true,
+  &quot;observed_timing&quot;: {
+    &quot;post_hoc&quot;: true,
+    &quot;source_waypoints_exact&quot;: true,
+    &quot;lifts&quot;: []
+  },
+  &quot;physical_gestures&quot;: {
+    &quot;criterion&quot;: &quot;Post-hoc physical gesture: at least 20 mm lift and 0.25 s steady with matching seal supported by jar and bilateral gripper contact; 50 ms samples.&quot;,
+    &quot;before_next&quot;: 0,
+    &quot;after_second_before_third&quot;: 0,
+    &quot;events&quot;: []
+  }
+}</pre></details></main></html>

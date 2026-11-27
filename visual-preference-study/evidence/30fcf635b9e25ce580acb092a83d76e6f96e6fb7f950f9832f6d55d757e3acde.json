@@ -1,0 +1,3 @@
+{
+  "program": "grip()\ntravel(180, 115)\ntravel(-180, 115)\ntravel(-180, 4)\nset_down()"
+}

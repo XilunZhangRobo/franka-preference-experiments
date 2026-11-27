@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Motor control 17</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Motor control 17</h1><p><a href="game.html">Back to this experiment</a></p><blockquote>Move the board onto the green mat with both boats still aboard.</blockquote><p>Completed · motor instruction followed</p><figure><video controls playsinline preload="none" poster="films/game-motor-17-empty/start.jpg" src="films/game-motor-17-empty/review.mp4"></video><figcaption>Recorded trial execution. Cycles · presentation camera · real time · simulation 0.0–9.3 s.</figcaption></figure><p><small><a href="films/game-motor-17-empty/start.jpg">Starting arrangement</a> · <a href="films/game-motor-17-empty/end.jpg">Final arrangement</a></small></p><p><a href="evidence/2d0f761e304f30247831ca662dc6e89bdbd46743cfc178b1e7d19037ebbacb30.mp4">Download the original MuJoCo recording</a></p><h2>Model exchange</h2><details><summary>policy · 2 input images</summary><pre>Operate the simulated Franka from two 640x480 images, overhead metric then oblique agent. White grid lines on metric are 25 mm apart on the table (+x right, +y up); cyan ticks label image pixels. Decide your own actions. Write a short Python program as {&quot;program&quot;:&quot;...&quot;}, or ask one short question if needed. surface(&quot;metric&quot;,u,v) measures visible [x,y,z] in millimetres from the overhead snapshot at an integer pixel. carry(source,target) executes a generic top-down pinch-and-carry, using source=[x,y,z] at the TOP of a flat-sided object&#x27;s grip or central board handle and target=[x,y,z] at the desired SUPPORT surface. It pinches 15 mm below the source top, lifts, transports level and releases 19 mm above support. Contacts and friction carry objects. Choose all sources, targets, ordering and number of moves. Coordinates are free. Each snapshot is fixed at program start. Use assignments, indexing/slicing, local functions, if/else, for over lists or range, arithmetic, print, round, len, min, max, abs. No imports or attributes. Up to eight carries. Measurements are available directly inside the code.</pre><pre>{
+  &quot;task&quot;: &quot;Move the board onto the green mat with both boats still aboard.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;
+}</pre><a href="evidence/3b75dceb1718c8e37822d0326a8cad1da62459b8429b416b7a01e82500c12933.jpg">Frame 1</a> · <a href="evidence/75d2c1e843d1a524159b242c2690af6d5ef55d1654618d738874196056b74452.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;handle = surface(\&quot;metric\&quot;, 236, 283)\nmat_center = surface(\&quot;metric\&quot;, 424, 265)\ncarry(handle, mat_center)&quot;}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;command&quot;: &quot;Move the board onto the green mat with both boats still aboard.&quot;,
+  &quot;reply&quot;: {
+    &quot;program&quot;: &quot;handle = surface(\&quot;metric\&quot;, 236, 283)\nmat_center = surface(\&quot;metric\&quot;, 424, 265)\ncarry(handle, mat_center)&quot;
+  },
+  &quot;moves&quot;: [
+    [
+      -94.34274979290697,
+      -74.14861815558626,
+      38.843593597412074,
+      124.79748258970271,
+      -55.45297422045377,
+      0.5999422073363903
+    ]
+  ],
+  &quot;execution&quot;: {
+    &quot;moves&quot;: 1,
+    &quot;log&quot;: []
+  },
+  &quot;final_poses&quot;: {
+    &quot;board&quot;: [
+      0.12197971800451483,
+      -0.05500763351690337,
+      0.7528438733754507
+    ],
+    &quot;coral boat&quot;: [
+      0.07117410755109038,
+      -0.032211955646505495,
+      0.757705158935557
+    ],
+    &quot;teal boat&quot;: [
+      0.17154631086253244,
+      -0.032247824698118585,
+      0.7577055848783616
+    ]
+  },
+  &quot;score&quot;: {
+    &quot;board_on_mat&quot;: true,
+    &quot;both_stored&quot;: false,
+    &quot;arrangement_preserved&quot;: true,
+    &quot;peak_change_mm&quot;: 4.7,
+    &quot;final_errors_mm&quot;: [
+      4.2,
+      2.4
+    ]
+  }
+}</pre></details></main></html>

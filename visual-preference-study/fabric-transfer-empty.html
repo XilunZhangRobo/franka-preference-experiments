@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Transfer · empty memory</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Transfer · empty memory</h1><p><a href="fabric.html">Back to this experiment</a></p><blockquote>Set out three paper finishes on the counter so I can choose between them.</blockquote><p>Completed · missed</p><figure><video controls playsinline preload="none" poster="films/fabric-transfer-empty/start.jpg" src="films/fabric-transfer-empty/review.mp4"></video><figcaption>Recorded trial execution. Cycles · presentation camera · 6× speed · simulation 1.8–33.0 s.</figcaption></figure><p><small><a href="films/fabric-transfer-empty/start.jpg">Starting arrangement</a> · <a href="films/fabric-transfer-empty/end.jpg">Final arrangement</a></small></p><p><a href="evidence/8abf4e5865ce99836df49a7d3f598213443b3a5df6fd17ee721c99448f34ad61.mp4">Download the original MuJoCo recording</a></p><h2>Model exchange</h2><details><summary>turn-01 · 2 input images</summary><pre>Operate the simulated Franka. The images are a metric overhead view followed by an oblique view. Use the calibrated transport function place(sample, slot, inset_mm). The six tabbed cards in the opening overhead view are numbered 0,1,2 left to right in the row nearer the robot (bottom of that view), then 3,4,5 in the other row. The counter at the top has slots 0,1,2 from left to right. The last argument is the distance to slide the card farther into the slot after lowering it, in whole mm from 0 to 38. The fingers and the boards move with contacts and gravity. Return a JSON object with a program string containing up to three Python calls to place with integer arguments, or {&quot;done&quot;:true}. You can inspect the next camera views after each program. Use at most four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Set out three paper finishes on the counter so I can choose between them.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: []
+}</pre><a href="evidence/ff5e33a7b651414f1eb2aec1afa457c322a70d299c5fcf169c749f0e8320f110.jpg">Frame 1</a> · <a href="evidence/e02a58e8be7ff5b9fe63af906e08943b5f114e1db532301d31aec777f8139b81.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;place(3, 0, 19)\nplace(4, 1, 19)\nplace(5, 2, 19)&quot;}</pre></details><details><summary>turn-02 · 2 input images</summary><pre>Operate the simulated Franka. The images are a metric overhead view followed by an oblique view. Use the calibrated transport function place(sample, slot, inset_mm). The six tabbed cards in the opening overhead view are numbered 0,1,2 left to right in the row nearer the robot (bottom of that view), then 3,4,5 in the other row. The counter at the top has slots 0,1,2 from left to right. The last argument is the distance to slide the card farther into the slot after lowering it, in whole mm from 0 to 38. The fingers and the boards move with contacts and gravity. Return a JSON object with a program string containing up to three Python calls to place with integer arguments, or {&quot;done&quot;:true}. You can inspect the next camera views after each program. Use at most four programs.</pre><pre>{
+  &quot;command&quot;: &quot;Set out three paper finishes on the counter so I can choose between them.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;,
+  &quot;previous_turns&quot;: [
+    {
+      &quot;program&quot;: &quot;place(3, 0, 19)\nplace(4, 1, 19)\nplace(5, 2, 19)&quot;,
+      &quot;feedback&quot;: &quot;Executed 3 transport calls.&quot;
+    }
+  ]
+}</pre><a href="evidence/d1c623c1a718aa5dedd6269c3926705163b2d19a7ab0f03a2ce6cd409e7a08e4.jpg">Frame 1</a> · <a href="evidence/751a232a9bc8182c60ebd9e79694b009d744586fcfc96bc71ca6892c5fb089d7.jpg">Frame 2</a><pre>{&quot;done&quot;:true}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;sample&quot;: 0,
+      &quot;on_counter&quot;: false,
+      &quot;position&quot;: [
+        -0.1339999993282496,
+        -0.15199999315298565,
+        0.7498922464036726
+      ],
+      &quot;pinched&quot;: false,
+      &quot;label_px&quot;: 774,
+      &quot;face_px&quot;: 1465
+    },
+    {
+      &quot;sample&quot;: 1,
+      &quot;on_counter&quot;: false,
+      &quot;position&quot;: [
+        -3.274676756802371e-10,
+        -0.15199999354312754,
+        0.7498922464036728
+      ],
+      &quot;pinched&quot;: false,
+      &quot;label_px&quot;: 768,
+      &quot;face_px&quot;: 1508
+    },
+    {
+      &quot;sample&quot;: 2,
+      &quot;on_counter&quot;: false,
+      &quot;position&quot;: [
+        0.13399999937860213,
+        -0.1519999932128051,
+        0.749892246403674
+      ],
+      &quot;pinched&quot;: false,
+      &quot;label_px&quot;: 774,
+      &quot;face_px&quot;: 1465
+    },
+    {
+      &quot;sample&quot;: 3,
+      &quot;on_counter&quot;: true,
+      &quot;position&quot;: [
+        -0.14266977076753432,
+        0.12453269683268059,
+        0.7658922464036729
+      ],
+      &quot;pinched&quot;: true,
+      &quot;label_px&quot;: 281,
+      &quot;face_px&quot;: 2734
+    },
+    {
+      &quot;sample&quot;: 4,
+      &quot;on_counter&quot;: true,
+      &quot;position&quot;: [
+        -0.0018077795649334447,
+        0.12445039659913623,
+        0.7658922464036746
+      ],
+      &quot;pinched&quot;: true,
+      &quot;label_px&quot;: 272,
+      &quot;face_px&quot;: 2865
+    },
+    {
+      &quot;sample&quot;: 5,
+      &quot;on_counter&quot;: true,
+      &quot;position&quot;: [
+        0.14026730327326184,
+        0.12442094797564626,
+        0.7658922464036725
+      ],
+      &quot;pinched&quot;: true,
+      &quot;label_px&quot;: 280,
+      &quot;face_px&quot;: 2746
+    }
+  ],
+  &quot;completed&quot;: true,
+  &quot;preference_match&quot;: false
+}</pre></details></main></html>

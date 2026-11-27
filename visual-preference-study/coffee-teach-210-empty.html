@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Unassisted coffee service · seed 210 · empty memory</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Unassisted coffee service · seed 210 · empty memory</h1><p><a href="coffee.html">Back to this experiment</a></p><blockquote>Bring my terracotta cup to the round coaster across from it.</blockquote><figure><video controls playsinline preload="none" poster="films/coffee-teach-210-empty/start.jpg" src="films/coffee-teach-210-empty/review.mp4"></video><figcaption>Unassisted coffee service · seed 210 · empty memory Cycles · presentation camera · real time · simulation 0.0–13.5 s.</figcaption></figure><p><small><a href="films/coffee-teach-210-empty/start.jpg">Starting arrangement</a> · <a href="films/coffee-teach-210-empty/end.jpg">Final arrangement</a></small></p><p>Released upright on the mat, 0.32 mm from its center. The cup stayed clear of the photograph and Matt made no correction.</p><p><a href="evidence/ca3fb9afe3a465dfb47830c729724d79d32bf514edee47ec77c6476af0077865.mp4">Download the original MuJoCo recording</a></p><details><summary>Controller · 2 input images</summary><pre>Operate the simulated Franka from two RGB views, overhead then oblique. Write a short complete Python program in a JSON object with the field program. grip() pinches the fixture-centered wooden grip and raises the object. travel(x,y) moves the held object level in a straight horizontal segment to any reachable tabletop XY in millimetres. set_down() lowers and opens at the current XY. All segments execute in order. The overhead white grid is in millimetres (+x right, +y up), the cyan rulers mark pixels. Decide your own route. You may use local variables, lists, indexing, arithmetic and bounded for loops. The reachable workspace for travel is -245 to +245 mm in x and -225 to +190 mm in y. At most 12 operations. Return a question instead if one is necessary.</pre><pre>{
+  &quot;command&quot;: &quot;Bring my terracotta cup to the round coaster across from it.&quot;,
+  &quot;fixture_xy_mm&quot;: [
+    192.0,
+    95.0
+  ],
+  &quot;round_mat_center_xy_mm&quot;: [
+    -167.0,
+    101.0
+  ]
+}</pre><a href="evidence/1e44d68eab3aa6e2b0fb908407550f7e45a815f8d2e88c4aa0cfbc5885f8e5d6.jpg">Frame 1</a> · <a href="evidence/62c7c379330cc9d2b572e4e5d38c0511667568d468a242a74707d89eb3b83045.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;grip()\ntravel(192, 0)\ntravel(-167, 0)\ntravel(-167, 101)\nset_down()&quot;}</pre></details><details><summary>visual-review · 7 input images</summary><pre>Describe what happened during this task and anything the person visibly did in response. If that response supports a preference, write a short tentative personal note about what was observed and when it might matter again. If no response supports a preference, leave the note empty. Return JSON with observation and note.</pre><pre>{
+  &quot;command&quot;: &quot;Bring my terracotta cup to the round coaster across from it.&quot;,
+  &quot;recording&quot;: &quot;27 chronological camera frames, two per second. Read each sheet left to right, top to bottom; trailing black tiles are padding.&quot;
+}</pre><a href="evidence/f6bb00ebd143fd08aef90c444649b98bf9a3912bf91dde07a2b2303a49250f71.jpg">Frame 1</a> · <a href="evidence/418b42760c54768fc344ca895519760e20094162851a6ccff1ccde822019e66b.jpg">Frame 2</a> · <a href="evidence/c44ac85605bc53a1febaa43122e2f219dbe50431571f630ad29efdb399e656ae.jpg">Frame 3</a> · <a href="evidence/998f995d13299962b3ef10974c2672e1c9a20d0fbb0fc46d7b2a44830e0aff4a.jpg">Frame 4</a> · <a href="evidence/0dcc0d2846cb48066342f75097d0943724c89ddc7a9aac90538c4c6cd4014736.jpg">Frame 5</a> · <a href="evidence/6448d62773f9019f8ee3b60c02d179c543b02790d09adcd1bbcbae0374155f40.jpg">Frame 6</a> · <a href="evidence/608126f7fb7d260b6f0ed1120103ceb346f5c19dc66bc596c4138a72f6da41fe.jpg">Frame 7</a><pre>{&quot;observation&quot;:&quot;The robot lifted the terracotta cup, carried it across the table, and set it on the round coaster on the right. The gripper then released the cup and withdrew. The person beside the table showed no visible reaction.&quot;,&quot;note&quot;:&quot;&quot;}</pre></details><p><a href="evidence/8741c026a88c22a1f30b3e8e52e3907309243cbb09c02901b4d8f208dad9751a.json">Archived response</a></p><p><a href="evidence/671d36f7f5e3d4a7ffd6087b19df97f9884f706887701a6f861dee101a3477f8.json">Physical result</a></p><details><summary>Measured outcome</summary><pre>{
+  &quot;task_complete&quot;: true,
+  &quot;preference_match&quot;: true,
+  &quot;cargo_goal_distance_mm&quot;: 0.32,
+  &quot;cargo_base_height_mm&quot;: 3.89,
+  &quot;upright&quot;: true,
+  &quot;photo_peak_corner_displacement_mm&quot;: 0.0,
+  &quot;vessel_overlapped_photo&quot;: false,
+  &quot;mat_contact&quot;: true,
+  &quot;released&quot;: true,
+  &quot;bilateral_samples&quot;: 710,
+  &quot;observed_projection_overlap&quot;: false,
+  &quot;minimum_measured_clearance_mm&quot;: 33.852,
+  &quot;minimum_signed_support_gap_mm&quot;: 33.852
+}</pre></details></main></html>

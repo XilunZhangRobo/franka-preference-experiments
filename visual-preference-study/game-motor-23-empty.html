@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Motor control 23</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242c29;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1050px;padding:32px clamp(18px,5vw,70px) 72px;margin:auto}
+nav{display:flex;gap:1em;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #b9c5bb}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(30px,5vw,49px);font-weight:650;letter-spacing:-.035em}
+h2{margin-top:1.7em}a{color:#215b4c;text-underline-offset:.18em}p{max-width:78ch}
+blockquote{border-left:3px solid #a97944;margin:1em 0;padding:.3em 1em;white-space:pre-line}
+video,img{max-width:100%;height:auto}video{width:100%;background:#222;display:block}
+figure{margin:1.3em 0}figcaption,small{font-size:14px;color:#45554e;margin:.35em 0}
+td,th{text-align:left;padding:.55em .8em;border-bottom:1px solid #cbd4cd}table{border-collapse:collapse}
+pre{background:#efeee7;padding:1em;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+details{margin:1em 0}summary{cursor:pointer;color:#215b4c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.3em}.cards a{display:block}.cards img{width:100%;height:auto}
+</style><main><nav><a href="index.html">Overview</a> <a href="shelf.html">Shelving</a> <a href="fabric.html">Samples</a> <a href="game.html">Game</a> <a href="coffee.html">Coffee</a> <a href="jars.html">Jars</a></nav><h1>Motor control 23</h1><p><a href="game.html">Back to this experiment</a></p><blockquote>Put the teal boat on the left brown pad and the coral boat on the right brown pad. Put the board on the green mat.</blockquote><p>Completed · motor instruction followed</p><figure><video controls playsinline preload="none" poster="films/game-motor-23-empty/start.jpg" src="films/game-motor-23-empty/review.mp4"></video><figcaption>Recorded trial execution. Cycles · presentation camera · 6× speed · simulation 0.0–29.0 s.</figcaption></figure><p><small><a href="films/game-motor-23-empty/start.jpg">Starting arrangement</a> · <a href="films/game-motor-23-empty/end.jpg">Final arrangement</a></small></p><p><a href="evidence/53340ba2fac7c06683700706533d58582e97ad0b722486aacfbc858be5b8630a.mp4">Download the original MuJoCo recording</a></p><h2>Model exchange</h2><details><summary>policy · 2 input images</summary><pre>Operate the simulated Franka from two 640x480 images, overhead metric then oblique agent. White grid lines on metric are 25 mm apart on the table (+x right, +y up); cyan ticks label image pixels. Decide your own actions. Write a short Python program as {&quot;program&quot;:&quot;...&quot;}, or ask one short question if needed. surface(&quot;metric&quot;,u,v) measures visible [x,y,z] in millimetres from the overhead snapshot at an integer pixel. carry(source,target) executes a generic top-down pinch-and-carry, using source=[x,y,z] at the TOP of a flat-sided object&#x27;s grip or central board handle and target=[x,y,z] at the desired SUPPORT surface. It pinches 15 mm below the source top, lifts, transports level and releases 19 mm above support. Contacts and friction carry objects. Choose all sources, targets, ordering and number of moves. Coordinates are free. Each snapshot is fixed at program start. Use assignments, indexing/slicing, local functions, if/else, for over lists or range, arithmetic, print, round, len, min, max, abs. No imports or attributes. Up to eight carries. Measurements are available directly inside the code.</pre><pre>{
+  &quot;task&quot;: &quot;Put the teal boat on the left brown pad and the coral boat on the right brown pad. Put the board on the green mat.&quot;,
+  &quot;personal_note&quot;: &quot;&quot;
+}</pre><a href="evidence/f50101e128dd1100ac4c86ad9bac39f3fc422e9ee6ef4e1eac90741082138787.jpg">Frame 1</a> · <a href="evidence/6f7e880b5a37742854bc92aa3f0c1627068545a96d0787edc52b2aa59218c45e.jpg">Frame 2</a><pre>{&quot;program&quot;:&quot;teal = surface(\&quot;metric\&quot;, 281, 306)\ncoral = surface(\&quot;metric\&quot;, 191, 263)\nhandle = surface(\&quot;metric\&quot;, 237, 283)\nleft_pad = surface(\&quot;metric\&quot;, 385, 148)\nright_pad = surface(\&quot;metric\&quot;, 450, 148)\nmat = surface(\&quot;metric\&quot;, 425, 265)\ncarry(teal, left_pad)\ncarry(coral, right_pad)\ncarry(handle, mat)&quot;}</pre></details><details><summary>Measured outcome</summary><pre>{
+  &quot;command&quot;: &quot;Put the teal boat on the left brown pad and the coral boat on the right brown pad. Put the board on the green mat.&quot;,
+  &quot;reply&quot;: {
+    &quot;program&quot;: &quot;teal = surface(\&quot;metric\&quot;, 281, 306)\ncoral = surface(\&quot;metric\&quot;, 191, 263)\nhandle = surface(\&quot;metric\&quot;, 237, 283)\nleft_pad = surface(\&quot;metric\&quot;, 385, 148)\nright_pad = surface(\&quot;metric\&quot;, 450, 148)\nmat = surface(\&quot;metric\&quot;, 425, 265)\ncarry(teal, left_pad)\ncarry(coral, right_pad)\ncarry(handle, mat)&quot;
+  },
+  &quot;moves&quot;: [
+    [
+      -43.31348886506957,
+      -99.81420803966562,
+      41.71129226684567,
+      78.18374622079185,
+      84.21851571301455,
+      0.9500002861022594
+    ],
+    [
+      -144.5657747100631,
+      -51.43809887693761,
+      41.71141147613522,
+      155.77066995134862,
+      84.21851571301455,
+      0.9500002861022594
+    ],
+    [
+      -93.21288822384157,
+      -74.14861379075283,
+      38.84365320205685,
+      125.99171687285776,
+      -55.45297422045377,
+      0.5999422073363903
+    ]
+  ],
+  &quot;execution&quot;: {
+    &quot;moves&quot;: 3,
+    &quot;log&quot;: []
+  },
+  &quot;final_poses&quot;: {
+    &quot;board&quot;: [
+      0.12090623353908729,
+      -0.05500835191783876,
+      0.7528922445797833
+    ],
+    &quot;coral boat&quot;: [
+      0.15336519331141574,
+      0.08413913848991017,
+      0.7498922445797841
+    ],
+    &quot;teal boat&quot;: [
+      0.07296319675439006,
+      0.08413577504313063,
+      0.7498922445797842
+    ]
+  },
+  &quot;score&quot;: {
+    &quot;board_on_mat&quot;: true,
+    &quot;both_stored&quot;: true,
+    &quot;arrangement_preserved&quot;: false,
+    &quot;peak_change_mm&quot;: 341.9,
+    &quot;final_errors_mm&quot;: [
+      142.5,
+      191.7
+    ]
+  }
+}</pre></details></main></html>
